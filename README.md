@@ -1,6 +1,6 @@
 # OGD4All ![Python Version](https://img.shields.io/badge/Python-3.12-blue) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-OGD4All is a prototype system enabling an easy-to-use, transparent interaction with Open Government Data through natural language. It was developed and tested with 430 tabular and geospatial datasets of the city of Zurich.
+OGD4All is a prototype system enabling an easy-to-use, transparent interaction with Geospatial Open Government Data through natural language. It was developed and tested with 430 tabular and geospatial datasets of the city of Zurich.
 
 ## 💡 Architecture
 <img width="2948" height="869" alt="highleveloverview" src="https://github.com/user-attachments/assets/24b01a57-f702-4aa6-b19a-752614c47451" />
@@ -77,13 +77,4 @@ This will start a local gradio server where you can interact with 430 geospatial
 
 ```
 SUPPORTED_LLMS = ['gpt-5', 'gpt-5-mini', 'gpt-5-nano', 'gpt-4.1', 'gpt-4.1-mini', 'gpt-4o', 'gpt-o1', 'gpt-o3-mini-preview', 'gemini-2.5-pro', 'gemini-2.5-flash', 'gemini-2.5-flash-lite-preview-06-17', 'meta-llama-70B-instruct-latest', 'mistral-codestral', 'mistral-large', 'openai/gpt-oss-120b', 'meta-llama/llama-4-maverick']
-```
-
-## 🧾 Citation
-```
-@misc{siebenmann_ogd4all_2025,
-  title = {{OGD4All: A Framework for Accessible Interaction with Geospatial Open Government Data based on Large Language Models}},
-  year = {2025},
-  author = {Siebenmann, Michael}
-}
 ```
