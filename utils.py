@@ -622,7 +622,7 @@ LLM_PRICES = {
     # Google: https://ai.google.dev/gemini-api/docs/pricing
     # Both input and ouput are <= 200k tokens for this system
     'gemini-2.5-pro': (1.25, 10), 
-    'gemini-2.5-flash': (0.3, 1),
+    'gemini-2.5-flash': (0.3, 2.5),
     'gemini-2.5-flash-lite-preview-06-17': (0.1, 0.4),
     # Mistral: https://mistral.ai/pricing#api-pricing
     'mistral-codestral': (0.3, 0.9),
