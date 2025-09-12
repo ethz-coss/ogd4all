@@ -1,0 +1,297 @@
+{
+   "title": "3D-Stadtmodell Stadt Zürich Jahresendstand 1800",
+   "keywords": [
+      "historische Entwicklung",
+      "Archäologie",
+      "3D-Stadtmodell",
+      "3D"
+   ],
+   "metadata_date": "2024-02-05T07:44:25",
+   "updateFrequency": "asNeeded",
+   "purpose": "Die  Geodatensätzen des historischen 3D-Stadtmodells bilden die Datengrundlage für folgende, interessante Einsatzgebiete: Siedlungsgeschichte, Vermittlung, Lebensbilder, Tourismus, Spielentwicklung, etc.",
+   "abstract": "Das digitale 3D-Stadtmodell der Stadt Zürich um 1800 ist flächendeckend über das gesamte Gemeindegebiet verfügbar. Es bildet die vergangene Stadt in 3D ab. Zurzeit sind die 3D-Daten lediglich als einzelne OBJ_Wavefront Dateien verfügbar.",
+   "identificationDate": "1800-01-01",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Hochbaudepartement - Amt für Städtebau",
+   "contactPerson": "Nicole Kesselring",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)",
+      "ZIP"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/3D_Stadtmodell_Stadt_Zuerich_Jahresendstand_1800",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "DTM_R.tif",
+            "description": "Höhenmodell basierend auf ausgewiesenen Quellen (z.B. archäologischen Untersuchungen, Bauuntersuchung oder historischem Kartenmaterial), wissenschaftlichen Hypothesen und ergänzenden Vermutungen. Die Höhenlinien und Höhenkoten werden zu einem kontinuierliches Höhenmodell interpoliert. Der Terrain ignoriert Gewässeroberflächen, es orientiert sich am Gewässergrund.",
+            "attributes": []
+         },
+         {
+            "name": "DTM_GEWAESSER_R.tif",
+            "description": "Höhenmodell basierend auf ausgewiesenen Quellen (z.B. archäologischen Untersuchungen, Bauuntersuchung oder historischem Kartenmaterial), wissenschaftlichen Hypothesen und ergänzenden Vermutungen. Die Höhenlinien und Höhenkoten werden zu einem kontinuierliches Höhenmodell interpoliert. Die beiden Bodenbedeckungskategorien (Art) Gewaesser.fliessendes sowie Gewaesser.stehendes aus den Bodenbedeckungsdaten wurden verwendet um das DTM_R an den entsprechenden Stellen die Gewässeroberflächen zu modellieren.",
+            "attributes": []
+         },
+         {
+            "name": "BODENBEDECKUNG_R.tif",
+            "description": "Photorealistische Bodenbedeckung basierend auf ausgewiesenen Quellen (z.B. archäologischen Untersuchungen, Bauuntersuchung oder historischem Kartenmaterial), wissenschaftlichen Hypothesen und ergänzenden Vermutungen.",
+            "attributes": []
+         },
+         {
+            "name": "BODENBEDECKUNG_A",
+            "description": "Bodenbedeckung basierend auf ausgewiesenen Quellen (z.B. archäologischen Untersuchungen, Bauuntersuchung oder historischem Kartenmaterial), wissenschaftlichen Hypothesen und ergänzenden Vermutungen.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": "Art der Bodenbedeckung"
+               },
+               {
+                  "name": "QUELLE",
+                  "description": "Quellenangabe zu Geometrie- und Sachdaten"
+               },
+               {
+                  "name": "QUELLE_ART",
+                  "description": "Art der Quelle"
+               },
+               {
+                  "name": "VERLAESSLICHKEIT",
+                  "description": "Verlässlichkeit des Objekts (tief bis hoch)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "GEWAESSERNETZ_L",
+            "description": "Gewässernetz basierend auf ausgewiesenen Quellen (z.B. archäologischen Untersuchungen, Bauuntersuchung oder historischem Kartenmaterial), wissenschaftlichen Hypothesen und ergänzenden Vermutungen.",
+            "attributes": [
+               {
+                  "name": "VERLAESSLICHKEIT",
+                  "description": "Verlässlichkeit des Objekts (tief bis hoch)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": "Gewässerart"
+               },
+               {
+                  "name": "BREITE",
+                  "description": "Breite"
+               },
+               {
+                  "name": "QUELLE",
+                  "description": "Quellenangabe zu Geometrie- und Sachdaten"
+               },
+               {
+                  "name": "QUELLE_ART",
+                  "description": "Art der Quelle"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "HOEHENKOTEN_P",
+            "description": "Ergänzende Höhenkoten zu den Höhenlinien mit einer Äquidistanz von 2 m basierend auf ausgewiesenen Quellen (z.B. archäologischen Untersuchungen, Bauuntersuchung oder historischem Kartenmaterial), wissenschaftlichen Hypothesen und ergänzenden Vermutungen. Als Hauptquelle dient ein zeitgenössisches Höhenmodell der Stadt Zürich.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "HOEHE_M",
+                  "description": "Höhe"
+               },
+               {
+                  "name": "QUELLE",
+                  "description": "Quellenangabe zu Geometrie- und Sachdaten"
+               },
+               {
+                  "name": "QUELLE_ART",
+                  "description": "Art der Quelle"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": "Art der Höhenkote"
+               },
+               {
+                  "name": "VERLAESSLICHKEIT",
+                  "description": "Verlässlichkeit des Objekts (tief bis hoch)"
+               }
+            ]
+         },
+         {
+            "name": "HOEHENLINIEN_L",
+            "description": "Höhenlinien mit einer Äquidistanz von 2 m basierend basierend auf ausgewiesenen Quellen (z.B. archäologischen Untersuchungen, Bauuntersuchung oder historischem Kartenmaterial), wissenschaftlichen Hypothesen und ergänzenden Vermutungen. Als Hauptquelle dient ein zeitgenössisches Höhenmodell der Stadt Zürich. Die Höhenlinien sind teilweise durch Höhenkoten und 1 m Höhenlinien ergänzt.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "HOEHE_M",
+                  "description": "Höhe"
+               },
+               {
+                  "name": "QUELLE",
+                  "description": "Quellenangabe zu Geometrie- und Sachdaten"
+               },
+               {
+                  "name": "QUELLE_ART",
+                  "description": "Art der Quelle"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": "Art der Höhenlinie"
+               },
+               {
+                  "name": "VERLAESSLICHKEIT",
+                  "description": "Verlässlichkeit des Objekts (tief bis hoch)"
+               }
+            ]
+         },
+         {
+            "name": "STRASSENNETZ_L",
+            "description": "Strassen- und Wegnetz basierend auf ausgewiesenen Quellen (z.B. archäologischen Untersuchungen, Bauuntersuchung oder historischem Kartenmaterial), wissenschaftlichen Hypothesen und ergänzenden Vermutungen.",
+            "attributes": [
+               {
+                  "name": "ART",
+                  "description": "Art der Strasse"
+               },
+               {
+                  "name": "VERLAESSLICHKEIT",
+                  "description": "Verlässlichkeit des Objekts (tief bis hoch)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "BREITE",
+                  "description": "Breite"
+               },
+               {
+                  "name": "QUELLE_ART",
+                  "description": "Art der Quelle"
+               },
+               {
+                  "name": "QUELLE",
+                  "description": "Quellenangabe zu Geometrie- und Sachdaten"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "BAUMBESTAND_P",
+            "description": "Baumbestand basierend auf ausgewiesenen Quellen (z.B. archäologischen Untersuchungen, Bauuntersuchung oder historischem Kartenmaterial), wissenschaftlichen Hypothesen und ergänzenden Vermutungen manuell erfasst oder automatisch abgeleitet aus Bodenbedeckungsarten (z. B. Waldflächen oder Obsthaine).",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": "Baumart"
+               },
+               {
+                  "name": "TYP",
+                  "description": "Art der Bodenbedeckung, aus welcher der Baum generiert wurde"
+               },
+               {
+                  "name": "HOEHE_M",
+                  "description": "Baumhöhe"
+               },
+               {
+                  "name": "QUELLE",
+                  "description": "Quellenangabe zu Geometrie- und Sachdaten"
+               },
+               {
+                  "name": "QUELLE_ART",
+                  "description": "Art der Quelle"
+               },
+               {
+                  "name": "VERLAESSLICHKEIT",
+                  "description": "Verlässlichkeit des Objekts (tief bis hoch)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "BEBAUUNG_A",
+            "description": "2D Grundrisse der Bebauung basierend auf ausgewiesenen Quellen (z.B. archäologischen Untersuchungen, Bauuntersuchung oder historischem Kartenmaterial), wissenschaftlichen Hypothesen und ergänzenden Vermutungen manuell erfasst. Die 3D Objekte sind separat als .OBJ Download verfügbar.",
+            "attributes": [
+               {
+                  "name": "ART",
+                  "description": "Art der Bebauung"
+               },
+               {
+                  "name": "QUELLE",
+                  "description": "Quellenangabe zu Geometrie- und Sachdaten"
+               },
+               {
+                  "name": "VERLAESSLICHKEIT",
+                  "description": "Verlässlichkeit des Objekts (tief bis hoch)"
+               },
+               {
+                  "name": "EGID",
+                  "description": "EGID des Objekts, sofern das Objekt heute nicht mehr existiert, ist ein negativer Identifikator vergeben worden"
+               },
+               {
+                  "name": "EIGENNAMEN",
+                  "description": "Eigennamen des Objekts"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "QUELLE_ART",
+                  "description": "Art der Quelle"
+               },
+               {
+                  "name": "BAUJAHR",
+                  "description": "Baujahr des Objekts"
+               }
+            ]
+         }
+      ]
+   }
+}

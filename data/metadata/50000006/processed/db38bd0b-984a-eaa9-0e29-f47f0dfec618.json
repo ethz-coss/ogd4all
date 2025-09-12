@@ -1,0 +1,148 @@
+{
+   "title": "Inventar der Natur- und Landschaftsschutzobjekte von kommunaler Bedeutung",
+   "keywords": [
+      "Biologie",
+      "Umwelt"
+   ],
+   "metadata_date": "2024-06-04T12:20:28",
+   "updateFrequency": "asNeeded",
+   "purpose": "Die kommunalen Naturschutzobjekte wurden und werden ausgeschieden, um die nachhaltige Erhaltung der lokaltypischen Biodiversität der Stadt Zürich sicherzustellen. Denn die Objekte erfüllen in Bezug auf Grösse, räumliche Verteilung und Biotoptypqualität die wichtigsten Voraussetzungen für die Erhaltung oder Neubesiedlung von Populationen einheimischer Tier- und Pflanzenarten. Die rechtliche Grundlage der kommunalen Naturschutzobjekte ist das kantonale Planungs- und Baugesetz (v.a. § 203 und 205 PBG).",
+   "abstract": "Dargestellt sind Lebensräume für Tiere und Pflanzen (Naturschutzobjekte), markante Landschaftselemente (Landschaftsschutzobjekte) und Aussichtspunkte. Im DAtensatz sind auch Angaben bezüglich der rechtlichen Verbindlichkeit enthalten.",
+   "identificationDate": "2024-02-01",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Grün Stadt Zürich",
+   "contactPerson": "Muriel Perron",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Inventar_der_Natur__und_Landschaftsschutzobjekte_von_kommunaler_Bedeutung",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "NLS_STZH_NATURSCHUTZ",
+            "description": "Naturschutzobjekte.  Zugriff über ArcMap für GSZ-Mitarbeitende: Geoserver-Daten-Menü -> Inventare/Ist-Zustand GSZ -> Natur- und Landschaftsschutzobjekte Stadt Zürich",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "ESRI Geometrietyp Polygon\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "IDENTIFIKATION",
+                  "description": "Interlis Identifikator\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "NUMMER",
+                  "description": "KSO-Kataster Nummer.\n\nEindeutige Identifikation eines Objekts, die bei Grün Stadt Zürich verwendet wird. \n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI Identifikationsnummer (Systemvorgabe)\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "Interlis/Geomedia Identifikationsnummer (Systemvorgabe)\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "SCHUTZSTATUS",
+                  "description": "Rechtlicher Status des Objekts gemäss kantonalem Planungs- und Baugesetz.\n\nWertebereich: Objekt unter Schutz, Objekt im Inventar, Entlassung wird geprüft\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": "Bezeichnung des Objekts.\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "EINSTUFUNG",
+                  "description": "Unterscheidung ob Schutz lediglich auf kommunale oder zusätzlich auch kantonaler Ebene besteht.\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               }
+            ]
+         },
+         {
+            "name": "NLS_STZH_LANDSCHAFTSSCHUTZ",
+            "description": "Landschaftsschutzobjekte. Zugriff über ArcMap für GSZ-Mitarbeitende: Geoserver-Daten-Menü -> Inventare/Ist-Zustand GSZ -> Natur- und Landschaftsschutzobjekte Stadt Zürich",
+            "attributes": [
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": "Bezeichnung des Objekts.\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "EINSTUFUNG",
+                  "description": "Unterscheidung ob Schutz lediglich auf kommunale oder zusätzlich auch kantonaler Ebene besteht.\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "ESRI Geometrietyp Polygon\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "IDENTIFIKATION",
+                  "description": "Interlis Identifikator\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "NUMMER",
+                  "description": "KSO-Kataster Nummer.\n\nEindeutige Identifikation eines Objekts, die bei Grün Stadt Zürich verwendet wird. \n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI Identifikationsnummer (Systemvorgabe)  \n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "Interlis/Geomedia Identifikationsnummer (Systemvorgabe) \n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "SCHUTZSTATUS",
+                  "description": "Rechtlicher Status des Objekts gemäss kantonalem Planungs- und Baugesetz.\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               }
+            ]
+         },
+         {
+            "name": "NLS_STZH_AUSSICHTSPUNKTE",
+            "description": "Aussichtspunkte. Zugriff über ArcMap für GSZ-Mitarbeitende: Geoserver-Daten-Menü -> Inventare/Ist-Zustand GSZ -> Natur- und Landschaftsschutzobjekte Stadt Zürich",
+            "attributes": [
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": "Bezeichnung des Aussichtspunkts.\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "EINSTUFUNG",
+                  "description": "Unterscheidung ob Schutz lediglich auf kommunale oder zusätzlich auch kantonaler Ebene besteht.\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "ESRI Geometrietyp Point\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "IDENTIFIKATION",
+                  "description": "Interlis Indentifikator \n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "NUMMER",
+                  "description": "KSO-Katasternummer. Eindeutige Identifikation eines Objekts, die bei Grün Stadt zürich verwendet wird.\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI Identifikationsnummer (Systemvorgabe)\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "Interlis/Geomedia Identifikationsnummer (Systemvorgabe)\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "SCHUTZSTATUS",
+                  "description": "Rechtlicher Status des Objekts gemäss kantonalem Planungs- und Baugesetz.\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               }
+            ]
+         }
+      ]
+   }
+}

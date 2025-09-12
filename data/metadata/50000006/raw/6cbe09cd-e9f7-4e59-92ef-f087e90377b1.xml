@@ -1,0 +1,1438 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<che:CHE_MD_Metadata xmlns:che="http://www.geocat.ch/2008/che" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gco:isoType="gmd:MD_Metadata" xsi:schemaLocation="http://www.geocat.ch/2008/che http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd http://www.isotc211.org/2005/srv http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd">
+  <gmd:fileIdentifier xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:CharacterString>6cbe09cd-e9f7-4e59-92ef-f087e90377b1</gco:CharacterString>
+  </gmd:fileIdentifier>
+  <gmd:language xmlns:comp="http://www.geocat.ch/2003/05/gateway/GM03Comprehensive" xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:CharacterString>deu</gco:CharacterString>
+  </gmd:language>
+  <gmd:characterSet xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+  </gmd:characterSet>
+  <gmd:hierarchyLevel xmlns:comp="http://www.geocat.ch/2003/05/gateway/GM03Comprehensive" xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" />
+  </gmd:hierarchyLevel>
+  <gmd:hierarchyLevelName>
+    <gco:CharacterString>Gebäude- und Wohnungsregister der Stadt Zürich (GWZ) gemäss GWR-Datenmodell</gco:CharacterString>
+  </gmd:hierarchyLevelName>
+  <gmd:contact>
+    <che:CHE_CI_ResponsibleParty gco:isoType="gmd:CI_ResponsibleParty">
+      <gmd:organisationName>
+        <gco:CharacterString>Stadt Zürich - Präsidialdepartement - Statistik Stadt Zürich</gco:CharacterString>
+      </gmd:organisationName>
+      <gmd:contactInfo>
+        <gmd:CI_Contact>
+          <gmd:phone>
+            <che:CHE_CI_Telephone gco:isoType="gmd:CI_Telephone">
+              <gmd:voice>
+                <gco:CharacterString>+41 44 412 08 00</gco:CharacterString>
+              </gmd:voice>
+              <che:directNumber>
+                <gco:CharacterString>+41 44 412 08 31</gco:CharacterString>
+              </che:directNumber>
+            </che:CHE_CI_Telephone>
+          </gmd:phone>
+          <gmd:address>
+            <che:CHE_CI_Address gco:isoType="gmd:CI_Address">
+              <gmd:city>
+                <gco:CharacterString>Zürich</gco:CharacterString>
+              </gmd:city>
+              <gmd:postalCode>
+                <gco:CharacterString>8001</gco:CharacterString>
+              </gmd:postalCode>
+              <gmd:country>
+                <gco:CharacterString>CH</gco:CharacterString>
+              </gmd:country>
+              <gmd:electronicMailAddress>
+                <gco:CharacterString>Marco.Sieber@zuerich.ch</gco:CharacterString>
+              </gmd:electronicMailAddress>
+              <che:streetName>
+                <gco:CharacterString>Napfgasse</gco:CharacterString>
+              </che:streetName>
+              <che:streetNumber>
+                <gco:CharacterString>6</gco:CharacterString>
+              </che:streetNumber>
+            </che:CHE_CI_Address>
+          </gmd:address>
+          <gmd:onlineResource>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage>
+                <gmd:URL>http://stadt-zuerich.ch/statistik</gmd:URL>
+              </gmd:linkage>
+            </gmd:CI_OnlineResource>
+          </gmd:onlineResource>
+        </gmd:CI_Contact>
+      </gmd:contactInfo>
+      <gmd:role>
+        <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact" />
+      </gmd:role>
+      <che:individualFirstName>
+        <gco:CharacterString>Marco</gco:CharacterString>
+      </che:individualFirstName>
+      <che:individualLastName>
+        <gco:CharacterString>Sieber</gco:CharacterString>
+      </che:individualLastName>
+      <che:organisationAcronym>
+        <gco:CharacterString>SSZ</gco:CharacterString>
+      </che:organisationAcronym>
+    </che:CHE_CI_ResponsibleParty>
+  </gmd:contact>
+  <gmd:dateStamp xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:DateTime>2023-12-12T12:22:49</gco:DateTime>
+  </gmd:dateStamp>
+  <gmd:metadataStandardName xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:CharacterString>GM03 2+</gco:CharacterString>
+  </gmd:metadataStandardName>
+  <gmd:spatialRepresentationInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_VectorSpatialRepresentation>
+      <gmd:geometricObjects>
+        <gmd:MD_GeometricObjects>
+          <gmd:geometricObjectType>
+            <gmd:MD_GeometricObjectTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_GeometricObjectTypeCode" codeListValue="point" />
+          </gmd:geometricObjectType>
+        </gmd:MD_GeometricObjects>
+      </gmd:geometricObjects>
+    </gmd:MD_VectorSpatialRepresentation>
+  </gmd:spatialRepresentationInfo>
+  <gmd:referenceSystemInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_ReferenceSystem>
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gco:CharacterString>CH1903+_LV95</gco:CharacterString>
+          </gmd:code>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:identificationInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <che:CHE_MD_DataIdentification gco:isoType="gmd:MD_DataIdentification">
+      <gmd:citation>
+        <gmd:CI_Citation>
+          <gmd:title xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>Gebäude- und Wohnungsregister der Stadt Zürich (GWZ) gemäss GWR-Datenmodell</gco:CharacterString>
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#DE" />
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
+          </gmd:title>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:Date>2025-03-18</gco:Date>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+        </gmd:CI_Citation>
+      </gmd:citation>
+      <gmd:abstract xsi:type="gmd:PT_FreeText_PropertyType">
+        <gco:CharacterString>Der vorliegende Datensatz enthält **tagesaktuelle**, georeferenzierte Informationen zu allen **Gebäuden**, **Wohnungen** und **Gebäudeeingängen** in der Stadt Zürich, gemäss des GWR-Datenmodells.</gco:CharacterString>
+        <gmd:PT_FreeText>
+          <gmd:textGroup>
+            <gmd:LocalisedCharacterString locale="#DE" />
+          </gmd:textGroup>
+        </gmd:PT_FreeText>
+      </gmd:abstract>
+      <gmd:purpose xsi:type="gmd:PT_FreeText_PropertyType">
+        <gmd:PT_FreeText>
+          <gmd:textGroup>
+            <gmd:LocalisedCharacterString locale="#DE">Das von Statistik Stadt Zürich geführte Gebäude- und Wohnungsregister der Stadt Zürich (GWZ), bildet die Datenbasis für die gesetzlich vorgesehenen Datenlieferungen zuhanden des Bundesamtes für Statistik (BFS), welches das eidgenössische Gebäude- und Wohnungsregister (GWR) führt.
+Das GWR enthält die wichtigsten Grunddaten zu Gebäuden und Wohnungen in der Schweiz. Es wird für Statistik-, Forschungs- und Planungszwecke genutzt und dient den Kantonen und Gemeinden für den Vollzug gesetzlicher Aufgaben.</gmd:LocalisedCharacterString>
+          </gmd:textGroup>
+        </gmd:PT_FreeText>
+      </gmd:purpose>
+      <gmd:resourceMaintenance>
+        <che:CHE_MD_MaintenanceInformation xmlns:gts="http://www.isotc211.org/2005/gts" gco:isoType="gmd:MD_MaintenanceInformation">
+          <gmd:maintenanceAndUpdateFrequency>
+            <gmd:MD_MaintenanceFrequencyCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="daily" />
+          </gmd:maintenanceAndUpdateFrequency>
+          <gmd:contact>
+            <che:CHE_CI_ResponsibleParty gco:isoType="gmd:CI_ResponsibleParty">
+              <gmd:organisationName>
+                <gco:CharacterString>Präsidialdepartement
+                     - Statistik Stadt Zürich</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:phone>
+                    <che:CHE_CI_Telephone gco:isoType="gmd:CI_Telephone">
+                      <gmd:voice>
+                        <gco:CharacterString>+41 44 412 08 00</gco:CharacterString>
+                      </gmd:voice>
+                      <che:directNumber>
+                        <gco:CharacterString>+41 44 412 08 31</gco:CharacterString>
+                      </che:directNumber>
+                    </che:CHE_CI_Telephone>
+                  </gmd:phone>
+                  <gmd:address>
+                    <che:CHE_CI_Address gco:isoType="gmd:CI_Address">
+                      <gmd:city>
+                        <gco:CharacterString>Zürich</gco:CharacterString>
+                      </gmd:city>
+                      <gmd:postalCode>
+                        <gco:CharacterString>8001</gco:CharacterString>
+                      </gmd:postalCode>
+                      <gmd:country>
+                        <gco:CharacterString>CH</gco:CharacterString>
+                      </gmd:country>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString>Marco.Sieber@zuerich.ch</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                      <che:streetName>
+                        <gco:CharacterString>Napfgasse</gco:CharacterString>
+                      </che:streetName>
+                      <che:streetNumber>
+                        <gco:CharacterString>6</gco:CharacterString>
+                      </che:streetNumber>
+                    </che:CHE_CI_Address>
+                  </gmd:address>
+                  <gmd:onlineResource>
+                    <gmd:CI_OnlineResource>
+                      <gmd:linkage>
+                        <gmd:URL>http://stadt-zuerich.ch/statistik</gmd:URL>
+                      </gmd:linkage>
+                    </gmd:CI_OnlineResource>
+                  </gmd:onlineResource>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodeLists.xml#CI_RoleCode" codeListValue="owner" />
+              </gmd:role>
+              <che:individualFirstName>
+                <gco:CharacterString>Sieber</gco:CharacterString>
+              </che:individualFirstName>
+              <che:individualLastName>
+                <gco:CharacterString>Marco</gco:CharacterString>
+              </che:individualLastName>
+              <che:organisationAcronym>
+                <gco:CharacterString>SSZ</gco:CharacterString>
+              </che:organisationAcronym>
+            </che:CHE_CI_ResponsibleParty>
+          </gmd:contact>
+        </che:CHE_MD_MaintenanceInformation>
+      </gmd:resourceMaintenance>
+      <gmd:graphicOverview>
+        <gmd:MD_BrowseGraphic>
+          <gmd:fileName>
+            <gco:CharacterString>https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/6cbe09cd-e9f7-4e59-92ef-f087e90377b1.png</gco:CharacterString>
+          </gmd:fileName>
+        </gmd:MD_BrowseGraphic>
+      </gmd:graphicOverview>
+      <gmd:descriptiveKeywords>
+        <gmd:MD_Keywords>
+          <gmd:keyword>
+            <gco:CharacterString>Gebäude, Wohnungen, Gebäudeeingänge, Gebäudeart, Gebäudealter, Heizungsart, Zimmerzahl, Wohnungsfläche, sasa</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:type>
+            <gmd:MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodeLists.xml#MD_KeywordTypeCode" codeListValue="theme" />
+          </gmd:type>
+        </gmd:MD_Keywords>
+      </gmd:descriptiveKeywords>
+      <gmd:resourceConstraints>
+        <che:CHE_MD_LegalConstraints gco:isoType="gmd:MD_LegalConstraints">
+          <gmd:useLimitation>
+            <gco:CharacterString>1. Nutzungsbestimmung
+
+Diese Geodaten stehen unter der international gültigen Creative-Commons-Zero-Lizenz (CC-0). Sie dürfen:
+
+- vervielfältigt, verbreitet und weiter zugänglich gemacht werden,
+- angereichert und bearbeitet werden,
+- kommerziell genutzt werden.
+
+Eine Quellenangabe (CC-BY) wird empfohlen: Sie lautet: „Quelle: Stadt Zürich“.
+				
+2. Haftungsausschluss
+
+Die in der Verwaltung der Stadt Zürich zuständige Stelle gemäss Art. 8 Abs. 1 GeoIG (SR 510.62) schliesst jede Haftung für direkte und indirekte Schäden durch die Nutzung der Geodaten [Nutzung der Geodienste] aus. Sie übernimmt keine Garantie für die Aktualität, Richtigkeit, Vollständigkeit und Genauigkeit der veröffentlichten Geodaten.
+                  
+3. Rahmenbedingungen 
+
+- Reglement über offene Verwaltungsdaten, AS 170.410
+https://www.stadt-zuerich.ch/portal/de/index/politik_u_recht/amtliche_sammlung/inhaltsverzeichnis/1/170/410.html
+
+- Städtisches Geoinformationsreglement (StGeoIR), AS 704.100
+https://www.stadt-zuerich.ch/content/dam/stzh/portal/Deutsch/AmtlicheSammlung/Erlasse/704/100/704.100_StGeoIR%20V2.pdf</gco:CharacterString>
+          </gmd:useLimitation>
+        </che:CHE_MD_LegalConstraints>
+      </gmd:resourceConstraints>
+      <gmd:spatialRepresentationType>
+        <gmd:MD_SpatialRepresentationTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodeLists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector" />
+      </gmd:spatialRepresentationType>
+      <gmd:language>
+        <gco:CharacterString>deu</gco:CharacterString>
+      </gmd:language>
+      <gmd:characterSet>
+        <gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+      </gmd:characterSet>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>utilitiesCommunication_Energy</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>imageryBaseMapsEarthCover_EarthCover</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>structure</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:extent>
+        <gmd:EX_Extent>
+          <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>Stadt Zürich</gco:CharacterString>
+          </gmd:description>
+          <gmd:geographicElement>
+            <gmd:EX_GeographicDescription>
+              <gmd:geographicIdentifier>
+                <gmd:MD_Identifier>
+                  <gmd:code xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString />
+                  </gmd:code>
+                </gmd:MD_Identifier>
+              </gmd:geographicIdentifier>
+            </gmd:EX_GeographicDescription>
+          </gmd:geographicElement>
+          <gmd:geographicElement>
+            <gmd:EX_BoundingPolygon>
+              <gmd:extentTypeCode>
+                <gco:Boolean>true</gco:Boolean>
+              </gmd:extentTypeCode>
+              <gmd:polygon>
+                <gml:MultiSurface gml:id="N10285">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="N1028A">
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList />
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </gmd:polygon>
+            </gmd:EX_BoundingPolygon>
+          </gmd:geographicElement>
+          <gmd:geographicElement>
+            <gmd:EX_GeographicBoundingBox>
+              <gmd:extentTypeCode>
+                <gco:Boolean>true</gco:Boolean>
+              </gmd:extentTypeCode>
+              <gmd:westBoundLongitude>
+                <gco:Decimal>8.443821782566665</gco:Decimal>
+              </gmd:westBoundLongitude>
+              <gmd:eastBoundLongitude>
+                <gco:Decimal>8.631776103472221</gco:Decimal>
+              </gmd:eastBoundLongitude>
+              <gmd:southBoundLatitude>
+                <gco:Decimal>47.31549273037445</gco:Decimal>
+              </gmd:southBoundLatitude>
+              <gmd:northBoundLatitude>
+                <gco:Decimal>47.43963707749998</gco:Decimal>
+              </gmd:northBoundLatitude>
+            </gmd:EX_GeographicBoundingBox>
+          </gmd:geographicElement>
+        </gmd:EX_Extent>
+      </gmd:extent>
+    </che:CHE_MD_DataIdentification>
+  </gmd:identificationInfo>
+  <gmd:distributionInfo xmlns:comp="http://www.geocat.ch/2003/05/gateway/GM03Comprehensive" xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_Distribution>
+      <gmd:transferOptions>
+        <gmd:MD_DigitalTransferOptions>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage xsi:type="gmd:PT_FreeURL_PropertyType">
+                <gmd:URL>https://www.stadt-zuerich.ch/geodaten/download/Gebaeude__und_Wohnungsregister_der_Stadt_Zuerich__GWZ__gemaess_GWR_Datenmodell</gmd:URL>
+                <che:PT_FreeURL>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#EN">https://www.stadt-zuerich.ch/geodaten/download/Gebaeude__und_Wohnungsregister_der_Stadt_Zuerich__GWZ__gemaess_GWR_Datenmodell</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#FR">https://www.stadt-zuerich.ch/geodaten/download/Gebaeude__und_Wohnungsregister_der_Stadt_Zuerich__GWZ__gemaess_GWR_Datenmodell</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#IT">https://www.stadt-zuerich.ch/geodaten/download/Gebaeude__und_Wohnungsregister_der_Stadt_Zuerich__GWZ__gemaess_GWR_Datenmodell</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#DE">https://www.stadt-zuerich.ch/geodaten/download/Gebaeude__und_Wohnungsregister_der_Stadt_Zuerich__GWZ__gemaess_GWR_Datenmodell</che:LocalisedURL>
+                  </che:URLGroup>
+                </che:PT_FreeURL>
+              </gmd:linkage>
+              <gmd:protocol>
+                <gco:CharacterString>WWW:LINK-1.0-http--download</gco:CharacterString>
+              </gmd:protocol>
+              <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Gebäude- und Wohnungsregister der Stadt Zürich (GWZ) gemäss GWR-Datenmodell - Datenbezug</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#DE">Gebäude- und Wohnungsregister der Stadt Zürich (GWZ) gemäss GWR-Datenmodell - Datenbezug</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Gebäude- und Wohnungsregister der Stadt Zürich (GWZ) gemäss GWR-Datenmodell - Distribution des données</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#IT">Gebäude- und Wohnungsregister der Stadt Zürich (GWZ) gemäss GWR-Datenmodell - Procacciamento dei dati</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Gebäude- und Wohnungsregister der Stadt Zürich (GWZ) gemäss GWR-Datenmodell - Order data</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:description>
+              <gmd:function>
+                <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download" />
+              </gmd:function>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+        </gmd:MD_DigitalTransferOptions>
+      </gmd:transferOptions>
+      <gmd:transferOptions>
+        <gmd:MD_DigitalTransferOptions />
+      </gmd:transferOptions>
+    </gmd:MD_Distribution>
+  </gmd:distributionInfo>
+  <gmd:contentInfo>
+    <che:CHE_MD_FeatureCatalogueDescription gco:isoType="gmd:MD_FeatureCatalogueDescription">
+      <gmd:includedWithDataset>
+        <gco:Boolean>0</gco:Boolean>
+      </gmd:includedWithDataset>
+      <gmd:featureCatalogueCitation>
+        <gmd:CI_Citation>
+          <gmd:title>
+            <gco:CharacterString>Gebäude- und Wohnungsregister der Stadt Zürich (GWZ) gemäss GWR-Datenmodell</gco:CharacterString>
+          </gmd:title>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:Date>2025-03-18</gco:Date>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+        </gmd:CI_Citation>
+      </gmd:featureCatalogueCitation>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>GWR_STZH_GEBAEUDE</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Tagesaktueller Gebäudebestand der Stadt Zürich.
+Die hier verfügbaren Datensätze beinhalten die **täglich aktualisierten** Bestandesdaten aus dem Gebäude- und Wohnungsregister der Stadt Zürich (GWZ). 
+Die Aktualisierung beinhaltet jeweils die Daten des vollendeten Vortages (z.B. am 16.08.2023 werden die Daten des vollendeten 15.08.2023 geliefert). Bis spätestens 12:00 Uhr sind die neuesten Daten verfügbar.</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GDEKT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Kanton</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GGDENR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>BFS-Gemeindenummer</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GGDENAME</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Gemeindename</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LPARZ</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Grundstücksnummer</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GKSCE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Koordinatenherkunft Code</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GKSCELANG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Koordinatenherkunft Bezeichnung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GKAT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Gebäudekategorie Code
+Die im GWR erfassten Gebäude werden nach ihrer vorwiegenden Nutzungsart unterteilt.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GBAUJ</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Baujahr des Gebäudes</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GBAUP</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Bauperiode Code</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GBAUPLANG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Bauperiode Bezeichnung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GAREA</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Gebäudefläche in m2
+Unter Gebäudefläche ist die Grundrissfläche des Gebäudes zu verstehen, nicht die gesamte Fläche aller Wohnungen eines Gebäudes.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GVOL</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Gebäudevolumen
+Volumen des Gebäudes in Kubikmetern, gemäss Norm SIA 416.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GANZWHG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Anzahl Wohnungen im Gebäude</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GSCHUTZR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Zivilschutzraum Code</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GENH1</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Primäre Energiequelle der Heizung Code
+Gibt die vom Wärmeerzeuger genutzte Hauptenergiequelle an.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GWAERSCEH1</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Informationsquelle primäre Heizung Code</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GWAERDATH1</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Aktualisierungsdatum primäre Heizung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GENH2</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Sekundäre Energiequelle der Heizung Code
+Gibt die vom Wärmeerzeuger genutzte Hauptenergiequelle an. Dank den verschiedenen Merkmalen können zwei Wärmeerzeuger für die Heizung registriert werden.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GWAERSCEH2</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Informationsquelle sekundäre Heizung Code</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GWAERDATH2</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Aktualisierungsdatum sekundäre Heizung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GENW1</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Primäre Energiequelle Warmwasser Code
+Gibt die vom Wärmeerzeuger genutzte Hauptenergiequelle an.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GWAERSCEW1</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Informationsquelle primäre Wasseraufbereitung Code</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GWAERSCEW2</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Informationsquelle sekundäre Warmwasseraufbereitung Code</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GWAERSCEW2LANG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Informationsquelle sekundäre Warmwasseraufbereitung Bezeichnung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEXPDAT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Aktualisierungsdatum sekundäre Warmwasseraufbereitung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Geometrie
+Punktdaten mit N-/E-Gebäudekoordinaten.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EGID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Eidgenössischer Gebäudeidentifikator
+Der EGID ist eine gesamtschweizerisch eindeutige Identifikationsnummer für alle Gebäude.
+Er wird pro Gebäude unabhängig der Gemeindezugehörigkeit vergeben und bleibt bei allen Veränderungen wie Gemeindefusionen, Eigentümerwechseln, Umbauten usw. unverändert.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EGRID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Eidgenössischer Grundstücksidentifikator
+Identifikationsnummer des elektronischen Grundstückinformationssystems (eGRIS). Der eidgenössische Grundstücksidentifikator ist in der ganzen Schweiz einheitlich und dient dem Informationsaustausch zwischen dem Grundbuch, der amtlichen Vermessung und den anderen Nutzerinnen und Nutzern.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEBNR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Amtliche Gebäudenummer
+Die amtliche Gebäudenummer wird von der Gebäudeversicherung des Kantons Zürich (GVZ) vergeben.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GBEZ</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Name des Gebäudes
+Der Name des Gebäudes enthält Angaben wie z.B. Seebad Utoquai, Schulhaus Balgrist, Savoy Hotel Baur en Ville, usw., die der Identifikation des Gebäudes dienen. Verwendet werden nur  Bezeichnungen von dauerndem Charakter, die sich auf das ganze Gebäude beziehen, also keine Firmennamen, Eigentümer, Adressen u. dgl.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GKODE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>E-Gebäudekoordinate
+Als geografischer Referenzpunkt gilt im Prinzip die Grundrissmitte des Gebäudes. Bei besonderen Grundrissformen (Winkel, U-Form usw.) wird jedoch darauf geachtet, dass der Referenzpunkt in jedem Fall innerhalb der Grundrissfläche liegt.
+Die Gebäudekoordinaten dienen der numerischen Lokalisierung des Gebäudes.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GKODN</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>N-Gebäudekoordinate
+Als geografischer Referenzpunkt gilt im Prinzip die Grundrissmitte des Gebäudes. Bei besonderen Grundrissformen (Winkel, U-Form usw.) wird jedoch darauf geachtet, dass der Referenzpunkt in jedem Fall innerhalb der Grundrissfläche liegt.
+Die Gebäudekoordinaten dienen der numerischen Lokalisierung des Gebäudes.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GKATLANG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Gebäudekategorie Bezeichnung 
+Die im GWR erfassten Gebäude werden nach ihrer vorwiegenden Nutzungsart unterteilt.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GKLASLANG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Gebäudeklasse Bezeichnung
+Die vollständige, im GWR verwendete EUROSTAT-Klassifikation umfasst 26 Gebäudeklassen.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GBAUM</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Baumonat des Gebäudes</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GABBJ</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Abbruchjahr des Gebäudes</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GASTW</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Anzahl Geschosse
+Das Merkmal informiert über die Anzahl Geschosse und Untergeschosse eines Gebäudes, einschliesslich Erdgeschoss. Dach- und Untergeschosse werden nur mitgezählt, sofern sie zumindest teilweise für Wohnzwecke dienen oder geheizt sind.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GSCHUTZRLANG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Zivilschutzraum Bezeichnung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEBF</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Energiebezugsfläche
+Die Energiebezugsfläche (EBF) ist gemäss Definition der SIA-Norm 416/1:2007 die Summe aller ober- und unterirdischen Geschossflächen, die innerhalb der thermischen Gebäudehülle liegen und für deren Nutzung ein Beheizen oder Klimatisieren notwendig ist.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GWAERZH1LANG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Primärer Wärmeerzeuger der Heizung Bezeichnung
+Der Wärmeerzeuger entspricht der Art der technischen Installation, die im Gebäude für die Heizung der Räume genutzt wird.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GWAERSCEH1LANG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Informationsquelle primäre Heizung Bezeichnung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GWAERZH2LANG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Sekundärer Wärmeerzeuger der Heizung Bezeichnung
+Der Wärmeerzeuger entspricht der Art der technischen Installation, die im Gebäude für die Heizung der Räume genutzt wird. Dank den verschiedenen Merkmalen können zwei Wärmeerzeuger für die Heizung registriert werden.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GENH2LANG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Sekundäre Energiequelle der Heizung Bezeichnung
+Gibt die vom Wärmeerzeuger genutzte Hauptenergiequelle an. Dank den verschiedenen Merkmalen können zwei Wärmeerzeuger für die Heizung registriert werden.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GWAERSCEH2LANG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Informationsquelle sekundäre Heizung Bezeichnung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GWAERZW1LANG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Primärer Wärmeerzeuger Warmwasser Bezeichnung
+Der Wärmeerzeuger entspricht der Art der technischen Installation, die im Gebäude für das Aufbereiten von Brauchwarmwasser genutzt wird.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GENW1LANG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Primäre Energiequelle Warmwasser Bezeichnung
+Gibt die vom Wärmeerzeuger genutzte Hauptenergiequelle an.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GWAERSCEW1LANG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Informationsquelle primäre Wasseraufbereitung Bezeichnung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GWAERDATW1</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Aktualisierungsdatum primäre Warmwasseraufbereitung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GWAERDATW2</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Informationsquelle sekundäre Warmwasseraufbereitung Code</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GKLAS</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Gebäudeklasse Code
+Die vollständige, im GWR verwendete EUROSTAT-Klassifikation umfasst 26 Gebäudeklassen.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GSTATLANG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Gebäudestatus Bezeichnung 
+Neben den bestehenden Gebäuden beinhaltet das GWR auch die projektierten, die bewilligten, die im Bau stehenden, die nicht realisierten, die nicht nutzbaren Gebäude und die abgebrochenen.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GAZZI</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Anzahl separate Wohnräume
+Als separate Wohnräume werden die Zimmer für Bewohnerinnen und Bewohner von Gebäuden für Kollektivhaushalte bzw. für gemeinschaftliches Wohnen wie Kliniken, Heime, Internate, Strafanstalten oder Gebäude für touristische Zwecke (GKAT 1040), bezeichnet. Gebäude, die der Beherbergung von Touristen dienen, gehören zur selben Gebäudekategorie (GKAT 1040). Nicht als separate Wohnräume gelten Zimmer innerhalb einer Wohnung, noch anderweitig als bewohnbares Einzelzimmer, die einer Drittperson untervermietet sind.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GWAERZH1</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Primärer Wärmeerzeuger der Heizung Code
+Der Wärmeerzeuger entspricht der Art der technischen Installation, die im Gebäude für die Heizung der Räume genutzt wird.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GENH1LANG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Primäre Energiequelle der Heizung Bezeichnung
+Gibt die vom Wärmeerzeuger genutzte Hauptenergiequelle an.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GWAERZH2</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Sekundärer Wärmeerzeuger der Heizung Code
+Der Wärmeerzeuger entspricht der Art der technischen Installation, die im Gebäude für die Heizung der Räume genutzt wird. Dank den verschiedenen Merkmalen können zwei Wärmeerzeuger für die Heizung registriert werden.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GWAERZW2</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Sekundärer Wärmeerzeuger Warmwasser Code
+Der Wärmeerzeuger entspricht der Art der technischen Installation, die im Gebäude für das Aufbereiten von Brauchwarmwasser genutzt wird. Dank den verschiedenen Merkmalen können zwei Wärmeerzeuger für die Aufbereitung von Brauchwarmwasser erfasst werden.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GWAERZW1</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Primärer Wärmeerzeuger Warmwasser Code
+Der Wärmeerzeuger entspricht der Art der technischen Installation, die im Gebäude für das Aufbereiten von Brauchwarmwasser genutzt wird.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GWAERZW2LANG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Sekundärer Wärmeerzeuger Warmwasser Bezeichnung
+Der Wärmeerzeuger entspricht der Art der technischen Installation, die im Gebäude für das Aufbereiten von Brauchwarmwasser genutzt wird. Dank den verschiedenen Merkmalen können zwei Wärmeerzeuger für die Aufbereitung von Brauchwarmwasser erfasst werden.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GENW2</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Sekundäre Energiequelle Warmwasser Code
+Gibt die vom Wärmeerzeuger genutzte Hauptenergiequelle an. Dank den verschiedenen Merkmalen können zwei Wärmeerzeuger für die Aufbereitung von Brauchwarmwasser erfasst werden.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GENW2LANG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Sekundäre Energiequelle Warmwasser Bezeichnung 
+Gibt die vom Wärmeerzeuger genutzte Hauptenergiequelle an. Dank den verschiedenen Merkmalen können zwei Wärmeerzeuger für die Aufbereitung von Brauchwarmwasser erfasst werden.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GSTAT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Gebäudestatus Code
+Neben den bestehenden Gebäuden beinhaltet das GWR auch die projektierten, die bewilligten, die im Bau stehenden, die nicht realisierten, die nicht nutzbaren Gebäude und die abgebrochenen.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>GWR_STZH_GEBAEUDEEINGAENGE</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Tagesaktueller Bestand der Gebäudeeingänge in der Stadt Zürich.
+Die hier verfügbaren Datensätze beinhalten die **täglich aktualisierten** Bestandesdaten aus dem Gebäude- und Wohnungsregister der Stadt Zürich (GWZ).
+Die Aktualisierung beinhaltet jeweils die Daten des vollendeten Vortages (z.B. am 16.08.2023 werden die Daten des vollendeten 15.08.2023 geliefert). Bis spätestens 12:00 Uhr sind die neuesten Daten verfügbar.</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EGID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Eidgenössischer Gebäudeidentifikator</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DPLZ4</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Postleitzahl</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DOFFADR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Offizielle Adresse</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EDID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Eidgenössischer Eingangsidentifikator</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EGAID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Eidgenössischer Gebäudeadressidentifikator</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ESID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Eidgenössischer Strassenidentifikator</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STRNAME</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Strassenbezeichnung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STRSP</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Strassenbezeichnung Sprache</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STROFFIZIEL</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Strassenbezeichnung offiziell</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STROFFIZIELLANG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Strassenbezeichnung offiziell Bezeichnung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DPLZNAME</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Postleitzahl-Name</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DOFFADRLANG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Offizielle Adresse Bezeichnung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DEXPDAT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Exportdatum</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DEINR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Eingangsnummer Gebäude</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STRSPLANG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Strassenbezeichnung Sprache Bezeichnung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DKODE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>E-Eingangskoordinate
+Als geografischer Referenzpunkt des Eingangs gelten die von der amtlichen Vermessung übermittelten Eingangskoordinaten.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DKODN</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>N-Eingangskoordinate
+Als geografischer Referenzpunkt des Eingangs gelten die von der amtlichen Vermessung übermittelten Eingangskoordinaten.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Geometrie
+Punktdaten mit N-/E-Eingangskoordinaten.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>GWR_STZH_WOHNUNGEN</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Tagesaktueller Wohnungsbestand in der Stadt Zürich.
+Die Koordinatenangaben beziehen sich für jede Wohnung auf deren Gebäudeeingang (EGID + EDID) und liegen entsprechend für n-Wohnungen n-fach übereinander gestapelt vor.
+Die hier verfügbaren Datensätze beinhalten die **täglich aktualisierten** Bestandesdaten aus dem Gebäude- und Wohnungsregister der Stadt Zürich (GWZ).
+Die Aktualisierung beinhaltet jeweils die Daten des vollendeten Vortages (z.B. am 16.08.2023 werden die Daten des vollendeten 15.08.2023 geliefert). Bis spätestens 12:00 Uhr sind die neuesten Daten verfügbar.</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EGID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Eidgenössischer Gebäudeidentifikator</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>WMEHRG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Mehrgeschossige Wohnung Code
+Gibt an, dass die Wohnung über mehrere Stockwerke gebaut ist (Maisonette).</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DEXPDAT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Exportdatum</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EDID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Eidgenössischer Eingangsidentifikator</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>WSTATLANG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Wohnungsstatus Bezeichnung
+Im GWR sind nicht nur bestehende Wohnungen erfasst, sondern auch aufgehobene sowie projektierte, nicht nutzbare, aufgehobene, nicht realisiert bzw. sich im Bau befindende Wohnungen.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>WKCHELANG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Kocheinrichtung Bezeichnung
+Feste Installationen die für die Zubereitung von Mahlzeiten und das Spülen von Geschirr vorbereitet sind.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DKODE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>E-Eingangskoordinate
+Als geografischer Referenzpunkt des Eingangs gelten die von der amtlichen Vermessung übermittelten Gebäudeeingangskoordinaten.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STRNAME</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Strassenbezeichnung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DPLZ4</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Postleitzahl</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Geometrie
+Punktdaten mit N-/E-Eingangskoordinaten.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>WHGNR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Administrative Wohnungsnummer
+Die administrative Wohnungsnummer wird von der kommunalen oder kantonalen Behörde vergeben.
+Die administrative Wohnungsnummer kennzeichnet eine Wohnung innerhalb eines Gebäudes und bleibt bei Mieterwechsel u.dgl. bestehen.
+Sie wird von der Gemeinde vergeben.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EWID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Eidgenössischer Wohnungsidentifikator</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>WSTWK</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Stockwerk Code
+Die Stockwerkangabe bezeichnet das Stockwerk bezogen auf den Eingang des Gebäudes (= Parterre).
+Bei Wohnungen mit mehreren Stockwerken wird das Stockwerk erfasst, auf dem sich der (Haupt-)-Eingang der Wohnung befindet.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>WSTWKLANG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Stockwerk Bezeichnung
+Die Stockwerkangabe bezeichnet das Stockwerk bezogen auf den Eingang des Gebäudes (= Parterre).
+Bei Wohnungen mit mehreren Stockwerken wird das Stockwerk erfasst, auf dem sich der (Haupt-)-Eingang der Wohnung befindet</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>WMEHRGLANG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Mehrgeschossige Wohnung Bezeichnung
+Gibt an, dass die Wohnung über mehrere Stockwerke gebaut ist (Maisonette).</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>WBAUJ</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Baujahr der Wohnung
+Wohnungen in neu erstellten Gebäuden erhalten das Jahr der Fertigstellung des Gebäudes als Baujahr.
+Wenn neue Wohnungen in bestehenden Gebäuden errichtet werden (z. B. Bau einer Wohnung unter dem Dach), zählt das Jahr, in dem der Umbau abgeschlossen wurde, als Baujahr der neuen Wohnung.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>WSTAT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Wohnungsstatus Code
+Im GWR sind nicht nur bestehende Wohnungen erfasst, sondern auch aufgehobene sowie projektierte, nicht nutzbare, aufgehobene, nicht realisiert bzw. sich im Bau befindende Wohnungen.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>WAZIM</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Anzahl Zimmer
+Die Anzahl Zimmer umfasst alle bewohnbaren Räume der Wohnung wie Wohnzimmer, Schlafzimmer usw. Nicht gezählt werden Küche, Badezimmer, Duschen, Toiletten, Abstellräume, Korridore, halbe Zimmer, Veranden sowie zusätzliche separate Wohnräume ausserhalb der Wohnung.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>WAREA</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Wohnungsfläche (in m2)
+Als Wohnungsfläche ist die Summe der Flächen sämtlicher Zimmer, Küchen, Kochnischen, Badezimmer, Toiletten, Abstellräume, Gänge, Veranden usw. einer Wohnung erfasst.
+Zusätzliche separate Wohnräume und bewohnbare Einzelzimmer (z.B. Mansarden), offene Balkone und Terrassen sowie nicht bewohnbare Keller- und Dachgeschossräume fallen bei der Berechnung der Wohnungsfläche ausser Betracht.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DKODN</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>N-Eingangskoordinate
+Als geografischer Referenzpunkt des Eingangs gelten die von der amtlichen Vermessung übermittelten Gebäudeeingangskoordinaten.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DEINR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Eingangsnummer Gebäude</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DPLZNAME</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Postleitzahl-Name</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>WBEZ</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Lage auf dem Stockwerk
+Die Lage auf dem Stockwerk dient dazu, einzelne Wohnungen eines Gebäudes, welche bezüglich der Stockwerkangabe und der Anzahl Zimmer identisch sind, voneinander zu unterscheiden.
+Es kann sich um Angaben wie "Links" / "Mitte" / "Rechts" oder andere eindeutige und beständige Charakteristiken wie "Nord" / "Ost" / "Süd" / "West" handeln.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>WKCHE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Kocheinrichtung Code
+Feste Installationen die für die Zubereitung von Mahlzeiten und das Spülen von Geschirr vorbereitet sind.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>WABBJ</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Abbruchjahr der Wohnung
+Bei aufgehobenen Wohnungen in bestehenden Gebäuden (z. B. Zusammenlegung von zwei Wohnungen) zählt das Jahr, in dem der Umbau abgeschlossen wurde, als Jahr der Aufhebung der betreffenden Wohnungen.
+Wohnungen in abgebrochenen Gebäuden erhalten das Abbruchjahr des Gebäudes als Abbruchjahr, falls sie nicht schon früher im Rahmen eines Umbaus aufgehoben wurden.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:modelType>
+        <che:CHE_MD_modelTypeCode codeList="" codeListValue="FeatureDescription" />
+      </che:modelType>
+    </che:CHE_MD_FeatureCatalogueDescription>
+  </gmd:contentInfo>
+  <gmd:distributionInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_Distribution>
+      <gmd:distributionFormat>
+        <gmd:MD_Format>
+          <gmd:name>
+            <gco:CharacterString>ESRI Shape (.shp)</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>-</gco:CharacterString>
+          </gmd:version>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+      <gmd:distributionFormat>
+        <gmd:MD_Format>
+          <gmd:name>
+            <gco:CharacterString>GeoJSON (.json)</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>-</gco:CharacterString>
+          </gmd:version>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+      <gmd:distributionFormat>
+        <gmd:MD_Format>
+          <gmd:name>
+            <gco:CharacterString>Geopackage (.gpkg)</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>-</gco:CharacterString>
+          </gmd:version>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+      <gmd:distributionFormat>
+        <gmd:MD_Format>
+          <gmd:name>
+            <gco:CharacterString>DXF (.dxf)</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>-</gco:CharacterString>
+          </gmd:version>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+    </gmd:MD_Distribution>
+  </gmd:distributionInfo>
+  <gmd:dataQualityInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:DQ_DataQuality>
+      <gmd:scope>
+        <gmd:DQ_Scope>
+          <gmd:level>
+            <gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" />
+          </gmd:level>
+        </gmd:DQ_Scope>
+      </gmd:scope>
+      <gmd:lineage>
+        <gmd:LI_Lineage />
+      </gmd:lineage>
+    </gmd:DQ_DataQuality>
+  </gmd:dataQualityInfo>
+</che:CHE_MD_Metadata>
+

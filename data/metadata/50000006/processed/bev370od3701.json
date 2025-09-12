@@ -1,0 +1,36 @@
+{
+   "title": "Vornamen der aktuellen Wohnbevölkerung der Stadt Zürich",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bev_bestand_vornamen_jahrgang_geschlecht_od3701",
+   "abstract": "Anzahl Personen der wirtschaftlichen Wohnbevölkerung der Stadt Zürich nach Vorname, Geschlecht und Jahrgang.\nIn diesem Datensatz sind nicht alle Vornamen der Stadt Zürich zu finden. Pro Geschlecht und Vornamen müssen mindestens 10 Fälle vorkommen.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Hinweis:\n\nIn diesem Datensatz sind lediglich diejenigen Vornamen enthalten, die bei mindestens 10 Personen pro Vorname und Geschlecht vorkommen.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Vornamen der aktuellen Wohnbevölkerung der Stadt Zürich",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahrgang (technisch: Jahrgang)",
+                  "description": "Geburtsjahr (num)."
+               },
+               {
+                  "name": "Vorname (technisch: Vorname)",
+                  "description": "Vorname (char)."
+               },
+               {
+                  "name": "Geschlecht (technisch: SexLang)",
+                  "description": "Geschlecht (char). [Werte: weiblich, männlich]."
+               },
+               {
+                  "name": "Anzahl (technisch: AnzBestWir)",
+                  "description": "Anzahl Personen aus der wirtschaftlichen Wohnbevölkerung der Stadt Zürich (num)."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-04-30"
+}

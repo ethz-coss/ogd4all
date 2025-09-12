@@ -1,0 +1,288 @@
+{
+   "title": "Sonderabfallsammlung",
+   "keywords": [
+      "Abfall",
+      "Sammelstelle",
+      "Sonderabfall"
+   ],
+   "metadata_date": "2023-09-08T06:39:26",
+   "updateFrequency": "weekly",
+   "purpose": "An den Sonderabfallsammlungen im Sonderabfall-Mobil entsorgen Sie bis zu 20 Kilogramm Sonderabfall aus Haushalten oder Kleinfirmen mit maximal 3 Mitarbeitenden pro Jahr gratis. Zu Sonderabfall gehört: Akku, asbesthaltiges Material, Autobatterie, Batterie, Chemikalie, Dispersion, Druckerpatrone, Energiesparlampe, Farbe, Feuerlöscher, Gasflasche, Gift, Holzschutzmittel, Lack, Lauge, LED, Leuchtstoffröhre, Lösungsmittel, Medikament, Mineralöl, Pflanzenschutzmittel, Reinigungsmittel, Röntgenbild, Säure, Spraydose, Thermometer.",
+   "abstract": "Mindestens einmal im Jahr kommt ERZ Entsorgung + Recycling Zürich mit dem Sonderabfall-Mobil in Ihr Quartier. Der Geodatensatz zeigt die Standorte des Sonderabfall-Mobils. Wann die nächste Sammlung an diesen Standorten stattfindet, publiziert ERZ auf seiner Internetseite Entsorgungskalender.",
+   "identificationDate": "2019-02-08",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Entsorgung + Recycling Zürich",
+   "contactPerson": "Peter Kreuzer",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Sonderabfallsammlung",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "POI_SONDERABFALL_ATT",
+            "description": "Zusatzinformationen zu den Standorten der Sonderabfallsammlung in der Stadt Zürich",
+            "attributes": [
+               {
+                  "name": "KONTAKT",
+                  "description": "Kontaktinformationen für die Durchführung der Sonderabfallsammlung: Kunden Service Center, Montag bis Freitag, 7 bis 17 Uhr, 044 645 77 77"
+               },
+               {
+                  "name": "POI_ID",
+                  "description": "Identifikation des Objekts in der POI-Verwaltung ('saf' gefolgt von einer vierstelligen Zahl)"
+               },
+               {
+                  "name": "ANNAHMEZEIT",
+                  "description": "Durchführungszeitraum der Sonderabfallsammlung (h bis hh.mm Uhr)"
+               },
+               {
+                  "name": "DATEN",
+                  "description": "Hyperlink zum Entsorgungskalender der Stadt Zürich: http://www.erz.ch/kalender"
+               }
+            ]
+         },
+         {
+            "name": "POI_SONDERABFALL_VIEW",
+            "description": "Standorte der Sonderabfallsammlung in der Stadt Zürich",
+            "attributes": [
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_SA",
+                  "description": "Nicht verwendet (n.a.)"
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_DI",
+                  "description": "Nicht verwendet (n.a.)"
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_MO",
+                  "description": "Nicht verwendet (n.a.)"
+               },
+               {
+                  "name": "ORT",
+                  "description": "Ort der Sonderabfallsammlung: Zürich"
+               },
+               {
+                  "name": "PLZ",
+                  "description": "Postleitzahlgebiet der Stadt Zürich, in dem die Sonderabfallsammlung durchgeführt wird"
+               },
+               {
+                  "name": "PUBLISH_INTERNET",
+                  "description": "Bezeichnet, ob das Objekt publiziert wird (immer 1)"
+               },
+               {
+                  "name": "SUCHEN",
+                  "description": "Schlagwortkatalog: Abfall,abgeben,chemische,entsorgen,Entsorgung,Entsorgungskalender,Haushalte,Quartiersammlungen,sammeln,Sonderabfall,Sonderabfälle"
+               },
+               {
+                  "name": "ZAHLUNGSMITTEL_SCHALTER",
+                  "description": "Nicht verwendet (NULL;NULL;NULL)"
+               },
+               {
+                  "name": "KONTAKT",
+                  "description": "Kontaktangaben der Dienstabteilung für die Durchführung der Sonderabfallsammlung: Kunden Service Center, Montag bis Freitag, 7 bis 17 Uhr, 044 645 77 77"
+               },
+               {
+                  "name": "DATEN",
+                  "description": "Hyperlink zum Entsorgungskalender der Stadt Zürich: http://www.erz.ch/kalender"
+               },
+               {
+                  "name": "BEHINDERTENPARKPLATZ",
+                  "description": "nicht verwendet"
+               },
+               {
+                  "name": "BEMERKUNG",
+                  "description": "Informationen zur Annahme des Sonderabfalls: Gratis Rücknahme bis zu 20 kg pro anliefernde Person für Sonderabfall aus Haushalten: Chemikalien, Dispersion, Entkalker, Farben, Gifte, Holzschutzmittel, Javelwasser, Lacke, Laugen, Lösungsmittel, Medikamente, Pflanzenschutzmittel, Reinigungsmittel mit orangem Gefahrensymbol, Säuren, Spraydosen, Thermometer"
+               },
+               {
+                  "name": "DEP",
+                  "description": "Departement: Tiefbau- und Entsorgungsdepartement (TED)"
+               },
+               {
+                  "name": "EDITOR",
+                  "description": "Benutzerkürzel der Person, welche die Daten aktualisiert hat"
+               },
+               {
+                  "name": "HINDERNISFREIHEIT",
+                  "description": "Informationen zur Zugänglichkeit für Personen, die von einer Behinderung betroffen sind"
+               },
+               {
+                  "name": "INFRASTRUKTUR",
+                  "description": "Nicht verwendet (NULL; NULL)"
+               },
+               {
+                  "name": "ISBETRIEBSFERIEN_GEBAEUDE",
+                  "description": "Nicht verwendet (0)"
+               },
+               {
+                  "name": "ISBETRIEBSFERIEN_SCHALTER",
+                  "description": "Nicht verwendet (0)"
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": "Kategorie des Objekts in der POI-Verwaltung: Sonderabfallsammlung"
+               },
+               {
+                  "name": "MAIL",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "NAME",
+                  "description": "Bezeichnung der genauen Lage, Adressangaben und Zusatzinformationen, an der die Sonderabfallsammlung durchgeführt wird"
+               },
+               {
+                  "name": "NAMENZUS",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_DI",
+                  "description": "Nicht verwendet (n.a.)"
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_DO",
+                  "description": "Nicht verwendet (n.a.)"
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_FR",
+                  "description": "Nicht verwendet (n.a.)"
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_MI",
+                  "description": "Nicht verwendet (n.a.)"
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_MO",
+                  "description": "Nicht verwendet (n.a.)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "Identifikationsnummer des Objekts"
+               },
+               {
+                  "name": "ADR_INTER",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_SO",
+                  "description": "Nicht verwendet (n.a.)"
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_DO",
+                  "description": "Nicht verwendet (n.a.)"
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_FR",
+                  "description": "Nicht verwendet (n.a.)"
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_MI",
+                  "description": "Nicht verwendet (n.a.)"
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_SA",
+                  "description": "Nicht verwendet (n.a.)"
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_SO",
+                  "description": "Nicht verwendet (n.a.)"
+               },
+               {
+                  "name": "POI_ID",
+                  "description": "Identifikationsnummer des Objekts in der POI-Verwaltung ('saf' gefolgt von einer vierstelligen Nummer)"
+               },
+               {
+                  "name": "POSTADRESSE",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "STRASSE",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "TEL",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "TEL2",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "WWW",
+                  "description": "Webseiten-Adresse der Dienstabteilung"
+               },
+               {
+                  "name": "ZAHLUNGSMITTEL_INTERNET",
+                  "description": "Nicht verwendet (NULL;NULL;NULL)"
+               },
+               {
+                  "name": "ZAHLUNGSMITTEL_TELEFON",
+                  "description": "Nicht verwendet (NULL;NULL;NULL)"
+               },
+               {
+                  "name": "ZVV_LABEL",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "ZVV_LINK",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "ANNAHMEZEIT",
+                  "description": "Zeitraum, in dem die Sonderabfallsammlung durchgeführt wird (h bis hh.mm Uhr)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Punktgeometrie"
+               },
+               {
+                  "name": "ADRESSE",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "ADRZUS_INT",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "CCMAIL",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "DA",
+                  "description": "Dienstabteilung: ERZ Entsorgung + Recycling Zürich"
+               },
+               {
+                  "name": "DATUM",
+                  "description": "Datum der Aktualisierung im Format: yyyymmddhhmm"
+               },
+               {
+                  "name": "DATUM_CMS",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "ERFORDERLICHEDOKUMENTE",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "FAX",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "HAUSNUMMER",
+                  "description": "Nicht verwendet"
+               }
+            ]
+         }
+      ]
+   }
+}

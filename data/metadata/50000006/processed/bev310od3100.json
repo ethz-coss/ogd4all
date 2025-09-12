@@ -1,0 +1,40 @@
+{
+   "title": "Todesfälle nach aggregierter Todesursache",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bfs_bevreg_todesursache_seit1974_od3100",
+   "abstract": "Diese Daten beinhalten aggregierte Todesursachen. Die Todesursachen stammen vom Bundesamt für Statistik und wurden mit den Daten des Bevölkerungsregisters der Stadt Zürich verknüpft.\nBitte beachten Sie für das korrekte Verständnis der Daten die unten aufgeführten weiteren Erläuterungen in der Rubrik «Bemerkungen».",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Aggregierte Todesursachen\n\nDie Variable TodesursacheSpezLang umfasst folgende aggregierte Todesursachen:\n\nKreislaufsystem: Folgende Todesursachen werden unter \"Kreislaufsystem\" zusammengefasst: Ischämische Herzkrankheiten, übrige Herzkrankheiten, Hirngefässkrankheiten, Lungenembolie, übrige Kreislaufkrankheiten.\n\nDemenz: Kein Datenaggregat.\n\nKrebskrankheiten: Folgende Todesursachen werden unter \"Krebskrankheiten\" zusammengefasst: Magenkrebs, Dickdarmkrebs, Lungenkrebs, Brustkrebs, Prostatakrebs, Gebärmutterhalskrebs, andere Krebskrankheiten.\n\nUnfälle und Gewalteinwirkungen: Folgende Todesursachen werden unter \"Unfälle und Gewalteinwirkungen\" zusammengefasst: Strassenverkehrsunfälle, andere Unfälle, Selbsttötung, Mord, andere Gewalteinwirkungen.\n\nAtmungsorgane: Folgende Todesursachen werden unter \"Atmungsorgane\" zusammengefasst: Grippe, Pneumonie, Chronische Bronchitis, Asthma, andere Atmungsorgane.\n\nAlle übrigen Todesursachen: Folgende Todesursachen werden unter \"Alle übrigen Todesursachen\" zusammengefasst: Infektiöse Krankheiten, Diabetes mellitus, Alkoholische Leberzirrhose, Harnorgane, Kongenitale Missbildungen, Perinatale Todesursachen, Übrige, Unbekannt.\n\nDemenz als Todesursache\n\nBei Demenz führt der fortschreitende Verlust der Funktionen des Gehirns oft auch zum Ausfall des Atemzentrums oder der Steuerung des Schluckvorgangs, woraus sich eine terminale Lungenentzündung entwickeln kann. Aber auch viele andere Folgekrankheiten entstehen mit dem allgemeinen Abbau der zentralen Lebensfunktionen. Quelle: Bundesamt für Statistik, 2014. Todesursachenstatistik. Sterblichkeit und deren Hauptursachen in der Schweiz, 2012, Seite 2. Neuchâtel.\n\nAllgemein\n\nIn der Todesursachenstatistik ist diejenige Krankheit die Haupttodesursache, welche am Anfang eines Krankheitsverlaufs steht. Die Kausalkette ist ausschlaggebend. Quelle: Bundesamt für Statistik, 2014. Todesursachenstatistik. Sterblichkeit und deren Hauptursachen in der Schweiz, 2012, Seite 2. Neuchâtel.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Todesfälle nach aggregierter Todesursache",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Integer)."
+               },
+               {
+                  "name": "Todesursache aggregiert (technisch: TodesursacheSpezSort_noDM)",
+                  "description": "Todesursache, in sechs Kategorien; siehe Beschreibung unter Bemerkungen (Integer)."
+               },
+               {
+                  "name": "Todesursache aggregiert (technisch: TodesursacheSpezLang_noDM)",
+                  "description": "Todesursache, in sechs Kategorien; siehe Beschreibung unter Bemerkungen (String)."
+               },
+               {
+                  "name": "Todesursache aggregiert (technisch: TodesursacheSpezCd_noDM)",
+                  "description": "Todesursache, in sechs Kategorien; siehe Beschreibung unter Bemerkungen (String)."
+               },
+               {
+                  "name": "Anzahl Todesfälle (technisch: AnzSterWir)",
+                  "description": "Anzahl Todesfälle aus der wirtschaftlichen Wohnbevölkerung (Integer)."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-01-17"
+}

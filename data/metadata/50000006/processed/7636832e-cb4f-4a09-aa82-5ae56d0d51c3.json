@@ -1,0 +1,59 @@
+{
+   "title": "Widmungstafel",
+   "keywords": [
+      "Widmung Persönlichkeit Strasse Namen Archiv"
+   ],
+   "metadata_date": "2021-04-22T05:43:08",
+   "updateFrequency": "annually",
+   "purpose": "Ist die Datengrundlage für den Unterhalt und Neubestellungen der Strassenbenennungsschilder.",
+   "abstract": "Widmungstexte zu den Strassenbenennungen mit den Positionen über die ganze Stadt Zürich",
+   "identificationDate": "2025-02-14",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Tiefbauamt",
+   "contactPerson": "Raphaël Duchoud",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Widmungstafel",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "V_WIDMUNGSTAFEL_GEOSERVER",
+            "description": "Inventar der Widmungstafeln. Werden direkt vom Werkhof Nord gepflegt.",
+            "attributes": [
+               {
+                  "name": "WIDMUNGSTEXT",
+                  "description": "Widmungstext auf Tafel"
+               },
+               {
+                  "name": "STRASSE",
+                  "description": "Strassenname"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Punktgeometrie"
+               },
+               {
+                  "name": "ID1",
+                  "description": "ID"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               }
+            ]
+         }
+      ]
+   }
+}

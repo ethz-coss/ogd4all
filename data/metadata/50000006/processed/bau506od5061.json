@@ -1,0 +1,44 @@
+{
+   "title": "Anzahl Gebäude in Bestand nach Gebäudeart",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bau_best_geb_gebaeudeart_jahr_od5061",
+   "abstract": "Der Datensatz enthält die Anzahl Gebäude in Bestand nach Gebäudeart.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Hinweis\n\nSeit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.\n\nStichtagDatJahr\n\nJahr entspricht dem Stichtag am Jahresende.\n\nGbdArtSSZPubl1Lang\n\nEinfamililenhaus: Einfamilienhaus freistehend oder angebaut\nMehrfamililenhaus: Gebäude mit zwei oder mehr Wohnungen mit ausschliesslicher Wohnnutzung. Enthält auch Wohngebäude für Gemeinschaften und Alterswohnhäuser/-heime.\nWohnhaus mit Geschäftsräumen: Gebäude, das sowohl Nutzflächen als auch eine oder mehrere Wohnungen enthält. Die Wohnungen haben einen Anteil von über 50 Prozent. (Vergleiche Nichtwohngebäude)\nNichtwohngebäude: Gebäude für Dienstleistungsbetriebe, öffentliche Verwaltungen, Bildungsund Gesundheitswesen, Industrie oder Landwirtschaft, auch Parkhäuser und andere. Enthält das Gebäude auch Wohnungen, wird es so lange als Nutzbau mit Wohnungen geführt, wie der Wohnanteil der Nutzfläche unter fünfzig Prozent bleibt; ist der Wohnanteil höher, gilt das Gebäude als Wohnhaus mit Geschäftsräumen.\n\nZeitreihe\n\nDie Anzahl Gebäude für den Bestand sind erst ab 1934 verfügbar.\n\nVariablen mit mehreren Varianten\n\nGewisse Variablen werden in verschiedenen Formen aufgeführt. Die \"Lang\"-Variante beschreibt den Inhalt (z.B. StatZoneLang beschreibt die statistische Zone, mögliche Werte sind Central oder Oberdorf). Die \"Cd\"-Variante kodiert die Variable alphanumerisch, quasi als Kurzform (Central und Oberdorf sind 1104 und 1201). Die \"Sort\"-Variante kodiert die Variable numerisch (Central und Oberdorf sind 5 und 4) und erlaubt eine Sortierung. \"Cd\" und \"Sort\" können auch identisch sein.\n\nGebäude\n\nGebäude sind auf Dauer angelegte, mit dem Boden fest verbundene Bauten. Ein Gebäude gilt als selbständig, wenn es einen eigenen Zugang von aussen hat und wenn zwischen den Gebäuden eine senkrechte vom Erdgeschoss bis zum Dach reichende tragende Trennmauer besteht. Zusammengebaute Gebäude werden nach dem so genannten Trennmauerkriterium unterteilt. Das Trennmauerkriterium gewährleistet eine einheitliche Differenzierung der Gebäude nach ausschliesslich baulichen Kriterien.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Anzahl Gebäude in Bestand nach Gebäudeart",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Numerisch). Entspricht dem Stichtag am Jahresende."
+               },
+               {
+                  "name": "Datenstand (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (P = provisorisch, D = definitiv)"
+               },
+               {
+                  "name": "Gebäudeart (technisch: GbdArtSSZPubl1Sort)",
+                  "description": "Gebäudeart (Numerisch)"
+               },
+               {
+                  "name": "Gebäudeart (technisch: GbdArtSSZPubl1Cd)",
+                  "description": "Gebäudeart (String)"
+               },
+               {
+                  "name": "Gebäudeart (technisch: GbdArtSSZPubl1Lang)",
+                  "description": "Gebäudeart (String)"
+               },
+               {
+                  "name": "Anzahl Gebäude (technisch: AnzGbd)",
+                  "description": "Anzahl Gebäude (Numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-01-08"
+}

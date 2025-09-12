@@ -1,0 +1,77 @@
+{
+   "title": "Behindertenparkplätze",
+   "keywords": [
+      "Behindertenparkplätze",
+      "Rollstuhlparkplätze",
+      "Gehbehinderte",
+      "Behindert",
+      "Behindertenausweis",
+      "Rollstuhl"
+   ],
+   "metadata_date": "2025-02-14T10:46:43",
+   "updateFrequency": "annually",
+   "purpose": "Parkplatzstatistik für Controlling Stadtverkehr 2025, verkehrsplanerische Grundlagedaten",
+   "abstract": "Datensatz umfasst die Parkplätze zur Nutzung mit Parkkarte für Gehbehinderte, alle zwei Jahre auf dem gesamten Stadtgebiet im Rahmen der Parkplatzstatistik erhoben",
+   "identificationDate": "2025-03-18",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Tiefbauamt",
+   "contactPerson": "Raphaël Duchoud",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Behindertenparkplaetze",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "BEHINDERTENPARKPLAETZE_DAV_P",
+            "description": "Die Behinderten-Parkplätze werden täglich aus einem Abzug der Parkplätze aus mapVPM erstellt.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ADRESSE",
+                  "description": "nächstgelegene Adresse"
+               },
+               {
+                  "name": "ART",
+                  "description": "Art = 'Invalid'"
+               },
+               {
+                  "name": "AZIMUT",
+                  "description": "Azimuth von Adresse zu nächstgelegenem Parkplatz"
+               },
+               {
+                  "name": "DISTANZ",
+                  "description": "Distanz zum nächstgelegenen Parkplatz"
+               },
+               {
+                  "name": "GEBPFLICHT",
+                  "description": "0 = nicht gebührenpflichtig, 1 = gebührenpflichtig"
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": "LPU = Längs zur Strasse, QPU = quer zur Strasse"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         }
+      ]
+   }
+}

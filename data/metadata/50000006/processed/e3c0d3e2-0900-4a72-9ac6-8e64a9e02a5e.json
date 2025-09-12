@@ -1,0 +1,272 @@
+{
+   "title": "Klimadaten",
+   "keywords": [
+      "Klima",
+      "Umwelt"
+   ],
+   "metadata_date": "2019-10-24T16:08:19",
+   "updateFrequency": "notPlanned",
+   "purpose": "Grundlagedaten für weitere Untersuchungen und Analysen",
+   "abstract": "Geodaten zum städtischen Klima",
+   "identificationDate": "2011-05-30",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Gesundheits- und Umweltdepartement - Umwelt- und Gesundheitsschutz",
+   "contactPerson": "Rainer Bobst",
+   "referenceSystem": "CH1903+_LV95 (Original:LV03)",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Klimadaten",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "25_Kaltluftproduktionsrate Kanton Zürich",
+            "description": "Rate der mittleren nächtlichen Kaltluftproduktion pro Rasterzelle (Kaltluftvolumen), gegliedert in 4 Intensitätsstufen. Inputdaten für Modellierung Kaltlufttransport.",
+            "attributes": []
+         },
+         {
+            "name": "27_Lokaler Kaltluftstau Kanton Zürich",
+            "description": "Darstellung der Gebiete, bei denen auf Grund der Topographie oder der Siedlungstruktur (Siedlungsrand als Strömungshindernis) die nächtlichen Kaltluftströme gestaut bzw. stark verlangsamt werden (vertikale Austauschprozesse durch Luftschichtug unterdrückt) .",
+            "attributes": []
+         },
+         {
+            "name": "31_Lokaler Kaltlufttransport Kanton Zürich",
+            "description": "Klassifizierung des lokalen Kaltlufttransports über der Rasterzelle, bzw. des mit der benachbarten Rasterzelle pro Zeiteinheit ausgetauschen Kaltuftvolumens in m3 pro m und sec (Volumenstromdichte).",
+            "attributes": []
+         },
+         {
+            "name": "44_Jahresmittel der NO2-Konzentration Stadt Zürich",
+            "description": "Räumliche Verteilung der Stickstoffdioxidbelastung (Jahresmittel). REKLISO-Modell (kalibriert mit Immissionsdaten UGZ).",
+            "attributes": []
+         },
+         {
+            "name": "32_Lokaler Kaltlufttransport Stadt Zürich",
+            "description": "Klassifizierung des lokalen Kaltlufttransports über der Rasterzelle, bzw. des mit der benachbarten Rasterzelle pro Zeiteinheit ausgetauschen Kaltuftvolumens in m3 pro m und sec (Volumenstromdichte).",
+            "attributes": []
+         },
+         {
+            "name": "28_Lokaler Kaltluftstau Stadt Zürich",
+            "description": "Darstellung der Gebiete, bei denen auf Grund der Topographie oder der Siedlungstruktur (Strömungshindernis) die nächtlichen Kaltluftströme gestaut bzw. stark verlangsamt werden (vertikale Austauschprozesse durch Luftschichtug unterdrückt) .",
+            "attributes": []
+         },
+         {
+            "name": "01_Landbedeckung Kanton Zürich",
+            "description": "Primäre Landbedeckungstypen mit Bedeutung für die lokalen Klimabedingungen (Gewässer; Wald; Vegetationsbestandene Freiflächen; vegetationslose, mehrheitlich versiegelte Freiflächen; bebaute Flächen)",
+            "attributes": []
+         },
+         {
+            "name": "Zielsetzung Lufthygiene",
+            "description": "Durchlüftung\n\naktuelle Wirkräume - ungünstige Emissionssituation verbessern\n\npotentielle Wirkräume - günstige Emissionssituation erhalten\n\naktuelle Ausgleichsräume \n\npotentielle Ausgleichsräume",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "GRIDCODE",
+                  "description": null
+               },
+               {
+                  "name": "ID",
+                  "description": null
+               },
+               {
+                  "name": "KLASS",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "Massnahmengebiet 3",
+            "description": "In der Nacht nur gering durch Überwärmung und Luftschadstoffe belastete Gebiete in denen die Grünräume erhalten und der Luftaustausch mit dem Umland gesichert werden soll.",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "RECNUM",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "Durchlüftung",
+            "description": "Priorisierung der Räume in denen auf Grund der lokalklimatischen Situation eine Erhaltung und/oder Verbesserung der thermischen und/oder Durchlüftungsituation angezeigt ist.",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "GRIDCODE",
+                  "description": null
+               },
+               {
+                  "name": "ID",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "03_Arealtypen Kanton Zürich",
+            "description": "Aus den unterschiedlichen Flächenanteilen der Landbedeckungstypenen generierte, für die Rasterzelle \"charakteristische\" Landnutzung. Differenzierung nach Bebauungs- bzw. Vegetationsdichte.",
+            "attributes": []
+         },
+         {
+            "name": "21_Lokale Überwärmung Kanton Zürich",
+            "description": "Abweichung der mittleren nächtlichen Lufttemperatur in Bodennähe vom Mittelwert für das Gesamtgebiet (Gebietsmittel) in Kelvin",
+            "attributes": []
+         },
+         {
+            "name": "23_Lokale Wärmebelastung Kanton Zürich",
+            "description": "Intensitätklassen der lokalen Wärmebelastung. Klassifizierung (Schwellenwert, dT) ist so gewählt, dass räumliche Differenzierung planerisch verwertbar wird (Grundlage für Massnahmenableitung)",
+            "attributes": []
+         },
+         {
+            "name": "Massnahmengebiet 1",
+            "description": "Gebiete mitnächtlich hoher Wärme- und Schadstoffbelastung sowie ungünstiger Durchlüftungssituation, in denen durch bauliche Verdichtung entstehende Defizite mit kompensatorischen Massnahmen bestmöglich ausgeglichen werden sollen.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "RECNUM",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "Massnahmengebiet 2",
+            "description": "In der Nacht mässig durch Überwärmung und Luftschadstoffe belastete Gebiete mit eher ungünstiger Durchlüftungssituation in denen die Verdichtung begrenzt sowie  Grünanteil und Luftleitbahnen erhalten werden sollen.",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "RECNUM",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "Zielsetzung thermische Situation",
+            "description": "Durchlüftung\n\naktuelle Wirkräume - ungünstige thermische Situation verbessern\n\npotentielle Wirkräume - günstige thermische Situation erhalten\n\nAusgleichsräume",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "GRIDCODE",
+                  "description": null
+               },
+               {
+                  "name": "ID",
+                  "description": null
+               },
+               {
+                  "name": "KLASSE",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "KLIMA_AQ_DR_10M_2008_STZH.tif",
+            "description": null,
+            "attributes": []
+         },
+         {
+            "name": "04_Arealtypen Stadt Zürich",
+            "description": "Aus den unterschiedlichen Flächenanteilen der Landbedeckungstypenen generierte, für die Rasterzelle \"charakteristische\" Landnutzung. Differenzierung nach Bebauungs. Bzw. und Vegetationsdichte.",
+            "attributes": []
+         },
+         {
+            "name": "26_Kaltluftproduktionsrate Stadt Zürich",
+            "description": "Rate der mittleren nächtlichen Kaltluftproduktion pro Rasterzelle (Kaltluftvolumen), gegliedert in 4 Intensitätsstufen. Inputdaten für Modellierung Kaltlufttransport.",
+            "attributes": []
+         },
+         {
+            "name": "22_Lokale Überwärmung Stadt Zürich",
+            "description": "Abweichung der mittleren nächtlichen Lufttemperatur in Bodennähe vom Mittelwert für das Gesamtgebiet (Gebietsmittel) in Kelvin",
+            "attributes": []
+         },
+         {
+            "name": "24_Lokale Wärmebelastung Stadt Zürich",
+            "description": "Intensitätklassen der lokalen Wärmebelastung. Klassifizierung (Schwellenwert, dT) ist so gewählt, dass räumliche Differenzierung planerisch verwertbar wird (Grundlage für Massnahmenableitung)",
+            "attributes": []
+         },
+         {
+            "name": "02_Landbedeckung Stadt Zürich",
+            "description": "Primäre Landbedeckungstypen mit Bedeutung für die lokalen Klimabedingungen (Gewässer; Wald; Vegetationsbestandene Freiflächen; vegetationslose, mehrheitlich versiegelte Freiflächen; bebaute Flächen)",
+            "attributes": []
+         },
+         {
+            "name": "34_Mesoskalige Windverhältnisse Stadt Zürich",
+            "description": "Darstellung des übergeordneten (mesoskaligen) Windsystems bei autochthonen Wetterlagen (insb. orographisch bedingte Berg-Talwind-Systeme).",
+            "attributes": []
+         },
+         {
+            "name": "30_Lokaler Oberflächeneinfluss Stadt Zürich",
+            "description": "Art des Einfluss der Oberfläche auf den Luftstrom: mechanisch > Rauhigkeit der Oberfläche > Übreströumng; thermisch > Wärmefluss von der Oberfläche bzw. verzögerte Abgabe der über den Tag aufgenommenen Wärme.",
+            "attributes": []
+         },
+         {
+            "name": "KLIMA_AQ_SR_50M_2008_KTZH.tif",
+            "description": null,
+            "attributes": []
+         },
+         {
+            "name": "33_Mesoskalige Windverhältnisse Kanton Zürich",
+            "description": "Klassifizierung des Anteils des übergeordneten (mesoskaligen) Windsystems bei autochthonen Wetterlagen (insb. orographisch bedingte Berg-Talwind-Systeme).",
+            "attributes": []
+         },
+         {
+            "name": "29_Lokaler Oberflächeneinfluss Kanton Zürich",
+            "description": "Art des Einfluss der Oberfläche auf den Luftstrom: mechanisch > Rauhigkeit der Oberfläche > Übreströumng; thermisch > Wärmefluss von der Oberfläche bzw. verzögerte Abgabe der über den Tag aufgenommenen Wärme.",
+            "attributes": []
+         },
+         {
+            "name": "43_Jahresmittel der NO2-Konzentration Kanton Zürich",
+            "description": "Räumliche Verteilung der Stickstoffdioxidbelastung (Jahresmittel). REKLISO-Modell (kalibriert mit Immissionsdaten UGZ).",
+            "attributes": []
+         }
+      ]
+   }
+}

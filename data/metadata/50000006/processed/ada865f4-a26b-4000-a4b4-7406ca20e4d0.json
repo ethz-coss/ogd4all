@@ -1,0 +1,77 @@
+{
+   "title": "Grünflächen",
+   "keywords": [
+      "Grünflächen",
+      "Zuständigkeit",
+      "Produkte",
+      "Teilprodukte",
+      "Geschäftsbereich Park- und Grünanlagen",
+      "Grün Stadt Zürich"
+   ],
+   "metadata_date": "2022-11-07T08:16:21",
+   "updateFrequency": "weekly",
+   "purpose": "GSZ setzt das Flächenmanagementsystem (FMS) zur Verwaltung von Grünflächen, zur Auskunft von Zuständigkeiten innerhalb von GSZ oder zur Ermittlung von Kennzahlen und Benchmarks ein.\n\nDer Geodatensatz Grünflächen stellt einen vereinfachten Auszug aus dem FMS dar, welcher Auskunft über die Bezeichnungen sowie Produkt- und Teilproduktzuteilungen der vom Geschäftsbereich Park- und Grünanlagen verwalteten oder bewirtschafteten Grünanlagen gibt.",
+   "abstract": "Beschreibt die internen Zuständigkeiten nach Produkten und Erfassungseinheiten in den vom Geschäftsbereich Park- und Grünanlagen GSZ verwalteten oder bewirtschafteten Flächen.",
+   "identificationDate": "2025-03-09",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Grün Stadt Zürich",
+   "contactPerson": "Dieter Halpern",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.36167308488333,
+      "eastBoundLongitude": 8.71238105752889,
+      "southBoundLatitude": 47.15426421794444,
+      "northBoundLatitude": 47.483753735111094
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Gruenflaechen",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "GRUENFLAECHEN",
+            "description": "Pflegeelemente. Eine einzelne erfasste Geometrie und somit die kleinste Flächeneinheit im Flächenmanagementsystem (FMS).",
+            "attributes": [
+               {
+                  "name": "PFLEGEEINHEIT",
+                  "description": null
+               },
+               {
+                  "name": "PFLEGESTUFE",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "Systemattribut"
+               },
+               {
+                  "name": "OBJEKTIDENTIFIKATOR",
+                  "description": "Systemattribut"
+               },
+               {
+                  "name": "PFLEGEAREAL",
+                  "description": "Fasst die räumliche Zusammengehörigkeit der Pflegeelemente mit einem Namen zusammen und ist somit die grösste Flächeneinheit im FMS. Beispiele: Bäckeranlage, Friedhof Eichbühl, Schulhaus Riedtli."
+               },
+               {
+                  "name": "PRODUKT",
+                  "description": "Produkt"
+               },
+               {
+                  "name": "ERFASSUNGSEINHEIT",
+                  "description": "Erfassungseinheit"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Systemattribut"
+               }
+            ]
+         }
+      ]
+   }
+}

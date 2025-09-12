@@ -1,0 +1,60 @@
+{
+   "title": "Median-Einkommen steuerpflichtiger natürlicher Personen nach Jahr, Steuertarif und Stadtkreis.",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/fd_median_einkommen_kreis_od1007",
+   "abstract": "Diese Daten beinhalten Quantilwerte des steuerbaren Einkommens natürlicher Personen, die in der Stadt Zürich primär steuerpflichtig sind. \nBitte beachten Sie für das korrekte Verständnis zu den Daten die unten aufgeführten weiteren Erläuterungen in der Rubrik «Bemerkungen».",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Allgemein:\n\nDie dargestellten Werte beziehen sich auf in der Stadt Zürich aufgrund persönlicher Zugehörigkeit (steuerrechtlicher Wohnsitz oder Aufenthalt) unbeschränkt steuerpflichtige natürliche Personen. Quellenbesteuerte Personen sind von dieser Statistik nur dann erfasst, wenn sie der ergänzenden oder nachträglichen Veranlagung unterliegen. Die Steuerdaten werden jeweils für das Jahr t-3 ausgewertet, es liegen immer die Daten von vor 3 Jahren vor. Nur für diese Daten ist ein ausreichend grosser Anteil an definitiven Veranlagungen verfügbar. Dabei gilt zu vermerken, dass die Daten auch für zurück liegende Jahre laufend revidiert werden, d.h. neue definitive Einschätzungen hinzukommen.\n\nDefinition: Steuerbares Einkommen:\n\nBeim steuerbaren Einkommen handelt es sich um die steuerbaren Bruttoeinkünfte abzüglich den Gewinnungskosten, den allemeinen Abzügen sowie den Sozialabzügen. Die dargestellten Werte beziehen sich auf das steuerbare Einkommen der natürlichen Personen. Das effektive Einkommen ist in der Regel deutlich höher als das steuerbare.\n\nFehlende Werte:\n\nFür weniger als 30 Steuerpflichtige werden keine Werte ausgewiesen.\n\nDefinition: Grundtarif:\n\nDem Grundtarif unterliegen Steuerpflichtige ohne familienrechtliche Unterstützungspflichten.\n\nDefinition: Verheiratetentarif:\n\nDem Verheiratetentarif unterliegen Steuerpflichtige mit familienrechtlichen Unterstützungspflichten. Hierunter fallen Ehepaare in rechtlich und tatsächlich ungetrennter Ehe sowie eingetragene Paare.\n\nQuellbesteuerte:\n\nQuellenbesteuerte Personen sind von dieser Statistik nur dann erfasst, wenn sie der ergänzenden oder nachträglichen Veranlagung unterliegen.\n\nQuantil-Kennwerte:\n\np_25: 25%-Quantil: D.h. der Wert, für den gilt: 25% der Einkommen sind kleiner als das 25%-Quantil, 75% sind grösser.\np_50: Median: D.h. der Wert der die steuerbaren Einkommen in zwei gleich grosse Hälften teilt, d.h. die Hälfte der Bevölkerung hat ein höheres, die andere Hälfte ein tieferes Einkommen.\np_75: 75%-Quantil: D.h. der Wert, für den gilt: 75% der Einkommen sind kleiner als das 75%-Quantil, 25% sind grösser.\n\nWeitere Informationen zu diesen Kennwerten finden sie z.B. bei Wikipedia unter «Quantil».",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Median-Einkommen steuerpflichtiger natürlicher Personen nach Jahr, Steuertarif und Stadtkreis.",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Steuerjahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr, für welches die Steuer eingefordert wurde (Integer)."
+               },
+               {
+                  "name": "Stadtkreis (Sort) (technisch: KreisSort)",
+                  "description": "Stadtkreiscode der aktuellen Wohnadresse (Integer)."
+               },
+               {
+                  "name": "Stadtkreis (Code) (technisch: KreisCd)",
+                  "description": "Stadtkreiscode der aktuellen Wohnadresse (String)."
+               },
+               {
+                  "name": "Stadtkreis (Lang) (technisch: KreisLang)",
+                  "description": "Stadtkreisname der aktuellen Wohnadresse (String)."
+               },
+               {
+                  "name": "Steuertarif Sort (technisch: SteuerTarifSort)",
+                  "description": "Code des Steuertarifs, nach dessen die Steuern berechnet werden (Integer)."
+               },
+               {
+                  "name": "Steuertarif Code (technisch: SteuerTarifCd)",
+                  "description": "Code des Steuertarifs, nach dessen die Steuern berechnet werden (String)."
+               },
+               {
+                  "name": "Steuertarif (technisch: SteuerTarifLang)",
+                  "description": "Bezeichnung des Steuertarifs, nach dessen die Steuern berechnet werden (String)."
+               },
+               {
+                  "name": "Medianwert (technisch: SteuerEinkommen_p50)",
+                  "description": "Medianwert des steuerbaren Einkommens natürlicher Personen in Zürich. In tausend Franken (Integer)."
+               },
+               {
+                  "name": "P25-Wert (technisch: SteuerEinkommen_p25)",
+                  "description": "25%-Quantilwert des steuerbaren Einkommens natürlicher Personen in Zürich. In tausend Franken (Integer)."
+               },
+               {
+                  "name": "P75-Wert (technisch: SteuerEinkommen_p75)",
+                  "description": "75%-Quantilwert des steuerbaren Einkommens natürlicher Personen in Zürich. In tausend Franken (Integer)."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-05-14"
+}

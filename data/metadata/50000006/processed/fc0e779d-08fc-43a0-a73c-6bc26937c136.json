@@ -1,0 +1,176 @@
+{
+   "title": "Quartiere (basierend auf Vermessungsbezirken)",
+   "keywords": [
+      "Gebietseinteilungen",
+      "Quartiere",
+      "Stadtquartiere",
+      "Vermessungsbezirk"
+   ],
+   "metadata_date": "2024-06-18T14:02:18",
+   "updateFrequency": "fortnightly",
+   "purpose": "Die Administrativen Einteilungen dienen den Dienststellen der Stadt Zürich als Grundlage für die verwaltungsinternen Aufgaben.",
+   "abstract": "Quartiere (basierend auf Vermessungsbezirken)",
+   "identificationDate": "2025-03-17",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Geomatik + Vermessung",
+   "contactPerson": "André Graf",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Quartiere__basierend_auf_Vermessungsbezirken_",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "VERMESSUNGSBEZIRK",
+            "description": "Vermessungsbezirke",
+            "attributes": [
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "KUERZEL",
+                  "description": "Kuerzel des Vermessungsbezirkes"
+               },
+               {
+                  "name": "GVZNUMMER",
+                  "description": "GVZ-Nummer des Vermessungsbezirkes"
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": "Fremdschlüssel für Verbindung zur Tabelle VBezirkeNachf. Diese Tabelle ist im Geoserver nicht sichtbar."
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "NAME",
+                  "description": "Name des Vermessungsbezirkes, zwingend + eindeutig"
+               }
+            ]
+         },
+         {
+            "name": "VERWALTUNGSQUARTIERE",
+            "description": "Verwaltungsquartiere",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": "Name des Verwaltungsbezirkes, zwingend + eindeutig"
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": "Fremdschlüssel für Verbindung zur Tabelle VeQuartierNachf. Diese Tabelle ist im Geoserver nicht sichtbar"
+               },
+               {
+                  "name": "KUERZEL",
+                  "description": "Kürzel des Verwaltungsbezirkes"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               }
+            ]
+         },
+         {
+            "name": "ADM_VERMBEZIRKE_BESCHR_P",
+            "description": "Beschriftungspunkte der Vermessungsbezirke",
+            "attributes": [
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "HALI",
+                  "description": "Horizontaler Versatz zum Ursprungspunkt; undefiniert = Center"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ORI",
+                  "description": "Rotation der Beschriftung; undefiniert = 100.0; Masseinheit ist Gon."
+               },
+               {
+                  "name": "VALI",
+                  "description": "Vertikaler Versatz zum Ursprungspunkt; undefiniert = Half"
+               },
+               {
+                  "name": "KUERZEL",
+                  "description": "Kürzel des Vermessungsbezirkes"
+               },
+               {
+                  "name": "NAME",
+                  "description": "Name des Vermessungsbezirkes, zwingend + eindeutig"
+               }
+            ]
+         },
+         {
+            "name": "ADM_VERWALTUNGSQUARTIERE_BES_P",
+            "description": "Beschriftungspunkte der Verwaltungsquartiere",
+            "attributes": [
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": "Name des Verwaltungsbezirkes, zwingend + eindeutig"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "HALI",
+                  "description": "Horizontaler Versatz zum Ursprungspunkt; undefiniert = Center"
+               },
+               {
+                  "name": "KUERZEL",
+                  "description": "Kürzel des Verwaltungsbezirkes"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ORI",
+                  "description": "Rotation der Beschriftung; undefiniert = 100.0; Masseinheit ist Gon."
+               },
+               {
+                  "name": "VALI",
+                  "description": "Vertikaler Versatz zum Ursprungspunkt; undefiniert = Half"
+               }
+            ]
+         }
+      ]
+   }
+}

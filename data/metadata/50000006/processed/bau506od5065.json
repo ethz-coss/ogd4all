@@ -1,0 +1,48 @@
+{
+   "title": "Anzahl Wohnungen durch Neubau und Abbruch nach Zimmerzahl",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bau_neubau_abbruch_whg_zizahl_jahr_od5065",
+   "abstract": "Der Datensatz enthält die Anzahl Wohnungen durch Neubau und Abbruch nach Zimmerzahl.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Hinweis\n\nSeit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.\n\nStichtagDatJahr\n\nJahr entspricht der ganzen Jahresperiode.\n\n1-Zimmer-Wohnungen:\n\nBis 1992 wurden Apartments als Einzelzimmer (separate Wohnräume) gezählt. Ab 1993 gelten sie als 1-Zimmer-Wohnungen, wenn sie eine Küche oder Kochnische enthalten (Wohnungsdefinition gemäss Bundesamt für Statistik).\n\nZeitreihe:\n\nDie Anzahl Gebäude durch Abbruch sind erst ab 1931 verfügbar.\n\nStatistische Wohnung\n\nAls statistische Wohnung zählen bestehende Wohnungen, welche über eine Kocheinrichtung verfügen und zu Wohnzwecken (keine zweckentfremdeten Wohnungen) verwendet werden.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Anzahl Wohnungen durch Neubau und Abbruch nach Zimmerzahl",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Numerisch). Entspricht dem Stichtag am Jahresende."
+               },
+               {
+                  "name": "Datenstand (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (Integer)"
+               },
+               {
+                  "name": "Anzahl Zimmer der Wohnung (technisch: AnzZimmerLevel3Sort_noDM)",
+                  "description": "Anzahl Zimmer der Wohnung (Numerisch)"
+               },
+               {
+                  "name": "Anzahl Zimmer der Wohnung (technisch: AnzZimmerLevel3Cd_noDM)",
+                  "description": "Anzahl Zimmer der Wohnung (Integer)"
+               },
+               {
+                  "name": "Anzahl Zimmer der Wohnung (technisch: AnzZimmerLevel3Lang_noDM)",
+                  "description": "Anzahl Zimmer der Wohnung (String)"
+               },
+               {
+                  "name": "Anzahl fertiggestellte statistische Wohnungen (technisch: AnzNeubauWhg_noDM)",
+                  "description": "Anzahl fertiggestellte statistische Wohnungen (Numerisch)"
+               },
+               {
+                  "name": "Anzahl abgebrochene statistische Wohnungen (technisch: AnzAbbruchWhg_noDM)",
+                  "description": "Anzahl abgebrochene statistische Wohnungen (Numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-01-08"
+}

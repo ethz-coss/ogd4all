@@ -1,0 +1,76 @@
+{
+   "title": "Gebäudebrüter",
+   "keywords": [
+      "Lebensraum",
+      "Schutz",
+      "Infrastrucktur",
+      "Inventur",
+      "Natur",
+      "Fauna",
+      "Bauberatung",
+      "Mauer",
+      "Naturschutz",
+      "Schutz"
+   ],
+   "metadata_date": "2025-01-27T14:42:28",
+   "updateFrequency": "irregular",
+   "purpose": "Der Datenbestand dient einerseits der homogenen Führung des Gebäudebrüter Inventars, andererseits ist er von Bedeutung für die Beratung bei Bauvorhaben an Gebäuden mit Nistplatzstandorten. Mit dem Inventar können Fragen zur Population von Gebäudebrütern in der Stadt Zürich und deren Verhalten beantwortet werden. Damit, dass die Daten zur Bauberatung einsichtig sind, dient das Inventar als Schutzmassnahme gegen die Zerstörung von Nistplatzstandorten.",
+   "abstract": "2 Themen:Inventar Gebäudebrüter-> Beobachtung von Nistplatztstandorten der Vogelarten Turmfalke, Mauersegler, Alpensegler, Mehlschwalbe, Schleiereule, Wanderfalke und Rauchschwalbe.\n\nBauberatung-> Gebäuderenovationen o. Umbauten an Gebäuden mit Nistplatzstandorten.",
+   "identificationDate": "2025-02-03",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Grün Stadt Zürich",
+   "contactPerson": "Muriel Perron",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Gebaeudebrueter",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "GEBAEUDEBRUETER_INVENTAR",
+            "description": "Automatisch generierte Version aus dem Gebäudebrüter Original-Datenbestand. Die Originaldaten werden als Punkte auf die Geometrie von Gebäuden (Amtliche Vermessung) gesetzt. Diese Version überträgt die Information der Original-Punktdaten auf Polygon-Geometrie der Gebäude der Amtlichen Vermessung (nur Gebäude mit mindestens einem Inventar-Eintrag sind enthalten). Aus den Originaldaten werden nur die Inventar-Einträge übernommen, die Bauberatung wird herausgefiltert.\n\n\n\nDie Version wird nur dem Fachbereich Naturschutz zur Verfügung gestellt und enthält mehr Information als die GSZ interne Version",
+            "attributes": [
+               {
+                  "name": "ADRESSE",
+                  "description": "An welcher Adresse (oder Adressen) steht das betreffende Gebäude?"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "ESRI Geometrietyp Point"
+               },
+               {
+                  "name": "KSO_CODE",
+                  "description": "Alter Identifikator für ein Objekt mit Nistplätzen. Beginnt mit dem Kürzel OR- oder KSO- und endet mit einer Zahl, welche die Lokalisation des Objektes vereinfachen soll. Die KSO-Codes kennzeichnen Objekte, welche KSO Status haben. Die Werte sind übernommen worden, müssen aber nicht mehr systematisch für neue Inventar-Einträge erhoben werden."
+               },
+               {
+                  "name": "KSO_OBJEKT",
+                  "description": "Handelt es sich bei betreffendem Gebäude um ein KSO-Objekt (aufgrund der Gebäudebrüter-Nistplätze)?"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI Identifikationsnummer (Systemvorgabe)"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "Interlis/Geomedia Identifikationsnummer (Systemvorgabe)"
+               },
+               {
+                  "name": "VOGELARTEN",
+                  "description": "Aufzählung der beobachteten Gebäudebrüter."
+               }
+            ]
+         }
+      ]
+   }
+}

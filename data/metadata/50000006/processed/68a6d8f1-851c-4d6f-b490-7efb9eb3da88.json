@@ -1,0 +1,98 @@
+{
+   "title": "Stillgewaesserinventar",
+   "keywords": [
+      "Bauberatung",
+      "Baukoordination",
+      "Natur",
+      "Fauna",
+      "Biodiversität",
+      "Schutz",
+      "Artenschutz",
+      "Amphibien",
+      "Libellen",
+      "Gewässer",
+      "Geschiebesammler",
+      "Geschiebefang",
+      "Wasserbecken",
+      "Biotop",
+      "Teich",
+      "Fliessgewässer"
+   ],
+   "metadata_date": "2024-06-06T06:36:24",
+   "updateFrequency": "asNeeded",
+   "purpose": "Stillgewässer sind aufgrund ihrer hohen Biodiversität von grosser Bedeutung für den Naturschutz. Besonders wertvoll sind Gewässer mit den Leitarten Amphibien und/oder Libellen. Solche Stillgewässer wirken meist auch anziehend auf Erholungssuchende. Stillgewässerverluste sollen minimiert und wenn immer möglich kompensiert werden. Für deren Erhalt müssen Stillgewässer regelmässig gepflegt und von Zeit zu Zeit saniert werden. \n\nDer Datensatz dient als Planungsgrundlage für verschiedene Tätigkeiten: Bestimmung und Priorisierung der Pflegeeingriffe, Förderung des Biotopverbunds, Steuerung der Erholungsnutzung, Beurteilung von Baugesuchen und -Projekten (Baukoordination). Inwiefern und in welchem Umfang Massnahmen erforderlich sind, wird im Einzelfall geprüft.",
+   "abstract": "Inventar aller bekannten Weiher, Wasserbecken, Geschiebefänge und Staubereiche, wo mit Amphibien- und/oder Libellenvorkommen gerechnet wird. Die Liste ist im GSZ sowie ERZ Zuständigkeitsbereich abschliessend, nicht aber im restlichen Siedlungsgebiet (insbesondere Privatflächen).",
+   "identificationDate": "2020-12-10",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Grün Stadt Zürich",
+   "contactPerson": "Pascale Contesse",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Stillgewaesserinventar",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "STILLGEWAESSERINVENTAR",
+            "description": "Inventar aller bekannten Weiher, Wasserbecken, Geschiebefänge und Staubereiche, wo mit Amphibien- und/oder Libellenvorkommen gerechnet wird. Die Liste ist im GSZ sowie ERZ Zuständigkeitsbereich abschliessend, nicht aber im restlichen Siedlungsgebiet (insbesondere Privatflächen).",
+            "attributes": [
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": "Eindeutige Namensgebung: Der Unterhaltstyp ist integriert (z.B. Weiher, Gartenteich, Wasserbecken, Geschiebefang, etc.)."
+               },
+               {
+                  "name": "EIGENTUM",
+                  "description": "Flächeneigentum gemäss Eigentumskategorien."
+               },
+               {
+                  "name": "UNTERHALT",
+                  "description": "Zuständigkeit gemäss Flächenmanagement und Eigentumskategorien."
+               },
+               {
+                  "name": "LEITART",
+                  "description": "Lebensgemeinschaft von: Amphibien und/oder Libellen, unbestimmt, - (erloschener Standort)."
+               },
+               {
+                  "name": "OBJEKT_NR",
+                  "description": "SGI-XX.XX: Eindeutige Objektnummer analog KSO und KSG (Kommunale Schutzobjekte). Der Code bestehend aus SGI (Stillgewässerinventar), Zahlen 1-58 vor Punkt (Administrative Einteilung in Rechtecke im Übersichtsplan Stadt Zürich), Zahlen 1-x nach Punkt (Nummerierung der Objekte im Rechteck x)."
+               },
+               {
+                  "name": "PRIORISIERUNG",
+                  "description": "Priorisierungsgrad der Pflege der Objekte aufgrund ihrer Wertigkeit. Prio 1-4: 1 (sehr hoch), 2 (hoch), 3 (mittel), 4 (tief)."
+               },
+               {
+                  "name": "BEWERTUNG",
+                  "description": "Wertigkeit der Objekte: Sehr wertvoll, wertvoll, bemerkenswert, entwicklungsfähig. Die Auswertung über Naturwertindex und Fauna-Vorkommen erfolgte in GIS mit einem Puffer von 25m um die Gewässer."
+               },
+               {
+                  "name": "STATUS",
+                  "description": "Übersicht zum Status (inventarisiert, geschützt) der Objekte: BLN (Bundesinventar), SVO (Kantonsebene), öffentliche Fliessgewässer (Kantonsebene), aktiver Wasserrechtsweiher (Kantonsebene), KSO und KSG (Kommunale Schutzobjekte), GDP (Kommunale Gartendenkmalpflege)."
+               },
+               {
+                  "name": "TYP",
+                  "description": "Objekttyp: Ablassbar, Geschiebefang, Permanent, Strukturreich, Temporär"
+               },
+               {
+                  "name": "FISCHE",
+                  "description": "Vorkommen: Ja, Unklar, kein Eintrag"
+               },
+               {
+                  "name": "ZUSTAND",
+                  "description": "Zustand: bestehendes Gewässer, erloschenes Gewässer, leeres Wasserbecken"
+               }
+            ]
+         }
+      ]
+   }
+}

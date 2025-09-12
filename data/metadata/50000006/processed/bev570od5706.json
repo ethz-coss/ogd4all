@@ -1,0 +1,56 @@
+{
+   "title": "Umzüge innerhalb der Stadt nach Stadtquartier (alt, neu), Alter, Geschlecht und Herkunft",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bev_umzuege_jahr_quartier_alter_geschlecht_herkunft_od5706",
+   "abstract": "Anzahl Umzüge innerhalb der Stadt nach Stadtquartier (alt, neu), Alter, Geschlecht und Herkunft.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Datenstand\n\nBevölkerungsszenarien: Die vorliegenden Daten dienen als Inputdaten für die Bevölkerungsszenarien.\n\nNur Umzüge über Quartiergrenze\n\nQuartiergrenzen: Nur Umzüge über Quartiergrenze; also ohne die Umzüge innerhalb dem gleichen Quartier.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Umzüge innerhalb der Stadt nach Stadtquartier (alt, neu), Alter, Geschlecht und Herkunft",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: EreignisDatJahr)",
+                  "description": "Jahr (Integer)."
+               },
+               {
+                  "name": "Stadtquartier (alt, also vor dem Umzug) (technisch: QuarBisherCd)",
+                  "description": "Stadtquartier (alt, also vor dem Umzug), Code (String)."
+               },
+               {
+                  "name": "Stadtquartier (alt, also vor dem Umzug) (technisch: QuarBisherLang)",
+                  "description": "Stadtquartier (alt, also vor dem Umzug), Name (String)."
+               },
+               {
+                  "name": "Stadtquartier (neu, also nach dem Umzug) (technisch: QuarCd)",
+                  "description": "Stadtquartier (neu, also nach dem Umzug), Code (String)."
+               },
+               {
+                  "name": "Stadtquartier (neu, also nach dem Umzug) (technisch: QuarLang)",
+                  "description": "Stadtquartier (neu, also nach dem Umzug), Name (String)."
+               },
+               {
+                  "name": "Vollendetes Alter (Altersjahr). (technisch: AlterVCd)",
+                  "description": "Vollendetes Alter (String)."
+               },
+               {
+                  "name": "Geschlecht (technisch: SexCd)",
+                  "description": "Geschlecht, Code (String), 1 = männlich, 2 = weiblich."
+               },
+               {
+                  "name": "Herkunft (technisch: HerkunftCd)",
+                  "description": "Herkunft, Code (String), 1 = Schweizer/-in, 2 = Ausländer/-in."
+               },
+               {
+                  "name": "Anzahl Umzüge innerhalb der Stadt (technisch: AnzUmzuWir)",
+                  "description": "Anzahl Umzüge innerhalb der Stadt (Integer)."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-03-10"
+}

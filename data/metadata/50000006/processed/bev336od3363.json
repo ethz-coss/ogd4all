@@ -1,0 +1,48 @@
+{
+   "title": "Bevölkerung und Anzahl Nationalitäten nach Stadtquartier",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bev_bestand_jahr_anz_nationen_quartier_od3363",
+   "abstract": "Anzahl unterschiedliche Staatsangehörigkeiten und wirtschaftliche Wohnbevölkerung der Stadt Zürich nach Staatsangehörigkeit, Statistischem Stadtquartier und Jahr.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Hinweis:\n\nDie Geodaten zu den Statistischen Stadtquartieren finden Sie unter diesem Link auf dem Open-Data-Katalog.\n\nSerbien, Montenegro, Kosovo:\n\nDie Staaten Serbien, Montenegro und Kosovo wurden bis im Jahr 2009 zusammengefasst. Ab dem Jahr 2010 sind sie getrennt ausgewiesen.\n\nNordmazedonien\n\nAb dem 13.02.2019 heisst Mazedonien neu Nordmazedonien. Für Bewegungen bis vor dem 13.02.2019 wird Mazedonien als Staatsangehörigkeit verwendet. Danach nur noch Nordmazedonien. Ab dem Jahresendbestand 2019 wird nur Nordmazedonien verwendet.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Bevölkerung und Anzahl Nationalitäten nach Stadtquartier",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Ereignisjahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr"
+               },
+               {
+                  "name": "Stadtquartier (Sort) (technisch: QuarSort)",
+                  "description": "Offizielle ID des Statistischen Stadtquartiers (Numerisch, 8 Zeichen lang)"
+               },
+               {
+                  "name": "Stadtquartier (Code) (technisch: QuarCd)",
+                  "description": "Offizielle ID des Statistischen Stadtquartiers (CHAR, mit führender 0 bei zweistelligen Codes, 200 Zeichen lang)"
+               },
+               {
+                  "name": "Stadtquartier (lang) (technisch: QuarLang)",
+                  "description": "Name des Statistischen Stadtquartiers (CHAR, 200 Zeichen lang)"
+               },
+               {
+                  "name": "Datenstand (technisch: DatenstandCd)",
+                  "description": "Datenstand"
+               },
+               {
+                  "name": "Wirtschaftliche Bevölkerung (technisch: AnzBestWir)",
+                  "description": "Anzal Personen aus der wirtschaftlichen Wohnbevölkerung"
+               },
+               {
+                  "name": "Anzahl Nationalitäten (technisch: AnzNat)",
+                  "description": "Anzahl vorkommende Nationalitäten in der Wohnbevölkerung. Ohne Staatenlose oder wo der Heimatstaat unbekannt ist."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-03-05"
+}

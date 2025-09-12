@@ -1,0 +1,52 @@
+{
+   "title": "Geburten und Geburtenrate nach Statistischer Zone",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bev_geburten_jahr_geburtenrate_quartier_statz_od4022",
+   "abstract": "Geburtenrate und Anzahl Lebendgeborene nach Statistischem Stadtquartier, Statistischer Zone und Jahr.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Definitionen:\n\nDie  Geburtenrate oder rohe Geburtenziffer bezieht die Lebendgeborene in einem bestimmten Kalenderjahr auf die Wohnbevölkerung (hier: Jahresendbestand der wirtschaftlichen Wohnbevölkerung). Der Indikator wird als Anzahl der Lebendgeborenen pro 1000 Einwohnerinnen und Einwohner ausgedrückt. \n\nBemerkung:\n\nEs werden nur Geburten von in der Stadt Zürich gemeldeten Neugeborenen gezählt. Der Geburtsort wird nicht berücksichtigt. Dies führt oft zur Verwirrung, da oft davon ausgegangen wird, dass mit den Geburten alle in städtischen Spitälern geborene Kinder gezählt werden.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Geburten und Geburtenrate nach Statistischer Zone",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Daten gültig per Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr. Zeitpunkt entspricht dem Ende des Jahres."
+               },
+               {
+                  "name": "Statistische Zone (sort) (technisch: StatZoneSort)",
+                  "description": "Offizielle nummerische ID der Statistischen Zone an der aktuellen Wohnadresse (Typ: Integer)"
+               },
+               {
+                  "name": "Statistische Zone (lang) (technisch: StatZoneLang)",
+                  "description": "Name der Statistischen Zone der aktuellen Wohnadresse (Typ: String)."
+               },
+               {
+                  "name": "Stadtquartier (Sort) (technisch: QuarSort)",
+                  "description": "Offizielle nummerische ID der Statistischen Stadtquartiere (Typ: Numerisch)."
+               },
+               {
+                  "name": "Stadtquartier (lang) (technisch: QuarLang)",
+                  "description": "Namen der Statistischen Stadtquartiere (Typ: String)"
+               },
+               {
+                  "name": "Anzahl Wbev (technisch: AnzBestWir)",
+                  "description": "Anzahl Personen aus der wirtschaftlichen Wohnbevölkerung."
+               },
+               {
+                  "name": "Anzahl Geburten (technisch: AnzGebuWir)",
+                  "description": "Anzahl Lebendgeborene nach wirtschaftlicher Bevölkerungsdefinition. Missing value ist \" \"."
+               },
+               {
+                  "name": "geburtenrate_promille (technisch: Geburtenrate_promille)",
+                  "description": "Geburtenrate in Promille per Statistischer Zone. Missing value ist \" \". Wer die Geburtenrate pro Statistischem Quartier berechnen will, muss die oben erwähnte Formel verwenden."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-03-05"
+}

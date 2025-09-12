@@ -1,0 +1,368 @@
+{
+   "title": "Gasleitungen Energie 360° AG",
+   "keywords": [
+      "Erdgas"
+   ],
+   "metadata_date": "2025-01-29T13:59:29",
+   "updateFrequency": "continual",
+   "purpose": "Richtlinien zur Verwendung des Dienstes.",
+   "abstract": "Verwendung von Gas. Werkleitungsdaten aus dem GeoServer der Stadt Zürich",
+   "identificationDate": "2025-03-14",
+   "identificationDateType": "revision",
+   "responsibleParty": "Energie 360° AG - - - -",
+   "contactPerson": "Peter Schneider",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "GAS_ARMATUR_P",
+            "description": "Armaturen (unbekannt, Absperrorgan, Zaehler, Einbauteil, Entlueftung)",
+            "attributes": [
+               {
+                  "name": "ART_SUBART_TXT",
+                  "description": "GASS_SUBART_ARMATUR Text"
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": "GASS_ART_ARMATUR Text"
+               },
+               {
+                  "name": "EGZ_OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit. (Original Erdgas System)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der Gas Armaturen"
+               },
+               {
+                  "name": "SYMBOLORI",
+                  "description": "Rotation des Symbols; undefiniert = 100.0; Masseinheit ist Gon."
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ART",
+                  "description": "GASS_ART_ARMATUR =(unbekannt, Absperrorgan, Zaehler, Einbauteil, Entlueftung)"
+               },
+               {
+                  "name": "ART_SUBART",
+                  "description": "GASS_SUBART_ARMATUR =(unbekannt, Absperrorgan (unbekannt, Schieber, Schieber_mit_Spuelstutzen, Schieber_mit_Umgang, Anbohrschieber, Anbohrschieber_oben, Anbohrschieber_seitlich, Schieber_mit_Entlueftung, Schieber_mit_Getriebe, Schieber_mit_Ausblasleitungen, Klappe, Klappe_mit_Motor, Rueckschlagklappe, Hahn_unbekannt, Kugelhahn, Ventil), Zaehler (unbekannt, Zaehler), Einbauteil (unbekannt, Stroemungswaechter , Stroemungswaechter_ET, Stroemungswaechter_Friastop, Kompensator, Druckreduzierventil, Drucksonde, Molchschleusenklappe), Entlueftung (unbekannt, Lueftung, Lueftung_auf_Rohr, Lueftung_auf_Formstueck_Armatur, Ausblaeser, Abblasanlage), Schieber_mit_1_Messstutzen, Schieber_mit_Mess_und_Spuelstutzen, Schieber_mit_2_Messstutzen, Schieber_mit_versetztem_Antrieb)"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               }
+            ]
+         },
+         {
+            "name": "GAS_BAUMASSNAHMEN_A",
+            "description": "Baumasnahmen Fläche (Futterrohr, Schutzrohr, Relining, ¿)",
+            "attributes": [
+               {
+                  "name": "ART_TXT",
+                  "description": "GASS_ART_BAUMASSNAHMEN Text"
+               },
+               {
+                  "name": "BMN_REF",
+                  "description": "Fremdschlüssel für Verbindung zur Tabelle GAS_BAUMASSNAHMEN"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der Baumassnahmen"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ART",
+                  "description": "GASS_ART_BAUMASSNAHMEN =(unbekannt, Futterrohr, Schutzrohr, Huellrohr, Felsschutzmatte, Mantelrohr, Schutzkanal, Druckverteilplatte, Rohrverlattung, Rohrbeschwerung, einbetonierte_Leitung, unterbetonierte_Leitung, ueberbetonierte_Leitung, Warngitter, Rohrfixation, Wasserfangschirm, Betonriegel, Kunststoffplatte, Tunnel_Stollen, Kabelschutzrohr_PVC, andere, Relining)"
+               },
+               {
+                  "name": "EGZ_OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit. (Original Erdgas System)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               }
+            ]
+         },
+         {
+            "name": "GAS_LEITUNG_L",
+            "description": "Gasleitung",
+            "attributes": [
+               {
+                  "name": "DURCHMESSER",
+                  "description": "GASS_DURCHMESSER =(unbekannt, d0, d32, d40, d50, d60, d60_3, d63, d65, d70, d70_65, d75, d76_1, d80, d82_5, d88_9, d90, d100, d110, d114_3, d120, d125, d140, d150, d160, d168_3, d180, d200, d219_1, d225, d250, d273_0, d280, d300, d315, d323_9, d350, d355, d400, d406_6, d450, d500, d600, d700, d750, d1650, d1_2_Zoll, d3_4_Zoll, d1_Zoll, d5_4_Zoll, d1_1_2_Zoll, d2_Zoll, d2_1_2_Zoll, d3_Zoll, d4_Zoll, d20, d25, d30, d175, d220, d375, d560, d800, d900, d1000); Norm INTEGER4"
+               },
+               {
+                  "name": "DURCHMESSER_MM",
+                  "description": "Durchmesser (mm)"
+               },
+               {
+                  "name": "DURCHMESSER_TXT",
+                  "description": "GASS_DURCHMESSER Text"
+               },
+               {
+                  "name": "EGZ_OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit. (Original Erdgas System)"
+               },
+               {
+                  "name": "FUNKTION_TXT",
+                  "description": "GASS_FUNTKION_LTG Text"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der Gasleitung"
+               },
+               {
+                  "name": "MATERIAL_TXT",
+                  "description": "GASS_MATERIAL_LTG Text"
+               },
+               {
+                  "name": "NETZNAME",
+                  "description": "GASS_NETZNAME =   (unbekannt, Niederdruck, Mitteldruck, Hochdruck, Hochdruck_bis_25_bar, Hochdruck_groesser_25_bar)"
+               },
+               {
+                  "name": "NETZNAME_TXT",
+                  "description": "GASS_NETZNAME Text"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": "GASS_STATUS Text"
+               },
+               {
+                  "name": "MATERIAL",
+                  "description": "GASS_MATERIAL_LTG = (unbekannt, Guss (unbekannt, Grauguss, Guss_duktil, Ahrens_Guss), Kunststoff (Epoxidharz, Polypropylen, Polyvinilchlorid_unbekannt, Polyvinilchlorid_GFK, Polyvinilchlorid_PVC_hart, Polyvinilchlorid_PVC_U, Polyvinilchlorid_andere, Polyethylen_unbekannt, Polyethylen_HDPE, Polyethylen_MDPE, Polyethylen_LDPE, Polyethylen_andere, unbekannt), Stahl (unbekannt, Mannesmann, nicht_rostbestaendig, rostbestaendig, verzinkt),\n\n  \t\tandere (Beton, Beton_armiert, Zement))"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "STATUS",
+                  "description": "GASS_STATUS = (unbekannt, in_Betrieb, ausser_Betrieb, Reserve, tot, Berechnungsvariante, geplant, Projekt, provisorisch, in_Ausfuehrung)"
+               },
+               {
+                  "name": "FUNKTION",
+                  "description": "GASS_FUNKTION_LTG =(unbekannt, Ferngasleitung, Hauptleitung, Versorgungsleitung, Entlueftungsleitung, Interne_Leitung, Bau_Gasanschluss, Zubringerleitung, Anschlussleitung (normal, gemeinsam), regionales_Transportnetz, lokales_Transportnetz, Stummelleitung, Lampenleitung, Tankstellenleitung)"
+               }
+            ]
+         },
+         {
+            "name": "GAS_MATDURCH_LTG_T",
+            "description": "Gasleitung Text",
+            "attributes": [
+               {
+                  "name": "EGZ_OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit. (Original Erdgas System)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der Gasleitungsbeschriftung"
+               },
+               {
+                  "name": "LABELTEXT",
+                  "description": "Beschriftungstext"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "TEXTORI",
+                  "description": "Rotation der Beschriftung; undefiniert = 100.0; Masseinheit ist Gon."
+               },
+               {
+                  "name": "FEATURELINK",
+                  "description": "Fremdschlüssel für Verbindung zur Tabelle GAS_LEITUNG; 1-mc"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "TEXTHALI",
+                  "description": "Horizontaler Versatz zum Ursprungspunkt; undefiniert = Center"
+               },
+               {
+                  "name": "TEXTVALI",
+                  "description": "Vertikaler Versatz zum Ursprungspunkt; undefiniert = Half"
+               }
+            ]
+         },
+         {
+            "name": "GAS_ROHRLEITUNGSTEIL_P",
+            "description": "Rohrleitungsteil (unbekannt, Verbindungsstuecke, Formstueck, Schelle, Abschlusselement, Muffe, Diverse)",
+            "attributes": [
+               {
+                  "name": "ART_SUBART",
+                  "description": "GASS_SUBART_ROHRT =(Messstutzen)"
+               },
+               {
+                  "name": "ART_SUBART_TXT",
+                  "description": "GASS_SUBART_ROHRT Text"
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": "GASS_ART_ROHRT Text"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie des Rohrleitungsteiles"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ART",
+                  "description": "GASS_ART_ROHRT =(unbekannt, Verbindungsstuecke, Formstueck, Schelle, Abschlusselement, Muffe, Diverse)"
+               },
+               {
+                  "name": "EGZ_OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit. (Original Erdgas System)"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "SYMBOLORI",
+                  "description": "Rotation des Symbols; undefiniert = 100.0; Masseinheit ist Gon."
+               }
+            ]
+         },
+         {
+            "name": "GAS_SIPHON_P",
+            "description": "Siphon (unbekannt, ohne_Scheidewand, mit_Scheidewand, mit_Absperrfunktion, Schwanenhals)",
+            "attributes": [
+               {
+                  "name": "ART_TXT",
+                  "description": "GASS_ART_SIPHON Text"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie des Gas-Siphons"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ART",
+                  "description": "GASS_ART_SIPHON =(unbekannt, ohne_Scheidewand, mit_Scheidewand, mit_Absperrfunktion, Schwanenhals)"
+               },
+               {
+                  "name": "EGZ_OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit. (Original Erdgas System)"
+               },
+               {
+                  "name": "SYMBOLORI",
+                  "description": "Rotation des Symbols; undefiniert = 100.0; Masseinheit ist Gon."
+               }
+            ]
+         },
+         {
+            "name": "GAS_KKS_P",
+            "description": "KKS (unbekannt, Wechselstromableiter, Mess_Kabelloetung_am_Rohr, Potentialmessstelle, Bezugselektrode, Kontroll_Steuerkasten, Anode_Anodenfeld, Gleichrichter_Schutzstromgeraet, Messprobe, Spleissung, Sonde, Gleichrichteranlage, Trennstelle_Gleichrichter, Kathodische_Messstelle, Streustromdioden)",
+            "attributes": [
+               {
+                  "name": "ART_TXT",
+                  "description": "GASS_ART_KKS Text"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie des KKS"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ART",
+                  "description": "GASS_ART_KKS =    (unbekannt, Wechselstromableiter, Mess_Kabelloetung_am_Rohr, Potentialmessstelle, Bezugselektrode, Kontroll_Steuerkasten, Anode_Anodenfeld, Gleichrichter_Schutzstromgeraet, Messprobe, Spleissung, Sonde, Gleichrichteranlage, Trennstelle_Gleichrichter, Kathodische_Messstelle, Streustromdioden)"
+               },
+               {
+                  "name": "EGZ_OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit. (Original Erdgas System)"
+               },
+               {
+                  "name": "SYMBOLORI",
+                  "description": "Rotation des Symbols; undefiniert = 100.0; Masseinheit ist Gon."
+               }
+            ]
+         },
+         {
+            "name": "GAS_KABEL_L",
+            "description": "Kabel (unbekannt, Signalkabel, Steuerkabel, Messkabel, Kathodenschutzkabel, Anodenschutzkabel, Erdungskabel, Erdungsband, Fernmeldekabel, LWL, weitere, Streustromdrainage, Stromversorgungskabel)",
+            "attributes": [
+               {
+                  "name": "FUNKTION_TXT",
+                  "description": "GASS_FUNKTION_KABEL Text"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der Kabel"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "EGZ_OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit. (Original Erdgas System)"
+               },
+               {
+                  "name": "FUNKTION",
+                  "description": "GASS_FUNKTION_KABEL =(unbekannt, Signalkabel, Steuerkabel, Messkabel, Kathodenschutzkabel, Anodenschutzkabel, Erdungskabel, Erdungsband, Fernmeldekabel, LWL, weitere, Streustromdrainage, Stromversorgungskabel)"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               }
+            ]
+         },
+         {
+            "name": "GAS_VE_VERBINDLICHKEIT_A",
+            "description": "Gebiete, wo die Lage der erdgas-Objekte bei Energie 360° AG erfragt werden muss.",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               }
+            ]
+         }
+      ]
+   }
+}

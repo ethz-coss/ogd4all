@@ -1,0 +1,72 @@
+{
+   "title": "Umzüge innerhalb der Stadt nach Stadtkreis, Stadtquartier, Geschlecht, Altersgruppe und Zivilstand",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bev_umzuege_jahr_quartier_ag_zivilstand_od3556",
+   "abstract": "Anzahl Umzüge innerhalb der Stadt nach Stadtkreis und Stadtquartier nach Geschlecht, Altersgruppe, Zivilstand und Jahr.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Link:\n\nLink zu den Geodaten Statistische Stadtquartiere.\n\nUmzüge:\n\nPersonen, die innerhalb der Stadt Zürich umziehen.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Umzüge innerhalb der Stadt nach Stadtkreis, Stadtquartier, Geschlecht, Altersgruppe und Zivilstand",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Ereignisjahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr"
+               },
+               {
+                  "name": "Umzug von Stadtquartier (Sort) (technisch: QuarBisherSort)",
+                  "description": "ID des Quartiers, von welchem die Personen umgezogen sind (Numerisch)."
+               },
+               {
+                  "name": "Umzug von Stadtquartier (lang) (technisch: QuarBisherLang)",
+                  "description": "Name des Quartiers, von welchem die Personen umgezogen sind."
+               },
+               {
+                  "name": "Umzug von Kreis (technisch: KreisBisherCd)",
+                  "description": "ID des Kreises, von welchem die Personen umgezogen sind (Numerisch)."
+               },
+               {
+                  "name": "Umzug nach Stadtquartier (Sort) (technisch: QuarSort)",
+                  "description": "ID des Quartiers, in welches die Personen umgezogen sind (Numerisch)."
+               },
+               {
+                  "name": "Umzug nach Stadtquartier (lang) (technisch: QuarLang)",
+                  "description": "Name des Quartiers, in welches die Personen umgezogen sind."
+               },
+               {
+                  "name": "Umzug von Kreis (technisch: KreisCd)",
+                  "description": "ID des Kreises, in welches die Personen umgezogen sind (Numerisch)."
+               },
+               {
+                  "name": "10-Jahres-Altersgruppe (Sort) (technisch: AlterV10Sort)",
+                  "description": "Sortierschlüssel für die Altersgruppe (Numerisch)."
+               },
+               {
+                  "name": "10-Jahres-Altersgruppe (technisch: AlterV10Kurz)",
+                  "description": "10-Jahres-Altersgruppe (z.B. 0-9, 10-19, etc.)"
+               },
+               {
+                  "name": "Geschlecht (kurz) (technisch: SexKurz)",
+                  "description": "Geschlecht (W - weiblich, M - männlich)"
+               },
+               {
+                  "name": "Zivilstand (gruppiert) (Sort) (technisch: Ziv2Sort)",
+                  "description": "Zivilstand, Sortierschlüssel der Gruppierung (Numerisch)."
+               },
+               {
+                  "name": "Zivilstand (gruppiert) (technisch: Ziv2Lang)",
+                  "description": "Zivilstand gruppiert. (Werte: 1 - Ledig, 2 - Verheiratet, 3 - Geschieden, 4 - Verwitwet, 5 - In eingetragener Partnerschaft, 6 - Aufgelöste Partnerschaft, 7 - Unbekannt)."
+               },
+               {
+                  "name": "Wirtschaftliche Umzüge (technisch: AnzUmzuWir)",
+                  "description": "Anzal Umzüge von Personen aus der wirtschaftlichen Wohnbevölkerung (Numerisch)."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-03-07"
+}

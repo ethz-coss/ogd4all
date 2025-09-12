@@ -1,0 +1,131 @@
+{
+   "title": "Gastwirtschaftsbetriebe",
+   "keywords": [
+      "Adressen",
+      "Ausgang",
+      "Bar",
+      "Essen",
+      "Gastro",
+      "Gastronomie",
+      "Geodäten",
+      "Punktdaten",
+      "Sachdaten",
+      "Standort",
+      "Trinken",
+      "Vektordaten"
+   ],
+   "metadata_date": "2024-02-29T07:20:51",
+   "updateFrequency": "annually",
+   "purpose": "Administration der Gastro-Bewilligungen.",
+   "abstract": "Aktuelle Gastwirtschaftsbetriebe der Stadt Zürich, welche von der Fachgruppe «Bewilligung Gastro» der Stadtpolizei Zürich bewilligt wurden.",
+   "identificationDate": "2025-03-10",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Sicherheitsdepartement - Stadtpolizei",
+   "contactPerson": "Martin Tanner",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Gastwirtschaftsbetriebe",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "GASTWIRTSCHAFTSBETRIEBE",
+            "description": "An Hand von Betriebsarten sind die Gastwirtschaftsbetriebe auf dem Gebiet der Stadt Zürich erfasst.",
+            "attributes": [
+               {
+                  "name": "BETRIEBSART",
+                  "description": "Es werden folgende 11 Betriebsarten unterschieden (siehe auch den Hinweis unter Bemerkungen): Gastwirtschaft, Kleinwirtschaft, Cabaret / Nachtclub, Nebenwirtschaft, Dancing / Disco, Veranstaltungsraum, Kantine / Mensa, Tankstelle, Ausgabestelle, Aussenliegende Saisonwirtschaft, Take Away"
+               },
+               {
+                  "name": "EKOORD",
+                  "description": "Ost-Koordinate des Gebäudeeingangs.(CH1903_LV95; EPSG 2056)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "HNR",
+                  "description": "Hausnummer, inklusive Suffix (a, b, c etc.)"
+               },
+               {
+                  "name": "JAHR",
+                  "description": "Ereignisjahr\n\n(Originalbezeichnung: StichtagDatJahr)"
+               },
+               {
+                  "name": "KREISLANG",
+                  "description": "Namen der Stadtkreise"
+               },
+               {
+                  "name": "KREISSORT",
+                  "description": "ID und Sortiervariable der Stadtkreise"
+               },
+               {
+                  "name": "NKOORD",
+                  "description": "Nord-Koordinate des Gebäudeeingangs (CH1903_LV95; EPSG 2056)"
+               },
+               {
+                  "name": "BETRIEBSNAME",
+                  "description": "Name des Betriebs"
+               },
+               {
+                  "name": "BETRIEBSSTATUS",
+                  "description": "Offen oder Geschlossen. Die hier publizierten Daten haben immer den Status «Offen»"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "OEFFNUNGSZEIT",
+                  "description": "Bewilligte Öffnungszeiten des Gastwirtschaftsbetriebs. Durch das kantonale Gastgewerbegesetz wird vorgeschrieben, dass Gastwirtschaftsbetriebe in der Zeit von 00:00 bis 05:00 Uhr geschlossen sein müssen. Die Gemeinden sind befugt, Ausnahmen zu bewilligen. Die Öffnungszeit kennzeichnet Betriebe mit dauernder Hinausschiebung bzw. Aufhebung der Schliessungsstunde. In solchen Fällen wird von sogenannten «Nachtcafés» gesprochen."
+               },
+               {
+                  "name": "ORT",
+                  "description": "Ort\n\n(Originalbezeichnung: Ortschaft)"
+               },
+               {
+                  "name": "PLZ",
+                  "description": "Postleitzahl"
+               },
+               {
+                  "name": "QUARLANG",
+                  "description": "Namen der Statistischen Stadtquartiere"
+               },
+               {
+                  "name": "QUARSORT",
+                  "description": "ID und Sortiervariable der Statistischen Stadtquartiere"
+               },
+               {
+                  "name": "STATZONELANG",
+                  "description": "Name der Statistischen Zone der aktuellen Wohnadresse"
+               },
+               {
+                  "name": "STATZONESORT",
+                  "description": "ID und Sortiervariable der Statistischen Zone an der aktuellen Wohnadresse"
+               },
+               {
+                  "name": "STRASSELANG",
+                  "description": "Strassennamen"
+               },
+               {
+                  "name": "ANZBETRIEBE",
+                  "description": "Diese Attribut wird nicht mehr nachgeführt und im April gelöscht."
+               }
+            ]
+         }
+      ]
+   }
+}

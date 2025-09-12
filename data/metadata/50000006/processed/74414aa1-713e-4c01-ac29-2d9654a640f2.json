@@ -1,0 +1,86 @@
+{
+   "title": "Arealüberbauungen",
+   "keywords": [
+      "Arealüberbauungen",
+      "Gesamtüberbauungen",
+      "Mehrausnützung",
+      "Geschossüberschreitung"
+   ],
+   "metadata_date": "2023-08-15T09:48:10",
+   "updateFrequency": "asNeeded",
+   "purpose": "Die Arealüberbauungsperimeter sind für die Kreisarchitekten des Amts für Baubewilligungen im Rahmen ihrer Beratungstätigkeit sowie für die Erteilung von Bewilligungen wichtig (insbesondere in Bezug auf § 69 ff. PBG und Art. 8 BZO). Der Datensatz wird auch für die Kapazitäts- und Reserveberechnungen des Amts für Städtebau genutzt.",
+   "abstract": "Der Datensatz enthält die Perimeter von Arealüberbauungen und altrechtlichen Gesamtüberbauungen. Neue Arealüberbauungen und Änderungen an bestehenden Areal- und Gesamtüberbauungen werden im Rahmen des Baubewilligungsverfahrens von der Bausektion bewilligt und die entsprechenden Perimeter erfasst bzw. bestehende Perimeter geändert.",
+   "identificationDate": "2025-03-11",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Hochbaudepartement - Amt für Städtebau",
+   "contactPerson": "Olaf Schnabel",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Arealueberbauungen",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "AREALUEBERBAUUNGEN_PERIMETER",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "BAUENTSCHEIDNR",
+                  "description": "Bauentscheid-Nummer"
+               },
+               {
+                  "name": "BAUENTSCHEIDDATUM",
+                  "description": "Bauentscheid-Datum"
+               },
+               {
+                  "name": "RECHTLICHEGRUNDLAGE",
+                  "description": "rechtliche Grundlage (Bauordnung), wird aus Bauentscheiddatum abgeleitet:\n\nDatum &lt; 15.08.1953: BauO vor Eingemeindung (Altstetten, Albisrieden, Seebach, BauO 1912, BauO 1931)\n\nDatum 15.08.1953 - 05.07.1957: BauO 1946 Art. 77 (Gesamtüberbauung)\n\nDatum 06.07.1957 - 31.11.1969: BauO 1946 Art. 53 (Gesamtüberbauung)\n\nDatum 01.12.1969 - 16.06.1996: BauO 1946 Art. 6a (Geschossüberschreitung) und Art. 29 (Arealüberbauung)\n\nDatum 17.06.1996 - 31.10.2018: BZO 1999 (Arealüberbauung)\n\nDatum 01.11.2018 - heute: BZO 2016 (Arealüberbauung)"
+               },
+               {
+                  "name": "GUELTIGKEIT",
+                  "description": "\"bewilligt\"\n\n\"erstellt\" (Gebäude im AÜ-Perimeter sind gebaut)\n\n\"vergangen\" (alle Arealüberbauungen, die nicht mehr gültig sind, z.B. durch Verfall der Baubewilligung oder Abriss aller Gebäude)"
+               },
+               {
+                  "name": "PERIMETERERFASSUNGSTATUS",
+                  "description": "\"erfasst\"\n\n\"zu erfassen\" (Arealüberbauungen, deren Perimeter zum Zeitpunkt der Erfassung des Datensatzes in ABIS nicht grundstücksscharf / entlang von Grundstücksgrenzen verläuft)\n\n\"zu überprüfen\" (Arealüberbauungsperimeter wurde von Plan.Bild.Grafik (AFS) erfasst, aber vom AFB noch nicht überprüft)\n\n\"nachzubessern\" (durch Plan.Bild.Grafik erfasste Arealüberbauungsperimeter weisen Fehler auf, die durch Überprüfung der Mitarbeitenden AFB aufgefallen sind)\n\n\"zu verifizieren\" (migriert aus ABIS LDV, fällt irgendwann weg)"
+               },
+               {
+                  "name": "BEMERKUNGEN",
+                  "description": "Bemerkungen"
+               },
+               {
+                  "name": "ERFASSER",
+                  "description": "Erfasser"
+               },
+               {
+                  "name": "ERFASSUNGDATUM",
+                  "description": "Erfassungsdatum"
+               },
+               {
+                  "name": "AKTUALISIERUNGDATUM",
+                  "description": "Aktualisierungsdatum"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               }
+            ]
+         }
+      ]
+   }
+}

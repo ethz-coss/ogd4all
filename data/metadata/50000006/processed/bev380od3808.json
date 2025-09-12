@@ -1,0 +1,44 @@
+{
+   "title": "Bevölkerung nach Haushaltsform und Altersgruppe",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bev_hh_haushaltsform_altersgruppe_od3808",
+   "abstract": "Anzahl wirtschaftliche Bevölkerung der Stadt Zürich in Privathaushalten nach Haushaltsform, Altersgruppe und Jahr.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Haushalt\n\nZu einem Haushalt zählen alle Personen, welche zusammen in der gleichen Wohnung leben. Dazu wird für Personen der wirtschaftliche Wohnsitzbegriff verwendet. Kollektivhaushalte (Heime, Spitäler, Institutionen des Strafvollzugs, Gemeinschaftsunterkünfte für Asylsuchende u.ä.) werden nicht berücksichtigt.\n\nHaushaltsformen\n\nEs werden folgende Haushaltsformen unterschieden:\n\nEinpersonenhaushalt: eine Einzelperson\n\nZweipersonenhaushalt: Zwei Einzelpersonen ohne registrierte Familienbeziehung. Dies umfasst Zweier-Wohngemeinschaften wie auch Konsensualpaare, aber keine Ehepaare.\n\nEhepaar ohne Kinder. Ehepaar ohne Kinder.\n\nEingetragenes Paar ohne Kinder. Eingetragenes Paar ohne Kinder.\n\nEin-Elternhaushalt: Alleinerziehender Elternteil mit volljährigen oder minderjährigen Kind(ern) im gleichen Haushalt.\n\nEhepaar mit Kind(ern): Ehepaar mit volljährigen oder minderjährigen Kind(ern) im Haushalt.\n\nEingetragenes Paar mit Kind(ern). Eingetragenes Paar mit volljährigen oder minderjährigen Kind(ern) im Haushalt.\n\nPaar mit Kind(ern): Zwei (unverheiratete) Einzelpersonen mit mindestens einem anerkannten Kind im gleichen Haushalt.\n\nPatchwork-Haushalt: Alleinerziehender Elternteil mit Kind(ern) plus eine Einzelperson (unabhängig von Geschlecht und Alter) oder plus eine weitere alleinerziehende Person mit Kind(ern) im gleichen Haushalt. Die zusätzliche Person hat keine registrierte Familienbindung zum alleinerziehenden Elternteil. Sind nur volljährige Kinder mit im Haushalt, wird dieser den Wohngemeinschaften zugeteilt. Auch Alleinerziehende, die mit Verwandten (Tanten, Schwestern, Brüdern) oder einer/einem Bekannten leben, fallen somit unter den Begriff «Patchwork-Haushalt», im Gegensatz zur im Alltag gebräuchlichen Bedeutung.\n\nWohngemeinschaft ohne Kinder: Haushalt mit mehreren Familienkernen (oder Einzelpersonen; mindestens drei Personen) ohne registrierte Bindung untereinander.\n\nWohngemeinschaft mit Kind(ern): Haushalt mit mindestens einer Familie mit Kind(ern) plus weitere Einzelpersonen ohne registrierte Bindung untereinander, und/oder plus weitere Familien (mindestens drei Personen). Diese Haushaltsform beinhaltet auch Konstellationen, in denen Familien mit Kindern zusammen mit Hausangestellten oder Au-pairs in einer Wohnung leben.\n\nGenerationenhaushalt: Mindestens drei Generationen umfassender Haushalt.\n\nFamilien-Verbund: Seltene Haushalte mit komplexen Familienverbindungen.\n\nDatenqualität\n\nAb den Jahresdaten für 2024 wird eine neue Auswertungsregel für Haushalte angewendet. Dadurch ändern sich Daten für die gesamte publizierte Zeitreihe.\n\nHinweis\n\nPunktuell können ungewöhnliche Kombinationen auftreten; zum Beispiel alleinlebende Kleinkinder. Dies ist systembedingt und kommt beispielsweise vor, wenn zum Stichtag die Meldevorgänge für die übrigen Personen des Haushalts noch nicht fertig verarbeitet wurden.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Bevölkerung nach Haushaltsform und Altersgruppe",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichTagDatJahr)",
+                  "description": "Jahresendbestand (Numerisch)"
+               },
+               {
+                  "name": "Haushaltsform Sortiercode (technisch: HHtypSort)",
+                  "description": "Haushaltsform Sortiercode (Numerisch)"
+               },
+               {
+                  "name": "Haushaltsform Beschreibung (technisch: HHtypLang)",
+                  "description": "Haushaltsform Beschreibung (String)"
+               },
+               {
+                  "name": "Altersgruppe Sortiercode (technisch: AlterV10Sort)",
+                  "description": "Altersgruppe Sortiercode (Numerisch)"
+               },
+               {
+                  "name": "Altersgruppe Beschreibung (technisch: AlterV10Kurz)",
+                  "description": "Altersgruppe Beschreibung (String)"
+               },
+               {
+                  "name": "Wirtschaftliche Wohnbevölkerung (technisch: AnzBestWir)",
+                  "description": "Wirtschaftliche Wohnbevölkerung in Privathaushalten (Numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-03-05"
+}

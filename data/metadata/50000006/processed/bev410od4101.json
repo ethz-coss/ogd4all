@@ -1,0 +1,44 @@
+{
+   "title": "Geburten nach Geburtenreihenfolge und Herkunft des Kindes",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bev_geburten_jahr_geburtenreihenfolge_herkunft_od4101",
+   "abstract": "Geburten nach Geburtenreihenfolge und Herkunft des Kindes.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Methodik\n\nDie Geburtenreihenfolge wurde mit Monatsbeständen ermittelt. Konkret wurden bei jeder Geburt die Monatsbestände der vier Folgemonate verwendet, und damit die Anzahl Kinder (0- bis 17-Jährige) pro Familie gezählt. Warum wurde nicht bloss ein Monat verwendet? Bei den Geburten kann es zu Nachmeldungen kommen (spätere Erfassung im Bevölkerungsregister).\n\nEs ist zudem möglich, dass ein Kind, das Mitte Monat geboren wurde, per Ende Monat im Bevölkerungsbestand nicht vorkommt. In diesem Fall wurde geprüft, ob es zu einem Wegzug kam. Es kann vorkommen, dass Kinder weder in den Monatsbeständen noch in den Wegzügen vorkommen (z.B. keine Meldung, Datenfehler, Todesfall). In diesem Fall lässt sich die Geburtenreihenfolge nicht bestimmen. Daher enthalten die vorliegenden Daten bei der Geburtenreihenfolge auch die Kategorie 'unbekannt'.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Geburten nach Geburtenreihenfolge und Herkunft des Kindes",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: EreignisDatJahr)",
+                  "description": "Jahr (Integer)"
+               },
+               {
+                  "name": "Herkunft (technisch: HerkunftCd)",
+                  "description": "Herkunft (Integer, 1=Schweizer*in, 2=Ausländer*in)"
+               },
+               {
+                  "name": "Herkunft (technisch: HerkunftLang)",
+                  "description": "Herkunft (String, Schweizer*in, Ausländer*in)"
+               },
+               {
+                  "name": "Geburtenreihenfolge (technisch: GebuReiheCd_noDM)",
+                  "description": "Geburtenreihenfolge (Integer, 1=erstes Kind, 2=zweites Kind, 3=drittes Kind, 34=viertes oder weiters Kind, 99=unbekannt)"
+               },
+               {
+                  "name": "Geburtenreihenfolge (technisch: GebuReiheLang_noDM)",
+                  "description": "Geburtenreihenfolge (String, erstes, zweites, drittes, viertes oder weiteres Kind, unbekannt)"
+               },
+               {
+                  "name": "wirtschaftliche Geburten (technisch: AnzGebuWir)",
+                  "description": "Anzahl Geburten aus der wirtschaftlichen Wohnbevölkerung (Integer)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-03-05"
+}

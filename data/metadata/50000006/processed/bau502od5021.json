@@ -1,0 +1,84 @@
+{
+   "title": "Fertiggestellte und abgebrochene Wohnungen nach Eigentumsart und statistischer Zone",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bau_neubau_whg_abbr_neu_eigart_statzone_quartier_od5021",
+   "abstract": "Der Datensatz enthält die Anzahl fertiggestellter und abgebrochener Wohnungen nach Eigentumsart und statistischer Zone.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Hinweis\n\nSeit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.\n\nHinweis:\n\nStichtagDatJahr entspricht der ganzen Jahresperiode.\n\nEigentumsart\n\nÖffentliches Eigentum: Bund, Kanton Zürich, Stadt Zürich inklusive städtischer Stiftungen und anderes öffentliches Eigentum\nWohnbaugenossenschaften: Nur Wohnbaugenossenschaften\nAndere private Gesellschaften: Aktien-, Kollektiv- und Kommanditgesellschaften, Handels-, Produktiv-, Versicherungs- und übrige Genossenschaften, Gesellschaften mit beschränkter Haftung, Pensionskassen, Vereine, private Stiftungen, gemischtes Eigentum und Religionsgemeinschaften\nPrivatpersonen: Einzelpersonen, Erbgemeinschaften und mehrere natürliche Personen\nIm Stockwerkeigentum: Stockwerkeigentumsgesellschaften\n\nStand und Nachführung:\n\nDas Gebäude- und Wohnungsregister der Stadt Zürich wird ständig nachgeführt.\n\nVariablen mit mehreren Varianten\n\nGewisse Variablen werden in verschiedenen Formen aufgeführt. Die \"Lang\"-Variante beschreibt den Inhalt (z.B. StatZoneLang beschreibt die statistische Zone, mögliche Werte sind Central oder Oberdorf). Die \"Cd\"-Variante kodiert die Variable alphanumerisch, quasi als Kurzform (Central und Oberdorf sind 1104 und 1201). Die \"Sort\"-Variante kodiert die Variable numerisch (Central und Oberdorf sind 5 und 4) und erlaubt eine Sortierung. \"Cd\" und \"Sort\" können auch identisch sein.\n\nStatistische Wohnung\n\nAls statistische Wohnung zählen bestehende Wohnungen, welche über eine Kocheinrichtung verfügen und zu Wohnzwecken (keine zweckentfremdeten Wohnungen) verwendet werden.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Fertiggestellte und abgebrochene Wohnungen nach Eigentumsart und statistischer Zone",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Numerisch)"
+               },
+               {
+                  "name": "Datenstand (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (P = provisorisch, D = definitiv)"
+               },
+               {
+                  "name": "Statistische Zone (technisch: StatZoneSort)",
+                  "description": "Offizielle ID der Statistischen Zone (Numerisch)"
+               },
+               {
+                  "name": "Statistische Zone (technisch: StatZoneCd)",
+                  "description": "Offizielle ID der Statistischen Zone (String)"
+               },
+               {
+                  "name": "Statistische Zone (technisch: StatZoneLang)",
+                  "description": "Name der Statistischen Zone (String)"
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarSort)",
+                  "description": "Stadtquartier (Numerisch)"
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarCd)",
+                  "description": "Stadtquartier Code (String)"
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarLang)",
+                  "description": "Stadtquartier (String)"
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisSort)",
+                  "description": "Stadtkreis (Numerisch)"
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisCd)",
+                  "description": "Stadtkreis (String)"
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisLang)",
+                  "description": "Stadtkreis (String)"
+               },
+               {
+                  "name": "Eigentumsart (technisch: EigentuemerSSZPubl1Sort)",
+                  "description": "Eigentumsart (Numerisch)"
+               },
+               {
+                  "name": "Eigentumsart (technisch: EigentuemerSSZPubl1Cd)",
+                  "description": "Eigentumsart (String)"
+               },
+               {
+                  "name": "Eigentumsart (technisch: EigentuemerSSZPubl1Lang)",
+                  "description": "Eigentumsart (String)"
+               },
+               {
+                  "name": "Anzahl neugebaute statistische Wohnungen (technisch: AnzNeubauWhg_noDM)",
+                  "description": "Anzahl neugebaute statistische Wohnungen (Numerisch)"
+               },
+               {
+                  "name": "Anzahl abgebrochene statistische Wohnungen (technisch: AnzAbbruchWhg_noDM)",
+                  "description": "Anzahl abgebrochene statistische Wohnungen (Numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-01-08"
+}

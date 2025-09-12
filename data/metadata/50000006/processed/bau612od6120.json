@@ -1,0 +1,140 @@
+{
+   "title": "Bodennutzung und Grundeigentum in der Stadt Zürich",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bau_stadtgebiet_bodennutzung_grundeigentum_quartier_seit2009_od6120",
+   "abstract": "Der Datensatz enthält Angaben zu Bodennutzung und Grundeigentum für das Gebiet der Stadt Zürich nach Stadtquartier.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Hinweis:\n\nStichtagDatJahr entspricht dem Stichtag am angegebenen Jahresende.\n\nVariablen mit mehreren Varianten\n\nGewisse Variablen werden in verschiedenen Formen aufgeführt. Die \"Lang\"-Variante beschreibt den Inhalt (z.B. StatZoneLang beschreibt die statistische Zone, mögliche Werte sind Central oder Oberdorf). Die \"Cd\"-Variante kodiert die Variable alphanumerisch, quasi als Kurzform (Central und Oberdorf sind 1104 und 1201). Die \"Sort\"-Variante kodiert die Variable numerisch (Central und Oberdorf sind 5 und 4) und erlaubt eine Sortierung. \"Cd\" und \"Sort\" können auch identisch sein.\n\nLevel\n\nDie Variablen Bodenbedeckungsart und Eigentümer werden für verschiedene Level angegeben. Die Level sind hierarchisch aufgebaut und gehen von fein (Level 1) zu grob (Level 4).",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Bodennutzung und Grundeigentum in der Stadt Zürich",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Numerisch)"
+               },
+               {
+                  "name": "Datenstand (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (P = provisorisch, D = definitiv)"
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarSort)",
+                  "description": "Stadtquartier (Numerisch)"
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarCd)",
+                  "description": "Stadtquartier Code (String)"
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarLang)",
+                  "description": "Stadtquartier (String)"
+               },
+               {
+                  "name": "Bodennutzungskategorie Level 1 (technisch: BodenbedeckungsartLevel1Sort)",
+                  "description": "Bodennutzungskategorie (Numerisch)"
+               },
+               {
+                  "name": "Bodennutzungskategorie Level 1 (technisch: BodenbedeckungsartLevel1Cd)",
+                  "description": "Bodennutzungskategorie (String)"
+               },
+               {
+                  "name": "Bodennutzungskategorie Level 1 (technisch: BodenbedeckungsartLevel1Lang)",
+                  "description": "Bodennutzungskategorie (String)"
+               },
+               {
+                  "name": "Bodennutzungskategorie Level 2 (technisch: BodenbedeckungsartLevel2Sort)",
+                  "description": "Bodennutzungskategorie (Numerisch)"
+               },
+               {
+                  "name": "Bodennutzungskategorie Level 2 (technisch: BodenbedeckungsartLevel2Cd)",
+                  "description": "Bodennutzungskategorie (String)"
+               },
+               {
+                  "name": "Bodennutzungskategorie Level 2 (technisch: BodenbedeckungsartLevel2Lang)",
+                  "description": "Bodennutzungskategorie (String)"
+               },
+               {
+                  "name": "Bodennutzungskategorie Level 3 (technisch: BodenbedeckungsartLevel3Sort)",
+                  "description": "Bodennutzungskategorie (Numerisch)"
+               },
+               {
+                  "name": "Bodennutzungskategorie Level 3 (technisch: BodenbedeckungsartLevel3Cd)",
+                  "description": "Bodennutzungskategorie (String)"
+               },
+               {
+                  "name": "Bodennutzungskategorie Level 3 (technisch: BodenbedeckungsartLevel3Lang)",
+                  "description": "Bodennutzungskategorie (String)"
+               },
+               {
+                  "name": "Bodennutzungskategorie Level 4 Sortierungscode (technisch: BodenbedeckungsartLevel4Sort)",
+                  "description": "Bodennutzungskategorie (Numerisch)"
+               },
+               {
+                  "name": "Bodennutzungskategorie Level 4 (technisch: BodenbedeckungsartLevel4Cd)",
+                  "description": "Bodennutzungskategorie (String)"
+               },
+               {
+                  "name": "Bodennutzungskategorie Level 4 Beschreibung (technisch: BodenbedeckungsartLevel4Lang)",
+                  "description": "Bodennutzungskategorie (String)"
+               },
+               {
+                  "name": "Eigentumskategorie Level 1 (technisch: EigentuemerLevel1Sort)",
+                  "description": "Eigentumsart (Numerisch)"
+               },
+               {
+                  "name": "Eigentumskategorie Level 1 (technisch: EigentuemerLevel1Cd)",
+                  "description": "Eigentumsart (String)"
+               },
+               {
+                  "name": "Eigentumskategorie Level 1 (technisch: EigentuemerLevel1Lang)",
+                  "description": "Eigentumsart (String)"
+               },
+               {
+                  "name": "Eigentumskategorie Level 2 Sortierungscode (technisch: EigentuemerLevel2Sort)",
+                  "description": "Eigentumsart (Numerisch)"
+               },
+               {
+                  "name": "Eigentumskategorie Level 2 Sortierungscode (technisch: EigentuemerLevel2Cd)",
+                  "description": "Eigentumsart (String)"
+               },
+               {
+                  "name": "Eigentumskategorie Level 2 Beschreibung (technisch: EigentuemerLevel2Lang)",
+                  "description": "Eigentumsart (String)"
+               },
+               {
+                  "name": "Eigentumskategorie Level 3 (technisch: EigentuemerLevel3Sort)",
+                  "description": "Eigentumsart (Numerisch)"
+               },
+               {
+                  "name": "Eigentumskategorie Level 3 (technisch: EigentuemerLevel3Cd)",
+                  "description": "Eigentumsart (String)"
+               },
+               {
+                  "name": "Eigentumskategorie Level 3 (technisch: EigentuemerLevel3Lang)",
+                  "description": "Eigentumsart (String)"
+               },
+               {
+                  "name": "Eigentumskategorie Level 4 (technisch: EigentuemerLevel4Sort)",
+                  "description": "Eigentumsart (Numerisch)"
+               },
+               {
+                  "name": "Eigentumskategorie Level 4 (technisch: EigentuemerLevel4Cd)",
+                  "description": "Eigentumsart (String)"
+               },
+               {
+                  "name": "Eigentumskategorie Level 4 (technisch: EigentuemerLevel4Lang)",
+                  "description": "Eigentumsart (String)"
+               },
+               {
+                  "name": "Grundstückfläche in Quadratmetern (Numerisch) (technisch: GstVerschnittFlaeche)",
+                  "description": "Grundstückfläche in Quadratmetern (Numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-01-27"
+}

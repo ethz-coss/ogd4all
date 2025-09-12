@@ -1,0 +1,92 @@
+{
+   "title": "Wohnungsbestand nach Art des Energieträgers, Bauperiode und Statistischer Zone",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bau_best_whg_energietraegerart_statzone_seit2017_od5331",
+   "abstract": "Diese Daten umfassen den Wohnungsbestand der Stadt Zürich nach Art des Energieträgers. \nBitte beachten Sie für das korrekte Verständnis zu den Daten die unten aufgeführten weiteren Erläuterungen in der Rubrik «Bemerkungen».",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Stand und Nachführung:\n\nDie primären Energieträger der Wohnungen wurden letztmals in der Volkszählung 2000 vollständig erhoben. Im Zeitraum 2000-2017 wurden die Energieträger unvollständig aktualisiert. Im Jahr 2017 erfolgte durch Statistik Stadt Zürich eine umfassende Aktualisierung durch Abgleich mit Drittquellen (Feuerungskontrolle, Fernwärmeanschlüsse, Erdsondenbohrungen). Die Daten werden jährlich aktualsiert durch Baugesuchsangaben zu Neu- und Umbauten sowie durch Aktualisierungsmeldungen der Feuerungskontrolle. Aus diesen Gründen werden die Daten erst ab 2017 veröffentlicht.\n\nWeitere Informationen:\n\nSiehe den Webartikel von Statistik Stadt Zürich aus dem Jahr 2017: Erneuerbare Energien auf dem Vormarsch.\n\nWichtiger Hinweis:\n\nSeit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.\n\nVariablen mit mehreren Varianten\n\nGewisse Variablen werden in verschiedenen Formen aufgeführt. Die \"Lang\"-Variante beschreibt den Inhalt (z.B. StatZoneLang beschreibt die statistische Zone, mögliche Werte sind Central oder Oberdorf). Die \"Cd\"-Variante kodiert die Variable alphanumerisch, quasi als Kurzform (Central und Oberdorf sind 1104 und 1201). Die \"Sort\"-Variante kodiert die Variable numerisch (Central und Oberdorf sind 5 und 4) und erlaubt eine Sortierung. \"Cd\" und \"Sort\" können auch identisch sein.\n\nStatistische Wohnung\n\nAls statistische Wohnung zählen bestehende Wohnungen, welche über eine Kocheinrichtung verfügen und zu Wohnzwecken (keine zweckentfremdeten Wohnungen) verwendet werden.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Wohnungsbestand nach Art des Energieträgers, Bauperiode und Statistischer Zone",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Numerisch)"
+               },
+               {
+                  "name": "Datenstand (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (P = provisorisch, D = definitiv)"
+               },
+               {
+                  "name": "Statistische Zone Sortiercode (technisch: StatZoneSort)",
+                  "description": "Statistischen Zone (Numerisch)"
+               },
+               {
+                  "name": "Statistische Zone Code (technisch: StatZoneCd)",
+                  "description": "Statistischen Zone (String)"
+               },
+               {
+                  "name": "Statistische Zone Beschreibung (technisch: StatZoneLang)",
+                  "description": "Name der Statistischen Zone (String)"
+               },
+               {
+                  "name": "Stadtquartier Sortiercode (technisch: QuarSort)",
+                  "description": "Stadtquartier (Numerisch)"
+               },
+               {
+                  "name": "Stadtquartier Code (technisch: QuarCd)",
+                  "description": "Stadtquartier Code (String)"
+               },
+               {
+                  "name": "Stadtquartier Beschreibung (technisch: QuarLang)",
+                  "description": "Stadtquartier (String)"
+               },
+               {
+                  "name": "Stadtkreis Sortiercode (technisch: KreisSort)",
+                  "description": "Stadtkreis (Numerisch)"
+               },
+               {
+                  "name": "Stadtkreis Code (technisch: KreisCd)",
+                  "description": "Stadtkreis (String)"
+               },
+               {
+                  "name": "Stadtkreis Beschreibung (technisch: KreisLang)",
+                  "description": "Stadtkreis (String)"
+               },
+               {
+                  "name": "Bauperiode Level 2 Sortiercode (technisch: BauperiodeLevel2Sort)",
+                  "description": "Bauperiode Gebäude (Numerisch)"
+               },
+               {
+                  "name": "Bauperiode Level 2 Code (technisch: BauperiodeLevel2Cd)",
+                  "description": "Bauperiode Gebäude (String)"
+               },
+               {
+                  "name": "Bauperiode Level 2 Name (technisch: BauperiodeLevel2Lang)",
+                  "description": "Bauperiode Gebäude (String)"
+               },
+               {
+                  "name": "Energieträger der Heizung Sortiercode (technisch: GbdEnergietraegerSort_noDM)",
+                  "description": "Energieträger der Heizung (Numerisch)"
+               },
+               {
+                  "name": "Energieträger der Heizung Code (technisch: GbdEnergietraegerCd_noDM)",
+                  "description": "Energieträger der Heizung (String)"
+               },
+               {
+                  "name": "Energieträger der Heizung Bezeichnung (technisch: GbdEnergietraegerLang_noDM)",
+                  "description": "Energieträger der Heizung (String)"
+               },
+               {
+                  "name": "Anzahl Wohnungen (technisch: AnzWhgStat)",
+                  "description": "Anzahl statistische Wohnungen (Numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-01-08"
+}

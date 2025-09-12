@@ -1,0 +1,76 @@
+{
+   "title": "Hilfsfristen der Rettungsdienste",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/sid_srz_od1036_hilfsfristen_rettungsdienste_jahr_stadtkreis",
+   "abstract": "Hilfsfristen der Rettungsdienste nach Stadtkreis und Jahr. Dieser Datensatz gibt Auskunft über die Hilfsfristen der rettungsdienstlichen Versorgung in der Stadt Zürich nach Stadtkreis. Die Hilfsfrist sagt etwas darüber aus, wie viel Zeit von der Disposition der Einsatzkräfte durch die Einsatzleitzentrale 144 bis zu ihrem Eintreffen am Notfallort verstreicht. Betrachtet werden nur die dringlichen Einsätze, bei denen die Fahrzeuge mit Sondersignal ausrücken. Gemäss Vorgabe des Interverbands für Rettungswesen muss die Hilfsfrist bei mindestens 90 Prozent der Einsätze unter 15 Minuten liegen, aus medizinischen Gründen ist auf eine Hilfsfrist von 10 Minuten hinzuarbeiten. Der Datensatz umfasst Aussagen zu Hilfsfristen aller auf Stadtgebiet geleisteten Einsätze, unabhängig vom ausführenden Rettungsdienst.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Hilfsfrist\n\nHilfsfrist: Die Hilfsfrist bezeichnet die Zeit vom Eintreffen des Alarms bei den Rettungskräften (Disposition der Rettungsmittel) bis zum Eintreffen am Einsatzort in Minuten.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Hilfsfristen der Rettungsdienste",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: Jahr)",
+                  "description": "Jahr des Einsatzes (Numeric)"
+               },
+               {
+                  "name": "StadtkreisSort (technisch: StadtkreisSort)",
+                  "description": "StadtkreisSort (Numeric)"
+               },
+               {
+                  "name": "Stadtkreis (technisch: Stadtkreis)",
+                  "description": "Stadtkreis (String)"
+               },
+               {
+                  "name": "Anzahl_Einsaetze_bis_10min (technisch: Anzahl_Einsaetze_bis_10min)",
+                  "description": "Anzahl Einsätze mit Ausrückzeit von höchstens 10 Minuten (Numeric)"
+               },
+               {
+                  "name": "Anzahl_Einsaetze_groesser_10min (technisch: Anzahl_Einsaetze_groesser_10min)",
+                  "description": "Anzahl Einsätze mit Ausrückzeit von mehr als 10 Minuten (Numeric)"
+               },
+               {
+                  "name": "Anzahl_Einsaetze_bis_15min (technisch: Anzahl_Einsaetze_bis_15min)",
+                  "description": "Anzahl Einsätze mit Ausrückzeit von höchstens 15 Minuten (Numeric)"
+               },
+               {
+                  "name": "Anzahl_Einsaetze_groesser_15min (technisch: Anzahl_Einsaetze_groesser_15min)",
+                  "description": "Anzahl Einsätze mit Ausrückzeit von mehr als 15 Minuten (Numeric)"
+               },
+               {
+                  "name": "Prozent_Einsaetze_bis_10min (technisch: Prozent_Einsaetze_bis_10min)",
+                  "description": "Prozentualer Anteil der Einsätze mit Ausrückzeit von höchstens 10 Minuten (Numeric)"
+               },
+               {
+                  "name": "Prozent_Einsaetze_groesser_10min (technisch: Prozent_Einsaetze_groesser_10min)",
+                  "description": "Prozentualer Anteil der Einsätze mit Ausrückzeit von mehr als 10 Minuten (Numeric)"
+               },
+               {
+                  "name": "Prozent_Einsaetze_bis_15min (technisch: Prozent_Einsaetze_bis_15min)",
+                  "description": "Prozentualer Anteil der Einsätze mit Ausrückzeit von höchstens 15 Minuten (Numeric)"
+               },
+               {
+                  "name": "Prozent_Einsaetze_groesser_15min (technisch: Prozent_Einsaetze_groesser_15min)",
+                  "description": "Prozentualer Anteil der Einsätze mit Ausrückzeit von mehr als 15 Minuten (Numeric)"
+               },
+               {
+                  "name": "Hilfsfrist_Mittelwert (technisch: Hilfsfrist_Mittelwert)",
+                  "description": "Hilfsfrist, artithmetischer Mittelwert der Zeit ab Disposition der Rettungsmittel bis Eintreffen am Einsatzort (Stunden:Minuten:Sekunden; Numeric), 50 Prozent der Hilfsfristen sind kleiner, und 50 Prozent sind grösser als der Median."
+               },
+               {
+                  "name": "Hilfsfrist_Median (technisch: Hilfsfrist_Median)",
+                  "description": "Hilfsfrist, Median der Zeit ab Disposition der Rettungsmittel bis Eintreffen am Einsatzort (Stunden:Minuten:Sekunden; Numeric)"
+               },
+               {
+                  "name": "Hilfsfrist_Q90 (technisch: Hilfsfrist_Q90)",
+                  "description": "Hilfsfrist, 90 Prozent Quantil der Zeit ab Disposition der Rettungsmittel bis Eintreffen am Einsatzort (Stunden:Minuten:Sekunden; Numeric), 90 Prozent der Hilfsfristen sind kleiner, und 10 Prozent sind grösser als das 90 Prozent Quantil."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "01-04-2025"
+}

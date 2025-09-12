@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<che:CHE_MD_Metadata xmlns:che="http://www.geocat.ch/2008/che" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gco:isoType="gmd:MD_Metadata" xsi:schemaLocation="http://www.geocat.ch/2008/che http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd http://www.isotc211.org/2005/srv http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd">
+  <gmd:fileIdentifier xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:CharacterString>e64b86f8-bf2f-e4de-c9ed-211feb290b5d</gco:CharacterString>
+  </gmd:fileIdentifier>
+  <gmd:language xmlns:comp="http://www.geocat.ch/2003/05/gateway/GM03Comprehensive" xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:CharacterString>deu</gco:CharacterString>
+  </gmd:language>
+  <gmd:characterSet xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+  </gmd:characterSet>
+  <gmd:hierarchyLevel xmlns:comp="http://www.geocat.ch/2003/05/gateway/GM03Comprehensive" xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" />
+  </gmd:hierarchyLevel>
+  <gmd:hierarchyLevelName>
+    <gco:CharacterString>Eigentumskategorien STZH</gco:CharacterString>
+  </gmd:hierarchyLevelName>
+  <gmd:contact>
+    <che:CHE_CI_ResponsibleParty gco:isoType="gmd:CI_ResponsibleParty">
+      <gmd:organisationName>
+        <gco:CharacterString>Stadt Zürich - Präsidialdepartement - Statistik Stadt Zürich</gco:CharacterString>
+      </gmd:organisationName>
+      <gmd:contactInfo>
+        <gmd:CI_Contact>
+          <gmd:phone>
+            <che:CHE_CI_Telephone gco:isoType="gmd:CI_Telephone">
+              <gmd:voice>
+                <gco:CharacterString>+41 44 412 08 00</gco:CharacterString>
+              </gmd:voice>
+              <che:directNumber>
+                <gco:CharacterString>+41 44 412 08 05</gco:CharacterString>
+              </che:directNumber>
+            </che:CHE_CI_Telephone>
+          </gmd:phone>
+          <gmd:address>
+            <che:CHE_CI_Address gco:isoType="gmd:CI_Address">
+              <gmd:city>
+                <gco:CharacterString>Zürich</gco:CharacterString>
+              </gmd:city>
+              <gmd:postalCode>
+                <gco:CharacterString>8001</gco:CharacterString>
+              </gmd:postalCode>
+              <gmd:country>
+                <gco:CharacterString>CH</gco:CharacterString>
+              </gmd:country>
+              <gmd:electronicMailAddress>
+                <gco:CharacterString>Mauro.Baster@zuerich.ch</gco:CharacterString>
+              </gmd:electronicMailAddress>
+              <che:streetName>
+                <gco:CharacterString>Napfgasse</gco:CharacterString>
+              </che:streetName>
+              <che:streetNumber>
+                <gco:CharacterString>6</gco:CharacterString>
+              </che:streetNumber>
+            </che:CHE_CI_Address>
+          </gmd:address>
+          <gmd:onlineResource>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage>
+                <gmd:URL>http://stadt-zuerich.ch/statistik</gmd:URL>
+              </gmd:linkage>
+            </gmd:CI_OnlineResource>
+          </gmd:onlineResource>
+        </gmd:CI_Contact>
+      </gmd:contactInfo>
+      <gmd:role>
+        <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact" />
+      </gmd:role>
+      <che:individualFirstName>
+        <gco:CharacterString>Marco</gco:CharacterString>
+      </che:individualFirstName>
+      <che:individualLastName>
+        <gco:CharacterString>Sieber</gco:CharacterString>
+      </che:individualLastName>
+      <che:organisationAcronym>
+        <gco:CharacterString>SSZ</gco:CharacterString>
+      </che:organisationAcronym>
+    </che:CHE_CI_ResponsibleParty>
+  </gmd:contact>
+  <gmd:dateStamp xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:DateTime>2020-01-17T06:06:27</gco:DateTime>
+  </gmd:dateStamp>
+  <gmd:metadataStandardName xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:CharacterString>GM03 2+</gco:CharacterString>
+  </gmd:metadataStandardName>
+  <gmd:spatialRepresentationInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_VectorSpatialRepresentation>
+      <gmd:geometricObjects>
+        <gmd:MD_GeometricObjects>
+          <gmd:geometricObjectType>
+            <gmd:MD_GeometricObjectTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_GeometricObjectTypeCode" codeListValue="surface" />
+          </gmd:geometricObjectType>
+        </gmd:MD_GeometricObjects>
+      </gmd:geometricObjects>
+    </gmd:MD_VectorSpatialRepresentation>
+  </gmd:spatialRepresentationInfo>
+  <gmd:referenceSystemInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_ReferenceSystem>
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gco:CharacterString>CH1903+_LV95 (Original:LV03)</gco:CharacterString>
+          </gmd:code>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:identificationInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <che:CHE_MD_DataIdentification gco:isoType="gmd:MD_DataIdentification">
+      <gmd:citation>
+        <gmd:CI_Citation>
+          <gmd:title xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>Eigentumskategorien STZH</gco:CharacterString>
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#DE" />
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
+          </gmd:title>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:Date>2025-01-06</gco:Date>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+        </gmd:CI_Citation>
+      </gmd:citation>
+      <gmd:abstract xsi:type="gmd:PT_FreeText_PropertyType">
+        <gco:CharacterString>Die Daten stellen den jeweiligen Stand (Jahr) der Eigentümer- und Verwalterinformationen aus der GWZ (Gebäude- und Wohnungsregister der Stadt Zürich) Datenbank in Verbindung mit den Liegenschaften der amtlichen Vermessung dar.</gco:CharacterString>
+        <gmd:PT_FreeText>
+          <gmd:textGroup>
+            <gmd:LocalisedCharacterString locale="#DE" />
+          </gmd:textGroup>
+        </gmd:PT_FreeText>
+      </gmd:abstract>
+      <gmd:purpose xsi:type="gmd:PT_FreeText_PropertyType">
+        <gmd:PT_FreeText>
+          <gmd:textGroup>
+            <gmd:LocalisedCharacterString locale="#DE">Der Datensatz unterstützt die Mitarbeiterinnen der Stadt Zürich bei Entscheidungsfindungsprozessen, in der Kommunikation mit der Öffentlichkeit bei Bauvorhaben. Er gibt ihnen einen Überblick über Konfliktpotentiale bei der Flächennutzung sowie ermöglicht er Auswertungen bzgl. Fragestellungen ihrer täglichen Arbeit.</gmd:LocalisedCharacterString>
+          </gmd:textGroup>
+        </gmd:PT_FreeText>
+      </gmd:purpose>
+      <gmd:resourceMaintenance>
+        <che:CHE_MD_MaintenanceInformation xmlns:gts="http://www.isotc211.org/2005/gts" gco:isoType="gmd:MD_MaintenanceInformation">
+          <gmd:maintenanceAndUpdateFrequency>
+            <gmd:MD_MaintenanceFrequencyCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="annually" />
+          </gmd:maintenanceAndUpdateFrequency>
+          <gmd:contact>
+            <che:CHE_CI_ResponsibleParty gco:isoType="gmd:CI_ResponsibleParty">
+              <gmd:organisationName>
+                <gco:CharacterString>Präsidialdepartement
+                     - Statistik Stadt Zürich</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:phone>
+                    <che:CHE_CI_Telephone gco:isoType="gmd:CI_Telephone">
+                      <gmd:voice>
+                        <gco:CharacterString>+41 44 412 08 00</gco:CharacterString>
+                      </gmd:voice>
+                      <che:directNumber>
+                        <gco:CharacterString>+41 44 412 08 05</gco:CharacterString>
+                      </che:directNumber>
+                    </che:CHE_CI_Telephone>
+                  </gmd:phone>
+                  <gmd:address>
+                    <che:CHE_CI_Address gco:isoType="gmd:CI_Address">
+                      <gmd:city>
+                        <gco:CharacterString>Zürich</gco:CharacterString>
+                      </gmd:city>
+                      <gmd:postalCode>
+                        <gco:CharacterString>8001</gco:CharacterString>
+                      </gmd:postalCode>
+                      <gmd:country>
+                        <gco:CharacterString>CH</gco:CharacterString>
+                      </gmd:country>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString>Mauro.Baster@zuerich.ch</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                      <che:streetName>
+                        <gco:CharacterString>Napfgasse</gco:CharacterString>
+                      </che:streetName>
+                      <che:streetNumber>
+                        <gco:CharacterString>6</gco:CharacterString>
+                      </che:streetNumber>
+                    </che:CHE_CI_Address>
+                  </gmd:address>
+                  <gmd:onlineResource>
+                    <gmd:CI_OnlineResource>
+                      <gmd:linkage>
+                        <gmd:URL>https://stadt-zuerich.ch/statistik</gmd:URL>
+                      </gmd:linkage>
+                    </gmd:CI_OnlineResource>
+                  </gmd:onlineResource>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodeLists.xml#CI_RoleCode" codeListValue="owner" />
+              </gmd:role>
+              <che:individualFirstName>
+                <gco:CharacterString>Baster</gco:CharacterString>
+              </che:individualFirstName>
+              <che:individualLastName>
+                <gco:CharacterString>Mauro</gco:CharacterString>
+              </che:individualLastName>
+              <che:organisationAcronym>
+                <gco:CharacterString>SSZ</gco:CharacterString>
+              </che:organisationAcronym>
+            </che:CHE_CI_ResponsibleParty>
+          </gmd:contact>
+        </che:CHE_MD_MaintenanceInformation>
+      </gmd:resourceMaintenance>
+      <gmd:graphicOverview>
+        <gmd:MD_BrowseGraphic>
+          <gmd:fileName>
+            <gco:CharacterString>https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/e64b86f8-bf2f-e4de-c9ed-211feb290b5d.png</gco:CharacterString>
+          </gmd:fileName>
+        </gmd:MD_BrowseGraphic>
+      </gmd:graphicOverview>
+      <gmd:descriptiveKeywords>
+        <gmd:MD_Keywords>
+          <gmd:keyword>
+            <gco:CharacterString>Eigentum</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:type>
+            <gmd:MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodeLists.xml#MD_KeywordTypeCode" codeListValue="theme" />
+          </gmd:type>
+        </gmd:MD_Keywords>
+      </gmd:descriptiveKeywords>
+      <gmd:resourceConstraints>
+        <che:CHE_MD_LegalConstraints gco:isoType="gmd:MD_LegalConstraints">
+          <gmd:useLimitation>
+            <gco:CharacterString>1. Nutzungsbestimmung
+
+Diese Geodaten unterliegen folgenden Nutzungsbeschränkungen:	
+
+- Sie dürfen ausschliesslich zu dem unter 4. beschriebenen Zweck genutzt werden.
+	            		
+Die Quelle ist zu bezeichnen: „Quelle: Stadt Zürich“. 
+		        
+   			
+2. Haftungsausschluss
+
+Die in der Verwaltung der Stadt Zürich zuständige Stelle gemäss Art. 8 Abs. 1 GeoIG (SR 510.62) schliesst jede Haftung für direkte und indirekte Schäden durch die Nutzung der Geodaten aus. Sie übernimmt keine Garantie für die Aktualität, Richtigkeit, Vollständigkeit und Genauigkeit der veröffentlichten Geodaten.
+        		
+3. Rahmenbedingungen
+
+Folgende Dokumente bilden die Rahmenbedingungen für Geodaten und Geodienste in der Stadt Zürich:
+       			
+- Städtisches Geoinformationsreglement (StGeoIR), AS 704.100
+https://www.stadt-zuerich.ch/content/dam/stzh/portal/Deutsch/AmtlicheSammlung/Erlasse/704/100/704.100_StGeoIR%20V2.pdf     			
+   			
+
+		       
+4. Nutzungszweck
+
+Stadtintern</gco:CharacterString>
+          </gmd:useLimitation>
+        </che:CHE_MD_LegalConstraints>
+      </gmd:resourceConstraints>
+      <gmd:spatialRepresentationType>
+        <gmd:MD_SpatialRepresentationTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodeLists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector" />
+      </gmd:spatialRepresentationType>
+      <gmd:spatialResolution>
+        <gmd:MD_Resolution>
+          <gmd:equivalentScale>
+            <gmd:MD_RepresentativeFraction>
+              <gmd:denominator>
+                <gco:Integer>500</gco:Integer>
+              </gmd:denominator>
+            </gmd:MD_RepresentativeFraction>
+          </gmd:equivalentScale>
+        </gmd:MD_Resolution>
+      </gmd:spatialResolution>
+      <gmd:language>
+        <gco:CharacterString>deu</gco:CharacterString>
+      </gmd:language>
+      <gmd:characterSet>
+        <gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+      </gmd:characterSet>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>planningCadastre_Cadastre</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>boundaries</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:extent>
+        <gmd:EX_Extent>
+          <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>Stadt Zürich</gco:CharacterString>
+          </gmd:description>
+          <gmd:geographicElement>
+            <gmd:EX_GeographicDescription>
+              <gmd:geographicIdentifier>
+                <gmd:MD_Identifier>
+                  <gmd:code xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString />
+                  </gmd:code>
+                </gmd:MD_Identifier>
+              </gmd:geographicIdentifier>
+            </gmd:EX_GeographicDescription>
+          </gmd:geographicElement>
+          <gmd:geographicElement>
+            <gmd:EX_BoundingPolygon>
+              <gmd:extentTypeCode>
+                <gco:Boolean>true</gco:Boolean>
+              </gmd:extentTypeCode>
+              <gmd:polygon>
+                <gml:MultiSurface gml:id="N10285">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="N1028A">
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList />
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </gmd:polygon>
+            </gmd:EX_BoundingPolygon>
+          </gmd:geographicElement>
+          <gmd:geographicElement>
+            <gmd:EX_GeographicBoundingBox>
+              <gmd:extentTypeCode>
+                <gco:Boolean>true</gco:Boolean>
+              </gmd:extentTypeCode>
+              <gmd:westBoundLongitude>
+                <gco:Decimal>8.443821782566665</gco:Decimal>
+              </gmd:westBoundLongitude>
+              <gmd:eastBoundLongitude>
+                <gco:Decimal>8.631776103472221</gco:Decimal>
+              </gmd:eastBoundLongitude>
+              <gmd:southBoundLatitude>
+                <gco:Decimal>47.31549273037445</gco:Decimal>
+              </gmd:southBoundLatitude>
+              <gmd:northBoundLatitude>
+                <gco:Decimal>47.43963707749998</gco:Decimal>
+              </gmd:northBoundLatitude>
+            </gmd:EX_GeographicBoundingBox>
+          </gmd:geographicElement>
+        </gmd:EX_Extent>
+      </gmd:extent>
+    </che:CHE_MD_DataIdentification>
+  </gmd:identificationInfo>
+  <gmd:contentInfo>
+    <che:CHE_MD_FeatureCatalogueDescription gco:isoType="gmd:MD_FeatureCatalogueDescription">
+      <gmd:includedWithDataset>
+        <gco:Boolean>0</gco:Boolean>
+      </gmd:includedWithDataset>
+      <gmd:featureCatalogueCitation>
+        <gmd:CI_Citation>
+          <gmd:title>
+            <gco:CharacterString>Eigentumskategorien STZH</gco:CharacterString>
+          </gmd:title>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:Date>2025-01-06</gco:Date>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+        </gmd:CI_Citation>
+      </gmd:featureCatalogueCitation>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>EIGENTUMSKATEGORIEN_A</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Liegenschaften der Amtlichen Vermessung angereichert um die Eigentumskategorien zum jeweiligen Zeitstand aus dem Datamart von Statistik Stadt Zürich.</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EGRID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Eidgenössische Grundstückidentifikation</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EIG_BFS_ART</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>6161 Uebrige Auftraggeber 
+6151 Uebrige Auftraggeber 
+6142 Institutionelle Anleger 
+6152 Uebrige Auftraggeber 
+6121 Uebrige Auftraggeber 
+6124 Uebrige Auftraggeber 
+6108 Oeffentliche Auftraggeber 
+6101 Oeffentliche Auftraggeber 
+6143 Uebrige Auftraggeber 
+6122 Uebrige Auftraggeber 
+6162 Uebrige Auftraggeber 
+6115 Oeffentliche Auftraggeber 
+6110 Oeffentliche Auftraggeber 
+6104 Oeffentliche Auftraggeber</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EIG_BFS_KAT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>6161 Privatpersonenen 
+6151 Uebrige Anleger 
+6142 Bau- und Immobiliengesellschaften 
+6152 Uebrige Anleger 
+6121 Institutionelle Anleger 
+6124 Uebrige Auftraggeber 
+6108 Bund 
+6101 Bund 
+6143 Bau- und Immobiliengesellschaften 
+6122 Uebrige Anleger 
+6162 Uebrige Anleger 
+6115 Gemeinden 
+6110 Kantone 
+6104 Bund</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EIG_BFS_TYP</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>6161 Privatpersonenen 
+6151 Einzelfirmen oder Personengesellschaften 
+6142 Wohnbaugenossenschaft 
+6152 Kapitalgesellschaften 
+6121 Versicherungsgesellschaft 
+6124 Banken 
+6108 Post 
+6101 SBB 
+6143 Bau- oder Immobiliengesellschaften 
+6122 Personalfürsorgestifungen (Pensionskasse) 
+6162 Andere private Auftraggeber 
+6115 Gemeinden 
+6110 Kanton 
+6104 Bund</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EIG_STAT_ST1</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>1 Privates Eigentum 
+2 Öffentliches Eigentum 
+9 Nicht relevant 
+8 Unbekannt</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EIG_STAT_ST2</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>110 Natürliche Personen 
+120 Stockwerkeigentum 
+130 Baugenossenschaft 
+140 Genossenschaften 
+150 Kapitalgesellschaften 
+170 Pensionskasse 
+180 Religionsgemeinschaften 
+210 Gesellschaften öfftenlichen Rechts 
+999 Nicht relevant 
+888 Unbekannt</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EIG_STAT_ST3</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>1101 Einzelperson 
+1102 Erbengemeinschaft 
+1103 Mehrere Natürliche Personen 
+1204 Stockwerkeigentum 
+1301 Baugenossenschaft 
+1401 Genossenschaften 
+1501 Aktiengesellschaft 
+1502 Kollektivgesellschaft 
+1503 Kommanditgesellschaft 
+1504 Gesellschaft mit beschränkter Haftung 
+1505 Verschiedene Eigentümerarten (gemischtes Eigentum) 
+1506 Verein, private Stiftung 
+1701 Pensionskasse 
+1801 Evangelisch-reformierte Kirchgemeinde 
+1802 Römisch-katholische Kirchgemeinde 
+1803 Andere Religions- und Kultusgemeinschaft 
+2101 Stadt Zürich 
+2102 Städtische Stiftung 
+2103 Kanton Zürich 
+2104 Bund 
+2109 Andere öffentliche Eigentümer 
+9999 Nicht relevant 
+8888 Unbekannt</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EIG_STAT_ST4</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>1101.01 Einzelperson 
+1102.01 Erbengemeinschaft 
+1103.01 Mehrere Natürliche Personen 
+1204.01 Stockwerkeigentum 
+1301.01 Baugenossenschaft 
+1401.01 Handels- und Produktivgenossenschaft 
+1401.02 Versicherungs- u. übrige Genossenschaften 
+1501.01 Aktiengesellschaft 
+1501.07 Aktiengesellschaft Bank 
+1501.02 Aktiengesellschaft Post 
+1501.03 Aktiengesellschaft SBB 
+1501.04 Aktiengesellschaft Versicherung 
+1501.05 Aktiengesellschaft Immobilienfonds 
+1501.06 Aktiengesellschaft Immobilienfirmen 
+1502.01 Kollektivgesellschaft 
+1502.02 Kollektivgesellschaft Immobilienfirmen 
+1503.01 Kommanditgesellschaft 
+1503.02 Kommanditgesellschaft Immobilienfirmen 
+1504.01 Gesellschaft mit beschränkter Haftung 
+1504.02 Gesellschaft mit beschränkter Haftung Immobilienfirmen 
+1505.01 Verschiedene Eigentümerarten (gemischtes Eigentum) 
+1506.01 Verein, private Stiftung 
+1701.01 Pensionskasse 
+1801.01 Evangelisch-reformierte Kirchgemeinde 
+1802.01 Römisch-katholische Kirchgemeinde 
+1803.01 Andere Religions- und Kultusgemeinschaft 
+2101.01 Stadt Zürich 
+2102.01 Städtische Stiftung 
+2103.01 Kanton Zürich 
+2104.01 Bund 
+2109.01 Andere öffentliche Eigentümer 
+9999.01 Nicht relevant 
+8888.01 Unbekannt</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Geometriefeld</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>NUMMER</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Parzellennummer aus der Amtlichen Vermessung.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Vom System vergebener Identifikator</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STAND_DWH</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Datum der Datengrundlage aus dem Datawarehouse des SSZ</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STAND_VERSCHNITT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Datum der Aufbereitung der Daten</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:modelType>
+        <che:CHE_MD_modelTypeCode codeList="" codeListValue="FeatureDescription" />
+      </che:modelType>
+    </che:CHE_MD_FeatureCatalogueDescription>
+  </gmd:contentInfo>
+  <gmd:distributionInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_Distribution />
+  </gmd:distributionInfo>
+  <gmd:dataQualityInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:DQ_DataQuality>
+      <gmd:scope>
+        <gmd:DQ_Scope>
+          <gmd:level>
+            <gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" />
+          </gmd:level>
+        </gmd:DQ_Scope>
+      </gmd:scope>
+      <gmd:lineage>
+        <gmd:LI_Lineage />
+      </gmd:lineage>
+    </gmd:DQ_DataQuality>
+  </gmd:dataQualityInfo>
+</che:CHE_MD_Metadata>
+

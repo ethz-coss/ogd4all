@@ -1,0 +1,72 @@
+{
+   "title": "Neuzulassungen der Personenwagen nach Treibstoffart, Rechtsform und Stadtquartier",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/prd_ssz_fz_pw_neuzulassungen_jahr_quartier_antriebsart_rechtsform_od2004",
+   "abstract": "Dieser Datensatz beinhaltet die Anzahl Personenwagen der Stadt Zürich nach Treibstoffart, Stadtquartier, Jahr und Rechtsform (im Besitz natürlicher oder juristischer Personen), die neu in Verkehr gesetzt werden.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Stichtag:\n\nDer Stichtag zur Bestimmung des Jahresstandes ist jeweils der 30. September. Nicht wie normalerweise üblich der 31. Dezember.\n\nFahrzeugbestand:\n\nDer Datensatz enthält verschiedene Informationen zu den in der Stadt Zürich gemeldeten Motorfahrzeugen mit Zürcher Nummernschild im Besitz von natürlichen und juristischen Fahrzeughalter*innen.\n\nPersonenwagen:\n\nPersonenwagen sind Fahrzeuge mit höchstens 9 Sitzplätzen inklusive Sitzplatz für die Person, die fährt.\n\nRechtsform:\n\nDie Rechtsform sagt aus, ob das Fahrzeug einer natürlichen oder einer juristischen Person gehört. Wenn zusätzlich auch alle Fahrzeuge ausgewiesen werden, kann die Summe von Fahrzeugen von juristischen plus Fahrzeugen von natürlichen Personen leicht von \"allen Fahrzeugen\" abweichen, da bei einigen Fahrzeugen die Rechtsform nicht bekannt ist.\n\nNeuzulassung:\n\nDie Neuzulassungen eines bestimmten Jahres sind definiert als jene Fahrzeuge, die zwischen dem 1. Oktober des Vorjahres und dem 30. September erstmals in Verkehr gesetzt wurden.\n\nTreibstoffart:\n\nDie Treibstoffart wird folgendermassen aggregiert: \"Benzin\" und \"Diesel\" werden direkt übernommen, \"Elektrisch\" setzt sich zusammen aus \"Elektrisch\" und \"Elektrisch mit RE\", \"Hybrid\" aus \"Hybrid\", \"Benzin /Elektrisch\", \"Diesel/Elektrisch\", und alle übrigen Arten fallen in die Kategorie \"übrige/unbekannt\".\n\nHinweis:\n\nAufgrund einer genaueren Adressüberprüfung im Dezember 2023 reduziert sich die Grundgesamtheit der Fahrzeuge leicht, und die Anzahl Fahrzeuge kann von früheren Publikationen abweichen.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Neuzulassungen der Personenwagen nach Treibstoffart, Rechtsform und Stadtquartier",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Stichtag (technisch: StichtagDat)",
+                  "description": "Stichtag zur Bestimmung des Fahrzeugbestands. Der Stichtag ist in diesem Datensatz jeweils der 30. September."
+               },
+               {
+                  "name": "Bestandsjahr (technisch: StichtagDatJahr)",
+                  "description": "Kalenderjahr, zu dem der Bestand zugeordnet wird."
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarLang)",
+                  "description": "Statistisches Stadtquartier (string) in dem die Fahrzeughalter*in wohnt."
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarCd)",
+                  "description": "Stadtquartier Code (string)."
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarSort)",
+                  "description": "Stadtquartier Sortiervariable (numerisch)"
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisLang)",
+                  "description": "Stadtkreis (string), in dem die Fahrzeughalter*in wohnt."
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisCd)",
+                  "description": "Stadtkreis Code (string)."
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisSort)",
+                  "description": "Stadtkreis Sortiervariable (numerisch)."
+               },
+               {
+                  "name": "Rechtsform (technisch: FhRechtsformLang)",
+                  "description": "Rechtsform (string). Hier wird unterschieden zwischen juristischen und natürlichen Personen."
+               },
+               {
+                  "name": "Code für Rechtsform (technisch: FhRechtsformCd)",
+                  "description": "Code für Rechtsform (string)."
+               },
+               {
+                  "name": "Aggregierte Treibstoffart (technisch: FzTreibstoffAgg_noDM)",
+                  "description": "Treibstoffart des Fahrzeugs (string). Aggregiert zu den Klassen Benzin, Diesel, Elektrisch, Hybrid und den Übrigen."
+               },
+               {
+                  "name": "Code für aggregierte Treibstoffart (technisch: FzTreibstoffAggCd_noDM)",
+                  "description": "Code für Treibstoffart des Fahrzeugs (string)."
+               },
+               {
+                  "name": "Anzahl Fahrzeuge (technisch: FzAnz)",
+                  "description": "Anzahl Fahrzeuge (numerisch)."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-02-11"
+}

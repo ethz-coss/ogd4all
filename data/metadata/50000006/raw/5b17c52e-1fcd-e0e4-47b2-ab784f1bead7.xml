@@ -1,0 +1,749 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<che:CHE_MD_Metadata xmlns:che="http://www.geocat.ch/2008/che" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gco:isoType="gmd:MD_Metadata" xsi:schemaLocation="http://www.geocat.ch/2008/che http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd http://www.isotc211.org/2005/srv http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd">
+  <gmd:fileIdentifier xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:CharacterString>5b17c52e-1fcd-e0e4-47b2-ab784f1bead7</gco:CharacterString>
+  </gmd:fileIdentifier>
+  <gmd:language xmlns:comp="http://www.geocat.ch/2003/05/gateway/GM03Comprehensive" xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:CharacterString>deu</gco:CharacterString>
+  </gmd:language>
+  <gmd:characterSet xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+  </gmd:characterSet>
+  <gmd:hierarchyLevel xmlns:comp="http://www.geocat.ch/2003/05/gateway/GM03Comprehensive" xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" />
+  </gmd:hierarchyLevel>
+  <gmd:hierarchyLevelName>
+    <gco:CharacterString>Baumkataster</gco:CharacterString>
+  </gmd:hierarchyLevelName>
+  <gmd:contact>
+    <che:CHE_CI_ResponsibleParty gco:isoType="gmd:CI_ResponsibleParty">
+      <gmd:organisationName>
+        <gco:CharacterString>Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Grün Stadt Zürich</gco:CharacterString>
+      </gmd:organisationName>
+      <gmd:contactInfo>
+        <gmd:CI_Contact>
+          <gmd:phone>
+            <che:CHE_CI_Telephone gco:isoType="gmd:CI_Telephone">
+              <gmd:voice>
+                <gco:CharacterString>+41 44 415 35 05</gco:CharacterString>
+              </gmd:voice>
+              <che:directNumber>
+                <gco:CharacterString>+41 44 412 15 24</gco:CharacterString>
+              </che:directNumber>
+            </che:CHE_CI_Telephone>
+          </gmd:phone>
+          <gmd:address>
+            <che:CHE_CI_Address gco:isoType="gmd:CI_Address">
+              <gmd:city>
+                <gco:CharacterString>Zürich</gco:CharacterString>
+              </gmd:city>
+              <gmd:postalCode>
+                <gco:CharacterString>8057</gco:CharacterString>
+              </gmd:postalCode>
+              <gmd:country>
+                <gco:CharacterString>CH</gco:CharacterString>
+              </gmd:country>
+              <gmd:electronicMailAddress>
+                <gco:CharacterString>Michel.Ries@zuerich.ch</gco:CharacterString>
+              </gmd:electronicMailAddress>
+              <che:streetName>
+                <gco:CharacterString>Nordheimstrasse</gco:CharacterString>
+              </che:streetName>
+              <che:streetNumber>
+                <gco:CharacterString>28</gco:CharacterString>
+              </che:streetNumber>
+            </che:CHE_CI_Address>
+          </gmd:address>
+          <gmd:onlineResource>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage>
+                <gmd:URL>https://www.stadt-zuerich.ch/gsz</gmd:URL>
+              </gmd:linkage>
+            </gmd:CI_OnlineResource>
+          </gmd:onlineResource>
+        </gmd:CI_Contact>
+      </gmd:contactInfo>
+      <gmd:role>
+        <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact" />
+      </gmd:role>
+      <che:individualFirstName>
+        <gco:CharacterString>Michel</gco:CharacterString>
+      </che:individualFirstName>
+      <che:individualLastName>
+        <gco:CharacterString>Ries</gco:CharacterString>
+      </che:individualLastName>
+      <che:organisationAcronym>
+        <gco:CharacterString>GSZ</gco:CharacterString>
+      </che:organisationAcronym>
+    </che:CHE_CI_ResponsibleParty>
+  </gmd:contact>
+  <gmd:dateStamp xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:DateTime>2025-01-14T10:35:19</gco:DateTime>
+  </gmd:dateStamp>
+  <gmd:metadataStandardName xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:CharacterString>GM03 2+</gco:CharacterString>
+  </gmd:metadataStandardName>
+  <gmd:spatialRepresentationInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_VectorSpatialRepresentation>
+      <gmd:geometricObjects>
+        <gmd:MD_GeometricObjects>
+          <gmd:geometricObjectType>
+            <gmd:MD_GeometricObjectTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_GeometricObjectTypeCode" codeListValue="composite" />
+          </gmd:geometricObjectType>
+        </gmd:MD_GeometricObjects>
+      </gmd:geometricObjects>
+    </gmd:MD_VectorSpatialRepresentation>
+  </gmd:spatialRepresentationInfo>
+  <gmd:referenceSystemInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_ReferenceSystem>
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gco:CharacterString>CH1903+_LV95</gco:CharacterString>
+          </gmd:code>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:identificationInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <che:CHE_MD_DataIdentification gco:isoType="gmd:MD_DataIdentification">
+      <gmd:citation>
+        <gmd:CI_Citation>
+          <gmd:title xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>Baumkataster</gco:CharacterString>
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#DE" />
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
+          </gmd:title>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:Date>2025-03-09</gco:Date>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+        </gmd:CI_Citation>
+      </gmd:citation>
+      <gmd:abstract xsi:type="gmd:PT_FreeText_PropertyType">
+        <gco:CharacterString>Im Baumkataster werden alle städtischen Bäume im Strassenraum erfasst, welche von Grün Stadt Zürich verwaltet oder gepflegt werden. Ergänzt wird das Baumkataster durch das Obstbauminventar sowie Bäume ausgewählter öffentlicher Grünanlagen und private Bäume.</gco:CharacterString>
+        <gmd:PT_FreeText>
+          <gmd:textGroup>
+            <gmd:LocalisedCharacterString locale="#DE" />
+          </gmd:textGroup>
+        </gmd:PT_FreeText>
+      </gmd:abstract>
+      <gmd:purpose xsi:type="gmd:PT_FreeText_PropertyType">
+        <gmd:PT_FreeText>
+          <gmd:textGroup>
+            <gmd:LocalisedCharacterString locale="#DE">Das Baumkataster dient der Verwaltung der Bäume im öffentlichen Raum. Es ist Hilfsmittel für die Pflege dieser Bäume und für den Ersatz "alter" Bäume. Zudem ist es eine wichtige Informationsgrundlage für Planende, Projektierende die sich über die bestehenden Baumstandorte orientieren wollen. Interessierte sollen jederzeit aktuell und präzise über Baumarten und Baumstandorte informieren können.</gmd:LocalisedCharacterString>
+          </gmd:textGroup>
+        </gmd:PT_FreeText>
+      </gmd:purpose>
+      <gmd:resourceMaintenance>
+        <che:CHE_MD_MaintenanceInformation xmlns:gts="http://www.isotc211.org/2005/gts" gco:isoType="gmd:MD_MaintenanceInformation">
+          <gmd:maintenanceAndUpdateFrequency>
+            <gmd:MD_MaintenanceFrequencyCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="weekly" />
+          </gmd:maintenanceAndUpdateFrequency>
+          <gmd:contact>
+            <che:CHE_CI_ResponsibleParty gco:isoType="gmd:CI_ResponsibleParty">
+              <gmd:organisationName>
+                <gco:CharacterString>Tiefbau- und Entsorgungsdepartement
+                     - Grün Stadt Zürich</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:phone>
+                    <che:CHE_CI_Telephone gco:isoType="gmd:CI_Telephone">
+                      <gmd:voice>
+                        <gco:CharacterString>+41 44 415 35 05</gco:CharacterString>
+                      </gmd:voice>
+                      <che:directNumber>
+                        <gco:CharacterString>+41 44 412 15 24</gco:CharacterString>
+                      </che:directNumber>
+                    </che:CHE_CI_Telephone>
+                  </gmd:phone>
+                  <gmd:address>
+                    <che:CHE_CI_Address gco:isoType="gmd:CI_Address">
+                      <gmd:city>
+                        <gco:CharacterString>Zürich</gco:CharacterString>
+                      </gmd:city>
+                      <gmd:postalCode>
+                        <gco:CharacterString>8057</gco:CharacterString>
+                      </gmd:postalCode>
+                      <gmd:country>
+                        <gco:CharacterString>CH</gco:CharacterString>
+                      </gmd:country>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString>Michel.Ries@zuerich.ch</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                      <che:streetName>
+                        <gco:CharacterString>Nordheimstrasse</gco:CharacterString>
+                      </che:streetName>
+                      <che:streetNumber>
+                        <gco:CharacterString>28</gco:CharacterString>
+                      </che:streetNumber>
+                    </che:CHE_CI_Address>
+                  </gmd:address>
+                  <gmd:onlineResource>
+                    <gmd:CI_OnlineResource>
+                      <gmd:linkage>
+                        <gmd:URL>https://www.stadt-zuerich.ch/gsz</gmd:URL>
+                      </gmd:linkage>
+                    </gmd:CI_OnlineResource>
+                  </gmd:onlineResource>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodeLists.xml#CI_RoleCode" codeListValue="owner" />
+              </gmd:role>
+              <che:individualFirstName>
+                <gco:CharacterString>Ries</gco:CharacterString>
+              </che:individualFirstName>
+              <che:individualLastName>
+                <gco:CharacterString>Michel</gco:CharacterString>
+              </che:individualLastName>
+              <che:organisationAcronym>
+                <gco:CharacterString>GSZ</gco:CharacterString>
+              </che:organisationAcronym>
+            </che:CHE_CI_ResponsibleParty>
+          </gmd:contact>
+        </che:CHE_MD_MaintenanceInformation>
+      </gmd:resourceMaintenance>
+      <gmd:graphicOverview>
+        <gmd:MD_BrowseGraphic>
+          <gmd:fileName>
+            <gco:CharacterString>https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/5b17c52e-1fcd-e0e4-47b2-ab784f1bead7.png</gco:CharacterString>
+          </gmd:fileName>
+        </gmd:MD_BrowseGraphic>
+      </gmd:graphicOverview>
+      <gmd:descriptiveKeywords>
+        <gmd:MD_Keywords>
+          <gmd:keyword>
+            <gco:CharacterString>Baum, Stassenbaum, Obstbaum</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:type>
+            <gmd:MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodeLists.xml#MD_KeywordTypeCode" codeListValue="theme" />
+          </gmd:type>
+        </gmd:MD_Keywords>
+      </gmd:descriptiveKeywords>
+      <gmd:resourceConstraints>
+        <che:CHE_MD_LegalConstraints gco:isoType="gmd:MD_LegalConstraints">
+          <gmd:useLimitation>
+            <gco:CharacterString>1. Nutzungsbestimmung
+
+Diese Geodaten stehen unter der international gültigen Creative-Commons-Zero-Lizenz (CC-0). Sie dürfen:
+
+- vervielfältigt, verbreitet und weiter zugänglich gemacht werden,
+- angereichert und bearbeitet werden,
+- kommerziell genutzt werden.
+
+Eine Quellenangabe (CC-BY) wird empfohlen: Sie lautet: „Quelle: Stadt Zürich“.
+				
+2. Haftungsausschluss
+
+Die in der Verwaltung der Stadt Zürich zuständige Stelle gemäss Art. 8 Abs. 1 GeoIG (SR 510.62) schliesst jede Haftung für direkte und indirekte Schäden durch die Nutzung der Geodaten [Nutzung der Geodienste] aus. Sie übernimmt keine Garantie für die Aktualität, Richtigkeit, Vollständigkeit und Genauigkeit der veröffentlichten Geodaten.
+                  
+3. Rahmenbedingungen 
+
+- Reglement über offene Verwaltungsdaten, AS 170.410
+https://www.stadt-zuerich.ch/portal/de/index/politik_u_recht/amtliche_sammlung/inhaltsverzeichnis/1/170/410.html
+
+- Städtisches Geoinformationsreglement (StGeoIR), AS 704.100
+https://www.stadt-zuerich.ch/content/dam/stzh/portal/Deutsch/AmtlicheSammlung/Erlasse/704/100/704.100_StGeoIR%20V2.pdf</gco:CharacterString>
+          </gmd:useLimitation>
+        </che:CHE_MD_LegalConstraints>
+      </gmd:resourceConstraints>
+      <gmd:spatialRepresentationType>
+        <gmd:MD_SpatialRepresentationTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodeLists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector" />
+      </gmd:spatialRepresentationType>
+      <gmd:spatialResolution>
+        <gmd:MD_Resolution>
+          <gmd:equivalentScale>
+            <gmd:MD_RepresentativeFraction>
+              <gmd:denominator>
+                <gco:Integer>500</gco:Integer>
+              </gmd:denominator>
+            </gmd:MD_RepresentativeFraction>
+          </gmd:equivalentScale>
+        </gmd:MD_Resolution>
+      </gmd:spatialResolution>
+      <gmd:language>
+        <gco:CharacterString>deu</gco:CharacterString>
+      </gmd:language>
+      <gmd:characterSet>
+        <gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+      </gmd:characterSet>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>biota</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:extent>
+        <gmd:EX_Extent>
+          <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>Stadt Zürich und angrenzende Gemeinden</gco:CharacterString>
+          </gmd:description>
+          <gmd:geographicElement>
+            <gmd:EX_GeographicDescription>
+              <gmd:geographicIdentifier>
+                <gmd:MD_Identifier>
+                  <gmd:code xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString />
+                  </gmd:code>
+                </gmd:MD_Identifier>
+              </gmd:geographicIdentifier>
+            </gmd:EX_GeographicDescription>
+          </gmd:geographicElement>
+          <gmd:geographicElement>
+            <gmd:EX_BoundingPolygon>
+              <gmd:extentTypeCode>
+                <gco:Boolean>true</gco:Boolean>
+              </gmd:extentTypeCode>
+              <gmd:polygon>
+                <gml:MultiSurface gml:id="N10285">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="N1028A">
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList />
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </gmd:polygon>
+            </gmd:EX_BoundingPolygon>
+          </gmd:geographicElement>
+          <gmd:geographicElement>
+            <gmd:EX_GeographicBoundingBox>
+              <gmd:extentTypeCode>
+                <gco:Boolean>true</gco:Boolean>
+              </gmd:extentTypeCode>
+              <gmd:westBoundLongitude>
+                <gco:Decimal>8.36167308488333</gco:Decimal>
+              </gmd:westBoundLongitude>
+              <gmd:eastBoundLongitude>
+                <gco:Decimal>8.71238105752889</gco:Decimal>
+              </gmd:eastBoundLongitude>
+              <gmd:southBoundLatitude>
+                <gco:Decimal>47.15426421794444</gco:Decimal>
+              </gmd:southBoundLatitude>
+              <gmd:northBoundLatitude>
+                <gco:Decimal>47.483753735111094</gco:Decimal>
+              </gmd:northBoundLatitude>
+            </gmd:EX_GeographicBoundingBox>
+          </gmd:geographicElement>
+        </gmd:EX_Extent>
+      </gmd:extent>
+    </che:CHE_MD_DataIdentification>
+  </gmd:identificationInfo>
+  <gmd:distributionInfo xmlns:comp="http://www.geocat.ch/2003/05/gateway/GM03Comprehensive" xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_Distribution>
+      <gmd:transferOptions>
+        <gmd:MD_DigitalTransferOptions>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage xsi:type="gmd:PT_FreeURL_PropertyType">
+                <gmd:URL>https://www.stadt-zuerich.ch/geodaten/download/Baumkataster</gmd:URL>
+                <che:PT_FreeURL>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#EN">https://www.stadt-zuerich.ch/geodaten/download/Baumkataster</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#FR">https://www.stadt-zuerich.ch/geodaten/download/Baumkataster</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#IT">https://www.stadt-zuerich.ch/geodaten/download/Baumkataster</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#DE">https://www.stadt-zuerich.ch/geodaten/download/Baumkataster</che:LocalisedURL>
+                  </che:URLGroup>
+                </che:PT_FreeURL>
+              </gmd:linkage>
+              <gmd:protocol>
+                <gco:CharacterString>WWW:LINK-1.0-http--download</gco:CharacterString>
+              </gmd:protocol>
+              <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Baumkataster - Datenbezug</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#DE">Baumkataster - Datenbezug</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Baumkataster - Distribution des données</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#IT">Baumkataster - Procacciamento dei dati</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Baumkataster - Order data</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:description>
+              <gmd:function>
+                <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download" />
+              </gmd:function>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+        </gmd:MD_DigitalTransferOptions>
+      </gmd:transferOptions>
+      <gmd:transferOptions>
+        <gmd:MD_DigitalTransferOptions />
+      </gmd:transferOptions>
+    </gmd:MD_Distribution>
+  </gmd:distributionInfo>
+  <gmd:contentInfo>
+    <che:CHE_MD_FeatureCatalogueDescription gco:isoType="gmd:MD_FeatureCatalogueDescription">
+      <gmd:includedWithDataset>
+        <gco:Boolean>0</gco:Boolean>
+      </gmd:includedWithDataset>
+      <gmd:featureCatalogueCitation>
+        <gmd:CI_Citation>
+          <gmd:title>
+            <gco:CharacterString>Baumkataster</gco:CharacterString>
+          </gmd:title>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:Date>2025-03-09</gco:Date>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+        </gmd:CI_Citation>
+      </gmd:featureCatalogueCitation>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>BAUMKATASTER_BAUMSTANDORTE</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Baumstandorte in der Stadt Zürich</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Interlis/Geomedia Identifikationsnummer (Systemvorgabe)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>POI_ID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Identifikationsnummer für Züriplan
+"bm_" + OBJID</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>KATEGORIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Kategorie für Züriplan (Zusammnzug aus Attribut Status):
+- "Strasssenbaum": Attribut 'STATUS', Werte 'Strassenbaum' + 'Strassebaum (A)'
+- "Grünanlage": Attribut 'STATUS', Wert 'Grünanlage'</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>QUARTIER</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Name des statistischen Quartiers in dem der Baum liegt</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STRASSE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Strasse an der Baum steht</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BAUMGATTUNGLAT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Gattung (lateinisch)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BAUMARTLAT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Art (lateinisch)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BAUMNAMELAT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Gattung, Art und Sorte (lateinisch)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BAUMNAMEDEU</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Gattung, Art und Sorte (deutsch)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BAUMNUMMER</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Eindeutige Baumnummer.
+Vermessungsbezirk (z.B.  AL  für Altstetten) + "-" + eindeutige Identifikationsnummer pro Vermessungsbezirk</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BAUMTYP</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Umschreibung der Wuchsform.
+Coded Domain
+1: Höhe: &gt;20m, Breite: &gt;10m; grosskronige, breit wachsende Bäume
+2: Höhe: &gt;20m, Breite: &amp;lt;10m; grosskronige, schmal wachsende  Bäume
+3: Höhe: 10-20m, Breite: &gt;10m; mittelgrosse, breit wachsende Bäume
+4: Höhe:10-20m, Breite: &amp;lt;10m; mittelgrosse, schmal wachsende  Bäume 
+5: Höhe: &amp;lt;10m, Breite: &amp;lt;10m; kleinkronige Bäume
+6: Obstbäume</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BAUMTYPTEXT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Umschreibung der Wuchsform.
+Coded Domain
+1: Höhe: &gt;20m, Breite: &gt;10m; grosskronige, breit wachsende Bäume
+2: Höhe: &gt;20m, Breite: &amp;lt;10m; grosskronige, schmal wachsende  Bäume
+3: Höhe: 10-20m, Breite: &gt;10m; mittelgrosse, breit wachsende Bäume
+4: Höhe: 10-20m, Breite: &amp;lt;10m; mittelgrosse, schmal wachsende  Bäume 
+5: Höhe: &amp;lt;10m, Breite: &amp;lt;10m; kleinkronige Bäume
+6: Obstbäume</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>PFLANZJAHR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Jahr, in welchem der Baum gepflanzt wurde. Ist nicht für alle Bäume bekannt.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>ESRI Identifikationsnummer (Systemvorgabe)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>ESRI Geometrietyp</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>Kronendurchmesser</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Krondendurchmesser in m. Die Kronendurchmesser im Baumkataster sind unvollständig, werden unregelmässig nachgeführt und sind nur geschätzt. Bei Bäumen bei denen keine Kronendurchmesser vorhanden ist, wird ein Durchmesser von 8m verwendet.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GENAUIGKEIT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Art der Koordinaten-Bestimmung
+  - Bildschirmeingabe
+  - Digitalisierung oder ELTA2
+  - Eingemessen
+  - Eingemessen (Nachpflanzung)
+  - Luftbild
+  - Unbekannte Quelle</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STATUS</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Kategorisierung der Bäume.
+- Strassenbaum: Baum, der vollständig im Strassenraum steht
+- Strassenbaum (A): Baum in einer Grünanlage, welcher den Strassenraum mitprägt 
+- Grünanlage: Baum in einer Grünanlage (wichtig: nicht alle Grünanlagenbäume sind erfasst)
+- Bund: Bäume, die auf Grundstücken im Eigentum des Bundes stehen
+- Kanton: Bäume, die auf Grundstücken im Eigentum des Kantones stehen
+- Schulen: Bäume auf Schularealen
+- Privat: Bäume auf Privatgrund
+- Obst: separat erfasste Obstbäume, die nicht in eine andere Kategorie fallen</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>BAUMKATASTER_KRONENDURCHMESSER</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Darstellung des Kronendurchmessers für den CAD-Export. Die Kronendurchmesser im Baumkataster sind unvollständig, werden unregelmässig nachgeführt und sind nur geschätzt. Bei Bäumen bei denen kein Kronendurchmesser vorhanden ist, wird ein Durchmesser von 8m verwendet.</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>ESRI Identifikationsnummer (Systemvorgabe)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BAUMNUMMER</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Eindeutige Baumnummer.
+Vermessungsbezirk (z.B. AL für Altstetten) + "-" + eindeutige Identifikationsnummer pro Vermessungsbezirk</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>ESRI Geometrietyp</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>BAUMSTANDORTE_K</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Darstellung des Baumstandortes als Kreis (10cm Radius) für den CAD-Export.</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>ESRI Identifikationsnummer (Systemvorgabe)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BAUMNAMEDEU</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Gattung, Art und Sorte (deutsch)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>ESRI Geometrietyp</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:modelType>
+        <che:CHE_MD_modelTypeCode codeList="" codeListValue="FeatureDescription" />
+      </che:modelType>
+    </che:CHE_MD_FeatureCatalogueDescription>
+  </gmd:contentInfo>
+  <gmd:distributionInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_Distribution>
+      <gmd:distributionFormat>
+        <gmd:MD_Format>
+          <gmd:name>
+            <gco:CharacterString>ESRI Shape (.shp)</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>-</gco:CharacterString>
+          </gmd:version>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+      <gmd:distributionFormat>
+        <gmd:MD_Format>
+          <gmd:name>
+            <gco:CharacterString>Comma Separated Values (.csv)</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>-</gco:CharacterString>
+          </gmd:version>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+      <gmd:distributionFormat>
+        <gmd:MD_Format>
+          <gmd:name>
+            <gco:CharacterString>GeoJSON (.json)</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>-</gco:CharacterString>
+          </gmd:version>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+      <gmd:distributionFormat>
+        <gmd:MD_Format>
+          <gmd:name>
+            <gco:CharacterString>Geopackage (.gpkg)</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>-</gco:CharacterString>
+          </gmd:version>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+      <gmd:distributionFormat>
+        <gmd:MD_Format>
+          <gmd:name>
+            <gco:CharacterString>DXF (.dxf)</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>-</gco:CharacterString>
+          </gmd:version>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+    </gmd:MD_Distribution>
+  </gmd:distributionInfo>
+  <gmd:dataQualityInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:DQ_DataQuality>
+      <gmd:scope>
+        <gmd:DQ_Scope>
+          <gmd:level>
+            <gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" />
+          </gmd:level>
+        </gmd:DQ_Scope>
+      </gmd:scope>
+      <gmd:lineage>
+        <gmd:LI_Lineage />
+      </gmd:lineage>
+    </gmd:DQ_DataQuality>
+  </gmd:dataQualityInfo>
+</che:CHE_MD_Metadata>
+

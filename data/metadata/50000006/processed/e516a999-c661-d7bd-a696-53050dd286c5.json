@@ -1,0 +1,57 @@
+{
+   "title": "Historische Dorfkerne",
+   "keywords": [
+      "Archäologie",
+      "Geschichte",
+      "Siedlungen"
+   ],
+   "metadata_date": "2022-05-24T11:44:13",
+   "updateFrequency": "asNeeded",
+   "purpose": "z. B. Einbindung in mapDenkmalpflege und weitere stadtinterne GIS-Applikationen.",
+   "abstract": "Aufbereitung des Geodatensatzes \"Historische Dorfkerne\" für den Geoserver. Siehe dort für eine inhaltliche Beschreibung.",
+   "identificationDate": "2023-05-12",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Hochbaudepartement - Amt für Städtebau",
+   "contactPerson": "Janine Sutter",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Historische_Dorfkerne",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "AFS_SDE.HISTORISCHE_DORFKERNE_A",
+            "description": "siehe Beschreibung zum Geodatensatz",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": "Bezeichnung des historischen Dorfkerns, z. B. \"Seebach Oberdorf\" oder \"Albisrieden\"."
+               },
+               {
+                  "name": "DATUM",
+                  "description": "Datum der letzten Aufbereitung"
+               }
+            ]
+         }
+      ]
+   }
+}

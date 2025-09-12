@@ -1,0 +1,80 @@
+{
+   "title": "Bauliche Erneuerung nach Art der Erneuerung, Eigentumsart und Stadtquartier",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bau_whg_erneuerung_art_quartier_eigentumsart_seit1993_od5311",
+   "abstract": "Der Datensatz enthält die umgebauten und abgebrochenen Wohnungen nach Eigentumsart und Stadtquartier. Die Summe von Umbau und Abbruch wird als bauliche Erneuerung verstanden.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Definition\n\nAls bauliche Erneuerung wird vorliegend die Summe aller umgebauten und abgebrochenen Wohnungen definiert. Umbauten an Gebäuden, die weniger als 15 Jahre alt sind, werden nicht berücksichtigt. Die Erneuerungsquote ergibt sich als Summe der umgebauten und abgebrochenen Wohnungen, bezogen auf den relevanten, d.h. mindestens 15-jährigen Wohnungsbestand\n\nWeitere Informationen\n\nSiehe die Analyse von Statistik Stadt Zürich aus dem Jahr 2016: Bauliche Erneuerung in Zahlen.\n\nAnzWhgStatGbdmind15Jaehrig\n\nWohnungsbestand in mindestens 15-jährigen Gebäuden. Hinweis: Mit diesem Wert kann die Erneuerungsquote berechnet werden. Die von SSZ ausgewiesene Quote bezieht sich nur Wohnungen in Gebäuden, die mindestens 15-jährig sind. Achtung: Der Wert enthält nur diejenigen Quartiere, in denen im betreffenden Jahr mindestens eine Erneuerung (Umbau oder Abbruch/Ersatzbau) stattgefunden hat.\n\nZeitraum 1993-2000:\n\nKeine Angaben über die Eigentumsgruppe\n\nHinweis\n\nSeit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.\n\nEigentumsart\n\nÖffentliches Eigentum: Bund, Kanton Zürich, Stadt Zürich inklusive städtischer Stiftungen und anderes öffentliches Eigentum\nWohnbaugenossenschaften: Nur Wohnbaugenossenschaften\nAndere private Gesellschaften: Aktien-, Kollektiv- und Kommanditgesellschaften, Handels-, Produktiv-, Versicherungs- und übrige Genossenschaften, Gesellschaften mit beschränkter Haftung, Pensionskassen, Vereine, private Stiftungen, gemischtes Eigentum und Religionsgemeinschaften\nPrivatpersonen: Einzelpersonen, Erbgemeinschaften und mehrere natürliche Personen\nIm Stochwerkeigentum: Stockwerkeigentumsgesellschaften\n\nVariablen mit mehreren Varianten\n\nGewisse Variablen werden in verschiedenen Formen aufgeführt. Die \"Lang\"-Variante beschreibt den Inhalt (z.B. StatZoneLang beschreibt die statistische Zone, mögliche Werte sind Central oder Oberdorf). Die \"Cd\"-Variante kodiert die Variable alphanumerisch, quasi als Kurzform (Central und Oberdorf sind 1104 und 1201). Die \"Sort\"-Variante kodiert die Variable numerisch (Central und Oberdorf sind 5 und 4) und erlaubt eine Sortierung. \"Cd\" und \"Sort\" können auch identisch sein.\n\nStatistische Wohnung\n\nAls statistische Wohnung zählen bestehende Wohnungen, welche über eine Kocheinrichtung verfügen und zu Wohnzwecken (keine zweckentfremdeten Wohnungen) verwendet werden.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Bauliche Erneuerung nach Art der Erneuerung, Eigentumsart und Stadtquartier",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Numerisch)"
+               },
+               {
+                  "name": "Datenstand (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (P = provisorisch, D = definitiv)"
+               },
+               {
+                  "name": "Stadtquartier Sortiercode (technisch: QuarSort)",
+                  "description": "Stadtquartier (Numerisch)"
+               },
+               {
+                  "name": "Stadtquartier Code (technisch: QuarCd)",
+                  "description": "Stadtquartier Code (String)"
+               },
+               {
+                  "name": "Stadtquartier Beschreibung (technisch: QuarLang)",
+                  "description": "Stadtquartier (String)"
+               },
+               {
+                  "name": "Stadtkreis Sortiercode (technisch: KreisSort)",
+                  "description": "Stadtkreis (Numerisch)"
+               },
+               {
+                  "name": "Stadtkreis Code (technisch: KreisCd)",
+                  "description": "Stadtkreis (String)"
+               },
+               {
+                  "name": "Stadtkreis Beschreibung (technisch: KreisLang)",
+                  "description": "Stadtkreis (String)"
+               },
+               {
+                  "name": "Eigentumsgruppe Sortiercode (technisch: EigentuemerSSZPubl1Sort)",
+                  "description": "Eigentumsart (Numerisch)"
+               },
+               {
+                  "name": "Eigentumsgruppe Code (technisch: EigentuemerSSZPubl1Cd)",
+                  "description": "Eigentumsart (String)"
+               },
+               {
+                  "name": "Eigentumsgruppe Lang (technisch: EigentuemerSSZPubl1Lang)",
+                  "description": "Eigentumsart (String)"
+               },
+               {
+                  "name": "Wohnungen befinden sich in mindestens 15-Jährigen Gebäuden (technisch: GbdAlterVSP1Cd_noDM)",
+                  "description": "Wohnungen befinden sich in mindestens 15-Jährigen Gebäuden (String)"
+               },
+               {
+                  "name": "Wohnungen befinden sich in mindestens 15-Jährigen Gebäuden (technisch: GbdAlterVSP1Lang_noDM)",
+                  "description": "Wohnungen befinden sich in mindestens 15-Jährigen Gebäuden (String)"
+               },
+               {
+                  "name": "Anzahl abgebrochene Wohnungen (technisch: AnzAbbruchWhg_noDM)",
+                  "description": "Anzahl abgebrochene Wohnungen (Numerisch)"
+               },
+               {
+                  "name": "Anzahl umgebaute Wohnungen (technisch: AnzUmbauWhg_noDM)",
+                  "description": "Anzahl umgebaute Wohnungen (Numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-01-06"
+}

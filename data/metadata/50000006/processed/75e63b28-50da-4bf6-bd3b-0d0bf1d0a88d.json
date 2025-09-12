@@ -1,0 +1,85 @@
+{
+   "title": "Punktwolkenverzeichnis",
+   "metadata_date": "2024-09-19T09:08:02",
+   "updateFrequency": "asNeeded",
+   "purpose": "Stadtinternes Auffinden von Punktwolken.",
+   "abstract": "Punktwolkenverzeichnis Stadt Zürich. Dieser Datensatz beinhaltet lediglich den räumlichen Extent der Punktwolken, und nicht die Punktwolken selber.",
+   "identificationDate": "2025-01-28",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Geomatik + Vermessung",
+   "contactPerson": "Tobias Brunner",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "punktwolken",
+            "description": "Flächen, welche die 2-dimensionalen Ausmasse der jeweiligen Punktwolke beschreiben. Zusätzlich sind die Punktwolkenspezifischen Metadaten in Form von Attributen gespeichert.",
+            "attributes": [
+               {
+                  "name": "zustaendige_stelle",
+                  "description": "Wer stadtintern für diese Punktwolke zuständig ist. Bei Fragen bitte direkt an diese Stelle wenden."
+               },
+               {
+                  "name": "erfassungsdatum",
+                  "description": "Wann die Punktwolke/n erfasst wurden"
+               },
+               {
+                  "name": "georeferenziert",
+                  "description": "Ob die Punktwolken georeferenziert sind, oder in einem lokalen Koordinatensystem vorliegen"
+               },
+               {
+                  "name": "aufnahmemethode",
+                  "description": "Wie die Punktwolke erfasst wurde"
+               },
+               {
+                  "name": "ablageort",
+                  "description": "Wo die Punktwolke liegt - falls sie bezogen werden kann. Falls hier kein Pfad angegeben ist, bitte an die zuständige Stelle wenden."
+               },
+               {
+                  "name": "link_viewer",
+                  "description": "Link zum Viewer, in welchem diese Punktwolke visualisiert werden kann."
+               },
+               {
+                  "name": "weitere_attribute",
+                  "description": "Ob neben den Positionsinformationen (x,y,z) noch weitere Informationen pro Punkt verfügbar sind"
+               },
+               {
+                  "name": "genauigkeit_georef",
+                  "description": "Wie genau die Punktwolke georeferenziert wurde - falls sie georeferenziert wurde."
+               },
+               {
+                  "name": "datenbereinigung",
+                  "description": "Ob und wie die Ursprungsdaten bereinigt wurden. Falls die Urspungsdaten benötigt werden, bitte an die zuständige Stelle wenden."
+               },
+               {
+                  "name": "bemerkungen",
+                  "description": null
+               },
+               {
+                  "name": "objectid",
+                  "description": null
+               },
+               {
+                  "name": "geometrie",
+                  "description": null
+               },
+               {
+                  "name": "projektname",
+                  "description": "Projekt, im Rahmen dessen diese Punktwolke erfasst wurde"
+               },
+               {
+                  "name": "da",
+                  "description": "Welche Dienstabteilung/en für diese Punktwolke verantwortlich sind."
+               }
+            ]
+         }
+      ]
+   }
+}

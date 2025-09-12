@@ -1,0 +1,3892 @@
+{
+   "title": "Amtliche Vermessungsdaten Stadt Zürich Jahresendstand 2022",
+   "keywords": [
+      "AV",
+      "Geobasidaten",
+      "Liegenschaften",
+      "Bodenbedeckung",
+      "Vermessung",
+      "Adressen",
+      "Archiv"
+   ],
+   "metadata_date": "2023-09-27T10:04:40",
+   "updateFrequency": "notPlanned",
+   "purpose": "Als amtliche Vermessung im Sinne von Artikel 950 ZGB gelten die zur Anlage und Führung des Grundbuchs vom Kanton genehmigten und vom Bund anerkannten Vermessungen. Die Daten der amtlichen Vermessung sind Georeferenzdaten, die von Behörden des Bundes, der Kantone und der Gemeinden sowie von der Wirtschaft, der Wissenschaft und Dritten zur Gewinnung von Geoinformationen verwendet werden. Auf dem GeoServer sind für die stadtinternen Nutzenden optimierte Tabellenstrukturen aufgeschaltet.",
+   "abstract": "Die amtliche Vermessung (AV) liefert geometrische Daten zum Grundeigentum und ist die Grundlage für viele weitere Geodaten und Anwendungen in Wirtschaft, Verwaltung und Privatleben.\n\nAchtung: Dies ist der Jahresendstand 2022 der AV-Daten!",
+   "identificationDate": "2023-01-04",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Geomatik + Vermessung",
+   "contactPerson": "André Graf",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Amtliche_Vermessungsdaten_Stadt_Zuerich_Jahresendstand_2022",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "AV_BE_BEZIRKSGRENZABSCHNITT",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGKEIT",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGKEIT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_BO_BBNACHFUEHRUNG",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "IDENTIFIKATOR",
+                  "description": null
+               },
+               {
+                  "name": "BESCHREIBUNG",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGKEIT",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGKEIT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGEREINTRAG",
+                  "description": null
+               },
+               {
+                  "name": "DATUM1",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_BO_ALLEGEBAEUDE_A_V",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "OBJIDGN",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDENUMMER",
+                  "description": null
+               },
+               {
+                  "name": "NUTZUNGSCODE",
+                  "description": null
+               },
+               {
+                  "name": "GWR_EGID",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE_AREA_FME",
+                  "description": null
+               },
+               {
+                  "name": "MONAT",
+                  "description": null
+               },
+               {
+                  "name": "BAUJAHR",
+                  "description": null
+               },
+               {
+                  "name": "UMBAUJAHR",
+                  "description": null
+               },
+               {
+                  "name": "NUTZUNGSAENDERUNGJAHR",
+                  "description": null
+               },
+               {
+                  "name": "EKOORD",
+                  "description": null
+               },
+               {
+                  "name": "NKOORD",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_BO_BOFLAECHESYMBOL",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "BOFLAECHESYMBOL_VON",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_BO_BOFLAECHE_A",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "OBJIDGN",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDENUMMER",
+                  "description": null
+               },
+               {
+                  "name": "NUTZUNGSCODE",
+                  "description": null
+               },
+               {
+                  "name": "GWR_EGID",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE_AREA_FME",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_BO_BOFLAECHE_L",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "LINIENART",
+                  "description": null
+               },
+               {
+                  "name": "LINIENART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_BO_GEBAEUDENUMMER_T",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDENUMMER_VON",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDENUMMERPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDENUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GWR_EGID",
+                  "description": null
+               },
+               {
+                  "name": "LAUFNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GBVKREIS",
+                  "description": null
+               },
+               {
+                  "name": "GEBEAUDEHAUPTNUTZUNG",
+                  "description": null
+               },
+               {
+                  "name": "NUTZUNGSCODE",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HILFSNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_BO_OBJEKTNAME_T",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "OBJEKTNAME_VON",
+                  "description": null
+               },
+               {
+                  "name": "OBJEKTNAMEPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_BO_OBJEKTNAME_UEP5_T",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "OBJEKTNAME_UEP5_VON",
+                  "description": null
+               },
+               {
+                  "name": "OBJEKTNAMEPOS_UEP5_VON",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_BO_PROJBOFLAECHE_A",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "OBJIDGN",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDENUMMER",
+                  "description": null
+               },
+               {
+                  "name": "NUTZUNGSCODE",
+                  "description": null
+               },
+               {
+                  "name": "GWR_EGID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE_AREA_FME",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_BO_PROJGEBAEUDENUMMER_T",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "PROJGEBAEUDENUMMER_VON",
+                  "description": null
+               },
+               {
+                  "name": "PROJGEBAEUDENUMMERPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDENUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GWR_EGID",
+                  "description": null
+               },
+               {
+                  "name": "LAUFNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GBVKREIS",
+                  "description": null
+               },
+               {
+                  "name": "GEBEAUDEHAUPTNUTZUNG",
+                  "description": null
+               },
+               {
+                  "name": "NUTZUNGSCODE",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HILFSNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_EI_ALLEGEBAEUDE_A_V",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "MONAT",
+                  "description": null
+               },
+               {
+                  "name": "BAUJAHR",
+                  "description": null
+               },
+               {
+                  "name": "UMBAUJAHR",
+                  "description": null
+               },
+               {
+                  "name": "NUTZUNGSAENDERUNGJAHR",
+                  "description": null
+               },
+               {
+                  "name": "EKOORD",
+                  "description": null
+               },
+               {
+                  "name": "NKOORD",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "FLAECHENELEMENT_VON",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDENUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GWR_EGID",
+                  "description": null
+               },
+               {
+                  "name": "NUTZUNGSCODE",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "OBJIDGN",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_EI_EONACHFUEHRUNG",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "IDENTIFIKATOR",
+                  "description": null
+               },
+               {
+                  "name": "BESCHREIBUNG",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGKEIT",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGKEIT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGEREINTRAG",
+                  "description": null
+               },
+               {
+                  "name": "DATUM1",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_EI_FLAECHENELEMENT_A",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "FLAECHENELEMENT_VON",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": null
+               },
+               {
+                  "name": "OBJIDGN",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDENUMMER",
+                  "description": null
+               },
+               {
+                  "name": "NUTZUNGSCODE",
+                  "description": null
+               },
+               {
+                  "name": "GWR_EGID",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_EI_LINIENELEMENT",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "LINIENELEMENT_VON",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": null
+               },
+               {
+                  "name": "LINIENART",
+                  "description": null
+               },
+               {
+                  "name": "LINIENART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_EI_OBJEKTNAME_T",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "OBJEKTNAMEPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "OBJEKTNAME_VON",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_EI_OBJEKTNAME_UEP5_T",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "OBJEKTNAMEPOS_UEP5_VON",
+                  "description": null
+               },
+               {
+                  "name": "OBJEKTNAME_UEP5_VON",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_EI_OBJEKTNUMMER_T",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "OBJEKTNUMMERPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "OBJEKTNUMMER_VON",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GWR_EGID",
+                  "description": null
+               },
+               {
+                  "name": "LAUFNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GBVKREIS",
+                  "description": null
+               },
+               {
+                  "name": "HAUPTNUTZUNG",
+                  "description": null
+               },
+               {
+                  "name": "NUTZUNGSCODE",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_FI_HFP1",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEOM",
+                  "description": null
+               },
+               {
+                  "name": "LAGEGEN",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEN",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_FI_HFP1_T",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "HFP1POS_VON",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_FI_HFP2",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEOM",
+                  "description": null
+               },
+               {
+                  "name": "LAGEGEN",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEN",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_FI_HFP2_T",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "HFP2POS_VON",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_FI_HFP3",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEOM",
+                  "description": null
+               },
+               {
+                  "name": "LAGEGEN",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEN",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_FI_HFP3_T",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "HFP3POS_VON",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_FI_LFP1",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "LFP1SYMBOL_VON",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEOM",
+                  "description": null
+               },
+               {
+                  "name": "LAGEGEN",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEN",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "BEGEHBARKEIT",
+                  "description": null
+               },
+               {
+                  "name": "BEGEHBARKEIT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "SCHUTZ",
+                  "description": null
+               },
+               {
+                  "name": "SCHUTZ_TXT",
+                  "description": null
+               },
+               {
+                  "name": "PUNKTZEICHEN",
+                  "description": null
+               },
+               {
+                  "name": "PUNKTZEICHEN_TXT",
+                  "description": null
+               },
+               {
+                  "name": "DATUMHOEHENAENDERUNG",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_FI_LFP1_T",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "LFP1POS_VON",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_FI_LFP2",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "LFP2SYMBOL_VON",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEOM",
+                  "description": null
+               },
+               {
+                  "name": "LAGEGEN",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEN",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "BEGEHBARKEIT",
+                  "description": null
+               },
+               {
+                  "name": "BEGEHBARKEIT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "SCHUTZ",
+                  "description": null
+               },
+               {
+                  "name": "SCHUTZ_TXT",
+                  "description": null
+               },
+               {
+                  "name": "PUNKTZEICHEN",
+                  "description": null
+               },
+               {
+                  "name": "PUNKTZEICHEN_TXT",
+                  "description": null
+               },
+               {
+                  "name": "DATUMHOEHENAENDERUNG",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_FI_LFP2_T",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "LFP2POS_VON",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_FI_LFP3",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "LFP3SYMBOL_VON",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEOM",
+                  "description": null
+               },
+               {
+                  "name": "LAGEGEN",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEN",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "PUNKTZEICHEN",
+                  "description": null
+               },
+               {
+                  "name": "PUNKTZEICHEN_TXT",
+                  "description": null
+               },
+               {
+                  "name": "PROTOKOLL",
+                  "description": null
+               },
+               {
+                  "name": "PROTOKOLL_TXT",
+                  "description": null
+               },
+               {
+                  "name": "SCHUTZ",
+                  "description": null
+               },
+               {
+                  "name": "SCHUTZ_TXT",
+                  "description": null
+               },
+               {
+                  "name": "DATUMHOEHENAENDERUNG",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_FI_LFP3_T",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "LFP3POS_VON",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_GEB_GEBAEUDEADRESSE_T",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "HAUSNUMMERPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDEEINGANG_VON",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_GA",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_GA_TXT",
+                  "description": null
+               },
+               {
+                  "name": "INAENDERUNG",
+                  "description": null
+               },
+               {
+                  "name": "INAENDERUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ATTRIBUTEPROVISORISCH",
+                  "description": null
+               },
+               {
+                  "name": "ATTRIBUTEPROVISORISCH_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ISTOFFIZIELLEBEZEICHNUNG",
+                  "description": null
+               },
+               {
+                  "name": "ISTOFFIZIELLEBEZEICHNUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HOEHENLAGE",
+                  "description": null
+               },
+               {
+                  "name": "HAUSNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "IM_GEBAEUDE",
+                  "description": null
+               },
+               {
+                  "name": "IM_GEBAEUDE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GWR_EGID",
+                  "description": null
+               },
+               {
+                  "name": "GWR_EDID",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDENUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDEEINGANGNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": null
+               },
+               {
+                  "name": "ADRESSE",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_GEB_GEBAEUDEADRESSE_UEP5_T",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "HAUSNUMMERPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "ANFINDEX",
+                  "description": null
+               },
+               {
+                  "name": "ENDINDEX",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDEEINGANG_VON",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_GA",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_GA_TXT",
+                  "description": null
+               },
+               {
+                  "name": "INAENDERUNG",
+                  "description": null
+               },
+               {
+                  "name": "INAENDERUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ATTRIBUTEPROVISORISCH",
+                  "description": null
+               },
+               {
+                  "name": "ATTRIBUTEPROVISORISCH_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ISTOFFIZIELLEBEZEICHNUNG",
+                  "description": null
+               },
+               {
+                  "name": "ISTOFFIZIELLEBEZEICHNUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HOEHENLAGE",
+                  "description": null
+               },
+               {
+                  "name": "HAUSNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "IM_GEBAEUDE",
+                  "description": null
+               },
+               {
+                  "name": "IM_GEBAEUDE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GWR_EGID",
+                  "description": null
+               },
+               {
+                  "name": "GWR_EDID",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDENUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDEEINGANGNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": null
+               },
+               {
+                  "name": "ADRESSE",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_GEB_KURZSTRNAMEN_UEP5_T",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONSNAMEPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "TEXT",
+                  "description": null
+               },
+               {
+                  "name": "NUMMERIERUNGSPRINZIP",
+                  "description": null
+               },
+               {
+                  "name": "NUMMERIERUNGSPRINZIP_TXT",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "ATTRIBUTEPROVISORISCH",
+                  "description": null
+               },
+               {
+                  "name": "ATTRIBUTEPROVISORISCH_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ISTOFFIZIELLEBEZEICHNUNG",
+                  "description": null
+               },
+               {
+                  "name": "ISTOFFIZIELLEBEZEICHNUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": null
+               },
+               {
+                  "name": "INAENDERUNG",
+                  "description": null
+               },
+               {
+                  "name": "INAENDERUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "ANFINDEX",
+                  "description": null
+               },
+               {
+                  "name": "ENDINDEX",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STIL",
+                  "description": null
+               },
+               {
+                  "name": "STIL_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_GEB_LOKALISATIONSNAME",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "BENANNTE",
+                  "description": null
+               },
+               {
+                  "name": "TEXT",
+                  "description": null
+               },
+               {
+                  "name": "KURZTEXT",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "ISTOFFIZIELLEBEZEICHNUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_GEB_STRASSENNAMEN_T",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONSNAMEPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "TEXT",
+                  "description": null
+               },
+               {
+                  "name": "KURZTEXT",
+                  "description": null
+               },
+               {
+                  "name": "INDEXTEXT",
+                  "description": null
+               },
+               {
+                  "name": "SPRACHE",
+                  "description": null
+               },
+               {
+                  "name": "SPRACHE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "NUMMERIERUNGSPRINZIP",
+                  "description": null
+               },
+               {
+                  "name": "NUMMERIERUNGSPRINZIP_TXT",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "ATTRIBUTEPROVISORISCH",
+                  "description": null
+               },
+               {
+                  "name": "ATTRIBUTEPROVISORISCH_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ISTOFFIZIELLEBEZEICHNUNG",
+                  "description": null
+               },
+               {
+                  "name": "ISTOFFIZIELLEBEZEICHNUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": null
+               },
+               {
+                  "name": "INAENDERUNG",
+                  "description": null
+               },
+               {
+                  "name": "INAENDERUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "ANFINDEX",
+                  "description": null
+               },
+               {
+                  "name": "ENDINDEX",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STIL",
+                  "description": null
+               },
+               {
+                  "name": "STIL_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_GEB_STRASSENNAMEN_UEP5_T",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONSNAMEPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "TEXT",
+                  "description": null
+               },
+               {
+                  "name": "KURZTEXT",
+                  "description": null
+               },
+               {
+                  "name": "INDEXTEXT",
+                  "description": null
+               },
+               {
+                  "name": "SPRACHE",
+                  "description": null
+               },
+               {
+                  "name": "SPRACHE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "NUMMERIERUNGSPRINZIP",
+                  "description": null
+               },
+               {
+                  "name": "NUMMERIERUNGSPRINZIP_TXT",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "ATTRIBUTEPROVISORISCH",
+                  "description": null
+               },
+               {
+                  "name": "ATTRIBUTEPROVISORISCH_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ISTOFFIZIELLEBEZEICHNUNG",
+                  "description": null
+               },
+               {
+                  "name": "ISTOFFIZIELLEBEZEICHNUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": null
+               },
+               {
+                  "name": "INAENDERUNG",
+                  "description": null
+               },
+               {
+                  "name": "INAENDERUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "ANFINDEX",
+                  "description": null
+               },
+               {
+                  "name": "ENDINDEX",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STIL",
+                  "description": null
+               },
+               {
+                  "name": "STIL_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_GEB_STRASSENSTUECK",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "STRASSENSTUECK_VON",
+                  "description": null
+               },
+               {
+                  "name": "ORDNUNG",
+                  "description": null
+               },
+               {
+                  "name": "ISTACHSE",
+                  "description": null
+               },
+               {
+                  "name": "ISTACHSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_GEB_STRASSENSTUECK_AP",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_GE_GEMEINDEGRENZE_A",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "BFSNR",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_GE_GEMEINDEGRENZE_BOUNDARY",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_GE_HOHEITSGRENZPUNKT",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "HOHEITSGRENZPUNKTSYMBOL_VON",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "IDENTIFIKATOR",
+                  "description": null
+               },
+               {
+                  "name": "LAGEGEN",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "PUNKTZEICHEN",
+                  "description": null
+               },
+               {
+                  "name": "PUNKTZEICHEN_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HOHEITSGRENZSTEIN",
+                  "description": null
+               },
+               {
+                  "name": "HOHEITSGRENZSTEIN_TXT",
+                  "description": null
+               },
+               {
+                  "name": "EXAKTDEFINIERT",
+                  "description": null
+               },
+               {
+                  "name": "EXAKTDEFINIERT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEOM",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEN",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_GE_HOHEITSGRENZPUNKT_T",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "HOHEITSGRENZPUNKTPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "IDENTIFIKATOR",
+                  "description": null
+               },
+               {
+                  "name": "LAGEGEN",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "PUNKTZEICHEN",
+                  "description": null
+               },
+               {
+                  "name": "PUNKTZEICHEN_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HOHEITSGRENZSTEIN",
+                  "description": null
+               },
+               {
+                  "name": "HOHEITSGRENZSTEIN_TXT",
+                  "description": null
+               },
+               {
+                  "name": "EXAKTDEFINIERT",
+                  "description": null
+               },
+               {
+                  "name": "EXAKTDEFINIERT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEOM",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEN",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_LI_GRENZPUNKT",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "GRENZPUNKTSYMBOL_VON",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "IDENTIFIKATOR",
+                  "description": null
+               },
+               {
+                  "name": "LAGEGEN",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "PUNKTZEICHEN",
+                  "description": null
+               },
+               {
+                  "name": "PUNKTZEICHEN_TXT",
+                  "description": null
+               },
+               {
+                  "name": "EXAKTDEFINIERT",
+                  "description": null
+               },
+               {
+                  "name": "EXAKTDEFINIERT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HOHEITSGRENZSTEINALT",
+                  "description": null
+               },
+               {
+                  "name": "HOHEITSGRENZSTEINALT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEOM",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEN",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_LI_GRENZPUNKT_T",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "GRENZPUNKTPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "IDENTIFIKATOR",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_LI_GRUNDSTUECK_T",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "GRUNDSTUECKPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "EGRIS_EGRID",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGKEIT",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGKEIT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "VOLLSTAENDIGKEIT",
+                  "description": null
+               },
+               {
+                  "name": "VOLLSTAENDIGKEIT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GESAMTEFLAECHENMASS",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HILFSNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_LI_LIEGENSCHAFT_A",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "LIEGENSCHAFT_VON",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "EGRIS_EGRID",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGKEIT",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGKEIT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "VOLLSTAENDIGKEIT",
+                  "description": null
+               },
+               {
+                  "name": "VOLLSTAENDIGKEIT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GESAMTEFLAECHENMASS",
+                  "description": null
+               },
+               {
+                  "name": "NUMMERTEILGRUNDSTUECK",
+                  "description": null
+               },
+               {
+                  "name": "FLAECHENMASS",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_LI_LSNACHFUEHRUNG",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "IDENTIFIKATOR",
+                  "description": null
+               },
+               {
+                  "name": "BESCHREIBUNG",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGKEIT",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGKEIT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGEREINTRAG",
+                  "description": null
+               },
+               {
+                  "name": "GBEINTRAG",
+                  "description": null
+               },
+               {
+                  "name": "DATUM1",
+                  "description": null
+               },
+               {
+                  "name": "DATUM2",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_LI_PROJGRUNDSTUECK_T",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "PROJGRUNDSTUECKPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "EGRIS_EGRID",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGKEIT",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGKEIT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "VOLLSTAENDIGKEIT",
+                  "description": null
+               },
+               {
+                  "name": "VOLLSTAENDIGKEIT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HILFSNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GESAMTEFLAECHENMASS",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_LI_PROJLIEGENSCHAFT_A",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "PROJLIEGENSCHAFT_VON",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "EGRIS_EGRID",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGKEIT",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGKEIT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "VOLLSTAENDIGKEIT",
+                  "description": null
+               },
+               {
+                  "name": "VOLLSTAENDIGKEIT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GESAMTEFLAECHENMASS",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": null
+               },
+               {
+                  "name": "NUMMERTEILGRUNDSTUECK",
+                  "description": null
+               },
+               {
+                  "name": "FLAECHENMASS",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_LI_PROJSELBSTRECHT_A",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "PROJSELBSTRECHT_VON",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "EGRIS_EGRID",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGKEIT",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGKEIT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "VOLLSTAENDIGKEIT",
+                  "description": null
+               },
+               {
+                  "name": "VOLLSTAENDIGKEIT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GESAMTEFLAECHENMASS",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": null
+               },
+               {
+                  "name": "NUMMERTEILGRUNDSTUECK",
+                  "description": null
+               },
+               {
+                  "name": "FLAECHENMASS",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_LI_SELBSTRECHT_A",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "SELBSTRECHT_VON",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "EGRIS_EGRID",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGKEIT",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGKEIT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "VOLLSTAENDIGKEIT",
+                  "description": null
+               },
+               {
+                  "name": "VOLLSTAENDIGKEIT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GESAMTEFLAECHENMASS",
+                  "description": null
+               },
+               {
+                  "name": "NUMMERTEILGRUNDSTUECK",
+                  "description": null
+               },
+               {
+                  "name": "FLAECHENMASS",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_NO_FLURNAME_T",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "FLURNAMEPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STIL",
+                  "description": null
+               },
+               {
+                  "name": "STIL_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_NO_FLURNAME_UEP5_T",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "FLURNAMEPOS_UEP5_VON",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STIL",
+                  "description": null
+               },
+               {
+                  "name": "STIL_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_PLZ_EINTEILUNG_A",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "PLZ6_VON",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": null
+               },
+               {
+                  "name": "INAENDERUNG",
+                  "description": null
+               },
+               {
+                  "name": "INAENDERUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "PLZ",
+                  "description": null
+               },
+               {
+                  "name": "ZUSATZZIFFERN",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_RO_LINIENELEMENT",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "LINIENELEMENT_VON",
+                  "description": null
+               },
+               {
+                  "name": "BETREIBER",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "LINIENART",
+                  "description": null
+               },
+               {
+                  "name": "LINIENART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         }
+      ]
+   }
+}

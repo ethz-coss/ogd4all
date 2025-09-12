@@ -1,0 +1,136 @@
+{
+   "title": "Grabsuche Sihlfeld Pilot",
+   "keywords": [
+      "Friedhof",
+      "Personenleitsystem",
+      "Grabsuche"
+   ],
+   "metadata_date": "2024-10-15T06:51:50",
+   "updateFrequency": "quarterly",
+   "purpose": "Mit einem physischen Personenleitsystem auf dem Friedhof inkl. Grabsuche für die städtischen Friedhöfe sollen Informationen die mit verschiedenen Systemen, Datenquellen und Prozessen aufbereitet werden und in ihren Zuständigkeiten verteilt sind an einem zentralen Ort zusammengeführt und der Öffentlichkeit zugänglich gemacht werden.",
+   "abstract": "Die Daten der Grabsuche werden bereitgestellt um auf dem Züriplan (Stadtplan) die Suche nach Verstorbene auf dem Friedhof Silhlfeld zu ermöglichen. Die Grabsuche Sihlfeld  läuft im Pilotbetrieb von bis Ende 2024. Währen dieser Zeit werden die Daten quartalsweise aktualisiert. Die aktuellen Bestattungen und Beisetzungen können zur Zeit noch nicht abgerufen werden.",
+   "identificationDate": "2025-03-17",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Grün Stadt Zürich",
+   "contactPerson": "Dieter Halpern",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "GRABFELDER",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "Grab-ID"
+               },
+               {
+                  "name": "LINK",
+                  "description": null
+               },
+               {
+                  "name": "FRIEDHOF_ID",
+                  "description": "Identifikationsnummer des Friedhofs"
+               },
+               {
+                  "name": "FRIEDHOFBEZEICHNUNG",
+                  "description": "offiziellen Name des Friedhofs"
+               },
+               {
+                  "name": "GRABFELDNUMMER",
+                  "description": "Identifikationsnummer für Grabfelder"
+               },
+               {
+                  "name": "GRABFELDKLASSE",
+                  "description": "Identifikationssystem für Grabfeldklasse"
+               },
+               {
+                  "name": "GRABFELD_ID",
+                  "description": "Identifikationssystem für Grabfelder"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "GRAEBER",
+            "description": "bezieht sich dies auf die Grabstätten auf einem Friedhof, wo die sterblichen Überreste von Verstorbenen begraben sind.",
+            "attributes": [
+               {
+                  "name": "GRABFELDNUMMER",
+                  "description": "Identifikationsnummer der Gradfelder"
+               },
+               {
+                  "name": "GRABSTATUS",
+                  "description": null
+               },
+               {
+                  "name": "STERBEDATUM",
+                  "description": "Sterbedatum der Person"
+               },
+               {
+                  "name": "LINK",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "Identifikationsnummer des Objektes"
+               },
+               {
+                  "name": "FRIEDHOF_ID",
+                  "description": "Identifikationsnummer oder Bezeichnung des Friedhofs"
+               },
+               {
+                  "name": "FRIEDHOFBEZEICHNUNG",
+                  "description": "Offizieller Name des Friedhofs"
+               },
+               {
+                  "name": "GRAB_ID",
+                  "description": "Identifikationsnummer des Grabes"
+               },
+               {
+                  "name": "GRABNUMMER",
+                  "description": "Identifikationsnummer des Grabes"
+               },
+               {
+                  "name": "GRABKLASSE",
+                  "description": "Identifikationklasse des Grabes"
+               },
+               {
+                  "name": "VORNAME",
+                  "description": "Vornamen einer Person"
+               },
+               {
+                  "name": "NAME",
+                  "description": "Nachname einer Person"
+               },
+               {
+                  "name": "GEBURTSDATUM",
+                  "description": "Geburtsdatum der Person"
+               },
+               {
+                  "name": "BEISETZUNGSDATUM",
+                  "description": "Datum der Beisetzung"
+               },
+               {
+                  "name": "SUCHATTRIBUT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         }
+      ]
+   }
+}

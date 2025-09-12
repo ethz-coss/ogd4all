@@ -1,0 +1,44 @@
+{
+   "title": "Heizgradtage für verschiedene Standorte in der Stadt Zürich",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/umw_heizgradtage_standort_jahr_monat_od1031",
+   "abstract": "Der Datensatz enthält die monatlichen Heiztgradtage für die Standorte Stampfenbachstrasse, Schimmelstrasse und Rosengartenstrasse.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Heizgradtage:\n\nHeizgradtage sind ein Mass für den Einfluss des Wetters auf den Heizenergieverbrauch eines Gebäudes. Heizgradtage sind die Differenz zwischen der gewünschten Raumtemperatur (20°C) und der mittleren Aussentemperatur eines Tages, falls diese Aussentemperatur unter einer bestimmten Heizgrenze liegt. Für die Berechnung der Tabellenwerte wird die Heizgrenze 12 °C verwendet. Bei einer mittleren Tagestemperatur von 2°C ergeben sich 18 Heizgradtage (20°C – 2°C). Je kälter die mittlere Tagestemperatur in einem Monat ist, desto höher sind die Heizgradtage.\n\nAkkumulierte Temperaturdifferenzen\n\nWie die Heizgradtage ist die akkumulierte Temperaturdifferenz ein Mass für den Einfluss des Wetters auf den Heizenergieverbrauch eines Gebäudes. Die akkumulierten Temperaturdifferenzen werden mit der Differenz zwischen der Basistemperatur (12°C) und dem Tagesmittel der Aussentemperatur berechnet. Bei einer mittleren Tagestemperatur von 2°C ergebt sich eine akkumulierte Temperaturdifferenz von 10 (12°C – 2°C). Je kälter die mittlere Tagestemperatur in einem Monat ist, desto höher sind die akkumulierten Temperaturdifferenzen.\n\nStandort Stampfenbachstrasse:\n\nAdresse: Stampfenbachstrasse 144, 8006 Zürich Koordinaten: 2683140 / 1249040 Höhe über Meer: 445 m.ü.M. Strassenabstand: 2 m Höhe über Boden: 6 m Standorttyp: Stadtzentrum, mässig befahrene Strasse, Wohnquartier, geschlossene Bebauung (einseitig)\n\nStandort Schimmelstrasse\n\nAdresse: Schimmelstrasse 83, 8003 Zürich Koordinaten: 2681950 / 1247250 Höhe über Meer: 413 m.ü.M. Strassenabstand: 3 m Höhe über Boden: 3 m Standorttyp: Stadtzentrum, stark befahrene Strasse, Wohnquartier, geschlossene Bebauung\n\nStandort Rosengartenstrasse\n\nAdresse: Rosengartenstrasse Koordinaten: 2682095 / 1249940 Höhe über Meer: 433 m.ü.M. Strassenabstand: 6 m Höhe über Boden: 2 m Standorttyp: Starke Verkehrsexposition an Hauptverkehrsachse. Stadtzentrum, geschlossene Bebauung\n\nFehlende Werte\n\nDer Monatswert wird bei einer Datenverfügbarkeit von 80 Prozent ausgewiesen.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Heizgradtage für verschiedene Standorte in der Stadt Zürich",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: Jahr)",
+                  "description": "Jahr (Numerisch)"
+               },
+               {
+                  "name": "Monat (technisch: Monat)",
+                  "description": "Monat (Numerisch)"
+               },
+               {
+                  "name": "Jahr_Monat (technisch: Jahr_Monat)",
+                  "description": "Jahr_Monat (String)"
+               },
+               {
+                  "name": "Standort (technisch: Standort)",
+                  "description": "Standort der Temperaturmessung (String)"
+               },
+               {
+                  "name": "Heizgradtag (technisch: Heizgradtag)",
+                  "description": "Heizgradtag (Numerisch)"
+               },
+               {
+                  "name": "akkumulierte Temperaturdifferenz (technisch: akkumulierteTemperaturdifferenz)",
+                  "description": "akkumulierte Temperaturdifferenz (numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-05-27"
+}

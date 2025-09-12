@@ -1,0 +1,135 @@
+{
+   "title": "Verkehrszählung",
+   "keywords": [
+      "Erhebungen",
+      "Verkehrserhebung",
+      "Zählung",
+      "Befragung",
+      "Simulation",
+      "Messung",
+      "Zählgeräte",
+      "Veloschlaufe",
+      "Pyrobox",
+      "FLIR",
+      "Zählgerät",
+      "automatische Zählung"
+   ],
+   "metadata_date": "2023-11-15T06:27:53",
+   "updateFrequency": "asNeeded",
+   "purpose": "Dokumentation, Controlling, Grundlage für Synergien",
+   "abstract": "Der Datensatz zeigt die Standorte alle dem Tiefbauamt bekannten geplaten, abgeschlossenen und laufenden Verkehrserhebungen. Der Datensatz dokumentiert damit die bestehenden Datengrundlagen und die geplanten statistischen Aktivitäten. Neben dem Zeitpunkt der Erhebung sind zudem die erfassten Verkehrsmittel, die erhobenen Kennwerte und ein kurzes Fazit erfasst. Auch das Schlussdokument - falls vorhanden - wird verlinkt. Über eine Filterung sind zudem alle Standorte automatischer Zählgeräte ersichtlich.",
+   "identificationDate": "2020-12-17",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Tiefbauamt",
+   "contactPerson": "Raphaël Duchoud",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "VIEW_VERKEHRSZAEHLUNG_GS",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ID1",
+                  "description": null
+               },
+               {
+                  "name": "TITEL",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "BEFRAGUNGEN",
+                  "description": "0 = nein, 1 = ja"
+               },
+               {
+                  "name": "BEOBACHTUNGEN",
+                  "description": "0 = nein, 1 = ja"
+               },
+               {
+                  "name": "MESSUNGEN",
+                  "description": "0 = nein, 1 = ja"
+               },
+               {
+                  "name": "SIMULATIONEN",
+                  "description": "0 = nein, 1 = ja"
+               },
+               {
+                  "name": "ZAEHLUNGEN",
+                  "description": "0 = nein, 1 = ja"
+               },
+               {
+                  "name": "BEGINN",
+                  "description": null
+               },
+               {
+                  "name": "ENDE",
+                  "description": null
+               },
+               {
+                  "name": "FEDERFUEHRUNG",
+                  "description": null
+               },
+               {
+                  "name": "BESCHREIBUNG",
+                  "description": null
+               },
+               {
+                  "name": "FAZIT",
+                  "description": null
+               },
+               {
+                  "name": "KENNWERTE",
+                  "description": null
+               },
+               {
+                  "name": "OEV",
+                  "description": "0 = nein, 1 = ja"
+               },
+               {
+                  "name": "FUSS",
+                  "description": "0 = nein, 1 = ja"
+               },
+               {
+                  "name": "VELO",
+                  "description": "0 = nein, 1 = ja"
+               },
+               {
+                  "name": "MIV",
+                  "description": "0 = nein, 1 = ja"
+               },
+               {
+                  "name": "GUETER",
+                  "description": "0 = nein, 1 = ja"
+               },
+               {
+                  "name": "DAUERZAEHLGERAET",
+                  "description": "0 = nein, 1 = ja"
+               },
+               {
+                  "name": "DAUERZAEHLGERAET_TYP",
+                  "description": "1 = Induktion, 2 = Hilfszählstelle, 3 = FLIR, 4 = Laser"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         }
+      ]
+   }
+}

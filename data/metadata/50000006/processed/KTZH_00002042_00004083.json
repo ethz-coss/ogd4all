@@ -1,0 +1,72 @@
+{
+   "title": "Anzahl Einbrüche nach Gemeinden und in den Stadtkreisen der Stadt Zürich, seit 2009",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/ktzh_pks_einbrueche_gemeinden_stadtkreise",
+   "abstract": "Dieser Datensatz weist die Anzahl polizeilich registrierter Einbrüche für die Stadtkreise der Stadt Zürich und Gemeinden im Kanton Zürich aus. Diese Zeitreihe besteht seit 2009.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Polizeiliche Kriminalstatistik (PKS):\n\nDie polizeiliche Kriminalstatistik (PKS) des Kantons Zürich wird jährlich publiziert. Sie beinhaltet Zahlen zu den registrierten Straftaten (und zu polizeilich beschuldigten sowie geschädigten Personen) für das Strafgesetzbuch (StGB), das Ausländer- und Integrationsgesetz (AIG) und das Betäubungsmittelgesetz (BetmG). Die polizeiliche Kriminalstatistik verzeichnet nur die polizeilich bekannt gewordene Kriminalität - das sogenannte Hellfeld. Sie ist eine Ausgangsstatistik. D.h. die Straftaten erscheinen nicht zum Tatzeitpunkt in der Statistik. Ausschlaggebend für die Zählung in der PKS ist der Zeitpunkt, an dem die Polizei einen ersten Rapport zur Straftat abgeschlossen hat.\n\nInformationen zum Datensatz:\n\nDer Datensatz enthält Daten zu Einbrüchen in Gemeinden und den Stadtkreisen der Stadt Züirch. Die Unterscheidung zwischen versuchten und vollendeten Straftaten ist nur im Falle von Straftaten gegen das StGB möglich. Die Bevölkerungszahlen sind der Einwohnerstatistik des Bundes am Ende des Vorjahres entnommen (bis 2010 ESPOP, ab 2011 STATPOP). Damit wird die Häufigkeitszahl berechnet (Anzahl registrierten Straftaten pro 1000 Einwohner).\n\nLinks zur PKS:\n\nAuf Kantonsebene:\n\nAlle offenen Verwaltungsdaten zur PKS auf kantonaler Ebene\nWebseite Kriminalität in Zahlen mit Datenvisualisierungen und Links zur jährlich stattfindenden Medienkonferenz.\n\nAuf Bundesebene:\n\nInformationen zur polizeilichen Kriminalstatistik (PKS) beim Bundesamt für Statistik (BFS)\nFacts and figures zur Kriminalität und Strafrecht in der Schweiz",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Anzahl Einbrüche nach Gemeinden und in den Stadtkreisen der Stadt Zürich, seit 2009",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Ausgangsjahr (technisch: Ausgangsjahr)",
+                  "description": "Jahr, in dem der Tatbestand stattfand. Datum."
+               },
+               {
+                  "name": "Gemeinde_BFS_Nr (technisch: Gemeinde_BFS_Nr)",
+                  "description": "ID der Gemeinde nach BFS-Nomenklatur.Integer."
+               },
+               {
+                  "name": "Gemeindename (technisch: Gemeindename)",
+                  "description": "Gemeindename. Character."
+               },
+               {
+                  "name": "Stadtkreis_BFS_Nr (technisch: Stadtkreis_BFS_Nr)",
+                  "description": "ID des Stadtkreises in der Stadt Zürich, gemäss BFS. Integer."
+               },
+               {
+                  "name": "Stadtkreis_Name (technisch: Stadtkreis_Name)",
+                  "description": "Name des Stadtkreises in der Stadt Zürich. Character."
+               },
+               {
+                  "name": "Gesetz_Nummer (technisch: Gesetz_Nummer)",
+                  "description": "Nummer des Gesetzes in welches der Tatbestand fällt. Integer."
+               },
+               {
+                  "name": "Gesetz_Abk (technisch: Gesetz_Abk)",
+                  "description": "Abkürzung des Gesetzes in welches der Tatbestand fällt. Character."
+               },
+               {
+                  "name": "Tatbestand (technisch: Tatbestand)",
+                  "description": "Es wird nach den Tatbeständen Einbruchdiebstahl insgesamt, Einbruchdiebstahl und Einschleichdiebstahl unterschieden. Character."
+               },
+               {
+                  "name": "Straftaten_total (technisch: Straftaten_total)",
+                  "description": "Anzahl der gesamten Straftaten. Integer."
+               },
+               {
+                  "name": "Straftaten_vollendet (technisch: Straftaten_vollendet)",
+                  "description": "Anzahl der vollendeten Straftaten. Integer."
+               },
+               {
+                  "name": "Straftaten_versucht (technisch: Straftaten_versucht)",
+                  "description": "Anzahl der versuchten Straftaten. Integer."
+               },
+               {
+                  "name": "Einwohner (technisch: Einwohner)",
+                  "description": "Anzahl Einwohner*innen. «Ständige Bevölkerung» gemäss BFS-Definition. Integer."
+               },
+               {
+                  "name": "Häufigkeitszahl (technisch: Häufigkeitszahl)",
+                  "description": "Anteil der Straftaten pro 1000 Anzahl Einwohner*innen. Integer."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2023-03-27"
+}

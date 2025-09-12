@@ -1,0 +1,1724 @@
+{
+   "title": "VBZ-Infrastruktur OGD",
+   "keywords": [
+      "Fahrleitungen",
+      "Gleise",
+      "Schienenschmieranlagen",
+      "Weichenschlaufen",
+      "Weichensteuerung",
+      "VBZ"
+   ],
+   "metadata_date": "2024-03-05T06:28:48",
+   "updateFrequency": "weekly",
+   "purpose": "Dokumentation der VBZ Infrastruktur für die Öffentlichkeit.",
+   "abstract": "Der Datenbestand umfasst die frei verfügbaren (OGD) Fahrleitungen, Gleise,, Schienenschmieranlagen,  Weichensteuerung, Werkleitungen.\n\nEs beinhaltet keine Unterirdische Leitungen.\n\nDie Gleisentwässerung kann über die ERZ bezogen werden.",
+   "identificationDate": "2024-06-11",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Departement der Industriellen Betriebe - Verkehrsbetriebe",
+   "contactPerson": "Christian Heimlicher",
+   "referenceSystem": "CH1903+_LV95 (Original:LV03)",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/VBZ_Infrastruktur_OGD",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "STRECKE_GLEISACHSE",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "QUELLID",
+                  "description": null
+               },
+               {
+                  "name": "STRECKENGLEISTYP",
+                  "description": null
+               },
+               {
+                  "name": "STRECKENGLEISTYPTEXT",
+                  "description": null
+               },
+               {
+                  "name": "STRECKENGLEISNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "STRECKENGLEISBEZEICHNUNG",
+                  "description": null
+               },
+               {
+                  "name": "GLEISVERSION",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "HALTESTELLEN_PLAKATSTELLE",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "PLAKATSTELLENRVBZ",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "HALTESTELLEN_TICKETENTWERTER",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "QUELLID",
+                  "description": null
+               },
+               {
+                  "name": "TYP",
+                  "description": null
+               },
+               {
+                  "name": "TYPTEXT",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": null
+               },
+               {
+                  "name": "SAPNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "LAGEQUALITAET",
+                  "description": null
+               },
+               {
+                  "name": "AKTUALITAET",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "STRECKE_METALLDETEKTOR",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "FAHRLEITUNGEN_AUSLEGER",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "VERLAENGERUNGSTYP",
+                  "description": null
+               },
+               {
+                  "name": "ANKERHOEHE",
+                  "description": null
+               },
+               {
+                  "name": "ANKERTYP",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "LAENGE",
+                  "description": null
+               },
+               {
+                  "name": "LAENGE2",
+                  "description": null
+               },
+               {
+                  "name": "DURCHMESSER",
+                  "description": null
+               },
+               {
+                  "name": "AUSLEGERHOEHE",
+                  "description": null
+               },
+               {
+                  "name": "AUSLEGERHOEHE2",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "FAHRLEITUNGEN_EINDRAHTUNGSTRIC",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "TYP",
+                  "description": null
+               },
+               {
+                  "name": "EINBAUDATUM",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "FAHRLEITUNGEN_FAHRDRAHT",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "VERKEHRSMITTEL",
+                  "description": null
+               },
+               {
+                  "name": "EINBAUDATUM",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "FAHRLEITUNGEN_FAHRDRAHTAUFHAEN",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "TYP",
+                  "description": null
+               },
+               {
+                  "name": "TYPTEXT",
+                  "description": null
+               },
+               {
+                  "name": "GRADEINTEILUNG",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEMUEM",
+                  "description": null
+               },
+               {
+                  "name": "HOEHESOK",
+                  "description": null
+               },
+               {
+                  "name": "EINBAUDATUM",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "FAHRLEITUNGEN_FEEDER",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "EINBAUDATUM",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "FAHRLEITUNGEN_KABEL",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ARTTEXT",
+                  "description": null
+               },
+               {
+                  "name": "EINBAUDATUM",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "FAHRLEITUNGEN_MAST",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "UEBERBRUECKER",
+                  "description": null
+               },
+               {
+                  "name": "ERDUNG",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "MASTTYP",
+                  "description": null
+               },
+               {
+                  "name": "EIGENTUEMER",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEMASTOK",
+                  "description": null
+               },
+               {
+                  "name": "FUNDAMENTTYP",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEMASTUK",
+                  "description": null
+               },
+               {
+                  "name": "GESAMTLAENGE",
+                  "description": null
+               },
+               {
+                  "name": "SPEISEKASTEN1",
+                  "description": null
+               },
+               {
+                  "name": "SPEISEKASTEN2",
+                  "description": null
+               },
+               {
+                  "name": "EINBAUDATUM",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "HALTESTELLEN_TICKETAUTOMAT",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "QUELLID",
+                  "description": null
+               },
+               {
+                  "name": "TYP",
+                  "description": null
+               },
+               {
+                  "name": "TYPTEXT",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": null
+               },
+               {
+                  "name": "SAPNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "LAGEQUALITAET",
+                  "description": null
+               },
+               {
+                  "name": "AKTUALITAET",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "STRECKE_ESAERDANLAGE",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "LAGEQUALITAET",
+                  "description": null
+               },
+               {
+                  "name": "QUELLID",
+                  "description": null
+               },
+               {
+                  "name": "TYP",
+                  "description": null
+               },
+               {
+                  "name": "TYPTEXT",
+                  "description": null
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": null
+               },
+               {
+                  "name": "SAPNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "AKTUALITAET",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "STRECKE_ESASCHMIERANLAGE",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "QUELLID",
+                  "description": null
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": null
+               },
+               {
+                  "name": "AKTUALITAET",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "TYP",
+                  "description": null
+               },
+               {
+                  "name": "TYPTEXT",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "SAPNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "LAGEQUALITAET",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "STRECKE_RADLENKER",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "QUELLID",
+                  "description": null
+               },
+               {
+                  "name": "TYP",
+                  "description": null
+               },
+               {
+                  "name": "TYPTEXT",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": null
+               },
+               {
+                  "name": "SAPNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "LAGEQUALITAET",
+                  "description": null
+               },
+               {
+                  "name": "AKTUALITAET",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "STRECKE_STEUERUNGSKABINE",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "QUELLID",
+                  "description": null
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": null
+               },
+               {
+                  "name": "TYP",
+                  "description": null
+               },
+               {
+                  "name": "ERDUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "FAHRLEITUNGEN_NACHSPANNER",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "TYP",
+                  "description": null
+               },
+               {
+                  "name": "MASTNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "EINBAUDATUM",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "HALTESTELLEN_BLINDENRILLENPLAT",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "HALTESTELLEN_DFI_ANZEIGER",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "TYP",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "HALTESTELLEN_ELEKTROSCHRANK",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "TYP",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "HALTESTELLEN_HALTEBALKEN",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "HALTESTELLEN_INFOSYSTEM",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "TYP",
+                  "description": null
+               },
+               {
+                  "name": "EINBAUDATUM",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "HALTESTELLEN_PAPIERKORB",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "TYP",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "HALTESTELLEN_SIPF",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "HALTESTELLEN_SITZGELEGENHEIT",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "TYP",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "HALTESTELLEN_WARTEHALLE",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "TYP",
+                  "description": null
+               },
+               {
+                  "name": "EINBAUDATUM",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "STRECKE_ACHSKURZSCHLUSS_PRUEFA",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "STRECKE_ANTENNENTOPF",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "STRECKE_AUSGLEICHVORRICHTUNG",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "STRECKE_GLEISFUEHLER",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "STRECKE_GLEISKREISANSCHLUSSKAS",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "TYP",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "STRECKE_PFAHLGRUENDUNG",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "STRECKE_PRELLBOCK",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "TYP",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "STRECKE_SCHIENEN",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "EINBAUDATUM",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "STRECKE_SCHIENENVERBINDER",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "STRECKE_SCHWEISSSTOSS",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "EINBAUDATUM",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "STRECKE_TR_KREUZUNG",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": null
+               },
+               {
+                  "name": "PROFIL",
+                  "description": null
+               },
+               {
+                  "name": "KREUZUNGSPLAN",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "STRECKE_TR_WEICHE",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIEATTRIBUT",
+                  "description": null
+               },
+               {
+                  "name": "RICHTUNG",
+                  "description": null
+               },
+               {
+                  "name": "HEIZUNGSART",
+                  "description": null
+               },
+               {
+                  "name": "ZV_PROFIL",
+                  "description": null
+               },
+               {
+                  "name": "ZV_ZUNGENADAPTER",
+                  "description": null
+               },
+               {
+                  "name": "WEICHEPLAN",
+                  "description": null
+               },
+               {
+                  "name": "EINBAUDATUM",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "STRECKE_WEICHENANTRIEBSKASTEN",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "EQUIPMENTNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "TYP",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "STRECKE_WEICHENSIGNAL",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "TYP",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "FAHRLEITUNGEN_ANKERFUNDAMENT",
+            "description": "Fundament für den Abspannanker eines Mastes",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ID des Datensatzes, nicht stabil über die Zeit"
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEMUEM",
+                  "description": "Höhe in M.ü.M"
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "FAHRLEITUNGEN_FL_ANLAGENDIVERS",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ARTTEXT",
+                  "description": null
+               },
+               {
+                  "name": "EINBAUDATUM",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "FAHRLEITUNGEN_FL_KREUZUNG",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "TYP",
+                  "description": null
+               },
+               {
+                  "name": "STB_NACHGESPANNT",
+                  "description": null
+               },
+               {
+                  "name": "EINBAUDATUM",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "TYPTEXT",
+                  "description": null
+               },
+               {
+                  "name": "STROMUNTERBRUCH",
+                  "description": null
+               },
+               {
+                  "name": "GRADEINTEILUNG",
+                  "description": null
+               },
+               {
+                  "name": "ZUSATZINFO",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "FAHRLEITUNGEN_FL_WEICHE_KREUZU",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "TYP",
+                  "description": null
+               },
+               {
+                  "name": "TYPTEXT",
+                  "description": null
+               },
+               {
+                  "name": "ZUSATZINFO",
+                  "description": null
+               },
+               {
+                  "name": "FUNKENLOESCHER",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "GRADEINTEILUNG",
+                  "description": null
+               },
+               {
+                  "name": "GRUNDSTELLUNG",
+                  "description": null
+               },
+               {
+                  "name": "SENSOR",
+                  "description": null
+               },
+               {
+                  "name": "EINBAUDATUM",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "FAHRLEITUNGEN_MAUERBOLZEN",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "NUTZUNG",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "TYP",
+                  "description": null
+               },
+               {
+                  "name": "EIGENTUEMER",
+                  "description": null
+               },
+               {
+                  "name": "EINBAUDATUM",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEMUEM",
+                  "description": null
+               },
+               {
+                  "name": "HOEHESOK",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "FAHRLEITUNGEN_TRAGWERK_LINIE",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ARTTEXT",
+                  "description": null
+               },
+               {
+                  "name": "EBENE",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEANFANG",
+                  "description": null
+               },
+               {
+                  "name": "KRAFTANFANG",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEENDE",
+                  "description": null
+               },
+               {
+                  "name": "KRAFTENDE",
+                  "description": null
+               },
+               {
+                  "name": "EINBAUDATUM",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "FAHRLEITUNGEN_TRAGWERK_PUNKT",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ARTTEXT",
+                  "description": null
+               },
+               {
+                  "name": "HOEHE",
+                  "description": null
+               },
+               {
+                  "name": "EBENE",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "STRECKE_BENUTZUNG",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ARTTEXT",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "BESONDERHEIT",
+                  "description": null
+               },
+               {
+                  "name": "BESONDERHEITTEXT",
+                  "description": null
+               },
+               {
+                  "name": "HALTEBEREICH",
+                  "description": null
+               },
+               {
+                  "name": "HALTEBEREICHTEXT",
+                  "description": null
+               },
+               {
+                  "name": "UEBERHOLBARKEIT",
+                  "description": null
+               },
+               {
+                  "name": "UEBERHOLBARKEITTEXT",
+                  "description": null
+               },
+               {
+                  "name": "BUS",
+                  "description": null
+               },
+               {
+                  "name": "TRAM",
+                  "description": null
+               },
+               {
+                  "name": "MVU",
+                  "description": null
+               },
+               {
+                  "name": "INBETRIEBSETZUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "STRECKE_VBZ_KUNSTBAUTEN_L",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ARTTEXT",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "INBETRIEBSETZUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         }
+      ]
+   }
+}

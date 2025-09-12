@@ -1,0 +1,160 @@
+{
+   "title": "Bauminventar (inkl. 3D)",
+   "keywords": [
+      "Baumkataster",
+      "swissTLM3D",
+      "Lidar",
+      "Baumhöhe",
+      "Stadtbegrünung",
+      "Baumstandorte"
+   ],
+   "metadata_date": "2024-04-09T05:54:21",
+   "updateFrequency": "annually",
+   "purpose": "Datengrundlage zum städtischen Baumbestand (Baumstandorten und -höhen) für diverse Applikationen (u.a. Züri Virtuell und Züri 4D)\n\n\n\nDas Interesse an Daten zum Baumbestand in der Stadt Zürich hat in den letzten Jahren stark zugenommen. Einerseits steigt der Druck auf Grünanlagen und deren Nutzung stetig. Andererseits kann beobachtet werden, dass Geodaten vermehrt in frühe Arbeitsschritte von Projektarbeiten, Forschungen und Arbeitsplanungen einfliessen. Der digitale Fortschritt begünstigt vielfältige Arbeiten zu Baumbestand wie beispielsweise 3D-Visualisierungen und Baumpflanzpotenzialstudien. Der Stadt Zürich fehlt allerdings eine flächendeckende, einheitliche und frei zugängliche Arbeitsgrundlage (Bauminventar). Zum jetzigen Zeitpunkt ist der Baumkataster der einzig vorhandene Datensatz zum Baumbestand in der Stadt Zürich. Jedoch dient er als Kontroll- und Pflegeapplikation und ist limitiert auf die städtisch unterhaltenen Bäume. Zu Baumstandorten auf Privatgrund sind bisher keinerlei Informationen vorhanden. Die Vielzahl an Privatbäumen und die Zutrittsbeschränkungen auf Privatflächen verunmöglichen die manuelle Erfassung jedes einzelnen Baumes auf Gemeindefläche. Diese Limitierung kann mit Hilfe des topographischen Landschaftsmodells der Schweiz von swisstopo umgangen werden. Das Modell beinhaltet aus Laser- und Luftbilddaten automatisch abgeleitete Punktdaten zu Einzelbäumen. Wird das bestehende Baumkataster mit dieser Datenquelle ergänzt, resultiert ein flächendeckendes Bauminventar. Wichtig ist, dass der Datenungenauigkeit genügend Beachtung geschenkt wird. Diese Methodik stellt aber auf Grund fehlender Alternativen die genaueste, mögliche Annäherung an ein städtisches Bauminventar dar.\n\n\n\nDer Geschäftsbereich Park- und Grünanlagen sieht sich stellvertretend für Grün Stadt Zürich (GSZ) verantwortlich, eine Datengrundlage zum städtischen Baumbestand zu erarbeiten und zu pflegen. Deshalb soll zur Förderung interdisziplinären und abwechslungsreichen Arbeiten ein aus dem Baumkataster, Lidardaten und Landschaftsmodell kombinierter Open Data Datensatz zum Baumbestand auf der Stadtfläche (excl. Wald) von Zürich erarbeitet werden. Das Ziel ist nicht die Ablösung oder Überarbeitung des bestehenden Baumkasters, sondern ein weiterentwickelter Datensatz unter anderem basierend auf dem Baumkataster.",
+   "abstract": "Stadtweites Bauminventar basierend auf dem Baumkataster von GSZ und dem Landschaftsmodell von swisstopo (TLM3D)",
+   "identificationDate": "2021-11-30",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Grün Stadt Zürich",
+   "contactPerson": "Dieter Halpern",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "ESRI File Geodatabase (.gdb)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Bauminventar",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "BAUMINVENTAR",
+            "description": "Stadtweites Bauminventar basierend auf dem Baumkataster von GSZ und dem Landschaftsmodell von swisstopo (TLM3D)",
+            "attributes": [
+               {
+                  "name": "BAUMNUMMER",
+                  "description": "Eindeutige Identifikationsnummer der Bäume. Bäume aus dem Baumkataster werden die Originalnummern mit einem Präfix für die Quelle versehen.\n\nSystematik:\n\n- Baumkataster: BK_[Baumnummer]\n\n- TLM3D Einzelbäume: TLM3D_EB-[Nummer]\n\n- TLM3D Gehölzflächen: TLM3D_GF-[Nummer]"
+               },
+               {
+                  "name": "BAUMART_DEU",
+                  "description": "Baumart deutsch aus dem Baumkataster, wenn keine Angabe vorhanden ist (Baumkataster und Bäume aus TLM3D), dann \"unbekannt\""
+               },
+               {
+                  "name": "BAUMART_LAT",
+                  "description": "Baumart lateinisch aus dem Baumkataster, wenn keine Angabe vorhanden ist (Baumkataster und Bäume aus TLM3D), dann \"unbekannt\""
+               },
+               {
+                  "name": "STATUS",
+                  "description": "Dieses Attribut weist auf die Art bzw. eine abgeleitete Form des Eigentumsverhältnisses eines Baumes hin. Status wird aus Baumkataster übernommen, wenn keine Angabe vorhanden ist, dann \"unbekannt\".\n\nMögliche Werte: Strassenbaum, Strassenbaum (A), Grünanlage, Wohnsiedlungen, Schulen; Kanton; Bund; Obstbaum, unbekannt"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "GENAUIGKEIT",
+                  "description": "Genauigkeit der Datenerfassung. Dieses Attribut ist zudem verwendet, um auf die Datenquelle des Standortes (Baumkataster oder swisstopo) zu verweisen.\n\nMögliche Werte: \n\n- Baumkataster: Bildschirmeingabe, Eingemessen, Eingemessen (Nachpflanzung), Digitalisierung oder ELTA2, Luftbild, unbekannt\n\n- TLM3D - Gehölzflächen\n\n- TLM3D - Einzelbäume"
+               },
+               {
+                  "name": "PFLANZJAHR",
+                  "description": "Pflanzjahr aus Baumkataster, wenn keine Angabe vorhanden ist (Baumkataster und Bäume aus TLM3D), dann \"unbekannt\"."
+               },
+               {
+                  "name": "HOEHE",
+                  "description": "Die Höhe der Bäume wird mit dem Standpunkt und einem aus LIDAR (Vegetation hoch >3m) und DTM-Daten abgeleiteten Höhenraster ermittelt. Für alle Bäume wird die maximale \"Grünhöhe\" im Umkreis von 5 m des Erfassungspunktes aus dem Höhenraster (50cm Auflösung) ermittelt.\n\nFür Bäume, die keine Höhe aufweisen, aber im Baumkataster eingetragen sind, werden folgende Standardwerte verwendet:\n\n- Bäume mit Pflanzjahr &lt;5 Jahre: 4.99 m\n\n- Restlich Bäume: 8.99m"
+               },
+               {
+                  "name": "UUID_TLM3D",
+                  "description": "Eindeutige Identifikationsnummer (Universally Unique Identifier) aus dem TLM3D Datensatz. Mehrfach vorkommende UUIDs weisen darauf hin, dass es sich um zufallsverteilte Bäume aus Gehölzflächen handelt. Die UUID entspricht in dem Fall der Gehölzfläche."
+               },
+               {
+                  "name": "X",
+                  "description": "X-Koordinaten"
+               },
+               {
+                  "name": "Y",
+                  "description": "Y-Koordinaten"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Punktgeometrie"
+               },
+               {
+                  "name": "DATENSTAND",
+                  "description": "Aufbereitungsdatum vom Baum im Bauminventar (Baumkataster) oder Revisionsjahr der TLM3D-Daten; Stand 2021 wird das Landschaftsmodell in wiederkehrenden Intervallen von ca. 6¿7 Jahren neu berechnet. Sobald ein neuer Datenstand veröffentlich ist, wird dieser ins Bauminventar integriert."
+               }
+            ]
+         },
+         {
+            "name": "BAUMINVENTAR_3D",
+            "description": "Stadtweites 3D-Bauminventar basierend auf dem Baumkataster von GSZ und dem Landschaftsmodell von swisstopo (TLM3D)",
+            "attributes": [
+               {
+                  "name": "BAUMART_DEU",
+                  "description": "Baumart deutsch aus dem Baumkataster, wenn keine Angabe vorhanden ist (Baumkataster und Bäume aus TLM3D), dann \"unbekannt\""
+               },
+               {
+                  "name": "BAUMART_LAT",
+                  "description": "Baumart lateinisch aus dem Baumkataster, wenn keine Angabe vorhanden ist (Baumkataster und Bäume aus TLM3D), dann \"unbekannt\""
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "BAUMNUMMER",
+                  "description": "Eindeutige Identifikationsnummer der Bäume. Bäume aus dem Baumkataster werden die Originalnummern mit einem Präfix für die Quelle versehen.\n\nSystematik:\n\n- Baumkataster: BK_[Baumnummer]\n\n- TLM3D Einzelbäume: TLM3D_EB-[Nummer]\n\n- TLM3D Gehölzflächen: TLM3D_GF-[Nummer]"
+               },
+               {
+                  "name": "BAUMTEIL",
+                  "description": "Aufzählung:\n\n1. Krone\n\n2. Stamm"
+               },
+               {
+                  "name": "PFLANZJAHR",
+                  "description": "Pflanzjahr aus Baumkataster, wenn keine Angabe vorhanden ist (Baumkataster und Bäume aus TLM3D), dann \"unbekannt\"."
+               },
+               {
+                  "name": "X",
+                  "description": "X-Koordinaten"
+               },
+               {
+                  "name": "Y",
+                  "description": "Y-Koordinaten"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "3D-Geometrie"
+               },
+               {
+                  "name": "STATUS",
+                  "description": "Dieses Attribut weist auf die Art bzw. eine abgeleitete Form des Eigentumsverhältnisses eines Baumes hin. Status wird aus Baumkataster übernommen, wenn keine Angabe vorhanden ist, dann \"unbekannt\".\n\nMögliche Werte: Strassenbaum, Strassenbaum (A), Grünanlage, Wohnsiedlungen, Schulen; Kanton; Bund; Obstbaum, unbekannt"
+               },
+               {
+                  "name": "GENAUIGKEIT",
+                  "description": "Genauigkeit der Datenerfassung. Dieses Attribut ist zudem verwendet, um auf die Datenquelle des Standortes (Baumkataster oder swisstopo) zu verweisen.\n\nMögliche Werte:\n\n- Baumkataster: Bildschirmeingabe, Eingemessen, Eingemessen (Nachpflanzung), Digitalisierung oder ELTA2, Luftbild, unbekannt\n\n- TLM3D - Gehölzflächen\n\n- TLM3D - Einzelbäume"
+               },
+               {
+                  "name": "UUID_TLM3D",
+                  "description": "Eindeutige Identifikationsnummer (Universally Unique Identifier) aus dem TLM3D Datensatz. Mehrfach vorkommende UUIDs weisen darauf hin, dass es sich um zufallsverteilte Bäume aus Gehölzflächen handelt. Die UUID entspricht in dem Fall der Gehölzfläche."
+               },
+               {
+                  "name": "DATENSTAND",
+                  "description": "Aufbereitungsdatum vom Baum im Bauminventar (Baumkataster) oder Revisionsjahr der TLM3D-Daten; Stand 2021 wird das Landschaftsmodell in wiederkehrenden Intervallen von ca. 6-7 Jahren neu berechnet. Sobald ein neuer Datenstand veröffentlich ist, wird dieser ins Bauminventar integriert."
+               },
+               {
+                  "name": "HOEHE_BAUM_TOTAL",
+                  "description": "Die Höhe der Bäume (Stamm + Krone) wird mit dem Standpunkt und einem aus LIDAR (Vegetation hoch >3m) und DTM-Daten abgeleiteten Höhenraster ermittelt. Für alle Bäume wird die maximale \"Grünhöhe\" im Umkreis von 5 m des Erfassungspunktes aus dem Höhenraster (50cm Auflösung) ermittelt.\n\nFür Bäume, die keine Höhe aufweisen, aber im Baumkataster eingetragen sind, werden folgende Standardwerte verwendet:\n\n- Bäume mit Pflanzjahr &lt;5 Jahre: 4.99 m\n\n- Restlich Bäume: 8.99m"
+               }
+            ]
+         }
+      ]
+   }
+}

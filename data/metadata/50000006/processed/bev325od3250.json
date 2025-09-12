@@ -1,0 +1,92 @@
+{
+   "title": "Bevölkerung nach Monat, Stadtquartier, Geschlecht, Altersgruppe und Herkunft",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bev_monat_bestand_quartier_geschl_ag_herkunft_od3250",
+   "abstract": "Anzahl wirtschaftliche Bevölkerung nach Monat, Altersgruppe, Geschlecht, Herkunft, Stadtkreis und Stadtquartier.\nBei den Daten des aktuellsten Jahres handelt es sich um provisorische Daten. Diese können laufend korrigiert werden. Erst mit dem Jahresabschluss werden die Daten definitiv.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Datenstand\n\nAktuellster Monat: Der aktuellste Monat in den Daten entspricht dem aktuellen Monat - 2 Monate.\n\nDatenqualität: Die Daten des aktuellsten Jahres sind jeweils provisorisch und werden laufend korrigiert.\n\nVariable Datenstand: Die Variablen DatenstandCd und DatenstandLang beschreiben den Datenstand. Provisorische Daten werden laufend korrigiert.\n\nHintergrund-Information: Die Daten der letzten zwei Kalenderjahre (Januar bis Dezember) basieren auf den gespeicherten Datenbeständen des Bevölkerungsregisters. Die vorangehenden Monatsdaten wurden aufgrund der Bewegungen (Geburten, Todesfälle, Zuzüge von auswärts, Wegzüge nach auswärts, Umzüge innerhalb der Stadt, Einbürgerungen) berechnet.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Bevölkerung nach Monat, Stadtquartier, Geschlecht, Altersgruppe und Herkunft",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr des Stichtages (Integer)."
+               },
+               {
+                  "name": "Monat (technisch: StichtagDatMM)",
+                  "description": "Monat des Stichtages (Integer)."
+               },
+               {
+                  "name": "Monat (technisch: StichtagDatMonat)",
+                  "description": "Monat des Stichtages (String)."
+               },
+               {
+                  "name": "Tag (technisch: StichtagDat)",
+                  "description": "Tag des Stichtages (String); ISO 8601 YYYY-MM-DD."
+               },
+               {
+                  "name": "Geschlecht (technisch: SexCd)",
+                  "description": "Geschlecht Code (Integer)."
+               },
+               {
+                  "name": "Geschlecht (technisch: SexLang)",
+                  "description": "Geschlecht (String)."
+               },
+               {
+                  "name": "Altersgruppe (technisch: AlterV20ueber80Sort_noDM)",
+                  "description": "Altersgruppe Sort (Integer)."
+               },
+               {
+                  "name": "Altersgruppe (technisch: AlterV20ueber80Cd_noDM)",
+                  "description": "Altersgruppe Code (String)."
+               },
+               {
+                  "name": "Altersgruppe (technisch: AlterV20ueber80Kurz_noDM)",
+                  "description": "Altersgruppe (String)."
+               },
+               {
+                  "name": "Herkunft (technisch: HerkunftCd)",
+                  "description": "Herkunft Code (Integer)."
+               },
+               {
+                  "name": "Herkunft (technisch: HerkunftLang)",
+                  "description": "Herkunft Bezeichnung (String)."
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisCd)",
+                  "description": "Stadtkreis Code (Integer)."
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisLang)",
+                  "description": "Stadtkreis (String)."
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarCd)",
+                  "description": "Stadtquartier Code (Integer)."
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarLang)",
+                  "description": "Stadtquartier (String)."
+               },
+               {
+                  "name": "Datenstand (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (Integer)."
+               },
+               {
+                  "name": "Datenstand (technisch: DatenstandLang)",
+                  "description": "Datenstand (String)."
+               },
+               {
+                  "name": "wirtschaftliche Bevölkerung (technisch: AnzBestWir)",
+                  "description": "Anzahl Personen aus der wirtschaftlichen Wohnbevölkerung (Integer)."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-05-20"
+}

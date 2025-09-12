@@ -1,0 +1,68 @@
+{
+   "title": "Personenwagen pro Haushalt nach Stadtquartier",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/prd_ssz_fz_pw_haushalt_quartier_jahr_od2041",
+   "abstract": "Dieser Datensatz beinhaltet die Anzahl Personenwagen nach Stadtquartier und Jahr.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Stichtag:\n\nDer Stichtag zur Bestimmung des Jahresstandes ist jeweils der 30. September. Nicht wie normalerweise üblich der 31. Dezember.\n\nFahrzeugbestand:\n\nDie Daten zum Fahrzeugbestand der Stadt Zürich werden jeweils einmal jährlich mit Stichtag 30. September vom kantonalen Strassenverkehrsamt geliefert. Der Datensatz enthält verschiedene Informationen zu den in der Stadt Zürich gemeldeten Motorfahrzeugen mit Zürcher Nummernschild. Dabei wird zwischen natürlichen und juristischen Fahrzeughalter*innen unterschieden. In dieser Auswertung werden Personenwagen von natürlichen Personen berücksichtigt.\n\nPersonenwagen:\n\nPersonenwagen sind Fahrzeuge mit höchstens 9 Sitzplätzen inklusive Sitzplatz für die Person, die fährt.\n\nHaushalte\n\nZu einem Haushalt zählen alle Personen, welche zusammen in der gleichen Wohnung leben. Dazu wird für Personen der wirtschaftliche Wohnsitzbegriff verwendet. Kollektivhaushalte (Heime, Spitäler, Institutionen des Strafvollzugs, Gemeinschaftsunterkünfte für Asylsuchende u.ä.) werden berücksichtigt.\n\nHaushalte nach Anzahl Personenwagen\n\nEs werden Personenwagen berücksichtigt, die in der Stadt Zürich gemeldet sind und mit einer Person, die ihren wirtschaftlichen Wohnsitz in der Stadt Zürich hat, verknüpft werden können. Geschäfts- und Leasingautos, welche dem Haushalt zur Verfügung stehen können, werden im Gegensatz zum Mikrozensus Verkehr hier nicht einbezogen.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Personenwagen pro Haushalt nach Stadtquartier",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Stichtag (technisch: StichtagDat)",
+                  "description": "Stichtag zur Bestimmung des Fahrzeugbestands. Der Stichtag ist in diesem Datensatz jeweils der 30. September."
+               },
+               {
+                  "name": "Bestandsjahr (technisch: StichtagDatJahr)",
+                  "description": "Kalenderjahr, zu dem der Bestand zugeordnet wird."
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisSort)",
+                  "description": "Statistischer Stadtkreis (numerisch) in dem die Fahrzeughalter*in wohnt."
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisLang)",
+                  "description": "Statistischer Stadtkreis (string) in dem die Fahrzeughalter*in wohnt."
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisCd)",
+                  "description": "Statistischer Stadtkreis (string) in dem die Fahrzeughalter*in wohnt."
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarSort)",
+                  "description": "Statistisches Stadtquartier (numerisch) in dem die Fahrzeughalter*in wohnt."
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarLang)",
+                  "description": "Statistisches Stadtquartier (string) in dem die Fahrzeughalter*in wohnt."
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarCd)",
+                  "description": "Statistisches Stadtquartier (string) in dem die Fahrzeughalter*in wohnt."
+               },
+               {
+                  "name": "Anzahl Fahrzeuge pro Haushalt (technisch: AnzPWHHSort_noDM)",
+                  "description": "Anzahl Fahrzeuge pro Haushalt (numerisch)."
+               },
+               {
+                  "name": "Anzahl Fahrzeuge pro Haushalt (technisch: AnzPWHHCd_noDM)",
+                  "description": "Anzahl Fahrzeuge pro Haushalt (string)."
+               },
+               {
+                  "name": "Anzahl Fahrzeuge pro Haushalt (technisch: AnzPWHHLang_noDM)",
+                  "description": "Anzahl Fahrzeuge pro Haushalt (string)."
+               },
+               {
+                  "name": "Anzahl Haushalte (technisch: AnzHH)",
+                  "description": "Anzahl Haushalte (numerisch)."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-02-04"
+}

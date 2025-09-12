@@ -1,0 +1,60 @@
+{
+   "title": "Erwerbstätigenquote und Teilzeiterwerbstätigenquote nach Altersklasse und Geschlecht",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bfs_wir_sake_quoten_ak_geschl_od5015",
+   "abstract": "Dieser Datensatz enthält den Anteil von Erwerbstätigen an der ständigen Bevölkerung im Alter von 15 Jahren und mehr, nach Altersklasse und Geschlecht.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Datenquelle\n\nDie Auswertung beruht auf der Schweizerischen Arbeitskräfteerhebung (SAKE). Diese jährlich vom Bundesamt für Statistik (BFS) durchgeführte telefonische Personenbefragung liefert repräsentative Daten über die Erwerbsstruktur und das Erwerbsverhalten der ständigen Wohnbevölkerung der Schweiz. Die SAKE basiert auf einer repräsentativen Stichprobe mit jährlich rund 120 000 Interviews, davon rund 2000 Interviews mit Personen, die in der Stadt Zürich wohnen. Um die mit der Auswertung von Stichprobendaten einhergehende Unsicherheit zu verkleinern, werden jeweils 2 Jahre gemeinsam ausgewertet.\n\nErwerbstätigenquote\n\nErwerbstätigenquote = Anzahl Erwerbstätige / Ständige Wohnbevölkerung im Alter von 15 Jahren und mehr × 100\n\nVollzeit-Erwerbstätigenquote\n\nErwerbstätigenquote = Anzahl Vollzeit-Erwerbstätige / Ständige Wohnbevölkerung im Alter von 15 Jahren und mehr × 100 Vollzeiterwerbstätigkeit: Pensum >= 90 Stellenprozent\n\nTeilzeit-Erwerbstätigenquote\n\nErwerbstätigenquote = Anzahl Teilzeit-Erwerbstätige / Ständige Wohnbevölkerung im Alter von 15 Jahren und mehr × 100 Teilzeiterwerbstätigkeit: Pensum < 90 Stellenprozent\n\n95 % Konfidenzintervalle\n\nDie Unsicherheiten der Auswertungen werden mit Konfidenzintervallen abgeschätzt. Das 95 % Konfidenzintervall bezeichnet den Bereich, der bei unendlicher Wiederholung eines Zufallsexperiments mit einer Wahrscheinlichkeit von 95 Prozent den wahren Wert der Grundgesamtheit einschliesst. Das Konfidenzintervall wird auch als Vertrauensintervall oder Erwartungsbereich bezeichnet.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Erwerbstätigenquote und Teilzeiterwerbstätigenquote nach Altersklasse und Geschlecht",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: Jahr)",
+                  "description": "Bezeichnet die zwei Jahre, die gepoolt werden."
+               },
+               {
+                  "name": "Altersklasse (string) (technisch: AlterLang)",
+                  "description": "Altersklasse der Erwerbspersonen."
+               },
+               {
+                  "name": "Altersklasse (numerisch) (technisch: AlterSort)",
+                  "description": "Sortiervariable Altersklasse der Erwerbspersonen."
+               },
+               {
+                  "name": "Geschlecht (string) (technisch: GeschlechtLang)",
+                  "description": "Geschlecht der Erwerbspersonen."
+               },
+               {
+                  "name": "Geschlecht (numerisch) (technisch: GeschlechtSort)",
+                  "description": "Sortiervariable Geschlecht der Erwerbspersonen."
+               },
+               {
+                  "name": "Definition Erwerbstätigenquote (string) (technisch: TEK1Lang)",
+                  "description": "Erwerbstätigen-, Teilzeiterwerbstätigen- oder Vollzeiterwerbstätigenquote."
+               },
+               {
+                  "name": "Definition Erwerbstätigenquote (numerisch) (technisch: TEK1Sort)",
+                  "description": "Sortiervariable Erwerbstätigen-, Teilzeiterwerbstätigen- oder Vollzeiterwerbstätigenquote."
+               },
+               {
+                  "name": "Wert Erwerbstätigenquote (technisch: EQT)",
+                  "description": "Erwerbstätigenquote in Prozent"
+               },
+               {
+                  "name": "Untere Grenze Konfidenzintervall (technisch: EQT_LowerCL)",
+                  "description": "Untere Grenze des 95%-Konfidenzintervalls."
+               },
+               {
+                  "name": "Obere Grenze Konfidenzintervall (technisch: EQT_UpperCL)",
+                  "description": "Obere Grenze des 95%-Konfidenzintervalls."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-03-31"
+}

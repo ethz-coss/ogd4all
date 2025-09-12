@@ -1,0 +1,267 @@
+{
+   "title": "WVZ Leitungskataster",
+   "keywords": [
+      "Leitungskataster",
+      "Wasserversorgung",
+      "Trinkwasser",
+      "Wasserleitung"
+   ],
+   "metadata_date": "2021-01-13T14:56:34",
+   "updateFrequency": "daily",
+   "purpose": "Die Daten des LK dürfen für Planungs- und Projektierungsarbeiten verwendet werden. Für Grabarbeiten müssen LK-Daten über den GeoShop bezogen werden. Der Gebrauch und die Abgabe der Daten unterliegen den Nutzungsbestimmungen für den Leitungskataster.",
+   "abstract": "Der Leitungskataster (LK) der WVZ gibt Auskunft über Lage und Bestand der ober- und unterirdischen Anlagen der Wasserversorgung Zürich.\n\nDie Werkplan-Informationen der WVZ sind nicht vollständig im LK auf dem GeoServer abgebildet.",
+   "identificationDate": "2025-03-15",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Departement der Industriellen Betriebe - Wasserversorgung",
+   "contactPerson": "Ralf Züger",
+   "referenceSystem": "CH1903+_LV95 (Original:LV03)",
+   "boundingBox": {
+      "westBoundLongitude": 8.36167308488333,
+      "eastBoundLongitude": 8.71238105752889,
+      "southBoundLatitude": 47.15426421794444,
+      "northBoundLatitude": 47.483753735111094
+   },
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "WVZ_WAS_ANLAGE_A",
+            "description": "Anlage (Flächen)",
+            "attributes": [
+               {
+                  "name": "ANLAGEREF",
+                  "description": "Fremdschlüssel für Verbindung zur Tabelle Anlage; 1:mc"
+               },
+               {
+                  "name": "ART",
+                  "description": "Art =(Schacht_Kulisse, Futterrohr)"
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": "Art Text"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der Anlageflächen"
+               },
+               {
+                  "name": "NAME_NUMMER",
+                  "description": "WVZ-Bezeichnung"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht relevant."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               }
+            ]
+         },
+         {
+            "name": "WVZ_WAS_ANLAGE_L",
+            "description": "Anlage (Linien)",
+            "attributes": [
+               {
+                  "name": "ANLAGEREF",
+                  "description": "Fremdschlüssel für Verbindung zur Tabelle Anlage; 1:mc"
+               },
+               {
+                  "name": "ART",
+                  "description": "Art =(Schacht_Kulisse, Futterrohr)"
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": "Art Text"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der Anlagenlinien"
+               },
+               {
+                  "name": "NAME_NUMMER",
+                  "description": "WVZ-Bezeichnung"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht relevant."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               }
+            ]
+         },
+         {
+            "name": "WVZ_WAS_ANLAGE_P",
+            "description": "Anlage Punkte",
+            "attributes": [
+               {
+                  "name": "ART",
+                  "description": "Art =(Kabelschacht (rund, rechteckig), Kabelkabine)"
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": "Art Text"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der Anlagesymbole"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht relevant."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "SYMBOLORI",
+                  "description": "Rotation des Symboles; undefiniert = 100.0; Masseinheit ist Gon."
+               }
+            ]
+         },
+         {
+            "name": "WVZ_WAS_KABEL_L",
+            "description": "Kabel der Wasserversorgung Zürich",
+            "attributes": [
+               {
+                  "name": "ART",
+                  "description": "Art =(Energiekabel, Kathodenschutzkabel, Leerrohr, Messkabel, Piezometerkabel, Signalkabel, Streustromdrainage, unbekannt)"
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": "Art Text"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der Kabel"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht relevant."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               }
+            ]
+         },
+         {
+            "name": "WVZ_WAS_LEITUNGSPUNKT_P",
+            "description": "Leitungspunkt",
+            "attributes": [
+               {
+                  "name": "ART",
+                  "description": "Art =(Absperrorgan (Schieber_Klappe, CombiTStueckIII, CombiTStueckIV), Entleerung, Lueftung, Hydrant (Oberflurhydrant, Unterflurhydrant), Standrohr, Wasserzaehlerschacht, Brunnen, Brunnenstube)"
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": "Art Text"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie des Leitungspunktes"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht relevant."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "SYMBOLORI",
+                  "description": "Rotation des Symboles; undefiniert = 100.0; Masseinheit ist Gon."
+               }
+            ]
+         },
+         {
+            "name": "WVZ_WAS_LEITUNG_L",
+            "description": "Leitung",
+            "attributes": [
+               {
+                  "name": "DURCHMESSER",
+                  "description": "Durchmesser =(Innendurchmesser als Dezimalzahl (1 Stelle nach dem Komma))"
+               },
+               {
+                  "name": "FUNKTION",
+                  "description": "Funktion= (unbekannt, Fernwasserleitung, Zubringerleitung, Hauptleitung, Versorgungsleitung, Entlueftungsleitung, Hydrantenanschlussleitung, Entleerungsleitung, Quellleitung, Interne_Leitung, Bau_Wasseranschluss, Quellableitung, Anschlussleitung (normal, gemeinsam),            Quellwasserfassungsleitung, Quellwasserleitung, Private_Quellwasserleitung,                   Transportleitung, Zapfleitung, Brunnenanschlussleitung, Ablauf_Entleerung,\t           Beckenbewirtschaftungsleitung, Belueftungsleitung, Probenahmeleitung)"
+               },
+               {
+                  "name": "FUNKTION_TXT",
+                  "description": "Funktion Text"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der Leitungen"
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": "Kategorie =(Durchmesserkategorie 1-7)"
+               },
+               {
+                  "name": "MATERIAL",
+                  "description": "Material =(Ahrensguss, Eternit, Eternit_mit_Erdung, Guss_duktil, Guss, Mannesmann, Polyvynilchlorid, Polyaethylen, Polyaethylen_mit_Erdung, Stahl, Stahl_verzinkt, Steinzeug, Ton, Zementrohr, Chromnickelstahl, PE_Typ_100, PE_Typ_100_Mehrschicht, PE_Typ_100_Verbundrohr, unbekannt)"
+               },
+               {
+                  "name": "MATERIAL_TXT",
+                  "description": "Material Text"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht relevant."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "VERLEGEART",
+                  "description": "Verlegeart =(\"offener Graben\" (1), \"in Stollen\" (5), \"Interne Verbindung in Gebäuden\" (Null))"
+               }
+            ]
+         },
+         {
+            "name": "WVZ_WAS_LEITUNG_T",
+            "description": "Beschriftungstext für Leitung",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie des Beschriftungstextes für Leitung"
+               },
+               {
+                  "name": "LEITUNGREF",
+                  "description": "Fremdschlüssel für Verbindung zur Tabelle Leitung; 1:mc"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht relevant."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "TEXT1",
+                  "description": "Beschriftungstext"
+               },
+               {
+                  "name": "TEXTHALI",
+                  "description": "Horizontaler Versatz zum Ursprungspunkt; undefiniert = Center"
+               },
+               {
+                  "name": "TEXTORI",
+                  "description": "Rotation der Beschriftung; undefiniert = 100.0; Masseinheit ist Gon."
+               },
+               {
+                  "name": "TEXTVALI",
+                  "description": "Vertikaler Versatz zum Ursprungspunkt; undefiniert = Half"
+               }
+            ]
+         }
+      ]
+   }
+}

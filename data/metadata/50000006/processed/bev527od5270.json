@@ -1,0 +1,44 @@
+{
+   "title": "Wohnbevölkerung der Stadt Zürich nach Alter und Postleitzahl",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bev_bestand_jahr_alter_plz_od5270",
+   "abstract": "Wohnbevölkerung der Stadt Zürich nach Alter (5-Jahres-Altersklassen) und Postleitzahl. Es kann Postleitzahlen geben, die sowohl auf dem Gebiet der Stadt Zürich und auch ausserhalb umfassen. Im vorliegenden Datensatz ist aber nur die Wohnbevölkerung der Stadt Zürich vorhanden.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Unbekannte Postleitzahlen\n\nUnbekannte Postleitzahlen werden mit der PLZ = 9999 angegeben.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Wohnbevölkerung der Stadt Zürich nach Alter und Postleitzahl",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Integer)."
+               },
+               {
+                  "name": "Altersklasse (Sort) (technisch: AlterV05Sort)",
+                  "description": "Altersklasse (5-Jahres-Altersklassen; Integer; nur zum Sortieren gedacht)."
+               },
+               {
+                  "name": "Altersklasse (Code) (technisch: AlterV05Cd)",
+                  "description": "Altersklasse (5-Jahres-Altersklassen; Character)."
+               },
+               {
+                  "name": "Altersklasse (Text) (technisch: AlterV05Lang)",
+                  "description": "Altersklasse (5-Jahres-Altersklassen, höchste Altersklasse: 100-Jährige und Ältere; Character)."
+               },
+               {
+                  "name": "Postleitzahl (technisch: PLZ)",
+                  "description": "Postleitzahl (Character)."
+               },
+               {
+                  "name": "Wirtschaftliche Wohnbevölkerung (technisch: AnzBestWir)",
+                  "description": "Anzahl Personen, wirtschaftliche Wohnbevölkerung (Integer)."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-03-05"
+}

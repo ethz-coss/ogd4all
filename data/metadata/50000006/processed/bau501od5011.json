@@ -1,0 +1,84 @@
+{
+   "title": "Neubautätigkeit nach Bauprojektstatus und Stadtquartier",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bau_neubau_projekte_bausm_gbdrinh_projstatus_quartier_seit2009_od5011",
+   "abstract": "Der Datensatz enthält die Bausumme und die Anzahl Neubauprojekte nach Bauprojektstatus und Stadtquartier.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Hinweis:\n\nStichtagDatJahr entspricht dem Stichtag am Jahresende für Neubauprojekte mit Status Bewilligt und Im Bau. Beim Bauprojektstatus Neubewilligt und Fertigerstellt entspricht StichtagDatJahr der ganzen Jahresperiode.\n\nHinweis:\n\nSeit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.\n\nBauprojektstatus:\n\n«Bewilligt harmonisiert»: Bauprojekte, welche am Jahresende bewilligt, sistiert oder zum Bau freigegeben sind. Freigegebene oder sistierte Projekte werden seit 2021 im Gebäude- und Wohnungsregister erfasst. Davor wurden diese beide Status auch als bewilligt erfasst. Bei sistierten Projekten handelt es sich um bewilligte Projekte, die zum Beispiel wegen Einsprachen blockiert sind. Diese Zahl widerspiegelt nicht den reellen Bauvorrat (zum Beispiel wegen Alternativprojekten).\n«Baubegonnen»: Bauprojekte, welche am Jahresende baubegonnen sind.\n\nKeine Angaben bei Bausummen:\n\nDie Bausumme wird aus Datenschutzgründen nicht ausgewiesen, wenn weniger als 2 Bauprojekte pro Quartier vorhanden sind.\n\nAlternativprojekte\n\nWerden für ein geplantes Bauprojekt dem Amt für Baubewilligungen zwei Projekte eingereicht, von denen nur eines ausgeführt wird, handelt es sich bei einem der beiden Projekte um ein Alternativprojekt. Da diese Projekte nicht immer eindeutig identifizierbar sind, kann der Bauprojektstatus «bewilligt» auch Alternativprojekte enthalten.\n\nStand und Nachführung:\n\nDas Gebäude- und Wohnungsregister der Stadt Zürich wird ständig nachgeführt.\n\nVariablen mit mehreren Varianten\n\nGewisse Variablen werden in verschiedenen Formen aufgeführt. Die \"Lang\"-Variante beschreibt den Inhalt (z.B. StatZoneLang beschreibt die statistische Zone, mögliche Werte sind Central oder Oberdorf). Die \"Cd\"-Variante kodiert die Variable alphanumerisch, quasi als Kurzform (Central und Oberdorf sind 1104 und 1201). Die \"Sort\"-Variante kodiert die Variable numerisch (Central und Oberdorf sind 5 und 4) und erlaubt eine Sortierung. \"Cd\" und \"Sort\" können auch identisch sein.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Neubautätigkeit nach Bauprojektstatus und Stadtquartier",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Numerisch)"
+               },
+               {
+                  "name": "Datenstand (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (P = provisorisch, D = definitiv)"
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarSort)",
+                  "description": "Stadtquartier (Numerisch)"
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarCd)",
+                  "description": "Stadtquartier Code (String)"
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarLang)",
+                  "description": "Stadtquartier (String)"
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisSort)",
+                  "description": "Stadtkreis (Numerisch)"
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisCd)",
+                  "description": "Stadtkreis (String)"
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisLang)",
+                  "description": "Stadtkreis (String)"
+               },
+               {
+                  "name": "Bauprojektstatus (technisch: ProjektStatusSSZPubl1Sort)",
+                  "description": "Status des Bauprojektes am Jahresende (Numerisch)"
+               },
+               {
+                  "name": "Bauprojektstatus (technisch: ProjektStatusSSZPubl1Cd)",
+                  "description": "Status des Bauprojektes am Jahresende (String)"
+               },
+               {
+                  "name": "Bauprojektstatus (technisch: ProjektStatusSSZPubl1Lang)",
+                  "description": "Status des Bauprojektes am Jahresende (String)"
+               },
+               {
+                  "name": "Art der Arbeiten (technisch: ArtArbeitenSort)",
+                  "description": "Art der Arbeiten des Bauprojektes (Numerisch)"
+               },
+               {
+                  "name": "Art der Arbeiten (technisch: ArtArbeitenCd)",
+                  "description": "Art der Arbeiten des Bauprojektes (String)"
+               },
+               {
+                  "name": "Art der Arbeiten (technisch: ArtArbeitenLang)",
+                  "description": "Art der Arbeiten des Bauprojektes (String)"
+               },
+               {
+                  "name": "Anzahl Bauprojekte (technisch: AnzBauprojekte)",
+                  "description": "Anzahl Bauprojekte (Numerisch)"
+               },
+               {
+                  "name": "Bausumme (1000 Fr.) (technisch: BaukostenEffektiv)",
+                  "description": "Effektive Bausumme in 1000 Franken (Numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-01-07"
+}

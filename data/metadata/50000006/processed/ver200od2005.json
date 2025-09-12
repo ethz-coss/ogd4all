@@ -1,0 +1,44 @@
+{
+   "title": "Motorisierungsgrad nach Stadtquartier",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/prd_ssz_fz_motorisierungsgrad_jahr_quartier_od2005",
+   "abstract": "Dieser Datensatz beinhaltet den Motorisierungsgrad (Anzahl Personenwagen pro 1000 Personen) nach Stadtquartier und Jahr.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Stichtag:\n\nDer Stichtag zur Bestimmung des Jahresstandes ist jeweils der 30. September. Nicht wie normalerweise üblich der 31. Dezember.\n\nFahrzeugbestand:\n\nDer Datensatz enthält verschiedene Informationen zu den in der Stadt Zürich gemeldeten Motorfahrzeugen mit Zürcher Nummernschild im Besitz von natürlichen und juristischen Fahrzeughalter*innen.\n\nPersonenwagen:\n\nPersonenwagen sind Fahrzeuge mit höchstens 9 Sitzplätzen inklusive Sitzplatz für die Person, die fährt.\n\nMotorisierungsgrad:\n\nDer Motorisierungsgrad bezeichnet die Anzahl Personenwagen (Stand per 30.9.) pro 1000 Personen der zivilrechtlichen Bevölkerung (Stand per 31.12. des Vorjahres). Wenn der Motorisierungsgrad für kleine geografische Einheiten berechnet wird, kann es einen grossen Unterschied machen, wieviele Firmenautos bzw. Autos im Besitz juristischer Personen sich in diesem geografischen Raum befinden. Beispielsweise tragen die Personenwagen juristischer Personen stark zum aussergewöhnlich hohen Motorisierungsgrad im Kreis 1 bei.\n\nHinweis:\n\nAufgrund einer genaueren Adressüberprüfung im Dezember 2023 reduziert sich die Grundgesamtheit der Fahrzeuge leicht, und die Anzahl Fahrzeuge kann von früheren Publikationen abweichen.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Motorisierungsgrad nach Stadtquartier",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Stichtag (technisch: StichtagDat)",
+                  "description": "Stichtag zur Bestimmung des Fahrzeugbestands. Der Stichtag ist in diesem Datensatz jeweils der 30. September."
+               },
+               {
+                  "name": "Bestandsjahr (technisch: StichtagDatJahr)",
+                  "description": "Kalenderjahr, zu dem der Bestand zugeordnet wird."
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarLang)",
+                  "description": "Statistisches Stadtquartier (string) in dem die Fahrzeughalter*in wohnt."
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarCd)",
+                  "description": "Stadtquartier Code (string)."
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarSort)",
+                  "description": "Stadtquartier Sortiervariable (numerisch)"
+               },
+               {
+                  "name": "Motorisierungsgrad (technisch: Motorisierungsgrad)",
+                  "description": "Motorisierungsgrad (numerisch)."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-02-11"
+}

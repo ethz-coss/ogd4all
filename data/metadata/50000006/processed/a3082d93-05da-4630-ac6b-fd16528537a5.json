@@ -1,0 +1,548 @@
+{
+   "title": "EWZ Werkleitungsdaten Elektrizität und Telekommunikation",
+   "keywords": [
+      "Strom",
+      "Elektrizität",
+      "Leitungskataster"
+   ],
+   "metadata_date": "2023-03-28T08:04:39",
+   "updateFrequency": "weekly",
+   "purpose": "Der Geodatensatz EWZ Werkleitungsdaten dient interessierten Kreisen zur Auskunft über die exakte Lage der Trassen mit ewz Strom- und Telecomleitungen im öffentlichen Grund. \n\nDie Nutzungsbestimmungen in Dokument NIS_ZH_EWZ.pdf sind strikte zu befolgen. \n\nFür Tiefbauarbeiten ist zwingend ein ausgedrucktes Exemplar des Leitungskatasters mit mindestens diesem Layer und jenem der Amtlichen Vermessung erforderlich. Dieses dient als Beweisstück bei allfälligen Schadenfällen. Dieser Ausdruck muss mit Datum und Visum der planaufbereitenden Person versehen sein und während mindestens einem Monat nach Bauende aufbewahrt bzw. vorgelegt werden können. Kann kein entsprechender Plan vorgelegt werden, lehnt ewz jegliche Haftung ab.\n\nDie Gültigkeit der Auskunft ist auf 7 Tage begrenzt. Erfolgen Tiefbauarbeiten nicht innerhalb obiger Frist, müssen Lage und Vollständigkeit der ewz Leitungen nochmals überprüft oder neu erhoben werden.\n\nDie diesem Geodatensatz beiliegenden Gültigkeitseinschränkungen (Verbindlichkeitsflächen) sind schraffiert und mit \"ewz\" beschriftet. In diesen Bereichen ist ewz im Begriff Lage und/oder Inhalt der Trassen zu verändern. Bei Tiefbauarbeiten in Gebieten mit diesen Flächen müssen zwingend aktuelle Planunterlagen direkt bei ewz angefordert werden.",
+   "abstract": "Alle Trassen der ewz Strom- und Telecomleitungen im öffentlichen Grund sind im Geodatensatz EWZ Werkleitungsdaten abgebildet. Gültigkeitseinschränkungen wegen ewz Bauarbeiten sind als Flächen gekennzeichnet.\n\nEs sind die Nutzungsbestimmungen im Dokument NIS_ZH_EWZ.pdf (siehe unten) zu beachten.\n\n\n\nKontakt für Datenbezug: NetzKundenAnliegen@ewz.ch",
+   "identificationDate": "2025-03-17",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Departement der Industriellen Betriebe - Elektrizitätswerk der Stadt Zürich",
+   "contactPerson": "Dominika Nowak",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.351987544965217,
+      "eastBoundLongitude": 8.995762202764812,
+      "southBoundLatitude": 47.16239242364716,
+      "northBoundLatitude": 47.69020608441791
+   },
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "EWZ_BRENNSTELLENTRAEGER_L",
+            "description": "Überspannungsseil als Teil einer Anlage der öffentlichen Beleuchtung (Liniendarstellung)\n\n<BrennstellenTraeger>",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Liniengeometrien vonTragseilen einer Beleuchtungsanlage"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "BEANISNR",
+                  "description": "NIS_NR"
+               }
+            ]
+         },
+         {
+            "name": "EWZ_ERDUNG_P",
+            "description": "Erdungsanlage (Symboldarstellung)\n\n<Erdung>",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Punktgeometrie von Erdungsanlagen"
+               },
+               {
+                  "name": "NISNR",
+                  "description": "NIS_NR"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "TYP_TXT",
+                  "description": "ErdungTyp Text"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": "Rotation des Symbols; Masseinheit ist Grad."
+               },
+               {
+                  "name": "TYP",
+                  "description": "ErdungTyp = (Tiefenerder, Erdungsplatte, Erdungsbride, Armierung, Undefiniert)"
+               }
+            ]
+         },
+         {
+            "name": "EWZ_BRENNSTELLE_P",
+            "description": "Leuchtenstandort (Symboldarstellung)\n\n<Brennstelle>",
+            "attributes": [
+               {
+                  "name": "ART",
+                  "description": "BrennstellenArt = (Beleuchtung, Verkehr, Undefiniert)"
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": "BrennstellenArt Text"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie des Leuchtenstandorts"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "NISNR",
+                  "description": "NIS_NR"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": "Rotation des Symbols; Masseinheit ist Grad."
+               }
+            ]
+         },
+         {
+            "name": "EWZ_FREILEITUNGSMAST_A",
+            "description": "Freileitungsmast (Flächendarstellung)\n\n<FreileitungMast>",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Flächengeometrie des Freileitungsmastes"
+               },
+               {
+                  "name": "NISNR",
+                  "description": "NIS_NR"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "TYP_TXT",
+                  "description": "Freileitungsmast Typ Text"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": "Rotation des Symbols; undefiniert = 100.0; Masseinheit ist Gon."
+               },
+               {
+                  "name": "TYP",
+                  "description": "FreileitungMastTyp = (Freileitungsmast_NS, Freileitungsmast_HS, Undefiniert)"
+               }
+            ]
+         },
+         {
+            "name": "EWZ_FREILEITUNGSMAST_P",
+            "description": "Freileitungsmast (Symboldarstellung)\n\n<FreileitungMast>",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Punktgeometrie des Freileitungsmastes"
+               },
+               {
+                  "name": "NISNR",
+                  "description": "NIS_NR"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "TYP_TXT",
+                  "description": "Freileitungsmast Typ Text"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": "Rotation des Symbols; Masseinheit ist Grad."
+               },
+               {
+                  "name": "TYP",
+                  "description": "FreileitungMastTyp = (Freileitungsmast_NS, Freileitungsmast_HS, Undefiniert)"
+               }
+            ]
+         },
+         {
+            "name": "EWZ_OEB_MAST_P",
+            "description": "Abspannmast als Teil einer Anlage der öffentlichen Beleuchtung (Symboldarstellung; oft gemeinsam mit VBZ)\n\n<OebMast>",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Punktgeometrie des Abspannmastes"
+               },
+               {
+                  "name": "NISNR",
+                  "description": "NIS_NR"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "TYP",
+                  "description": "OebMastTyp = (Abspannmast, Joch, Fundament, Undefiniert)"
+               },
+               {
+                  "name": "TYP_TXT",
+                  "description": "OebMastTyp Text"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": "Rotation des Symbols; Masseinheit ist Grad."
+               }
+            ]
+         },
+         {
+            "name": "EWZ_SCHACHTOEFFNUNG_P",
+            "description": "Schachteinstieg (Symboldarstellung)\n\n<Schachtoeffnung>",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie des Schachteinstiegs"
+               },
+               {
+                  "name": "NISNR",
+                  "description": "NIS_NR"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "TYP_TXT",
+                  "description": "Schachtöffnungstyp Text"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": "Rotation des Symbols; Masseinheit ist Grad."
+               },
+               {
+                  "name": "TYP",
+                  "description": "SchachtoeffnungTyp = (Einstieg, Lüftung)"
+               }
+            ]
+         },
+         {
+            "name": "EWZ_SCHACHT_A",
+            "description": "Schacht als Teil der Trasse (Flächendarstellung)\n\n<Schacht>",
+            "attributes": [
+               {
+                  "name": "NISNR",
+                  "description": "NIS_NR"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie des Schachtes"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               }
+            ]
+         },
+         {
+            "name": "EWZ_SCHACHT_L",
+            "description": "Schachtfläche Umrandungslinie (Liniendarstellung)\n\n<Schacht>",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der Schachtumrandungslinie"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "REFID",
+                  "description": "Referenz-ID des übergeordneten Geometrieobjektes. Die Linienobjekte mit der gleichen Referenz-ID bilden zusammen die Umrandung einer Fläche."
+               }
+            ]
+         },
+         {
+            "name": "EWZ_TRASSE_A",
+            "description": "Trassenabschnitt mit Breite > 30 cm (Flächendarstellung)\n\n<TrasseAbschnittFlaeche>",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie des Trassenabschnittes"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "TRASSEABSCHNITTTID",
+                  "description": "Fremdschlüssel für Verbindung zur Tabelle TrasseAbschnitt"
+               },
+               {
+                  "name": "TRASSELAGE",
+                  "description": "TrasseLageTyp =(Genau, Geortet, Ungenau, Nach_Angabe, Unbekannt, Undefiniert)"
+               },
+               {
+                  "name": "TRASSELAGE_TXT",
+                  "description": "Trasselage Text"
+               },
+               {
+                  "name": "BREITE",
+                  "description": "Trassenbreite; Angabe nur möglich für einfache Flächentrassen, k.A. fuer komplexe Flächentrassen und Trassenknotenflächen"
+               }
+            ]
+         },
+         {
+            "name": "EWZ_TRASSE_ACHSE_L",
+            "description": "Trassenabschnitt mit Breite <= 30 cm (Liniendarstellung)\n\n<TrasseAbschnittLinie>",
+            "attributes": [
+               {
+                  "name": "BREITE",
+                  "description": "Breite des Trasseabschnittes"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie des Trasseabschnittes"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "TRASSELAGE_TXT",
+                  "description": "TrasseLageTyp Text"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "TRASSEABSCHNITTTID",
+                  "description": "Fremdschlüssel für Verbindung zur Tabelle TrasseAbschnitt"
+               },
+               {
+                  "name": "TRASSELAGE",
+                  "description": "TrasseLageTyp = (Genau, Geortet, Ungenau, Nach_Angabe, Unbekannt, Undefiniert)"
+               }
+            ]
+         },
+         {
+            "name": "EWZ_TRASSE_L",
+            "description": "Trassenabschnittsfläche (Liniendarstellung) \n\n<TrasseAbschnittFlaeche>",
+            "attributes": [
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "REFID",
+                  "description": "Referenz-ID des übergeordneten Geometrieobjektes. Die Linienobjekte mit der gleichen Referenz-ID bilden zusammen die Umrandung einer Fläche."
+               },
+               {
+                  "name": "TRASSEABSCHNITTTID",
+                  "description": "Fremdschlüssel für Verbindung zur Tabelle TrasseAbschnitt"
+               },
+               {
+                  "name": "TRASSELAGE",
+                  "description": "TrasseLageTyp =(Genau, Geortet, Ungenau, Nach_Angabe, Unbekannt, Undefiniert)"
+               },
+               {
+                  "name": "TRASSELAGE_TXT",
+                  "description": "Trasselage Text"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der Trassenabschnitts-Umrandungslinie"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               }
+            ]
+         },
+         {
+            "name": "EWZ_TRASSE_T",
+            "description": "Gefährdungsinformation des Trasseninhalts (Textdarstellung; Freileitungen, elektrische Spannung über 1000 Volt, spezielle Kabelisolation, Fernwärme)\n\n<TrasseAbschnitt>\n\n<TrasseBeschriftung>",
+            "attributes": [
+               {
+                  "name": "BESCHRIFTUNG",
+                  "description": "Beschriftung; Platzierung obligatorisch für Spannungen > 1 kV"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der Beschriftung"
+               },
+               {
+                  "name": "SCHRIFTHALI",
+                  "description": "Horizontaler Versatz zum Ursprungspunkt; undefiniert = Center"
+               },
+               {
+                  "name": "SCHRIFTVALI",
+                  "description": "Vertikaler Versatz zum Ursprungspunkt; undefiniert = Half"
+               },
+               {
+                  "name": "TRASSEABSCHNITTTID",
+                  "description": "Fremdschlüssel für Verbindung zur Tabelle TrasseAbschnitt"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "SCHRIFTORIENTIERUNG",
+                  "description": "Rotation der Beschriftung; Masseinheit ist Grad."
+               }
+            ]
+         },
+         {
+            "name": "EWZ_TRASSE_UEBERD_P",
+            "description": "Trassenüberdeckung (Punktdarstellung; wird nur dort abgesetzt, wo die Trassentiefe nicht dem Standard von 0.5 m entspricht)\n\n<TrasseUeberdeckung>",
+            "attributes": [
+               {
+                  "name": "BESCHRIFTUNG",
+                  "description": "Beschriftung der Trasse Überdeckung; '?'=undefiniert"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der Trasseüberdeckung"
+               },
+               {
+                  "name": "NISNR",
+                  "description": "NIS_NR"
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": "Rotation des Symbols; Masseinheit ist Grad."
+               },
+               {
+                  "name": "SCHRIFTORIENTIERUNG",
+                  "description": "Rotation des Symbols; Masseinheit ist Grad."
+               },
+               {
+                  "name": "TRASSEABSCHNITTTID",
+                  "description": "Fremdschlüssel für Verbindung zur Tabelle TrasseAbschnitt"
+               },
+               {
+                  "name": "TRASSELAGE_TXT",
+                  "description": "TrasseLageTyp Text"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "SCHRIFTHALI",
+                  "description": "Horizontaler Versatz zum Ursprungspunkt; undefiniert = Center"
+               },
+               {
+                  "name": "SCHRIFTVALI",
+                  "description": "Vertikaler Versatz zum Ursprungspunkt; undefiniert = Half"
+               },
+               {
+                  "name": "TRASSELAGE",
+                  "description": "TrasseLageTyp = (Genau, Geortet, Ungenau, Nach_Angabe, Unbekannt, Undefiniert)"
+               }
+            ]
+         },
+         {
+            "name": "EWZ_TRASSE_UEBERD_T",
+            "description": "Trassenüberdeckung (Textdarstellung; wird nur dort abgesetzt, wo die Trassentiefe nicht dem Standard von 0.5 m entspricht)\n\n1. Absolute Überdeckung: Oberkante der Trasse in Meter über Meer.\n\n2. Relative Überdeckung: Auflage zwischen Oberkante der Trasse und Bodenoberfläche in Meter. \n\n<TrasseUeberdeckung>",
+            "attributes": [
+               {
+                  "name": "BESCHRIFTUNG",
+                  "description": "Beschriftung der Trasse Überdeckung; '?'=undefiniert"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "SCHRIFTORIENTIERUNG",
+                  "description": "Rotation der Beschriftung; Masseinheit ist Grad."
+               },
+               {
+                  "name": "TRASSEABSCHNITTTID",
+                  "description": "Fremdschlüssel für Verbindung zur Tabelle TrasseAbschnitt"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Textgeometrie der Trasseüberdeckung"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "SCHRIFTHALI",
+                  "description": "Horizontaler Versatz zum Ursprungspunkt; undefiniert = Center"
+               },
+               {
+                  "name": "SCHRIFTVALI",
+                  "description": "Vertikaler Versatz zum Ursprungspunkt; undefiniert = Half"
+               }
+            ]
+         },
+         {
+            "name": "EWZ_VE_VERBINDLICHKEIT_A",
+            "description": "Verbindlichkeiten ewz (Flächendarstellung; schraffiert mit ewz-Text)\n\nGültigkeitseinschränkung der hier veröffentlichten Trasseninformation. Für Bauarbeiten müssen in diesen Zonen zwingend Planunterlagen bei ewz angefordert und tagesaktuell verwendet werden.\n\n<Verbindlichkeiten_EWZ>",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der jeweiligen Gebiete"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               }
+            ]
+         }
+      ]
+   }
+}

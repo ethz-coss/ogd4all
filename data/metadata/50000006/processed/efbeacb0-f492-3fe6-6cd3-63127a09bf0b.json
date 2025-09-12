@@ -1,0 +1,85 @@
+{
+   "title": "(GDP) Inventar der schützenswerten Gärten und Anlagen von kommunaler Bedeutung der Stadt Zürich",
+   "keywords": [
+      "Baum",
+      "Bestattung",
+      "Grünfläche",
+      "Schutz",
+      "Freiraum",
+      "Garten",
+      "GDP"
+   ],
+   "metadata_date": "2024-06-06T07:25:31",
+   "updateFrequency": "asNeeded",
+   "purpose": "Der Fachbereich Gartendenkmalpflege bei Grün Stadt Zürich führt basierend auf dem Gesetz über die Raumplanung und das öffentliche Baurecht (Planungs- und Baugesetz, PBG) sowie aufgrund des Stadtratsbeschlusses 873 vom 26. März 1986 das Inventar der schützenswerten Gärten und Anlagen von kommunaler Bedeutung. Dieses wurde mit dem Stadtratsbeschluss 2321 vom 19. Juli 1989 festgesetzt.",
+   "abstract": "Im GDP-Inventar werden die schützenswerten bzw. potentiell schutzwürdigen Gärten und Anlagen von kommunaler Bedeutung der Stadt Zürich dargestellt.",
+   "identificationDate": "2024-12-13",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Grün Stadt Zürich",
+   "contactPerson": "Michaela Gonzalez",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/_GDP__Inventar_der_schuetzenswerten_Gaerten_und_Anlagen_von_kommunaler_Bedeutung_der_Stadt_Zuerich",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "GDP_OBJEKTE",
+            "description": "SDE Featureclass der Katasterauskunfts-Version der Gartendenkmalpflege-Objekte.",
+            "attributes": [
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": "Bezeichnung des GDP-Objektes; optional im Sinne einer Ergänzung (z.B. Kranken- und Schwesternheim).\n\nWo vorhanden, ist dies der geläufige Name eines Objekts, ansonsten ein '-'."
+               },
+               {
+                  "name": "EINSTUFUNG",
+                  "description": "Unterscheidung ob Schutz lediglich auf kommunale oder zusätzlich auch kantonaler Ebene besteht."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "ESRI Geometrietyp Polygon"
+               },
+               {
+                  "name": "IDENTIFIKATION",
+                  "description": null
+               },
+               {
+                  "name": "INVENTARADRESSE",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": "GDP-Kataster Nummer.\n\nEindeutige Identifikation eines Objekts, die bei Grün Stadt Zürich verwendet wird. Liegt nur bei inventarisierten Objekten vor, ansonsten steht '-'."
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI Identifikationsnummer (Systemvorgabe)"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "Interlis/Geomedia Identifikationsnummer (Systemvorgabe)"
+               },
+               {
+                  "name": "SCHUTZSTATUS",
+                  "description": "Beschreibung des Schutzstatus de GDP-Objektes.\n\nIst ein Objekt im Inventar (§ 203 PBG) oder formell unter Schutz (§ 205 PBG)?"
+               },
+               {
+                  "name": "TYP",
+                  "description": "Typ des GDP-Objektes (z.B. Haus- oder Villengarten) - ansonsten \"-\"."
+               }
+            ]
+         }
+      ]
+   }
+}

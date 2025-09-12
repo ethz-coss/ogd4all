@@ -1,0 +1,108 @@
+{
+   "title": "Wohnungsbestand nach Zimmerzahl, Miete/Eigentum, Bauperiode, Eigentumsart und Stadtquartier",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bau_best_whg_zizahl_wfl_bauperi_ea_quartier_jahr_od5831",
+   "abstract": "Diese Daten umfassen den Wohnungsbestand der Stadt Zürich (Anzahl Wohnungen und Wohnungsfläche) nach Zimmerzahl, Miete/Eigentum, Bauperiode und Eigentumsart sowie nach administrativer Einteilung.\nBitte beachten Sie für das korrekte Verständnis zu den Daten die unten aufgeführten weiteren Erläuterungen in der Rubrik «Bemerkungen».",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Stand und Nachführung:\n\nDas Gebäude- und Wohnungsregister der Stadt Zürich wird ständig nachgeführt. Seit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.\n\nMietwohnungen (ab 2014)\n\nFür das Gebäude- und Wohnungsregister wird die Angabe, ob es sich um ein Miet- oder Eigentumswohnung handelt, nicht erhoben. Das Bevölkerungsamt liefert seit 2014 für ca. 60 Prozent der Wohnungen die Angabe, ob sie in Miete oder durch ihre Besitzenden bewohnt sind. Die fehlenden Angaben werden aufgrund eines Algorithmus, basierend auf der Rechtsform des Gebäudebesitzes geschätzt. Es ist mit kleinen Ungenauigkeiten zu rechnen.\n\nWohnungsfläche\n\nAls Wohnungsfläche (früher und im Zusammenhang mit dem Flächenkonsum pro Person auch als «Wohnfläche» bezeichnet) gilt die Fläche sämtlicher Räume einer Wohnung hinter der Wohnungstüre, abzüglich Wandquerschnitten. Dazu gehören Wohn- und Schlafzimmer, Küche, Kochnische, Badezimmer, Toiletten, Abstellräume und Gänge. Ausser Betracht fallen bei der Berechnung zusätzliche Wohnräume ausserhalb der Wohnung (z.B. der Wohnung zugeordnete Einzelzimmer), offene Balkone und Terrassen sowie nicht bewohnbare Keller- und Dachgeschossräume. Wo keine genauen Flächen ermittelt werden können, sind Schätzwerte (Länge × Breite) erfasst.\n\nEigentumsart\n\nÖffentliches Eigentum: Bund, Kanton Zürich, Stadt Zürich inklusive städtischer Stiftungen und anderes öffentliches Eigentum\nWohnbaugenossenschaften: Nur Wohnbaugenossenschaften\nAndere private Gesellschaften: Aktien-, Kollektiv- und Kommanditgesellschaften, Handels-, Produktiv-, Versicherungs- und übrige Genossenschaften, Gesellschaften mit beschränkter Haftung, Pensionskassen, Vereine, private Stiftungen, gemischtes Eigentum und Religionsgemeinschaften\nPrivatpersonen: Einzelpersonen, Erbgemeinschaften und mehrere natürliche Personen\nIm Stochwerkeigentum: Stockwerkeigentumsgesellschaften\n\nStatistische Wohnung\n\nAls statistische Wohnung zählen bestehende Wohnungen, welche über eine Kocheinrichtung verfügen und zu Wohnzwecken (keine zweckentfremdeten Wohnungen) verwendet werden.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Wohnungsbestand nach Zimmerzahl, Miete/Eigentum, Bauperiode, Eigentumsart und Stadtquartier",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Numerisch)"
+               },
+               {
+                  "name": "Datenstand (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (Integer)"
+               },
+               {
+                  "name": "Stadtquartier Sortiercode (technisch: QuarSort)",
+                  "description": "Stadtquartier (Numerisch)"
+               },
+               {
+                  "name": "Stadtquartier Code (technisch: QuarCd)",
+                  "description": "Stadtquartier Code (Integer)"
+               },
+               {
+                  "name": "Stadtquartier Beschreibung (technisch: QuarLang)",
+                  "description": "Stadtquartier (String)"
+               },
+               {
+                  "name": "Stadtkreis Sortiercode (technisch: KreisSort)",
+                  "description": "Stadtkreis (Numerisch)"
+               },
+               {
+                  "name": "Stadtkreis Code (technisch: KreisCd)",
+                  "description": "Stadtkreis (Integer)"
+               },
+               {
+                  "name": "Stadtkreis Beschreibung (technisch: KreisLang)",
+                  "description": "Stadtkreis (String)"
+               },
+               {
+                  "name": "Zimmerzahl der Wohnung Sortiercode (technisch: AnzZimmerLevel1Sort_noDM)",
+                  "description": "Anzahl Zimmer der Wohnung (Numerisch)"
+               },
+               {
+                  "name": "Zimmerzahl der Wohnung Code (technisch: AnzZimmerLevel1Cd_noDM)",
+                  "description": "Anzahl Zimmer der Wohnung (Integer)"
+               },
+               {
+                  "name": "Zimmerzahl der Wohnung Beschreibung (technisch: AnzZimmerLevel1Lang_noDM)",
+                  "description": "Anzahl Zimmer der Wohnung (String)"
+               },
+               {
+                  "name": "Mietwohnung Sortiercode (technisch: MietwohnungSort)",
+                  "description": "Handelt es sich um eine Mietwohnung: 1=Ja, 0=Nein, 9=unbekannt. (Numerisch)"
+               },
+               {
+                  "name": "Mietwohnung Code (technisch: MietwohnungCd)",
+                  "description": "Handelt es sich um eine Mietwohnung: '1'=Ja, '0'=Nein, '9'=fehlend (Integer)"
+               },
+               {
+                  "name": "Mietwohnung Beschreibung (technisch: MietwohnungLang)",
+                  "description": "Handelt es sich um eine Mietwohnung: Ja, Nein, Unbekannt. (String)"
+               },
+               {
+                  "name": "Bauperiode Sortiercode (technisch: BauperiodeLevel1Sort)",
+                  "description": "Bauperiode Gebäude (Numerisch)"
+               },
+               {
+                  "name": "Bauperiode Code (technisch: BauperiodeLevel1Cd)",
+                  "description": "Bauperiode Gebäude (Integer)"
+               },
+               {
+                  "name": "Bauperiode Beschreibung (technisch: BauperiodeLevel1Lang)",
+                  "description": "Bauperiode Gebäude (String)"
+               },
+               {
+                  "name": "Eigentumsgruppe für Publikationen Sortiercode (technisch: EigentuemerSSZPubl1Sort)",
+                  "description": "Eigentumsart (String)"
+               },
+               {
+                  "name": "Eigentumsgruppe für Publikationen Code (technisch: EigentuemerSSZPubl1Cd)",
+                  "description": "Eigentumsart (Numerisch)"
+               },
+               {
+                  "name": "Eigentumsgruppe für Publikationen Beschreibung (technisch: EigentuemerSSZPubl1Lang)",
+                  "description": "Eigentumsart (Integer)"
+               },
+               {
+                  "name": "Zahl der Wohnungen (technisch: AnzWhgStat)",
+                  "description": "Anzahl statistische Wohnungen (Numerisch)"
+               },
+               {
+                  "name": "Wohnungsfläche (technisch: Wohnflaeche)",
+                  "description": "Wohnungsfläche in Quadratmeter (Numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-01-20"
+}

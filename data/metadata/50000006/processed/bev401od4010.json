@@ -1,0 +1,72 @@
+{
+   "title": "Geburten nach Geschlecht und Nationalität",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bev_geburten_jahr_geschlecht_nationalitaet_od4010",
+   "abstract": "Anzahl Lebendgeborene (wirtschaftliche Wohnbevölkerung) in der Stadt Zürich nach Geschlecht, Staatsangehörigkeit des Kindes und Jahr.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Bemerkung:\n\nEs werden nur Geburten von in der Stadt Zürich gemeldeten Lebendgeborenen gezählt. Der Geburtsort wird nicht berücksichtigt. Dies führt oft zur Verwirrung, da oft davon ausgegangen wird, dass mit den Geburten alle in städtischen Spitälern geborene Kinder gezählt werden.\n\nSerbien, Montenegro, Kosovo:\n\nDie Staaten Serbien, Montenegro und Kosovo wurden bis im Jahr 2009 zusammengefasst. Ab dem Jahr 2010 sind sie getrennt ausgewiesen.\n\nNordmazedonien\n\nAb dem 13.02.2019 heisst Mazedonien neu Nordmazedonien. Für Bewegungen bis vor dem 13.02.2019 wird Mazedonien als Staatsangehörigkeit verwendet. Danach nur noch Nordmazedonien. Ab dem Jahresendbestand 2019 wird nur Nordmazedonien verwendet.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Geburten nach Geschlecht und Nationalität",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Daten gültig per Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr. Zeitpunkt entspricht dem Ende des Jahres."
+               },
+               {
+                  "name": "Geschlecht (Kurz) (technisch: SexKurz)",
+                  "description": "Code des Geschlechts der Person (M; W)."
+               },
+               {
+                  "name": "Staatsangehörigkeit historisch (Sort) (technisch: NationHistSort)",
+                  "description": "Code der Staatsangehörigkeit der Person. Historisch bedeuted, dass der gültige Staat in Bezug auf den Zeitbereich der ausgewerteten Daten, ausgewiesen wird"
+               },
+               {
+                  "name": "Staatsangehörigkeit historisch (lang) (technisch: NationHistLang)",
+                  "description": "Bezeichnung der Staatsangehörigkeit der Person. Historisch bedeuted, dass der gültige Staat in Bezug auf den Zeitbereich der ausgewerteten Daten, ausgewiesen wird"
+               },
+               {
+                  "name": "Staatsangehörigkeit (Sort) (technisch: NationSort)",
+                  "description": "Code der Staatsangehörigkeit der Person."
+               },
+               {
+                  "name": "Staatsangehörigkeit (lang) (technisch: NationLang)",
+                  "description": "Bezeichnung der Staatsangehörigkeit der Person."
+               },
+               {
+                  "name": "Region (Sort) (technisch: RegionSort)",
+                  "description": "Code der Region. Gliederung verschiedener Staaten in Regionen (Besipielsweise Südeuropa, Nordeuropa, etc.)."
+               },
+               {
+                  "name": "Region (Lang) (technisch: RegionLang)",
+                  "description": "Bezeichnung der Region."
+               },
+               {
+                  "name": "KontinentSort (technisch: KontinentSort)",
+                  "description": "Code des Kontinents nach Staatsangehörigkeit der Person. Gemäss der Nomenklatur des Bundesamtes für Statistik."
+               },
+               {
+                  "name": "KontinentLang (technisch: KontinentLang)",
+                  "description": "Bezeichnungs des Kontinents nach Staatsangehörigkeit der Person."
+               },
+               {
+                  "name": "Lebensfähigkeit (Code) (technisch: LebensfaehigkeitCd)",
+                  "description": "Lebensfähigkeit des geborenen Kindes (String)"
+               },
+               {
+                  "name": "Lebensfähigkeit (Lang) (technisch: LebensfaehigkeitLang)",
+                  "description": "Lebensfähigkeit des geborenen Kindes (String)"
+               },
+               {
+                  "name": "Anzahl Geburten (technisch: AnzGebuWir)",
+                  "description": "Anzahl Lebendgeburten nach wirtschaftlicher Bevölkerungsdefinition."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-03-05"
+}

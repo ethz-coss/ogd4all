@@ -1,0 +1,83 @@
+{
+   "title": "AfS Infoplan",
+   "keywords": [
+      "Bauprojekte",
+      "Städtebauliche Entwicklung",
+      "Planung",
+      "Entwicklungsplan"
+   ],
+   "metadata_date": "2024-02-09T08:51:35",
+   "updateFrequency": "annually",
+   "purpose": "Der Datensatz gibt eine Räumliche Übersicht der städtebaulichen relevanten Planungen. Er dient unter anderem als Grundlage für Schulraumplanung u. ä.",
+   "abstract": "Dieser Datensatz enthält Informationen zu den laufenden Planungen der Stadt Zürich. Die Datensätze beinhalten Angaben zur Projektverantwortung, Projektleitung und Planungsstand. Weitere Daten zu Realisierungshorizont und Anzahl Wohnungen können bei Bedarf zur Verfügung gestellt werden.",
+   "identificationDate": "2023-10-30",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Hochbaudepartement - Amt für Städtebau",
+   "contactPerson": "Bernd Nierula",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "AFS_INFOPLAN_PERIMETER",
+            "description": "Dieser Datensatz enthält die Perimeter zu den laufenden Planungen der Stadt Zürich",
+            "attributes": [
+               {
+                  "name": "ProjektNr",
+                  "description": "AfS interne Nummer des Projektes, nur innerhalb eines Jahresstands eindeutig."
+               },
+               {
+                  "name": "GUID",
+                  "description": "Eineindeutiger Identifikator für jedes Projekt"
+               },
+               {
+                  "name": "Projektname",
+                  "description": "AfS interne Bezeichnung des Projektes"
+               },
+               {
+                  "name": "PlanungsStand",
+                  "description": "Stand der Planung. Enthält einen der folgenden Werte:\n\n* Baubegonnen (im Bau)\n\n* Baugesuch eingereicht\n\n* Baugesuch bewilligt\n\n* Bau freigegeben\n\n* Bau abgenommen\n\n* Bauprojekt bewilligt\n\n* Entwicklungspotenzial\n\n* Planung/Projektierung\n\n* Potenzial"
+               },
+               {
+                  "name": "Veröffentlicht",
+                  "description": "Projekt veröffentlicht. Enthält einen der folgenden Werte:\n\n* Ja\n\n* Nein"
+               },
+               {
+                  "name": "PlanungsArt",
+                  "description": "Art der Planung. Enthält einen der folgenden Werte:\n\n* Baustruktur\n\n* Entwicklungsgebiet\n\n* Kantonale Gebietsplanung/Gesamtplanung\n\n* öffentlicher Grünraum\n\n* öffentlicher Raum/Stadtraum\n\n* Städtische Gebietsplanung/Gesamtplanung"
+               },
+               {
+                  "name": "EntwicklungsGebiet",
+                  "description": "Zuordnung zu einem der AfS Entwicklungsgebiete. Enthält einen der folgenden Werte:\n\n* Affoltern\n\n* Altstetten\n\n* Europaallee/Hauptbahnhof\n\n* Hochschulgebiet\n\n* Leutschenbach\n\n* Manegg\n\n* Oerlikon\n\n* Schwamendingen\n\n* Zürich West\n\n* n.a."
+               },
+               {
+                  "name": "PlanungsGebiet",
+                  "description": "Zuordnung zu einem der AfS Planungsgebiete. Enthält einen der folgenden Werte:\n\n* Nord\n\n* Ost\n\n* Süd\n\n* West"
+               },
+               {
+                  "name": "ProjektLeitung",
+                  "description": "Zuständige Verwaltungseinheit. Enthält einen der folgenden Werte:\n\n* AfS\n\n* AHB\n\n* GSZ\n\n* IMMO\n\n* LSZ\n\n* STEZ\n\n* TAZ\n\n* UGZ\n\n* Kanton\n\n* Bund\n\n* SBB\n\n* Privat"
+               },
+               {
+                  "name": "Projektbeschrieb",
+                  "description": "Kurzbeschreibung des Projektes"
+               },
+               {
+                  "name": "ObjectID",
+                  "description": "Technischer Identifikator (ESRI)"
+               },
+               {
+                  "name": "VerfahrensInstrument",
+                  "description": "Art des Planungsverfahrens. Enthält einen der folgenden Werte:\n\n* Bauvorhaben\n\n* Gestaltungsplan\n\n* Leitbild\n\n* Machbarkeitsstudie\n\n* Masterplan\n\n* Quartierplan\n\n* Sanierung\n\n* Schutzabklärung\n\n* Sonderbauvorschriften\n\n* Studie, sonstiges\n\n* Studienauftrag\n\n* Testplanung\n\n* Um- und Neubau\n\n* Umzonierung\n\n* Wettbewerb\n\n* Wettbewerb und GP\n\n* Zonenplanänderung"
+               }
+            ]
+         }
+      ]
+   }
+}

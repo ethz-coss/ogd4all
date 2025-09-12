@@ -1,0 +1,76 @@
+{
+   "title": "ERZ Kehrichtcontainer im öffentlichen Raum",
+   "keywords": [
+      "Entsorgung; Kehricht; Haushaltkehricht; Betriebskehricht; Container"
+   ],
+   "metadata_date": "2020-01-28T14:48:57",
+   "updateFrequency": "asNeeded",
+   "purpose": "Übersicht über die bestehende Entsorgungsinfrastruktur für Planungszwecke. ERZ intern werden die Daten zusätzlich zur Planung der Leerungen und zum betrieblichen Unterhalt der Sammelstellen verwendet.",
+   "abstract": "Standorte der Kehrichtcontainer im öffentlichen Raum für die Sammlung von Haushalts- und Betriebskehricht.",
+   "identificationDate": "2025-03-10",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Entsorgung + Recycling Zürich",
+   "contactPerson": "Peter Kreuzer",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/ERZ_Kehrichtcontainer_im_oeffentlichen_Raum",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "CONTAINER_OEG_P",
+            "description": "Standorte der Container für Hauskehricht (Gebührensäcke) oder Betriebskehricht auf öffentlichem Grund.",
+            "attributes": [
+               {
+                  "name": "OBJID",
+                  "description": "Eindeutiger Datenbankschlüssel"
+               },
+               {
+                  "name": "STANDORT_ID",
+                  "description": "Identifikationsnummer des Standorts (ERZ-interner Schlüssel)"
+               },
+               {
+                  "name": "STANDORT_BEZ",
+                  "description": "Bezeichnung des Unterflurcontaier-Standorts. In der Regel Name der nächstgelegenen Strasse und Hausnummer des nächstgelegenen Gebäudes."
+               },
+               {
+                  "name": "PLZ",
+                  "description": "Postleitzahlgebiet des Standorts in der Stadt Zürich"
+               },
+               {
+                  "name": "ANZAHL_GEFAESSE",
+                  "description": "Anzahl der Unterflurcontainer am Standort"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "STANDORT_ADRESSE",
+                  "description": "Nächstgelegene Adresse."
+               },
+               {
+                  "name": "GEFAESS_TYP",
+                  "description": null
+               },
+               {
+                  "name": "GEFAESS_ART",
+                  "description": null
+               }
+            ]
+         }
+      ]
+   }
+}

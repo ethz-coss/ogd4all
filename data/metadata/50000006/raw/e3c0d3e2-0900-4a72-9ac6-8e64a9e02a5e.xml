@@ -1,0 +1,955 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<che:CHE_MD_Metadata xmlns:che="http://www.geocat.ch/2008/che" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gco:isoType="gmd:MD_Metadata" xsi:schemaLocation="http://www.geocat.ch/2008/che http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd http://www.isotc211.org/2005/srv http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd">
+  <gmd:fileIdentifier xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:CharacterString>e3c0d3e2-0900-4a72-9ac6-8e64a9e02a5e</gco:CharacterString>
+  </gmd:fileIdentifier>
+  <gmd:language xmlns:comp="http://www.geocat.ch/2003/05/gateway/GM03Comprehensive" xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:CharacterString>deu</gco:CharacterString>
+  </gmd:language>
+  <gmd:characterSet xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+  </gmd:characterSet>
+  <gmd:hierarchyLevel xmlns:comp="http://www.geocat.ch/2003/05/gateway/GM03Comprehensive" xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" />
+  </gmd:hierarchyLevel>
+  <gmd:hierarchyLevelName>
+    <gco:CharacterString>Klimadaten</gco:CharacterString>
+  </gmd:hierarchyLevelName>
+  <gmd:contact>
+    <che:CHE_CI_ResponsibleParty gco:isoType="gmd:CI_ResponsibleParty">
+      <gmd:organisationName>
+        <gco:CharacterString>Stadt Zürich - Gesundheits- und Umweltdepartement - Umwelt- und Gesundheitsschutz</gco:CharacterString>
+      </gmd:organisationName>
+      <gmd:contactInfo>
+        <gmd:CI_Contact>
+          <gmd:phone>
+            <che:CHE_CI_Telephone gco:isoType="gmd:CI_Telephone">
+              <gmd:voice>
+                <gco:CharacterString>+41 44 412 11 73</gco:CharacterString>
+              </gmd:voice>
+              <che:directNumber>
+                <gco:CharacterString>+41 44 412 46 72</gco:CharacterString>
+              </che:directNumber>
+            </che:CHE_CI_Telephone>
+          </gmd:phone>
+          <gmd:address>
+            <che:CHE_CI_Address gco:isoType="gmd:CI_Address">
+              <gmd:city>
+                <gco:CharacterString>Zürich</gco:CharacterString>
+              </gmd:city>
+              <gmd:postalCode>
+                <gco:CharacterString>8050</gco:CharacterString>
+              </gmd:postalCode>
+              <gmd:country>
+                <gco:CharacterString>CH</gco:CharacterString>
+              </gmd:country>
+              <gmd:electronicMailAddress>
+                <gco:CharacterString>Rainer.Bobst@zuerich.ch</gco:CharacterString>
+              </gmd:electronicMailAddress>
+              <che:streetName>
+                <gco:CharacterString>Eggbühlstrasse</gco:CharacterString>
+              </che:streetName>
+              <che:streetNumber>
+                <gco:CharacterString>23</gco:CharacterString>
+              </che:streetNumber>
+            </che:CHE_CI_Address>
+          </gmd:address>
+          <gmd:onlineResource>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage>
+                <gmd:URL>https://www.stadt-zuerich.ch/ugz</gmd:URL>
+              </gmd:linkage>
+            </gmd:CI_OnlineResource>
+          </gmd:onlineResource>
+        </gmd:CI_Contact>
+      </gmd:contactInfo>
+      <gmd:role>
+        <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact" />
+      </gmd:role>
+      <che:individualFirstName>
+        <gco:CharacterString>Rainer</gco:CharacterString>
+      </che:individualFirstName>
+      <che:individualLastName>
+        <gco:CharacterString>Bobst</gco:CharacterString>
+      </che:individualLastName>
+      <che:organisationAcronym>
+        <gco:CharacterString>UGZ</gco:CharacterString>
+      </che:organisationAcronym>
+    </che:CHE_CI_ResponsibleParty>
+  </gmd:contact>
+  <gmd:dateStamp xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:DateTime>2019-10-24T16:08:19</gco:DateTime>
+  </gmd:dateStamp>
+  <gmd:metadataStandardName xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:CharacterString>GM03 2+</gco:CharacterString>
+  </gmd:metadataStandardName>
+  <gmd:spatialRepresentationInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_VectorSpatialRepresentation>
+      <gmd:geometricObjects>
+        <gmd:MD_GeometricObjects>
+          <gmd:geometricObjectType>
+            <gmd:MD_GeometricObjectTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_GeometricObjectTypeCode" codeListValue="composite" />
+          </gmd:geometricObjectType>
+        </gmd:MD_GeometricObjects>
+      </gmd:geometricObjects>
+    </gmd:MD_VectorSpatialRepresentation>
+  </gmd:spatialRepresentationInfo>
+  <gmd:referenceSystemInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_ReferenceSystem>
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gco:CharacterString>CH1903+_LV95 (Original:LV03)</gco:CharacterString>
+          </gmd:code>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:identificationInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <che:CHE_MD_DataIdentification gco:isoType="gmd:MD_DataIdentification">
+      <gmd:citation>
+        <gmd:CI_Citation>
+          <gmd:title xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>Klimadaten</gco:CharacterString>
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#DE" />
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
+          </gmd:title>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:Date>2011-05-30</gco:Date>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+        </gmd:CI_Citation>
+      </gmd:citation>
+      <gmd:abstract xsi:type="gmd:PT_FreeText_PropertyType">
+        <gco:CharacterString>Geodaten zum städtischen Klima</gco:CharacterString>
+        <gmd:PT_FreeText>
+          <gmd:textGroup>
+            <gmd:LocalisedCharacterString locale="#DE" />
+          </gmd:textGroup>
+        </gmd:PT_FreeText>
+      </gmd:abstract>
+      <gmd:purpose xsi:type="gmd:PT_FreeText_PropertyType">
+        <gmd:PT_FreeText>
+          <gmd:textGroup>
+            <gmd:LocalisedCharacterString locale="#DE">Grundlagedaten für weitere Untersuchungen und Analysen</gmd:LocalisedCharacterString>
+          </gmd:textGroup>
+        </gmd:PT_FreeText>
+      </gmd:purpose>
+      <gmd:resourceMaintenance>
+        <che:CHE_MD_MaintenanceInformation xmlns:gts="http://www.isotc211.org/2005/gts" gco:isoType="gmd:MD_MaintenanceInformation">
+          <gmd:maintenanceAndUpdateFrequency>
+            <gmd:MD_MaintenanceFrequencyCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="notPlanned" />
+          </gmd:maintenanceAndUpdateFrequency>
+          <gmd:contact>
+            <che:CHE_CI_ResponsibleParty gco:isoType="gmd:CI_ResponsibleParty">
+              <gmd:organisationName>
+                <gco:CharacterString>Gesundheits- und Umweltdepartement
+                     - Umwelt- und Gesundheitsschutz</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:phone>
+                    <che:CHE_CI_Telephone gco:isoType="gmd:CI_Telephone">
+                      <gmd:voice>
+                        <gco:CharacterString>+41 44 412 11 73</gco:CharacterString>
+                      </gmd:voice>
+                      <che:directNumber>
+                        <gco:CharacterString>+41 44 412 46 72</gco:CharacterString>
+                      </che:directNumber>
+                    </che:CHE_CI_Telephone>
+                  </gmd:phone>
+                  <gmd:address>
+                    <che:CHE_CI_Address gco:isoType="gmd:CI_Address">
+                      <gmd:city>
+                        <gco:CharacterString>Zürich</gco:CharacterString>
+                      </gmd:city>
+                      <gmd:postalCode>
+                        <gco:CharacterString>8050</gco:CharacterString>
+                      </gmd:postalCode>
+                      <gmd:country>
+                        <gco:CharacterString>CH</gco:CharacterString>
+                      </gmd:country>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString>Rainer.Bobst@zuerich.ch</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                      <che:streetName>
+                        <gco:CharacterString>Eggbühlstrasse</gco:CharacterString>
+                      </che:streetName>
+                      <che:streetNumber>
+                        <gco:CharacterString>23</gco:CharacterString>
+                      </che:streetNumber>
+                    </che:CHE_CI_Address>
+                  </gmd:address>
+                  <gmd:onlineResource>
+                    <gmd:CI_OnlineResource>
+                      <gmd:linkage>
+                        <gmd:URL>https://www.stadt-zuerich.ch/ugz</gmd:URL>
+                      </gmd:linkage>
+                    </gmd:CI_OnlineResource>
+                  </gmd:onlineResource>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodeLists.xml#CI_RoleCode" codeListValue="owner" />
+              </gmd:role>
+              <che:individualFirstName>
+                <gco:CharacterString>Bobst</gco:CharacterString>
+              </che:individualFirstName>
+              <che:individualLastName>
+                <gco:CharacterString>Rainer</gco:CharacterString>
+              </che:individualLastName>
+              <che:organisationAcronym>
+                <gco:CharacterString>UGZ</gco:CharacterString>
+              </che:organisationAcronym>
+            </che:CHE_CI_ResponsibleParty>
+          </gmd:contact>
+        </che:CHE_MD_MaintenanceInformation>
+      </gmd:resourceMaintenance>
+      <gmd:graphicOverview>
+        <gmd:MD_BrowseGraphic>
+          <gmd:fileName>
+            <gco:CharacterString>https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/e3c0d3e2-0900-4a72-9ac6-8e64a9e02a5e.png</gco:CharacterString>
+          </gmd:fileName>
+        </gmd:MD_BrowseGraphic>
+      </gmd:graphicOverview>
+      <gmd:descriptiveKeywords>
+        <gmd:MD_Keywords>
+          <gmd:keyword>
+            <gco:CharacterString>Klima, Umwelt</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:type>
+            <gmd:MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodeLists.xml#MD_KeywordTypeCode" codeListValue="theme" />
+          </gmd:type>
+        </gmd:MD_Keywords>
+      </gmd:descriptiveKeywords>
+      <gmd:resourceConstraints>
+        <che:CHE_MD_LegalConstraints gco:isoType="gmd:MD_LegalConstraints">
+          <gmd:useLimitation>
+            <gco:CharacterString>1. Nutzungsbestimmung
+
+Diese Geodaten stehen unter der international gültigen Creative-Commons-Zero-Lizenz (CC-0). Sie dürfen:
+
+- vervielfältigt, verbreitet und weiter zugänglich gemacht werden,
+- angereichert und bearbeitet werden,
+- kommerziell genutzt werden.
+
+Eine Quellenangabe (CC-BY) wird empfohlen: Sie lautet: „Quelle: Stadt Zürich“.
+				
+2. Haftungsausschluss
+
+Die in der Verwaltung der Stadt Zürich zuständige Stelle gemäss Art. 8 Abs. 1 GeoIG (SR 510.62) schliesst jede Haftung für direkte und indirekte Schäden durch die Nutzung der Geodaten [Nutzung der Geodienste] aus. Sie übernimmt keine Garantie für die Aktualität, Richtigkeit, Vollständigkeit und Genauigkeit der veröffentlichten Geodaten.
+                  
+3. Rahmenbedingungen 
+
+- Reglement über offene Verwaltungsdaten, AS 170.410
+https://www.stadt-zuerich.ch/portal/de/index/politik_u_recht/amtliche_sammlung/inhaltsverzeichnis/1/170/410.html
+
+- Städtisches Geoinformationsreglement (StGeoIR), AS 704.100
+https://www.stadt-zuerich.ch/content/dam/stzh/portal/Deutsch/AmtlicheSammlung/Erlasse/704/100/704.100_StGeoIR%20V2.pdf</gco:CharacterString>
+          </gmd:useLimitation>
+        </che:CHE_MD_LegalConstraints>
+      </gmd:resourceConstraints>
+      <gmd:spatialRepresentationType>
+        <gmd:MD_SpatialRepresentationTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodeLists.xml#MD_SpatialRepresentationTypeCode" codeListValue="" />
+      </gmd:spatialRepresentationType>
+      <gmd:spatialResolution>
+        <gmd:MD_Resolution>
+          <gmd:equivalentScale>
+            <gmd:MD_RepresentativeFraction>
+              <gmd:denominator>
+                <gco:Integer>500</gco:Integer>
+              </gmd:denominator>
+            </gmd:MD_RepresentativeFraction>
+          </gmd:equivalentScale>
+        </gmd:MD_Resolution>
+      </gmd:spatialResolution>
+      <gmd:language>
+        <gco:CharacterString>deu</gco:CharacterString>
+      </gmd:language>
+      <gmd:characterSet>
+        <gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+      </gmd:characterSet>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>climatologyMeteorologyAtmosphere</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:extent>
+        <gmd:EX_Extent>
+          <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>Stadt Zürich</gco:CharacterString>
+          </gmd:description>
+          <gmd:geographicElement>
+            <gmd:EX_GeographicDescription>
+              <gmd:geographicIdentifier>
+                <gmd:MD_Identifier>
+                  <gmd:code xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString />
+                  </gmd:code>
+                </gmd:MD_Identifier>
+              </gmd:geographicIdentifier>
+            </gmd:EX_GeographicDescription>
+          </gmd:geographicElement>
+          <gmd:geographicElement>
+            <gmd:EX_BoundingPolygon>
+              <gmd:extentTypeCode>
+                <gco:Boolean>true</gco:Boolean>
+              </gmd:extentTypeCode>
+              <gmd:polygon>
+                <gml:MultiSurface gml:id="N10285">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="N1028A">
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList />
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </gmd:polygon>
+            </gmd:EX_BoundingPolygon>
+          </gmd:geographicElement>
+          <gmd:geographicElement>
+            <gmd:EX_GeographicBoundingBox>
+              <gmd:extentTypeCode>
+                <gco:Boolean>true</gco:Boolean>
+              </gmd:extentTypeCode>
+              <gmd:westBoundLongitude>
+                <gco:Decimal>8.443821782566665</gco:Decimal>
+              </gmd:westBoundLongitude>
+              <gmd:eastBoundLongitude>
+                <gco:Decimal>8.631776103472221</gco:Decimal>
+              </gmd:eastBoundLongitude>
+              <gmd:southBoundLatitude>
+                <gco:Decimal>47.31549273037445</gco:Decimal>
+              </gmd:southBoundLatitude>
+              <gmd:northBoundLatitude>
+                <gco:Decimal>47.43963707749998</gco:Decimal>
+              </gmd:northBoundLatitude>
+            </gmd:EX_GeographicBoundingBox>
+          </gmd:geographicElement>
+        </gmd:EX_Extent>
+      </gmd:extent>
+    </che:CHE_MD_DataIdentification>
+  </gmd:identificationInfo>
+  <gmd:distributionInfo xmlns:comp="http://www.geocat.ch/2003/05/gateway/GM03Comprehensive" xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_Distribution>
+      <gmd:transferOptions>
+        <gmd:MD_DigitalTransferOptions>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage xsi:type="gmd:PT_FreeURL_PropertyType">
+                <gmd:URL>https://www.stadt-zuerich.ch/geodaten/download/Klimadaten</gmd:URL>
+                <che:PT_FreeURL>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#EN">https://www.stadt-zuerich.ch/geodaten/download/Klimadaten</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#FR">https://www.stadt-zuerich.ch/geodaten/download/Klimadaten</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#IT">https://www.stadt-zuerich.ch/geodaten/download/Klimadaten</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#DE">https://www.stadt-zuerich.ch/geodaten/download/Klimadaten</che:LocalisedURL>
+                  </che:URLGroup>
+                </che:PT_FreeURL>
+              </gmd:linkage>
+              <gmd:protocol>
+                <gco:CharacterString>WWW:LINK-1.0-http--download</gco:CharacterString>
+              </gmd:protocol>
+              <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Klimadaten - Datenbezug</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#DE">Klimadaten - Datenbezug</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Klimadaten - Distribution des données</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#IT">Klimadaten - Procacciamento dei dati</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Klimadaten - Order data</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:description>
+              <gmd:function>
+                <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download" />
+              </gmd:function>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+        </gmd:MD_DigitalTransferOptions>
+      </gmd:transferOptions>
+      <gmd:transferOptions>
+        <gmd:MD_DigitalTransferOptions />
+      </gmd:transferOptions>
+    </gmd:MD_Distribution>
+  </gmd:distributionInfo>
+  <gmd:contentInfo>
+    <che:CHE_MD_FeatureCatalogueDescription gco:isoType="gmd:MD_FeatureCatalogueDescription">
+      <gmd:includedWithDataset>
+        <gco:Boolean>0</gco:Boolean>
+      </gmd:includedWithDataset>
+      <gmd:featureCatalogueCitation>
+        <gmd:CI_Citation>
+          <gmd:title>
+            <gco:CharacterString>Klimadaten</gco:CharacterString>
+          </gmd:title>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:Date>2011-05-30</gco:Date>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+        </gmd:CI_Citation>
+      </gmd:featureCatalogueCitation>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>25_Kaltluftproduktionsrate Kanton Zürich</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Rate der mittleren nächtlichen Kaltluftproduktion pro Rasterzelle (Kaltluftvolumen), gegliedert in 4 Intensitätsstufen. Inputdaten für Modellierung Kaltlufttransport.</gco:CharacterString>
+          </che:description>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>27_Lokaler Kaltluftstau Kanton Zürich</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Darstellung der Gebiete, bei denen auf Grund der Topographie oder der Siedlungstruktur (Siedlungsrand als Strömungshindernis) die nächtlichen Kaltluftströme gestaut bzw. stark verlangsamt werden (vertikale Austauschprozesse durch Luftschichtug unterdrückt) .</gco:CharacterString>
+          </che:description>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>31_Lokaler Kaltlufttransport Kanton Zürich</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Klassifizierung des lokalen Kaltlufttransports über der Rasterzelle, bzw. des mit der benachbarten Rasterzelle pro Zeiteinheit ausgetauschen Kaltuftvolumens in m3 pro m und sec (Volumenstromdichte).</gco:CharacterString>
+          </che:description>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>44_Jahresmittel der NO2-Konzentration Stadt Zürich</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Räumliche Verteilung der Stickstoffdioxidbelastung (Jahresmittel). REKLISO-Modell (kalibriert mit Immissionsdaten UGZ).</gco:CharacterString>
+          </che:description>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>32_Lokaler Kaltlufttransport Stadt Zürich</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Klassifizierung des lokalen Kaltlufttransports über der Rasterzelle, bzw. des mit der benachbarten Rasterzelle pro Zeiteinheit ausgetauschen Kaltuftvolumens in m3 pro m und sec (Volumenstromdichte).</gco:CharacterString>
+          </che:description>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>28_Lokaler Kaltluftstau Stadt Zürich</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Darstellung der Gebiete, bei denen auf Grund der Topographie oder der Siedlungstruktur (Strömungshindernis) die nächtlichen Kaltluftströme gestaut bzw. stark verlangsamt werden (vertikale Austauschprozesse durch Luftschichtug unterdrückt) .</gco:CharacterString>
+          </che:description>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>01_Landbedeckung Kanton Zürich</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Primäre Landbedeckungstypen mit Bedeutung für die lokalen Klimabedingungen (Gewässer; Wald; Vegetationsbestandene Freiflächen; vegetationslose, mehrheitlich versiegelte Freiflächen; bebaute Flächen)</gco:CharacterString>
+          </che:description>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>Zielsetzung Lufthygiene</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Durchlüftung
+aktuelle Wirkräume - ungünstige Emissionssituation verbessern
+potentielle Wirkräume - günstige Emissionssituation erhalten
+aktuelle Ausgleichsräume 
+potentielle Ausgleichsräume</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GRIDCODE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>KLASS</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>Massnahmengebiet 3</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>In der Nacht nur gering durch Überwärmung und Luftschadstoffe belastete Gebiete in denen die Grünräume erhalten und der Luftaustausch mit dem Umland gesichert werden soll.</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>RECNUM</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>Durchlüftung</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Priorisierung der Räume in denen auf Grund der lokalklimatischen Situation eine Erhaltung und/oder Verbesserung der thermischen und/oder Durchlüftungsituation angezeigt ist.</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GRIDCODE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>03_Arealtypen Kanton Zürich</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Aus den unterschiedlichen Flächenanteilen der Landbedeckungstypenen generierte, für die Rasterzelle "charakteristische" Landnutzung. Differenzierung nach Bebauungs- bzw. Vegetationsdichte.</gco:CharacterString>
+          </che:description>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>21_Lokale Überwärmung Kanton Zürich</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Abweichung der mittleren nächtlichen Lufttemperatur in Bodennähe vom Mittelwert für das Gesamtgebiet (Gebietsmittel) in Kelvin</gco:CharacterString>
+          </che:description>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>23_Lokale Wärmebelastung Kanton Zürich</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Intensitätklassen der lokalen Wärmebelastung. Klassifizierung (Schwellenwert, dT) ist so gewählt, dass räumliche Differenzierung planerisch verwertbar wird (Grundlage für Massnahmenableitung)</gco:CharacterString>
+          </che:description>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>Massnahmengebiet 1</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Gebiete mitnächtlich hoher Wärme- und Schadstoffbelastung sowie ungünstiger Durchlüftungssituation, in denen durch bauliche Verdichtung entstehende Defizite mit kompensatorischen Massnahmen bestmöglich ausgeglichen werden sollen.</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>RECNUM</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>Massnahmengebiet 2</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>In der Nacht mässig durch Überwärmung und Luftschadstoffe belastete Gebiete mit eher ungünstiger Durchlüftungssituation in denen die Verdichtung begrenzt sowie  Grünanteil und Luftleitbahnen erhalten werden sollen.</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>RECNUM</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>Zielsetzung thermische Situation</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Durchlüftung
+aktuelle Wirkräume - ungünstige thermische Situation verbessern
+potentielle Wirkräume - günstige thermische Situation erhalten
+Ausgleichsräume</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GRIDCODE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>KLASSE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>KLIMA_AQ_DR_10M_2008_STZH.tif</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString />
+          </che:description>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>04_Arealtypen Stadt Zürich</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Aus den unterschiedlichen Flächenanteilen der Landbedeckungstypenen generierte, für die Rasterzelle "charakteristische" Landnutzung. Differenzierung nach Bebauungs. Bzw. und Vegetationsdichte.</gco:CharacterString>
+          </che:description>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>26_Kaltluftproduktionsrate Stadt Zürich</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Rate der mittleren nächtlichen Kaltluftproduktion pro Rasterzelle (Kaltluftvolumen), gegliedert in 4 Intensitätsstufen. Inputdaten für Modellierung Kaltlufttransport.</gco:CharacterString>
+          </che:description>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>22_Lokale Überwärmung Stadt Zürich</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Abweichung der mittleren nächtlichen Lufttemperatur in Bodennähe vom Mittelwert für das Gesamtgebiet (Gebietsmittel) in Kelvin</gco:CharacterString>
+          </che:description>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>24_Lokale Wärmebelastung Stadt Zürich</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Intensitätklassen der lokalen Wärmebelastung. Klassifizierung (Schwellenwert, dT) ist so gewählt, dass räumliche Differenzierung planerisch verwertbar wird (Grundlage für Massnahmenableitung)</gco:CharacterString>
+          </che:description>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>02_Landbedeckung Stadt Zürich</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Primäre Landbedeckungstypen mit Bedeutung für die lokalen Klimabedingungen (Gewässer; Wald; Vegetationsbestandene Freiflächen; vegetationslose, mehrheitlich versiegelte Freiflächen; bebaute Flächen)</gco:CharacterString>
+          </che:description>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>34_Mesoskalige Windverhältnisse Stadt Zürich</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Darstellung des übergeordneten (mesoskaligen) Windsystems bei autochthonen Wetterlagen (insb. orographisch bedingte Berg-Talwind-Systeme).</gco:CharacterString>
+          </che:description>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>30_Lokaler Oberflächeneinfluss Stadt Zürich</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Art des Einfluss der Oberfläche auf den Luftstrom: mechanisch &gt; Rauhigkeit der Oberfläche &gt; Übreströumng; thermisch &gt; Wärmefluss von der Oberfläche bzw. verzögerte Abgabe der über den Tag aufgenommenen Wärme.</gco:CharacterString>
+          </che:description>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>KLIMA_AQ_SR_50M_2008_KTZH.tif</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString />
+          </che:description>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>33_Mesoskalige Windverhältnisse Kanton Zürich</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Klassifizierung des Anteils des übergeordneten (mesoskaligen) Windsystems bei autochthonen Wetterlagen (insb. orographisch bedingte Berg-Talwind-Systeme).</gco:CharacterString>
+          </che:description>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>29_Lokaler Oberflächeneinfluss Kanton Zürich</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Art des Einfluss der Oberfläche auf den Luftstrom: mechanisch &gt; Rauhigkeit der Oberfläche &gt; Übreströumng; thermisch &gt; Wärmefluss von der Oberfläche bzw. verzögerte Abgabe der über den Tag aufgenommenen Wärme.</gco:CharacterString>
+          </che:description>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>43_Jahresmittel der NO2-Konzentration Kanton Zürich</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Räumliche Verteilung der Stickstoffdioxidbelastung (Jahresmittel). REKLISO-Modell (kalibriert mit Immissionsdaten UGZ).</gco:CharacterString>
+          </che:description>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:modelType>
+        <che:CHE_MD_modelTypeCode codeList="" codeListValue="FeatureDescription" />
+      </che:modelType>
+    </che:CHE_MD_FeatureCatalogueDescription>
+  </gmd:contentInfo>
+  <gmd:distributionInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_Distribution>
+      <gmd:distributionFormat>
+        <gmd:MD_Format>
+          <gmd:name>
+            <gco:CharacterString>ESRI Shape (.shp)</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>-</gco:CharacterString>
+          </gmd:version>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+      <gmd:distributionFormat>
+        <gmd:MD_Format>
+          <gmd:name>
+            <gco:CharacterString>GeoJSON (.json)</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>-</gco:CharacterString>
+          </gmd:version>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+      <gmd:distributionFormat>
+        <gmd:MD_Format>
+          <gmd:name>
+            <gco:CharacterString>Geopackage (.gpkg)</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>-</gco:CharacterString>
+          </gmd:version>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+      <gmd:distributionFormat>
+        <gmd:MD_Format>
+          <gmd:name>
+            <gco:CharacterString>DXF (.dxf)</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>-</gco:CharacterString>
+          </gmd:version>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+    </gmd:MD_Distribution>
+  </gmd:distributionInfo>
+  <gmd:dataQualityInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:DQ_DataQuality>
+      <gmd:scope>
+        <gmd:DQ_Scope>
+          <gmd:level>
+            <gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" />
+          </gmd:level>
+        </gmd:DQ_Scope>
+      </gmd:scope>
+      <gmd:lineage>
+        <gmd:LI_Lineage />
+      </gmd:lineage>
+    </gmd:DQ_DataQuality>
+  </gmd:dataQualityInfo>
+</che:CHE_MD_Metadata>
+

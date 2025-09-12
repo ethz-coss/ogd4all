@@ -1,0 +1,92 @@
+{
+   "title": "Neubauwohnungen am Jahresende nach Bauprojektstatus, Zimmerzahl und Stadtquartier",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bau_neubau_whg-projektiert_projstatus_zizahl_quartier_seit2009_od5022",
+   "abstract": "Der Datensatz enthält die Anzahl bewilligter und im Bau befindlicher Wohnungen in Neubauprojekten nach Zimmerzahl und Stadtquartier.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Hinweis\n\nSeit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen. Ein technisches Problem beim Datenerfassungsprozess von Neubauprojekten Wohnen hat dazu geführt, dass seit 2021 neu bewilligte Projekte verzögert im Gebäude- und Wohnungsregister eingeflossen sind. Da diese Projekte grösstenteils in 2023 erfasst wurden, liegen diese in den beiden Vorjahren 2021 und 2022 tiefer.\n\nHinweis:\n\nStichtagDatJahr entspricht dem Stichtag am Jahresende für Neubauprojekte mit Status Bewilligt harmonisiert und Baubegonnen.\n\nBauprojektstatus:\n\n«Bewilligt harmonisiert»: Bauprojekte, welche am Jahresende bewilligt, sistiert oder zum Bau freigegeben sind. Freigegebene oder sistierte Projekte werden seit 2021 im Gebäude- und Wohnungsregister erfasst. Davor wurden diese beide Status auch als bewilligt erfasst. Bei sistierten Projekten handelt es sich um bewilligte Projekte, die zum Beispiel wegen Einsprachen blockiert sind.\n«Baubegonnen»: Bauprojekte, welche am Jahresende baubegonnen sind.\n\nAlternativprojekte\n\nWerden für ein geplantes Bauprojekt dem Amt für Baubewilligungen zwei Projekte eingereicht, von denen nur eines ausgeführt wird, handelt es sich bei einem der beiden Projekte um ein Alternativprojekt. Da diese Projekte nicht immer eindeutig identifizierbar sind, kann der Bauprojektstatus «bewilligt» auch Alternativprojekte enthalten.\n\nStand und Nachführung:\n\nDas Gebäude- und Wohnungsregister der Stadt Zürich wird ständig nachgeführt.\n\nVariablen mit mehreren Varianten\n\nGewisse Variablen werden in verschiedenen Formen aufgeführt. Die \"Lang\"-Variante beschreibt den Inhalt (z.B. StatZoneLang beschreibt die statistische Zone, mögliche Werte sind Central oder Oberdorf). Die \"Cd\"-Variante kodiert die Variable alphanumerisch, quasi als Kurzform (Central und Oberdorf sind 1104 und 1201). Die \"Sort\"-Variante kodiert die Variable numerisch (Central und Oberdorf sind 5 und 4) und erlaubt eine Sortierung. \"Cd\" und \"Sort\" können auch identisch sein.\n\nStatistische Wohnung\n\nAls statistische Wohnung zählen bestehende Wohnungen, welche über eine Kocheinrichtung verfügen und zu Wohnzwecken (keine zweckentfremdeten Wohnungen) verwendet werden.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Neubauwohnungen am Jahresende nach Bauprojektstatus, Zimmerzahl und Stadtquartier",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Integer). Entspricht dem Stichtag am Jahresende"
+               },
+               {
+                  "name": "Datenstand (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (P = provisorisch, D = definitiv)"
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarSort)",
+                  "description": "Stadtquartier (Numerisch)"
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarCd)",
+                  "description": "Stadtquartier Code (String)"
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarLang)",
+                  "description": "Stadtquartier (String)"
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisSort)",
+                  "description": "Stadtkreis (Numerisch)"
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisCd)",
+                  "description": "Stadtkreis (String)"
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisLang)",
+                  "description": "Stadtkreis (String)"
+               },
+               {
+                  "name": "Bauprojektstatus (technisch: ProjektStatusSSZPubl1Sort)",
+                  "description": "Status des Bauprojektes am Jahresende (Numerisch)"
+               },
+               {
+                  "name": "Bauprojektstatus (technisch: ProjektStatusSSZPubl1Cd)",
+                  "description": "Status des Bauprojektes am Jahresende (String)"
+               },
+               {
+                  "name": "Bauprojektstatus (technisch: ProjektStatusSSZPubl1Lang)",
+                  "description": "Status des Bauprojektes am Jahresende (String)"
+               },
+               {
+                  "name": "Art der Arbeiten (technisch: ArtArbeitenSort)",
+                  "description": "Art der Arbeiten des Bauprojektes (Numerisch)"
+               },
+               {
+                  "name": "Art der Arbeiten (technisch: ArtArbeitenCd)",
+                  "description": "Art der Arbeiten des Bauprojektes (String)"
+               },
+               {
+                  "name": "Art der Arbeiten (technisch: ArtArbeitenLang)",
+                  "description": "Art der Arbeiten des Bauprojektes (String)"
+               },
+               {
+                  "name": "Anzahl Zimmer der Wohnung (technisch: AnzZimmerLevel2Sort_noDM)",
+                  "description": "Anzahl Zimmer der Wohnung (Numerisch)"
+               },
+               {
+                  "name": "Anzahl Zimmer der Wohnung (technisch: AnzZimmerLevel2Cd_noDM)",
+                  "description": "Anzahl Zimmer der Wohnung (String)"
+               },
+               {
+                  "name": "Anzahl Zimmer der Wohnung (technisch: AnzZimmerLevel2Lang_noDM)",
+                  "description": "Anzahl Zimmer der Wohnung (String)"
+               },
+               {
+                  "name": "Anzahl statistische Wohnungen (technisch: AnzWhgStat)",
+                  "description": "Anzahl statistische Wohnungen (Numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-01-08"
+}

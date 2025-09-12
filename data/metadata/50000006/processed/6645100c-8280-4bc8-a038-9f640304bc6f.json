@@ -1,0 +1,198 @@
+{
+   "title": "Tiefbauprojekte im öffentlichen Grund",
+   "keywords": [
+      "Tiefbauprojekte Baukoordination Baustellen Strassenprojekt Tiefbau Bauprojekt Baustelle"
+   ],
+   "metadata_date": "2022-12-12T08:19:07",
+   "updateFrequency": "monthly",
+   "purpose": "Koordination von Bauprojekten im öffentlichen Grund gemäss Stadtratsbeschluss aus 1992/64",
+   "abstract": "Die Daten beinhalten alle koordinierten Bauvorhaben im öffentlichen Grund, soweit diese dem Tiefbauamt bekannt sind und ein Koordinationsbedarf bestehen könnte. Nur Vorhaben mit Perimeter ab zirka 100 Meter und geschätzte Bauzeit mindestens 30 Tage.",
+   "identificationDate": "2025-03-17",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Tiefbauamt",
+   "contactPerson": "Raphaël Duchoud",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "VIEW_BAUPROJEKT_BEW_GEOSERVER",
+            "description": "Projektbewertungen der verschiedenen Werke für die Portfolioplanung.",
+            "attributes": [
+               {
+                  "name": "BEREICH",
+                  "description": "Werk, dem die Bewertung zugeteilt ist"
+               },
+               {
+                  "name": "JAHR",
+                  "description": "Jahr in dem die Bewertung abgegeben worden ist"
+               },
+               {
+                  "name": "BEWERTUNG",
+                  "description": "-1: keine Angaben\n\n0:keine Beteiligtung\n\n1: Vorausschauendes Bedürfnis, Es besteht ein Bedürfnis mit geringer Dringlichkeit und Wichtigkeit.\n\n2: Standard-Bedürfnis, Es besteht ein Bedürfnis mit einer mittleren Dringlichkeit und Wichtigkeit.\n\n3: Wichtiges Bedürfnis, Es besteht ein wichtiges Bedürfnis mit einer relativen Dringlichkeit. Es bestehen möglicherweise inhaltliche und / oder zeitlichen Abhängigkeiten.\n\n4: Wichtiges + dringendes Bedürfnis, Es besteht ein wichtiges Bedürfnis mit einer hohen Dringlichkeit. Rechtliche und / oder politische Vorgaben können dem Bedürfnis zusätzliche Bedeutung verleihen."
+               },
+               {
+                  "name": "BEMERKUNG",
+                  "description": null
+               },
+               {
+                  "name": "FK_PROJEKT",
+                  "description": "Fremdschlüssel zu den Bauprojekten: ID_PROJ_TAZ"
+               }
+            ]
+         },
+         {
+            "name": "VIEW_BAUPROJEKT_BET_GEOSERVER",
+            "description": "Projektleiter, Beteiligte und Auslöser zu den Projekten.",
+            "attributes": [
+               {
+                  "name": "FK_WERK",
+                  "description": "ID Werk"
+               },
+               {
+                  "name": "WERK_BEZEICHNUNG",
+                  "description": "Kurzbezeichnung des Werkes"
+               },
+               {
+                  "name": "PERSON",
+                  "description": "Name der verantwortlichen Person"
+               },
+               {
+                  "name": "PERSON_KURZZEICHEN",
+                  "description": "Städtisches Kurzzeichen"
+               },
+               {
+                  "name": "FK_PROJEKT",
+                  "description": "Fremdschlüssel zu den Bauprojekten: ID_PROJ_TAZ"
+               },
+               {
+                  "name": "FK_ROLLE",
+                  "description": "Rolle der Beteiligung: 2=Auslöser, 3=Beteiligt, 4=Projektleiter"
+               }
+            ]
+         },
+         {
+            "name": "VIEW_BAUPROJEKT_LOG_GEOSERVER",
+            "description": "Änderungen und Ereignisse bei Bauprojekten",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "FK_PROJEKT",
+                  "description": "Fremdschlüssel zu den Bauprojekten: ID_PROJ_TAZ"
+               },
+               {
+                  "name": "ID_MUTATION",
+                  "description": "Art der Änderung oder des Ereignisses:\n\n1 = Entstehung\n\n2 = Phasenwechsel\n\n3 = Projektleiterwechsel\n\n4 = Änderung Bautermin (Format Werte: alt baubeginn;bauende, neu baubeginn;bauende)\n\n11 = Infoversand\n\n12 = Anhörung\n\n13 = el. Stellungnahme"
+               },
+               {
+                  "name": "MUTATION",
+                  "description": "Art der Änderung oder des Ereignisses"
+               },
+               {
+                  "name": "ALT",
+                  "description": "Wert vor der Änderung"
+               },
+               {
+                  "name": "NEU",
+                  "description": "Wert nach der Änderung"
+               },
+               {
+                  "name": "BESCHREIBUNG",
+                  "description": null
+               },
+               {
+                  "name": "DATUM",
+                  "description": "Zeitpunkt des Ereignisses oder Änderung"
+               }
+            ]
+         },
+         {
+            "name": "BAUPROJEKTE_A",
+            "description": "Tiefbauprojekte im öffentlichen Grund",
+            "attributes": [
+               {
+                  "name": "BAUENDE_HAUPTARBEITEN",
+                  "description": "Datum Bauende Hauptarbeiten"
+               },
+               {
+                  "name": "BAUNR",
+                  "description": "Baunummer gemäss TAZ. Diese besteht aus 5 Ziffern. Die ersten beiden Ziffern bezeichnen das Jahr der Vergabe."
+               },
+               {
+                  "name": "BETEILIGTE",
+                  "description": "Projektbeteiligte"
+               },
+               {
+                  "name": "EL_STELLUNGNAHME",
+                  "description": "Datum der letzten elektronischen Stellungnahme"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "ID_PROJ_TAZ",
+                  "description": "eindeutiger Identifikator in der TAZ-Baustellenplattform"
+               },
+               {
+                  "name": "INFOVERSAND",
+                  "description": "Datum des Infoversandes"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "PHASE_HP",
+                  "description": "Phase Hauptprozess"
+               },
+               {
+                  "name": "PHASE_HP_TXT",
+                  "description": "Phase Hauptprozess als Text"
+               },
+               {
+                  "name": "PL_NAME",
+                  "description": "Projektleiter"
+               },
+               {
+                  "name": "PL_WERK",
+                  "description": "Werk des Projektleiters"
+               },
+               {
+                  "name": "PROJEKTBESCHREIBUNG",
+                  "description": "kurze Beschreibung zum Bauvorhaben"
+               },
+               {
+                  "name": "PROJEKTTITEL",
+                  "description": "Projektbezeichnung, meist Strassenname"
+               },
+               {
+                  "name": "ANHOERUNG",
+                  "description": "Datum der letzten Anhörung"
+               },
+               {
+                  "name": "BAUBEGINN",
+                  "description": "Datum des geplanten oder erfolgten Baubeginns"
+               },
+               {
+                  "name": "BAUBEREICH",
+                  "description": "Bezeichnung des Abschnittes"
+               },
+               {
+                  "name": "BAUENDE",
+                  "description": "Datum des geplanten Bauende"
+               }
+            ]
+         }
+      ]
+   }
+}

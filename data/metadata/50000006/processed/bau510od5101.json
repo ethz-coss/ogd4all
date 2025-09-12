@@ -1,0 +1,68 @@
+{
+   "title": "Wohnungssaldo nach Umbau",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bau_whg_bestand_umbau_ea_zizahlkat_kreis_saldo_jahr_od5101",
+   "abstract": "Der Datensatz enthält den Wohnungssaldo nach Umbaut nach Jahr, Stadtkreis, Eigentumsart und Wohnungsgrösse.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Hinweis:\n\nJahr entspricht der ganzen Jahresperiode.\n\nHinweis:\n\nDer Wohnungssaldo nach Umbau enthält alle Änderungen der Anzahl Wohnungen im Monat, in welchem ein Umbau abgeschlossen wurde. Es können auch Änderungen enthalten sein, die nicht baulich mit einem Umbau zusammenhängen, sondern durch Korrekturen im Gebäude- und Wohnungsregister zustande kommen.\n\nEigentuemerSSZPubl1Lang\n\nÖffentliches Eigentum: Bund, Kanton Zürich, Stadt Zürich inklusive städtischer Stiftungen und anderes öffentliches Eigentum\nWohnbaugenossenschaften: Nur Wohnbaugenossenschaften\nAndere private Gesellschaften: Aktien-, Kollektiv- und Kommanditgesellschaften, Handels-, Produktiv-, Versicherungs- und übrige Genossenschaften, Gesellschaften mit beschränkter Haftung, Pensionskassen, Vereine, private Stiftungen, gemischtes Eigentum und Religionsgemeinschaften\nPrivatpersonen: Einzelpersonen, Erbgemeinschaften und mehrere natürliche Personen\nIm Stochwerkeigentum: Stockwerkeigentumsgesellschaften\n\nAnzWhgStat\n\nSaldo der statistischen Wohnungen, die bei einem Umbau entstehen oder aufgelöst werden.\n\nStand und Nachführung:\n\nDas Gebäude- und Wohnungsregister der Stadt Zürich wird ständig nachgeführt. Seit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.\n\nStatistische Wohnung\n\nAls statistische Wohnung zählen bestehende Wohnungen, welche über eine Kocheinrichtung verfügen und zu Wohnzwecken (keine zweckentfremdeten Wohnungen) verwendet werden.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Wohnungssaldo nach Umbau",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Numerisch)"
+               },
+               {
+                  "name": "Datenstand (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (P = provisorisch, D = definitiv)"
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisSort)",
+                  "description": "Stadtkreis (Numerisch)"
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisCd)",
+                  "description": "Stadtkreis (String)"
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisLang)",
+                  "description": "Stadtkreis (String)"
+               },
+               {
+                  "name": "Eigentumsart (technisch: EigentuemerSSZPubl1Sort)",
+                  "description": "Eigentumsart (Numerisch)"
+               },
+               {
+                  "name": "Eigentumsart (technisch: EigentuemerSSZPubl1Cd)",
+                  "description": "Eigentumsart (String)"
+               },
+               {
+                  "name": "Eigentumsart (technisch: EigentuemerSSZPubl1Lang)",
+                  "description": "Eigentumsart (String)"
+               },
+               {
+                  "name": "Anzahl Zimmer der Wohnung (technisch: AnzZimmerLevel2Sort_noDM)",
+                  "description": "Anzahl Zimmer der Wohnung (Numerisch)"
+               },
+               {
+                  "name": "Anzahl Zimmer der Wohnung (technisch: AnzZimmerLevel2Cd_noDM)",
+                  "description": "Anzahl Zimmer der Wohnung (String)"
+               },
+               {
+                  "name": "Anzahl Zimmer der Wohnung (technisch: AnzZimmerLevel2Lang_noDM)",
+                  "description": "Anzahl Zimmer der Wohnung (String)"
+               },
+               {
+                  "name": "Saldo der statistische Wohnungen durch Umbau (technisch: AnzUmbauWhgStatSaldo_noDM)",
+                  "description": "Saldo der statistische Wohnungen durch Umbau (Numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-01-08"
+}

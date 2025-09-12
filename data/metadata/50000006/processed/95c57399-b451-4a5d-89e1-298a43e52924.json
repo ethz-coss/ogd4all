@@ -1,0 +1,119 @@
+{
+   "title": "Abstimmungsgeräte TAZ",
+   "keywords": [
+      "Lora",
+      "Abstimmungsgerät",
+      "Abstimmungen",
+      "Bedürfnisse",
+      "Bevölkerung",
+      "Nutzung",
+      "Zufriedenheit",
+      "Stimmungsbilder"
+   ],
+   "metadata_date": "2021-01-20T15:24:27",
+   "updateFrequency": "asNeeded",
+   "purpose": "Bedürfnisermittlung, Controlling, Wirkungsmessung, allgemeine Planungsgrundlage",
+   "abstract": "Die vom städtischen Tiefbauamt entwickelten Abstimmungsgeräte werden für Befragungen eingesetzt. Ziel ist dabei, ein Stimmungsbild zu einer bestimmten Fragestellung einzuholen. Mit jedem Gerät kann genau eine Frage gestellt werden, die bis zu vier unterschiedliche Antwortmöglichkeiten anbietet. Jedes Drücken einer Taste wird vom Gerät registriert und in 10-Minuten-Intervallen aggregiert. Diese Daten werden drahtlos alle zehn Minuten in eine Datenbank übertragen. Die Rohdaten werden zunächst auf fixe Stundenintervalle aggregiert und anschliessend bereinigt und analysiert. Derzeit werden die Abstimmungsgeräte vor allem für die Befragung der Zufriedenheit mit Piazza Pop-up eingesetzt. Der Datensatz enthält die Standorte und die zugehören aggregierten Endresultate jeder Befragung, vor und nach der Bereinigung.",
+   "identificationDate": "2024-11-15",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Tiefbauamt",
+   "contactPerson": "Raphaël Duchoud",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Abstimmungsgeraete_TAZ",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "VIEW_ABSTIMMUNGSGERAETE_OGD",
+            "description": "Aggregierte Resultate der Abstimmungsgeräte",
+            "attributes": [
+               {
+                  "name": "ID1",
+                  "description": null
+               },
+               {
+                  "name": "ORT",
+                  "description": "Einsatzort"
+               },
+               {
+                  "name": "VON",
+                  "description": "Beginn der Umfrage"
+               },
+               {
+                  "name": "BIS",
+                  "description": "Ende der Umfrage"
+               },
+               {
+                  "name": "FRAGE",
+                  "description": null
+               },
+               {
+                  "name": "DESC_SWITCH0",
+                  "description": "Bedeutung Taste 1"
+               },
+               {
+                  "name": "DESC_SWITCH1",
+                  "description": "Bedeutung Taste 2"
+               },
+               {
+                  "name": "DESC_SWITCH2",
+                  "description": "Bedeutung Taste 3"
+               },
+               {
+                  "name": "DESC_SWITCH3",
+                  "description": "Bedeutung Taste 4"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "SWITCH0",
+                  "description": "Anzahl Abstimmungen Taste 1 (unbereinigt)"
+               },
+               {
+                  "name": "SWITCH1",
+                  "description": "Anzahl Abstimmungen Taste 2 (unbereinigt)"
+               },
+               {
+                  "name": "SWITCH2",
+                  "description": "Anzahl Abstimmungen Taste 3 (unbereinigt)"
+               },
+               {
+                  "name": "SWITCH3",
+                  "description": "Anzahl Abstimmungen Taste 4 (unbereinigt)"
+               },
+               {
+                  "name": "SWITCH0_BEREINIGT",
+                  "description": "Anzahl Abstimmungen Taste 1 (bereinigt)"
+               },
+               {
+                  "name": "SWITCH1_BEREINIGT",
+                  "description": "Anzahl Abstimmungen Taste 2 (bereinigt)"
+               },
+               {
+                  "name": "SWITCH2_BEREINIGT",
+                  "description": "Anzahl Abstimmungen Taste 3 (bereinigt)"
+               },
+               {
+                  "name": "SWITCH3_BEREINIGT",
+                  "description": "Anzahl Abstimmungen Taste 4 (bereinigt)"
+               }
+            ]
+         }
+      ]
+   }
+}

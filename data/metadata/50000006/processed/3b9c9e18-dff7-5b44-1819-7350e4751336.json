@@ -1,0 +1,68 @@
+{
+   "title": "Geschützte Einzelbäume",
+   "keywords": [
+      "Schutz",
+      "Baum",
+      "Freiraum",
+      "Garten",
+      "Stadtratsbeschluss"
+   ],
+   "metadata_date": "2024-03-26T08:57:17",
+   "updateFrequency": "asNeeded",
+   "purpose": "Dargestellt sind wertvolle Bäume und Baumgruppen, die im Sinne von § 203 Abs. 1 lit. f PBG unter Schutz gestellt wurden. Nicht erfasst sind Bäume, deren dauerhafter Erhalt im Rahmen von Sonderbauvorschriften (§ 79 ff. PBG), bzw. Gestaltungsplänen (§ 83 ff. PBG) und über das \"Inventar schützenswerter Gärten und Anlagen von kommunaler Bedeutung der Stadt Zürich\" (GDP) geregelt ist.",
+   "abstract": "Wertvolle Bäume, bzw. Baumgruppen die formell unter Schutz gestellt wurden.",
+   "identificationDate": "2024-09-02",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Grün Stadt Zürich",
+   "contactPerson": "Andrea Bender",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.351987544965217,
+      "eastBoundLongitude": 8.995762202764812,
+      "southBoundLatitude": 47.16239242364716,
+      "northBoundLatitude": 47.69020608441791
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Geschuetzte_Einzelbaeume",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "GeschuetzteEinzelbaeume",
+            "description": "SDE Featureclass der Katasterauskunfts-Version der geschützten Einzelbäume.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI Identifikationsnummer (Systemvorgabe)"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "Interlis/Geomedia Identifikationsnummer (Systemvorgabe)"
+               },
+               {
+                  "name": "BaumName",
+                  "description": "Gattung, Art und Sorte des geschützten Baumes, sofern bekannt."
+               },
+               {
+                  "name": "Adresse",
+                  "description": "Adresse auf dessen Grundstück der Baum steht."
+               },
+               {
+                  "name": "DatumSchutz",
+                  "description": "Datum an dem der Baum unter Schutz gestellt wurde"
+               },
+               {
+                  "name": "Schutzziel",
+                  "description": "Zweck des Schutzes, resp. Stadtrastsbeschluss"
+               }
+            ]
+         }
+      ]
+   }
+}

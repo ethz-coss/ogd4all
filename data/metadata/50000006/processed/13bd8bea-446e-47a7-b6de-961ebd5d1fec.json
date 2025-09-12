@@ -1,0 +1,83 @@
+{
+   "title": "Standorte der automatischen Fuss- und Velozählungen",
+   "keywords": [
+      "Verkehrszählung",
+      "Fussverkehr",
+      "Veloverkehr",
+      "Frequenzen"
+   ],
+   "metadata_date": "2025-02-14T11:15:07",
+   "updateFrequency": "weekly",
+   "purpose": "Die erhobenen Daten werden für das Controlling von Stadtverkehr 2025 und Masterplan Velo benötigt. Sie bilden zudem eine wichtige Grundlage zur Dokumentation der Bedeutungen des Fuss- und Veloverkehrs und für die Erfolgskontrolle deren Förderung.",
+   "abstract": "Das Tiefbauamt erhebt seit 2009 die Velofrequenzen in der Stadt Zürich mit Hilfe automatischer Zählgeräte. Der Fussverkehr wird seit 2012 mit Geräten gezählt. Das Zählstellennetz wurde schrittweise gemäss einem definierten Standortkonzept ausgebaut und umfasst jeweils rund 20 - 25 Querschnitten im gesamten Stadtgebiet. Die damit erhobenen Daten bilden eine wichtige quantitative Grundlage zur Beurteilung der Veloförderung im Sinne von «Stadtverkehr 2025» und dem Masterplan Velo. Die Daten liegen richtungsgetrennt und auf Viertelstundenwerte aggregiert vor. Die Daten stellen Gerätewerte dar. Um die effektiven Frequenzen im Fuss- oder Veloverkehr zu bestimmen, müssen die angegebenen Korrekturfaktoren angewandt werden.\n\nIn diesem Datensatz sind nur die eigentlichen Standorte enthalten. Die dazugehörenden Zählwerte sind über Open Data Zürich erhältlich (https://data.stadt-zuerich.ch/dataset/ted_taz_verkehrszaehlungen_werte_fussgaenger_velo).",
+   "identificationDate": "2025-03-14",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Tiefbauamt",
+   "contactPerson": "Raphaël Duchoud",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Standorte_der_automatischen_Fuss__und_Velozaehlungen",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "VIEW_ECO_STANDORTE",
+            "description": "Mappingtabelle zum Datensatz: In dieser Tabelle befinden sich die Koordinaten der Zählstellen, deren ausgeschriebene Namen und die entsprechenden Zählstellencodes und Zeiträume, in denen ein Gerät an einem bestimmten Standort installiert war. Ein Standort kann in verschiedenen Zeitintervallen erfasst werden (z.B. jeweils im Winterhalbjahr). Die Datei kann mit dem Hauptdatensatz verbunden werden.",
+            "attributes": [
+               {
+                  "name": "KORREKTURFAKTOR",
+                  "description": "Der Faktor mit dem aus den Gerätewerten die effektiven Frequenzen berechnet werden können. Wertebereiche sind zwischen 0 und 2."
+               },
+               {
+                  "name": "ID1",
+                  "description": null
+               },
+               {
+                  "name": "FK_ZAEHLER",
+                  "description": "Geräte-ID"
+               },
+               {
+                  "name": "ABKUERZUNG",
+                  "description": "Abkürzung des Zählstandorts"
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": "Bezeichnung des Zählstandorts"
+               },
+               {
+                  "name": "VON",
+                  "description": "Standort gültig von"
+               },
+               {
+                  "name": "BIS",
+                  "description": "Standort gütlig bis (falls NULL ist der Standort aktuell)"
+               },
+               {
+                  "name": "RICHTUNG_IN",
+                  "description": "Richtungsangabe für Feld IN (gilt für Fuss- und Veloverkehr)"
+               },
+               {
+                  "name": "RICHTUNG_OUT",
+                  "description": "Richtungsangabe für Feld OUT (gilt für Fuss- und Veloverkehr)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         }
+      ]
+   }
+}

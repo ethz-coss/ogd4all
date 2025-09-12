@@ -1,0 +1,84 @@
+{
+   "title": "Eigentumskategorien STZH",
+   "keywords": [
+      "Eigentum"
+   ],
+   "metadata_date": "2020-01-17T06:06:27",
+   "updateFrequency": "annually",
+   "purpose": "Der Datensatz unterstützt die Mitarbeiterinnen der Stadt Zürich bei Entscheidungsfindungsprozessen, in der Kommunikation mit der Öffentlichkeit bei Bauvorhaben. Er gibt ihnen einen Überblick über Konfliktpotentiale bei der Flächennutzung sowie ermöglicht er Auswertungen bzgl. Fragestellungen ihrer täglichen Arbeit.",
+   "abstract": "Die Daten stellen den jeweiligen Stand (Jahr) der Eigentümer- und Verwalterinformationen aus der GWZ (Gebäude- und Wohnungsregister der Stadt Zürich) Datenbank in Verbindung mit den Liegenschaften der amtlichen Vermessung dar.",
+   "identificationDate": "2025-01-06",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Präsidialdepartement - Statistik Stadt Zürich",
+   "contactPerson": "Marco Sieber",
+   "referenceSystem": "CH1903+_LV95 (Original:LV03)",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "EIGENTUMSKATEGORIEN_A",
+            "description": "Liegenschaften der Amtlichen Vermessung angereichert um die Eigentumskategorien zum jeweiligen Zeitstand aus dem Datamart von Statistik Stadt Zürich.",
+            "attributes": [
+               {
+                  "name": "EGRID",
+                  "description": "Eidgenössische Grundstückidentifikation"
+               },
+               {
+                  "name": "EIG_BFS_ART",
+                  "description": "6161 Uebrige Auftraggeber \n\n6151 Uebrige Auftraggeber \n\n6142 Institutionelle Anleger \n\n6152 Uebrige Auftraggeber \n\n6121 Uebrige Auftraggeber \n\n6124 Uebrige Auftraggeber \n\n6108 Oeffentliche Auftraggeber \n\n6101 Oeffentliche Auftraggeber \n\n6143 Uebrige Auftraggeber \n\n6122 Uebrige Auftraggeber \n\n6162 Uebrige Auftraggeber \n\n6115 Oeffentliche Auftraggeber \n\n6110 Oeffentliche Auftraggeber \n\n6104 Oeffentliche Auftraggeber"
+               },
+               {
+                  "name": "EIG_BFS_KAT",
+                  "description": "6161 Privatpersonenen \n\n6151 Uebrige Anleger \n\n6142 Bau- und Immobiliengesellschaften \n\n6152 Uebrige Anleger \n\n6121 Institutionelle Anleger \n\n6124 Uebrige Auftraggeber \n\n6108 Bund \n\n6101 Bund \n\n6143 Bau- und Immobiliengesellschaften \n\n6122 Uebrige Anleger \n\n6162 Uebrige Anleger \n\n6115 Gemeinden \n\n6110 Kantone \n\n6104 Bund"
+               },
+               {
+                  "name": "EIG_BFS_TYP",
+                  "description": "6161 Privatpersonenen \n\n6151 Einzelfirmen oder Personengesellschaften \n\n6142 Wohnbaugenossenschaft \n\n6152 Kapitalgesellschaften \n\n6121 Versicherungsgesellschaft \n\n6124 Banken \n\n6108 Post \n\n6101 SBB \n\n6143 Bau- oder Immobiliengesellschaften \n\n6122 Personalfürsorgestifungen (Pensionskasse) \n\n6162 Andere private Auftraggeber \n\n6115 Gemeinden \n\n6110 Kanton \n\n6104 Bund"
+               },
+               {
+                  "name": "EIG_STAT_ST1",
+                  "description": "1 Privates Eigentum \n\n2 Öffentliches Eigentum \n\n9 Nicht relevant \n\n8 Unbekannt"
+               },
+               {
+                  "name": "EIG_STAT_ST2",
+                  "description": "110 Natürliche Personen \n\n120 Stockwerkeigentum \n\n130 Baugenossenschaft \n\n140 Genossenschaften \n\n150 Kapitalgesellschaften \n\n170 Pensionskasse \n\n180 Religionsgemeinschaften \n\n210 Gesellschaften öfftenlichen Rechts \n\n999 Nicht relevant \n\n888 Unbekannt"
+               },
+               {
+                  "name": "EIG_STAT_ST3",
+                  "description": "1101 Einzelperson \n\n1102 Erbengemeinschaft \n\n1103 Mehrere Natürliche Personen \n\n1204 Stockwerkeigentum \n\n1301 Baugenossenschaft \n\n1401 Genossenschaften \n\n1501 Aktiengesellschaft \n\n1502 Kollektivgesellschaft \n\n1503 Kommanditgesellschaft \n\n1504 Gesellschaft mit beschränkter Haftung \n\n1505 Verschiedene Eigentümerarten (gemischtes Eigentum) \n\n1506 Verein, private Stiftung \n\n1701 Pensionskasse \n\n1801 Evangelisch-reformierte Kirchgemeinde \n\n1802 Römisch-katholische Kirchgemeinde \n\n1803 Andere Religions- und Kultusgemeinschaft \n\n2101 Stadt Zürich \n\n2102 Städtische Stiftung \n\n2103 Kanton Zürich \n\n2104 Bund \n\n2109 Andere öffentliche Eigentümer \n\n9999 Nicht relevant \n\n8888 Unbekannt"
+               },
+               {
+                  "name": "EIG_STAT_ST4",
+                  "description": "1101.01 Einzelperson \n\n1102.01 Erbengemeinschaft \n\n1103.01 Mehrere Natürliche Personen \n\n1204.01 Stockwerkeigentum \n\n1301.01 Baugenossenschaft \n\n1401.01 Handels- und Produktivgenossenschaft \n\n1401.02 Versicherungs- u. übrige Genossenschaften \n\n1501.01 Aktiengesellschaft \n\n1501.07 Aktiengesellschaft Bank \n\n1501.02 Aktiengesellschaft Post \n\n1501.03 Aktiengesellschaft SBB \n\n1501.04 Aktiengesellschaft Versicherung \n\n1501.05 Aktiengesellschaft Immobilienfonds \n\n1501.06 Aktiengesellschaft Immobilienfirmen \n\n1502.01 Kollektivgesellschaft \n\n1502.02 Kollektivgesellschaft Immobilienfirmen \n\n1503.01 Kommanditgesellschaft \n\n1503.02 Kommanditgesellschaft Immobilienfirmen \n\n1504.01 Gesellschaft mit beschränkter Haftung \n\n1504.02 Gesellschaft mit beschränkter Haftung Immobilienfirmen \n\n1505.01 Verschiedene Eigentümerarten (gemischtes Eigentum) \n\n1506.01 Verein, private Stiftung \n\n1701.01 Pensionskasse \n\n1801.01 Evangelisch-reformierte Kirchgemeinde \n\n1802.01 Römisch-katholische Kirchgemeinde \n\n1803.01 Andere Religions- und Kultusgemeinschaft \n\n2101.01 Stadt Zürich \n\n2102.01 Städtische Stiftung \n\n2103.01 Kanton Zürich \n\n2104.01 Bund \n\n2109.01 Andere öffentliche Eigentümer \n\n9999.01 Nicht relevant \n\n8888.01 Unbekannt"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "NUMMER",
+                  "description": "Parzellennummer aus der Amtlichen Vermessung."
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "Vom System vergebener Identifikator"
+               },
+               {
+                  "name": "STAND_DWH",
+                  "description": "Datum der Datengrundlage aus dem Datawarehouse des SSZ"
+               },
+               {
+                  "name": "STAND_VERSCHNITT",
+                  "description": "Datum der Aufbereitung der Daten"
+               }
+            ]
+         }
+      ]
+   }
+}

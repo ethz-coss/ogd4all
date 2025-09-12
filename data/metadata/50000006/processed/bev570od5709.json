@@ -1,0 +1,60 @@
+{
+   "title": "Kapazität, Bestand, Reserve und Inanspruchnahme nach Stadtquartier, Eigentumsart, Arealüberbauung, Wohnanteil",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/afs_kapazitaet_bestand_reserve_inanspruchnahme_quartier_eigentumsart_od5709",
+   "abstract": "Das Amt für Städtebau modelliert jedes Jahr auf Basis der planungsrechtlichen Möglichkeiten und weiterer Rahmenbedingungen die baulichen Kapazitäten aller Bauzonen in Geschossflächen. Im Rahmen der Modellierung wird ebenso der Bestand in Geschossfläche geschätzt und durch Abzug von der Kapazität eine bauliche Reserve berechnet. Spezifisch für die Berechnung der Bevölkerungsszenarien werden Annahmen getroffen, um eine möglichst realistische Inanspruchnahme der Reserven zu modellieren. Hinweis: Das Modell zur Berechnung der Geschossflächen für die Kapazität, den Bestand, die Reserve und die Inanspruchnahme basiert auf Annahmen und Schätzungen. Die Zahlen sind in Bezug auf die Genauigkeit entsprechend mit Vorsicht zu interpretieren. Das Modell zur Kapazitäts- und Reserven-Berechnung (KaReB) wurde über die Jahre weiterentwickelt. \nInhalte: Kapazität, Bestand, Reserve und Inanspruchnahme aggregiert nach Stadtquartier, Eigentumsart, berechnet jeweils mit und ohne Arealüberbauung sowie nach minimalem, realem und maximalem Wohnanteil. Die Werte beziffern jeweils Geschossflächen in Quadratmeter. Sie enthalten nur die Wohnnutzungen, andere Nutzungen (Nicht-Wohnen) sind nicht berücksichtigt.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Datenstand:\n\nBevölkerungsszenarien: Die vorliegenden Daten dienen als Inputdaten für die Bevölkerungsszenarien. Nur Wohnen; ohne Nicht-Wohnen.\n\nAnnahmen:\n\nDamit die Bevölkerungsszenarien berechnet werden können, werden Annahmen zur Inanspruchnahme der Reserven getroffen. Die hier ausgewiesenen Werte zur Inanspruchnahme beziehen sich spezifisch auf die Bevölkerungsszenarien der Stadt Zürich (von Statistik Stadt Zürich).",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Kapazität, Bestand, Reserve und Inanspruchnahme nach Stadtquartier, Eigentumsart, Arealüberbauung, Wohnanteil",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Publikationsjahr (technisch: PublJahr)",
+                  "description": "Publikationsjahr (Numeric)"
+               },
+               {
+                  "name": "Dummy-Variable zur Arealüberbauung (Code) (technisch: ArealCd)",
+                  "description": "Variable zur Arealüberbauung ('1': mit Arealüberbauungspotential, '2': ohne Arealüberbauungspotential, String)"
+               },
+               {
+                  "name": "Wohnanteil (Code) (technisch: WohnanteilCd)",
+                  "description": "Wohnanteil ('1': minimaler Wohnanteil, '2': realer Wohnanteil, '3': maximaler Wohnanteil, String)"
+               },
+               {
+                  "name": "Stadtquartier (Code) (technisch: QuarCd)",
+                  "description": "Stadtquartier (String)"
+               },
+               {
+                  "name": "Stadtquartier (Lang) (technisch: QuarLang)",
+                  "description": "Stadtquartier (String)"
+               },
+               {
+                  "name": "Eigentumsart Grundstück (Code) (technisch: EigentumGrundstkCd)",
+                  "description": "Eigentumsart Grundstück ('1': gemeinnützig, '2': privat, String)"
+               },
+               {
+                  "name": "Kapazität (technisch: Kapazitaet)",
+                  "description": "Kapazität (Numeric); Kapazität gemäss BZO 2016 in m2 Geschossfläche (nur Wohnnutzungen). Für Zonen, in welchen in der BZO 2016 keine Ausnützungsziffer festgelegt ist, werden Näherungswerte verwendet"
+               },
+               {
+                  "name": "Bestand (technisch: Bestand)",
+                  "description": "Bestand (Numeric); Schätzung des gebauten Bestands (nur Wohnnutzungen, in m2 Geschossfläche)"
+               },
+               {
+                  "name": "Reserve (technisch: Reserve)",
+                  "description": "Reserve (Numeric); Berechneter Wert der Reserve (nur Wohnnutzungen) aus Kapazität minus Bestand (nur Wohnnutzungen, in m2 Geschossfläche)"
+               },
+               {
+                  "name": "Inanspruchnahme (technisch: Inanspruchnahme)",
+                  "description": "Inanspruchnahme (Numeric); Schätzung anhand von unterschiedlichen Kriterien, welcher Anteil der berechneten Reserven in den nächsten 25 Jahren realistischerweise in Anspruch genommen werden könnte (nur Wohnnutzungen, in m2 Geschossfläche)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-05-23"
+}

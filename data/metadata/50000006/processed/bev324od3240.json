@@ -1,0 +1,36 @@
+{
+   "title": "Bevölkerung nach Stadtquartier",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bev_bestand_jahr_quartier_od3240",
+   "abstract": "Wirtschaftliche Wohnbevölkerung der Stadt Zürich nach Statistischem Stadtquartier und Jahr.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Hinweis:\n\nDie Geodaten zu den Statistischen Stadtquartieren finden Sie unter diesem Link auf dem Open-Data-Katalog.\n\nFehlende Werte:\n\nBei einzenen Quartieren und Jahren fehlen Werte (Kreis 3 südlicher Teil vor 1950, Quartiere von Kreis 12 vor 1970). Diese werde als Missing dargestellt.\n\nKreis 3 südlicher Teil\n\nBis im Jahr 1949 wurden die Quartiere Alt-Wiedikon und Friesenberg zusammen als südlicher Teil von Wiedikon erfasst.\n\nSchwamendingen\n\nDer Kreis 12 (Schwamendingen) wird erst seit 1970 in drei verschiedene Quartiere aufgeteilt: Saatlen, Schwamendingen-Mitte und Hirzenbach.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Bevölkerung nach Stadtquartier",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Ereignisjahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr"
+               },
+               {
+                  "name": "Stadtquartier (Sort) (technisch: QuarSort)",
+                  "description": "Offizielle ID des Statistischen Stadtquartiers (Integer)."
+               },
+               {
+                  "name": "Stadtquartier (lang) (technisch: QuarLang)",
+                  "description": "Name des Statistischen Stadtquartiers (String)."
+               },
+               {
+                  "name": "Wirtschaftliche Bevölkerung (technisch: AnzBestWir)",
+                  "description": "Wirtschaftlich anwesende Personen (Integer)."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-03-05"
+}

@@ -1,0 +1,871 @@
+{
+   "title": "Verkehrsachsensystem Stadt Zuerich",
+   "keywords": [
+      "Verkehr",
+      "Achsen",
+      "Ereignisse"
+   ],
+   "metadata_date": "2024-01-24T05:59:59",
+   "updateFrequency": "annually",
+   "purpose": "Das Verkehrsachsensystem soll in diversen Bereichen der Stadtverwaltung als einheitliche Grundlage für Verkehrsachs-bezogene Geodaten, die von weitem Interesse sind, fungieren. Das System soll laufend mit weiteren Ereignissen ergänzt werden. Der Vorteil der linearen Referenzierung liegt in der Trennung der Geometrien und der achsbezogenen Ereignisse. Diese Trennung ermöglicht eine bestmögliche Aktualität der Daten, da die Achsgeometrien dem Nachführungsprozess der Amtlichen Vermessung unterliegen.",
+   "abstract": "Das Verkehrsachsensystem stellt in Form von linearen Referenzen verschiedenartige Datensätze (sog. Ereignisse) mit Bezug auf die Verkehrsachsen bereit.",
+   "identificationDate": "2024-05-01",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Geomatik + Vermessung",
+   "contactPerson": "André Graf",
+   "referenceSystem": "CH1903+_LV95 (Original:LV03)",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)",
+      "ESRI File Geodatabase"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Verkehrsachsensystem_Stadt_Zuerich",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "vas_tempo_ist_event",
+            "description": "Diese View beinhaltet zu jeder Strasse die signalisierte Höchstgeschwindigkeit. Falls vorhanden, gibt es die Angabe, seit wann das Temporegime rechtskräftig ist und wann es umgesetzt (signalisiert/markiert) wurde.\n\nFahrverbote gelten für den allgemeinen MIV. Bei Fahrverboten ersichtlich: Ausnahmen (falls erfasst), SSV (Verkehrstafel, falls erfasst).",
+            "attributes": [
+               {
+                  "name": "fahrverbot_ssv",
+                  "description": null
+               },
+               {
+                  "name": "publiziert_vsi_datum",
+                  "description": null
+               },
+               {
+                  "name": "lokalisationsname",
+                  "description": null
+               },
+               {
+                  "name": "geometrie",
+                  "description": null
+               },
+               {
+                  "name": "objectid",
+                  "description": null
+               },
+               {
+                  "name": "temporegime",
+                  "description": null
+               },
+               {
+                  "name": "temporegime_technical",
+                  "description": null
+               },
+               {
+                  "name": "umgesetzt_datum",
+                  "description": null
+               },
+               {
+                  "name": "rechtskraeftig_datum",
+                  "description": null
+               },
+               {
+                  "name": "ausnahmen_fahrverbot",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "VAS_E_EINBAHN_IST",
+            "description": "Dieses Ereignis liefert die Information der erlaubten Fahrtrichtung in Einbahnstrassen für den motorisierten\n\nIndividualverkehr.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": null
+               },
+               {
+                  "name": "MESSWERT_VON",
+                  "description": null
+               },
+               {
+                  "name": "MESSWERT_BIS",
+                  "description": null
+               },
+               {
+                  "name": "EINBAHNREGIME",
+                  "description": null
+               },
+               {
+                  "name": "EINBAHNREGIME_TECHNICAL",
+                  "description": null
+               },
+               {
+                  "name": "UMGESETZT_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSKRAEFTIG_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "PUBLIZIERT_VSI_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "AUSNAHMEN_EINBAHN",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "VAS_E_ETAPPE3_STRB",
+            "description": "Dieses Ereignis liefert die Informationen zur 3. Etappe der Strassenlärmsanierung: Welche Temporegime sind geplant, um die Zürcher Bevölkerung von übermässigem Lärm zu schützen.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": null
+               },
+               {
+                  "name": "MESSWERT_VON",
+                  "description": null
+               },
+               {
+                  "name": "MESSWERT_BIS",
+                  "description": null
+               },
+               {
+                  "name": "TEMPOREGIME",
+                  "description": null
+               },
+               {
+                  "name": "ID_AG_LSV",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "VAS_E_TEMPO_IST",
+            "description": "Dieses Ereignis liefert zu jeder Strasse die signalisierte Höchstgeschwindigkeit. Falls vorhanden, gibt es die Angabe, seit wann das Temporegime rechtskräftig ist und wann es umgesetzt (signalisiert/markiert) wurde.\n\nFahrverbote gelten für den allgemeinen MIV. Bei Fahrverboten ersichtlich: Ausnahmen (falls erfasst), SSV (Verkehrstafel, falls erfasst).",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": null
+               },
+               {
+                  "name": "MESSWERT_VON",
+                  "description": null
+               },
+               {
+                  "name": "MESSWERT_BIS",
+                  "description": null
+               },
+               {
+                  "name": "TEMPOREGIME",
+                  "description": null
+               },
+               {
+                  "name": "TEMPOREGIME_TECHNICAL",
+                  "description": null
+               },
+               {
+                  "name": "UMGESETZT_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSKRAEFTIG_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "PUBLIZIERT_VSI_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "AUSNAHMEN_FAHRVERBOT",
+                  "description": null
+               },
+               {
+                  "name": "FAHRVERBOT_SSV",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "vas_einbahn_ist_event",
+            "description": "Diese View beinhaltet Liniengeometrien der Einbahnstrassen. Fahrtrichtungen gelten in Digitalisierungsrichtung.\n\nNur in der PostGIS-DB.",
+            "attributes": [
+               {
+                  "name": "objectid",
+                  "description": null
+               },
+               {
+                  "name": "einbahnregime",
+                  "description": null
+               },
+               {
+                  "name": "einbahnregime_technical",
+                  "description": null
+               },
+               {
+                  "name": "umgesetzt_datum",
+                  "description": null
+               },
+               {
+                  "name": "rechtskraeftig_datum",
+                  "description": null
+               },
+               {
+                  "name": "ausnahmen_einbahn",
+                  "description": null
+               },
+               {
+                  "name": "publiziert_vsi_datum",
+                  "description": null
+               },
+               {
+                  "name": "lokalisationsname",
+                  "description": null
+               },
+               {
+                  "name": "geometrie",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "vas_etappe3_strb_event",
+            "description": "Diese View beinhaltet die Informationen zur 3. Etappe der Strassenlärmsanierung: Welche Temporegime sind geplant, um die Zürcher Bevölkerung von übermässigem Lärm zu schützen.",
+            "attributes": [
+               {
+                  "name": "objectid",
+                  "description": null
+               },
+               {
+                  "name": "temporegime",
+                  "description": null
+               },
+               {
+                  "name": "id_ag_lsv",
+                  "description": null
+               },
+               {
+                  "name": "lokalisationsname",
+                  "description": null
+               },
+               {
+                  "name": "geometrie",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "vas_kunstbauten_event",
+            "description": "Die View der Kunstbauten enthält alle Streckenabschnitte mit Brücken und \n\n Tunnels. Die Informationen stammen aus der Amtlichen Vermessung. Ereignis: Kunstbauten \n\nNur in der PostGIS-DB.",
+            "attributes": [
+               {
+                  "name": "objectid",
+                  "description": null
+               },
+               {
+                  "name": "art_kunstbaute",
+                  "description": null
+               },
+               {
+                  "name": "lokalisationsname",
+                  "description": null
+               },
+               {
+                  "name": "geometrie",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "VAS_E_STRASSENBELAG",
+            "description": "Dieses Ereignis liefert die Information über den Belagstyp.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "BEMERKUNG",
+                  "description": null
+               },
+               {
+                  "name": "AUFNAHME_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": null
+               },
+               {
+                  "name": "MESSWERT_VON",
+                  "description": null
+               },
+               {
+                  "name": "MESSWERT_BIS",
+                  "description": null
+               },
+               {
+                  "name": "MUT_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "BELAGSART",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "vas_strassenbelag_event",
+            "description": "Dieses Ereignis liefert die Information über den Belagstyp.\n\nNur in der PostGIS-DB",
+            "attributes": [
+               {
+                  "name": "aufnahme_datum",
+                  "description": null
+               },
+               {
+                  "name": "mut_datum",
+                  "description": null
+               },
+               {
+                  "name": "belagsart",
+                  "description": null
+               },
+               {
+                  "name": "geometrie",
+                  "description": null
+               },
+               {
+                  "name": "objectid",
+                  "description": null
+               },
+               {
+                  "name": "lokalisationsname",
+                  "description": null
+               },
+               {
+                  "name": "bemerkung",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "VAS_SDE.VAS_E_STEIGUNG",
+            "description": "Die Ereignistabelle Steigung liefert für jeden Abschnitt die mittlere Steigung in [%] zwischen dem Abschnittsbeginn und dessen Ende sowie die Höhen über Meer des Anfangs- und Endpunktes. Die Höheninformationen wurden mittels automatischem Interpolationsverfahren aus den Datensätzen DTM-AV und DOM ermittelt und im Bereich von Brücken, Passerellen und Tunnels manuell modifiziert. Die Höheninformationen weisen eine Genauigkeit von ±0.5 m auf.",
+            "attributes": [
+               {
+                  "name": "STATUS_TXT",
+                  "description": "real oder projektiert"
+               },
+               {
+                  "name": "LEN",
+                  "description": "Vom System vergebenes Feld"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "Vom System vergebener Identifikator."
+               },
+               {
+                  "name": "LOKALISATIONNUMMER",
+                  "description": "Nummer der Lokalisation. Dient als Verweisattribut zur entsprechenden Geometrie (Basis- oder Routendatensatz)."
+               },
+               {
+                  "name": "VAS_ID",
+                  "description": "Referenz auf den Basisabschnitt. Kann verwendet werden, wenn das Ereignis dem gesamten Abschnitt zugeordnet werden soll."
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": "Referenz auf den Routendatensatz. Name der Lokalisation (Strasse, Platz, Gebiet). Vergabe und Abstammung aus der Amtlichen Vermessung (AV)."
+               },
+               {
+                  "name": "MESSWERT_VON",
+                  "description": "Kilometrierungsangabe. Repräsentiert die Kilometrierung des Beginns des Ereignisses."
+               },
+               {
+                  "name": "MESSWERT_BIS",
+                  "description": "Kilometrierungsangabe. Repräsentiert die Kilometrierung des Endes des Ereignisses."
+               },
+               {
+                  "name": "BETRIFFT_BRUECKE_TUNNEL",
+                  "description": "Attribut zur Beurteilung der Abschnitte bezüglich Lage auf bzw. unter Tunnels, Brücken, Passerellen"
+               },
+               {
+                  "name": "HOEHE_VON",
+                  "description": "Höhenwert des Abschnittsbeginns gemäss Korrektur aufgrund der Beurteilung mit Hilfe des Attributs BETRIFFT_BRUECKE_TUNNEL"
+               },
+               {
+                  "name": "HOEHE_BIS",
+                  "description": "Höhenwert des Abschnittsendes gemäss Korrektur aufgrund der Beurteilung mit Hilfe des Attributs BETRIFFT_BRUECKE_TUNNEL."
+               },
+               {
+                  "name": "STEIGUNG",
+                  "description": "Steigungswert in Prozent (dH / L)*100 aufgrund der wie folgt berechneten Höhendifferenz: dH = HOEHE_BIS-HOEHE_VON. Das Vorzeichen bezieht auf die Digitalisierrichtung der referenzierten Geometrie: Wert > 0 : Abschnitt steigt in Geometrierichtung an."
+               },
+               {
+                  "name": "STEIGUNG_ABSOLUT",
+                  "description": "Absoluter, von Geometrierichtung unabhängiger Steigungswert in Prozent (dH / L)*100 aufgrund der wie folgt berechneten Höhendifferenz: Abs(dH) = HOEHE_BIS-HOEHE_VON."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "Vom System vergebener Identifikator"
+               },
+               {
+                  "name": "ORDNUNG",
+                  "description": "Zahlenwert, welcher die logische Reihenfolge der Strassenstücke repräsentiert."
+               }
+            ]
+         },
+         {
+            "name": "VAS_SDE.VAS_E_STRASSENLAERMEMISSION",
+            "description": "Der Datensatz beinhaltet die Strassenlaerme-missionen (gemäss Lärmschutzverordnung LSV) ausgewählter Verkehrsabschnitte der Stadt Zürich. Zum Strassenlärm wird gemäss LSV der Motorfahrzeugverkehr (inkl. motorisiertem öffentlichen Verkehr) sowie der Tramverkehr, wo dieser nicht auf einem separaten Trasse verläuft, gezählt. Die Emissionen wurden gemäss dem eidgenössischen Strassenlärmberechnungsmodell \"StL86+\" berechnet.",
+            "attributes": [
+               {
+                  "name": "MESSWERT_VON",
+                  "description": "Kilometrierungsangabe. Repräsentiert die Kilometrierung des Beginns des Ereignisses."
+               },
+               {
+                  "name": "LAENGE",
+                  "description": "Abschnittslänge (berechnet)"
+               },
+               {
+                  "name": "MESSWERT_BIS",
+                  "description": "Kilometrierungsangabe. Repräsentiert die Kilometrierung des Endes des Ereignisses."
+               },
+               {
+                  "name": "LRETMFZ",
+                  "description": "Lärmemission der Motorfahrzeuge zur Tageszeit (6.00h-22.00h) in dB(A); IST-Zustand"
+               },
+               {
+                  "name": "LRENMFZ",
+                  "description": "Lärmemission der Motorfahrzeuge zur Nachtzeit (22.00h-6.00h) [dB(A)]; IST Zustand"
+               },
+               {
+                  "name": "LRETTRAM",
+                  "description": "Lärmemission der Tramfahrzeuge zur Tageszeit (6.00h-22.00h) [dB(A)]; IST-Zustand"
+               },
+               {
+                  "name": "LRENTRAM",
+                  "description": "Lärmemission der Tramfahrzeuge zur Nachtzeit (22.00h-6.00h) [dB(A)]; IST-Zustand"
+               },
+               {
+                  "name": "LRET",
+                  "description": "Lärmemission der Motor- und Tramfahrzeuge zur Tageszeit (6.00h-22.00h) [dB(A)]; IST-Zustand"
+               },
+               {
+                  "name": "LREN",
+                  "description": "Lärmemission der Motor- und Tramfahrzeuge zur Nachtzeit (22.00h-6.00h) [dB(A)]; IST-Zustand"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "Vom System vergebener Identifikator"
+               },
+               {
+                  "name": "LOKALISATIONNUMMER",
+                  "description": "Nummer der Lokalisation. Dient als Verweisattribut zur entsprechenden Geometrie (Basis- oder Routendatensatz)."
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": "Referenz auf den Routendatensatz. Name der Lokalisation (Strasse, Platz, Gebiet). Vergabe und Abstammung aus der Amtlichen Vermessung (AV)."
+               }
+            ]
+         },
+         {
+            "name": "VAS_SDE.VAS_E_VERKEHRSTRAEGER",
+            "description": "Dieses zentrale Ereignis umfasst im Wesentlichen die Information, welcher Verkehr sich auf welchem Abschnitt abspielt. Diese Information und umfasst momentan die Verkehrsträger Tram, Bus sowie miV. Als Basis zur Erhebung diente der Lärmkataster sowie das Ereignis Fahrtrichtung.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "Vom System vergebener Identifikator"
+               },
+               {
+                  "name": "BUS_VORHANDEN",
+                  "description": "Info über Verkehrsträger \"Öffentlicher Bus\" auf dem betreffenden Abschnitt."
+               },
+               {
+                  "name": "LOKALISATIONNUMMER",
+                  "description": "Nummer der Lokalisation. Dient als Verweisattribut zur entsprechenden Geometrie (Basis- oder Routendatensatz)."
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": "Referenz auf den Routendatensatz. Name der Lokalisation (Strasse, Platz, Gebiet). Vergabe und Abstammung aus der Amtlichen Vermessung (AV)."
+               },
+               {
+                  "name": "MESSWERT_VON",
+                  "description": "Kilometrierungsangabe. Repräsentiert die Kilometrierung des Beginns des Ereignisses."
+               },
+               {
+                  "name": "MESSWERT_BIS",
+                  "description": "Kilometrierungsangabe. Repräsentiert die Kilometrierung des Endes des Ereignisses."
+               },
+               {
+                  "name": "MIV_VORHANDEN",
+                  "description": "Info über Verkehrsträger \"Motorisierter Individualverkehr\"  auf dem betreffenden Abschnitt."
+               },
+               {
+                  "name": "TRAM_VORHANDEN",
+                  "description": "Info über Verkehrsträger \"Tram\" auf dem betreffenden Abschnitt."
+               },
+               {
+                  "name": "LAENGE",
+                  "description": "Abschnittslänge (berechnet)"
+               }
+            ]
+         },
+         {
+            "name": "VAS_SDE.VAS_ROUTE",
+            "description": "Der Routendatensatz baut auf der Geometrie des Basisdatensatzes auf und umfasst pro Strassenname eine Achse (auch Route genannt) mit einem integrierten Masssystem (auch Kilometrierung genannt). Als eindeutige Kennung einer Route fungiert der \"Lokalisationsname\". Die Kennung und die Kilometrierung ermöglichen es, jeden Punkt oder Abschnitt auf einer Route anhand seiner relativen Position eindeutig zu lokalisieren. Anmerkung: Der in diesem Zusammenhang verwendete Begriff \"Route\" hat nichts zu tun mit dem \"Routing\"-Verfahren zur Ermittlung einer Fahrtroute zwischen einem Start- und Zielpunkt.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "Vom System vergebener Identifikator"
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": "Name der Lokalisation (Strasse, Platz, Gebiet). Vergabe und Abstammung aus der Amtlichen Vermessung (AV)."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie"
+               }
+            ]
+         },
+         {
+            "name": "VAS_SDE.VAS_E_KUNSTBAUTEN",
+            "description": "Das Ereignis der Kunstbauten enthält alle Streckenabschnitte mit Brücken und\n\nTunnels. Die Informationen stammen aus der Amtlichen Vermessung. Ereignis: Kunstbauten",
+            "attributes": [
+               {
+                  "name": "ART_KUNSTBAUTE",
+                  "description": "Information über Art der Kunstbaute: Brücke, Tunnel"
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": "Referenz auf den Routendatensatz. Name der Lokalisation (Strasse, Platz, Gebiet). Vergabe und Abstammung aus der Amtlichen Vermessung (AV)."
+               },
+               {
+                  "name": "MESSWERT_BIS",
+                  "description": "Kilometrierungsangabe. Repräsentiert die Kilometrierung des Endes des Ereignisses."
+               },
+               {
+                  "name": "MESSWERT_VON",
+                  "description": "Kilometrierungsangabe. Repräsentiert die Kilometrierung des Beginns des Ereignisses."
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "Vom System vergebener Identifikator"
+               }
+            ]
+         },
+         {
+            "name": "VAS_SDE.VAS_E_RETTUNGSACHSEN",
+            "description": "Das Ereignis der Rettungsachsen enthält alle Streckenabschnitte, die als Rettungsachsen definiert sind. Die Informationen stammen von Schutz & Rettung Ereignis: Rettungsachsen.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "Vom System vergebener Identifikator."
+               },
+               {
+                  "name": "LOKALISATIONNUMMER",
+                  "description": "Nummer der Lokalisation. Dient als Verweisattribut zur entsprechenden Geometrie (Basis- oder Routendatensatz)."
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": "Referenz auf den Routendatensatz. Name der Lokalisation (Strasse, Platz, Gebiet). Vergabe und Abstammung aus der Amtlichen Vermessung (AV)."
+               },
+               {
+                  "name": "MESSWERT_VON",
+                  "description": "Kilometrierungsangabe. Repräsentiert die Kilometrierung des Beginns des Ereignisses."
+               },
+               {
+                  "name": "MESSWERT_BIS",
+                  "description": "Kilometrierungsangabe. Repräsentiert die Kilometrierung des Endes des Ereignisses."
+               },
+               {
+                  "name": "RETTUNGSACHSE",
+                  "description": "JA: Es handelt sich um eine Rettungsachse.\n\nNEIN: Es handelt sich um keine Rettungsachse."
+               }
+            ]
+         },
+         {
+            "name": "vas_rettungsachsen_event",
+            "description": "Diese View beinhaltet die Rettungsachsen. Die Informationen stammen von Schutz & Rettung.\n\nNur in der PostGIS-DB",
+            "attributes": [
+               {
+                  "name": "objectid",
+                  "description": "Vom System vergebener Identifikator."
+               },
+               {
+                  "name": "lokalisationnummer",
+                  "description": "Nummer der Lokalisation. Dient als Verweisattribut zur entsprechenden Geometrie (Basis- oder Routendatensatz)."
+               },
+               {
+                  "name": "lokalisationsname",
+                  "description": "Referenz auf den Routendatensatz. Name der Lokalisation (Strasse, Platz, Gebiet). Vergabe und Abstammung aus der Amtlichen Vermessung (AV)."
+               },
+               {
+                  "name": "rettungsachse",
+                  "description": "JA: Es handelt sich um eine Rettungsachse.\n\nNEIN: Es handelt sich um keine Rettungsachse."
+               },
+               {
+                  "name": "geometrie",
+                  "description": "Geometriefeld"
+               }
+            ]
+         },
+         {
+            "name": "vas_steigung_event",
+            "description": "Die View Steigung liefert für jeden Abschnitt die mittlere Steigung in [%] zwischen dem Abschnittsbeginn und dessen Ende sowie die Höhen über Meer des Anfangs- und Endpunktes. Die Höheninformationen wurden mittels automatischem Interpolationsverfahren aus den Datensätzen DTM-AV und DOM ermittelt und im Bereich von Brücken, Passerellen und Tunnels manuell modifiziert. Die Höheninformationen weisen eine Genauigkeit von ±0.5 m auf.\n\n Nur in der PostGIS-DB",
+            "attributes": [
+               {
+                  "name": "objectid",
+                  "description": null
+               },
+               {
+                  "name": "steigung",
+                  "description": null
+               },
+               {
+                  "name": "steigung_absolut",
+                  "description": null
+               },
+               {
+                  "name": "lokalisationnummer",
+                  "description": null
+               },
+               {
+                  "name": "ordnung",
+                  "description": null
+               },
+               {
+                  "name": "status_txt",
+                  "description": null
+               },
+               {
+                  "name": "betrifft_bruecke_tunnel",
+                  "description": null
+               },
+               {
+                  "name": "hoehe_von",
+                  "description": null
+               },
+               {
+                  "name": "hoehe_bis",
+                  "description": null
+               },
+               {
+                  "name": "lokalisationsname",
+                  "description": null
+               },
+               {
+                  "name": "geometrie",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "VAS_SDE.VAS_BASIS",
+            "description": "Der Basisdatensatz enthält sämtliche Verkehrsachsen der Stadt Zürich im Linienformat. Er wird in einem erweiterten Modell in der Amtlichen Vermessung verwaltet. Der Basisdatensatz ist zu vergleichen mit dem bestehenden Datensatz der Strassenabschnitte (Datenname GeoServer: GEOZ_SDE. AV_GEB_STRASSENSTUECK) wobei die Geometrie punktuell ergänzt oder bereinigt wird. Inhaltlich umfasst der Basisdatensatz sämtliche Verkehrsachsen des motorisierten Individualverkehrs, des motorisierten öffentlichen Verkehrs, sowie der Trams.",
+            "attributes": [
+               {
+                  "name": "ORDNUNG",
+                  "description": "Zahlenwert, welcher die logische Reihenfolge der Verkehrsachsen repräsentiert."
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "Vom System vergebener Identifikator"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "Vom System vergebener Identifikator"
+               },
+               {
+                  "name": "LOKALISATIONNUMMER",
+                  "description": "Eindeutige Nummer der zugeordneten Lokalisation (Strasse, Platz, Gebiet). Vergabe und Abstammung aus der Amtlichen Vermessung (AV)."
+               },
+               {
+                  "name": "MESSWERT_VON",
+                  "description": "Kilometrierungsangabe aus dem Routendatensatz. Repräsentiert die Kilometrierung des Abschnittsbeginns."
+               },
+               {
+                  "name": "MESSWERT_BIS",
+                  "description": "Kilometrierungsangabe aus dem Routendatensatz. Repräsentiert die Kilometrierung des Abschnittsendes."
+               },
+               {
+                  "name": "VAS_ID",
+                  "description": "Zusammengesetzter Schlüssel aus Lokalisationnummer und Ordnung (mit _ getrennt). Stellt eindeutige Kennung eines Basis-Abschnittes dar"
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": "Name der Lokalisation (Strasse, Platz, Gebiet). Vergabe und Abstammung aus der Amtlichen Vermessung (AV)."
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": "Status der Lokalisation aus dem Datensatz der Amtlichen Vermessung."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie"
+               }
+            ]
+         },
+         {
+            "name": "vas_verkehrstraeger_event",
+            "description": "Diese View umfasst im Wesentlichen die Information, welcher Verkehr sich auf welchem Abschnitt abspielt. Diese Information und umfasst momentan die Verkehrsträger Tram, Bus sowie miV. Als Basis zur Erhebung diente der Lärmkataster sowie das Ereignis Fahrtrichtung.\n\n Nur in der PostGIS-DB",
+            "attributes": [
+               {
+                  "name": "objectid",
+                  "description": null
+               },
+               {
+                  "name": "lokalisationnummer",
+                  "description": null
+               },
+               {
+                  "name": "miv_vorhanden",
+                  "description": null
+               },
+               {
+                  "name": "tram_vorhanden",
+                  "description": null
+               },
+               {
+                  "name": "bus_vorhanden",
+                  "description": null
+               },
+               {
+                  "name": "lokalisationsname",
+                  "description": null
+               },
+               {
+                  "name": "geometrie",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "vas_strassenlaermemissio_event",
+            "description": "Diese View beinhaltet die Strassenlaerme-missionen (gemäss Lärmschutzverordnung LSV) ausgewählter Verkehrsabschnitte der Stadt Zürich. Zum Strassenlärm wird gemäss LSV der Motorfahrzeugverkehr (inkl. motorisiertem öffentlichen Verkehr) sowie der Tramverkehr, wo dieser nicht auf einem separaten Trasse verläuft, gezählt. Die Emissionen wurden gemäss dem eidgenössischen Strassenlärmberechnungsmodell \"StL86+\" berechnet. \n\nNur in der PostGIS-DB",
+            "attributes": [
+               {
+                  "name": "objectid",
+                  "description": null
+               },
+               {
+                  "name": "lokalisationnummer",
+                  "description": null
+               },
+               {
+                  "name": "belt",
+                  "description": null
+               },
+               {
+                  "name": "beln",
+                  "description": null
+               },
+               {
+                  "name": "einbahn",
+                  "description": null
+               },
+               {
+                  "name": "vt",
+                  "description": null
+               },
+               {
+                  "name": "vn",
+                  "description": null
+               },
+               {
+                  "name": "nt1",
+                  "description": null
+               },
+               {
+                  "name": "nt2",
+                  "description": null
+               },
+               {
+                  "name": "nt",
+                  "description": null
+               },
+               {
+                  "name": "ntb",
+                  "description": null
+               },
+               {
+                  "name": "nn1",
+                  "description": null
+               },
+               {
+                  "name": "nn2",
+                  "description": null
+               },
+               {
+                  "name": "nn",
+                  "description": null
+               },
+               {
+                  "name": "nnb",
+                  "description": null
+               },
+               {
+                  "name": "lret_mfz",
+                  "description": null
+               },
+               {
+                  "name": "lren_mfz",
+                  "description": null
+               },
+               {
+                  "name": "bemerkung_tram",
+                  "description": null
+               },
+               {
+                  "name": "lret_tram",
+                  "description": null
+               },
+               {
+                  "name": "lren_tram",
+                  "description": null
+               },
+               {
+                  "name": "lret",
+                  "description": null
+               },
+               {
+                  "name": "lren",
+                  "description": null
+               },
+               {
+                  "name": "geometrie",
+                  "description": null
+               },
+               {
+                  "name": "modell",
+                  "description": null
+               },
+               {
+                  "name": "ok",
+                  "description": null
+               },
+               {
+                  "name": "lokalisationsname",
+                  "description": null
+               }
+            ]
+         }
+      ]
+   }
+}

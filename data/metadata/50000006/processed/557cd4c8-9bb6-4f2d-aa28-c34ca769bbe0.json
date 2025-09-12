@@ -1,0 +1,117 @@
+{
+   "title": "ZSO Notfalltreffpunkte",
+   "keywords": [
+      "ZSO",
+      "NTP",
+      "Notfall",
+      "Treffpunkt"
+   ],
+   "metadata_date": "2023-12-14T11:42:33",
+   "updateFrequency": "asNeeded",
+   "purpose": "Übersicht der Notfalltreffpunkte der Stadt Zürich",
+   "abstract": "Notfalltreffpunkte der Stadt Zürich bereitgestellt durch die Zivilschutz Organisation Zürich",
+   "identificationDate": "2023-12-18",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Sicherheitsdepartement - Schutz & Rettung",
+   "contactPerson": "Kevin Landolt",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.36167308488333,
+      "eastBoundLongitude": 8.71238105752889,
+      "southBoundLatitude": 47.15426421794444,
+      "northBoundLatitude": 47.483753735111094
+   },
+   "distributionFormats": [
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/ZSO_Notfalltreffpunkte",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "NTP",
+            "description": "Notfalltreffpunkte der Stadt Zürich bereitgestellt durch die ZSO Zürich.\n\nAufgeteilt im Attribut Kategorie i Prio 1 & Prio 2",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "Systemidentifikator"
+               },
+               {
+                  "name": "NTP_NUMMER",
+                  "description": "NTP Nummer"
+               },
+               {
+                  "name": "REGION",
+                  "description": "Regions Einteilung nach ZSO Region"
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": "Einteilung in Prio 1 & Prio 2"
+               },
+               {
+                  "name": "STANDORT",
+                  "description": "Standort Bezeichnung"
+               },
+               {
+                  "name": "WGS84_N",
+                  "description": "WGS84 N Koordinate"
+               },
+               {
+                  "name": "WGS84_E",
+                  "description": "WGS84 E Koordinate"
+               },
+               {
+                  "name": "LV95_E",
+                  "description": "LV95 E Koordinate"
+               },
+               {
+                  "name": "LV95_N",
+                  "description": "LV95 N Koordinate"
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ORT",
+                  "description": null
+               },
+               {
+                  "name": "ADRESSE",
+                  "description": null
+               },
+               {
+                  "name": "KONTAKT",
+                  "description": "Kontakt Person für diesen NTP"
+               },
+               {
+                  "name": "TEL_NUMMER_LHT",
+                  "description": "Telefon Nummer des Kontaktes"
+               },
+               {
+                  "name": "POLYCOM",
+                  "description": "Polycom Nummer"
+               },
+               {
+                  "name": "STAO_SCHILD",
+                  "description": "Standort des NTP-Schilds"
+               },
+               {
+                  "name": "STAO_MATERIAL",
+                  "description": "Standort des NTP Materials"
+               },
+               {
+                  "name": "PATH_NTP",
+                  "description": "URL zur entsprechenden NTP Objektdokumentation in PDF (Zugriff beschränkt)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie"
+               }
+            ]
+         }
+      ]
+   }
+}

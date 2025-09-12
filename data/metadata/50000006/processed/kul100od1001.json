@@ -1,0 +1,160 @@
+{
+   "title": "Hundebestände der Stadt Zürich, seit 2014",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/sid_stapo_hundebestand_od1001",
+   "abstract": "In diesem Datensatz finden Sie Angaben zu Hunden und deren Besitzerinnen und Besitzern aus den Beständen des städtischen Hunderegisters seit 2014.\nBei den hundehaltenden Personen sind Informationen zur Altersgruppe, dem Geschlecht und dem statistischen Quartier des Wohnorts angegeben. Zu jedem Hund ist die Rasse, der Rassetyp, das Geschlecht, das Geburtsjahr, das Alter und die Farbe erfasst. Das Hunderegister wird von der Abteilung Hundekontrolle der Stadtpolizei Zürich geführt.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Informationen zur Hundekontrolle\n\nGemäss dem Gesetz über das Halten von Hunden ist die Stadtpolizei verpflichtet, ein Verzeichnis der in der Stadt Zürich gehaltenen Hunde zu führen. Jeder Hund im Alter von über drei Monaten muss bei der Hundekontrolle vom Haltenden persönlich oder mittels Anmeldeformular angemeldet werden.\n\nLink zur Webseite der Hundekontrolle.\n\nSystemwechsel seit 2025\n\nFalls Sie bereits vor 2025 diesen Datensatz verwendet haben, kann es im Vergleich dazu im aktuellen Datensatz unterschiedliche Werte geben, da Anfangs 2025 vom System Bevepo zu Besys2 migriert wurde. Insbesondere bei den Angaben zur Rasse (Rasse1Text und Rasse2Text) gab es Anpassungen, da diese harmonisiert werden mussten.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Hundebestände der Stadt Zürich, seit 2014",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Datum des Stichtages (technisch: StichtagDat)",
+                  "description": "Datum des Stichtages (Date)"
+               },
+               {
+                  "name": "Jahr des Stichtages (technisch: StichtagDatJahr)",
+                  "description": "Jahr des Stichtages (Numeric)"
+               },
+               {
+                  "name": "Monat des Stichtages (technisch: StichtagDatMM)",
+                  "description": "Monat des Stichtages (Numeric)"
+               },
+               {
+                  "name": "Datenstand (Code) (technisch: DatenstandCd)",
+                  "description": "Datenstand (String)"
+               },
+               {
+                  "name": "ID der hundehaltenden Person (technisch: HID)",
+                  "description": "Technische, selber generierte Identifikationsnummer der hundehaltenden Personen. Da eine Person mehrere Hunde haben kann, kann diese Nummer mehrmals vorkommen. Die Anzahl Hunde pro Hundehalter*in entspricht dabei der Anzahl vorkommender HIDs (count unique) dieser Person (Numeric)"
+               },
+               {
+                  "name": "Vollendetes Alter (Code) (technisch: AlterV10Cd)",
+                  "description": "Vollendetes Alter in 10-Jahresklassen (String)"
+               },
+               {
+                  "name": "Vollendetes Alter (Lang) (technisch: AlterV10Lang)",
+                  "description": "Vollendetes Alter in 10-Jahresklassen (String)"
+               },
+               {
+                  "name": "Vollendetes Alter (Sort) (technisch: AlterV10Sort)",
+                  "description": "Vollendetes Alter in 10-Jahresklassen (Numeric)"
+               },
+               {
+                  "name": "Geschlecht (Code) (technisch: SexCd)",
+                  "description": "Geschlecht (String)"
+               },
+               {
+                  "name": "Geschlecht (Lang) (technisch: SexLang)",
+                  "description": "Geschlecht (String)"
+               },
+               {
+                  "name": "Geschlecht (Sort) (technisch: SexSort)",
+                  "description": "Geschlecht (Numeric)"
+               },
+               {
+                  "name": "Stadtkreis (Code) (technisch: KreisCd)",
+                  "description": "Stadtkreis (String)"
+               },
+               {
+                  "name": "Stadtkreis (Lang) (technisch: KreisLang)",
+                  "description": "Stadtkreis (String)"
+               },
+               {
+                  "name": "Stadtkreis (Sort) (technisch: KreisSort)",
+                  "description": "Stadtkreis (Numeric)"
+               },
+               {
+                  "name": "Stadtquartier (Code) (technisch: QuarCd)",
+                  "description": "Stadtquartier (String)"
+               },
+               {
+                  "name": "Stadtquartier (Lang) (technisch: QuarLang)",
+                  "description": "Stadtquartier (String)"
+               },
+               {
+                  "name": "Stadtquartier (Sort) (technisch: QuarSort)",
+                  "description": "Stadtquartier (Numeric)"
+               },
+               {
+                  "name": "Primäre Rasse des Hundes (technisch: Rasse1Text)",
+                  "description": "Primäre Rasse des Hundes als Freitext (String)"
+               },
+               {
+                  "name": "Sekundäre Rasse des Hundes (technisch: Rasse2Text)",
+                  "description": "Sekundäre Rasse des Hundes als Freitext (String)"
+               },
+               {
+                  "name": "Hunderassentyp (Code) (technisch: Rassetyp1Cd)",
+                  "description": "Hunderassentyp (String)"
+               },
+               {
+                  "name": "Hunderassentyp (Lang) (technisch: Rassetyp1Lang)",
+                  "description": "Hunderassentyp (String)"
+               },
+               {
+                  "name": "Hunderassentyp (Sort) (technisch: Rassetyp1Sort)",
+                  "description": "Hunderassentyp (Numeric)"
+               },
+               {
+                  "name": "Hunderassentyp (Code) (technisch: Rassetyp2Cd)",
+                  "description": "Hunderassentyp (String)"
+               },
+               {
+                  "name": "Hunderassentyp (Lang) (technisch: Rassetyp2Lang)",
+                  "description": "Hunderassentyp (String)"
+               },
+               {
+                  "name": "Hunderassentyp (Sort) (technisch: Rassetyp2Sort)",
+                  "description": "Hunderassentyp (Numeric)"
+               },
+               {
+                  "name": "Geburtsjahr des Hundes (technisch: GebHundDatJahr)",
+                  "description": "Geburtsjahr des Hundes (Numeric)"
+               },
+               {
+                  "name": "Alter des Hundes (Code) (technisch: AlterVHundCd)",
+                  "description": "Alter des Hundes (String)"
+               },
+               {
+                  "name": "Alter des Hundes (Lang) (technisch: AlterVHundLang)",
+                  "description": "Alter des Hundes (String)"
+               },
+               {
+                  "name": "Alter des Hundes (Sort) (technisch: AlterVHundSort)",
+                  "description": "Alter des Hundes (Numeric)"
+               },
+               {
+                  "name": "Alter des Hundes (Num) (technisch: AlterVHundNum)",
+                  "description": "Alter des Hundes"
+               },
+               {
+                  "name": "Geschlecht des Hundes (Code) (technisch: SexHundCd)",
+                  "description": "Geschlecht des Hundes (String)"
+               },
+               {
+                  "name": "Geschlecht des Hundes (Lang) (technisch: SexHundLang)",
+                  "description": "Geschlecht des Hundes (String)"
+               },
+               {
+                  "name": "Geschlecht des Hundes (Sort) (technisch: SexHundSort)",
+                  "description": "Geschlecht des Hundes (Numeric)"
+               },
+               {
+                  "name": "Farbe des Hundes (Freitext) (technisch: HundefarbeText)",
+                  "description": "Farbe des Hundes Freitext (String)"
+               },
+               {
+                  "name": "Anzahl Hunde (technisch: AnzHunde)",
+                  "description": "Anzahl Hunde (Numeric)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-04-24"
+}

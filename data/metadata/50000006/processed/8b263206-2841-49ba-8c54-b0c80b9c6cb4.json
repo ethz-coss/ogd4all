@@ -1,0 +1,295 @@
+{
+   "title": "Einzelbauten und Einzelanlagen",
+   "keywords": [
+      "Einzelbauten",
+      "Einzelanlagen",
+      "AfB-Adresse"
+   ],
+   "metadata_date": "2022-10-27T14:30:25",
+   "updateFrequency": "continual",
+   "purpose": "Die Erfassung von Einzelbauten, -anlagen hat zum Ziel, diese aufgrund einer AfB-Adresse eindeutig vor Ort bzw. als Punkt-, Linien- oder Flächenobjekt auf den GIS-Plänen (georeferenziert) lokalisieren zu können.",
+   "abstract": "Erfassung bewilligungspflichtiger Bauten und Anlagen, welche in der amtlichen Vermessung nicht geführt werden. z.B. Erdwärmesonden, Unterflurcontainer, Sichtschutzwände usw. Version GeoServer",
+   "identificationDate": "2025-03-17",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Hochbaudepartement - Amt für Baubewilligungen",
+   "contactPerson": "Tina Fuchs",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Einzelbauten_und_Einzelanlagen",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "EE_FLA_ELEMENT",
+            "description": "Einzelbauten & Einzelanlagen: Flächenelement",
+            "attributes": [
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "BEMERKUNGEN",
+                  "description": null
+               },
+               {
+                  "name": "DCODE",
+                  "description": null
+               },
+               {
+                  "name": "FLA_ELEMENT_VON",
+                  "description": "Systemreferenz-ID"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "HALI",
+                  "description": "Horizontale Ausrichtung"
+               },
+               {
+                  "name": "LAUFNR",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STA_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "AFB_ADRESSE",
+                  "description": null
+               },
+               {
+                  "name": "AFB_OBJEKTNR",
+                  "description": null
+               },
+               {
+                  "name": "TXTGROESSE",
+                  "description": null
+               },
+               {
+                  "name": "TXTORI",
+                  "description": "Orientation (Beschriftungswinkel)"
+               },
+               {
+                  "name": "TXTPOS",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": "Vertikale Ausrichtung"
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": "System-ID"
+               }
+            ]
+         },
+         {
+            "name": "EE_LIN_ELEMENT",
+            "description": "Einzelbauten & Einzelanlagen: Linienelement",
+            "attributes": [
+               {
+                  "name": "AFB_ADRESSE",
+                  "description": null
+               },
+               {
+                  "name": "AFB_OBJEKTNR",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "BEMERKUNGEN",
+                  "description": null
+               },
+               {
+                  "name": "DCODE",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "HALI",
+                  "description": "Horizontale Ausrichtung"
+               },
+               {
+                  "name": "LAUFNR",
+                  "description": null
+               },
+               {
+                  "name": "LIN_ELEMENT_VON",
+                  "description": "Systemreferenz-ID"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STA_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "TXTGROESSE",
+                  "description": null
+               },
+               {
+                  "name": "TXTORI",
+                  "description": "Orientation (Beschriftungswinkel)"
+               },
+               {
+                  "name": "TXTPOS",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": "Vertikale Ausrichtung"
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": "System-ID"
+               }
+            ]
+         },
+         {
+            "name": "EE_OBJEKT",
+            "description": "Einzelbauten & Einzelanlagen: Objekte",
+            "attributes": [
+               {
+                  "name": "AV_ADRESSE",
+                  "description": null
+               },
+               {
+                  "name": "BESCHREIBUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": "System-ID"
+               }
+            ]
+         },
+         {
+            "name": "EE_PKT_ELEMENT",
+            "description": "Einzelbauten & Einzelanlagen: Punkte Elemente",
+            "attributes": [
+               {
+                  "name": "AFB_ADRESSE",
+                  "description": null
+               },
+               {
+                  "name": "AFB_OBJEKTNR",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "BEMERKUNGEN",
+                  "description": null
+               },
+               {
+                  "name": "DCODE",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "HALI",
+                  "description": "Horizontale Ausrichtung"
+               },
+               {
+                  "name": "LAUFNR",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "PKT_ELEMENT_VON",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STA_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "TXTGROESSE",
+                  "description": null
+               },
+               {
+                  "name": "TXTORI",
+                  "description": "Orientation (Beschriftungswinkel)"
+               },
+               {
+                  "name": "TXTPOS",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": "Vertikale Ausrichtung"
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": "System-ID"
+               }
+            ]
+         }
+      ]
+   }
+}

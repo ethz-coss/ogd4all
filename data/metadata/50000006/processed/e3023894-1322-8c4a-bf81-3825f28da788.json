@@ -1,0 +1,104 @@
+{
+   "title": "Alleenkonzept",
+   "keywords": [
+      "Baum",
+      "Allee"
+   ],
+   "metadata_date": "2025-01-14T10:17:01",
+   "updateFrequency": "annually",
+   "purpose": "Am 16.10.1991 erliess der Stadtrat (\"zustimmend zur Kenntnis genommen\") das Alleenkonzept mit der Absicht der \"Mehrung des Baumbestandes in der Stadt\". Das Allenkonzept soll dieses Ziel erreichen, indem es Planenden, Projektierenden und Bauenden aufzeigt, wo bestehende Baumreihen ergänzt und wo neue Baumreihen erstellt werden sollen. Indem im Alleenkonzept auch die bestehenden Baumreihen nachgeführt werden, dient es gleichzeitig als Instrumtent zur Kontrolle der Umsetzung.",
+   "abstract": "Das Alleenkonzept beinhaltet bestehende und geplante Baumreihen innerhalb der Stadt Zürich, zum Teil aber auch solche in planerisch wichtigen Gebieten und einige ausserhalb der Stadtgrenze.",
+   "identificationDate": "2025-03-10",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Grün Stadt Zürich",
+   "contactPerson": "Dieter Halpern",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.36167308488333,
+      "eastBoundLongitude": 8.71238105752889,
+      "southBoundLatitude": 47.15426421794444,
+      "northBoundLatitude": 47.483753735111094
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Alleenkonzept",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "ALLEENKONZEPT_BAUMREIHEN",
+            "description": "Zugriff über ArcMap für GSZ-Mitarbeitende: Geoserver-Daten-Menü -> Planung -> Alleenkonzept Stadt Zürich",
+            "attributes": [
+               {
+                  "name": "BAUMTYP",
+                  "description": "Erwünschter Baumtyp einer Baumreihe\n\nCoded Domain:\n\n0:keine Angabe\n\n1:Baumhöhe > 20 m; Kronenbreite > 10 m\n\n2:Baumhöhe > 20 m; Kronenbreite &lt; 10 m\n\n3:Baumhöhe 10-20 m; Kronenbreite > 10 m\n\n4:Baumhöhe 10-20 m; Kronenbreite &lt; 10 m\n\n5:Baumhöhe &lt; 10 m; Kronenbreite &lt; 10 m\n\n6:Obstbäume\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "BAUMTYPTEXT",
+                  "description": "siehe BAUMTYP\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "EXTERN",
+                  "description": "Coded Domain:\n\nE:Baumreihe ausserhalb der Stadtgrenze\n\nkein Eintrag:Baumreihe innerhalb der Stadtgrenze"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "ESRI Geometrietyp Polyline"
+               },
+               {
+                  "name": "LAENGE_M",
+                  "description": "siehe GEOMETRIE.LEN\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "MOTIV1",
+                  "description": "Begründung der Baumreihe. Falls mehr als eine Begründung vorliegt, wurden zusätzlich die Attribute Motiv2 und eventuell Motiv3 verwendet.\n\nCoded Domain:\n\n0:keine Angabe\n\n1:Städtische Hauptverbindung\n\n2:Quartierverbindung\n\n3:Freiraumverbindung\n\n4:Historische/Repräsentative Bedeutung\n\n5:Baumreihen in Wohngebieten mit geringem Baumbestand\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "MOTIV1TEXT",
+                  "description": "siehe MOTIV1\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "MOTIV2",
+                  "description": "siehe MOTIV1\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "MOTIV2TEXT",
+                  "description": "siehe MOTIV2\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "MOTIV3",
+                  "description": "siehe MOTIV1\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "MOTIV3TEXT",
+                  "description": "siehe MOTIV3\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI Identifikationsnummer (Systemvorgabe)"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "Interlis/Geomedia Identifikationsnummer (Systemvorgabe)"
+               },
+               {
+                  "name": "STATUS",
+                  "description": "Planungsstatus der Baumreihen\n\nCoded Domain:\n\n1:Bestehend\n\n2:Geplant\n\n3:Langfristiges Ziel\n\n4:In Grünanlage\n\n5:Beschluss in Vorbereitung\n\n6:Planung in Ablösung\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "STATUSTEXT",
+                  "description": "siehe STATUS\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "SE_ANNO_CAD_DATA",
+                  "description": "Hilfsfeld (Systemvorgabe)"
+               }
+            ]
+         }
+      ]
+   }
+}

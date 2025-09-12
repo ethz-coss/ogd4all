@@ -1,0 +1,76 @@
+{
+   "title": "Bevölkerungsszenarien",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bev_szenarien_od3440",
+   "abstract": "Der Datensatz enthält Bevölkerungsszenarien zur zukünftigen Entwicklung der Wohnbevölkerung der Stadt Zürich. Es wird unterschieden nach drei Szenarien, wobei das mittlere Szenario die wahrscheinlichste Entwicklung abbildet. Der Datensatz enthält die Wohnbevölkerung der Stadt Zürich nach Szenario, Jahr, Alterklasse, Geschlecht, Herkunft sowie nach Stadtquartier.\nDer vorhandene Datensatz wird jährlich mit den neuen Szenariendaten aktualisiert.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Hinweis:\n\nDas Szenarienmodell basiert auf den Trends der Vergangenheit. Der Datensatz enthält sowohl reale Daten zur Vergangenheit als auch Szenariendaten zur Zukunft; zur Unterscheidung der beiden Fälle dient die Variable BasisSzenarienLang.\n\nDie Ergebnisse Szenarienrechnungen sind mit einer gewissen Unsicherheit behaftet und darum auf 10 Personen genau gerundet.\n\nInteraktive Grafiken:\n\nInteraktive Visualisierungen zu den Bevölkerungsszenarien sind auf der Webseite von Statistik Stadt Zürich unter der Rubrik Bevölkerungsszenarien zu finden.\n\nModell-Dokumentation:\n\nDie Modell-Dokumentation finden Sie auf der Webseite von Statistik Stadt Zürich unter der Rubrik Publikationen & Broschüren.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Bevölkerungsszenarien",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Szenario Sortierungscode (technisch: VersionArtSort)",
+                  "description": "Beschreibung des Szenarios (Numerisch); vorkommende Werte: 1, 2, 3"
+               },
+               {
+                  "name": "Szenario Beschreibung (technisch: VersionArtLang)",
+                  "description": "Beschreibung des Szenarios (String); vorkommende Werte: unteres Szenario, mittleres Szenario, oberes Szenario"
+               },
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Numerisch)"
+               },
+               {
+                  "name": "Zeitkategorie Sortierungscode (technisch: BasisSzenarienSort)",
+                  "description": "Beschreibung, ob Jahr in Vergangenheit oder in Zukunft liegt (Numerisch); vorkommende Werte: 1, 2"
+               },
+               {
+                  "name": "Zeitkategorie Beschreibung (technisch: BasisSzenarienLang)",
+                  "description": "Beschreibung, ob Jahr in Vergangenheit oder in Zukunft liegt (String); vorkommende Werte: Vergangenheit, Zukunft"
+               },
+               {
+                  "name": "Altersklasse Sortierungscode (technisch: AlterV10Sort)",
+                  "description": "Beschreibung von 10-Jahres-Klassen für vollendetes Altersjahr (Numerisch); vorkommende Werte: 1 – 11"
+               },
+               {
+                  "name": "Altersklasse Bezeichnung (technisch: AlterV10Lang)",
+                  "description": "Beschreibung von 10-Jahres-Klassen für vollendetes Altersjahr (String); vorkommende Werte; 0 - 9, 10 - 19, 20 - 29, 30 - 39, 40 - 49, 50 - 59, 60 - 69, 70 - 79, 80 - 89, 90 - 99, 100 und älter"
+               },
+               {
+                  "name": "Geschlecht Sortierungscode (technisch: SexSort)",
+                  "description": "Beschreibung des Geschlechts (Numerisch); vorkommende Werte männlich, weiblich"
+               },
+               {
+                  "name": "Geschlecht Bezeichnung (technisch: SexLang)",
+                  "description": "Beschreibung des Geschlechts (String); vorkommende Werte 1, 2"
+               },
+               {
+                  "name": "Herkunft Sortierungscode (technisch: HerkunftSort)",
+                  "description": "Beschreibung der Herkunft (Numerisch); vorkommende Werte: 1, 2"
+               },
+               {
+                  "name": "Herkunft Bezeichnung (technisch: HerkunftLang)",
+                  "description": "Beschreibung der Herkunft (String); vorkommende Werte: Schweiz, Ausland"
+               },
+               {
+                  "name": "Stadtquartier Sortierungscode (technisch: QuarSort)",
+                  "description": "Offizielle ID des Statistischen Stadtquartiers (Numerisch); die 4 Quartiere des Stadtkreises 1 sind zur Einheit 10 zusammengefasst."
+               },
+               {
+                  "name": "Stadtquartier Beschreibung (technisch: QuarLang)",
+                  "description": "Name des Statistischen Stadtquartiers (String), ; die 4 Quartiere des Stadtkreises 1 sind zur Einheit \"Kreis 1\" zusammengefasst."
+               },
+               {
+                  "name": "Anzahl Personen (technisch: AnzBestWir)",
+                  "description": "Anzahl Personen der wirtschaftlichen Wohnbevölkerung der Stadt Zürich (Numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2024-07-10"
+}

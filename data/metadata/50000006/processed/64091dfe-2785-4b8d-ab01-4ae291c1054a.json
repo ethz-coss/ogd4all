@@ -1,0 +1,130 @@
+{
+   "title": "Stadtkreise",
+   "keywords": [
+      "Gebietseinteilungen",
+      "Quartiere",
+      "Stadtkreise"
+   ],
+   "metadata_date": "2024-06-18T13:59:52",
+   "updateFrequency": "fortnightly",
+   "purpose": "Die Stadtkreise dienen den Dienststellen der Stadt Zürich als Grundlage für die verwaltungsinternen Aufgaben.",
+   "abstract": "Stadtkreise",
+   "identificationDate": "2025-03-17",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Geomatik + Vermessung",
+   "contactPerson": "Philipp Christen",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Stadtkreise",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "adm_stadtkreise_a",
+            "description": "Stadtkreise",
+            "attributes": [
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": "Name des Stadtkreises, zwingend + eindeutig"
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": "Fremdschlüssel für Verbindung zur Tabelle StKreiseNachf. Diese Tabelle ist im Geoserver nicht sichtbar"
+               },
+               {
+                  "name": "NAME",
+                  "description": "Kurzbezeichnung des Stadtkreises"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               }
+            ]
+         },
+         {
+            "name": "adm_stadtkreise_beschr_p",
+            "description": "Beschriftungspunkte der Stadtkreise",
+            "attributes": [
+               {
+                  "name": "NAME",
+                  "description": "Kurzbezeichnung des Stadtkreises"
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": "Name des Stadtkreises, zwingend + eindeutig"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "HALI",
+                  "description": "Horizontaler Versatz zum Ursprungspunkt; undefiniert = Center"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ORI",
+                  "description": "Rotation der Beschriftung; undefiniert = 100.0; Masseinheit ist Gon."
+               },
+               {
+                  "name": "VALI",
+                  "description": "Vertikaler Versatz zum Ursprungspunkt; undefiniert = Half"
+               }
+            ]
+         },
+         {
+            "name": "adm_stadtkreise_v",
+            "description": "Stadtkreise.\n\nTemporäres Element. Sicht auf ADM_STADTKREISE_A gemäss SSZ.",
+            "attributes": [
+               {
+                  "name": "KNR",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "KNAME",
+                  "description": null
+               }
+            ]
+         }
+      ]
+   }
+}

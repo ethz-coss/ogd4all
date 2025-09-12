@@ -1,0 +1,56 @@
+{
+   "title": "Privathaushalte nach Haushaltsform und Stadtquartier",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bev_hh_haushaltsform_quartier_seit2013_od3805",
+   "abstract": "Anzahl Privathaushalte sowie die wirtschaftliche Wohnbevölkerung der Stadt Zürich in Privathaushalten nach Haushaltsform, Statistischem Stadtquartier und Jahr.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Haushalt\n\nZu einem Haushalt zählen alle Personen, welche zusammen in der gleichen Wohnung leben. Dazu wird für Personen der wirtschaftliche Wohnsitzbegriff verwendet. Kollektivhaushalte (Heime, Spitäler, Institutionen des Strafvollzugs, Gemeinschaftsunterkünfte für Asylsuchende u.ä.) werden nicht berücksichtigt.\n\nHaushaltsformen\n\nEs werden folgende Haushaltsformen unterschieden:\n\nEinpersonenhaushalt: eine Einzelperson\n\nZweipersonenhaushalt: Zwei Einzelpersonen ohne registrierte Familienbeziehung. Dies umfasst Zweier-Wohngemeinschaften wie auch Konsensualpaare, aber keine Ehepaare.\n\nEhepaar ohne Kinder. Ehepaar ohne Kinder.\n\nEingetragenes Paar ohne Kinder. Eingetragenes Paar ohne Kinder.\n\nEin-Elternhaushalt: Alleinerziehender Elternteil mit volljährigen oder minderjährigen Kind(ern) im gleichen Haushalt.\n\nEhepaar mit Kind(ern): Ehepaar mit volljährigen oder minderjährigen Kind(ern) im Haushalt.\n\nEingetragenes Paar mit Kind(ern). Eingetragenes Paar mit volljährigen oder minderjährigen Kind(ern) im Haushalt.\n\nPaar mit Kind(ern): Zwei (unverheiratete) Einzelpersonen mit mindestens einem anerkannten Kind im gleichen Haushalt.\n\nPatchwork-Haushalt: Alleinerziehender Elternteil mit Kind(ern) plus eine Einzelperson (unabhängig von Geschlecht und Alter) oder plus eine weitere alleinerziehende Person mit Kind(ern) im gleichen Haushalt. Die zusätzliche Person hat keine registrierte Familienbindung zum alleinerziehenden Elternteil. Sind nur volljährige Kinder mit im Haushalt, wird dieser den Wohngemeinschaften zugeteilt. Auch Alleinerziehende, die mit Verwandten (Tanten, Schwestern, Brüdern) oder einer/einem Bekannten leben, fallen somit unter den Begriff «Patchwork-Haushalt», im Gegensatz zur im Alltag gebräuchlichen Bedeutung.\n\nWohngemeinschaft ohne Kinder: Haushalt mit mehreren Familienkernen (oder Einzelpersonen; mindestens drei Personen) ohne registrierte Bindung untereinander.\n\nWohngemeinschaft mit Kind(ern): Haushalt mit mindestens einer Familie mit Kind(ern) plus weitere Einzelpersonen ohne registrierte Bindung untereinander, und/oder plus weitere Familien (mindestens drei Personen). Diese Haushaltsform beinhaltet auch Konstellationen, in denen Familien mit Kindern zusammen mit Hausangestellten oder Au-pairs in einer Wohnung leben.\n\nGenerationenhaushalt: Mindestens drei Generationen umfassender Haushalt.\n\nFamilien-Verbund: Seltene Haushalte mit komplexen Familienverbindungen.\n\nDatenqualität\n\nAb den Jahresdaten für 2024 wird eine neue Auswertungsregel für Haushalte angewendet. Dadurch ändern sich Daten für die gesamte publizierte Zeitreihe.\n\nHaushaltetool\n\nMit dieser interaktiven Anwendung können verschiedene Haushaltsformen zusammengestellt und deren Verteilungen in der Stadt Zürich.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Privathaushalte nach Haushaltsform und Stadtquartier",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahresendbestand (Numerisch)"
+               },
+               {
+                  "name": "Stadtquartier Sortiercode (technisch: QuarSort)",
+                  "description": "Offizielle ID des Statistischen Stadtquartiers (Numerisch)"
+               },
+               {
+                  "name": "Stadtquartier Beschreibung (technisch: QuarLang)",
+                  "description": "Name des Statistischen Stadtquartiers (String)"
+               },
+               {
+                  "name": "Stadtkreis Sortiercode (technisch: KreisSort)",
+                  "description": "ID- und Sortiervariable für den Stadtkreis an der aktuellen Wohnadresse (Numerisch)"
+               },
+               {
+                  "name": "Stadtkreis Beschreibung (technisch: KreisLang)",
+                  "description": "Stadtkreisname der aktuellen Wohnadresse (String)"
+               },
+               {
+                  "name": "Haushaltsform Sortiercode (technisch: HHtypSort)",
+                  "description": "Haushaltsform Sortiercode (Numerisch)"
+               },
+               {
+                  "name": "Haushaltsform Beschreibung (technisch: HHtypLang)",
+                  "description": "Haushaltsform Beschreibung (String)"
+               },
+               {
+                  "name": "Anzahl Privathaushalte (technisch: AnzHH)",
+                  "description": "Anzahl Privathaushalte (Numerisch)"
+               },
+               {
+                  "name": "Wirtschaftliche Wohnbevölkerung (technisch: AnzBestWir)",
+                  "description": "Wirtschaftliche Wohnbevölkerung in Privathaushalten (Numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-03-05"
+}

@@ -1,0 +1,89 @@
+{
+   "title": "Denkmalpflegezuständigkeit",
+   "keywords": [
+      "Denkmalpflege",
+      "Denkmalschutzobjekte",
+      "Inventar",
+      "Zuständigkeit",
+      "Kanton Zürich",
+      "Amt für Städtebau"
+   ],
+   "metadata_date": "2023-11-02T14:01:23",
+   "updateFrequency": "weekly",
+   "purpose": "Der Datensatz bildet die Grundlage für eine Suchfunktion auf der Interseite des Amts für Städtebau. Sie ermöglicht es, über die Eingabe der Adresse die Zuständigkeit (Stadt oder Kanton) zu ermitteln und im Fall der Stadt Zürich direkt die entsprechende Ansprechperson zu finden. Die Suchfunktion ist ein Arbeitsinstrument für die Öffentlichkeit, für den Bereich Denkmalpflege des Amts für Städtebau, sowie für die Abteilung Denkmalpflege des Kantons Zürich.",
+   "abstract": "Die Zuständigkeit für Denkmalpflegeobjekte in der Stadt Zürich ist aufgeteilt zwischen dem Amt für Städtebau Zürich und dem Kanton Zürich. Dieser Datensatz zeigt die Zuständigkeitsgebiete in der Stadt Zürich, welche im Wesentlichen den statistischen Quartieren folgen, mit Ausnahme der kantonalen Objekte. Der Datensatz enthält Angaben zu den zuständigen Ansprechpersonen der Bauberatung sowie der Inventarisation der Denkmalpflege des Amtes für Städtebau (Name, Telefonnummer, Email, Präsenzzeiten) sowie Angaben zur Abteilung Denkmalpflege des Kantons Zürich.",
+   "identificationDate": "2025-03-14",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Hochbaudepartement - Amt für Städtebau",
+   "contactPerson": "Claudia Hofstetter",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Denkmalpflegezustaendigkeit",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "DENKMALPFLEGE_ADM_EINTEILUNG_A",
+            "description": "Die Denkmalpflegezuständigkeit in der Stadt Zürich ist aufgeteilt zwischen dem Amt für Städtebau Zürich und dem Kanton Zürich. Dieser Datensatz zeigt die Denkmalpflegezuständigkeit pro statistischem Quartier. Der Datensatz enthält Angaben (Name, Telefonnummer, Email, Anwesenheit) zu den zuständigen Projektleitenden des Amtes für Städtebau sowie Angaben zur Abteilung Denkmalpflege des Kantons Zürich.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "Telefon_Bauberatung",
+                  "description": "Telefonnummer des für das Gebiet zuständigen Denkmalpflegers Bauberatung."
+               },
+               {
+                  "name": "Mail_Bauberatung",
+                  "description": "E-Mail-Adresse des für das Gebiet zuständigen Denkmalpflegers Bauberatung."
+               },
+               {
+                  "name": "Anwesenheit_Bauberatung",
+                  "description": "Arbeitstage des für das Gebiet zuständigen Denkmalpflegers Bauberatung."
+               },
+               {
+                  "name": "Name_Inventarisation",
+                  "description": "Name des für das Gebiet zuständigen Denkmalpflegers Inventarisation gemäss Schema \"Vorname Nachname\"."
+               },
+               {
+                  "name": "Webseite_Kanton_Zürich",
+                  "description": "URL auf die Webseite der Denkmalpflege des Kanton Zürich"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Flächengeometrie"
+               },
+               {
+                  "name": "Name_Bauberatung",
+                  "description": "Name des für das Gebiet zuständigen Denkmalpflegers Bauberatung gemäss Schema \"Vorname Nachname\"."
+               },
+               {
+                  "name": "Telefon_Inventarisation",
+                  "description": "Name des für das Gebiet zuständigen Denkmalpflegers Inventarisation gemäss Schema \"Vorname Nachname\"."
+               },
+               {
+                  "name": "Mail_Inventarisation",
+                  "description": "E-Mail-Adresse des für das Gebiet zuständigen Denkmalpflegers Inventarisation."
+               },
+               {
+                  "name": "Anwesenheit_Inventarisation",
+                  "description": "Arbeitstage des für das Gebiet zuständigen Denkmalpflegers Inventarisation."
+               }
+            ]
+         }
+      ]
+   }
+}

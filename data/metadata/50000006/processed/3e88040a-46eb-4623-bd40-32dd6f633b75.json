@@ -1,0 +1,103 @@
+{
+   "title": "Stimmkreise",
+   "keywords": [
+      "Wahlkreise",
+      "Stimmkreise",
+      "Zählkreise"
+   ],
+   "metadata_date": "2024-06-18T14:00:08",
+   "updateFrequency": "fortnightly",
+   "purpose": "Stadtinterne Verwendung",
+   "abstract": "Stimmkreise der Stadt Zürich.",
+   "identificationDate": "2025-03-17",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Geomatik + Vermessung",
+   "contactPerson": "Philipp Christen",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Stimmkreise",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "ADM_ZAEHLKREISE_A",
+            "description": "Zählkreise (8). Die 8 Zählkreise bilden eine Obermenge der 12 Stadtkreise",
+            "attributes": [
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": "Fremdschlüssel für Verbindung zur Tabelle ZaeKreiseNachf. Diese Tabelle ist im Geoserver nicht sichtbar"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "KUERZEL",
+                  "description": "Kürzel des/der Stadtkreises/Stadtkreise"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": "Name des/der Stadtkreises/Stadtkreise, zwingend + eindeutig"
+               }
+            ]
+         },
+         {
+            "name": "ADM_ZAEHLKREISE_BESCHR_P",
+            "description": "Beschriftungspunkte der Zählkreise",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": "Name des/der Stadtkreises/Stadtkreise, zwingend + eindeutig"
+               },
+               {
+                  "name": "HALI",
+                  "description": "Horizontaler Versatz zum Ursprungspunkt; undefiniert = Center"
+               },
+               {
+                  "name": "KUERZEL",
+                  "description": "Kürzel des/der Stadtkreises/Stadtkreise"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ORI",
+                  "description": "Rotation der Beschriftung; undefiniert = 100.0; Masseinheit ist Gon."
+               },
+               {
+                  "name": "VALI",
+                  "description": "Vertikaler Versatz zum Ursprungspunkt; undefiniert = Half"
+               }
+            ]
+         }
+      ]
+   }
+}

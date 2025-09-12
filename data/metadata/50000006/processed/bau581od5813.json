@@ -1,0 +1,160 @@
+{
+   "title": "Gebäudebestand nach Gebäudeart, Bauperiode und Stadtquartier",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bau_best_geb_jahr_gebart_bauperiode_quartier_od5813",
+   "abstract": "Diese Daten umfassen den Gebäudebestand (Anzahl Gebäude, Rauminhalt und Gebäudegrundfläche) der Stadt Zürich nach Gebäudeart, Bauperiode und Stadtquartier.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Stand und Nachführung:\n\nDas Gebäude- und Wohnungsregister der Stadt Zürich wird ständig nachgeführt. Seit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.\n\nVariablen mit mehreren Varianten\n\nGewisse Variablen werden in verschiedenen Formen aufgeführt. Die \"Lang\"-Variante beschreibt den Inhalt (z.B. StatZoneLang beschreibt die statistische Zone, mögliche Werte sind Central oder Oberdorf). Die \"Cd\"-Variante kodiert die Variable alphanumerisch, quasi als Kurzform (Central und Oberdorf sind 1104 und 1201). Die \"Sort\"-Variante kodiert die Variable numerisch (Central und Oberdorf sind 5 und 4) und erlaubt eine Sortierung. \"Cd\" und \"Sort\" können auch identisch sein.\n\nGebäude\n\nGebäude sind auf Dauer angelegte, mit dem Boden fest verbundene Bauten. Ein Gebäude gilt als selbständig, wenn es einen eigenen Zugang von aussen hat und wenn zwischen den Gebäuden eine senkrechte vom Erdgeschoss bis zum Dach reichende tragende Trennmauer besteht. Zusammengebaute Gebäude werden nach dem so genannten Trennmauerkriterium unterteilt. Das Trennmauerkriterium gewährleistet eine einheitliche Differenzierung der Gebäude nach ausschliesslich baulichen Kriterien.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Gebäudebestand nach Gebäudeart, Bauperiode und Stadtquartier",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Numerisch)"
+               },
+               {
+                  "name": "Datenstand (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (P = provisorisch, D = definitiv)"
+               },
+               {
+                  "name": "Stadtquartier Sortiercode (technisch: QuarSort)",
+                  "description": "Stadtquartier (Numerisch)"
+               },
+               {
+                  "name": "Stadtquartier Code (technisch: QuarCd)",
+                  "description": "Stadtquartier Code (String)"
+               },
+               {
+                  "name": "Stadtquartier Beschreibung (technisch: QuarLang)",
+                  "description": "Stadtquartier (String)"
+               },
+               {
+                  "name": "Stadtkreis Sortiercode (technisch: KreisSort)",
+                  "description": "Stadtkreis (Numerisch)"
+               },
+               {
+                  "name": "Stadtkreis Code (technisch: KreisCd)",
+                  "description": "Stadtkreis (String)"
+               },
+               {
+                  "name": "Stadtkreis Beschreibung (technisch: KreisLang)",
+                  "description": "Stadtkreis (String)"
+               },
+               {
+                  "name": "Gebäudeart Sortiercode Stufe 1 (technisch: GbdArtLevel1Sort)",
+                  "description": "Gebäudeart (Numerisch)"
+               },
+               {
+                  "name": "Gebäudeart Code Stufe 1 (technisch: GbdArtLevel1Cd)",
+                  "description": "Gebäudeart (String)"
+               },
+               {
+                  "name": "Gebäudeart Beschreibung Stufe 1 (technisch: GbdArtLevel1Lang)",
+                  "description": "Gebäudeart (String)"
+               },
+               {
+                  "name": "Gebäudeart Sortiercode Stufe 2 (technisch: GbdArtLevel2Sort)",
+                  "description": "Gebäudeart (Numerisch)"
+               },
+               {
+                  "name": "Gebäudeart Code Stufe 2 (technisch: GbdArtLevel2Cd)",
+                  "description": "Gebäudeart (String)"
+               },
+               {
+                  "name": "Gebäudeart Beschreibung Stufe 2 (technisch: GbdArtLevel2Lang)",
+                  "description": "Gebäudeart (String)"
+               },
+               {
+                  "name": "Gebäudeart Sortiercode Stufe 3 (technisch: GbdArtLevel3Sort)",
+                  "description": "Gebäudeart (Numerisch)"
+               },
+               {
+                  "name": "Gebäudeart Code Stufe 3 (technisch: GbdArtLevel3Cd)",
+                  "description": "Gebäudeart (String)"
+               },
+               {
+                  "name": "Gebäudeart Beschreibung Stufe 3 (technisch: GbdArtLevel3Lang)",
+                  "description": "Gebäudeart (String)"
+               },
+               {
+                  "name": "Gebäudeart Sortiercode Stufe 4 (technisch: GbdArtLevel4Sort)",
+                  "description": "Gebäudeart (Numerisch)"
+               },
+               {
+                  "name": "Gebäudeart Code Stufe 4 (technisch: GbdArtLevel4Cd)",
+                  "description": "Gebäudeart (String)"
+               },
+               {
+                  "name": "Gebäudeart Beschreibung Stufe 4 (technisch: GbdArtLevel4Lang)",
+                  "description": "Gebäudeart (String)"
+               },
+               {
+                  "name": "Gebäudeart für SSZ-Publikationen Variante 1 Sortiercode (technisch: GbdArtSSZPubl1Sort)",
+                  "description": "Gebäudeart (Numerisch)"
+               },
+               {
+                  "name": "Gebäudeart für SSZ-Publikationen Variante 1 Code (technisch: GbdArtSSZPubl1Cd)",
+                  "description": "Gebäudeart (String)"
+               },
+               {
+                  "name": "Gebäudeart für SSZ-Publikationen Variante 1 Beschreibung (technisch: GbdArtSSZPubl1Lang)",
+                  "description": "Gebäudeart (String)"
+               },
+               {
+                  "name": "Gebäudeart für SSZ-Publikationen Variante 2 Sortiercode (technisch: GbdArtSSZPubl2Sort)",
+                  "description": "Gebäudeart (Numerisch)"
+               },
+               {
+                  "name": "Gebäudeart für SSZ-Publikationen Variante 2 Code (technisch: GbdArtSSZPubl2Cd)",
+                  "description": "Gebäudeart (String)"
+               },
+               {
+                  "name": "Gebäudeart für SSZ-Publikationen Variante 2 Beschreibung (technisch: GbdArtSSZPubl2Lang)",
+                  "description": "Gebäudeart (String)"
+               },
+               {
+                  "name": "Gebäudeart für SSZ-Publikationen Variante 3 Sortiercode (technisch: GbdArtSSZPubl3Sort)",
+                  "description": "Gebäudeart (Numerisch)"
+               },
+               {
+                  "name": "Gebäudeart für SSZ-Publikationen Variante 3 Code (technisch: GbdArtSSZPubl3Cd)",
+                  "description": "Gebäudeart (String)"
+               },
+               {
+                  "name": "Gebäudeart für SSZ-Publikationen Variante 3 Beschreibung (technisch: GbdArtSSZPubl3Lang)",
+                  "description": "Gebäudeart (String)"
+               },
+               {
+                  "name": "Bauperiode Code (technisch: BauperiodeLevel1Cd)",
+                  "description": "Bauperiode Gebäude (Numerisch)"
+               },
+               {
+                  "name": "Bauperiode Beschreibung (technisch: BauperiodeLevel1Lang)",
+                  "description": "Bauperiode Gebäude (String)"
+               },
+               {
+                  "name": "Bauperiode Sortiercode (technisch: BauperiodeLevel1Sort)",
+                  "description": "Bauperiode Gebäude (String)"
+               },
+               {
+                  "name": "Anzahl Gebäude (technisch: AnzGbd)",
+                  "description": "Anzahl Gebäude (Numerisch)"
+               },
+               {
+                  "name": "Rauminhalt (technisch: GbdRauminhalt)",
+                  "description": "Rauminhalt / Gebäudevolumen in Kubikmeter (Numerisch)"
+               },
+               {
+                  "name": "Gebäude-Grundfläche (technisch: GbdFlaecheAufN)",
+                  "description": "Umriss der Gebäude im Erdgeschoss in Quadratmeter gemäss amtlicher Vermessung (Gebäude-Fussabdruck)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-01-20"
+}

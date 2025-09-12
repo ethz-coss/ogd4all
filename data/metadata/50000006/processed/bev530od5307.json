@@ -1,0 +1,84 @@
+{
+   "title": "Migrationsstatus der Wohnbevölkerung",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bfs_bev_migrationsstatus_alter_quartier_seit2010_od5307",
+   "abstract": "Diese Daten beschreiben den Migrationsstatus der Wohnbevölkerung der Stadt Zürich nach Alter und Stadtquartier. Sie basieren nicht auf dem Bevölkerungsregister der Stadt Zürich, sondern aus den Zielpersonendaten der Strukturerhebung des Bundesamtes für Statistik.\nIn der Rubrik Bemerkungen finden Sie weitere Angaben, die bei der Datenauswertung beachtet werden müssen, weil es sich um Stichprobedaten handelt.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Datenquelle:\n\nDie Auswertung basiert auf den Zielpersonendaten der Strukturerhebung des Bundesamtes für Statistik. Dort sind nur Daten zu den 15-Jährigen und Älteren vorhanden\n\nStichprobe:\n\nWeil die Auswertungen auf Stichprobendaten beruhen, werden die Ergebnisse gerundet und Konfidenzintervalle angegeben..\n\n95 % Konfidenzintervalle:\n\nDie Unsicherheiten der Auswertungen werden mit Konfidenzintervallen abgeschätzt. Das 95 % Konfidenzintervall bezeichnet den Bereich, der bei unendlicher Wiederholung eines Zufallsexperiments mit einer Wahrscheinlichkeit von 95 Prozent den wahren Wert der Grundgesamtheit einschliesst. Das Konfidenzintervall wird auch als Vertrauensintervall oder Erwartungsbereich bezeichnet.\n\nPooling:\n\nStichprobendaten einzelner Jahre werden zu einem Datensatz vereinigt (englisch: pooled). Dadurch erhöht sich die Stichprobengrösse; als Bezugsperiode gilt jedoch nicht mehr das einzelne Jahr, sondern der gesamte Zeitraum der zusammengefassten Daten. Hier wurden bei der Auswertung nach Quartier Pooling-Daten verwendet (Pooling über fünf Jahre). Die Pooling-Zeitperiode wird mit einem Vorwärts-Schrägstrich gekennzeichnet.\n\nMigrationshintergrund:\n\nDefinition des Bundesamtes für Statistik: Zur «Bevölkerung mit Migrationshintergrund» gehören Personen ausländischer Staatsangehörigkeit und eingebürgerte Schweizer*innen – mit Ausnahme der in der Schweiz Geborenen mit Eltern, die beide in der Schweiz geboren wurden – sowie die gebürtigen Schweizerinnen und Schweizer mit Eltern, die beide im Ausland geboren wurden.\n\nErste und zweite Generation:\n\nDas Bundesamt für Statistik (BFS) unterscheidet bei Personen mit Migrationshintergrund nach erster und zweiter Generation. Gemäss BFS-Definition wurden diejenigen der ersten Generation im Ausland, die der zweiten Generation in der Schweiz geboren.\n\nFiltervariablen:\n\nAls Filtervariablen werden Thema (oder ThemaNr) sowie Auswertung (oder AuswertungNr) verwendet.\n\nAuswertungsbeispiel 1: Migrationshintergrund\n\nFragestellung: Wieviele Personen in der Stadt Zürich haben Migrationshintergrund? Filter: ThemaNr=1 und AuswertungNr=1 und HerkunftNr=0.\n\nAuswertungsbeispiel 2: Im Ausland geboren\n\nFragestellung: Wieviele Prozent wurden im Ausland geboren? Filter: ThemaNr=3 und AuswertungNr=1 und HerkunftNr=0.\n\nAuswertungsbeispiel 3: Im Ausland geboren, nach Alter\n\nFragestellung: Wieviel Prozent der 0- bis 19-Jährigen wurden im Ausland geboren? Filter: ThemaNr=3 und AuswertungNr=2 und HerkunftNr=0 und AlterNr=1.\n\nAuswertungsbeispiel 4: Im Ausland geboren, nach Quartier (Pooling über die letzten 5 Jahre)\n\nFragestellung: Wieviel Prozent der Wohnbevölkerung von Oerlikon wurden im Ausland geboren? Filter: ThemaNr=3 und AuswertungNr=3 und HerkunftNr=0 und QuartierNr=115.\n\nAuswertungsbeispiel 5: Im Ausland geborene Schweizer*innen, nach Quartier (Pooling über die letzten 5 Jahre)\n\nFragestellung: Wieviel Prozent der Schweizer*innen in Oerlikon wurden im Ausland geboren? Filter: ThemaNr=3 und AuswertungNr=3 und HerkunftNr=1 und QuartierNr=115.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Migrationsstatus der Wohnbevölkerung",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Thema des Migrationshintergrund (technisch: ThemaNrMigration)",
+                  "description": "Thema des Migrationshintergrund (Numeric)"
+               },
+               {
+                  "name": "Thema des Migrationshintergrund (technisch: ThemaMigration)",
+                  "description": "Thema des Migrationshintergrund (String)"
+               },
+               {
+                  "name": "Auswertungsnummer (technisch: AuswertungNrMigration)",
+                  "description": "Auswertungsnummer (Numeric)"
+               },
+               {
+                  "name": "Auswertungsname (technisch: AuswertungMigration)",
+                  "description": "Auswertungsname (String)"
+               },
+               {
+                  "name": "Zeitbezug (technisch: Zeitbezug)",
+                  "description": "Zeitspanne (String)"
+               },
+               {
+                  "name": "Herkunft (Code) (technisch: HerkunftCd)",
+                  "description": "Herkunft (String)"
+               },
+               {
+                  "name": "Herkunft (technisch: Herkunft)",
+                  "description": "Herkunft (String)"
+               },
+               {
+                  "name": "Jahr (technisch: Jahr)",
+                  "description": "Jahr (Numeric)"
+               },
+               {
+                  "name": "Vollendetes Alter in 10-Jahresklassen, Spezialaggregation (Code) (technisch: AlterV10_15ueber75Cd_noDM)",
+                  "description": "Vollendetes Alter in 20-Jahresklassen, Spezialaggregation (String)"
+               },
+               {
+                  "name": "Vollendetes Alter in 10-Jahresklassen, Spezialaggregation (Lang) (technisch: AlterV10_15ueber75Lang_noDM)",
+                  "description": "Vollendetes Alter in 20-Jahresklassen, Spezialaggregation (String)"
+               },
+               {
+                  "name": "Stadtquartier (Code) (technisch: QuarCd)",
+                  "description": "Stadtquartier (String)"
+               },
+               {
+                  "name": "Stadtquartier (Lang) (technisch: QuarLang)",
+                  "description": "Stadtquartier (String)"
+               },
+               {
+                  "name": "Herkunft der Eltern (Code) (technisch: ElternHerkunftCd)",
+                  "description": "Herkunft der Eltern (Numeric)"
+               },
+               {
+                  "name": "Herkunft der Eltern (Lang) (technisch: ElternHerkunftLang)",
+                  "description": "Herkunft der Eltern (String)"
+               },
+               {
+                  "name": "Anteil in Prozent (technisch: Anteil)",
+                  "description": "Anteil in Prozent (Numeric)"
+               },
+               {
+                  "name": "95 % Konfidenzintervall (technisch: Konfidenzintervall)",
+                  "description": "95 % Konfidenzintervall (String)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-03-11"
+}

@@ -1,0 +1,105 @@
+{
+   "title": "Einsatz von Erdwärmesonden",
+   "keywords": [
+      "Erdwärme",
+      "untiefe Geothermie",
+      "Gewässerschutz",
+      "Archäologie",
+      "Gartendenkmalschutz",
+      "Baumschutz",
+      "Naturschutz",
+      "unterirdische Infrastrukturen",
+      "Leitungen",
+      "Tunnels"
+   ],
+   "metadata_date": "2023-08-30T06:33:57",
+   "updateFrequency": "asNeeded",
+   "purpose": "Dort wo Erdwärmesonden nur mit Auflagen realisierbar oder verboten sind, dient dieser Geodatensatz dazu, nachzuvollziehen, woraus diese Beschränkung resultiert.",
+   "abstract": "Der Geodatensatz zeigt auf, wo innerhalb des Siedlungsgebiets Erdwärmesonden erlaubt, mit Auflagen realisierbar oder verboten sind.",
+   "identificationDate": "2016-12-20",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Departement der Industriellen Betriebe - Departementssekretariat DIB",
+   "contactPerson": "Louis Frei",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "Einsatz_Erdwaermesonden",
+            "description": "Beschlussorgan: Stadtrat\n\nBeschlussdatum: 21.12.2016",
+            "attributes": [
+               {
+                  "name": "SHAPE_Area",
+                  "description": "Fläche der Polygone"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               },
+               {
+                  "name": "SHAPE_Length",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               },
+               {
+                  "name": "ZONEN_WAERMENUTZUNGSATLAS",
+                  "description": "Zonen\n\nWertebereich: A, B, C, C_Sperr, D, E, F"
+               },
+               {
+                  "name": "ANGEBOTSZONE_EK2050",
+                  "description": "Angebotszone gemäss Konzept Energieversorgung 2050"
+               },
+               {
+                  "name": "ARCHAEOLOGIE",
+                  "description": "Wird die Hektare von einer archäologischen Verdachtsfläche tangiert? (Wertebereich: 0=nein, 1=ja)"
+               },
+               {
+                  "name": "NUMMER_OBJEKT_GARTENDENKMALPFLEGE",
+                  "description": "Wird die Hektare von einem Objekt aus dem Inventar der schützenswerten Gärten und Anlagen von kommunaler Bedeutung der Stadt Zürich tangiert? (Wertebereich leer=nein, Objektnummer=ja)"
+               },
+               {
+                  "name": "BAUMSCHUTZ",
+                  "description": "Wird die Hektare von einem Baumschutzgebiet tangiert? (Wertebereich: 0=nein, 1=ja)"
+               },
+               {
+                  "name": "NUMMER_KANTONALES_NATURSCHUTZOBJEKT",
+                  "description": "Wird die Hektare von einem kantonalen Naturschutzobjekt tangiert? (Wertebereich leer=nein, Objektnummer=ja)"
+               },
+               {
+                  "name": "BEZEICHNUNG_NATURSCHUTZOBJEKT",
+                  "description": "Bezeichnung des kantonalen Naturschutzobjekts"
+               },
+               {
+                  "name": "SCHUTZSTATUS_NATURSCHUTZOBJEKT",
+                  "description": "Schutzstatus des kantonalen Naturschutzobjekts\n\nWertebereich: Objekt im Inventar, Objekt unter Schutz"
+               },
+               {
+                  "name": "UNTERIRDISCHE_INFRASTRUKTUREN",
+                  "description": "Wird die Hektare von einer unterirdischen Infrastrukturanlage tangiert (bestehende und geplante Tunnels und Leitungen gemäss regionalem und kantonalem Richtplan) \n\nWertebereich: 0=nein, 1=ja"
+               },
+               {
+                  "name": "ZONEN_HOMOGENE_NACHFRAGECHARAKTERISTIK",
+                  "description": "Die genaue Bedeutung dieses Attributs muss noch abgeklärt werden. Es steht in Zusammenhang mit den Zonen mit homogener Nachfragecharakteristik gemäss Konzept Energieversorgung 2050 \n\nWertebereich: 0=nein, 1=ja"
+               },
+               {
+                  "name": "SPEZIALFAELE",
+                  "description": "Spezialfälle hydrogeologischer Art bei Einschränkungen für Erdwärmesonden aus Gründen des Grundwasserschutzes \n\nWertebereich: Arteser, Arteser im Lockergesteinsgrundwasser, Erdwärmesonden aus speziellen hydrogeologischen Gründen nicht zulässig"
+               },
+               {
+                  "name": "ZULAESSIGKEIT_ERDWAERMESONDEN",
+                  "description": "Fazit der räumlichen Analyse über die Zulässigkeit von Erdwärmesonden\n\nWertebereich: Auflagen EWS = Einsatz von Erdwärmesonden aufgrund des Grundwasserschutzes nur mit Auflagen zulässig, Auflagen nicht GWS = Einsatz von Erdwärmesonden aus anderen Gründen nur mit Auflagen zulässig, EWS zulaessig = Einsatz von Erdwärmesonden grundsätzlich zulässig, VERBOTEN = Einsatz von Erdwärmesonden verboten unterirdische Infrastruktur = Unterirdische Infrastrukturen, Einsatz von Erdwärmesonden erfordert Sicherheitsabstand"
+               }
+            ]
+         }
+      ]
+   }
+}

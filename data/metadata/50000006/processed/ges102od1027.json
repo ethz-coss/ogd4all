@@ -1,0 +1,60 @@
+{
+   "title": "Ausrückzeiten der Feuerwehr",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/sid_srz_od1027_feuerwehr_ausrueckzeit_jahr_stadtkreis",
+   "abstract": "Ausrückzeiten der Feuerwehr nach Stadtkreis und Jahr. Dieser Datensatz gibt Auskunft über die Ausrückzeiten der Feuerwehr in der Stadt Zürich nach Stadtkreis. Die Ausrückzeit sagt etwas darüber aus, wie viel Zeit von der Disposition der geeigneten Einsatzkräfte durch die Einsatzleitzentrale 118 bis zu ihrem Eintreffen am Notfallort verstreicht. Betrachtet werden nur die dringlichen Einsätze, bei denen die Fahrzeuge mit Blaulicht und Wechselklanghorn ausrücken. Gemäss Vorgabe der Gebäudeversicherung des Kantons Zürich (gemäss Richtlinien 2015 der Feuerwehr Koordination Schweiz - FKS) muss die Ausrückzeit der Einsätze unter 10 Minuten liegen. Der Datensatz umfasst Aussagen zur Ausrückzeit aller auf Stadtgebiet geleisteten Einsätze. Häufig werden bei Feuerwehreinsätzen mehrere Fahrzeuge aufgeboten. Gemessen wird die Zeit bis zum Eintreffen des ersten geeigneten Fahrzeugs.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Ausrückzeit\n\nAusrückzeit: Die Ausrückzeit bezeichnet die Zeit vom Eintreffen des Alarms bei den Rettungskräften (Aufgebot durch die Einsatzleitzentrale durch Pageralarm/Lautsprecherdurchsage) von Miliz- und Berufsfeuerwehr bis zum Eintreffen am Einsatzort in Minuten. Berücksichtigt sind nur die zeitkritischen Einsätze auf Stadtgebiet, unabhängig von der ausführenden Organisation.\n\nDaten\n\nDaten: Im Jahr 2016 sind keine Daten der Einsatzzahlen nach Ausrückzeit (bis 10 Minuten, mehr als 10 Minuten) und nach Stadtkreis verfügbar.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Ausrückzeiten der Feuerwehr",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: Jahr)",
+                  "description": "Jahr des Einsatzes (Numeric)"
+               },
+               {
+                  "name": "Stadtkreis (technisch: StadtkreisSort)",
+                  "description": "Stadtkreis (Numeric)"
+               },
+               {
+                  "name": "Stadtkreis (technisch: Stadtkreis)",
+                  "description": "Stadtkreis (String)"
+               },
+               {
+                  "name": "Anzahl_Einsaetze_bis_10min (technisch: Anzahl_Einsaetze_bis_10min)",
+                  "description": "Anzahl Einsätze mit Ausrückzeit von höchstens 10 Minuten (Numeric)"
+               },
+               {
+                  "name": "Anzahl_Einsaetze_groesser_10min (technisch: Anzahl_Einsaetze_groesser_10min)",
+                  "description": "Anzahl Einsätze mit Ausrückzeit von mehr als 10 Minuten (Numeric)"
+               },
+               {
+                  "name": "Prozent_Einsaetze_bis_10min (technisch: Prozent_Einsaetze_bis_10min)",
+                  "description": "Prozentualer Anteil der Einsätze mit Ausrückzeit von höchstens 10 Minuten (Numeric)"
+               },
+               {
+                  "name": "Prozent_Einsaetze_groesser_10min (technisch: Prozent_Einsaetze_groesser_10min)",
+                  "description": "Prozentualer Anteil der Einsätze mit Ausrückzeit von mehr als 10 Minuten (Numeric)"
+               },
+               {
+                  "name": "Ausrueckzeit_Mittelwert (technisch: Ausrueckzeit_Mittelwert)",
+                  "description": "Ausrückzeit, artithmetischer Mittelwert der Zeit ab Disposition der Feuerwehr bis Eintreffen am Einsatzort (Stunden:Minuten:Sekunden; Numeric)"
+               },
+               {
+                  "name": "Ausrueckzeit_Median (technisch: Ausrueckzeit_Median)",
+                  "description": "Ausrückzeit, Median der Zeit ab Disposition der Feuerwehr bis Eintreffen am Einsatzort (Stunden:Minuten:Sekunden; Numeric), 50 Prozent der Ausrückzeiten sind kleiner, und 50 Prozent sind grösser als der Median."
+               },
+               {
+                  "name": "Ausrueckzeit_Q80 (technisch: Ausrueckzeit_Q80)",
+                  "description": "Ausrückzeit, 80 Prozent Quantil der Zeit ab Disposition der Feuerwehr bis Eintreffen am Einsatzort (Stunden:Minuten:Sekunden; Numeric), 80 Prozent der Ausrückzeiten sind kleiner, und 20 Prozent sind grösser als das 80 Prozent Quantil."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-04-01"
+}

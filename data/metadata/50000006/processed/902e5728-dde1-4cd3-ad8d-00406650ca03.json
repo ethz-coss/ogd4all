@@ -1,0 +1,56 @@
+{
+   "title": "Einsatz Luft-Wasser-Wärmepumpen",
+   "keywords": [
+      "Umgebungswärme",
+      "Energieplanung"
+   ],
+   "metadata_date": "2021-03-04T11:08:32",
+   "updateFrequency": "asNeeded",
+   "purpose": "Das Heizen und Kühlen mit Aussenluft ist grundsätzlich in der ganzen Stadt Zürich möglich. Wo Erdwärmesonden zulässig sind, kann Energie aus Aussenluft zur thermischen Regeneration von Erdwärmesonden genutzt werden.",
+   "abstract": "Der Geodatensatz zeigt auf, wo Erdwärmesonden mittels Luftwärmetauschern in der Stadt Zürich regeneriert werden können.",
+   "identificationDate": "2016-12-21",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Departement der Industriellen Betriebe - Departementssekretariat DIB",
+   "contactPerson": "Louis Frei",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Einsatz_Luft_Wasser_Waermepumpen",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "Einsatz_Luft_Wasserwaermepumpen",
+            "description": "Beschlussorgan: Stadtrat\n\nBeschlussdatum: 21.12.2016",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               },
+               {
+                  "name": "ZONEN_WAERMENUTZUNGSATLAS",
+                  "description": "Zone gemäss kantonalem Wärmenutzungsatlas\n\n(Wertebereich: A, B, C_Sperr, EWS_zulaessig)"
+               },
+               {
+                  "name": "THERMISCHE_REGENERATION",
+                  "description": "Zulässigkeit der thermischen Regeneration von Erdwärmesonden\n\n(Wertebereich: ja, nein)"
+               }
+            ]
+         }
+      ]
+   }
+}

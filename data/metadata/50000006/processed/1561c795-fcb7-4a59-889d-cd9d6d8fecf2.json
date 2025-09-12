@@ -1,0 +1,114 @@
+{
+   "title": "Züri wie neu",
+   "keywords": [
+      "Mängelmelder",
+      "Schäden",
+      "Infrastruktur"
+   ],
+   "metadata_date": "2025-02-17T13:53:13",
+   "updateFrequency": "daily",
+   "purpose": "«Züri wie neu» ist eine Online-Plattform, über die die Einwohnerinnen und Einwohner der Stadt Zürich auf Schäden an der städtischen Infrastruktur hinweisen können. «Züri wie neu» wird von der Stadtverwaltung moderiert und transparent geführt. Die Meldungen werden innerhalb von einem Arbeitstag den zuständigen Fachstellen zugewiesen und innert fünf Arbeitstagen abschliessend beantwortet. Fällt eine Meldung nicht in den Zuständigkeitsbereich der Stadtverwaltung, wird die Meldung anonymisiert der zuständigen dritten Stelle per E-Mail zugestellt.",
+   "abstract": "Züri wie neu Meldungen: Gemeldet werden können sämtliche Schäden an der Infrastruktur der Stadt Zürich. Dabei kann es sich um ein Loch im Strassenbelag, ein Graffiti am Stadthaus oder eine durch Vandalen beschädigte Parkbank handeln.",
+   "identificationDate": "2025-03-18",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Geomatik + Vermessung",
+   "contactPerson": "André Graf",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Zueri_wie_neu",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "ZWN_MELDUNGEN_P",
+            "description": "Standorte der Meldungen auf https://www.zueriwieneu.ch",
+            "attributes": [
+               {
+                  "name": "URL",
+                  "description": "URL der Meldung auf \"Züri wie neu\"."
+               },
+               {
+                  "name": "E",
+                  "description": "Ostkoordinate, CH1903+_LV95"
+               },
+               {
+                  "name": "INTERFACE_USED",
+                  "description": "Angabe des von der meldenden Person verwendeten Interface [Web Interface, iPad, iPhone, Android]"
+               },
+               {
+                  "name": "MEDIA_URL",
+                  "description": "URL, Link auf die von der meldenden Person übermittelten Fotos"
+               },
+               {
+                  "name": "N",
+                  "description": "Nordkoordinate, CH1903+_LV95"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "AGENCY_SENT_DATETIME",
+                  "description": "Zeitpunkt der Benachrichtigung der verantwortliche Stelle in der Stadtverwaltung [DD.MM.YYYY HH:MM:SS]\n\n\n\nOriginal: The Norwegian FixMyStreet service is run by a private member organisation (NUUG), and problem reports received are sent to government after the user confirm his/her email address.  I use the  confirmation time as the requested_datetime value, and added a new  value agency_sent_datetime to record when the report were sent off  to the government.  It usually happen within 5 minutes, but it is good to be able to know exactly when emails to the government were supposed to show up."
+               },
+               {
+                  "name": "DETAIL",
+                  "description": "Meldungsbeschreibung"
+               },
+               {
+                  "name": "REQUESTED_DATETIME",
+                  "description": "Datum und Zeitpunkt an welchem die Meldung erstellt wurde [DD.MM.YYYY HH:MM:SS]\n\n\n\nOriginal: The date and time when the service request was made."
+               },
+               {
+                  "name": "SERVICE_CODE",
+                  "description": "Kategorie [Abfall/Sammelstelle, Beleuchtung/Uhren, Graffiti, Signalisation/Lichtsignal, Grünflächen/Spielplätze, Strasse/Trottoir/Platz, Brunnen/Hydranten, VBZ/ÖV]"
+               },
+               {
+                  "name": "SERVICE_NOTICE",
+                  "description": "Antwort der Stadtverwaltung."
+               },
+               {
+                  "name": "SERVICE_REQUEST_ID",
+                  "description": "Eindeutige \"Züri wie neu\" - System-ID der Meldung"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "STATUS",
+                  "description": "Bearbeitungsstatus [erfasst, aufgenommen, in Bearbeitung, beantwortet]"
+               },
+               {
+                  "name": "TITLE",
+                  "description": "Titel der Meldung"
+               },
+               {
+                  "name": "UPDATED_DATETIME",
+                  "description": "Datum und Zeitpunkt an welchem die Meldung zuletzt verändert wurde. Bei Meldungen mit dem Status = \"beantwortet\" ist es der Zeitpunkt an welchem die Bearbeitung der Meldung abgeschlossen wurde [DD.MM.YYYY HH:MM:SS]\n\n\n\nOriginal: The date and time when the service request was last modified. For requests with status=closed, this will be the date the request was closed."
+               },
+               {
+                  "name": "DESCRIPTION",
+                  "description": "[Titel] & \": \" &  [Meldungsbeschreibung]"
+               },
+               {
+                  "name": "SERVICE_NAME",
+                  "description": "Kategorie [Abfall/Sammelstelle, Beleuchtung/Uhren, Graffiti, Signalisation/Lichtsignal, Grünflächen/Spielplätze, Strasse/Trottoir/Platz, Brunnen/Hydranten, VBZ/ÖV]"
+               }
+            ]
+         }
+      ]
+   }
+}

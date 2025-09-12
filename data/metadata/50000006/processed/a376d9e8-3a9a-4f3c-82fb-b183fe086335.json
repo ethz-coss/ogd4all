@@ -1,0 +1,106 @@
+{
+   "title": "Gebietseignung für leitungsgebundene Energieversorgung",
+   "keywords": [
+      "leitungsgebundene Energieversorgung",
+      "Prognose",
+      "Leitungsbaukosten",
+      "Energieplanung"
+   ],
+   "metadata_date": "2021-03-04T12:20:54",
+   "updateFrequency": "asNeeded",
+   "purpose": "Die Analyse der langfristigen Gebietseignung ist zentral für die Bestimmung des Perimeters von neuen oder von möglichen Erweiterungen bestehender leitungsgebundener Energieversorgungen (Fernwärme, Gas).",
+   "abstract": "Der Geodatensatz zeigt im Hektarraster die langfristige Gebietseignung für die leitungsgebundene Energieversorgung der Stadt Zürich.",
+   "identificationDate": "2016-12-21",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Departement der Industriellen Betriebe - Departementssekretariat DIB",
+   "contactPerson": "Louis Frei",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Gebietseignung_fuer_leitungsgebundene_Energieversorgung",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "Gebietseignung",
+            "description": "Beschlussorgan: Stadtrat\n\nBeschlussdatum: 21.12.2016",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               },
+               {
+                  "name": "NE2050",
+                  "description": "Erwartete Nachfrage an Nutzwärme in MWh/a im Jahr 2050 gemäss Effizienzszenario"
+               },
+               {
+                  "name": "KANTONSSTRASSE",
+                  "description": "Wird die Hektare von einer Kantonsstrasse tangiert? (Wertebereich: 0=nein, 1=ja)"
+               },
+               {
+                  "name": "GELEISE",
+                  "description": "Wird die Hektare von einem im Richtplan eingetragenen Gleis tangiert? (Wertebereich: 0=nein, 1=ja)"
+               },
+               {
+                  "name": "TROLLEYBUS",
+                  "description": "Wird die Hektare von einer Trolleybuslinie tangiert? (Wertebereich: 0=nein, 1=ja)"
+               },
+               {
+                  "name": "EWS_NICHT_ZULAESSIG",
+                  "description": "Wird die Hektare von einem Gebiet tangiert, in welchem keine Erdwärmesonden zulässig sind? (Wertebereich: 0=nein, 1=ja)"
+               },
+               {
+                  "name": "VERDICHTUNG",
+                  "description": "Wird die Hektare von einem Verdichtungsgebiet tangiert, d.h. ist eine Aufzonung gemäss Planungsstand des AFS denkbar? (Wertebereich: 0=nein, 1=ja)"
+               },
+               {
+                  "name": "BESTEHENDES_FERNWAERMEGEBIET",
+                  "description": "Wird die Hektare von einem bestehenden Fernwärmegebiet tangiert? (Wertebereich: 0=nein, 1=ja)"
+               },
+               {
+                  "name": "ARCHAEOLOGIE",
+                  "description": "Wird die Hektare von einer archäologischen Verdachtsfläche tangiert? (Wertebereich: 0=nein, 1=ja)"
+               },
+               {
+                  "name": "SONDERBAUVORSCHRIFTEN_AREALUEB",
+                  "description": "Gelten auf mindestens 50% der Hektarfläche Sonderbauvorschriften oder werden mindestens 50% der Hektarfläche von einem Gebiet tangiert, welches eine ausreichende Grösse aufweist, um darauf eine Arealüberbauung erstellen zu können? (Wertebereich: 0=nein, 1=ja)"
+               },
+               {
+                  "name": "ANZAHL_ENERGIEBEREITSTELLUNGSA",
+                  "description": "Wie viele Energiebereitstellungsanlagen befinden sich in der jeweiligen Hektare?"
+               },
+               {
+                  "name": "KAELTEBEDARF",
+                  "description": "Ist die Geschossfläche kälteaffiner Nutzungen in der entsprechenden Hektare im Jahr 2050 grösser als 5`000 m2? (Wertebereich: 0=nein, 1=ja)"
+               },
+               {
+                  "name": "KERNZONE",
+                  "description": "Wird die Hektare von einer Kernzone tangiert? (Wertebereich: 0=nein, 1=ja)"
+               },
+               {
+                  "name": "EIGNUNG",
+                  "description": "Ist die entsprechende Hektare langfristig für eine leitungsgebundene Energieversorgung geeignet? (Wertebereich: 0=ungeeignet, 1=geeignet, 99=bedingt geeignet)"
+               },
+               {
+                  "name": "ID_BFS",
+                  "description": "Koordinaten des Zentrums der Hektare (LV03), im Format aaaabbbb, wobei aaaa00 die Ost-West-Koordinate ist und bbbb00 die Nord-Süd-Koordinate"
+               }
+            ]
+         }
+      ]
+   }
+}

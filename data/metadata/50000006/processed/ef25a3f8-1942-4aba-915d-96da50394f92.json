@@ -1,0 +1,88 @@
+{
+   "title": "Velonetzplanung",
+   "keywords": [
+      "Velo",
+      "Vorzougsrouten",
+      "Velonetz"
+   ],
+   "metadata_date": "2025-02-14T11:36:32",
+   "updateFrequency": "continual",
+   "purpose": "Umsetzung Initiative \"sichere Velorouten für Zürich\"",
+   "abstract": "Bearbeitungsstand des Velonetzes mit Velovorzugsrouten. Stand: laufende Aktualisierung gemäss Umsetzungsstand.\n\nDie Anpassung der Netzkategorien und Grundsätze im Velonetzplan ist eine Massnahme der «Velostrategie 2030». Das Vorzugsroutennetz bietet ein durchgehendes Netz. Das Haupt- und Basisnetz ergänzen dieses.\n\n\n\nInfos zu den Velovorzugsrouten sind auf der Webseite des Tiefbauamtes zu finden: https://www.stadt-zuerich.ch/de/mobilitaet/velo/velovorzugsrouten.html",
+   "identificationDate": "2021-06-21",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Tiefbauamt",
+   "contactPerson": "Raphaël Duchoud",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Velonetzplanung",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "VIEW_GS_UMSETZUNGSSTRECKEN",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "ID1",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": null
+               },
+               {
+                  "name": "ABSCHNITT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "VIEW_VELONETZ",
+            "description": "View für Geoserver",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Liniengeometrie"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "ID1",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": "Vorzugsroute\n\nHauptnetz\n\nBasisnetz"
+               }
+            ]
+         }
+      ]
+   }
+}

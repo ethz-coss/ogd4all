@@ -1,0 +1,81 @@
+{
+   "title": "Denkmalpflege-Inventar",
+   "metadata_date": "2022-05-19T10:34:53",
+   "updateFrequency": "weekly",
+   "purpose": "z. B. Plananzeige in GIS-Applikationen des AfS",
+   "abstract": "Aufbereitung des Geodatensatzes \"Denkmalpflege-Inventar (Sachdaten)\" für den Geoserver. Siehe dort für einen inhaltlichen Beschrieb.",
+   "identificationDate": "2018-03-07",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Hochbaudepartement - Amt für Städtebau",
+   "contactPerson": "Janine Sutter",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Denkmalpflege_Inventar",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "AFS_SDE.DENKMALPFLEGE_INVENTAR_P",
+            "description": "Aufbereitung des Denkmalpflege-Inventars für den Geoserver.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "repräsentativer Punkt in der Plananzeige für das Einzelobjekt"
+               },
+               {
+                  "name": "ID",
+                  "description": "?"
+               },
+               {
+                  "name": "OBJEKTBEZE",
+                  "description": "Bezeichnung (z.B. Name) des Einzelobjekts oder der Objektgruppe.\n\n(Ein Objekt im Inventar kann ein einzelnes Denkmalpflege-Objekt sein, aber auch zu einer Gruppe, z.B. einer Siedlung, gehören.)"
+               },
+               {
+                  "name": "NAEHEREBEZ",
+                  "description": "Nähere Bezeichnung des Einzelobjekts. Sie beschreibt das Objekt genauer.\n\nInsbesondere bei Gruppen wird die nähere Bezeichnung genutzt, um die einzelnen Objekte der Gruppe voneinander zu differenzieren."
+               },
+               {
+                  "name": "INVENTARKA",
+                  "description": "Inventarkategorie. Es gibt folgende Typen: \n\n* \"kommunal\": Ein Inventar- oder Schutzobjekt von kommunaler Bedeutung. Zuständig ist der Stadtrat von Zürich, bzw. die Fachstelle Archäologie und Denkmalpflege im Hochbaudepartement. \n\n* \"regional\": Ein Inventar- oder Schutzobjekt von regionaler Bedeutung. Zuständig ist die Baudirektion des Kantons Zürich, bzw. die Denkmalpflege des Kantons Zürich. \n\n* \"kantonal*: Ein Inventar- oder Schutzobjekt von kantonaler Bedeutung. Zuständig ist die Baudirektion des Kantons Zürich, bzw. die Denkmalpflege des Kantons Zürich."
+               },
+               {
+                  "name": "UNTERSCHUT",
+                  "description": "Schutzkategorie:\n\n* \"Nein\" = im Inventar. Potenziell schutzwürdiges Gebäude. Bei der Absicht, das Gebäude \n\nzu sanieren, zu renovieren, umzubauen oder abzubrechen, muss die Denkmalpflege oder das Amt für Baubewilligungen konsultiert werden.\n\n* \"Ja\" = unter Schutz. Der Stadtrat hat das Objekt formal unter Schutz gestellt. Das ist im Grundbuch eingetragen. Bei jedem baulichen Vorhaben ist mit der Denkmalpflege Kontakt aufzunehmen."
+               },
+               {
+                  "name": "ADRESSE",
+                  "description": "Durch Kommas getrennte offizielle Adressen, die dem Einzelobjekt zugeordnet sind."
+               },
+               {
+                  "name": "BAUJAHR",
+                  "description": "Genaues Baujahr oder vermuteter Zeitraum der Errichtung."
+               },
+               {
+                  "name": "STADTKREIS",
+                  "description": "Stadtkreis (1-12)"
+               },
+               {
+                  "name": "VERMBEZIRK",
+                  "description": "Name des Vermessungsbezirks, in dem das Einzelobjekt liegt."
+               }
+            ]
+         }
+      ]
+   }
+}

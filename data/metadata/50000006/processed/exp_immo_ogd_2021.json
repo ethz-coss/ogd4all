@@ -1,0 +1,40 @@
+{
+   "title": "Energieverbräuche Portfolio Immobilien Stadt Zürich",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/hbd_immo_portfolio_energieverbrauch",
+   "abstract": "Enthält den Energieverbrauch je Energieträger bzw. Energieart für das Portfolio von Immobilien Stadt Zürich ab 2018.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Zu beachten:\n\nDie Datenzusammenstellung sowohl der eigentlichen Verbrauchswerte wie auch der diese Werte beschreibenden Metadaten, speist sich aus einer Vielzahl von Datenquellen. Diese Datenquellen werden in IMMO.invent, der zentralen Energiedatenerfassung der IMMO, seit 2016 zusammengeführt. Eine erstmals als nachvollziehbar beurteilte Zusammenstellung liegt ab 2018 vor. Seither wird die Datenqualität als sich ständig verbessernd betrachtet.\n\nArbeiten mit diesen Daten:\n\nSowohl IMMO.invent als auch die Werkzeuge welche die Daten für IMMO.invent bereitstellen unterliegen einer Entwicklung. Entwicklungen sind von Unsicherheiten begleitet, die einen Einfluss auf die Datenqualität haben können. Entsprechend kann eine absolute Sicherheit hinsichtlich Datenqualität nicht gewährleistet sein. Die vorliegenden Daten sind vor jeder weiterer Verwendung auf Plausibilität zu prüfen.\n\nEnergieverbrauchswerte:\n\nBei den angegebenen Energieverbrauchswerten handelt es sich immer um Endenergie welche nicht HGT-korrigiert sind. Die Verbrauchswerte beziehen sich auf das gesamte von Immobilien Stadt Zürich verwaltete Immobilien-Portfolio.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Energieverbräuche Portfolio Immobilien Stadt Zürich",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: Jahr)",
+                  "description": "Jahr (Integer)"
+               },
+               {
+                  "name": "Monat (technisch: Monat)",
+                  "description": "Monat (Integer)"
+               },
+               {
+                  "name": "Energieträger (technisch: Energieträger)",
+                  "description": "Energieträger, respektive Energieart"
+               },
+               {
+                  "name": "Mengenangabe (technisch: Wert)",
+                  "description": "Mengenangabe des Energieverbrauchs. Endenergie, nicht HGT-korrigiert. (Integer)"
+               },
+               {
+                  "name": "Einheit (technisch: Einheit)",
+                  "description": "Einheit der Mengenangabe."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2023-02-18"
+}

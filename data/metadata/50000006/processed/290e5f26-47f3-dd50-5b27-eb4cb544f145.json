@@ -1,0 +1,612 @@
+{
+   "title": "ERZ Abwasser-Werkleitungsdaten",
+   "keywords": [
+      "Abwasser",
+      "Abwasserleitung",
+      "Abwasserkanal",
+      "Kanalisation",
+      "Entwässerung"
+   ],
+   "metadata_date": "2025-03-04T08:26:58",
+   "updateFrequency": "monthly",
+   "purpose": "Die Daten dienen ausschliesslich zur unverbindlichen Auskunft über das Vorhandensein von\n\nAbwasserleitungen (z.B. für Planungs- und Projektierungszwecke im öffentlichen Bereich). Die\n\nGültigkeit ist zeitlich begrenzt, da die rege Bautätigkeit zu laufenden Änderungen führt.",
+   "abstract": "Verwendung von Abwasser-Werkleitungsdaten aus dem GeoServer der Stadt Zürich.",
+   "identificationDate": "2025-03-04",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Entsorgung + Recycling Zürich",
+   "contactPerson": "Silvan Treier",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "ERZ_ABW_ANSCHLUSSLEITUNG_L",
+            "description": "Abwasser-Anschlussleitung.\n\nZu den Anschlussleitungen gehören die Entwässerungsleitungen von Gebäuden, Strassenabläufen und weiteren Objekten der Liegenschaftsentwässerungen, welche in öffentlichen Abwasserleitungen oder Abwasserschächte münden.",
+            "attributes": [
+               {
+                  "name": "ABWASSERART",
+                  "description": "0 = U\n\n1 = SW\n\n2 = RW\n\n3 = KW\n\n4 = SI\n\n5 = MW\n\n6 = CW\n\n7 = RSW\n\n8 = EW\n\n9 = BW"
+               },
+               {
+                  "name": "ANSCHLUSSLEITUNG_ID",
+                  "description": "ID_0 aus ABW_KIS Tabelle 'A10_ABW_ALTL'"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der Anschlussleitung"
+               },
+               {
+                  "name": "LINIENSIGNATUR_TXT",
+                  "description": "genau = Lage genau, aus Plan oder eingemessen\n\nungenau = Lage ungenau oder unbekannt"
+               },
+               {
+                  "name": "MUTDATUM",
+                  "description": "Datum der letzten Änderung an den Objektdaten"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": "in Betrieb\n\nausser Betrieb\n\nverfüllt\n\nunbekannt\n\nblind\n\nprojektiert\n\nverschlossen"
+               },
+               {
+                  "name": "ZUVERLAESSIGKEIT",
+                  "description": "0 = aus Plan\n\n1 = eingemessen\n\n2 = Lage ungenau"
+               },
+               {
+                  "name": "ABWASSERART_TXT",
+                  "description": "U = unbekannt\n\nSW = Schmutzabwasser\n\nRW = Regenabwasser\n\nKW = Kühlabwasser (Reinabwasser)\n\nSI = Sickerwasser\n\nMW = Mischabwasser\n\nCW = Chemieabwasser (Industrieabwasser)\n\nRSW = Beckenabwasser (MW welches in ein Regenbecken fliesst)\n\nEW = entlastetes Mischabwasser\n\nBW = Bachwasser"
+               },
+               {
+                  "name": "DURCHMESSER",
+                  "description": "Durchmesser der Anschlussleitung"
+               },
+               {
+                  "name": "LINIENSIGNATUR",
+                  "description": "0 = genau\n\n1 = ungenau"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "STATUS",
+                  "description": "0 = in Betrieb\n\n1 = ausser Betrieb\n\n2 = verfüllt\n\n3 = unbekannt\n\n4 = blind\n\n5 = projektiert\n\n6 = verschlossen"
+               },
+               {
+                  "name": "ZUVERLAESSIGKEIT_TXT",
+                  "description": "aus Plan = unbekannt, genau, aus Plan\n\neingemessen = eingemessen\n\nLage ungenau = ungenau"
+               }
+            ]
+         },
+         {
+            "name": "ERZ_ABW_ANSCHLUSSLEI_SCHACHT_P",
+            "description": "Abwasser-AL-Schacht.\n\nSchächte, die zu Entwässerungsanlagen von Liegenschaften gehören.",
+            "attributes": [
+               {
+                  "name": "SYMBOL_TXT",
+                  "description": "Anschlussleitungsschacht"
+               },
+               {
+                  "name": "AL_SCHACHT_ID",
+                  "description": "ID_0 aus ABW_KIS Tabelle 'A10_ABW_ALSP'"
+               },
+               {
+                  "name": "ART",
+                  "description": "0 = unbekannt (U)\n\n1 = Leer\n\n2 = Absetzbecken (AB)\n\n3 = Bodenablauf (AL)\n\n4 = Bach seitlicher Einlauf (BS)\n\n5 = Benzin Ölabscheider (BO)\n\n6 = Dachwasserschacht (DS)\n\n7 = Einlaufschacht (ES)\n\n8 = Fettabscheider (FA)\n\n9 = Festplatz-WC-Anschluss (WC)\n\n10 = Hofsammler (HS)\n\n11 = Klärgrube (KLG)\n\n12 = Kontrollschacht (KS)\n\n13 = Pumpenschacht (PS)\n\n14 = Retentionsschacht (RE)\n\n16 = Röhrenschacht (RS)\n\n17 = Schwimmstoffabscheider (SW)\n\n18 = Sandfang vorgeschaltet BO (SF)\n\n19 = Schieberschacht (SC)\n\n20 = Schienenentwässerung (ZE)\n\n21 = Geleiseschmieranlage (ZF)\n\n22 = Geleiseentwässerung (ZG)\n\n23 = Strassenablauf (SA)\n\n24 = Stapelbecken LE (SB)\n\n26 = Sickerschacht (SI)\n\n27 = fiktiver Schacht Knoten (FS_K)"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "SYMBOL",
+                  "description": "2 = Anschlussleitungsschacht"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie des Anschlussleitungsschachtes"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               }
+            ]
+         },
+         {
+            "name": "ERZ_ABW_EINSPITZPUNKT_P",
+            "description": "Abwasser-Einspitzpunkt.\n\nSeitlicher Einlaufpunkt, wo eine Anschlussleitung in eine Abwasser-Hauptleitung mündet.",
+            "attributes": [
+               {
+                  "name": "EINSPITZ_NR",
+                  "description": "GID aus ABW_KIS Tabelle 'A10_ABW_ESPP'"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie des Einspitzpunktes"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "HALTUNG_NR",
+                  "description": "Nummer der Haltung (Abwasserleitung)"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               }
+            ]
+         },
+         {
+            "name": "ERZ_ABW_LEITUNG_DIM_T",
+            "description": "Schriftposition Dimension (Abwasserleitung).\n\nText und entsprechende Positions-Landeskoordinaten und Textausrichtung für die Beschriftung der Abwasserleitungen mit dem Innendurchmesser, resp. der lichten Breite / Höhe.",
+            "attributes": [
+               {
+                  "name": "DIMENSIONTEXT",
+                  "description": "Durchmesser resp. Breite / Höhe"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der Punkte"
+               },
+               {
+                  "name": "HOEHE",
+                  "description": "Schrifthöhe [0.5 .. 3.0]; Faktor"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "PRESS",
+                  "description": "Schriftpressung [0.2 .. 1.0]; Faktor"
+               },
+               {
+                  "name": "VALI",
+                  "description": "Vertikaler Versatz zum Ursprungspunkt; undefiniert = Half"
+               },
+               {
+                  "name": "HALI",
+                  "description": "Horizontaler Versatz zum Ursprungspunkt; undefiniert = Center"
+               },
+               {
+                  "name": "NEIG",
+                  "description": "Schriftneigung [50.0 .. 100.0]; Faktor in Prozent"
+               },
+               {
+                  "name": "ORI",
+                  "description": "Rotation der Beschriftung; undefiniert = 100.0; Masseinheit ist Gon."
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJEKTREF",
+                  "description": "Fremdschlüssel für Verbindung zur Tabelle Abwasserleitung"
+               }
+            ]
+         },
+         {
+            "name": "ERZ_ABW_LEITUNG_INHALT_T",
+            "description": "Schriftposition Abwasserart (Abwasserleitung).\n\nText und entsprechende Positions-Landeskoordinaten und Textausrichtung für die Beschriftung der Abwasserleitungen mit der Abwasserart.",
+            "attributes": [
+               {
+                  "name": "ABWARTTEXT",
+                  "description": "U = unbekannt\n\nSW = Schmutzabwasser\n\nRW = Regenabwasser\n\nKW = Kühlabwasser (Reinabwasser)\n\nSI = Sickerwasser\n\nMW = Mischabwasser\n\nCW = Chemieabwasser (Industrieabwasser)\n\nRSW = Beckenabwasser (MW das über Regenbecken geleitet wird)\n\nEW = entlastetes Mischabwasser\n\nBW = Bachwasser"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der Beschriftung"
+               },
+               {
+                  "name": "NEIG",
+                  "description": "Schriftneigung [50.0 .. 100.0]; Faktor in Prozent"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "PRESS",
+                  "description": "Schriftpressung [0.2 .. 1.0]; Faktor"
+               },
+               {
+                  "name": "HALI",
+                  "description": "Horizontaler Versatz zum Ursprungspunkt; undefiniert = Center"
+               },
+               {
+                  "name": "HOEHE",
+                  "description": "Schrifthöhe [0.5 .. 3.0]; Faktor"
+               },
+               {
+                  "name": "OBJEKTREF",
+                  "description": "Fremdschlüssel für Verbindung zur Tabelle Abwasserleitung"
+               },
+               {
+                  "name": "ORI",
+                  "description": "Rotation der Beschriftung; undefiniert = 100.0; Masseinheit ist Gon."
+               },
+               {
+                  "name": "VALI",
+                  "description": "Vertikaler Versatz zum Ursprungspunkt; undefiniert = Half"
+               }
+            ]
+         },
+         {
+            "name": "ERZ_ABW_LEITUNG_L",
+            "description": "Abwasser-Hauptleitung.\n\nBezeichnet ein Teilstück einer Kanalisations-Sammelleitung zwischen zwei Knoten der Tabelle AbwSchacht, meistens zwischen zwei Einstieg-Schächten. Start- oder Endknoten können aber auch Kaliberwechsel, Gefällswechsel, seitlicher Einlauf (DK) in eine andere Abwasserleitung, Vorfluterainlauf, Geschiebesammler oder Bauwerk-Hauptpunkte sein. Die Fliessrichtung der Abwasserleitung ist definiert von Startknoten (Auslauf) zu Endknoten (Einlauf in nächstes Objekt), auch bei negativen Gefälle (Düker).",
+            "attributes": [
+               {
+                  "name": "ABWASSERART",
+                  "description": "0 = U \n\n1 = SW \n\n2 = RW \n\n3 = KW \n\n4 = SI \n\n5 = MW \n\n6 = CW \n\n7 = RSW \n\n8 = EW \n\n9 = BW"
+               },
+               {
+                  "name": "ABWASSERART_TXT",
+                  "description": "U = unbekannt \n\nSW = Schmutzabwasser \n\nRW = Regenabwasser \n\nKW = Kühlabwasser (Reinabwasser) \n\nSI = Sickerwasser \n\nMW = Mischabwasser \n\nCW = Chemieabwasser (Industrieabwasser) \n\nRSW = Beckenabwasser (MW welches in ein Regenbecken fliesst) \n\nEW = entlastetes Mischabwasser \n\nBW = Bachwasser"
+               },
+               {
+                  "name": "AUSLAUFHOEHE",
+                  "description": "Meereshöhe. Höhe Kanalsohle am Anfang der Leitung"
+               },
+               {
+                  "name": "DURCHMESSER",
+                  "description": "Bei Kreisprofil = Nennweite (innerer Durchmesser) in mm\n\nBei Rechteck-, Spezial-, Maul- und Eiprofil = Breite in mm"
+               },
+               {
+                  "name": "EIGENTUEMER",
+                  "description": "0 = unbekannt\n\n1 = öffentlich Stadt Zürich\n\n2 = öffentlich Kanton (Kanton / ASTRA)\n\n3 = privat\n\n4 = private Grundleitung\n\n5 = Aussengemeinde"
+               },
+               {
+                  "name": "EIGENTUEMER_TXT",
+                  "description": "unbekannt\n\nöffentlich Stadt Zürich\n\nöffentlich Kanton (Kanton / ASTRA)\n\nprivat\n\nprivate Grundleitung\n\nAussengemeinde"
+               },
+               {
+                  "name": "EINLAUFHOEHE",
+                  "description": "Meereshöhe. Höhe Kanalsohle am Ende der Leitung"
+               },
+               {
+                  "name": "ENDKNOTEN",
+                  "description": "Punktnummer des Endknoten (ERZ_ABW_SCHACHT_P)"
+               },
+               {
+                  "name": "GEFAELLE",
+                  "description": "Gefälle in Promillen"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der Leitungslinien"
+               },
+               {
+                  "name": "HALTUNGS_ID",
+                  "description": "'Haltung_Nr' aus ABW_KIS Tabelle 'A10_ABW_HLTL'"
+               },
+               {
+                  "name": "MUTDATUM",
+                  "description": "Datum der letzten Änderung an den Objektdaten"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "PROFILART",
+                  "description": "0 = unbekannt\n\n1 = Kreisprofil\n\n2 = Eiprofil\n\n3 = Rechteckprofil\n\n4 = Maulprofil\n\n7 = Spezialprofil"
+               },
+               {
+                  "name": "PROFILHOEHE",
+                  "description": "Bei Kreisprofil = kein Eintrag\n\nBei Rechteck-, Spezial-, Maul- und Eiprofil = Höhe in mm"
+               },
+               {
+                  "name": "STARTKNOTEN",
+                  "description": "Punktnummer des Startknoten (ERZ_ABW_SCHACHT_P)"
+               },
+               {
+                  "name": "STATUS",
+                  "description": "0 = in Betrieb\n\n1 = ausser Betrieb\n\n2 = verfüllt\n\n3 = unbekannt\n\n4 = blind\n\n5 = projektiert\n\n6 = verschlossen"
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": "in Betrieb\n\nausser Betrieb\n\nverfüllt\n\nunbekannt\n\nblind\n\nprojektiert\n\nverschlossen"
+               },
+               {
+                  "name": "PROFILART_TXT",
+                  "description": "unbekannt\n\nKreisprofil\n\nEiprofil\n\nRechteckprofil\n\nMaulprofil\n\nSpezialprofil"
+               }
+            ]
+         },
+         {
+            "name": "ERZ_ABW_SCHACHT_P",
+            "description": "Abwasser-Schacht.\n\nHauptsächlich Einstiegschächte (Normalschacht 900/1100 mm mit zentrischem Konus) in die Abwasserleitungen, aber auch Einstiegschächte in Kammern, resp. in Spezielbauwerke. In derselben Tabelle befinden sich auch die Strassenebläufe (Sammler) und weitere Knotenpunkte des öffentlichen Entwässerungsnetzes.",
+            "attributes": [
+               {
+                  "name": "ABWSYMBOLORI",
+                  "description": "Rotation des Symbols; undefiniert = 100.0; Masseinheit ist Gon"
+               },
+               {
+                  "name": "ABWSYMBOLSCALE",
+                  "description": "Grösse des Symboles"
+               },
+               {
+                  "name": "DECKELHOEHE",
+                  "description": "Meereshöhe. Deckelhöhe des Schachtes."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Punktgeometrie"
+               },
+               {
+                  "name": "MUTDATUM",
+                  "description": "Datum der letzten Änderung an den Objektdaten"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "PUNKTART",
+                  "description": "2 = BS\n\n5 = BE\n\n6 = BO\n\n9 = DE\n\n10 = DK\n\n13 = EK\n\n16 = GE\n\n17 = GS\n\n19 = HS\n\n21 = KE\n\n22 = KL\n\n26 = SA\n\n28 = SH\n\n29 = ST\n\n31 = UK\n\n32 = UB\n\n33 = US\n\n34 = VE\n\n35 = VS\n\n37 = ZS\n\n39 = GW\n\n40 = RS\n\n41 = ES\n\n44 = SS\n\n45 = KS\n\n46 = PS\n\n47 = FA\n\n48 = U"
+               },
+               {
+                  "name": "PUNKTNUMMER",
+                  "description": "Bezeichnung aus ABW_KIS Tabelle 'A10_ABW_SCHP'"
+               },
+               {
+                  "name": "SYMBOL",
+                  "description": "0 = Schachteinstieg (feature-code: abw6009)\n\n1 = Strassensammler (feature-code: abw6019, abw6076)"
+               },
+               {
+                  "name": "SYMBOL_TXT",
+                  "description": "Schachteinstieg (feature-code: abw6009) \n\nStrassensammler (feature-code: abw6019, abw6076)"
+               },
+               {
+                  "name": "FEATURECODE",
+                  "description": "Featurecode = abw6009: Artfunktion in (5,9,16,21,28,31,33)\n\nFeaturecode = abw6011: Artfunktion in (6)\n\nFeaturecode = abw6012: Artfunktion in (22)\n\nFeaturecode = abw6013: Artfunktion in (13)\n\nFeaturecode = abw6014: Artfunktion in (2,34)\n\nFeaturecode = abw6015: Artfunktion in (17)\n\nFeaturecode = abw6018: Artfunktion in (35)\n\nFeaturecode = abw6019: Artfunktion in (26)\n\nFeaturecode = abw6021: Artfunktion in (39)\n\nFeaturecode = abw6052: Artfunktion in (19,29,40,44,45,46,47,48)\n\nFeaturecode = abw6053: Artfunktion in (41)\n\nFeaturecode = abw6076: Artfunktion in (37)\n\nFeaturecode = abw6090: Artfunktion in (32)\n\nFeaturecode = abw6109: Artfunktion in (10)"
+               },
+               {
+                  "name": "PUNKTART_TXT",
+                  "description": "BS = Bach seitlicher Einlauf\n\nBE = Benzin-Ölabscheider-Einstieg\n\nBO = Benzin Mineralölabscheider\n\nDE = Dückereinstieg\n\nDK = Kanal-Detailpunkt-Einlauf\n\nEK = Kanal-Anfang/-Ende\n\nGE = Geschiebesammler-Einstieg\n\nGS = Geschiebesammler-Hauptpunkt\n\nHS = Hofsammler\n\nKE = Kammereinstieg\n\nKL = Kaliberwechsel\n\nSA = Strassenablauf/Sammler\n\nSH = Normschacht Hauptleitung\n\nST = Spülstutzen\n\nUK = überdeckter Kammereintieg\n\nUB = Bauwerk ohne Einstieg\n\nUS = überdeckter Schacht\n\nVE = Vorflutereinlauf\n\nVS = Versickerungsschacht\n\nZS = Zwischensammler VBZ\n\nGW = Gefällswechsel\n\nRS = Röhrenschacht\n\nES = Einlaufschacht\n\nSS = Schlammsammler\n\nKS = Kontroll Normschacht\n\nPS = Pumpenschacht\n\nFA = Fettabscheider\n\nU = unbekannt"
+               },
+               {
+                  "name": "AMPHIBIENAUSSTIEG",
+                  "description": "0 = nein\n\n1 = ja"
+               },
+               {
+                  "name": "AMPHIBIENAUSSTIEG_TXT",
+                  "description": "nein = kein Amphibienausstieg\n\nja = Amphibienausstieg vorhanden"
+               }
+            ]
+         },
+         {
+            "name": "ERZ_ABW_SPEZIALBAUWERK_A",
+            "description": "Abwasser-Spezialbauwerk (Fläche).\n\nUnterirdisches Bauwerk, oft auch Kammer genannt, mit verschiedenen Funktionen (z.B. Vereinigung von Kanälen, Hochwasserentlastung etc.). Auch grössere Bauwerke, wie Regenrückhaltebecken, Abwasserpumpwerke etc. gehören zu dieser Objektklasse.",
+            "attributes": [
+               {
+                  "name": "BAUWERKTYP",
+                  "description": "0 = unbekannt\n\n1 = Absturzkammer\n\n2 = Dükerkammer\n\n3 = Fangbecken\n\n4 = Hochwasserentlastung\n\n5 = Jauchegrube\n\n6 = Kammer ohne Funktion\n\n7 = Klärbecken\n\n8 = Mineralölabscheider\n\n9 = Pumpstation\n\n10 = Regenbecken\n\n11 = Vereinigungskammer\n\n12 = Verzweigungskammer\n\n13 = Wirbelfallkammer\n\n14 = Schneeabwurfschacht\n\n15 = Kaliberwechsel\n\n16 = Krümmerkammer\n\n17 = Entleerungskammer\n\n18 = Spülkammer\n\n19 = Seitlicher Zugang\n\n20 = Geländemulde Retention\n\n21 = Trennschacht\n\n22 = Schwimmstoffabscheider"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie des Spezialbauwerkes (Fläche)"
+               },
+               {
+                  "name": "MUTDATUM",
+                  "description": "Datum der letzten Änderung an den Objektdaten"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "SCHACHTNUMMER",
+                  "description": "Schachtnummer des dazugehörigen AbwSchacht"
+               },
+               {
+                  "name": "BAUWERKTYP_TXT",
+                  "description": "unbekannt \n\nAbsturzkammer \n\nDükerkammer \n\nFangbecken \n\nHochwasserentlastung \n\nJauchegrube \n\nKammer ohne Funktion \n\nKlärbecken \n\nMineralölabscheider \n\nPumpstation \n\nRegenbecken \n\nVereinigungskammer \n\nVerzweigungskammer \n\nWirbelfallkammer \n\nSchneeabwurfschacht \n\nKaliberwechsel \n\nKrümmerkammer \n\nEntleerungskammer \n\nSpülkammer \n\nSeitlicher Zugang \n\nGeländemulde Retention \n\nTrennschacht \n\nSchwimmstoffabscheider"
+               }
+            ]
+         },
+         {
+            "name": "ERZ_ABW_VE_VERBINDLICHKEIT_A",
+            "description": "Abwasser-Verbindlichkeitsfläche.\n\nGebiete, wo die Lage der ERZA-Objekte bei ERZ Abwasser erfragt werden muss.\n\nIn diesem Bereich sind Werkleitungsbauten im Gang. Es können neue oder geänderte Leitungen und Schächte vorhanden sein.",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der Verbindlichkeitsflächen"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               }
+            ]
+         },
+         {
+            "name": "ERZ_ABW_NEBENLEITUNG_L",
+            "description": "Abwasser-Nebenleitung.\n\nAbwasserleitung der \"dritten Rangordnung\" (nach Abwasserleitung und Anschlussleitung). Zu dieser Kategorie gehören Hof- und sekundäre Strassenentwässerungen sowie Sickerleitungen in Liegenschaften.",
+            "attributes": [
+               {
+                  "name": "ABWASSERART",
+                  "description": "0 = U \n\n1 = SW \n\n2 = RW \n\n3 = KW \n\n4 = SI \n\n5 = MW \n\n6 = CW \n\n7 = RSW \n\n8 = EW \n\n9 = BW"
+               },
+               {
+                  "name": "ABWASSERART_TXT",
+                  "description": "U = unbekannt \n\nSW = Schmutzabwasser \n\nRW = Regenabwasser \n\nKW = Kühlabwasser (Reinabwasser) \n\nSI = Sickerwasser \n\nMW = Mischabwasser \n\nCW = Chemieabwasser (Industrieabwasser) \n\nRSW = Beckenabwasser (MW welches in ein Regenbecken fliesst)\n\nEW = entlastetes Mischabwasser \n\nBW = Bachwasser"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der Nebenleitung"
+               },
+               {
+                  "name": "LINIENSIGNATUR",
+                  "description": "0 = genau \n\n1 = ungenau"
+               },
+               {
+                  "name": "LINIENSIGNATUR_TXT",
+                  "description": "genau = Lage genau, aus Plan oder eingemessen \n\nungenau = Lage ungenau oder unbekannt"
+               },
+               {
+                  "name": "NEBENLEITUNG_NR",
+                  "description": "ID_0 aus ABW_KIS Tabelle 'A10_ABW_NLTL'"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               }
+            ]
+         },
+         {
+            "name": "ERZ_ABW_SCHACHT_T",
+            "description": "Schriftposition Schachtnummer (Abwasserschacht).\n\nDiese Datentabelle enthält den Text für die Beschriftung der Abwasser-Schächte des Hauptnetzes und der Strassenabläufe (Sammler) sowie die Landeskoordinaten und die Ausrichtung der Schriftpositionen. Der Beschriftungstext ist zusammengesetzt aud der zweistelligen Punktart und der max. sechsstelligen Punktnummer.",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der Schriftposition"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJEKTREF",
+                  "description": "Fremdschlüssel für Verbindung zur Tabelle AbwSchacht"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "PKTNUMHALI",
+                  "description": "Horizontaler Versatz zum Ursprungspunkt; undefiniert = Center"
+               },
+               {
+                  "name": "PKTNUMNEIG",
+                  "description": "Schriftneigung [50.0 .. 100.0]; Faktor in Prozent"
+               },
+               {
+                  "name": "PKTNUMPRESS",
+                  "description": "Schriftpressung [0.2 .. 1.0]; Faktor"
+               },
+               {
+                  "name": "PKTNUMSCHRIHOEHE",
+                  "description": "Schrifthöhe [0.5 .. 3.0]; Faktor"
+               },
+               {
+                  "name": "PKTNUMSCHRIORI",
+                  "description": "Rotation der Beschriftung; undefiniert = 100.0; Masseinheit ist Gon."
+               },
+               {
+                  "name": "PKTNUMVALI",
+                  "description": "Vertikaler Versatz zum Ursprungspunkt; undefiniert = Half"
+               },
+               {
+                  "name": "SCHACHTNR",
+                  "description": "Schachtnummer"
+               }
+            ]
+         },
+         {
+            "name": "ERZ_ABW_SPEZIALBAUWERK_L",
+            "description": "Abwasser-Spezialbauwerk (Umrandungslinie).\n\nUnterirdisches Bauwerk, oft auch Kammer genannt, mit verschiedenen Funktionen (z.B. Vereinigung von Kanälen, Hochwasserentlastung etc.). Auch grössere Bauwerke, wie Regenrückhaltebecken, Abwasserpumpwerke etc. gehören zu dieser Objektklasse.",
+            "attributes": [
+               {
+                  "name": "BAUWERKTYP_TXT",
+                  "description": "unbekannt \n\nAbsturzkammer \n\nDükerkammer \n\nFangbecken \n\nHochwasserentlastung \n\nJauchegrube \n\nKammer ohne Funktion \n\nKlärbecken \n\nMineralölabscheider \n\nPumpstation \n\nRegenbecken \n\nVereinigungskammer \n\nVerzweigungskammer \n\nWirbelfallkammer \n\nSchneeabwurfschacht \n\nKaliberwechsel \n\nKrümmerkammer \n\nEntleerungskammer \n\nSpülkammer \n\nSeitlicher Zugang \n\nGeländemulde Retention \n\nTrennschacht \n\nSchwimmstoffabscheider"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie des Spezialbauwerkes (Umrandungslinie)"
+               },
+               {
+                  "name": "MUTDATUM",
+                  "description": "Datum der letzten Änderung an den Objektdaten"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "REFID",
+                  "description": "Referenz-ID des übergeordneten Geometrieobjektes. Die Linienobjekte mit der gleichen Referenz-ID bilden zusammen die Umrandung einer Fläche."
+               },
+               {
+                  "name": "SCHACHTNUMMER",
+                  "description": "Schachtnummer des dazugehörigen AbwSchacht"
+               },
+               {
+                  "name": "BAUWERKTYP",
+                  "description": "0 = unbekannt \n\n1 = Absturzkammer \n\n2 = Dükerkammer \n\n3 = Fangbecken \n\n4 = Hochwasserentlastung \n\n5 = Jauchegrube \n\n6 = Kammer ohne Funktion \n\n7 = Klärbecken \n\n8 = Mineralölabscheider \n\n9 = Pumpstation \n\n10 = Regenbecken \n\n11 = Vereinigungskammer \n\n12 = Verzweigungskammer \n\n13 = Wirbelfallkammer \n\n14 = Schneeabwurfschacht \n\n15 = Kaliberwechsel \n\n16 = Krümmerkammer \n\n17 = Entleerungskammer \n\n18 = Spülkammer \n\n19 = Seitlicher Zugang \n\n20 = Gelaendemulde Retention \n\n21 = Trennschacht \n\n22 = Schwimmstoffabscheider"
+               }
+            ]
+         },
+         {
+            "name": "ERZ_ABW_VBZENTWAESSERUNG_P",
+            "description": "Abwasser-Vbz-Entwässerung\n\nHauptsächlich Schächte der VBZ-Entwässerung (Geleise- und Schienenentwässerung).",
+            "attributes": [
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Punktgeometrie"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": "Bezeichnung aus ABW_KIS Tabelle 'A10_ABW_LPKP'"
+               },
+               {
+                  "name": "ART",
+                  "description": "0 = unbekannt\n\n3 = Benzin-Ölabscheider-Axpunkt\n\n4 = Axpunkt in Kammer\n\n5 = Kanalaxpunkt bei Schacht\n\n6 = Kanalaxpunkt bei Geschiebesammler\n\n7 = Geleiseentwässerung\n\n8 = Geleiseschmieranlage\n\n9 = Schienenentwässerung\n\n10 = Knoten Detailpunkt"
+               },
+               {
+                  "name": "HOEHE",
+                  "description": "Meereshöhe"
+               }
+            ]
+         }
+      ]
+   }
+}

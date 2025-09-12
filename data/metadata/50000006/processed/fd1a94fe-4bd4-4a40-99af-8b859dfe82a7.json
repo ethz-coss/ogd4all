@@ -1,0 +1,142 @@
+{
+   "title": "Statistische Quartiere",
+   "keywords": [
+      "Gebietseinteilungen",
+      "Quartiere",
+      "Stadtquartiere"
+   ],
+   "metadata_date": "2024-06-25T12:51:26",
+   "updateFrequency": "asNeeded",
+   "purpose": "Statistische Daten der Stadt Zürich werden häufig zur räumlichen Differenzierung nach Statistischen Quartieren, Stadtkreisen oder Statistischen Zonen unterteilt. Generell dienen administrative Einteilungen den Dienststellen der Stadt Zürich als Grundlage für verwaltungsinterne Aufgaben.",
+   "abstract": "Statistische Quartiere sind eine administrative Einteilung der Stadt Zürich.\n\nFür statistische Zwecke wird die Stadt Zürich - ausgehend von den **12 Kreisen** bzw. 22 Stadtquartieren - in **34 Statistische Quartiere** unterteilt. Diese bestehen wiederum aus **216 statistische Zonen**.",
+   "identificationDate": "2025-03-17",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Präsidialdepartement - Statistik Stadt Zürich",
+   "contactPerson": "Marco Sieber",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Statistische_Quartiere",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "ADM_STATISTISCHE_QUARTIERE_B_P",
+            "description": "Beschriftungspunkte der statistischen Quartiere. Dieser Punktlayer beinhaltet Informationen zur optimalen Positionierung von Beschriftungen in Karten.",
+            "attributes": [
+               {
+                  "name": "KUERZEL",
+                  "description": "-"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "HALI",
+                  "description": "Horizontaler Versatz zum Ursprungspunkt; undefiniert = Center"
+               },
+               {
+                  "name": "NAME",
+                  "description": "Bezeichnung des statistischen Quartiers"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ORI",
+                  "description": "Rotation der Beschriftung; undefiniert = 100.0; Masseinheit ist Gon."
+               },
+               {
+                  "name": "VALI",
+                  "description": "Vertikaler Versatz zum Ursprungspunkt; undefiniert = Half"
+               }
+            ]
+         },
+         {
+            "name": "ADM_STATISTISCHE_QUARTIERE_MAP",
+            "description": "Dieser Layer kann für Datenvisualisierungen und kartographische Darstellungen verwendet werden. Er enthält die vollständige Attributtabelle und ist generalisiert, sprich: die Geometrie wurde vereinfacht und entspricht nicht der - aus Sicht der amtlichen Vermessung - korrekten Lage.",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld."
+               },
+               {
+                  "name": "KNAME",
+                  "description": "Name des Stadtkreises."
+               },
+               {
+                  "name": "KNR",
+                  "description": "Offizielle ID des Stadtkreises."
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "Interner System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "QNAME",
+                  "description": "Name des Statistischen Quartiers."
+               },
+               {
+                  "name": "QNR",
+                  "description": "Offizielle ID des Statistischen Quartiers."
+               }
+            ]
+         },
+         {
+            "name": "ADM_STATISTISCHE_QUARTIERE_V",
+            "description": "Dieser Layer enthält die exakten Grenzverläufe der Statistischen Quartiere und enthält die vollständige Attributtabelle.\n\nDieser Layer eignet sich zur Berechnung von Flächenangaben oder bei räumlichen Verschnitten. Als kartographischer Layer ist er jedoch nicht geeignet.",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld."
+               },
+               {
+                  "name": "KNAME",
+                  "description": "Name des Stadtkreises."
+               },
+               {
+                  "name": "KNR",
+                  "description": "Offizielle ID des Stadtkreises."
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "Interner System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "QNAME",
+                  "description": "Name des Statistischen Quartiers."
+               },
+               {
+                  "name": "QNR",
+                  "description": "Offizielle ID des Statistischen Quartiers."
+               }
+            ]
+         }
+      ]
+   }
+}

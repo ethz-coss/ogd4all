@@ -1,0 +1,88 @@
+{
+   "title": "Umgesetzte Grundstücke und Fläche nach Handänderungstyp und Bebauungsart",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bau_hae_anz_fl_haeart_bebart_seit2009_od5111",
+   "abstract": "Diese Daten beinhalten die Anzahl Grundstücke, die in irgendeiner Weise die Hand gewechselt haben. Dazu gehören auch Grundstücke, bei denen nur ein Stockwerkeigentumsanteil die Hand gewechselt hat (separat ausgewiesen).\nBitte beachten Sie für das korrekte Verständnis zu den Daten die unten aufgeführten weiteren Erläuterungen in der Rubrik «Bemerkungen».",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Allgemein:\n\nDie dargestellten Werte beziehen sich auf alle Handänderungen von Grundstücken in der Stadt Zürich. Mit einer Handänderung können auch mehrere Grundsücke die Eigentümerschaft gewechselt haben. Hat ein Grundsück während eines Jahres mehrmals die Hand gewchselt, so wird es entsprechend mehrmals gezählt. Um als Handänderung gezählt zu werden, muss das Grundstück nicht vollständig an eine neue Eigentümerschaft übergehen. So zählen z.B. auch Handänderungen eines Anteils einer Liegenschaft im Stockwerkeigentum mit, sind jedoch separat mit einer Variablen gekennzeichnet.\n\nDefinition: Bebauungsart der Handänderung\n\nJeder Handänderung ist gemäss der wichtigsten Gebäudenutzung eine Hauptbebauungsart zugeordnet. Steht auf einer Parzelle beispielsweise ein Mehrfamilienhaus und eine Garage, so fällt die ganze Parzelle in die Kategorie \"Mehrfamilienhäuser\". Die Kategorisierung unterscheidet drei Hauptgruppen: Erstens die verschiedenen Bebauungsarten in den Wohn- und Mischzonen, zweitens die bebauten und unbebauten Grundstücke in den Industrie- und Gewerbezonen, drittens Grundstücke in den übrigen Zonen (=Nicht-Bauzonen: Freihalte-, Erholungs-, Landwirtschafts-, Reservezonen, Wald)\n\nVariablen mit mehreren Varianten\n\nGewisse Variablen werden in verschiedenen Formen aufgeführt. Die \"Lang\"-Variante beschreibt den Inhalt (z.B. StatZoneLang beschreibt die statistische Zone, mögliche Werte sind Central oder Oberdorf). Die \"Cd\"-Variante kodiert die Variable alphanumerisch, quasi als Kurzform (Central und Oberdorf sind 1104 und 1201). Die \"Sort\"-Variante kodiert die Variable numerisch (Central und Oberdorf sind 5 und 4) und erlaubt eine Sortierung. \"Cd\" und \"Sort\" können auch identisch sein.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Umgesetzte Grundstücke und Fläche nach Handänderungstyp und Bebauungsart",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: Stichtagdatjahr)",
+                  "description": "Jahr (Numerisch)"
+               },
+               {
+                  "name": "Datenstand (Code) (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (P = provisorisch, D = definitiv)"
+               },
+               {
+                  "name": "Art der Handänderung (Sort) (technisch: HAArtLevel2Sort)",
+                  "description": "Art der Handänderung (Numeric)"
+               },
+               {
+                  "name": "Art der Handänderung (Code) (technisch: HAArtLevel2Cd)",
+                  "description": "Art der Handänderung (String)"
+               },
+               {
+                  "name": "Art der Handänderung (Lang) (technisch: HAArtLevel2Lang)",
+                  "description": "Art der Handänderung (String)"
+               },
+               {
+                  "name": "Bauzone nach SSZ-Aggregation (Sort) (technisch: ZonenSSZPubl2Sort_noDM)",
+                  "description": "Bauzone nach SSZ-Aggregation (Numeric)"
+               },
+               {
+                  "name": "Bauzone nach SSZ-Aggregation (Code) (technisch: ZonenSSZPubl2Cd_noDM)",
+                  "description": "Bauzone nach SSZ-Aggregation (String)"
+               },
+               {
+                  "name": "Bauzone nach SSZ-Aggregation (Lang) (technisch: ZonenSSZPubl2Lang_noDM)",
+                  "description": "Bauzone nach SSZ-Aggregation (String)"
+               },
+               {
+                  "name": "Hauptbebauungsart der Grundstücke der Handanderung (Sort) (technisch: GebaeudeBebauungSort_noDM)",
+                  "description": "Wichtigster Gebäudetyp, mit dem die von Handänderungen betroffenen Grundstücke bebaut sind (Numeric)"
+               },
+               {
+                  "name": "Hauptbebauungsart der Grundstücke der Handanderung (Code) (technisch: GebaeudeBebauungCd_noDM)",
+                  "description": "Wichtigster Gebäudetyp, mit dem die von Handänderungen betroffenen Grundstücke bebaut sind (String)"
+               },
+               {
+                  "name": "Hauptbebauungsart der Grundstücke der Handanderung (Lang) (technisch: GebaeudeBebauungLang_noDM)",
+                  "description": "Wichtigster Gebäudetyp, mit dem die von Handänderungen betroffenen Grundstücke bebaut sind (String)"
+               },
+               {
+                  "name": "Stockwerkeigentum (Sort) (technisch: HASTWESort)",
+                  "description": "Bezeichnet, ob sich die Handänderungen auf Stockwerkeigentumsanteile beziehen oder nicht (Numeric)"
+               },
+               {
+                  "name": "Stockwerkeigentum (Code) (technisch: HASTWECd)",
+                  "description": "Bezeichnet, ob sich die Handänderungen auf Stockwerkeigentumsanteile beziehen oder nicht (String)"
+               },
+               {
+                  "name": "Stockwerkeigentum (Lang) (technisch: HASTWELang)",
+                  "description": "Bezeichnet, ob sich die Handänderungen auf Stockwerkeigentumsanteile beziehen oder nicht (String)"
+               },
+               {
+                  "name": "Anzahl Handänderungen (technisch: AnzHA)",
+                  "description": "Anzahl Handänderungen (Numeric)"
+               },
+               {
+                  "name": "Anzahl Grundstücke (technisch: AnzHAGst)",
+                  "description": "Anzahl Grundstücke, welche die Hand gewechselt haben (Numeric)"
+               },
+               {
+                  "name": "Gehandelte Grundstückfläche (technisch: HAGstflaeche)",
+                  "description": "Bezeichnet die gehandelte Grundstückfläche in Quadratmetern, die für die Preisangaben ausgewertet wurde (Numeric)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-01-28"
+}

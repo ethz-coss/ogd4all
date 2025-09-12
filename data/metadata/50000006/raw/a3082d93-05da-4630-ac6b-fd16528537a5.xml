@@ -1,0 +1,1399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<che:CHE_MD_Metadata xmlns:che="http://www.geocat.ch/2008/che" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gco:isoType="gmd:MD_Metadata" xsi:schemaLocation="http://www.geocat.ch/2008/che http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd http://www.isotc211.org/2005/srv http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd">
+  <gmd:fileIdentifier xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:CharacterString>a3082d93-05da-4630-ac6b-fd16528537a5</gco:CharacterString>
+  </gmd:fileIdentifier>
+  <gmd:language xmlns:comp="http://www.geocat.ch/2003/05/gateway/GM03Comprehensive" xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:CharacterString>deu</gco:CharacterString>
+  </gmd:language>
+  <gmd:characterSet xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+  </gmd:characterSet>
+  <gmd:hierarchyLevel xmlns:comp="http://www.geocat.ch/2003/05/gateway/GM03Comprehensive" xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" />
+  </gmd:hierarchyLevel>
+  <gmd:hierarchyLevelName>
+    <gco:CharacterString>EWZ Werkleitungsdaten Elektrizität und Telekommunikation</gco:CharacterString>
+  </gmd:hierarchyLevelName>
+  <gmd:contact>
+    <che:CHE_CI_ResponsibleParty gco:isoType="gmd:CI_ResponsibleParty">
+      <gmd:organisationName>
+        <gco:CharacterString>Stadt Zürich - Departement der Industriellen Betriebe - Elektrizitätswerk der Stadt Zürich</gco:CharacterString>
+      </gmd:organisationName>
+      <gmd:contactInfo>
+        <gmd:CI_Contact>
+          <gmd:phone>
+            <che:CHE_CI_Telephone gco:isoType="gmd:CI_Telephone">
+              <gmd:voice>
+                <gco:CharacterString>+41 58 319 41 11</gco:CharacterString>
+              </gmd:voice>
+              <che:directNumber>
+                <gco:CharacterString>+41 58 319 41 11</gco:CharacterString>
+              </che:directNumber>
+            </che:CHE_CI_Telephone>
+          </gmd:phone>
+          <gmd:address>
+            <che:CHE_CI_Address gco:isoType="gmd:CI_Address">
+              <gmd:city>
+                <gco:CharacterString>Zürich</gco:CharacterString>
+              </gmd:city>
+              <gmd:postalCode>
+                <gco:CharacterString>8050</gco:CharacterString>
+              </gmd:postalCode>
+              <gmd:country>
+                <gco:CharacterString>CH</gco:CharacterString>
+              </gmd:country>
+              <gmd:electronicMailAddress>
+                <gco:CharacterString>netze@ewz.ch</gco:CharacterString>
+              </gmd:electronicMailAddress>
+              <che:streetName>
+                <gco:CharacterString>Tramstrasse</gco:CharacterString>
+              </che:streetName>
+              <che:streetNumber>
+                <gco:CharacterString>35</gco:CharacterString>
+              </che:streetNumber>
+            </che:CHE_CI_Address>
+          </gmd:address>
+          <gmd:onlineResource>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage>
+                <gmd:URL>http://www.ewz.ch</gmd:URL>
+              </gmd:linkage>
+            </gmd:CI_OnlineResource>
+          </gmd:onlineResource>
+        </gmd:CI_Contact>
+      </gmd:contactInfo>
+      <gmd:role>
+        <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact" />
+      </gmd:role>
+      <che:individualFirstName>
+        <gco:CharacterString>Dominika</gco:CharacterString>
+      </che:individualFirstName>
+      <che:individualLastName>
+        <gco:CharacterString>Nowak</gco:CharacterString>
+      </che:individualLastName>
+      <che:organisationAcronym>
+        <gco:CharacterString>ewz</gco:CharacterString>
+      </che:organisationAcronym>
+    </che:CHE_CI_ResponsibleParty>
+  </gmd:contact>
+  <gmd:dateStamp xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:DateTime>2023-03-28T08:04:39</gco:DateTime>
+  </gmd:dateStamp>
+  <gmd:metadataStandardName xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:CharacterString>GM03 2+</gco:CharacterString>
+  </gmd:metadataStandardName>
+  <gmd:spatialRepresentationInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_VectorSpatialRepresentation>
+      <gmd:geometricObjects>
+        <gmd:MD_GeometricObjects>
+          <gmd:geometricObjectType>
+            <gmd:MD_GeometricObjectTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_GeometricObjectTypeCode" codeListValue="composite" />
+          </gmd:geometricObjectType>
+        </gmd:MD_GeometricObjects>
+      </gmd:geometricObjects>
+    </gmd:MD_VectorSpatialRepresentation>
+  </gmd:spatialRepresentationInfo>
+  <gmd:referenceSystemInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_ReferenceSystem>
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gco:CharacterString>CH1903+_LV95</gco:CharacterString>
+          </gmd:code>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:identificationInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <che:CHE_MD_DataIdentification gco:isoType="gmd:MD_DataIdentification">
+      <gmd:citation>
+        <gmd:CI_Citation>
+          <gmd:title xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>EWZ Werkleitungsdaten Elektrizität und Telekommunikation</gco:CharacterString>
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#DE" />
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
+          </gmd:title>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:Date>2025-03-17</gco:Date>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+        </gmd:CI_Citation>
+      </gmd:citation>
+      <gmd:abstract xsi:type="gmd:PT_FreeText_PropertyType">
+        <gco:CharacterString>Alle Trassen der ewz Strom- und Telecomleitungen im öffentlichen Grund sind im Geodatensatz EWZ Werkleitungsdaten abgebildet. Gültigkeitseinschränkungen wegen ewz Bauarbeiten sind als Flächen gekennzeichnet.
+Es sind die Nutzungsbestimmungen im Dokument NIS_ZH_EWZ.pdf (siehe unten) zu beachten.
+
+Kontakt für Datenbezug: NetzKundenAnliegen@ewz.ch</gco:CharacterString>
+        <gmd:PT_FreeText>
+          <gmd:textGroup>
+            <gmd:LocalisedCharacterString locale="#DE" />
+          </gmd:textGroup>
+        </gmd:PT_FreeText>
+      </gmd:abstract>
+      <gmd:purpose xsi:type="gmd:PT_FreeText_PropertyType">
+        <gmd:PT_FreeText>
+          <gmd:textGroup>
+            <gmd:LocalisedCharacterString locale="#DE">Der Geodatensatz EWZ Werkleitungsdaten dient interessierten Kreisen zur Auskunft über die exakte Lage der Trassen mit ewz Strom- und Telecomleitungen im öffentlichen Grund. 
+Die Nutzungsbestimmungen in Dokument NIS_ZH_EWZ.pdf sind strikte zu befolgen. 
+Für Tiefbauarbeiten ist zwingend ein ausgedrucktes Exemplar des Leitungskatasters mit mindestens diesem Layer und jenem der Amtlichen Vermessung erforderlich. Dieses dient als Beweisstück bei allfälligen Schadenfällen. Dieser Ausdruck muss mit Datum und Visum der planaufbereitenden Person versehen sein und während mindestens einem Monat nach Bauende aufbewahrt bzw. vorgelegt werden können. Kann kein entsprechender Plan vorgelegt werden, lehnt ewz jegliche Haftung ab.
+Die Gültigkeit der Auskunft ist auf 7 Tage begrenzt. Erfolgen Tiefbauarbeiten nicht innerhalb obiger Frist, müssen Lage und Vollständigkeit der ewz Leitungen nochmals überprüft oder neu erhoben werden.
+Die diesem Geodatensatz beiliegenden Gültigkeitseinschränkungen (Verbindlichkeitsflächen) sind schraffiert und mit "ewz" beschriftet. In diesen Bereichen ist ewz im Begriff Lage und/oder Inhalt der Trassen zu verändern. Bei Tiefbauarbeiten in Gebieten mit diesen Flächen müssen zwingend aktuelle Planunterlagen direkt bei ewz angefordert werden.</gmd:LocalisedCharacterString>
+          </gmd:textGroup>
+        </gmd:PT_FreeText>
+      </gmd:purpose>
+      <gmd:resourceMaintenance>
+        <che:CHE_MD_MaintenanceInformation xmlns:gts="http://www.isotc211.org/2005/gts" gco:isoType="gmd:MD_MaintenanceInformation">
+          <gmd:maintenanceAndUpdateFrequency>
+            <gmd:MD_MaintenanceFrequencyCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="weekly" />
+          </gmd:maintenanceAndUpdateFrequency>
+          <gmd:contact>
+            <che:CHE_CI_ResponsibleParty gco:isoType="gmd:CI_ResponsibleParty">
+              <gmd:organisationName>
+                <gco:CharacterString>Departement der Industriellen Betriebe
+                     - Elektrizitätswerk der Stadt Zürich</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:phone>
+                    <che:CHE_CI_Telephone gco:isoType="gmd:CI_Telephone">
+                      <gmd:voice>
+                        <gco:CharacterString>+41 58 319 41 11</gco:CharacterString>
+                      </gmd:voice>
+                      <che:directNumber>
+                        <gco:CharacterString>+41 58 319 41 11</gco:CharacterString>
+                      </che:directNumber>
+                    </che:CHE_CI_Telephone>
+                  </gmd:phone>
+                  <gmd:address>
+                    <che:CHE_CI_Address gco:isoType="gmd:CI_Address">
+                      <gmd:city>
+                        <gco:CharacterString>Zürich</gco:CharacterString>
+                      </gmd:city>
+                      <gmd:postalCode>
+                        <gco:CharacterString>8050</gco:CharacterString>
+                      </gmd:postalCode>
+                      <gmd:country>
+                        <gco:CharacterString>CH</gco:CharacterString>
+                      </gmd:country>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString>netze@ewz.ch</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                      <che:streetName>
+                        <gco:CharacterString>Tramstrasse</gco:CharacterString>
+                      </che:streetName>
+                      <che:streetNumber>
+                        <gco:CharacterString>35</gco:CharacterString>
+                      </che:streetNumber>
+                    </che:CHE_CI_Address>
+                  </gmd:address>
+                  <gmd:onlineResource>
+                    <gmd:CI_OnlineResource>
+                      <gmd:linkage>
+                        <gmd:URL>http://www.ewz.ch</gmd:URL>
+                      </gmd:linkage>
+                    </gmd:CI_OnlineResource>
+                  </gmd:onlineResource>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodeLists.xml#CI_RoleCode" codeListValue="owner" />
+              </gmd:role>
+              <che:individualFirstName>
+                <gco:CharacterString>Leitung</gco:CharacterString>
+              </che:individualFirstName>
+              <che:individualLastName>
+                <gco:CharacterString>Netze</gco:CharacterString>
+              </che:individualLastName>
+              <che:organisationAcronym>
+                <gco:CharacterString>ewz</gco:CharacterString>
+              </che:organisationAcronym>
+            </che:CHE_CI_ResponsibleParty>
+          </gmd:contact>
+        </che:CHE_MD_MaintenanceInformation>
+      </gmd:resourceMaintenance>
+      <gmd:graphicOverview>
+        <gmd:MD_BrowseGraphic>
+          <gmd:fileName>
+            <gco:CharacterString>https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/a3082d93-05da-4630-ac6b-fd16528537a5.png</gco:CharacterString>
+          </gmd:fileName>
+        </gmd:MD_BrowseGraphic>
+      </gmd:graphicOverview>
+      <gmd:descriptiveKeywords>
+        <gmd:MD_Keywords>
+          <gmd:keyword>
+            <gco:CharacterString>Strom, Elektrizität, Leitungskataster</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:type>
+            <gmd:MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodeLists.xml#MD_KeywordTypeCode" codeListValue="theme" />
+          </gmd:type>
+        </gmd:MD_Keywords>
+      </gmd:descriptiveKeywords>
+      <gmd:resourceConstraints>
+        <che:CHE_MD_LegalConstraints gco:isoType="gmd:MD_LegalConstraints" />
+      </gmd:resourceConstraints>
+      <gmd:spatialRepresentationType>
+        <gmd:MD_SpatialRepresentationTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodeLists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector" />
+      </gmd:spatialRepresentationType>
+      <gmd:spatialResolution>
+        <gmd:MD_Resolution>
+          <gmd:equivalentScale>
+            <gmd:MD_RepresentativeFraction>
+              <gmd:denominator>
+                <gco:Integer>200</gco:Integer>
+              </gmd:denominator>
+            </gmd:MD_RepresentativeFraction>
+          </gmd:equivalentScale>
+        </gmd:MD_Resolution>
+      </gmd:spatialResolution>
+      <gmd:language>
+        <gco:CharacterString>deu</gco:CharacterString>
+      </gmd:language>
+      <gmd:characterSet>
+        <gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+      </gmd:characterSet>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>utilitiesCommunication_Energy</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:extent>
+        <gmd:EX_Extent>
+          <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>Kanton Zürich</gco:CharacterString>
+          </gmd:description>
+          <gmd:geographicElement>
+            <gmd:EX_GeographicDescription>
+              <gmd:geographicIdentifier>
+                <gmd:MD_Identifier>
+                  <gmd:code xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString />
+                  </gmd:code>
+                </gmd:MD_Identifier>
+              </gmd:geographicIdentifier>
+            </gmd:EX_GeographicDescription>
+          </gmd:geographicElement>
+          <gmd:geographicElement>
+            <gmd:EX_BoundingPolygon>
+              <gmd:extentTypeCode>
+                <gco:Boolean>true</gco:Boolean>
+              </gmd:extentTypeCode>
+              <gmd:polygon>
+                <gml:MultiSurface gml:id="N10285">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="N1028A">
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList />
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </gmd:polygon>
+            </gmd:EX_BoundingPolygon>
+          </gmd:geographicElement>
+          <gmd:geographicElement>
+            <gmd:EX_GeographicBoundingBox>
+              <gmd:extentTypeCode>
+                <gco:Boolean>true</gco:Boolean>
+              </gmd:extentTypeCode>
+              <gmd:westBoundLongitude>
+                <gco:Decimal>8.351987544965217</gco:Decimal>
+              </gmd:westBoundLongitude>
+              <gmd:eastBoundLongitude>
+                <gco:Decimal>8.995762202764812</gco:Decimal>
+              </gmd:eastBoundLongitude>
+              <gmd:southBoundLatitude>
+                <gco:Decimal>47.16239242364716</gco:Decimal>
+              </gmd:southBoundLatitude>
+              <gmd:northBoundLatitude>
+                <gco:Decimal>47.69020608441791</gco:Decimal>
+              </gmd:northBoundLatitude>
+            </gmd:EX_GeographicBoundingBox>
+          </gmd:geographicElement>
+        </gmd:EX_Extent>
+      </gmd:extent>
+    </che:CHE_MD_DataIdentification>
+  </gmd:identificationInfo>
+  <gmd:contentInfo>
+    <che:CHE_MD_FeatureCatalogueDescription gco:isoType="gmd:MD_FeatureCatalogueDescription">
+      <gmd:includedWithDataset>
+        <gco:Boolean>0</gco:Boolean>
+      </gmd:includedWithDataset>
+      <gmd:featureCatalogueCitation>
+        <gmd:CI_Citation>
+          <gmd:title>
+            <gco:CharacterString>EWZ Werkleitungsdaten Elektrizität und Telekommunikation</gco:CharacterString>
+          </gmd:title>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:Date>2025-03-17</gco:Date>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+        </gmd:CI_Citation>
+      </gmd:featureCatalogueCitation>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>EWZ_BRENNSTELLENTRAEGER_L</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Überspannungsseil als Teil einer Anlage der öffentlichen Beleuchtung (Liniendarstellung)
+&lt;BrennstellenTraeger&gt;</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>ESRI System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Liniengeometrien vonTragseilen einer Beleuchtungsanlage</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BEANISNR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>NIS_NR</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>EWZ_ERDUNG_P</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Erdungsanlage (Symboldarstellung)
+&lt;Erdung&gt;</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Punktgeometrie von Erdungsanlagen</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>NISNR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>NIS_NR</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TYP_TXT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>ErdungTyp Text</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>ESRI System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ORIENTIERUNG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Rotation des Symbols; Masseinheit ist Grad.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TYP</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>ErdungTyp = (Tiefenerder, Erdungsplatte, Erdungsbride, Armierung, Undefiniert)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>EWZ_BRENNSTELLE_P</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Leuchtenstandort (Symboldarstellung)
+&lt;Brennstelle&gt;</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ART</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>BrennstellenArt = (Beleuchtung, Verkehr, Undefiniert)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ART_TXT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>BrennstellenArt Text</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Geometrie des Leuchtenstandorts</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>NISNR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>NIS_NR</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>ESRI System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ORIENTIERUNG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Rotation des Symbols; Masseinheit ist Grad.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>EWZ_FREILEITUNGSMAST_A</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Freileitungsmast (Flächendarstellung)
+&lt;FreileitungMast&gt;</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Flächengeometrie des Freileitungsmastes</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>NISNR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>NIS_NR</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>ESRI System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TYP_TXT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Freileitungsmast Typ Text</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ORIENTIERUNG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Rotation des Symbols; undefiniert = 100.0; Masseinheit ist Gon.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TYP</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>FreileitungMastTyp = (Freileitungsmast_NS, Freileitungsmast_HS, Undefiniert)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>EWZ_FREILEITUNGSMAST_P</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Freileitungsmast (Symboldarstellung)
+&lt;FreileitungMast&gt;</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Punktgeometrie des Freileitungsmastes</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>NISNR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>NIS_NR</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TYP_TXT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Freileitungsmast Typ Text</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>ESRI System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ORIENTIERUNG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Rotation des Symbols; Masseinheit ist Grad.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TYP</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>FreileitungMastTyp = (Freileitungsmast_NS, Freileitungsmast_HS, Undefiniert)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>EWZ_OEB_MAST_P</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Abspannmast als Teil einer Anlage der öffentlichen Beleuchtung (Symboldarstellung; oft gemeinsam mit VBZ)
+&lt;OebMast&gt;</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Punktgeometrie des Abspannmastes</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>NISNR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>NIS_NR</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>ESRI System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TYP</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>OebMastTyp = (Abspannmast, Joch, Fundament, Undefiniert)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TYP_TXT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>OebMastTyp Text</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ORIENTIERUNG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Rotation des Symbols; Masseinheit ist Grad.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>EWZ_SCHACHTOEFFNUNG_P</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Schachteinstieg (Symboldarstellung)
+&lt;Schachtoeffnung&gt;</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Geometrie des Schachteinstiegs</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>NISNR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>NIS_NR</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TYP_TXT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Schachtöffnungstyp Text</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>ESRI System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ORIENTIERUNG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Rotation des Symbols; Masseinheit ist Grad.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TYP</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>SchachtoeffnungTyp = (Einstieg, Lüftung)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>EWZ_SCHACHT_A</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Schacht als Teil der Trasse (Flächendarstellung)
+&lt;Schacht&gt;</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>NISNR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>NIS_NR</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Geometrie des Schachtes</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>ESRI System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>EWZ_SCHACHT_L</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Schachtfläche Umrandungslinie (Liniendarstellung)
+&lt;Schacht&gt;</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Geometrie der Schachtumrandungslinie</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>ESRI System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>REFID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Referenz-ID des übergeordneten Geometrieobjektes. Die Linienobjekte mit der gleichen Referenz-ID bilden zusammen die Umrandung einer Fläche.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>EWZ_TRASSE_A</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Trassenabschnitt mit Breite &gt; 30 cm (Flächendarstellung)
+&lt;TrasseAbschnittFlaeche&gt;</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Geometrie des Trassenabschnittes</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>ESRI System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TRASSEABSCHNITTTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Fremdschlüssel für Verbindung zur Tabelle TrasseAbschnitt</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TRASSELAGE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>TrasseLageTyp =(Genau, Geortet, Ungenau, Nach_Angabe, Unbekannt, Undefiniert)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TRASSELAGE_TXT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Trasselage Text</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BREITE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Trassenbreite; Angabe nur möglich für einfache Flächentrassen, k.A. fuer komplexe Flächentrassen und Trassenknotenflächen</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>EWZ_TRASSE_ACHSE_L</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Trassenabschnitt mit Breite &lt;= 30 cm (Liniendarstellung)
+&lt;TrasseAbschnittLinie&gt;</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BREITE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Breite des Trasseabschnittes</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Geometrie des Trasseabschnittes</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TRASSELAGE_TXT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>TrasseLageTyp Text</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>ESRI System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TRASSEABSCHNITTTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Fremdschlüssel für Verbindung zur Tabelle TrasseAbschnitt</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TRASSELAGE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>TrasseLageTyp = (Genau, Geortet, Ungenau, Nach_Angabe, Unbekannt, Undefiniert)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>EWZ_TRASSE_L</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Trassenabschnittsfläche (Liniendarstellung) 
+&lt;TrasseAbschnittFlaeche&gt;</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>REFID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Referenz-ID des übergeordneten Geometrieobjektes. Die Linienobjekte mit der gleichen Referenz-ID bilden zusammen die Umrandung einer Fläche.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TRASSEABSCHNITTTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Fremdschlüssel für Verbindung zur Tabelle TrasseAbschnitt</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TRASSELAGE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>TrasseLageTyp =(Genau, Geortet, Ungenau, Nach_Angabe, Unbekannt, Undefiniert)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TRASSELAGE_TXT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Trasselage Text</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Geometrie der Trassenabschnitts-Umrandungslinie</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>ESRI System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>EWZ_TRASSE_T</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Gefährdungsinformation des Trasseninhalts (Textdarstellung; Freileitungen, elektrische Spannung über 1000 Volt, spezielle Kabelisolation, Fernwärme)
+&lt;TrasseAbschnitt&gt;
+&lt;TrasseBeschriftung&gt;</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BESCHRIFTUNG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Beschriftung; Platzierung obligatorisch für Spannungen &gt; 1 kV</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Geometrie der Beschriftung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>SCHRIFTHALI</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Horizontaler Versatz zum Ursprungspunkt; undefiniert = Center</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>SCHRIFTVALI</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Vertikaler Versatz zum Ursprungspunkt; undefiniert = Half</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TRASSEABSCHNITTTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Fremdschlüssel für Verbindung zur Tabelle TrasseAbschnitt</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>ESRI System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>SCHRIFTORIENTIERUNG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Rotation der Beschriftung; Masseinheit ist Grad.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>EWZ_TRASSE_UEBERD_P</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Trassenüberdeckung (Punktdarstellung; wird nur dort abgesetzt, wo die Trassentiefe nicht dem Standard von 0.5 m entspricht)
+&lt;TrasseUeberdeckung&gt;</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BESCHRIFTUNG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Beschriftung der Trasse Überdeckung; '?'=undefiniert</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Geometrie der Trasseüberdeckung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>NISNR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>NIS_NR</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ORIENTIERUNG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Rotation des Symbols; Masseinheit ist Grad.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>SCHRIFTORIENTIERUNG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Rotation des Symbols; Masseinheit ist Grad.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TRASSEABSCHNITTTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Fremdschlüssel für Verbindung zur Tabelle TrasseAbschnitt</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TRASSELAGE_TXT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>TrasseLageTyp Text</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>ESRI System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>SCHRIFTHALI</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Horizontaler Versatz zum Ursprungspunkt; undefiniert = Center</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>SCHRIFTVALI</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Vertikaler Versatz zum Ursprungspunkt; undefiniert = Half</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TRASSELAGE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>TrasseLageTyp = (Genau, Geortet, Ungenau, Nach_Angabe, Unbekannt, Undefiniert)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>EWZ_TRASSE_UEBERD_T</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Trassenüberdeckung (Textdarstellung; wird nur dort abgesetzt, wo die Trassentiefe nicht dem Standard von 0.5 m entspricht)
+1. Absolute Überdeckung: Oberkante der Trasse in Meter über Meer.
+2. Relative Überdeckung: Auflage zwischen Oberkante der Trasse und Bodenoberfläche in Meter. 
+&lt;TrasseUeberdeckung&gt;</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BESCHRIFTUNG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Beschriftung der Trasse Überdeckung; '?'=undefiniert</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>ESRI System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>SCHRIFTORIENTIERUNG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Rotation der Beschriftung; Masseinheit ist Grad.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TRASSEABSCHNITTTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Fremdschlüssel für Verbindung zur Tabelle TrasseAbschnitt</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Textgeometrie der Trasseüberdeckung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>SCHRIFTHALI</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Horizontaler Versatz zum Ursprungspunkt; undefiniert = Center</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>SCHRIFTVALI</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Vertikaler Versatz zum Ursprungspunkt; undefiniert = Half</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>EWZ_VE_VERBINDLICHKEIT_A</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Verbindlichkeiten ewz (Flächendarstellung; schraffiert mit ewz-Text)
+Gültigkeitseinschränkung der hier veröffentlichten Trasseninformation. Für Bauarbeiten müssen in diesen Zonen zwingend Planunterlagen bei ewz angefordert und tagesaktuell verwendet werden.
+&lt;Verbindlichkeiten_EWZ&gt;</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Geometrie der jeweiligen Gebiete</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>ESRI System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>System-Identifikator. Nicht stabil über Zeit.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:modelType>
+        <che:CHE_MD_modelTypeCode codeList="" codeListValue="FeatureDescription" />
+      </che:modelType>
+    </che:CHE_MD_FeatureCatalogueDescription>
+  </gmd:contentInfo>
+  <gmd:distributionInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_Distribution />
+  </gmd:distributionInfo>
+  <gmd:dataQualityInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:DQ_DataQuality>
+      <gmd:scope>
+        <gmd:DQ_Scope>
+          <gmd:level>
+            <gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" />
+          </gmd:level>
+        </gmd:DQ_Scope>
+      </gmd:scope>
+      <gmd:lineage>
+        <gmd:LI_Lineage />
+      </gmd:lineage>
+    </gmd:DQ_DataQuality>
+  </gmd:dataQualityInfo>
+</che:CHE_MD_Metadata>
+

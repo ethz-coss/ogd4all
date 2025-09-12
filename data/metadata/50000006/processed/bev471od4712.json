@@ -1,0 +1,36 @@
+{
+   "title": "Medianalter nach Stadtkreis und Stadtquartier",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bev_bestand_jahr_medianalter_od4712",
+   "abstract": "Medianalter der wirtschaftlichen Wohnbevölkerung der Stadt Zürich nach Stadtkreis und Stadtquartier.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Hinweis:\n\nDie Raumnummer ist nicht eindeutig. Beispielsweise steht die Nummer 11 sowohl für einen Stadtkreis als auch auch für ein Stadtquartier. Daher kann mittels der Raumkategorie-Variable Stadtkreise oder Stadtquartiere unterschieden werden.\n\nDefinition des Medianalters:\n\nDie eine Hälfte der Wohnbevölkerung ist älter, die andere Hälfte höchstens gleich alt wie das Medianalter.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Medianalter nach Stadtkreis und Stadtquartier",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (num)."
+               },
+               {
+                  "name": "Raumnummer (technisch: RaumSort)",
+                  "description": "Nummer: Ganze Stadt, Stadtkreis oder Stadtquartier (num)."
+               },
+               {
+                  "name": "Raumname (technisch: RaumLang)",
+                  "description": "Name: Ganze Stadt, Stadtkreis oder Stadtquartier (char)."
+               },
+               {
+                  "name": "Medianalter (technisch: Medianalter)",
+                  "description": "Medianalter (num)."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-03-05"
+}

@@ -1,0 +1,178 @@
+{
+   "title": "Übersicht Strassenlärmemissionsabschnitte für Lärmgutachten (3D)",
+   "keywords": [
+      "Strassenlärm",
+      "Lärm",
+      "Emissionsabschnitte",
+      "Strassenemission",
+      "Lärmgutachten"
+   ],
+   "metadata_date": "2024-09-20T08:11:18",
+   "updateFrequency": "asNeeded",
+   "purpose": "Grundlagendaten für den PDF Report der als Beleg für die bezogenen Daten eines Lärmgutachtens dient.",
+   "abstract": "Emissionsabschnitte des Strassenlärmbelastungskatasters der Stadt Zürich. Der Report für Lärmgutachten kann im Geoportal in der Abfrage-Ansicht oder über diesen Link aufbereitet werden: &lt;a href=\"https://www.stadt-zuerich.ch/geodaten/download/Uebersicht_Strassenlaermemissionsabschnitte_fuer_Laermgutachten?preview=true\">Lärmbelastungskataster (LBK): Emissionsabschnitte nach sonROAD18&lt;/a>",
+   "identificationDate": "2024-03-21",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Gesundheits- und Umweltdepartement - Umwelt- und Gesundheitsschutz",
+   "contactPerson": "Rainer Bobst",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Uebersicht_Strassenlaermemissionsabschnitte_fuer_Laermgutachten",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "lbk_emissionsabschnitt",
+            "description": "Emissionsabschnitte des Strassenlärmbelastungskatasters gemäss KGeoIV_ID144_B\n\nDieses Element enthält sowohl den schienengebundenen (Tram) wie nicht schienengebundenen (MiV / MöV) Strassenverkehrslärm. \n\nDie Tramabschnitte werden auf zusätzlichen, eigenen Abschnitten, paralell zum Miv / MöV, geführt.",
+            "attributes": [
+               {
+                  "name": "emi_version_id",
+                  "description": "Identifikator der LBK Version"
+               },
+               {
+                  "name": "emi_version",
+                  "description": "Text zur Version"
+               },
+               {
+                  "name": "geoiv_identifikator",
+                  "description": "Identifikator nach (K)GeoIV"
+               },
+               {
+                  "name": "gemeinde",
+                  "description": "Name der Gemeinde"
+               },
+               {
+                  "name": "zustaendige_stelle",
+                  "description": "Kontaktdaten der zuständigen Stelle"
+               },
+               {
+                  "name": "referenzjahr",
+                  "description": "Referenzjahr des Zustandes"
+               },
+               {
+                  "name": "emissionsmodell",
+                  "description": "Akustisches Quellenmodell"
+               },
+               {
+                  "name": "gueltig_ab",
+                  "description": "Datum der Gültigkeit seit"
+               },
+               {
+                  "name": "emi_abschnitt_id",
+                  "description": "Nummer des Emissionsabschnittes"
+               },
+               {
+                  "name": "lre_tag",
+                  "description": "Emissionswert am Tag"
+               },
+               {
+                  "name": "z_erfassung",
+                  "description": "Höhe der Fahrbahn auf Brücke erfasst (Ja/Nein)"
+               },
+               {
+                  "name": "steigung",
+                  "description": "Strassenlängsneigung"
+               },
+               {
+                  "name": "korrekturwert_belag",
+                  "description": "Belagskorrekturspektrum für sonROAD18"
+               },
+               {
+                  "name": "zuschlag_planungshorizont",
+                  "description": "Genereller Zuschlag für Planungshorizont in dB gegenüber Istzustand"
+               },
+               {
+                  "name": "lre_nacht",
+                  "description": "Emissionswert in der Nacht"
+               },
+               {
+                  "name": "strassenbelag",
+                  "description": "Belag für Motorfahrzeuge"
+               },
+               {
+                  "name": "ok",
+                  "description": "Emissionswerte können für Lärmgutachten verwendet werden (Ja/Nein)"
+               },
+               {
+                  "name": "vt",
+                  "description": "Geschwindigkeit Tag"
+               },
+               {
+                  "name": "vn",
+                  "description": "Geschwindigkeit Nacht"
+               },
+               {
+                  "name": "tunnel",
+                  "description": "Handelt es sich um einen Tunnel: Ja / Nein"
+               },
+               {
+                  "name": "bruecke",
+                  "description": "Handelt es sich um eine Brücke: Ja / Nein"
+               },
+               {
+                  "name": "strassenbahn",
+                  "description": "Strassenbahn vorhanden: Ja / Nein"
+               },
+               {
+                  "name": "verkehr_bemerkung",
+                  "description": "Bemerkung zum Verkehr"
+               },
+               {
+                  "name": "strassentyp",
+                  "description": "Strassentyp für sonROAD18"
+               },
+               {
+                  "name": "nt1",
+                  "description": "Anzahl \"leichte\" Fahrzeuge pro Stunde am Tag. Gemäss LSV Anhang 3"
+               },
+               {
+                  "name": "nn1",
+                  "description": "Anzahl \"leichte\" Fahrzeuge pro Stunde in der Nacht. Gemäss LSV Anhang 3"
+               },
+               {
+                  "name": "nt2",
+                  "description": "Anzahl \"schwere\" Fahrzeuge\n\npro Stunde am Tag. Gemäss LSV Anhang 3"
+               },
+               {
+                  "name": "nn2",
+                  "description": "Anzahl \"schwere\" Fahrzeuge pro Stunde in der Nacht. Gemäss LSV Anhang 3"
+               },
+               {
+                  "name": "anz_tram_tag",
+                  "description": "Anzahl Tram pro Stunde am Tag"
+               },
+               {
+                  "name": "anz_tram_nacht",
+                  "description": "Anzahl Tram pro Stunde in der Nacht"
+               },
+               {
+                  "name": "geometrie",
+                  "description": "Liniengeometrie des Emissionsabschnittes"
+               },
+               {
+                  "name": "objectid",
+                  "description": "Technischer Schüssel / ID des Records"
+               },
+               {
+                  "name": "gemeinde_nr",
+                  "description": "Gemeindenummer des Bundesamtes für Statistik"
+               },
+               {
+                  "name": "zustand_art",
+                  "description": "Zustand der Daten. Z.B.: Ist Zustand"
+               }
+            ]
+         }
+      ]
+   }
+}

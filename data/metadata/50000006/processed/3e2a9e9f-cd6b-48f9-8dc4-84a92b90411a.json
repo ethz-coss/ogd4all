@@ -1,0 +1,103 @@
+{
+   "title": "Fuss- und Velowegnetz",
+   "keywords": [
+      "Fusswege Radwege Velowege Veloinfrastruktur Velonetz Fussverkehrsnetz Routenplaner"
+   ],
+   "metadata_date": "2025-01-27T16:02:48",
+   "updateFrequency": "asNeeded",
+   "purpose": "Grundlage für Fuss- und Veloroutenplaner und weitere Analysen (z.B. Netzlängen des Fuss- und Veloroutennetzes)",
+   "abstract": "Das Fuss- und Velowegnetz beinhaltet alle Fuss- und Velowege in der Stadt Zürich. Es bildet die Grundlage für den städtischen Routenplaner.\n\nPro Strassenachse ist angegeben, ob das Velo in eine oder beide Richtungen fahren darf und ob ein Velostreifen vorhanden ist. Baulich abgetrennte Velowege sind lagegenau erfasst. Die Abbiegeverbote geben an, wo man als Velofahrerin nicht abbiegen darf.\n\nZu Fuss begehbare Wege sind lagegenau erfasst, also z.B. Trottoirs, Fussgängerstreifen oder Stege.\n\n\n\nDer städtische Routenplaner kann mittels einer Service-Schnittstelle verwendet werden. Dazu stehen REST-Endpoints auf Open Data Portalen zur Verfügung.",
+   "identificationDate": "2022-10-19",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Tiefbauamt",
+   "contactPerson": "Robin Loop",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)",
+      "ESRI File Geodatabase",
+      "REST Service"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Fuss__und_Velowegnetz",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "TBL_ROUTENNETZ_ABBIEGEVERBOTE",
+            "description": "Abbiegeverbote im Velonetz. Grundlage für den städtischen Routenplaner.",
+            "attributes": [
+               {
+                  "name": "ID1",
+                  "description": null
+               },
+               {
+                  "name": "SE_ANNO_CAD_DATA",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "TBL_ROUTENNETZ",
+            "description": "Beinhaltet das Velo- und Fusswegnetz für den städtischen Routenplaner",
+            "attributes": [
+               {
+                  "name": "EINBAHN",
+                  "description": "0 = in beide Richtungen befahrbar\n\nFT = befahrbar nur in Digitalisierrichtung\n\nTF = befahrbar nur gegen Digitalisierrichtung"
+               },
+               {
+                  "name": "FUSS",
+                  "description": "1 = zu Fuss begehbar\n\n0 = zu Fuss nicht begehbar"
+               },
+               {
+                  "name": "NAME",
+                  "description": "Ist der Strassenname oder Bezeichnung des Abschnitts, für die Routenangaben (erscheint im Routenpla-ner als Wegbeschreibung)"
+               },
+               {
+                  "name": "ID1",
+                  "description": null
+               },
+               {
+                  "name": "VELO",
+                  "description": "1 = Velo darf hier verkehren\n\n0 = Fahrverbot für Velo"
+               },
+               {
+                  "name": "VELOSTREIFEN",
+                  "description": "0 = kein Velostreifen\n\nFT = Velostreifen in Digitalisierrichtung\n\nTF = Velostreifen gegen Digitalisierrichtung\n\nBOTH = beidseitiger Velostreifen"
+               },
+               {
+                  "name": "VELOWEG",
+                  "description": "1 = ist ein Veloweg\n\n0 = ist kein Veloweg"
+               },
+               {
+                  "name": "MAP_VELO",
+                  "description": "0=keine Route in der gedruckten Karte \"Map Velo\"\n\n1=empfohlene Route\n\n2=empfohlene Route Naturbelag\n\n3=schnelle ergänzende Route\n\n5=Fahrverbot\n\n6=Biketrail"
+               },
+               {
+                  "name": "MAP_FUSS",
+                  "description": "0=keine Route\n\n1=Erholungsorientierter Fussweg\n\n2=Abkürzung"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "SE_ANNO_CAD_DATA",
+                  "description": null
+               }
+            ]
+         }
+      ]
+   }
+}

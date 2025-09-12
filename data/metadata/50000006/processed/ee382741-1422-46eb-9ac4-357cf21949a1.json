@@ -1,0 +1,102 @@
+{
+   "title": "Fachplanung Hitzeminderung OGD",
+   "keywords": [
+      "Klimaanpassung",
+      "Hitze",
+      "Massnahmengebiet",
+      "Hotspot",
+      "Freiraum"
+   ],
+   "metadata_date": "2023-12-11T16:44:16",
+   "updateFrequency": "asNeeded",
+   "purpose": "Planungsgrundlage",
+   "abstract": "Die Fachplanung Hitzeminderung formuliert konzeptionelle Aussagen zur Hitzeminderung und liefert Anstösse für die zukünftige Entwicklung der Stadt Zürich. Dabei steht das menschliche Bedürfnis nach angenehmer Aufenthaltsqualität im Aussenraum im Fokus.\n\n\n\nIn Abhängigkeit von der bioklimatischen Belastung für Tag und Nacht (vgl. Klimaanalyse: Planhinweiskarten, Kanton Zürich Baudirektion, 2018) wurden drei Massnahmengebiete mit unterschiedlichem Handlungsbedarf hergeleitet. Im Massnahmengebiet 1 sind Massnahmen zur Verbesserung der Tag- und Nachtsituation notwendig. Im Massnahmengebiet 2 sind Massnahmen zur Verbesserung der Situation am Tag notwendig. Im Massnahmengebiet 3 sind Massnahmen zur Erhaltung oder Verbesserung empfohlen.\n\n\n\nWärmebelastete Gebiete mit einer hohen Bevölkerungsdichte und sensiblen Nutzungen wie Schulen, Pflege- oder Alterszentren (Datensatz: Hotspots) will die Stadt Zürich gezielt entlasten. In diesen Gebieten sollen der Bevölkerung u.a. durch die Aufwertung bestehender Grünflächen bessere Gelegenheiten zur Regeneration geboten werden (Datensatz: Aufwertung).",
+   "identificationDate": "2023-12-06",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Grün Stadt Zürich",
+   "contactPerson": "Felix Svoboda",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Fachplanung_Hitzeminderung_OGD",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "FPH_AUFWERTUNG_OGD",
+            "description": "Dargestellt werden bestehende Freiräume deren klimaökologische Wirksamkeit verbessert werden soll. Der Datensatz lehnt sich an die Freiraumversorgung und die Freiraumkategorien an.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI Identifikationsnummer Geometrie"
+               },
+               {
+                  "name": "NAME",
+                  "description": "Bezeichnung der Fläche"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "ESRI Geometrietyp"
+               },
+               {
+                  "name": "KATEGORIE_NR",
+                  "description": "Nummer der Freiraumkategorie (vgl. Freiraumversorgung):\n\n\n\n\"3\" = Kulturlandlandschaft\n\n\"4\" = Freiräume funktionaler Zweckbestimmung\n\n\"5\" = Landschaftlich gestaltete Grünräume\n\n\"7\" = Institutionelle Freiräume / Einrichtung (Schule, Universität, Hochschule, Spital, Alters- und Pflegezentrum, Gemeinschaftszentrum)\n\n\"8\" = Platzräume"
+               },
+               {
+                  "name": "KATEGORIE_NAME",
+                  "description": "Bezeichnung der Freiraumkategorie:\n\n\n\n\"Kulturlandlandschaft\"\n\n\"Freiräume funktionaler Zweckbestimmung\"\n\n\"Landschaftlich gestaltete Grünräume\"\n\n\"Institutionelle Freiräume / Einrichtung\"\n\n\"Platzräume\""
+               }
+            ]
+         },
+         {
+            "name": "FPH_HOTSPOTS_OGD",
+            "description": "Hotspots sind Gebiete, die aufgrund der Lage und der Stadtstruktur einer hohen Wärmebelastung ausgesetzt sind, eine hohe Bevölkerungsdichte und/oder sensible Nutzungen aufweisen. Es handelt sich um einen geglätteten Datensatz.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI Identifikationsnummer Geometrie"
+               },
+               {
+                  "name": "EINZUGSGEBIET",
+                  "description": "Beschreibung der Lage:\n\n\n\n\"0 m\" = Lage innerhalb eines Hotspots\n\n\"400 m\" = Lage ausserhalb eines Hotspots, aber in dessen Einzugsbereich von 400 Metern\n\n\"> 400 m\" = Lage ausserhalb eines Hotspots und auch ausserhalb des Einzugsbereichs von 400 Metern"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "ESRI Geometrietyp"
+               },
+               {
+                  "name": "HOTSPOT",
+                  "description": "Hinweis ob ein Hotspot für die Tagsituation, für die Nachsituation oder sowohl für die Tag-, als auch die Nachtsituation zutrifft. Wenn Bereiche keine Hotspot sind, dann wird darauf hingewiesen, ob diese innerhalb des Einzugsgebiets von 400 Metern eines Hotspots sind oder ausserhalb davon liegen:\n\n\n\n\"Hotspot Tagsituation\"\n\n\"Hotspot Nachtsituation\"\n\n\"Hotspot Tag/Nacht\"\n\n\"Einzugsgebiet 400 m\"\n\n\"kein Hotspot\""
+               }
+            ]
+         },
+         {
+            "name": "FPH_MASSNAHMENGEBIETE_OGD",
+            "description": "In Abhängigkeit von der bioklimatischen Belastung für Tag und Nacht werden drei Massnahmengebiete mit unterschiedlichem Handlungsbedarf aus den Planhinweiskarten des Kantons Zürich (2018) hergeleitet. Im Massnahmengebiet 1 sind Massnahmen zur Verbesserung der Tag- und Nachtsituation notwendig. Im Massnahmengebiet 2 sind Massnahmen zur Verbesserung der Situation am Tag notwendig. Im Massnahmengebiet 3 sind Massnahmen zur Erhaltung oder Verbesserung empfohlen.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI Identifikationsnummer Geometrie"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "ESRI Geometrietyp"
+               },
+               {
+                  "name": "MASSNAHMENGEBIET",
+                  "description": "Im Massnahmengebiet 1 sind Massnahmen zur Verbesserung der Tag- und Nachtsituation notwendig. Im Massnahmengebiet 2 sind Massnahmen zur Verbesserung der Situation am Tag notwendig. Im Massnahmengebiet 3 sind Massnahmen zur Erhaltung oder Verbesserung empfohlen."
+               }
+            ]
+         }
+      ]
+   }
+}

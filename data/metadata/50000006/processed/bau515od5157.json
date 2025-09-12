@@ -1,0 +1,80 @@
+{
+   "title": "Verkaufspreise (Median) pro Wohnung und pro Quadratmeter Wohnungsfläche im Stockwerkeigentum, nach Quartier",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bau_hae_preis_stockwerkeigentum_stadtquartier_od5157",
+   "abstract": "Diese Daten beinhalten die Medianpreise pro Wohnung sowie pro Quadratmeter Wohnungsfläche von im Freihandkauf gehandelten Wohnungen im Stockwerkeigentum in der Stadt Zürich nach Handänderungsjahr und Stadtquartier.\nBitte beachten Sie für das korrekte Verständnis zu den Daten die unten aufgeführten weiteren Erläuterungen in der Rubrik «Bemerkungen».",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Allgemein:\n\nDie Daten beziehen sich ausschliesslich auf Freihandkäufe von Wohnungen im Stockwerkeigentum.\n\nVariablen mit mehreren Varianten\n\nDie meisten Variablen werden in drei Varianten aufgeführt. Die \"Lang\"-Variante beschreibt jeweils den Inhalt (z.B. Handänderungsart HAArtLevel1Lang='Kauf'). Die \"Cd\"-Variante kodiert die Variable alphanumerisch (HAArtLevel1Cd='22'). Die \"Sort\"-Variante kodiert die Variable numerisch (HAArtLevel1Sort=14) und erlaubt eine Sortierung. \"Cd\" und \"Sort\" können auch die gleichen Zahlen enthalten.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Verkaufspreise (Median) pro Wohnung und pro Quadratmeter Wohnungsfläche im Stockwerkeigentum, nach Quartier",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: Stichtagdatjahr)",
+                  "description": "Jahr (Numerisch)"
+               },
+               {
+                  "name": "Datenstand (Code) (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (P = provisorisch, D = definitiv)"
+               },
+               {
+                  "name": "Art der Handänderung (Sort) (technisch: HAArtLevel1Sort)",
+                  "description": "Im vorliegenden Datensatz ist der Sortiercode der Handänderungsart überall 14 (Numerisch)"
+               },
+               {
+                  "name": "Art der Handänderung (Code) (technisch: HAArtLevel1Cd)",
+                  "description": "Im vorliegenden Datensatz ist der Code der Handänderungsart überall '22' (String)"
+               },
+               {
+                  "name": "Art der Handänderung (Lang) (technisch: HAArtLevel1Lang)",
+                  "description": "Im vorliegenden Datensatz ist die Handänderungsart überall 'Kauf' (String)"
+               },
+               {
+                  "name": "Flag der angibt, ob die Handerung Stockwerkeigentum enthält (Sort) (technisch: HASTWESort)",
+                  "description": "Im vorliegenden Datensatz enthalten alle Handänderungen Stockwerkeigentum (1=Ja) (Numerisch)"
+               },
+               {
+                  "name": "Flag der angibt, ob die Handerung Stockwerkeigentum enthält (Cd) (technisch: HASTWECd)",
+                  "description": "Im vorliegenden Datensatz enthalten alle Handänderungen Stockwerkeigentum ('J'=Ja) (String)"
+               },
+               {
+                  "name": "Flag der angibt, ob die Handerung Stockwerkeigentum enthält (Ja) (Lang) (technisch: HASTWELang)",
+                  "description": "Im vorliegenden Datensatz enthalten alle Handänderungen Stockwerkeigentum ('Ja') (String)"
+               },
+               {
+                  "name": "Nummer des Quartiers/Stadtkreises (technisch: RaumSort)",
+                  "description": "Raumeinheit Sortiercode (Numerisch)"
+               },
+               {
+                  "name": "Sortierung des Quartiers/Stadtkreises (technisch: RaumCd)",
+                  "description": "Raumeinheit Code (String)"
+               },
+               {
+                  "name": "Name des Quartiers/Stadtkreises (technisch: RaumLang)",
+                  "description": "Raumeinheit Name (String)"
+               },
+               {
+                  "name": "Anzahl Handänderungen (technisch: AnzHA)",
+                  "description": "Anzahl Handänderungen, auf denen die ausgewiesenen Preise beruhen. Aus Datenschutzgründen sind verschiedene Werte maskiert, d.h. enthalten Bereiche (String)"
+               },
+               {
+                  "name": "Medianpreis pro Quadratmeter Wohnungsfläche (technisch: HAPreisWohnflaeche)",
+                  "description": "Medianpreis in Franken pro Quadratmeter Wohnungsfläche aller betrachteten Freihandkäufe (Numerisch)"
+               },
+               {
+                  "name": "Medianpreis pro Gruppe (technisch: HAMedianPreis)",
+                  "description": "Medianpreis in Franken aller betrachteten Käufe (Numerisch)"
+               },
+               {
+                  "name": "Verkaufspreissumme (technisch: HASumPreis)",
+                  "description": "Preissumme in Franken aller betrachteten Käufe (Transaktionsvolumen) (Numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-01-20"
+}

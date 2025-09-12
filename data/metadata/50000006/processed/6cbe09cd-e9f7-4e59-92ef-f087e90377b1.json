@@ -1,0 +1,487 @@
+{
+   "title": "Gebäude- und Wohnungsregister der Stadt Zürich (GWZ) gemäss GWR-Datenmodell",
+   "keywords": [
+      "Gebäude",
+      "Wohnungen",
+      "Gebäudeeingänge",
+      "Gebäudeart",
+      "Gebäudealter",
+      "Heizungsart",
+      "Zimmerzahl",
+      "Wohnungsfläche",
+      "sasa"
+   ],
+   "metadata_date": "2023-12-12T12:22:49",
+   "updateFrequency": "daily",
+   "purpose": "Das von Statistik Stadt Zürich geführte Gebäude- und Wohnungsregister der Stadt Zürich (GWZ), bildet die Datenbasis für die gesetzlich vorgesehenen Datenlieferungen zuhanden des Bundesamtes für Statistik (BFS), welches das eidgenössische Gebäude- und Wohnungsregister (GWR) führt.\n\nDas GWR enthält die wichtigsten Grunddaten zu Gebäuden und Wohnungen in der Schweiz. Es wird für Statistik-, Forschungs- und Planungszwecke genutzt und dient den Kantonen und Gemeinden für den Vollzug gesetzlicher Aufgaben.",
+   "abstract": "Der vorliegende Datensatz enthält **tagesaktuelle**, georeferenzierte Informationen zu allen **Gebäuden**, **Wohnungen** und **Gebäudeeingängen** in der Stadt Zürich, gemäss des GWR-Datenmodells.",
+   "identificationDate": "2025-03-18",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Präsidialdepartement - Statistik Stadt Zürich",
+   "contactPerson": "Marco Sieber",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Gebaeude__und_Wohnungsregister_der_Stadt_Zuerich__GWZ__gemaess_GWR_Datenmodell",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "GWR_STZH_GEBAEUDE",
+            "description": "Tagesaktueller Gebäudebestand der Stadt Zürich.\n\nDie hier verfügbaren Datensätze beinhalten die **täglich aktualisierten** Bestandesdaten aus dem Gebäude- und Wohnungsregister der Stadt Zürich (GWZ). \n\nDie Aktualisierung beinhaltet jeweils die Daten des vollendeten Vortages (z.B. am 16.08.2023 werden die Daten des vollendeten 15.08.2023 geliefert). Bis spätestens 12:00 Uhr sind die neuesten Daten verfügbar.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "GDEKT",
+                  "description": "Kanton"
+               },
+               {
+                  "name": "GGDENR",
+                  "description": "BFS-Gemeindenummer"
+               },
+               {
+                  "name": "GGDENAME",
+                  "description": "Gemeindename"
+               },
+               {
+                  "name": "LPARZ",
+                  "description": "Grundstücksnummer"
+               },
+               {
+                  "name": "GKSCE",
+                  "description": "Koordinatenherkunft Code"
+               },
+               {
+                  "name": "GKSCELANG",
+                  "description": "Koordinatenherkunft Bezeichnung"
+               },
+               {
+                  "name": "GKAT",
+                  "description": "Gebäudekategorie Code\n\nDie im GWR erfassten Gebäude werden nach ihrer vorwiegenden Nutzungsart unterteilt."
+               },
+               {
+                  "name": "GBAUJ",
+                  "description": "Baujahr des Gebäudes"
+               },
+               {
+                  "name": "GBAUP",
+                  "description": "Bauperiode Code"
+               },
+               {
+                  "name": "GBAUPLANG",
+                  "description": "Bauperiode Bezeichnung"
+               },
+               {
+                  "name": "GAREA",
+                  "description": "Gebäudefläche in m2\n\nUnter Gebäudefläche ist die Grundrissfläche des Gebäudes zu verstehen, nicht die gesamte Fläche aller Wohnungen eines Gebäudes."
+               },
+               {
+                  "name": "GVOL",
+                  "description": "Gebäudevolumen\n\nVolumen des Gebäudes in Kubikmetern, gemäss Norm SIA 416."
+               },
+               {
+                  "name": "GANZWHG",
+                  "description": "Anzahl Wohnungen im Gebäude"
+               },
+               {
+                  "name": "GSCHUTZR",
+                  "description": "Zivilschutzraum Code"
+               },
+               {
+                  "name": "GENH1",
+                  "description": "Primäre Energiequelle der Heizung Code\n\nGibt die vom Wärmeerzeuger genutzte Hauptenergiequelle an."
+               },
+               {
+                  "name": "GWAERSCEH1",
+                  "description": "Informationsquelle primäre Heizung Code"
+               },
+               {
+                  "name": "GWAERDATH1",
+                  "description": "Aktualisierungsdatum primäre Heizung"
+               },
+               {
+                  "name": "GENH2",
+                  "description": "Sekundäre Energiequelle der Heizung Code\n\nGibt die vom Wärmeerzeuger genutzte Hauptenergiequelle an. Dank den verschiedenen Merkmalen können zwei Wärmeerzeuger für die Heizung registriert werden."
+               },
+               {
+                  "name": "GWAERSCEH2",
+                  "description": "Informationsquelle sekundäre Heizung Code"
+               },
+               {
+                  "name": "GWAERDATH2",
+                  "description": "Aktualisierungsdatum sekundäre Heizung"
+               },
+               {
+                  "name": "GENW1",
+                  "description": "Primäre Energiequelle Warmwasser Code\n\nGibt die vom Wärmeerzeuger genutzte Hauptenergiequelle an."
+               },
+               {
+                  "name": "GWAERSCEW1",
+                  "description": "Informationsquelle primäre Wasseraufbereitung Code"
+               },
+               {
+                  "name": "GWAERSCEW2",
+                  "description": "Informationsquelle sekundäre Warmwasseraufbereitung Code"
+               },
+               {
+                  "name": "GWAERSCEW2LANG",
+                  "description": "Informationsquelle sekundäre Warmwasseraufbereitung Bezeichnung"
+               },
+               {
+                  "name": "GEXPDAT",
+                  "description": "Aktualisierungsdatum sekundäre Warmwasseraufbereitung"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie\n\nPunktdaten mit N-/E-Gebäudekoordinaten."
+               },
+               {
+                  "name": "EGID",
+                  "description": "Eidgenössischer Gebäudeidentifikator\n\nDer EGID ist eine gesamtschweizerisch eindeutige Identifikationsnummer für alle Gebäude.\n\nEr wird pro Gebäude unabhängig der Gemeindezugehörigkeit vergeben und bleibt bei allen Veränderungen wie Gemeindefusionen, Eigentümerwechseln, Umbauten usw. unverändert."
+               },
+               {
+                  "name": "EGRID",
+                  "description": "Eidgenössischer Grundstücksidentifikator\n\nIdentifikationsnummer des elektronischen Grundstückinformationssystems (eGRIS). Der eidgenössische Grundstücksidentifikator ist in der ganzen Schweiz einheitlich und dient dem Informationsaustausch zwischen dem Grundbuch, der amtlichen Vermessung und den anderen Nutzerinnen und Nutzern."
+               },
+               {
+                  "name": "GEBNR",
+                  "description": "Amtliche Gebäudenummer\n\nDie amtliche Gebäudenummer wird von der Gebäudeversicherung des Kantons Zürich (GVZ) vergeben."
+               },
+               {
+                  "name": "GBEZ",
+                  "description": "Name des Gebäudes\n\nDer Name des Gebäudes enthält Angaben wie z.B. Seebad Utoquai, Schulhaus Balgrist, Savoy Hotel Baur en Ville, usw., die der Identifikation des Gebäudes dienen. Verwendet werden nur  Bezeichnungen von dauerndem Charakter, die sich auf das ganze Gebäude beziehen, also keine Firmennamen, Eigentümer, Adressen u. dgl."
+               },
+               {
+                  "name": "GKODE",
+                  "description": "E-Gebäudekoordinate\n\nAls geografischer Referenzpunkt gilt im Prinzip die Grundrissmitte des Gebäudes. Bei besonderen Grundrissformen (Winkel, U-Form usw.) wird jedoch darauf geachtet, dass der Referenzpunkt in jedem Fall innerhalb der Grundrissfläche liegt.\n\nDie Gebäudekoordinaten dienen der numerischen Lokalisierung des Gebäudes."
+               },
+               {
+                  "name": "GKODN",
+                  "description": "N-Gebäudekoordinate\n\nAls geografischer Referenzpunkt gilt im Prinzip die Grundrissmitte des Gebäudes. Bei besonderen Grundrissformen (Winkel, U-Form usw.) wird jedoch darauf geachtet, dass der Referenzpunkt in jedem Fall innerhalb der Grundrissfläche liegt.\n\nDie Gebäudekoordinaten dienen der numerischen Lokalisierung des Gebäudes."
+               },
+               {
+                  "name": "GKATLANG",
+                  "description": "Gebäudekategorie Bezeichnung \n\nDie im GWR erfassten Gebäude werden nach ihrer vorwiegenden Nutzungsart unterteilt."
+               },
+               {
+                  "name": "GKLASLANG",
+                  "description": "Gebäudeklasse Bezeichnung\n\nDie vollständige, im GWR verwendete EUROSTAT-Klassifikation umfasst 26 Gebäudeklassen."
+               },
+               {
+                  "name": "GBAUM",
+                  "description": "Baumonat des Gebäudes"
+               },
+               {
+                  "name": "GABBJ",
+                  "description": "Abbruchjahr des Gebäudes"
+               },
+               {
+                  "name": "GASTW",
+                  "description": "Anzahl Geschosse\n\nDas Merkmal informiert über die Anzahl Geschosse und Untergeschosse eines Gebäudes, einschliesslich Erdgeschoss. Dach- und Untergeschosse werden nur mitgezählt, sofern sie zumindest teilweise für Wohnzwecke dienen oder geheizt sind."
+               },
+               {
+                  "name": "GSCHUTZRLANG",
+                  "description": "Zivilschutzraum Bezeichnung"
+               },
+               {
+                  "name": "GEBF",
+                  "description": "Energiebezugsfläche\n\nDie Energiebezugsfläche (EBF) ist gemäss Definition der SIA-Norm 416/1:2007 die Summe aller ober- und unterirdischen Geschossflächen, die innerhalb der thermischen Gebäudehülle liegen und für deren Nutzung ein Beheizen oder Klimatisieren notwendig ist."
+               },
+               {
+                  "name": "GWAERZH1LANG",
+                  "description": "Primärer Wärmeerzeuger der Heizung Bezeichnung\n\nDer Wärmeerzeuger entspricht der Art der technischen Installation, die im Gebäude für die Heizung der Räume genutzt wird."
+               },
+               {
+                  "name": "GWAERSCEH1LANG",
+                  "description": "Informationsquelle primäre Heizung Bezeichnung"
+               },
+               {
+                  "name": "GWAERZH2LANG",
+                  "description": "Sekundärer Wärmeerzeuger der Heizung Bezeichnung\n\nDer Wärmeerzeuger entspricht der Art der technischen Installation, die im Gebäude für die Heizung der Räume genutzt wird. Dank den verschiedenen Merkmalen können zwei Wärmeerzeuger für die Heizung registriert werden."
+               },
+               {
+                  "name": "GENH2LANG",
+                  "description": "Sekundäre Energiequelle der Heizung Bezeichnung\n\nGibt die vom Wärmeerzeuger genutzte Hauptenergiequelle an. Dank den verschiedenen Merkmalen können zwei Wärmeerzeuger für die Heizung registriert werden."
+               },
+               {
+                  "name": "GWAERSCEH2LANG",
+                  "description": "Informationsquelle sekundäre Heizung Bezeichnung"
+               },
+               {
+                  "name": "GWAERZW1LANG",
+                  "description": "Primärer Wärmeerzeuger Warmwasser Bezeichnung\n\nDer Wärmeerzeuger entspricht der Art der technischen Installation, die im Gebäude für das Aufbereiten von Brauchwarmwasser genutzt wird."
+               },
+               {
+                  "name": "GENW1LANG",
+                  "description": "Primäre Energiequelle Warmwasser Bezeichnung\n\nGibt die vom Wärmeerzeuger genutzte Hauptenergiequelle an."
+               },
+               {
+                  "name": "GWAERSCEW1LANG",
+                  "description": "Informationsquelle primäre Wasseraufbereitung Bezeichnung"
+               },
+               {
+                  "name": "GWAERDATW1",
+                  "description": "Aktualisierungsdatum primäre Warmwasseraufbereitung"
+               },
+               {
+                  "name": "GWAERDATW2",
+                  "description": "Informationsquelle sekundäre Warmwasseraufbereitung Code"
+               },
+               {
+                  "name": "GKLAS",
+                  "description": "Gebäudeklasse Code\n\nDie vollständige, im GWR verwendete EUROSTAT-Klassifikation umfasst 26 Gebäudeklassen."
+               },
+               {
+                  "name": "GSTATLANG",
+                  "description": "Gebäudestatus Bezeichnung \n\nNeben den bestehenden Gebäuden beinhaltet das GWR auch die projektierten, die bewilligten, die im Bau stehenden, die nicht realisierten, die nicht nutzbaren Gebäude und die abgebrochenen."
+               },
+               {
+                  "name": "GAZZI",
+                  "description": "Anzahl separate Wohnräume\n\nAls separate Wohnräume werden die Zimmer für Bewohnerinnen und Bewohner von Gebäuden für Kollektivhaushalte bzw. für gemeinschaftliches Wohnen wie Kliniken, Heime, Internate, Strafanstalten oder Gebäude für touristische Zwecke (GKAT 1040), bezeichnet. Gebäude, die der Beherbergung von Touristen dienen, gehören zur selben Gebäudekategorie (GKAT 1040). Nicht als separate Wohnräume gelten Zimmer innerhalb einer Wohnung, noch anderweitig als bewohnbares Einzelzimmer, die einer Drittperson untervermietet sind."
+               },
+               {
+                  "name": "GWAERZH1",
+                  "description": "Primärer Wärmeerzeuger der Heizung Code\n\nDer Wärmeerzeuger entspricht der Art der technischen Installation, die im Gebäude für die Heizung der Räume genutzt wird."
+               },
+               {
+                  "name": "GENH1LANG",
+                  "description": "Primäre Energiequelle der Heizung Bezeichnung\n\nGibt die vom Wärmeerzeuger genutzte Hauptenergiequelle an."
+               },
+               {
+                  "name": "GWAERZH2",
+                  "description": "Sekundärer Wärmeerzeuger der Heizung Code\n\nDer Wärmeerzeuger entspricht der Art der technischen Installation, die im Gebäude für die Heizung der Räume genutzt wird. Dank den verschiedenen Merkmalen können zwei Wärmeerzeuger für die Heizung registriert werden."
+               },
+               {
+                  "name": "GWAERZW2",
+                  "description": "Sekundärer Wärmeerzeuger Warmwasser Code\n\nDer Wärmeerzeuger entspricht der Art der technischen Installation, die im Gebäude für das Aufbereiten von Brauchwarmwasser genutzt wird. Dank den verschiedenen Merkmalen können zwei Wärmeerzeuger für die Aufbereitung von Brauchwarmwasser erfasst werden."
+               },
+               {
+                  "name": "GWAERZW1",
+                  "description": "Primärer Wärmeerzeuger Warmwasser Code\n\nDer Wärmeerzeuger entspricht der Art der technischen Installation, die im Gebäude für das Aufbereiten von Brauchwarmwasser genutzt wird."
+               },
+               {
+                  "name": "GWAERZW2LANG",
+                  "description": "Sekundärer Wärmeerzeuger Warmwasser Bezeichnung\n\nDer Wärmeerzeuger entspricht der Art der technischen Installation, die im Gebäude für das Aufbereiten von Brauchwarmwasser genutzt wird. Dank den verschiedenen Merkmalen können zwei Wärmeerzeuger für die Aufbereitung von Brauchwarmwasser erfasst werden."
+               },
+               {
+                  "name": "GENW2",
+                  "description": "Sekundäre Energiequelle Warmwasser Code\n\nGibt die vom Wärmeerzeuger genutzte Hauptenergiequelle an. Dank den verschiedenen Merkmalen können zwei Wärmeerzeuger für die Aufbereitung von Brauchwarmwasser erfasst werden."
+               },
+               {
+                  "name": "GENW2LANG",
+                  "description": "Sekundäre Energiequelle Warmwasser Bezeichnung \n\nGibt die vom Wärmeerzeuger genutzte Hauptenergiequelle an. Dank den verschiedenen Merkmalen können zwei Wärmeerzeuger für die Aufbereitung von Brauchwarmwasser erfasst werden."
+               },
+               {
+                  "name": "GSTAT",
+                  "description": "Gebäudestatus Code\n\nNeben den bestehenden Gebäuden beinhaltet das GWR auch die projektierten, die bewilligten, die im Bau stehenden, die nicht realisierten, die nicht nutzbaren Gebäude und die abgebrochenen."
+               }
+            ]
+         },
+         {
+            "name": "GWR_STZH_GEBAEUDEEINGAENGE",
+            "description": "Tagesaktueller Bestand der Gebäudeeingänge in der Stadt Zürich.\n\nDie hier verfügbaren Datensätze beinhalten die **täglich aktualisierten** Bestandesdaten aus dem Gebäude- und Wohnungsregister der Stadt Zürich (GWZ).\n\nDie Aktualisierung beinhaltet jeweils die Daten des vollendeten Vortages (z.B. am 16.08.2023 werden die Daten des vollendeten 15.08.2023 geliefert). Bis spätestens 12:00 Uhr sind die neuesten Daten verfügbar.",
+            "attributes": [
+               {
+                  "name": "EGID",
+                  "description": "Eidgenössischer Gebäudeidentifikator"
+               },
+               {
+                  "name": "DPLZ4",
+                  "description": "Postleitzahl"
+               },
+               {
+                  "name": "DOFFADR",
+                  "description": "Offizielle Adresse"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "EDID",
+                  "description": "Eidgenössischer Eingangsidentifikator"
+               },
+               {
+                  "name": "EGAID",
+                  "description": "Eidgenössischer Gebäudeadressidentifikator"
+               },
+               {
+                  "name": "ESID",
+                  "description": "Eidgenössischer Strassenidentifikator"
+               },
+               {
+                  "name": "STRNAME",
+                  "description": "Strassenbezeichnung"
+               },
+               {
+                  "name": "STRSP",
+                  "description": "Strassenbezeichnung Sprache"
+               },
+               {
+                  "name": "STROFFIZIEL",
+                  "description": "Strassenbezeichnung offiziell"
+               },
+               {
+                  "name": "STROFFIZIELLANG",
+                  "description": "Strassenbezeichnung offiziell Bezeichnung"
+               },
+               {
+                  "name": "DPLZNAME",
+                  "description": "Postleitzahl-Name"
+               },
+               {
+                  "name": "DOFFADRLANG",
+                  "description": "Offizielle Adresse Bezeichnung"
+               },
+               {
+                  "name": "DEXPDAT",
+                  "description": "Exportdatum"
+               },
+               {
+                  "name": "DEINR",
+                  "description": "Eingangsnummer Gebäude"
+               },
+               {
+                  "name": "STRSPLANG",
+                  "description": "Strassenbezeichnung Sprache Bezeichnung"
+               },
+               {
+                  "name": "DKODE",
+                  "description": "E-Eingangskoordinate\n\nAls geografischer Referenzpunkt des Eingangs gelten die von der amtlichen Vermessung übermittelten Eingangskoordinaten."
+               },
+               {
+                  "name": "DKODN",
+                  "description": "N-Eingangskoordinate\n\nAls geografischer Referenzpunkt des Eingangs gelten die von der amtlichen Vermessung übermittelten Eingangskoordinaten."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie\n\nPunktdaten mit N-/E-Eingangskoordinaten."
+               }
+            ]
+         },
+         {
+            "name": "GWR_STZH_WOHNUNGEN",
+            "description": "Tagesaktueller Wohnungsbestand in der Stadt Zürich.\n\nDie Koordinatenangaben beziehen sich für jede Wohnung auf deren Gebäudeeingang (EGID + EDID) und liegen entsprechend für n-Wohnungen n-fach übereinander gestapelt vor.\n\nDie hier verfügbaren Datensätze beinhalten die **täglich aktualisierten** Bestandesdaten aus dem Gebäude- und Wohnungsregister der Stadt Zürich (GWZ).\n\nDie Aktualisierung beinhaltet jeweils die Daten des vollendeten Vortages (z.B. am 16.08.2023 werden die Daten des vollendeten 15.08.2023 geliefert). Bis spätestens 12:00 Uhr sind die neuesten Daten verfügbar.",
+            "attributes": [
+               {
+                  "name": "EGID",
+                  "description": "Eidgenössischer Gebäudeidentifikator"
+               },
+               {
+                  "name": "WMEHRG",
+                  "description": "Mehrgeschossige Wohnung Code\n\nGibt an, dass die Wohnung über mehrere Stockwerke gebaut ist (Maisonette)."
+               },
+               {
+                  "name": "DEXPDAT",
+                  "description": "Exportdatum"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "EDID",
+                  "description": "Eidgenössischer Eingangsidentifikator"
+               },
+               {
+                  "name": "WSTATLANG",
+                  "description": "Wohnungsstatus Bezeichnung\n\nIm GWR sind nicht nur bestehende Wohnungen erfasst, sondern auch aufgehobene sowie projektierte, nicht nutzbare, aufgehobene, nicht realisiert bzw. sich im Bau befindende Wohnungen."
+               },
+               {
+                  "name": "WKCHELANG",
+                  "description": "Kocheinrichtung Bezeichnung\n\nFeste Installationen die für die Zubereitung von Mahlzeiten und das Spülen von Geschirr vorbereitet sind."
+               },
+               {
+                  "name": "DKODE",
+                  "description": "E-Eingangskoordinate\n\nAls geografischer Referenzpunkt des Eingangs gelten die von der amtlichen Vermessung übermittelten Gebäudeeingangskoordinaten."
+               },
+               {
+                  "name": "STRNAME",
+                  "description": "Strassenbezeichnung"
+               },
+               {
+                  "name": "DPLZ4",
+                  "description": "Postleitzahl"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie\n\nPunktdaten mit N-/E-Eingangskoordinaten."
+               },
+               {
+                  "name": "WHGNR",
+                  "description": "Administrative Wohnungsnummer\n\nDie administrative Wohnungsnummer wird von der kommunalen oder kantonalen Behörde vergeben.\n\nDie administrative Wohnungsnummer kennzeichnet eine Wohnung innerhalb eines Gebäudes und bleibt bei Mieterwechsel u.dgl. bestehen.\n\nSie wird von der Gemeinde vergeben."
+               },
+               {
+                  "name": "EWID",
+                  "description": "Eidgenössischer Wohnungsidentifikator"
+               },
+               {
+                  "name": "WSTWK",
+                  "description": "Stockwerk Code\n\nDie Stockwerkangabe bezeichnet das Stockwerk bezogen auf den Eingang des Gebäudes (= Parterre).\n\nBei Wohnungen mit mehreren Stockwerken wird das Stockwerk erfasst, auf dem sich der (Haupt-)-Eingang der Wohnung befindet."
+               },
+               {
+                  "name": "WSTWKLANG",
+                  "description": "Stockwerk Bezeichnung\n\nDie Stockwerkangabe bezeichnet das Stockwerk bezogen auf den Eingang des Gebäudes (= Parterre).\n\nBei Wohnungen mit mehreren Stockwerken wird das Stockwerk erfasst, auf dem sich der (Haupt-)-Eingang der Wohnung befindet"
+               },
+               {
+                  "name": "WMEHRGLANG",
+                  "description": "Mehrgeschossige Wohnung Bezeichnung\n\nGibt an, dass die Wohnung über mehrere Stockwerke gebaut ist (Maisonette)."
+               },
+               {
+                  "name": "WBAUJ",
+                  "description": "Baujahr der Wohnung\n\nWohnungen in neu erstellten Gebäuden erhalten das Jahr der Fertigstellung des Gebäudes als Baujahr.\n\nWenn neue Wohnungen in bestehenden Gebäuden errichtet werden (z. B. Bau einer Wohnung unter dem Dach), zählt das Jahr, in dem der Umbau abgeschlossen wurde, als Baujahr der neuen Wohnung."
+               },
+               {
+                  "name": "WSTAT",
+                  "description": "Wohnungsstatus Code\n\nIm GWR sind nicht nur bestehende Wohnungen erfasst, sondern auch aufgehobene sowie projektierte, nicht nutzbare, aufgehobene, nicht realisiert bzw. sich im Bau befindende Wohnungen."
+               },
+               {
+                  "name": "WAZIM",
+                  "description": "Anzahl Zimmer\n\nDie Anzahl Zimmer umfasst alle bewohnbaren Räume der Wohnung wie Wohnzimmer, Schlafzimmer usw. Nicht gezählt werden Küche, Badezimmer, Duschen, Toiletten, Abstellräume, Korridore, halbe Zimmer, Veranden sowie zusätzliche separate Wohnräume ausserhalb der Wohnung."
+               },
+               {
+                  "name": "WAREA",
+                  "description": "Wohnungsfläche (in m2)\n\nAls Wohnungsfläche ist die Summe der Flächen sämtlicher Zimmer, Küchen, Kochnischen, Badezimmer, Toiletten, Abstellräume, Gänge, Veranden usw. einer Wohnung erfasst.\n\nZusätzliche separate Wohnräume und bewohnbare Einzelzimmer (z.B. Mansarden), offene Balkone und Terrassen sowie nicht bewohnbare Keller- und Dachgeschossräume fallen bei der Berechnung der Wohnungsfläche ausser Betracht."
+               },
+               {
+                  "name": "DKODN",
+                  "description": "N-Eingangskoordinate\n\nAls geografischer Referenzpunkt des Eingangs gelten die von der amtlichen Vermessung übermittelten Gebäudeeingangskoordinaten."
+               },
+               {
+                  "name": "DEINR",
+                  "description": "Eingangsnummer Gebäude"
+               },
+               {
+                  "name": "DPLZNAME",
+                  "description": "Postleitzahl-Name"
+               },
+               {
+                  "name": "WBEZ",
+                  "description": "Lage auf dem Stockwerk\n\nDie Lage auf dem Stockwerk dient dazu, einzelne Wohnungen eines Gebäudes, welche bezüglich der Stockwerkangabe und der Anzahl Zimmer identisch sind, voneinander zu unterscheiden.\n\nEs kann sich um Angaben wie \"Links\" / \"Mitte\" / \"Rechts\" oder andere eindeutige und beständige Charakteristiken wie \"Nord\" / \"Ost\" / \"Süd\" / \"West\" handeln."
+               },
+               {
+                  "name": "WKCHE",
+                  "description": "Kocheinrichtung Code\n\nFeste Installationen die für die Zubereitung von Mahlzeiten und das Spülen von Geschirr vorbereitet sind."
+               },
+               {
+                  "name": "WABBJ",
+                  "description": "Abbruchjahr der Wohnung\n\nBei aufgehobenen Wohnungen in bestehenden Gebäuden (z. B. Zusammenlegung von zwei Wohnungen) zählt das Jahr, in dem der Umbau abgeschlossen wurde, als Jahr der Aufhebung der betreffenden Wohnungen.\n\nWohnungen in abgebrochenen Gebäuden erhalten das Abbruchjahr des Gebäudes als Abbruchjahr, falls sie nicht schon früher im Rahmen eines Umbaus aufgehoben wurden."
+               }
+            ]
+         }
+      ]
+   }
+}

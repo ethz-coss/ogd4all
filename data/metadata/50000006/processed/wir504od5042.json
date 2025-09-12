@@ -1,0 +1,52 @@
+{
+   "title": "Beschäftigungsgrad der Erwerbstätigen nach Herkunft",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bfs_wir_sake_beschgrad_erwtge_herkunft_od5042",
+   "abstract": "Dieser Datensatz enthält den Anteil von Erwerbstätigen (gemäss ILO)  nach Beschäftigungsgrad und Herkunft.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Datenquelle\n\nDie Auswertung beruht auf der Schweizerischen Arbeitskräfteerhebung (SAKE). Diese jährlich vom Bundesamt für Statistik (BFS) durchgeführte telefonische Personenbefragung liefert repräsentative Daten über die Erwerbsstruktur und das Erwerbsverhalten der ständigen Wohnbevölkerung der Schweiz ab 15 Jahren. Die SAKE basiert auf einer repräsentativen Stichprobe mit jährlich rund 120 000 Interviews, davon rund 2000 Interviews mit Personen, die in der Stadt Zürich wohnen. Seit 2021 wird die Befragung nicht mehr als reine Telefonbefragung, sondern als Multimode-Erhebung (per Internet/per Telefon) durchgeführt.\n\nBerücksichtigte Personen\n\nFür diese Analyse wird der Anteil der Personen mit dieser Ausbildung an allen Erwerbstätigen (d.h. Personen über 15 Jahren der ständigen Wohnbevölkerung, die nicht erwerbslos sind) ausgewiesen. Berücksichtigt werden dabei nur Personen, für die ein Ausbildungsgrad vorliegt.\n\nBeschäftigungsgrad\n\nDer Beschäftigungsgrad der Erwerbstätigen werden auf der Grundlage der tatsächlich geleisteten Arbeitsstunden berechnet\n\n95 % Konfidenzintervalle\n\nDie Unsicherheiten der Auswertungen werden mit Konfidenzintervallen abgeschätzt. Das 95 % Konfidenzintervall bezeichnet den Bereich, der bei unendlicher Wiederholung eines Zufallsexperiments mit einer Wahrscheinlichkeit von 95 Prozent den wahren Wert der Grundgesamtheit einschliesst. Das Konfidenzintervall wird auch als Vertrauensintervall oder Erwartungsbereich bezeichnet.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Beschäftigungsgrad der Erwerbstätigen nach Herkunft",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: Jahr)",
+                  "description": "Jahr"
+               },
+               {
+                  "name": "Beschäftigungsgrad (string) (technisch: BgradLang)",
+                  "description": "Beschäftigungsgrad der Erwerbsperson"
+               },
+               {
+                  "name": "Beschäftigungsgrad (numerisch) (technisch: BgradSort)",
+                  "description": "Sortiervariable Beschäftigungsgrad"
+               },
+               {
+                  "name": "Herkunft (string) (technisch: HerkunftLang)",
+                  "description": "Herkunft der Erwerbspersonen"
+               },
+               {
+                  "name": "Herkunft (numerisch) (technisch: HerkunftSort)",
+                  "description": "Sortiervariable Herkunft"
+               },
+               {
+                  "name": "Anteil Erwerbstätige (technisch: Percent)",
+                  "description": "Anteil Erwerbstätige"
+               },
+               {
+                  "name": "Untere Grenze Konfidenzintervall (technisch: LowerCL)",
+                  "description": "Untere Grenze des 95%-Konfidenzintervalls"
+               },
+               {
+                  "name": "Obere Grenze Konfidenzintervall (technisch: UpperCL)",
+                  "description": "Obere Grenze des 95%-Konfidenzintervalls"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-03-31"
+}

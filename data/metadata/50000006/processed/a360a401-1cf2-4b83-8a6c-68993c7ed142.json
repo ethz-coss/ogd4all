@@ -1,0 +1,39 @@
+{
+   "title": "Baumhöhen 2022 (CHM aus Lidar)",
+   "keywords": [
+      "Baumvolumen",
+      "Grünvolumen",
+      "Lidar",
+      "Baumhöhe",
+      "Kronenbedeckung"
+   ],
+   "metadata_date": "2023-11-01T09:11:14",
+   "updateFrequency": "notPlanned",
+   "purpose": "Der Datensatz wird vorrangig zur Ermittlung des Baumvolumens der Stadt Zürich und für die Kronenbedeckung verwendet. Die Höhe der Vegetation wurde durch die Subtraktion der Höhe des Geländemodells (DTM) (Produkt aus den LIDAR-Daten) von der Höhe der LIDAR-Daten (Light Detection and Ranging, LAS-Code 5: Vegetation >3m) ermittelt. Es wurde ein Raster mit 50 cm Auslösung erstellt und die höchste Vegetationshöhe pro Zelle verwendet. Die LIDAR Daten von 2022 wiesen viele kleine Lücken auf. Zusammenhängende Lücken &lt;2 m2 wurden interpoliert.",
+   "abstract": "Relative Vegetationshöhe berechnet aus LIDAR-Daten und DTM 2022",
+   "identificationDate": "2023-02-01",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Grün Stadt Zürich",
+   "contactPerson": "Michael Fuchs",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "GeoTIFF (.tif)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Baumhoehen_2022__CHM_aus_Lidar_",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "Baumhoehen_CHM_2022.tif",
+            "description": "Relative Vegetationshöhe berechnet aus LIDAR-Daten und DTM",
+            "attributes": []
+         }
+      ]
+   }
+}

@@ -1,0 +1,48 @@
+{
+   "title": "Nachnamen der aktuellen Wohnbevölkerung der Stadt Zürich",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bev_bestand_nachnamen_stadtquartier_od3710",
+   "abstract": "Anzahl Personen der wirtschaftlichen Wohnbevölkerung der Stadt Zürich nach Nachname, Stadtkreis und Stadtquartier.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Anmerkung zur Datenqualität:\n\nEs werden bloss diejenigen Nachnamen verwendet, die mindestens 50 Mal in der Stadt Zürich auftreten. Die Daten werden gemäss Bevölkerungsregister übernommen. Es ist grundsätzlich möglich, dass bei der Anmeldung der Personen in der Stadt Zürich Tippfehler im Namen vorgekommen.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Nachnamen der aktuellen Wohnbevölkerung der Stadt Zürich",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Numerisch)."
+               },
+               {
+                  "name": "Nachname (technisch: Nachname)",
+                  "description": "Nachname (String)."
+               },
+               {
+                  "name": "Stadtkreis Sortiercode (technisch: KreisSort)",
+                  "description": "ID- und Sortiervariable für den Stadtkreis an der aktuellen Wohnadresse (Numerisch)."
+               },
+               {
+                  "name": "Stadtkreis Beschreibung (technisch: KreisLang)",
+                  "description": "Stadtkreisname der aktuellen Wohnadresse (String)."
+               },
+               {
+                  "name": "Stadtquartier Sortiercode (technisch: QuarSort)",
+                  "description": "ID- und Sortiervariable des Statistischen Stadtquartiers an der aktuellen Wohnadresse (Numerisch)."
+               },
+               {
+                  "name": "Stadtquartier Beschreibung (technisch: QuarLang)",
+                  "description": "Name des Statistischen Stadtquartiers der aktuellen Wohnadresse (String)."
+               },
+               {
+                  "name": "Anzahl (technisch: AnzBestWir)",
+                  "description": "Anzahl Personen aus der wirtschaftlichen Wohnbevölkerung der Stadt Zürich (Numerisch)."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-04-30"
+}

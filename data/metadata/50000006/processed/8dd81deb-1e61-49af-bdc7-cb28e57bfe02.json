@@ -1,0 +1,415 @@
+{
+   "title": "Kommunale Energieplanung - Energieplankarte",
+   "keywords": [
+      "Fernwärmeversorgung",
+      "Wärmeversorgung",
+      "Kälteversorgung",
+      "Fernwärme",
+      "leitungsgebundene Energieversorgung",
+      "Kehrichtheizkraftwerk",
+      "Holzheizkraftwerk",
+      "Klärwerk",
+      "Energie aus gereinigtem Abwasser",
+      "Energieplankarte",
+      "Energieplanung",
+      "Energie",
+      "Energieversorgung",
+      "Heizen",
+      "Netto-Null",
+      "erneuerbar heizen"
+   ],
+   "metadata_date": "2024-03-18T07:25:25",
+   "updateFrequency": "asNeeded",
+   "purpose": "Im Kanton Zürich sind die Gemeinden gemäss § 7 des Energiegesetzes (EnerG, LS 730.1) angehalten, eine kommunale Energieplanung durchzuführen und diese periodisch zu aktualisieren.",
+   "abstract": "Kommunale Energieplanung Stadt Zürich, umfasst sämtliche raumbezogenen Daten zu den Festlegungen des Stadtrats in der Energieplankarte.",
+   "identificationDate": "2024-04-17",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Departement der Industriellen Betriebe - Departementssekretariat DIB",
+   "contactPerson": "Louis Frei",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Kommunale_Energieplanung___Energieplankarte",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "ABWAERMEPOTENZIAL_GANZJAEHRIG",
+            "description": "Lagegenauigkeit: Einige Dekameter \n\n Beschlussorgan: Stadtrat \n\n Beschlussdatum: 02.12.2020",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               },
+               {
+                  "name": "BETREIBER",
+                  "description": "Name des Betreibers"
+               },
+               {
+                  "name": "NUMMER",
+                  "description": "Nummerierung gemäss Planungsbericht"
+               },
+               {
+                  "name": "STATUS",
+                  "description": "Status\n\n- bestehend\n\n- geplant"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               },
+               {
+                  "name": "GEBIETSNUMMER",
+                  "description": "Nummer des Verbundes, welcher Wärme beziehen kann"
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": "Wertebereich:\n\n- IKT\n\n- Eisbahn\n\n- Unterwerk"
+               }
+            ]
+         },
+         {
+            "name": "OEFFENTLICHE_FERNWAERMEVERSORGUNG",
+            "description": "Lagegenauigkeit: Gemäss Vorgaben aus amtlicher Vermessung\n\nBeschlussorgan: Stadtrat\n\nBeschlussdatum: 07.12.2022",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               },
+               {
+                  "name": "NAME",
+                  "description": "Name des Gebietes"
+               },
+               {
+                  "name": "ENERGIETRAEGER",
+                  "description": "Wertebereich:\n\n- Fernkälte aus gereinigtem Abwasser\n\n- Fernwärme aus gereinigtem Abwasser und aus der Schlammverbrennung\n\n- Fernwärme aus Heizkraftwerken (Kehricht, Holz)\n\n- Fernwärme aus Heizkraftwerken (Kehricht, Holz) oder Seewasser\n\n- Fernwärme und -kälte aus gereinigtem Abwasser\n\n- Fernwärme und -kälte aus Seewasser"
+               },
+               {
+                  "name": "GEBIETSNUMMER",
+                  "description": "Nummer des Gebietes"
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": "Enthält Informationen über den Erschliessungsstand\n\nWertebereich:\n\n- Prioritätsgebiet bestehend (Groberschliessung abgeschlossen)\n\n- Prioritätsgebiet geplant (Groberschliessung 2018 - 2040)\n\n- Prioritätsgebiet geplant (Groberschliessung 2020 - 2023)\n\n- Prüfgebiet (Entscheid über Realisierung bis 2022)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               },
+               {
+                  "name": "VERANTWORTLICHE_ABTEILUNG",
+                  "description": "Abteilungsangabe für Katasterauskunft"
+               },
+               {
+                  "name": "KONTAKT",
+                  "description": "Kontaktangaben für Katasterauskunft"
+               },
+               {
+                  "name": "INFORMATIONEN",
+                  "description": "Informationen für Katasterauskunft"
+               },
+               {
+                  "name": "AKTUALISIERUNGSRHYTHMUS",
+                  "description": "Nachführung der Daten für Katasterauskunft"
+               },
+               {
+                  "name": "RECHTLICHE_GRUNDLAGEN",
+                  "description": "Beschluss des Stadtrates für Katasterauskunft"
+               },
+               {
+                  "name": "ENERGIETRAEGER_KURZ",
+                  "description": "Kurzbezeichnung der Energieträger; Wird gebraucht für die Darstellung\n\n\n\nWertebereich:\n\n- Abwasser\n\n- Abwasser und Schlammverbrennung\n\n- Heizkraftwerk\n\n- Heizkraftwerk oder Seewasser\n\n- Seewasser"
+               },
+               {
+                  "name": "STAND_DATEN",
+                  "description": "Stand der Daten für Katasterauskunft"
+               },
+               {
+                  "name": "ART",
+                  "description": "Art des Fernwärmegebietes"
+               }
+            ]
+         },
+         {
+            "name": "ENERGIELIEFERUNG_NACHBARGEMEIN",
+            "description": "Lagegenauigkeit: Ungenau, hat mehr symbolischen Charakter\n\n Beschlussorgan: Stadtrat \n\n Beschlussdatum: 02.12.2020",
+            "attributes": [
+               {
+                  "name": "NUMMER",
+                  "description": "Nummer der Energielieferung"
+               },
+               {
+                  "name": "ENERGIETRAEGER",
+                  "description": "Wertebereich:\n\n- Fernwärme\n\n- Abwärme Klärwerk"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               }
+            ]
+         },
+         {
+            "name": "ENERGIENUTZUNG_GRUND_SEEWASSER",
+            "description": "Lagegenauigkeit: Gemäss Vorgaben aus amtlicher Vermessung\n\n Beschlussorgan: Stadtrat \n\n Beschlussdatum: 02.12.2020",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               },
+               {
+                  "name": "ENERGIETRAEGER",
+                  "description": "Wertebereich:\n\n- Wärme und Kälte aus Grundwasser\n\n- Wärme und Kälte aus Seewasser"
+               },
+               {
+                  "name": "INFORMATIONEN",
+                  "description": "Informationen für Katasterauskunft"
+               },
+               {
+                  "name": "VERANTWORTLICHE_ABTEILUNG",
+                  "description": "Abteilungsangabe für Katasterauskunft"
+               },
+               {
+                  "name": "AKTUALISIERUNGSRHYTHMUS",
+                  "description": "Nachführung der Daten für Katasterauskunft"
+               },
+               {
+                  "name": "RECHTLICHE_GRUNDLAGEN",
+                  "description": "Beschluss des Stadtrates für Katasterauskunft"
+               },
+               {
+                  "name": "KONTAKT",
+                  "description": "Kontaktangaben für Katasterauskunft"
+               },
+               {
+                  "name": "STAND_DATEN",
+                  "description": "Stand der Daten für Katasterauskunft"
+               },
+               {
+                  "name": "ART",
+                  "description": "Art des Gebietes für Katasterauskunft"
+               },
+               {
+                  "name": "NAME",
+                  "description": "Namen des Gebiets (für Katasterauskunft)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               },
+               {
+                  "name": "GEBIETSNUMMER",
+                  "description": "Nummer des Gebiets"
+               }
+            ]
+         },
+         {
+            "name": "ENERGIEVERBUNDE_5GWHA",
+            "description": "Lagegenauigkeit: Gemäss Vorgaben aus amtlicher Vermessung\n\n Beschlussorgan: Stadtrat \n\n Beschlussdatum: 07.12.2022",
+            "attributes": [
+               {
+                  "name": "KAELTE",
+                  "description": "Wertebereich:\n\n- ja\n\n- nein"
+               },
+               {
+                  "name": "ENERGIETRAEGER",
+                  "description": "Wertebereich:\n\n- Abwärme\n\n- Abwärme und untiefe Geothermie\n\n- Aussenluft, Option Seewasser\n\n- Biomasse\n\n- Grundwasser\n\n- Grundwasser und Abwärme\n\n- Rohabwasser\n\n- Seewasser\n\n- Trinkwasser"
+               },
+               {
+                  "name": "STATUS",
+                  "description": "Wertebereich:\n\n- bestehend\n\n- geplant"
+               },
+               {
+                  "name": "GEBIETSNUMMER",
+                  "description": "Nummer des Verbundes"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               },
+               {
+                  "name": "ENERGIETRAEGER_KURZ",
+                  "description": "Kurzbezeichnung der Energieträger; Wird gebraucht für die Darstellung\n\n\n\nWertebereich:\n\n- Abwärme\n\n- Aussenluft\n\n- Biomasse\n\n- Grundwasser\n\n- Rohabwasser\n\n- Seewasser\n\n- Trinkwasser"
+               },
+               {
+                  "name": "EWS",
+                  "description": "Wertebereich:\n\n- ja\n\n- nein"
+               },
+               {
+                  "name": "NAME",
+                  "description": "Namen des Gebiets (für Katasterauskunft)"
+               }
+            ]
+         },
+         {
+            "name": "FERNWAERMELEITUNGEN",
+            "description": "Lagegenauigkeit: Unterschiedlich; Meter bis Dekameter\n\nBeschlussorgan: Stadtrat\n\nBeschlussdatum: 07.12.2022",
+            "attributes": [
+               {
+                  "name": "STATUS",
+                  "description": "Wertebereich:\n\n- bestehend\n\n- geplant"
+               },
+               {
+                  "name": "ENERGIETRAEGER",
+                  "description": "Wertebereich:\n\n- Fernwärme aus Abwasser\n\n- Fernwärme aus HKW\n\n- Fernwärme aus Seewasser"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               }
+            ]
+         },
+         {
+            "name": "GASVERSORGUNG_ENERGIEPLANKARTE",
+            "description": "Lagegenauigkeit: Gemäss Vorgaben aus amtlicher Vermessung\n\nBeschlussorgan: Stadtrat\n\nBeschlussdatum: 07.12.2022",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               },
+               {
+                  "name": "GEBIETSNUMMER",
+                  "description": "Nummer des Gebiets"
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": "Enthält Informationen über den Stand der Gasversorgung\n\nWertebereich:\n\n- Perimeter Gasversorgung\n\n- Perimeter bereits beschlossener Rückzug der Gasversorgung\n\n- Perimeter Rückzug Gasversorgung in Prüfung"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               }
+            ]
+         },
+         {
+            "name": "INFRASTRUKTURSTANDORTE",
+            "description": "Lagegenauigkeit: Gebäude (Biogasanlage), analog regionaler Richtplan (alle übrigen) \n\n Beschlussorgan: Stadtrat \n\n Beschlussdatum: 07.12.2022",
+            "attributes": [
+               {
+                  "name": "ENERGIETRAEGER",
+                  "description": "Wertebereich:\n\n- Abwärme aus gereinigtem Abwasser\n\n- Abwärme aus gereinigtem Abwasser und aus der Klärschlammverbrennung\n\n- Abwärme aus Holzheizkraftwerk\n\n- Abwärme aus Kehrichtheizkraftwerk\n\n- Biogas\n\n- Erdgas / Erdöl\n\n- Klärschlamm"
+               },
+               {
+                  "name": "NAME",
+                  "description": "Geographischer Name der Anlage"
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": "Art der Infrastrukturanlage\n\nWertebereich:\n\n- Biogasanlage\n\n- Klärwerk mit Abwärmepotenzial\n\n- Energiezentrale Fernwärme\n\n- Klärschlammverbrennungsanlage"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               }
+            ]
+         },
+         {
+            "name": "SEEWASSERPUMPSTATIONEN",
+            "description": "Lagegenauigkeit: Einige Dekameter \n\n Beschlussorgan: Stadtrat \n\n Beschlussdatum: 02.12.2020",
+            "attributes": [
+               {
+                  "name": "NAME",
+                  "description": "Geographische Standortbezeichnung der Anlage"
+               },
+               {
+                  "name": "NUMMER",
+                  "description": "Nummerierung im Gegenuhrzeigersinn von der Stadtgrenze zu Kilchberg (ZH) bis zur Stadtgrenze zu Zollikon"
+               },
+               {
+                  "name": "STATUS",
+                  "description": "Status\n\n- bestehend\n\n- geplant"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               }
+            ]
+         },
+         {
+            "name": "SIEDLUNGSGEBIET mit Fokus auf dezentrale Wärmeversorgung",
+            "description": "Lagegenauigkeit: Gemäss kantonalem Richtplan\n\nBeschlussorgan: Stadtrat\n\nBeschlussdatum: 02.12.2020",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               }
+            ]
+         },
+         {
+            "name": "ENERGIEVERBUNDE_GEBIETSAUFTRAG",
+            "description": "Lagegenauigkeit: Gemäss Vorgaben aus amtlicher Vermessung\n\n Beschlussorgan: Stadtrat \n\n Beschlussdatum: 07.12.2022",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               },
+               {
+                  "name": "NAME",
+                  "description": "Namen des Gebiets (für Katasterauskunft)"
+               },
+               {
+                  "name": "ENERGIETRAEGER",
+                  "description": "Wertebereich:\n\n- Abwärme\n\n- Grundwasser\n\n- Seewasser"
+               },
+               {
+                  "name": "GEBIETSNUMMER",
+                  "description": "Nummer des Verbundes"
+               },
+               {
+                  "name": "ENERGIETRAEGER_KURZ",
+                  "description": "Kurzbezeichnung der Energieträger; Wird gebraucht für die Darstellung\n\n\n\nWertebereich:\n\n- Abwärme\n\n- Grundwasser\n\n- Seewasser"
+               },
+               {
+                  "name": "KAELTE",
+                  "description": "Wertebereich:\n\n- ja\n\n- nein"
+               },
+               {
+                  "name": "STATUS",
+                  "description": "Wertebereich:\n\n- bestehend\n\n- geplant\n\n- in Prüfung"
+               },
+               {
+                  "name": "EWS",
+                  "description": "Wertebereich:\n\n- ja\n\n- nein"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Internes Attribut (ohne fachliche Bedeutung)"
+               }
+            ]
+         }
+      ]
+   }
+}

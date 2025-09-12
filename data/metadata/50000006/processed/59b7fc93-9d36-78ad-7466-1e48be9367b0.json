@@ -1,0 +1,861 @@
+{
+   "title": "Strassenlärmkataster der Stadt Zürich (inkl. 3D)",
+   "keywords": [
+      "Strassenlärm",
+      "Immissionen",
+      "Emissionen",
+      "Verkehr",
+      "Individualverkehr",
+      "ÖV",
+      "MIV",
+      "MÖV",
+      "Bus",
+      "Tram"
+   ],
+   "metadata_date": "2022-10-18T09:28:31",
+   "updateFrequency": "annually",
+   "purpose": "Strassenlärmemissionspegel auf Strassenachsen sowie maximale Strassenlärmimmissionen der Gebäude. \n\nVollzug von: \n\n* SR 814.41 Lärmschutz-Verordnung (LSV) Art. 37\n\n* GeoIV, Anhang 1, Lärmbelastungskataster für Haupt- und übrige Strassen, ID 144\n\n* KGeoIV, Anhang 1 Lärmbelastungskataster für Staatsstrassen (nur Städte Zürich und Winterthur), ID 144B",
+   "abstract": "GIS-gestützter Strassenlärmkataster der Stadt Zürich",
+   "identificationDate": "2024-05-01",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Gesundheits- und Umweltdepartement - Umwelt- und Gesundheitsschutz",
+   "contactPerson": "Rainer Bobst",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "VAS_SDE.VAS_E_STRASSENLAERMEMISSION",
+            "description": "Der Datensatz beinhaltet die Strassenlaermemissionen (gemäss Lärmschutzverordnung LSV) ausgewählter Verkehrsabschnitte der Stadt Zürich. Zum Strassenlärm wird gemäss LSV der Motorfahrzeugverkehr (inkl. motorisiertem öffentlichen Verkehr) sowie der Tramverkehr, wo dieser nicht auf einem separaten Trasse verläuft, gezählt. Die Emissionen wurden gemäss dem eidgenössischen Strassenlärmberechnungsmodell \"StL86+\" berechnet.",
+            "attributes": [
+               {
+                  "name": "LOKALISATIONNUMMER",
+                  "description": "Nummer der Lokalisation gemäss AV und VAS."
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": "Name der Lokalisation gemäss AV und VAS.\n\nBildet zusammen mit MESSWERT_VON und MESSWERT_BIS den Schlüssel zur Darstellung als Linienereignis auf VAS_SDE.VAS_ROUTE."
+               },
+               {
+                  "name": "LRETMFZ",
+                  "description": "Emission Tag motorisierter Individualverkehr (MIV)"
+               },
+               {
+                  "name": "LRENMFZ",
+                  "description": "Emission Nacht motorisierter Individualverkehr (MIV)"
+               },
+               {
+                  "name": "LAENGE",
+                  "description": "Bemerkungen zum Tramverkehr"
+               },
+               {
+                  "name": "LRETTRAM",
+                  "description": "Emission Tag Tramverkehr"
+               },
+               {
+                  "name": "LRENTRAM",
+                  "description": "Emission Nacht Tramverkehr"
+               },
+               {
+                  "name": "LRET",
+                  "description": "Emission Tag gesamt"
+               },
+               {
+                  "name": "LREN",
+                  "description": "Emission Nacht gesamt"
+               },
+               {
+                  "name": "MESSWERT_VON",
+                  "description": "Anfangs-Kilometrierungswert des Linienereignisses.\n\nBildet zusammen mit LOKALISATIONSNAME und MESSWERT_BIS den Schlüssel zur Darstellung als Linienereignis auf VAS_SDE.VAS_ROUTE."
+               },
+               {
+                  "name": "MESSWERT_BIS",
+                  "description": "End-Kilometrierungswert des Linienereignisses. \n\nBildet zusammen mit LOKALISATIONSNAME und MESSWERT_VON den Schlüssel zur Darstellung als Linienereignis auf VAS_SDE.VAS_ROUTE."
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "systeminternes Feld, hat keine fachliche Bedeutung"
+               }
+            ]
+         },
+         {
+            "name": "UGZ_SDE.STRLAERM_IMMISSIONEN_IST_A",
+            "description": "Strassenlärm-Immissionen bei Gebäuden IST-Zustand",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "systeminternes Attribut, hat keine fachliche Bedeutung"
+               },
+               {
+                  "name": "ID",
+                  "description": "mapLärm-interner Identifikator des Gebäudes"
+               },
+               {
+                  "name": "ES_MAPLAER",
+                  "description": "für die Beurteilung der Lärmimmission angenommene Empfindlichkeitsstufe (ES) (komma-separierte Aufzählung bei mehreren):\n\n* \"0\" / NULL = Empfindlichkeitsstufe fehlt\n\n* \"2\" = ES II\n\n* \"3\" = ES III\n\n* \"4\" = ES IV"
+               },
+               {
+                  "name": "ES_MULTIPL",
+                  "description": "* \"ja\": dieses Gebäude liegt in mehr als einer Empfindlichkeitsstufe (ES)\n\n* \"nein\": dieses Gebäude liegt in max. 1 Empfindlichkeitsstufe (ES)"
+               },
+               {
+                  "name": "LRT_MAX",
+                  "description": "maximaler (modellierter) Immissions-Lärmpegel Tag bei diesem Gebäude"
+               },
+               {
+                  "name": "LRN_MAX",
+                  "description": "maximaler (modellierter) Immissions-Lärmpegel Nacht bei diesem Gebäude"
+               },
+               {
+                  "name": "KAT_WOHN",
+                  "description": "* -1: keine EO für dieses Gebäude (nicht beurteilt)\n\n* 0: nicht berechnet (beurteilt)\n\n* 1: Empfindlichkeitsstufe (ES) fehlt\n\n* 2: &lt;IGW\n\n* 3: IGW\n\n* 4: AW-5\n\n* 7: AW erreicht oder überschritten"
+               },
+               {
+                  "name": "KAT_WOHN_T",
+                  "description": "* \"keine EO für dieses Gebäude\"\n\n* \"nicht berechnet\"\n\n* \"&lt;IGW\"\n\n* \"IGW\"\n\n* \"AW-5\"\n\n* \"AW\""
+               },
+               {
+                  "name": "KAT_BETR",
+                  "description": "* -1: keine EO für dieses Gebäude (nicht beurteilt) \n\n* 0: nicht berechnet (beurteilt) \n\n* 1: Empfindlichkeitsstufe (ES) fehlt \n\n* 12: &lt;IGW \n\n* 14: AW-5 \n\n* 17: AW erreicht oder überschritten"
+               },
+               {
+                  "name": "KAT_BETR_T",
+                  "description": "* \"keine EO für dieses Gebäude\" \n\n* \"nicht berechnet\" \n\n* \"&lt;IGW\" \n\n* \"AW-5\"\n\n* \"AW\""
+               },
+               {
+                  "name": "ZUSTAND",
+                  "description": "* \"IST\" = IST-Zustand"
+               },
+               {
+                  "name": "QUELLE",
+                  "description": null
+               },
+               {
+                  "name": "STAND",
+                  "description": "Datenstand"
+               },
+               {
+                  "name": "BEMERKUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "UGZ_SDE.STRLAERM_EMISSIONEN_IST_L",
+            "description": "Strassenlärm-Emissionen IST-Zustand",
+            "attributes": [
+               {
+                  "name": "EINBAHN",
+                  "description": "Fahrtrichtung:\n\n* \"ALL\" = Strassenabschnitt ist in beide Richtungen befahrbar.\n\n* \"TF\" = Einbahnstrasse, nur entgegen der Digitalisierrichtung befahrbar.\n\n* \"FT\" = Einbahnstrasse, nur in Digitalisierrichtung befahrbar.\n\n* *N\" = Fahrverbot (?)\n\n(Abgeleitet aus der VAS-Ereignistabelle VAS_SDE.VAS_E_FAHRTRICHTUNG.)"
+               },
+               {
+                  "name": "VT",
+                  "description": "Geschwindigkeit Tag"
+               },
+               {
+                  "name": "VN",
+                  "description": "Geschwindigkeit Nacht"
+               },
+               {
+                  "name": "NT1",
+                  "description": "Motorfahrzeuge Tag"
+               },
+               {
+                  "name": "NT2",
+                  "description": "Schwerverkehr Tag"
+               },
+               {
+                  "name": "NT",
+                  "description": "Motorisierter Individualverkehr (MIV) gesamt Tag"
+               },
+               {
+                  "name": "NTB",
+                  "description": "Schwerverkehrsanteil Tag"
+               },
+               {
+                  "name": "NN1",
+                  "description": "Motorfahrzeuge Nacht"
+               },
+               {
+                  "name": "NN2",
+                  "description": "Schwerverkehr Nacht"
+               },
+               {
+                  "name": "NN",
+                  "description": "Motorisierter Individualverkehr (MIV) gesamt Nacht"
+               },
+               {
+                  "name": "NNB",
+                  "description": "Schwerkehrsanteil Nacht"
+               },
+               {
+                  "name": "LRET_MFZ",
+                  "description": "Emission Tag motorisierter Individualverkehr (MIV)"
+               },
+               {
+                  "name": "LREN_MFZ",
+                  "description": "Emission Nacht motorisierter Individualverkehr (MIV)"
+               },
+               {
+                  "name": "BEMERKUNG_TRAM",
+                  "description": "Bemerkungen zum Tramverkehr"
+               },
+               {
+                  "name": "LRET_TRAM",
+                  "description": "Emission Tag Tramverkehr"
+               },
+               {
+                  "name": "LREN_TRAM",
+                  "description": "Emission Nacht Tramverkehr"
+               },
+               {
+                  "name": "LRET",
+                  "description": "Emission Tag gesamt"
+               },
+               {
+                  "name": "LREN",
+                  "description": "Emission Nacht gesamt"
+               },
+               {
+                  "name": "MODELL",
+                  "description": "angewendetes Berechnungsmodell:\n\n* \"StL-86+\""
+               },
+               {
+                  "name": "OK",
+                  "description": "OK-Status der Emissionsberechnung auf diesem Abschnitt:\n\n* \"ja\"\n\n* \"nein\" = Detailinformationen sind bei der Fachstelle Lärmschutz (UGZ) einzuholen"
+               },
+               {
+                  "name": "MESSWERT_VON",
+                  "description": "Anfangs-Kilometrierungswert des Linienereignisses.\n\nBildet zusammen mit LOKALISATIONSNAME und MESSWERT_BIS den Schlüssel zur Darstellung als Linienereignis auf VAS_SDE.VAS_ROUTE."
+               },
+               {
+                  "name": "MESSWERT_BIS",
+                  "description": "End-Kilometrierungswert des Linienereignisses. \n\nBildet zusammen mit LOKALISATIONSNAME und MESSWERT_VON den Schlüssel zur Darstellung als Linienereignis auf VAS_SDE.VAS_ROUTE."
+               },
+               {
+                  "name": "VAS_ID",
+                  "description": null
+               },
+               {
+                  "name": "BELT",
+                  "description": "Belagskorrektur Tag"
+               },
+               {
+                  "name": "BELN",
+                  "description": "Belagskorrektur Nacht"
+               },
+               {
+                  "name": "STEIGUNG",
+                  "description": "Steigung des Strassenabschnitts.\n\n(Abgeleitet aus der VAS-Ereignistabelle VAS_SDE.VAS_E_STEIGUNG.)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "systeminternes Feld, hat keine fachliche Bedeutung"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONNUMMER",
+                  "description": "Nummer der Lokalisation gemäss AV und VAS."
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": "Name der Lokalisation gemäss AV und VAS.\n\nBildet zusammen mit MESSWERT_VON und MESSWERT_BIS den Schlüssel zur Darstellung als Linienereignis auf VAS_SDE.VAS_ROUTE."
+               }
+            ]
+         },
+         {
+            "name": "STRLAERM_EP",
+            "description": "Empfangspunkte (Immissionen) an den Gebäudefassaden.\n\nGegenwärtig noch mit experimentellem Charakter hinsichtlich wie gut die Empfangspunkte zu anderen 3D Daten passen.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "Interne System-ID"
+               },
+               {
+                  "name": "LR_DAY",
+                  "description": "Immissionpegel Lr Tag"
+               },
+               {
+                  "name": "LR_NIGHT",
+                  "description": "Immissionpegel Lr Nacht"
+               },
+               {
+                  "name": "EXPOSURE_LIMIT_VALUE_D",
+                  "description": "Belastungsgrenzwert Beurteilung des Lr Tag"
+               },
+               {
+                  "name": "EXPOSURE_LIMIT_VALUE_N",
+                  "description": "Belastungsgrenzwert Beurteilung des Lr Nacht"
+               },
+               {
+                  "name": "REL_HEIGHT_POD",
+                  "description": "Relative Höhe über Boden des Empfangspunktes"
+               },
+               {
+                  "name": "GEOMETRY_POD",
+                  "description": "Z-Wert bestimmt die absolute Höhe des Punktes über Meer"
+               },
+               {
+                  "name": "ES",
+                  "description": "Empfindlichkeitsstufe"
+               },
+               {
+                  "name": "POD_TYP",
+                  "description": "Typ des Ermittlungspunktes"
+               },
+               {
+                  "name": "OPERATION_STATUS",
+                  "description": "Beurteilung des Ermittlungspunkts, ob es sich dabei beim Objekt um einen Betriebsraum handelt oder nicht."
+               },
+               {
+                  "name": "DETERMINATION_REMARK",
+                  "description": "Bemerkungen zum Ermittlungspunkt"
+               },
+               {
+                  "name": "MCD_STREET",
+                  "description": "Modellkorrektur Tag für Strassen"
+               },
+               {
+                  "name": "MCN_STREET",
+                  "description": "Modellkorrektur Nacht für Strassen"
+               },
+               {
+                  "name": "ADDRESS_POD",
+                  "description": "Adresse des Ermittlungspunkts am Gebäude"
+               },
+               {
+                  "name": "EGID",
+                  "description": "Eidgenössischer Gebäudeidentifikator"
+               },
+               {
+                  "name": "EDID",
+                  "description": "Eidgenössischer Wohnungsidentifikator"
+               },
+               {
+                  "name": "ID_POD",
+                  "description": "Objektidentifikation Ermittlungsort"
+               },
+               {
+                  "name": "EXPOSURE_LIMIT_DATE",
+                  "description": "Datum der Publikation"
+               },
+               {
+                  "name": "E",
+                  "description": "Easting"
+               },
+               {
+                  "name": "N",
+                  "description": "Northing"
+               },
+               {
+                  "name": "LBK_ID",
+                  "description": "Objektidentifikation Strassenlärmbelastungskataster"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               }
+            ]
+         },
+         {
+            "name": "STRLAERM_EP_SZENARIO_MIN3DB",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "LR_DAY",
+                  "description": null
+               },
+               {
+                  "name": "LR_NIGHT",
+                  "description": null
+               },
+               {
+                  "name": "EXPOSURE_LIMIT_VALUE_D",
+                  "description": null
+               },
+               {
+                  "name": "EXPOSURE_LIMIT_VALUE_N",
+                  "description": null
+               },
+               {
+                  "name": "REL_HEIGHT_POD",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRY_POD",
+                  "description": null
+               },
+               {
+                  "name": "ES",
+                  "description": null
+               },
+               {
+                  "name": "POD_TYP",
+                  "description": null
+               },
+               {
+                  "name": "OPERATION_STATUS",
+                  "description": null
+               },
+               {
+                  "name": "DETERMINATION_REMARK",
+                  "description": null
+               },
+               {
+                  "name": "MCD_STREET",
+                  "description": null
+               },
+               {
+                  "name": "MCN_STREET",
+                  "description": null
+               },
+               {
+                  "name": "ADDRESS_POD",
+                  "description": null
+               },
+               {
+                  "name": "EGID",
+                  "description": null
+               },
+               {
+                  "name": "EDID",
+                  "description": null
+               },
+               {
+                  "name": "ID_POD",
+                  "description": null
+               },
+               {
+                  "name": "EXPOSURE_LIMIT_DATE",
+                  "description": null
+               },
+               {
+                  "name": "E",
+                  "description": null
+               },
+               {
+                  "name": "N",
+                  "description": null
+               },
+               {
+                  "name": "LBK_ID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "STRLAERM_EP_SZENARIO_MIN5DB",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "LR_DAY",
+                  "description": null
+               },
+               {
+                  "name": "LR_NIGHT",
+                  "description": null
+               },
+               {
+                  "name": "EXPOSURE_LIMIT_VALUE_D",
+                  "description": null
+               },
+               {
+                  "name": "EXPOSURE_LIMIT_VALUE_N",
+                  "description": null
+               },
+               {
+                  "name": "REL_HEIGHT_POD",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRY_POD",
+                  "description": null
+               },
+               {
+                  "name": "ES",
+                  "description": null
+               },
+               {
+                  "name": "POD_TYP",
+                  "description": null
+               },
+               {
+                  "name": "OPERATION_STATUS",
+                  "description": null
+               },
+               {
+                  "name": "DETERMINATION_REMARK",
+                  "description": null
+               },
+               {
+                  "name": "MCD_STREET",
+                  "description": null
+               },
+               {
+                  "name": "MCN_STREET",
+                  "description": null
+               },
+               {
+                  "name": "ADDRESS_POD",
+                  "description": null
+               },
+               {
+                  "name": "EGID",
+                  "description": null
+               },
+               {
+                  "name": "EDID",
+                  "description": null
+               },
+               {
+                  "name": "ID_POD",
+                  "description": null
+               },
+               {
+                  "name": "EXPOSURE_LIMIT_DATE",
+                  "description": null
+               },
+               {
+                  "name": "E",
+                  "description": null
+               },
+               {
+                  "name": "N",
+                  "description": null
+               },
+               {
+                  "name": "LBK_ID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "STRLAERM_EP_SZENARIO_MIN7DB",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "ID_POD",
+                  "description": null
+               },
+               {
+                  "name": "E",
+                  "description": null
+               },
+               {
+                  "name": "N",
+                  "description": null
+               },
+               {
+                  "name": "LBK_ID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "LR_DAY",
+                  "description": null
+               },
+               {
+                  "name": "LR_NIGHT",
+                  "description": null
+               },
+               {
+                  "name": "EXPOSURE_LIMIT_VALUE_D",
+                  "description": null
+               },
+               {
+                  "name": "EXPOSURE_LIMIT_VALUE_N",
+                  "description": null
+               },
+               {
+                  "name": "REL_HEIGHT_POD",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRY_POD",
+                  "description": null
+               },
+               {
+                  "name": "ES",
+                  "description": null
+               },
+               {
+                  "name": "POD_TYP",
+                  "description": null
+               },
+               {
+                  "name": "OPERATION_STATUS",
+                  "description": null
+               },
+               {
+                  "name": "DETERMINATION_REMARK",
+                  "description": null
+               },
+               {
+                  "name": "MCD_STREET",
+                  "description": null
+               },
+               {
+                  "name": "MCN_STREET",
+                  "description": null
+               },
+               {
+                  "name": "ADDRESS_POD",
+                  "description": null
+               },
+               {
+                  "name": "EGID",
+                  "description": null
+               },
+               {
+                  "name": "EDID",
+                  "description": null
+               },
+               {
+                  "name": "EXPOSURE_LIMIT_DATE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "STRLAERM_IMMISSIONEN_GEB_2017",
+            "description": "Strassenlärm-Immissionen auf Gebäuden im Jahr 2017. \n\nFür diesen Layer wurde von den Empfangspunkten auf der Gebäudefassade die lautesten Tages- und Nachtpegel übertragen und beurteilt, ob diese Pegel die Grenzwerte für Wohnen und Betrieb einhalten oder überschreiten.\n\nDiese Daten geben keine Auskunft darüber, wie ein Gebäude tatsächlich genutzt wird.\n\nKann nicht für das Baubewilligungsverfahren genutzt werden.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "Systemidentifikator"
+               },
+               {
+                  "name": "EGID",
+                  "description": "Eidgenössischer Gebäudeidentifikator"
+               },
+               {
+                  "name": "LRT_MAX",
+                  "description": "maximaler (modellierter) Immissions-Lärmpegel Tag bei diesem Gebäude"
+               },
+               {
+                  "name": "LRN_MAX",
+                  "description": "maximaler (modellierter) Immissions-Lärmpegel Nacht bei diesem Gebäude"
+               },
+               {
+                  "name": "H_REL_TRAUF_BODEN",
+                  "description": "Traufhöhe minus Bodenhöhe (H_BODEN) [m]"
+               },
+               {
+                  "name": "H_REL_FIRST_BODEN",
+                  "description": "Firsthöhe minus Bodenhöhe (H_BODEN) [m]"
+               },
+               {
+                  "name": "REFERENZJAHR",
+                  "description": "Referenzjahr"
+               },
+               {
+                  "name": "BER_MODELL",
+                  "description": "Name des Berechnungsmodells"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "ES",
+                  "description": "für die Beurteilung der Lärmimmission angenommene Empfindlichkeitsstufe (ES) (komma-separierte Aufzählung bei mehreren):\n\n* \"0\" / NULL = Empfindlichkeitsstufe fehlt\n\n* \"2\" = ES II\n\n* \"3\" = ES III\n\n* \"4\" = ES IV"
+               },
+               {
+                  "name": "ES_MULTIPLE",
+                  "description": "* \"ja\": dieses Gebäude liegt in mehr als einer Empfindlichkeitsstufe (ES) \n\n* \"nein\": dieses Gebäude liegt in max. 1 Empfindlichkeitsstufe (ES)"
+               },
+               {
+                  "name": "BEURT_BETRIEB",
+                  "description": "Beurteilung, ob der Immissionsgrenzwert (IGW) oder Alarmwert (AW) für die betriebliche Nutzung eingehalten oder überschritten ist:  \n\n* \"AW\"\n\n* \"AW-5\"\n\n* \"IGW\"\n\n* \"&lt;IGW\"\n\n* \"ES fehlt\"\n\n* \"keine EO für dieses Gebäude\"\n\n* \"nicht berechnet\""
+               },
+               {
+                  "name": "H_BODEN",
+                  "description": "Höhe des Grundrisses [Meter über Meer]. Tiefster, sichtbarer Schnittpunkt (Gebäude / Gelände) und zusätzlich minus 3 Meter. Also ca. 1 Stockwerk unter dem Boden."
+               },
+               {
+                  "name": "BEURT_WOHNEN",
+                  "description": "Beurteilung, ob der Immissionsgrenzwert (IGW) oder Alarmwert (AW) für die Wohnnutzung eingehalten oder überschritten ist:  \n\n* \"AW\"\n\n* \"AW-5\"\n\n* \"IGW\"\n\n* \"&lt;IGW\"\n\n* \"ES fehlt\"\n\n* \"keine EO für dieses Gebäude\"\n\n* \"nicht berechnet\""
+               }
+            ]
+         },
+         {
+            "name": "LBK_EMISSIONSABSCHNITT",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "EMI_VERSION_ID",
+                  "description": null
+               },
+               {
+                  "name": "EMI_VERSION",
+                  "description": null
+               },
+               {
+                  "name": "GEOIV_IDENTIFIKATOR",
+                  "description": null
+               },
+               {
+                  "name": "GEMEINDE_NR",
+                  "description": null
+               },
+               {
+                  "name": "GEMEINDE",
+                  "description": null
+               },
+               {
+                  "name": "ZUSTAENDIGE_STELLE",
+                  "description": null
+               },
+               {
+                  "name": "ZUSTAND_ART",
+                  "description": null
+               },
+               {
+                  "name": "REFERENZJAHR",
+                  "description": null
+               },
+               {
+                  "name": "EMISSIONSMODELL",
+                  "description": null
+               },
+               {
+                  "name": "ZUSCHLAG_PLANUNGSHORIZONT",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIG_AB",
+                  "description": null
+               },
+               {
+                  "name": "EMI_ABSCHNITT_ID",
+                  "description": null
+               },
+               {
+                  "name": "LRE_TAG",
+                  "description": null
+               },
+               {
+                  "name": "LRE_NACHT",
+                  "description": null
+               },
+               {
+                  "name": "Z_ERFASSUNG",
+                  "description": null
+               },
+               {
+                  "name": "STEIGUNG",
+                  "description": null
+               },
+               {
+                  "name": "STRASSENBELAG",
+                  "description": null
+               },
+               {
+                  "name": "KORREKTURWERT_BELAG",
+                  "description": null
+               },
+               {
+                  "name": "OK",
+                  "description": null
+               },
+               {
+                  "name": "VT",
+                  "description": null
+               },
+               {
+                  "name": "VN",
+                  "description": null
+               },
+               {
+                  "name": "TUNNEL",
+                  "description": null
+               },
+               {
+                  "name": "BRUECKE",
+                  "description": null
+               },
+               {
+                  "name": "STRASSENBAHN",
+                  "description": null
+               },
+               {
+                  "name": "VERKEHR_BEMERKUNG",
+                  "description": null
+               },
+               {
+                  "name": "STRASSENTYP",
+                  "description": null
+               },
+               {
+                  "name": "NT1",
+                  "description": null
+               },
+               {
+                  "name": "NN1",
+                  "description": null
+               },
+               {
+                  "name": "NT2",
+                  "description": null
+               },
+               {
+                  "name": "NN2",
+                  "description": null
+               },
+               {
+                  "name": "ANZ_TRAM_TAG",
+                  "description": null
+               },
+               {
+                  "name": "ANZ_TRAM_NACHT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         }
+      ]
+   }
+}

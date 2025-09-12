@@ -1,0 +1,57 @@
+{
+   "title": "Ausnahmetransportrouten",
+   "keywords": [
+      "ATR",
+      "Unterwerke",
+      "Logistik"
+   ],
+   "metadata_date": "2020-01-22T12:23:55",
+   "updateFrequency": "asNeeded",
+   "purpose": "Planungsgrundlage für Strassenbauprojekte.",
+   "abstract": "Die Ausnahmetransportrouten geben an, auf welchen Strassen und Brücken Ausnahmetransporte (bzgl. Höhe, Breite und Last) verkehren können. Die Ausnahmetransportrouten des Typs I und II stammen vom Kanton. Diese wurden ergänzt mit Typ III. Zum Datensatz der Ausnahmetransportrouten gehören die Unterwerke.",
+   "identificationDate": "2017-06-06",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Tiefbauamt",
+   "contactPerson": "Raphaël Duchoud",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Ausnahmetransportrouten",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "AUSNAHMETRANSPORTROUTEN",
+            "description": "Die Ausnahmetransportrouten geben an, auf welchen Strassen und Brücken Ausnahmetransporte (bzgl. Höhe, Breite und Last) verkehren können. Die Ausnahmetransportrouten des Typs I und II stammen vom Kanton. Diese wurden ergänzt mit Typ III. Zum Datensatz der  \n\nAusnahmetransportrouten gehören die Unterwerke.",
+            "attributes": [
+               {
+                  "name": "ID1",
+                  "description": "Eindeutige System-ID"
+               },
+               {
+                  "name": "TYP",
+                  "description": "Es gibt Typ I, Typ II, Typ III. Ist eine Route geplant, statt bestehend, erhält die Typenbezeichnung den Zusatz \"geplant\"."
+               },
+               {
+                  "name": "TYP_BEMERKUNG",
+                  "description": "Beschreibt die Kennzahlen zum entsprechenden Typ: erlaubte Höhe, Breite und zulässige Maximallast."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         }
+      ]
+   }
+}

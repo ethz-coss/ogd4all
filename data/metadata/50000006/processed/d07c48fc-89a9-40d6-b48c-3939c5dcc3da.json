@@ -1,0 +1,69 @@
+{
+   "title": "Hydranten",
+   "keywords": [
+      "Wasserversorgung",
+      "Hydranten"
+   ],
+   "metadata_date": "2019-12-18T09:25:05",
+   "updateFrequency": "daily",
+   "purpose": "Dokumentation des Bestandes",
+   "abstract": "Hydranten der Wasserversorgung Stadt Zürich und private Hydranten, welche von der Wasserversorgung Stadt Zürich unterhalten (gewartet) werden.",
+   "identificationDate": "2025-03-17",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Departement der Industriellen Betriebe - Wasserversorgung",
+   "contactPerson": "Ralf Züger",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Hydranten",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "WVZ_HYDRANTEN",
+            "description": "Hydranten der Wasserversorgung Stadt Zürich und private Hydranten, welche von der Wasserversorgung Stadt Zürich unterhalten (gewartet) werden.",
+            "attributes": [
+               {
+                  "name": "ART_TXT",
+                  "description": "Hydrantenart; Unter- oder Oberflurhydrant"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "OBERFLUR_NUMMER",
+                  "description": "eindeutige WVZ-Nummer für Oberflurhydranten"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI-ID, nicht relevant"
+               },
+               {
+                  "name": "SUBART_TXT",
+                  "description": "Hydrantentyp: ein- oder zweiarmig"
+               },
+               {
+                  "name": "VERLEGEJAHR",
+                  "description": "Baujahr"
+               },
+               {
+                  "name": "EIGENTUEMER_TXT",
+                  "description": "WVZ (öffentlich) oder privat"
+               }
+            ]
+         }
+      ]
+   }
+}

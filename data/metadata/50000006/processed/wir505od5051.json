@@ -1,0 +1,52 @@
+{
+   "title": "Erwerbstätige aus der Wohnbevölkerung nach Geschlecht und Wirtschaftsabschnitt",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bfs_wir_ste_erwtge_wbev_geschl_wiabsch_od5051",
+   "abstract": "Dieser Datensatz enthält den Anteil von Erwerbspersonen (Erwerbstätige und Erwerbslose gemäss ILO) an der ständigen Bevölkerung im Alter von 15 Jahren und mehr, nach Geschlecht und Wirtschaftsabschnitt.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Datenquelle\n\nDie Auswertung beruht auf der Strukturerhebung (SE), welche jährlich seit 2010 vom BFS durchgeführt wird. Die ausgewählten Zielpersonen sind mindestens 15 Jahre alt und machen Angaben zur eigenen Person (Zielpersonendatensatz) sowie zu den weiteren Personen im Haushalt (Haushaltsdatensatz). Im Haushaltsdatensatz werden somit auch Daten zu Personen ausgewiesen, die jünger als 15 Jahre alt sind.\n\n95 % Konfidenzintervalle\n\nDie Unsicherheiten der Auswertungen werden mit Konfidenzintervallen abgeschätzt. Das 95 % Konfidenzintervall bezeichnet den Bereich, der bei unendlicher Wiederholung eines Zufallsexperiments mit einer Wahrscheinlichkeit von 95 Prozent den wahren Wert der Grundgesamtheit einschliesst. Das Konfidenzintervall wird auch als Vertrauensintervall oder Erwartungsbereich bezeichnet.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Erwerbstätige aus der Wohnbevölkerung nach Geschlecht und Wirtschaftsabschnitt",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: Jahr)",
+                  "description": "Jahr."
+               },
+               {
+                  "name": "Wirtschaftsabschnitt (string) (technisch: SektorLang)",
+                  "description": "Wirtschaftsabschnitt."
+               },
+               {
+                  "name": "Wirtschaftsabschnitt (numerisch) (technisch: SektorSort)",
+                  "description": "Sortiervariable Wirtschaftsabschnitt"
+               },
+               {
+                  "name": "Geschlecht (string) (technisch: GeschlechtLang)",
+                  "description": "Geschlecht der Erwerbspersonen"
+               },
+               {
+                  "name": "Geschlecht (numerisch) (technisch: GeschlechtSort)",
+                  "description": "Sortiervariable Geschlecht"
+               },
+               {
+                  "name": "Anzahl Personen (technisch: Sum)",
+                  "description": "Anzahl Erwerbspersonen"
+               },
+               {
+                  "name": "Untere Grenze Konfidenzintervall (technisch: LowerCLSum)",
+                  "description": "Untere Grenze des 95%-Konfidenzintervalls"
+               },
+               {
+                  "name": "Obere Grenze Konfidenzintervall (technisch: UpperCLSum)",
+                  "description": "Obere Grenze des 95%-Konfidenzintervalls"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-03-31"
+}

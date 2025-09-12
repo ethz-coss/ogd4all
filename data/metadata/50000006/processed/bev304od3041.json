@@ -1,0 +1,48 @@
+{
+   "title": "Hauptsprachen nach Stadtquartier",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bfs_ste_bev_hauptsprachen_quartier_od3041",
+   "abstract": "Die vier Hauptsprachen Deutsch, Englisch, Französisch und Italienisch nach Stadtquartier. Die Auswertung basiert auf den Daten des Haushaltsdatensatzes der Strukturerhebung (3-Jahres-Pooling).",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Strukturerhebung\n\nDie Strukturerhebung ist ein Element der neuen Volkszählung. Sie ergänzt die Registerdaten und wird seit 2010 jährlich vom BFS als Stichprobenerhebung in der gesamten Schweiz durchgeführt.\n\nDatenerhebung: Die Strukturerhebungsdaten werden mittels schriftlicher Befragung erhoben. Die ausgewählten Zielpersonen sind mindestens 15 Jahre alt und machen Angaben zur eigenen Person (Zielpersonendatensatz) sowie zu den weiteren Personen im Haushalt (Haushaltsdatensatz). Im Haushaltsdatensatz werden somit auch Daten zu Personen ausgewiesen, die jünger als 15 Jahre alt sind. Die Fragebögen gibt es in den Landessprachen (Deutsch, Französisch, Italienisch und Rätoromanisch) mit Übersetzungshilfen in Englisch, Spanisch, Portugiesisch, Türkisch, Albanisch, Serbisch/Kroatisch/Bosnisch/Montenegrinisch.\n\nStichprobe: Weil die Auswertungen auf Stichprobendaten beruhen, werden erstens die Zahlen gerundet, zudem werden Konfidenzintervalle angegeben.\n\nPoolingdatensatz: Zusätzlich zu den Daten für Einzeljahre stellt das BFS kumulierte Datensätze über eine gewisse Zeitperiode zur Verfügung. Damit können genauere Ergebnisse erzielt werden als mit einer einzigen Stichprobe. Die Daten beziehen sich dann aber nicht mehr auf ein bestimmtes Referenzdatum, sondern sind Mittelwerte der Durchschnittsbevölkerung über die gesamte betrachtete Zeitperiode.\n\nHauptsprache\n\nErhebung der Hauptsprache: Bei der Hauptsprache wird nach derjenigen Sprache gefragt, in der eine Person denkt und die sie am besten beherrscht. Die Befragten können mehrere Sprachen als Hauptsprachen angeben.\n\nAusgewählte Sprachen: Die häufigsten vier Hauptsprachen in der Stadt Zürich im betrachteten Zeitraum.\n\nKonfidenzintervalle\n\nDie Unsicherheiten der Auswertungen werden mit Konfidenzintervallen abgeschätzt. Das 95%-Konfidenzintervall bezeichnet den Bereich, der bei unendlicher Wiederholung eines Zufallsexperiments mit einer Wahrscheinlichkeit von 95 Prozent den wahren Wert der Grundgesamtheit einschliesst. Das Konfidenzintervall wird auch als Vertrauensintervall oder Erwartungsbereich bezeichnet.\n\nDefinition\n\nStändige Wohnbevölkerung: Für die Bevölkerungszahlen bestehen verschiedene Definitionen, welche auf der Webseite von Statistik Stadt Zürich ersichtlich sind.\n\nKorrektur\n\nKorrektur: Seit der Veröffentlichung 2024 wurde bei Statistik Stadt Zürich die Auswertung angepasst. Daher können die seither publizierten Ergebnisse leicht von den zuvor veröffentlichten abweichen.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Hauptsprachen nach Stadtquartier",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Zeitraum (technisch: Zeitraum)",
+                  "description": "Zeitraum (String)"
+               },
+               {
+                  "name": "Sprache (technisch: Sprache)",
+                  "description": "Sprache (String)"
+               },
+               {
+                  "name": "Stadtquartier (Sort) (technisch: QuarSort)",
+                  "description": "Stadtquartier (Numeric)"
+               },
+               {
+                  "name": "Stadtquartier (Lang) (technisch: QuarLang)",
+                  "description": "Stadtquartier (String)"
+               },
+               {
+                  "name": "Anzahl ständige Wohnbevölkerung (technisch: AnzBev)",
+                  "description": "Anzahl ständige Wohnbevölkerung (Numeric)"
+               },
+               {
+                  "name": "Unteres 95% Konfidenzintervall der Anzahl (technisch: untAnzBevKI)",
+                  "description": "Unteres 95% Konfidenzintervall der Anzahl (Numeric)"
+               },
+               {
+                  "name": "Oberes 95% Konfidenzintervall der Anzahl (technisch: obAnzBevKI)",
+                  "description": "Oberes 95% Konfidenzintervall der Anzahl (Numeric)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-04-14"
+}

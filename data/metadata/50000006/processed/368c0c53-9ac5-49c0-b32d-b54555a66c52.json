@@ -1,0 +1,92 @@
+{
+   "title": "Eignungseinschätzung für Energieverbunde (pro Quartier) STZH",
+   "keywords": [
+      "Transformation",
+      "Energieverbund",
+      "erneuerbare Energien",
+      "Wärmeverbund",
+      "Kleinquartier"
+   ],
+   "metadata_date": "2023-07-05T14:27:19",
+   "updateFrequency": "annually",
+   "purpose": "Dieser Geodatensatz erlaubt eine erste, grobe Beurteilung über die Eignung eines Kleinquartiers für einen Energieverbund, ist aber kein Ersatz für eine vertiefte Prüfung oder Machbarkeitsstudie. \n\nEs lassen sich in geeigneten Kleinquartieren allfällige Aktivitäten zur Verbundentwicklung priorisieren. Die Darstellung der Eignung ermöglicht einen schnellen Überblick dazu.\n\nDie Verbundeignung wird in mehreren Layer dargestellt. Einerseits als Energiebedarf im Kleinquartier geteilt durch Modell-Leitungslänge und als Energiebedarf im Kleinquartier geteilt durch Quartiersfläche.",
+   "abstract": "Dieser Geodatensatz stellt die Resultate einer modellbasierten Abschätzung zur Eignung von Kleinquartieren für die Realisierung von Energieverbunden zur Wärmeversorgung dar.",
+   "identificationDate": "2023-07-04",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Gesundheits- und Umweltdepartement - Umwelt- und Gesundheitsschutz",
+   "contactPerson": "Gustavo de Oliveira",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "ENERGIEVERBUNDEIGNUNGSTZH",
+            "description": "Die Eignungseinschätzung stellt die Eignung eines Kleinquartiers für einen Energieverbund dar. Sie kann in fünf Varianten dargestellt werden:\n\n1 - Energiebedarf im Kleinquartier geteilt durch die kürzest mögliche Leitungslänge (modelliert) (Potentialkarte ED)\n\n2 - Energiebedarf im Kleinquartier geteilt durch die Quartiersfläche (Potentialkarte EA)\n\n3 - Leistung der Heizungen im Kleinquartier geteilt durch die kürzest mögliche Leitungslänge (modelliert) (Potentialkarte PD)\n\n4 - Eignung eines Kleinquartiers für einen Energieverbund unter Berücksichtigung der kürzest möglichen Leitungslänge (modelliert), dem Energiebedarf im Kleinquartier und der Altersstruktur des Heizkesselbestands im Jahr 2023 (Dringlichkeitskarte 2023)\n\n5 - Eignung eines Kleinquartiers für einen Energieverbund unter Berücksichtigung der kürzest mögliche Leitungslänge (modelliert), dem Energiebedarf im Kleinquartier und der prospektiven Altersstruktur des Heizkesselbestands im Jahr 2027 (Dringlichkeitskarte 2027)",
+            "attributes": [
+               {
+                  "name": "ENERGIEVERBRAUCH_FLAECHE",
+                  "description": "Kennzahl berechnet aus Energiebedarf und Grundfläche des Quartiers, normiert auf 1"
+               },
+               {
+                  "name": "DRINGLICHKEIT_HEUTE",
+                  "description": "Kennzahl berechnet aus Energiebedarf, Ersatzwahrscheinlichkeit anhand Kesselalter und modellierter Leitungslänge, normiert auf 1"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Flächengeometrie"
+               },
+               {
+                  "name": "ANSCHLUSS_HEUTE",
+                  "description": "Kennzahl berechnet aus Energiebedarf und Ersatzwahrscheinlichkeit anhand Kesselalter"
+               },
+               {
+                  "name": "EGIDS",
+                  "description": "egids im Quartier"
+               },
+               {
+                  "name": "LEITUNGSLAENGE",
+                  "description": "Modellparameter für kürzest mögliche Leitungslänge"
+               },
+               {
+                  "name": "ANZAHL_GEBAEUDE",
+                  "description": "Anzahl Gebäude im Quartier"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "Objectid"
+               },
+               {
+                  "name": "KQU_ID",
+                  "description": "System-ID gemäss Geodatenelement &lt;>"
+               },
+               {
+                  "name": "FLAECHE",
+                  "description": "Quartierfläche"
+               },
+               {
+                  "name": "ANSCHLUSS_IN4JAHREN",
+                  "description": "Kennzahl berechnet aus Energiebedarf und Ersatzwahrscheinlichkeit anhand Kesselalter"
+               },
+               {
+                  "name": "DRINGLICHKEIT_IN4JAHREN",
+                  "description": "Kennzahl berechnet aus Energiebedarf, Ersatzwahrscheinlichkeit anhand Kesselalter und modellierter Leitungslänge, normiert auf 1"
+               },
+               {
+                  "name": "ENERGIEVERBRAUCH_LEITUNGLAENGE",
+                  "description": "Kennzahl berechnet aus Energiebedarf und modellierter Leitungslänge im Quartier, normiert auf 1"
+               },
+               {
+                  "name": "LEISTUNG_LEITUNGSLAENGE",
+                  "description": "Kennzahl berechnet aus Leistung und modellierter Leitungslänge im Quartier, normiert auf 1"
+               }
+            ]
+         }
+      ]
+   }
+}

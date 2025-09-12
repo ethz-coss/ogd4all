@@ -1,0 +1,275 @@
+{
+   "title": "Stimmlokale",
+   "metadata_date": "2023-09-08T06:41:00",
+   "updateFrequency": "daily",
+   "purpose": "Darstellung im Stadtplan und im städtischen Internetauftritt.",
+   "abstract": "Stimmlokale in der Stadt Zürich.",
+   "identificationDate": "2025-03-18",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Geomatik + Vermessung",
+   "contactPerson": "André Graf",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Stimmlokale",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "poi_stimmlokal_att",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "oeffnung",
+                  "description": null
+               },
+               {
+                  "name": "poi_id",
+                  "description": null
+               },
+               {
+                  "name": "kreis",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "poi_stimmlokal_view",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "oeffnungszeiten_schalter_mi",
+                  "description": "Semikolon-getrennte Liste ([Morgen_Start];[Morgen_Ende];[Nachmittag_Start];[Nachmittag_Ende]) \n\n\n\nBeispiel \"unterbrochene Öffnungszeiten\": 07:15;12:00;13:00;17:00 \n\nBeispiel \"Tagesöffnungszeiten\": 07:15;;;17:00 \n\nBeispiel \"geschlossen\": closed \n\nBeispiel \"nicht angegeben\": n.a."
+               },
+               {
+                  "name": "oeffnungszeiten_schalter_mo",
+                  "description": "Semikolon-getrennte Liste ([Morgen_Start];[Morgen_Ende];[Nachmittag_Start];[Nachmittag_Ende]) \n\n\n\nBeispiel \"unterbrochene Öffnungszeiten\": 07:15;12:00;13:00;17:00 \n\nBeispiel \"Tagesöffnungszeiten\": 07:15;;;17:00 \n\nBeispiel \"geschlossen\": closed \n\nBeispiel \"nicht angegeben\": n.a."
+               },
+               {
+                  "name": "oeffnungszeiten_schalter_so",
+                  "description": "Semikolon-getrennte Liste ([Morgen_Start];[Morgen_Ende];[Nachmittag_Start];[Nachmittag_Ende]) \n\n\n\nBeispiel \"unterbrochene Öffnungszeiten\": 07:15;12:00;13:00;17:00 \n\nBeispiel \"Tagesöffnungszeiten\": 07:15;;;17:00 \n\nBeispiel \"geschlossen\": closed \n\nBeispiel \"nicht angegeben\": n.a."
+               },
+               {
+                  "name": "plz",
+                  "description": "Postleitzahl"
+               },
+               {
+                  "name": "poi_id",
+                  "description": "Eindeutige ID eines POI. Muss über sämtliche POI-Tabellen der Datenbank eindeutig sein und wird daher mit einem zusätzlichen Präfix versehen. Dieser Präfix wird vom GIS-Zentrum verteilt und ist zwingend zu übernehmen!"
+               },
+               {
+                  "name": "postadresse",
+                  "description": "Postadresse"
+               },
+               {
+                  "name": "publish_internet",
+                  "description": "Gibt an, ob ein POI im Internet (Stadtplan) veröffentlicht (=1) werden soll oder nicht (=0)."
+               },
+               {
+                  "name": "suchen",
+                  "description": "Synonymsuchbegriffe für die freie Suche im Stadtplan"
+               },
+               {
+                  "name": "tel",
+                  "description": "+41 44 412 .. .."
+               },
+               {
+                  "name": "tel2",
+                  "description": "+41 44 412 .. .."
+               },
+               {
+                  "name": "www",
+                  "description": "Webseite"
+               },
+               {
+                  "name": "zahlungsmittel_internet",
+                  "description": "3 durch Semikolon getrennte underbar-getrennte Listen. Liste 1= Barzahlung, Liste 2=Rechnung, Liste 3=Kreditkarten. Leere Listen werden mit NULL angezeigt \n\n(Beispiel: Barzahlung;NULL;visa_maestro_mastercard)"
+               },
+               {
+                  "name": "zahlungsmittel_schalter",
+                  "description": "3 durch Semikolon getrennte underbar-getrennte Listen. Liste 1= Barzahlung, Liste 2=Rechnung, Liste 3=Kreditkarten. Leere Listen werden mit NULL angezeigt \n\n(Beispiel: Barzahlung;NULL;visa_maestro_mastercard)"
+               },
+               {
+                  "name": "zahlungsmittel_telefon",
+                  "description": "3 durch Semikolon getrennte underbar-getrennte Listen. Liste 1= Barzahlung, Liste 2=Rechnung, Liste 3=Kreditkarten. Leere Listen werden mit NULL angezeigt \n\n(Beispiel: Barzahlung;NULL;visa_maestro_mastercard)"
+               },
+               {
+                  "name": "zvv_link",
+                  "description": "Link auf ZVV-Onlinefahrplan"
+               },
+               {
+                  "name": "kreis",
+                  "description": "Wahlkreis"
+               },
+               {
+                  "name": "geometrie",
+                  "description": "Geometrie-Feld"
+               },
+               {
+                  "name": "adr_inter",
+                  "description": "Zusatzinformationen zur Adresse"
+               },
+               {
+                  "name": "adresse",
+                  "description": "Adresse"
+               },
+               {
+                  "name": "adrzus_int",
+                  "description": "Zusatzinformationen zur Adresse"
+               },
+               {
+                  "name": "behindertenparkplatz",
+                  "description": "Anzahl behindertengerechter Parkplätze"
+               },
+               {
+                  "name": "bemerkung",
+                  "description": "Semikolon-getrennte Liste der Bemerkungen \"Area\" und \"Poi\". Die Liste\"Area\" ist NULL, wenn keine Referenz auf eine Area angegeben wurde."
+               },
+               {
+                  "name": "ccmail",
+                  "description": "CCMAIL"
+               },
+               {
+                  "name": "da",
+                  "description": "Dienstabteilung des Datenherren"
+               },
+               {
+                  "name": "datum",
+                  "description": "Datum und Uhrzeit der letzten Bearbeitung eines Poi im POI-Manager. Wird automatisch im POI-Manager gesetzt. [dd.mm.yyyy mm:hh]"
+               },
+               {
+                  "name": "datum_cms",
+                  "description": "Datum und Uhrzeit der letzten Bearbeitung eines Poi im POI-Manager. Wird automatisch im POI-Manager gesetzt. [dd.mm.yyyy mm:hh]"
+               },
+               {
+                  "name": "dep",
+                  "description": "Departement des Datenherren"
+               },
+               {
+                  "name": "editor",
+                  "description": "Windowslogin des Editors, welcher als letzter diesen Poi bearbeitet hat. Wird automatisch im POI-Manager gesetzt."
+               },
+               {
+                  "name": "erforderlichedokumente",
+                  "description": "Semikolon-getrennte Liste (Beispiel: Geburtsschein;ID)"
+               },
+               {
+                  "name": "fax",
+                  "description": "+41 44 412 .. .."
+               },
+               {
+                  "name": "hausnummer",
+                  "description": "Hausnummer der Adresse"
+               },
+               {
+                  "name": "hindernisfreiheit",
+                  "description": "2 durch Semikolon getrennte underbar-getrennte Listen. Liste 1: Angaben zur Hindernisfreiheit in der übergeordneten Area, Liste 2: Angaben zur Hindernisfreiheit im Poi. Leere Listen werden mit NULL angezeigt. \n\nAufbau einer Liste: [Code für Zugänglichkeit]_[zusätzlicher Freitext] \n\nCodes: 0 = Zugang barrierefrei; 1 = Zugang erschwert ; 2 = kein barrierefreier Zugang"
+               },
+               {
+                  "name": "infrastruktur",
+                  "description": "2 durch Semikolon getrennte underbar-getrennte Listen"
+               },
+               {
+                  "name": "isbetriebsferien_gebaeude",
+                  "description": "Gibt an, ob anstatt den regulären Öffnungszeiten die Information zu speziellen Öffnungszeiten während den Betriebsferien angezeigt werden sollen"
+               },
+               {
+                  "name": "isbetriebsferien_schalter",
+                  "description": "Gibt an, ob anstatt den regulären Öffnungszeiten die Information zu speziellen Öffnungszeiten während den Betriebsferien angezeigt werden sollen"
+               },
+               {
+                  "name": "kategorie",
+                  "description": "Typ des POIs. Die genaue Bezeichnung der Kategorie wird vom GIS-Zentrum vorgegeben und ist zwingend zu übernehmen!"
+               },
+               {
+                  "name": "mail",
+                  "description": "Mail-Adresse"
+               },
+               {
+                  "name": "name",
+                  "description": "Name des POI"
+               },
+               {
+                  "name": "namenzus",
+                  "description": "Zusatzinformation zum Namen des POI"
+               },
+               {
+                  "name": "objectid",
+                  "description": "Primärschlüssel"
+               },
+               {
+                  "name": "oeffnungszeiten_gebaeude_di",
+                  "description": "Semikolon-getrennte Liste ([Morgen_Start];[Morgen_Ende];[Nachmittag_Start];[Nachmittag_Ende]) \n\n\n\nBeispiel \"unterbrochene Öffnungszeiten\": 07:15;12:00;13:00;17:00 \n\nBeispiel \"Tagesöffnungszeiten\": 07:15;;;17:00 \n\nBeispiel \"geschlossen\": closed \n\nBeispiel \"nicht angegeben\": n.a."
+               },
+               {
+                  "name": "oeffnungszeiten_gebaeude_do",
+                  "description": "Semikolon-getrennte Liste ([Morgen_Start];[Morgen_Ende];[Nachmittag_Start];[Nachmittag_Ende]) \n\n\n\nBeispiel \"unterbrochene Öffnungszeiten\": 07:15;12:00;13:00;17:00 \n\nBeispiel \"Tagesöffnungszeiten\": 07:15;;;17:00 \n\nBeispiel \"geschlossen\": closed \n\nBeispiel \"nicht angegeben\": n.a."
+               },
+               {
+                  "name": "oeffnungszeiten_gebaeude_fr",
+                  "description": "Semikolon-getrennte Liste ([Morgen_Start];[Morgen_Ende];[Nachmittag_Start];[Nachmittag_Ende]) \n\n\n\nBeispiel \"unterbrochene Öffnungszeiten\": 07:15;12:00;13:00;17:00 \n\nBeispiel \"Tagesöffnungszeiten\": 07:15;;;17:00 \n\nBeispiel \"geschlossen\": closed \n\nBeispiel \"nicht angegeben\": n.a."
+               },
+               {
+                  "name": "oeffnungszeiten_gebaeude_mi",
+                  "description": "Semikolon-getrennte Liste ([Morgen_Start];[Morgen_Ende];[Nachmittag_Start];[Nachmittag_Ende]) \n\n\n\nBeispiel \"unterbrochene Öffnungszeiten\": 07:15;12:00;13:00;17:00 \n\nBeispiel \"Tagesöffnungszeiten\": 07:15;;;17:00 \n\nBeispiel \"geschlossen\": closed \n\nBeispiel \"nicht angegeben\": n.a."
+               },
+               {
+                  "name": "oeffnungszeiten_gebaeude_mo",
+                  "description": "Semikolon-getrennte Liste ([Morgen_Start];[Morgen_Ende];[Nachmittag_Start];[Nachmittag_Ende]) \n\n\n\nBeispiel \"unterbrochene Öffnungszeiten\": 07:15;12:00;13:00;17:00 \n\nBeispiel \"Tagesöffnungszeiten\": 07:15;;;17:00 \n\nBeispiel \"geschlossen\": closed \n\nBeispiel \"nicht angegeben\": n.a."
+               },
+               {
+                  "name": "oeffnungszeiten_gebaeude_sa",
+                  "description": "Semikolon-getrennte Liste ([Morgen_Start];[Morgen_Ende];[Nachmittag_Start];[Nachmittag_Ende]) \n\n\n\nBeispiel \"unterbrochene Öffnungszeiten\": 07:15;12:00;13:00;17:00 \n\nBeispiel \"Tagesöffnungszeiten\": 07:15;;;17:00 \n\nBeispiel \"geschlossen\": closed \n\nBeispiel \"nicht angegeben\": n.a."
+               },
+               {
+                  "name": "oeffnungszeiten_gebaeude_so",
+                  "description": "Semikolon-getrennte Liste ([Morgen_Start];[Morgen_Ende];[Nachmittag_Start];[Nachmittag_Ende]) \n\n\n\nBeispiel \"unterbrochene Öffnungszeiten\": 07:15;12:00;13:00;17:00 \n\nBeispiel \"Tagesöffnungszeiten\": 07:15;;;17:00 \n\nBeispiel \"geschlossen\": closed \n\nBeispiel \"nicht angegeben\": n.a."
+               },
+               {
+                  "name": "oeffnungszeiten_schalter_di",
+                  "description": "Semikolon-getrennte Liste ([Morgen_Start];[Morgen_Ende];[Nachmittag_Start];[Nachmittag_Ende]) \n\n\n\nBeispiel \"unterbrochene Öffnungszeiten\": 07:15;12:00;13:00;17:00 \n\nBeispiel \"Tagesöffnungszeiten\": 07:15;;;17:00 \n\nBeispiel \"geschlossen\": closed \n\nBeispiel \"nicht angegeben\": n.a."
+               },
+               {
+                  "name": "oeffnungszeiten_schalter_do",
+                  "description": "Semikolon-getrennte Liste ([Morgen_Start];[Morgen_Ende];[Nachmittag_Start];[Nachmittag_Ende]) \n\n\n\nBeispiel \"unterbrochene Öffnungszeiten\": 07:15;12:00;13:00;17:00 \n\nBeispiel \"Tagesöffnungszeiten\": 07:15;;;17:00 \n\nBeispiel \"geschlossen\": closed \n\nBeispiel \"nicht angegeben\": n.a."
+               },
+               {
+                  "name": "oeffnungszeiten_schalter_fr",
+                  "description": "Semikolon-getrennte Liste ([Morgen_Start];[Morgen_Ende];[Nachmittag_Start];[Nachmittag_Ende]) \n\n\n\nBeispiel \"unterbrochene Öffnungszeiten\": 07:15;12:00;13:00;17:00 \n\nBeispiel \"Tagesöffnungszeiten\": 07:15;;;17:00 \n\nBeispiel \"geschlossen\": closed \n\nBeispiel \"nicht angegeben\": n.a."
+               },
+               {
+                  "name": "oeffnungszeiten_schalter_sa",
+                  "description": "Semikolon-getrennte Liste ([Morgen_Start];[Morgen_Ende];[Nachmittag_Start];[Nachmittag_Ende]) \n\n\n\nBeispiel \"unterbrochene Öffnungszeiten\": 07:15;12:00;13:00;17:00 \n\nBeispiel \"Tagesöffnungszeiten\": 07:15;;;17:00 \n\nBeispiel \"geschlossen\": closed \n\nBeispiel \"nicht angegeben\": n.a."
+               },
+               {
+                  "name": "ort",
+                  "description": "Ortsname"
+               },
+               {
+                  "name": "strasse",
+                  "description": "Strassenname der Adresse"
+               },
+               {
+                  "name": "zvv_label",
+                  "description": "Name der nächstliegenden Haltestelle"
+               },
+               {
+                  "name": "oeffnung",
+                  "description": "Öffnungszeiten des Stimmlokals"
+               }
+            ]
+         }
+      ]
+   }
+}

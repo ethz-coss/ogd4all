@@ -1,0 +1,44 @@
+{
+   "title": "Rauminhalt von fertiggestellten Gebäuden",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bau_neubau_gebart_rauminhalt_jahr_od5063",
+   "abstract": "Der Datensatz enthält den Rauminhalt der fertiggestellten Gebäude in einem Jahr nach Gebäudeart.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Hinweis:\n\nSeit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.\n\nStichtagDatJahr\n\nJahr entspricht der ganzen Jahresperiode.\n\nGebäudeart\n\nWohngebäude: Reine Wohngebäude oder Mischnutzungen mit einem Wohnanteil von mindestens 50 Prozent. Nichtwohngebäude: Gebäude für Dienstleistungsbetriebe, öffentliche Verwaltungen, Bildungsund Gesundheitswesen, Industrie oder Landwirtschaft, auch Parkhäuser und andere. Enthält das Gebäude auch Wohnungen, wird es so lange als Nutzbau mit Wohnungen geführt, wie der Wohnanteil der Nutzfläche unter fünfzig Prozent bleibt; ist der Wohnanteil höher, gilt das Gebäude als Wohnhaus mit Geschäftsräumen.\n\nVariablen mit mehreren Varianten\n\nGewisse Variablen werden in verschiedenen Formen aufgeführt. Die \"Lang\"-Variante beschreibt den Inhalt (z.B. StatZoneLang beschreibt die statistische Zone, mögliche Werte sind Central oder Oberdorf). Die \"Cd\"-Variante kodiert die Variable alphanumerisch, quasi als Kurzform (Central und Oberdorf sind 1104 und 1201). Die \"Sort\"-Variante kodiert die Variable numerisch (Central und Oberdorf sind 5 und 4) und erlaubt eine Sortierung. \"Cd\" und \"Sort\" können auch identisch sein.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Rauminhalt von fertiggestellten Gebäuden",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Numerisch). Entspricht dem Stichtag am Jahresende."
+               },
+               {
+                  "name": "Datenstand (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (P = provisorisch, D = definitiv)"
+               },
+               {
+                  "name": "Gebäudeart (technisch: GbdArtLevel4Sort)",
+                  "description": "Gebäudeart (Numerisch)"
+               },
+               {
+                  "name": "Gebäudeart (technisch: GbdArtLevel4Cd)",
+                  "description": "Gebäudeart (String)"
+               },
+               {
+                  "name": "Gebäudeart (technisch: GbdArtLevel4Lang)",
+                  "description": "Gebäudeart (String)"
+               },
+               {
+                  "name": "Rauminhalt (technisch: BVNeubau_noDM)",
+                  "description": "Rauminhalt / Gebäudevolumen in m2 (Numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-01-08"
+}

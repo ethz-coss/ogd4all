@@ -1,0 +1,222 @@
+{
+   "title": "Kreisarchitekteneinteilung",
+   "keywords": [
+      "Baugesuche",
+      "Baubewilligungen",
+      "Kreisarchitekten",
+      "AfB"
+   ],
+   "metadata_date": "2024-06-27T06:31:00",
+   "updateFrequency": "asNeeded",
+   "purpose": "Beim AfB eingehende Baugesuche werden anhand dieses Geodatensatzes einzelnen Kreisarchitekten/-innen zugewiesen.",
+   "abstract": "Die Aufteilung der Stadt Zürich in Kreisarchitektengebiete regelt die Zuständigkeit von Kreisarchitekten/-innen beim Amt für Baubewilligungen (AfB) für die Behandlung von Baugesuchen.",
+   "identificationDate": "2025-03-17",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Hochbaudepartement - Amt für Baubewilligungen",
+   "contactPerson": "André Graf",
+   "referenceSystem": "CH1903+_LV95 (Original:LV03)",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Kreisarchitekteneinteilung",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "AfB-Kreisarchitekteneinteilung Beschriftung",
+            "description": "Enthält die Beschriftungen der einzelnen AfB-Kreisarchitektengebiete.",
+            "attributes": [
+               {
+                  "name": "BBLAETTERBESCHR_VON",
+                  "description": "Systemreferenz-ID"
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": "Name des Kreisarchitektengebiets. Es werden die Namen der statistischen Quartieren aus der Amtlichen Vermessung übernommen, da die Kreisarchitektengebiete grundsätzlich geometrisch mit diesen übereinstimmen."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "HALI",
+                  "description": "Horizontale Ausrichtung"
+               },
+               {
+                  "name": "KUERZEL",
+                  "description": "Kurzbezeichnung des Kreisarchitektengebiets, bestehend aus drei Ziffern. Diese Nummer ist abgeleitet aus den Codenummern der \"zugehörigen\" statistischen Zonen."
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "ORI",
+                  "description": "Orientation (Beschriftungswinkel)"
+               },
+               {
+                  "name": "VALI",
+                  "description": "Vertikale Ausrichtung"
+               }
+            ]
+         },
+         {
+            "name": "AfB-Kreisarchitekteneinteilung",
+            "description": "Kreisarchitektengebiete",
+            "attributes": [
+               {
+                  "name": "BK_TELEFON",
+                  "description": null
+               },
+               {
+                  "name": "BK_KONTAKT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Die Grenzverläufe der Kreisarchitektengebiete stimmen grundsätzlich mit denjenigen der statistischen Quartiere aus der Amtlichen Vermessung überein."
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": "Codierte Information über die Herstellung der Objekte."
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": "Name des Kreisarchitektengebiets. Es werden die Namen der statistischen Quartieren aus der Amtlichen Vermessung übernommen, da die Kreisarchitektengebiete grundsätzlich geometrisch mit diesen übereinstimmen."
+               },
+               {
+                  "name": "KUERZEL",
+                  "description": "Kurzbezeichnung des Kreisarchitektengebiets, bestehend aus drei Ziffern. Diese Nummer ist abgeleitet aus den Codenummern der \"zugehörigen\" statistischen Zonen."
+               },
+               {
+                  "name": "KA_NAME",
+                  "description": "Name des für das Gebiet zuständigen Kreisarchitekten gemäss Schema \"Vorname Nachname\"."
+               },
+               {
+                  "name": "KA_KUERZEL",
+                  "description": null
+               },
+               {
+                  "name": "KA_TELEFON",
+                  "description": "Telefonnummer des für das Gebiet zuständigen Kreisarchitekten."
+               },
+               {
+                  "name": "KA_KONTAKT",
+                  "description": "E-Mail-Adresse des für das Gebiet zuständigen Kreisarchitekten."
+               },
+               {
+                  "name": "JU_NAME",
+                  "description": null
+               },
+               {
+                  "name": "JU_KUERZEL",
+                  "description": null
+               },
+               {
+                  "name": "JU_TELEFON",
+                  "description": null
+               },
+               {
+                  "name": "JU_KONTAKT",
+                  "description": null
+               },
+               {
+                  "name": "BK_NAME",
+                  "description": null
+               },
+               {
+                  "name": "BK_KUERZEL",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "ADM_AFB_GEBIETE_A",
+            "description": "veraltet wird gelöscht\n\nAfB Kreisarchitekteneinteilung angereichert mit weiteren Daten. Dies ist eine temporäre Tabelle, bis die hier vorhandenen Attribute in der Featureklasse ADM_KA_EINTEILUNG_A eingefügt werden. Dies sollte bis Ende 2019 erfolgt sein.",
+            "attributes": [
+               {
+                  "name": "objid",
+                  "description": null
+               },
+               {
+                  "name": "bezeichnung",
+                  "description": null
+               },
+               {
+                  "name": "kuerzel",
+                  "description": null
+               },
+               {
+                  "name": "ka_name",
+                  "description": null
+               },
+               {
+                  "name": "ka_telefon",
+                  "description": null
+               },
+               {
+                  "name": "ka_kontakt",
+                  "description": null
+               },
+               {
+                  "name": "entstehung",
+                  "description": null
+               },
+               {
+                  "name": "name",
+                  "description": null
+               },
+               {
+                  "name": "jur_name",
+                  "description": null
+               },
+               {
+                  "name": "jur_tel",
+                  "description": null
+               },
+               {
+                  "name": "jur_email",
+                  "description": null
+               },
+               {
+                  "name": "bk_name",
+                  "description": null
+               },
+               {
+                  "name": "bk_tel",
+                  "description": null
+               },
+               {
+                  "name": "bk_email",
+                  "description": null
+               },
+               {
+                  "name": "geometrie",
+                  "description": null
+               }
+            ]
+         }
+      ]
+   }
+}

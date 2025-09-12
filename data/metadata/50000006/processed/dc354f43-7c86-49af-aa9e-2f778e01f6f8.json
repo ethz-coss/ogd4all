@@ -1,0 +1,108 @@
+{
+   "title": "Höhenlinien (3D)",
+   "keywords": [
+      "Höhenkurven",
+      "Höhenlinien",
+      "Isohypsen"
+   ],
+   "metadata_date": "2023-03-17T06:56:33",
+   "updateFrequency": "asNeeded",
+   "purpose": "Die Höhenlinien bilden die Bodenoberfläche ab. Dadurch können das Gelände und deren Strukturen sichtbar gemacht werden.",
+   "abstract": "Kartografisch optimierte Höhenlinien mit einer Äquidistanz von 1 Meter auf der Basis swissALTI3D-Daten (Update 2019) aufbereitet.",
+   "identificationDate": "2019-11-11",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Geomatik + Vermessung",
+   "contactPerson": "Rebecca Frischknecht",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Hoehenlinien",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "STZH_HK_GESCHLOSSEN",
+            "description": "Alle Höhenlinien sind durchgehend geschlossen. Dies betrifft auch die Höhenlinien, die den Perimeter schneiden, diese führen entlang des Perimeters.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ID"
+               },
+               {
+                  "name": "HOEHE",
+                  "description": "Höhenangabe der Linie"
+               },
+               {
+                  "name": "KLASSE",
+                  "description": "1: Höhenlinien mit ungerader Höhe\n\n2: Höhenlinien mit gerader Höhe\n\n10: Höhenlinien mit Höhenangabe eines Vielfachen von 10 Meter"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               }
+            ]
+         },
+         {
+            "name": "STZH_HK_LABEL",
+            "description": "Sämtliche Höhenlinien eines Vielfachen von 10 Meter weisen alle 100 Meter einen Beschriftungspunkt samt Rotationsangabe auf.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ID"
+               },
+               {
+                  "name": "HOEHE",
+                  "description": "Höhenangabe des Punktes"
+               },
+               {
+                  "name": "WINKEL",
+                  "description": "Winkelangabe"
+               },
+               {
+                  "name": "GRAD",
+                  "description": "Gradangabe"
+               },
+               {
+                  "name": "GRAD_90",
+                  "description": "Gradangabe + 90"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               }
+            ]
+         },
+         {
+            "name": "STZH_HK_OFFEN",
+            "description": "Sämtliche Höhenlinien sind geschlossen, mit Ausnahme jener Höhenlinien, die den Perimeter schneiden. Letztere Enden am Perimeter.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ID"
+               },
+               {
+                  "name": "HOEHE",
+                  "description": "Höhenangabe der Linie"
+               },
+               {
+                  "name": "KLASSE",
+                  "description": "1: Höhenlinien mit ungerader Höhe\n\n2: Höhenlinien mit gerader Höhe\n\n10: Höhenlinien mit Höhenangabe eines Vielfachen von 10 Meter"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               }
+            ]
+         }
+      ]
+   }
+}

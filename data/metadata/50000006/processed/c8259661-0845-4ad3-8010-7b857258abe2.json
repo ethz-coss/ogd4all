@@ -1,0 +1,154 @@
+{
+   "title": "Familiengärten",
+   "keywords": [
+      "Kleinflächen mit oder ohne Bauten",
+      "Kleingärten",
+      "Schrebergärten",
+      "Familiengärten",
+      "Familiengartenvereine",
+      "Ortsvereine"
+   ],
+   "metadata_date": "2024-09-12T08:17:17",
+   "updateFrequency": "asNeeded",
+   "purpose": "Der Datenbestand dient zur Information der Bevölkerung über die Lage der Kleingartenareale in der Stadt Zürich, vermittelt dazu die wichtigsten Informationen und stellt der Bevölkerung die notwendigen Kontaktdaten zur den jeweiligen Familiengartenvereinen zur Verfügung. Die Zugänglichkeit der Daten wird über den Zueriplan gewährleistet.",
+   "abstract": "Der Datenbestand umfasst unterschiedliche Informationen zu den Kleingartenarealen in der Stadt Zürich, welche in der Zone E3 gemäss Bau- und Zonenordnung liegen.",
+   "identificationDate": "2025-03-18",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Grün Stadt Zürich",
+   "contactPerson": "Marlies Wächter",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Familiengaerten",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "POI_FAMILIENGARTEN_VIEW",
+            "description": "Zugriff über ArcMap für GSZ-Mitarbeitende: Geoserver-Daten-Menü -> GSZ (Spezialsymbolisierungen für GSZ-Mitarbeiter) -> Kleingartenareale",
+            "attributes": [
+               {
+                  "name": "ADRESSE",
+                  "description": "Strasse und Hausnummer.\n\nInterpretations Hinweis: Wird bei diesem Datenbestand nicht angegeben, aber in der POI-Verwaltung muss das Feld dennoch vorkommen."
+               },
+               {
+                  "name": "AREALNR",
+                  "description": "Innerhalb GSZ und bei den Ortsvereinen geläufige Identifikationsnummer für ein Kleingartenareal.\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "BEREICH",
+                  "description": "Geschäfts-/Fachbereich des Datenherren.\n\nInterpretations Hinweis: Wird bei diesem Datenbestand nicht angegeben, aber in der POI-Verwaltung muss das Feld dennoch vorkommen."
+               },
+               {
+                  "name": "DA",
+                  "description": "Dienstabteilung des Datenherren.\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "DATUM",
+                  "description": "Datum, an welchem der Datensatz zuletzt mutiert wurde."
+               },
+               {
+                  "name": "DEP",
+                  "description": "Departement des Datenherren.\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "EDITOR",
+                  "description": "Kürzel der Person, welche den Datensatz zuletzt mutiert hat.\n\nInterpretations Hinweis: Wird von der POI-Verwaltung automatisch nachgeführt."
+               },
+               {
+                  "name": "INSIDE_STZH",
+                  "description": "Angabe, ob sich ein Objekt innerhalb oder ausserhalb der Stadtgrenze von Zürich befindet.\n\nCoded Domain:\n\n0:Ausserhalb Stadtgrenze\n\n1:Innerhalb Stadtgrenze\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": "Stets \"Kleingartenareal\".\n\nInterpretations Hinweis: Wird vom GIS-Zentrum automatisch zugeordnet."
+               },
+               {
+                  "name": "MAIL",
+                  "description": "E-Mail-Adresse.\n\nInterpretations Hinweis: Wird bei diesem Datenbestand nicht angegeben, aber in der POI-Verwaltung muss das Feld dennoch vorkommen."
+               },
+               {
+                  "name": "NAME",
+                  "description": "Name des Kleingartenareals.\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI Identifikationsnummer (Systemvorgabe)"
+               },
+               {
+                  "name": "ORT",
+                  "description": "Korrespondierendes Attribut zu 'PLZ'.\n\nInterpretations Hinweis: Wird bei diesem Datenbestand nicht angegeben, aber in der POI-Verwaltung muss das Feld dennoch vorkommen."
+               },
+               {
+                  "name": "PLZ",
+                  "description": "Postleitzahl.Interpretations Hinweis: Wird bei diesem Datenbestand nicht angegeben, aber in der POI-Verwaltung muss das Feld dennoch vorkommen.."
+               },
+               {
+                  "name": "POI_ID",
+                  "description": "Eindeutiger Identifikator.\n\nInterpretations Hinweis: Wird vom GIS-Zentrum automatisch berechnet."
+               },
+               {
+                  "name": "PUBLISH_INTERNET",
+                  "description": "Legt fest, ob ein Bauernhofstandort lediglich im Geoserver für städtische Mitarbeitende sichtbar ist, oder ob dieser zusätzlich im Digitalen Stadtplan\n\naufgeführt ist.\n\nInterpretations Hinweis: Alle Kleingartenareale werden im Digitalen Stadtplan angezeigt. (Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld)"
+               },
+               {
+                  "name": "SHAPE",
+                  "description": "ESRI Geometrietyp Point"
+               },
+               {
+                  "name": "STAND",
+                  "description": "Wann wurde der Datensatz zuletzt aktualisiert?\n\nInterpretations Hinweis: Wert muss von Hand in der POI-Verwaltung angepasst werden! (Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld)"
+               },
+               {
+                  "name": "SUCHEN",
+                  "description": "Begriffe, nach denen im Digitalen Stadtplan in der \"Freien Suche\" gesucht werden kann, um ein Kleingartenareal zu finden.\n\nInterpretations Hinweis: Bei allen Arealen folgende Begriffe: Kleingarten, Kleingärten, Kleingartenareal, Familiengärten, Familiengarten, Schrebergarten, Schrebergärten, Garten, Freizeitgarten, Pacht. Abgesehen von diesen Begriffen wird auch das Feld \"NAME\" stets bei der Suche miteinbezogen.\n\n(Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld)"
+               },
+               {
+                  "name": "TEL",
+                  "description": "Telefonnummer.\n\nInterpretations Hinweis: Wird bei diesem Datenbestand nicht angegeben, aber in der POI-Verwaltung muss das Feld dennoch vorkommen."
+               },
+               {
+                  "name": "VERPACHTER",
+                  "description": "Name der Institution, welche innerhalb des Kleingartenareals Kleingartenparzellen verpachtet.\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "WWW",
+                  "description": "Möglichst direkter Link zur zuständigen Stelle, wo sich Interessenten für Kleingartenparzellen melden können.\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               }
+            ]
+         },
+         {
+            "name": "POI_FAMILIENGARTEN_ATT",
+            "description": "Zusatzattribute zu den Standardattributen",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "POI_ID",
+                  "description": null
+               },
+               {
+                  "name": "VERPACHTER",
+                  "description": null
+               },
+               {
+                  "name": "AREALNR",
+                  "description": null
+               }
+            ]
+         }
+      ]
+   }
+}

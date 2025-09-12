@@ -1,0 +1,102 @@
+{
+   "title": "Schulkreise",
+   "metadata_date": "2019-10-21T14:26:24",
+   "updateFrequency": "asNeeded",
+   "purpose": "Administrative Eintelung",
+   "abstract": "Schulkreise",
+   "identificationDate": "2025-03-17",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Schul- und Sportdepartement - Schulamt",
+   "contactPerson": "Carole Signer",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Schulkreise",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "ADM_SCHULKREISE_A",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "BEMERKUNG",
+                  "description": "Bemerkung"
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": "Name des Schulkreise, zwingend + eindeutig"
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": "Fremdschlüssel für Verbindung zur Tabelle SchulKNachf. Diese Tabelle ist im Geoserver nicht sichtbar"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "Länge der Umrisses in Meter auf 6 Kommastellen genau."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "KUERZEL",
+                  "description": "Kurzbezeichnung des Schulkreises"
+               }
+            ]
+         },
+         {
+            "name": "ADM_SCHULKREISE_BESCHR_P",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "KUERZEL",
+                  "description": "Kurzbezeichnung des Objektes"
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": "Name des Schulkreise, zwingend + eindeutig"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "HALI",
+                  "description": "Horizontaler Versatz zum Ursprungspunkt; undefiniert = Center"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ORI",
+                  "description": "Rotation der Beschriftung; undefiniert = 100.0; Masseinheit ist Gon."
+               },
+               {
+                  "name": "VALI",
+                  "description": "Vertikaler Versatz zum Ursprungspunkt; undefiniert = Half"
+               }
+            ]
+         }
+      ]
+   }
+}

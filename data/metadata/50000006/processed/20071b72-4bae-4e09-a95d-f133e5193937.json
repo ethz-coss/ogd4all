@@ -1,0 +1,265 @@
+{
+   "title": "Signalisierte Geschwindigkeiten",
+   "keywords": [
+      "Geschwindigkeiten",
+      "Temporegime"
+   ],
+   "metadata_date": "2024-07-29T13:18:22",
+   "updateFrequency": "continual",
+   "purpose": "Signalisierte Geschwindigkeitsregime in der Stadt Zürich\n\n\n\nZu jeder Strasse ist die signalisierte Höchstgeschwindigkeit ersichtlich. Falls vorhanden, gibt es die Angabe, seit wann das Temporegime rechtskräftig ist und wann es umgesetzt (signalisiert/markiert) wurde.\n\nFahrverbote gelten für den allgemeinen MIV. Bei Fahrverboten ersichtlich: Ausnahmen (falls erfasst), SSV (Verkehrstafel, falls erfasst).",
+   "abstract": "Signalisierte Geschwindigkeitsregime in der Stadt Zürich\n\n\n\nZu jeder Strasse ist die signalisierte Höchstgeschwindigkeit ersichtlich. Falls vorhanden, gibt es die Angabe, seit wann das Temporegime rechtskräftig ist und wann es umgesetzt (signalisiert/markiert) wurde.\n\nFahrverbote gelten für den allgemeinen MIV. Bei Fahrverboten ersichtlich: Ausnahmen (falls erfasst), SSV (Verkehrstafel, falls erfasst).",
+   "identificationDate": "2023-02-07",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Sicherheitsdepartement - Dienstabteilung Verkehr",
+   "contactPerson": "Robin Loop",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Signalisierte_Geschwindigkeiten",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "VIEW_GEOSERVER_TEMPO_IST",
+            "description": "Liniengeometrien",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ID",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": null
+               },
+               {
+                  "name": "TEMPOREGIME",
+                  "description": null
+               },
+               {
+                  "name": "TEMPOREGIME_TECHNICAL",
+                  "description": null
+               },
+               {
+                  "name": "UMGESETZT_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSKRAEFTIG_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "PUBLIZIERT_VSI_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "AUSNAHMEN_FAHRVERBOT",
+                  "description": null
+               },
+               {
+                  "name": "FAHRVERBOT_SSV",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "VIEW_GEOSERVER_TEMPO_IST_E",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ID",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": null
+               },
+               {
+                  "name": "MESSWERT_VON",
+                  "description": null
+               },
+               {
+                  "name": "MESSWERT_BIS",
+                  "description": null
+               },
+               {
+                  "name": "TEMPOREGIME",
+                  "description": null
+               },
+               {
+                  "name": "TEMPOREGIME_TECHNICAL",
+                  "description": null
+               },
+               {
+                  "name": "UMGESETZT_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSKRAEFTIG_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "PUBLIZIERT_VSI_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "AUSNAHMEN_FAHRVERBOT",
+                  "description": null
+               },
+               {
+                  "name": "FAHRVERBOT_SSV",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "VIEW_GS_TEMPO_AB_PUBLIZIERT_E",
+            "description": "VAS-Event-Tabelle\n\nStellt das gültige Temporegime dar ab Status \"Publiiziert VSI\" inkl. Datum der Publiktion, Rechtskräftigkeit und Umsetzung\n\nBeispiel: ein Strassenabschnitt ist T50, wurde aber bereits als T30 publiziert, dann ist dieser Abschnitt als T30 drin\n\n\n\nDient als Basis für die Lärmkatasterberechnung des UGZ",
+            "attributes": [
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": null
+               },
+               {
+                  "name": "MESSWERT_VON",
+                  "description": null
+               },
+               {
+                  "name": "MESSWERT_BIS",
+                  "description": null
+               },
+               {
+                  "name": "UMGESETZT_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSKRAEFTIG_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "PUBLIZIERT_VSI_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "TEMPO",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ID",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "VIEW_GS_TEMPO_ANPASSUNGEN",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "TEMPOREGIME",
+                  "description": null
+               },
+               {
+                  "name": "TEMPOREGIME_TECHNICAL",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSKRAEFTIG_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "PUBLIZIERT_VSI_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ID",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "VIEW_GS_TEMPO_ANPASSUNGEN_E",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ID",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": null
+               },
+               {
+                  "name": "MESSWERT_VON",
+                  "description": null
+               },
+               {
+                  "name": "MESSWERT_BIS",
+                  "description": null
+               },
+               {
+                  "name": "TEMPOREGIME",
+                  "description": null
+               },
+               {
+                  "name": "TEMPOREGIME_TECHNICAL",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSKRAEFTIG_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "PUBLIZIERT_VSI_DATUM",
+                  "description": null
+               }
+            ]
+         }
+      ]
+   }
+}

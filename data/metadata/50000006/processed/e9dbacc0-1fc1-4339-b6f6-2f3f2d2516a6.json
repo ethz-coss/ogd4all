@@ -1,0 +1,240 @@
+{
+   "title": "Kleinquartiere",
+   "keywords": [
+      "Städtische Einteilung",
+      "Kleinräumige Einteilung",
+      "Aggregationsstufe",
+      "Kleinquartiere"
+   ],
+   "metadata_date": "2024-04-19T06:19:37",
+   "updateFrequency": "annually",
+   "purpose": "Kleinräumige Aggregationsstufe für die parzellenbasierten Kapazitäts- und Reserveberechnungen des AfS.",
+   "abstract": "Die Kleinquartiere sind eine automatisch erzeugte kleinräumige Einteilung, die als Aggregationsstufe für die parzellenbasierten Kapazitäts- und Reserveberechnungen (KaReB) des AfS genutzt wird.\n\n\n\nDie Kleinquartiere sind keine offizielle räumliche Einteilung, sie werden jährlich neu gebildet und verändern sich in Geometrie und Attributen mit den Veränderungen der Grundlagedaten. Genauso ändern sich jährlich die IDs der Kleinquartiere (GUID).\n\n\n\nMittels Verschnitt wird eine parzellenscharfe Abgrenzung der Flächen aus aggregierten Grundnutzungen der Bau- und Zonenordnung (BZO) (Siedlungsgebiet und Nichtsiedlungsgebiet) von den Parzellen \"trennender Elemente\" - Strassen, Bahnlinien und Gewässer - gemacht. Diese Flächen werden zudem nach Statistischer Zone differenziert und Kleinstflächen unter 20 m2 herausgefiltert.\n\nBei Kleinquartieren der Nichtsiedlungsgebiete wird zudem zwischen bewohnten und unbewohnten Kleinquartieren unterschieden.",
+   "identificationDate": "2024-04-18",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Hochbaudepartement - Amt für Städtebau",
+   "contactPerson": "Claudia Hofstetter",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Kleinquartiere",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "KLEINQUARTIERE_2021",
+            "description": "Kleinquartiere Jahresstand 2021",
+            "attributes": [
+               {
+                  "name": "STATZONE",
+                  "description": "Label der statistischen Zone."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "GUID",
+                  "description": "Eindeutiger Identifikator der Kleinquartiere, nicht stabil über Berechnungsjahre."
+               },
+               {
+                  "name": "BERECHNUNGSJAHR",
+                  "description": "Berechnungsjahr des Datensatzes."
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": "Siedlgeb: Kleinquartiere im Siedlungsgebiet nach BZO (ohne E, F, L, R, WLD, GWS) \n\nNSG_bew: Nichtsiedlungsgebiet (nach BZO E, F, L, R, WLD) mit angemeldeten Personen \n\nNSG_unbew: Nichtsiedlungsgebiet (nach BZO E, F, L, R, WLD) ohne angemeldete Personen"
+               },
+               {
+                  "name": "GRUNDNUTZUNG",
+                  "description": "Aggregierte Grundnutzung aus der BZO (Bau- und Zonenordnung)."
+               }
+            ]
+         },
+         {
+            "name": "KLEINQUARTIERE_2023",
+            "description": "Kleinquartiere Jahresstand 2023",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "GUID",
+                  "description": "Eindeutiger Identifikator der Kleinquartiere, nicht stabil über Berechnungsjahre."
+               },
+               {
+                  "name": "BERECHNUNGSJAHR",
+                  "description": "Berechnungsjahr des Datensatzes."
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": "Siedlgeb: Kleinquartiere im Siedlungsgebiet nach BZO (ohne E, F, L, R, WLD, GWS)\n\nNSG_bew: Nichtsiedlungsgebiet (nach BZO E, F, L, R, WLD) mit angemeldeten Personen\n\nNSG_unbew: Nichtsiedlungsgebiet (nach BZO E, F, L, R, WLD) ohne angemeldete Personen"
+               },
+               {
+                  "name": "GRUNDNUTZUNG",
+                  "description": "Aggregierte Grundnutzung aus der BZO (Bau- und Zonenordnung)."
+               },
+               {
+                  "name": "STATZONE",
+                  "description": "Label der statistischen Zone."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Flächengeometrie"
+               }
+            ]
+         },
+         {
+            "name": "KLEINQUARTIERE_2019",
+            "description": "Kleinquartiere Jahresstand 2019",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "GUID",
+                  "description": "Eindeutiger Identifikator der Kleinquartiere, nicht stabil über Berechnungsjahre."
+               },
+               {
+                  "name": "BERECHNUNGSJAHR",
+                  "description": "Berechnungsjahr des Datensatzes."
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": "Siedlgeb: Kleinquartiere im Siedlungsgebiet nach BZO (ohne E, F, L, R, WLD, GWS) \n\nNSG_bew: Nichtsiedlungsgebiet (nach BZO E, F, L, R, WLD) mit angemeldeten Personen \n\nNSG_unbew: Nichtsiedlungsgebiet (nach BZO E, F, L, R, WLD) ohne angemeldete Personen"
+               },
+               {
+                  "name": "GRUNDNUTZUNG",
+                  "description": "Aggregierte Grundnutzung aus der BZO (Bau- und Zonenordnung)."
+               },
+               {
+                  "name": "STATZONE",
+                  "description": "Label der statistischen Zone."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               }
+            ]
+         },
+         {
+            "name": "KLEINQUARTIERE_2022",
+            "description": "Kleinquartiere Jahresstand 2022",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "GUID",
+                  "description": "Eindeutiger Identifikator der Kleinquartiere, nicht stabil über Berechnungsjahre."
+               },
+               {
+                  "name": "BERECHNUNGSJAHR",
+                  "description": "Berechnungsjahr des Datensatzes."
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": "Siedlgeb: Kleinquartiere im Siedlungsgebiet nach BZO (ohne E, F, L, R, WLD, GWS)\n\nNSG_bew: Nichtsiedlungsgebiet (nach BZO E, F, L, R, WLD) mit angemeldeten Personen\n\nNSG_unbew: Nichtsiedlungsgebiet (nach BZO E, F, L, R, WLD) ohne angemeldete Personen"
+               },
+               {
+                  "name": "GRUNDNUTZUNG",
+                  "description": "Aggregierte Grundnutzung aus der BZO (Bau- und Zonenordnung)."
+               },
+               {
+                  "name": "STATZONE",
+                  "description": "Label der statistischen Zone."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Flächengeometrie"
+               }
+            ]
+         },
+         {
+            "name": "KLEINQUARTIERE_2024",
+            "description": "Kleinquartiere Jahresstand 2024",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "GUID",
+                  "description": "Eindeutiger Identifikator der Kleinquartiere, nicht stabil über Berechnungsjahre."
+               },
+               {
+                  "name": "BERECHNUNGSJAHR",
+                  "description": "Berechnungsjahr des Datensatzes."
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": "Siedlgeb: Kleinquartiere im Siedlungsgebiet nach BZO (ohne E, F, L, R, WLD, GWS)\n\nNSG_bew: Nichtsiedlungsgebiet (nach BZO E, F, L, R, WLD) mit angemeldeten Personen\n\nNSG_unbew: Nichtsiedlungsgebiet (nach BZO E, F, L, R, WLD) ohne angemeldete Personen"
+               },
+               {
+                  "name": "GRUNDNUTZUNG",
+                  "description": "Aggregierte Grundnutzung aus der BZO (Bau- und Zonenordnung)."
+               },
+               {
+                  "name": "STATZONE",
+                  "description": "Label der statistischen Zone."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Flächengeometrie"
+               }
+            ]
+         },
+         {
+            "name": "KLEINQUARTIERE_2020",
+            "description": "Kleinquartiere Jahresstand 2020",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "GUID",
+                  "description": "Eindeutiger Identifikator der Kleinquartiere, nicht stabil über Berechnungsjahre."
+               },
+               {
+                  "name": "BERECHNUNGSJAHR",
+                  "description": "Berechnungsjahr des Datensatzes."
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": "Siedlgeb: Kleinquartiere im Siedlungsgebiet nach BZO (ohne E, F, L, R, WLD, GWS) \n\nNSG_bew: Nichtsiedlungsgebiet (nach BZO E, F, L, R, WLD) mit angemeldeten Personen \n\nNSG_unbew: Nichtsiedlungsgebiet (nach BZO E, F, L, R, WLD) ohne angemeldete Personen"
+               },
+               {
+                  "name": "GRUNDNUTZUNG",
+                  "description": "Aggregierte Grundnutzung aus der BZO (Bau- und Zonenordnung)."
+               },
+               {
+                  "name": "STATZONE",
+                  "description": "Label der statistischen Zone."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               }
+            ]
+         }
+      ]
+   }
+}

@@ -1,0 +1,56 @@
+{
+   "title": "Privathaushalte nach Haushaltsgrösse und Stadtquartier",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bev_hh_haushaltsgroesse_quartier_seit2013_od3806",
+   "abstract": "Anzahl Privathaushalte sowie die wirtschaftliche Bevölkerung der Stadt Zürich in Privathaushalten nach Haushaltsgrösse, Stadtkreis, Statistischem Stadtquartier und Jahr.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Haushalt\n\nZu einem Haushalt zählen alle Personen, welche zusammen in der gleichen Wohnung leben. Dazu wird für Personen der wirtschaftliche Wohnsitzbegriff verwendet. Kollektivhaushalte (Heime, Spitäler, Institutionen des Strafvollzugs, Gemeinschaftsunterkünfte für Asylsuchende u.ä.) werden nicht berücksichtigt.\n\nDatenqualität\n\nAb den Jahresdaten für 2024 wird eine neue Auswertungsregel für Haushalte angewendet. Dadurch ändern sich Daten für die gesamte publizierte Zeitreihe.\n\nHaushaltetool\n\nMit dieser interaktiven Anwendung] können verschiedene Haushaltsformen zusammengestellt und deren Verteilungen in der Stadt Zürich betrachtet werden.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Privathaushalte nach Haushaltsgrösse und Stadtquartier",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichTagDatJahr)",
+                  "description": "Jahresendbestand (Numerisch)"
+               },
+               {
+                  "name": "Stadtquartier Sortiercode (technisch: QuarSort)",
+                  "description": "Offizielle ID des Statistischen Stadtquartiers (Numerisch)"
+               },
+               {
+                  "name": "Stadtquartier Beschreibung (technisch: QuarLang)",
+                  "description": "Name des Statistischen Stadtquartiers (String)"
+               },
+               {
+                  "name": "Stadtkreis Sortiercode (technisch: KreisSort)",
+                  "description": "ID- und Sortiervariable für den Stadtkreis an der aktuellen Wohnadresse (Numerisch)"
+               },
+               {
+                  "name": "Stadtkreis Beschreibung (technisch: KreisLang)",
+                  "description": "Stadtkreisname der aktuellen Wohnadresse (String)"
+               },
+               {
+                  "name": "Haushaltsgrösse Sortiercode (technisch: hh_groesseSort)",
+                  "description": "Grösse des Haushaltes als Soritercode (Numerisch)"
+               },
+               {
+                  "name": "Haushaltsgrösse Beschreibung (technisch: hh_groesseLang)",
+                  "description": "Grösse des Haushaltes als Beschreibung. Werte: 1 Person, 2 Personen, 3 Personen, 4 Personen, 5 Personen, 6 und mehr Personen (String)"
+               },
+               {
+                  "name": "Anzahl Privathaushalte (technisch: AnzHH)",
+                  "description": "Anzahl Privathaushalte (Numerisch)"
+               },
+               {
+                  "name": "Wirtschaftliche Wohnbevölkerung (technisch: AnzBestWir)",
+                  "description": "Wirtschaftliche Wohnbevölkerung in Privathaushalten (Numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-03-05"
+}

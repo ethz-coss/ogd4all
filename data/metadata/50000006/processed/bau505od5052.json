@@ -1,0 +1,80 @@
+{
+   "title": "Neue Wohnortsgebiete von durch Leerkündigung betroffener Personen",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bau_umbau_leerkuendigung_wohnortsgebiete_ag_personen_od5052",
+   "abstract": "Der Datensatz zeigt die neuen Wohnortsgebiete von Personen, die infolge einer Leerkündigung die Wohnung verlassen haben.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Umbau:\n\nUmbau bezeichnet die bauliche Veränderung bestehender Gebäude, soweit sie im Gebäude- und Wohnungsregister erfasst werden. In der Grössenordnung entspricht die Zahl der umgebauten Wohnungen den energetisch erneuerten Gebäuden, für deren Umbau eine Baubewilligung erforderlich ist.\n\nLeerkündigung:\n\nWir sprechen von einer Leerkündigung, wenn bei einem Umbau das Gebäude entleert wird indem alle Mietverträge gekündigt werden. Für die Berechnung wurde die Aufenthaltsdauer der Bewohnenden im Gebäude ein Jahr nach dem Umbauende betrachtet. Falls zu diesem Zeitpunkt alle Bewohnenden weniger als 1 Jahr im Gebäude wohnen, wird von einer Leerkündigung ausgegangen.\n\nBetrachtete Gebäude:\n\nDie Auswertungen beziehen sich nur auf Gebäude von privaten Eigentümerschaften, ohne Baugenossenschaften und Stockwerkeigentum, da die öffentliche Hand und die Baugenossenschaften der Mieterschaft bei Umbauten in der Regel Ersatzwohnungen anbieten. Weiter werden folgende Gebäude von der Auswertung ausgeschlossen:\n\nGebäude mit weniger als 6 Wohnungen\nGebäude, bei denen der Umbau in den ersten 15 Jahren nach der Erstellung durchgeführt wurde\nGebäude, die die zwei Jahre vor Umbaubeginn einen der folgenden Wohnungstypen beinhalten: Alters-/Pflegewohnungen, Bewirtschaftete Wohnungen, Dienstwohnungen, Personalwohnungen, Studentenwohnungen, Technische Wohnungen\nGebäude, bei denen ein Jahr vor Umbau keine statistischen Wohnungen erfasst waren\n\nPersonenzahl:\n\nGezählt wird die wirtschaftliche Bevölkerung, welche zwei Jahre vor Umbau in den betroffenen Gebäuden gemeldet war und wegen Leerkündigung die Wohnung gewechselt hat.\n\nZeitraum\n\nDas neueste Jahr fehlt jeweils, da anhand der Aufenthaltsdauer ein Jahr nach Umbau entschieden wird, ob es im Gebäude eine Leerkündigung gab oder nicht.\n\nNachbargemeinden\n\nRüschlikon, Kilchberg, Adliswil, Stallikon, Uitikon, Birmensdorf, Urdorf, Schlieren, Oberengstringen, Unterengstringen, Regensdorf, Rümlang, Opfikon, Wallisellen, Dübendorf, Fällanden, Maur, Zollikon, Zumikon\n\nStand und Nachführung:\n\nDas Gebäude- und Wohnungsregister der Stadt Zürich wird ständig nachgeführt. Seit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Neue Wohnortsgebiete von durch Leerkündigung betroffener Personen",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Numerisch). Entspricht dem Stichtag am Jahresende des Umbaujahres"
+               },
+               {
+                  "name": "Datenstand (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (Integer)"
+               },
+               {
+                  "name": "Neuer Wohnort (technisch: WohnortLeerkuendigungSort_noDM)",
+                  "description": "Neuer Wohnort nach Leerkündigung (Numerisch)"
+               },
+               {
+                  "name": "Neuer Wohnort (technisch: WohnortLeerkuendigungCd_noDM)",
+                  "description": "Neuer Wohnort nach Leerkündigung (Integer)"
+               },
+               {
+                  "name": "Neuer Wohnort (technisch: WohnortLeerkuendigungLang_noDM)",
+                  "description": "Neuer Wohnort nach Leerkündigung (String)"
+               },
+               {
+                  "name": "Vollendetes Alter 20 (technisch: AlterV20Sort)",
+                  "description": "Vollendetes Alter in 20-Jahres-Altersgruppen (Numerisch)"
+               },
+               {
+                  "name": "Vollendetes Alter 20 (technisch: AlterV20Cd)",
+                  "description": "Vollendetes Alter in 20-Jahres-Altersgruppen (Numerisch$)"
+               },
+               {
+                  "name": "Vollendetes Alter 20 (technisch: AlterV20Lang)",
+                  "description": "Vollendetes Alter in 20-Jahres-Altersgruppen (Integer)"
+               },
+               {
+                  "name": "Gebäude für Leerkündigungen (technisch: GbdLeerkuendigungenSort_noDM)",
+                  "description": "Gebäude welche für Leerkündigungen betrachtet werden (Numerisch)"
+               },
+               {
+                  "name": "Gebäude für Leerkündigungen (technisch: GbdLeerkuendigungenCd_noDM)",
+                  "description": "Gebäude welche für Leerkündigungen betrachtet werden (Integer)"
+               },
+               {
+                  "name": "Gebäude für Leerkündigungen (technisch: GbdLeerkuendigungenLang_noDM)",
+                  "description": "Gebäude welche für Leerkündigungen betrachtet werden (String)"
+               },
+               {
+                  "name": "Leerkündigungen der Wohnungen (technisch: LeerkuendigungSort_noDM)",
+                  "description": "Leerkündigug der Wohnungen in Gebäuden mit einem Umbau (Numerisch)"
+               },
+               {
+                  "name": "Leerkündigungen der Wohnungen (technisch: LeerkuendigungCd_noDM)",
+                  "description": "Leerkündigug der Wohnungen in Gebäuden mit einem Umbau (Integer)"
+               },
+               {
+                  "name": "Leerkündigungen der Wohnungen (technisch: LeerkuendigungLang_noDM)",
+                  "description": "Leerkündigug der Wohnungen in Gebäuden mit einem Umbau (String)"
+               },
+               {
+                  "name": "Wirtschaftliche Bevölkerung (technisch: AnzBestWir)",
+                  "description": "Wirtschaftliche Bevölkerung (Numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-03-20"
+}

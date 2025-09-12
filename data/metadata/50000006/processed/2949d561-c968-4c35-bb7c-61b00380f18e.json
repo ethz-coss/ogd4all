@@ -1,0 +1,55 @@
+{
+   "title": "Wald (3D)",
+   "keywords": [
+      "Wald",
+      "3D"
+   ],
+   "metadata_date": "2023-03-24T15:43:48",
+   "updateFrequency": "asNeeded",
+   "purpose": "Es handelt sich bei diesem Datensatz lediglich um eine Annäherung an die Realität der Waldflächen der Stadt Zürich und deshalb sind keine Attribute oder weitere Informationen vorhanden. Der Datensatz soll hauptsächlich für Visualisierungen verwendet werden.",
+   "abstract": "Dieser Datensatz ist eine möglichst wahrheitsgetreue, visuelle Repräsentation der Wälder auf dem Stadtgebiet von Zürich. Basierend auf Lidar Daten des Kantons Zürich, welche zusätzlich von Grün Stadt Zürich angereichert wurden, sind auf den Waldflächen der Amtlichen Vermessung der Stadt Zürich von der Walddichte abhängige zufällig generierte Punkte verteilt. Je dichter ein Waldstück gemäss den Lidar Daten erscheint, desto mehr zufällig verteilte Punkte wurden gesetzt. Gibt es Regionen, wo gemässe den Lidar Daten keine Bäume stehen, wurden dort auch keine Punkte gesetzt. Um auch die Baumhöhen möglichst wahrheitsgetreu darzustellen, wurden pro Waldstück Baumhöhen basierend auf einer statistischen Auswertung des Lidar Datensatzes normalverteilt zufällig auf die vorhandenen Punkte zugewiesen. Durch eine 3D Symbolisierung dieser Punkte und deren Höhen konnte der vorhandene Walddatensatz erstellt werden. Da es sich hierbei lediglich um eine Annäherung an die Realität handelt und es keine erfasste Daten sind, besitzt der Datensatz auch keine ausführlichen Attribute oder weitere Informationen.",
+   "identificationDate": "2021-11-30",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Geomatik + Vermessung",
+   "contactPerson": "Gianna Müller",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI File Geodatabase (.gdb)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Wald",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "WALD_3D",
+            "description": "3D-Bäume der Waldflächen der Stadt Zürich",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "TREE_ID",
+                  "description": "Baum-ID"
+               },
+               {
+                  "name": "BAUMTEIL",
+                  "description": "Aufzählung:\n\n- Stamm\n\n- Krone"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         }
+      ]
+   }
+}

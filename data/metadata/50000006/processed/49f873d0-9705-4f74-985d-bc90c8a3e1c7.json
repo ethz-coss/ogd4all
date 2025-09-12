@@ -1,0 +1,50 @@
+{
+   "title": "Digitales Terrainmodell (TIN) (3D)",
+   "keywords": [
+      "Terrainmodell",
+      "LoD0",
+      "TIN",
+      "Geländemodell",
+      "Erdoberfläche"
+   ],
+   "metadata_date": "2025-02-17T13:54:23",
+   "updateFrequency": "notPlanned",
+   "purpose": "Das digitale Terrainmodell bildet die Bodenoberfläche mit grossem Detaillierungsgrad ab. Dadurch können Kleinstrukturen sichtbar gemacht werden.",
+   "abstract": "Detaillierte Darstellung des Geländes",
+   "identificationDate": "2022-06-30",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Geomatik + Vermessung",
+   "contactPerson": "Gianna Müller",
+   "referenceSystem": "CH1903+_LV95 (Original:LV03)",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)",
+      "ESRI File Geodatabase"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Digitales_Terrainmodell__TIN_",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "LOD0_GELAENDE",
+            "description": "Digitales Terrainmodell (TIN)",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "Objektidentifikator"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie (3D-Triangel)"
+               }
+            ]
+         }
+      ]
+   }
+}

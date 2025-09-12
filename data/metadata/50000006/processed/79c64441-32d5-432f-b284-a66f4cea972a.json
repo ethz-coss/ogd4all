@@ -1,0 +1,105 @@
+{
+   "title": "Liste der Informationstafeln an Denkmalschutz-Objekten",
+   "keywords": [
+      "Denkmalpflege",
+      "Denkmalschutz",
+      "geschützte Bauten",
+      "Heimatschutz",
+      "Inventar",
+      "Schutzobjekte"
+   ],
+   "metadata_date": "2021-03-22T07:38:22",
+   "updateFrequency": "irregular",
+   "purpose": "Veröffentlichung einer Gesamtübersicht zu den bestehenden Denkmalschutztafeln in der Stadt Zürich.\n\nArbeitsinstrument im Bereich Archäologie & Denkmalpflege des Amts für Städtebau (AfS).",
+   "abstract": "Der Datensatz enthält die Adressen, textlichen Beschreibungen und die Standorte der blauen Informationstafeln an kunst- und kulturhistorischen Schutzobjekten in der Stadt Zürich.\n\nDie Tafeln können an Gebäuden, Gebäudeteilen, Brunnen, Brücken usw. angebracht sein. Voraussetzung für das Anbringen einer blauen Tafel ist in der Regel die formelle Unterschutzstellung des Objekts.\n\n\n\nDie Denkmalschutz-Tafeln beziehen sich auf ein oder mehrere kunst- und kulturhistorischen Schutzobjekte und sind teilweise auch an Nicht-Inventar-Objekten angebracht. Manchmal sind auch mehrere Tafeln an einem Objekt montiert. Es besteht daher keine 1:1 Beziehung zum Datensatz des Denkmalinventars. Auch die Georeferenzierung erfolgte unabhängig und nach unterschiedlichen Gesichtspunkten. Der Standort der Tafeln wurde nur in einzelnen Fällen präzise erfasst, oft wurde eine von mehreren Adressen des beschriebenen Objekts verwendet.\n\nEine spätere logische Zusammenführung mit dem Denkmalinventar ist denkbar.",
+   "identificationDate": "2021-02-28",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Hochbaudepartement - Amt für Städtebau",
+   "contactPerson": "Claudia Hofstetter",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Liste_der_Informationstafeln_an_Denkmalschutz_Objekten",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "BLAUE_TAFELN_P",
+            "description": "Liste der blauen Informationstafeln an kunst- und kulturhistorischen Schutzobjekten in der Stadt Zürich mit Text und Standort. Die Tafeln können an Gebäuden, Gebäudeteilen, Brunnen, Brücken usw. angebracht sein. Voraussetzung für das Anbringen einer blauen Tafel ist in der Regel die formelle Unterschutzstellung des Objekts.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "BT_ID",
+                  "description": "eindeutige Identifikationsnummer"
+               },
+               {
+                  "name": "ADRESSEN_TAFEL",
+                  "description": "Aufzählung aller Adressen, die ursprünglich zum Objekt gehörten. Diese ursprünglichen Adressen können heute teilweise ungültig sein."
+               },
+               {
+                  "name": "STR1_SORT",
+                  "description": "Sortierungs-Adresse"
+               },
+               {
+                  "name": "NR1_SORT",
+                  "description": "Sortierungs-Hausnummer"
+               },
+               {
+                  "name": "TITEL_TAFEL",
+                  "description": "Titelzeile auf der blauen Tafel"
+               },
+               {
+                  "name": "TEXT_TAFEL",
+                  "description": "Text auf der blauen Tafel zur Beschreibung des Objekts"
+               },
+               {
+                  "name": "DS_TAFEL",
+                  "description": "Jahr der Unterschutzstellungen gemäss Tafel"
+               },
+               {
+                  "name": "JAHR_MONTAGE",
+                  "description": "Jahr der Montage"
+               },
+               {
+                  "name": "MONTIERT",
+                  "description": "ja oder nein"
+               },
+               {
+                  "name": "BEMERKUNGEN",
+                  "description": "zum Zeitpunkt der Veröffentlichung relevante Bemerkungen zur Tafel"
+               },
+               {
+                  "name": "AV_ADRESSE",
+                  "description": "massgebende Adresse für die Georeferenzierung, falls nicht von Hand gesetzt"
+               },
+               {
+                  "name": "POINT_X",
+                  "description": "Lagekoordinaten in LV95 (gemäss AV_Adresse oder genauer Standort Tafel)"
+               },
+               {
+                  "name": "POINT_Y",
+                  "description": "Lagekoordinaten in LV95 (gemäss AV_Adresse oder genauer Standort Tafel)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Punktgeometrie"
+               }
+            ]
+         }
+      ]
+   }
+}

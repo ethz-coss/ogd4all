@@ -1,0 +1,64 @@
+{
+   "title": "Todesfälle nach Todesursache, Altersklasse und Geschlecht",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bfs_bevreg_todesursache_alter_geschlecht_seit1995_od3110",
+   "abstract": "Diese Daten beinhalten Todesursachen nach Altersklasse und Geschlecht. Die Todesursachen stammen vom Bundesamt für Statistik und wurden mit den Daten des Bevölkerungsregisters der Stadt Zürich verknüpft.\nBitte beachten Sie für das korrekte Verständnis der Daten die weiter unten aufgeführten  Erläuterungen in der Rubrik «Bemerkungen».",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Altersklassen\n\nDie Variable AlterVTodSort umfasst folgende Altersklassen:\n\n1: Wirtschaftliche Bevölkerung mit Alter unter 1 Jahr.\n\n2: Wirtschaftliche Bevölkerung mit Alter 1 bis 14 Jahre.\n\n3: Wirtschaftliche Bevölkerung mit Alter 15 bis 29 Jahre.\n\n4: Wirtschaftliche Bevölkerung mit Alter 30 bis 44 Jahre.\n\n5: Wirtschaftliche Bevölkerung mit Alter 45 bis 59 Jahre.\n\n6: Wirtschaftliche Bevölkerung mit Alter 60 bis 64 Jahre.\n\n7: Wirtschaftliche Bevölkerung mit Alter 65 bis 69 Jahre.\n\n8: Wirtschaftliche Bevölkerung mit Alter 70 bis 74 Jahre.\n\n9: Wirtschaftliche Bevölkerung mit Alter 75 bis 79 Jahre.\n\n10: Wirtschaftliche Bevölkerung mit Alter 80 bis 84 Jahre.\n\n11: Wirtschaftliche Bevölkerung mit Alter 85 Jahre und älter.\n\nGeschlecht\n\nDie Variable Geschlecht umfasst folgende Kategorien\n\nFrauen: Weibliche wirtschaftliche Bevölkerung.\n\nMänner: Männliche Wirtschaftliche Bevölkerung.\n\nDemenz als Todesursache\n\nBei Demenz führt der fortschreitende Verlust der Funktionen des Gehirns oft auch zum Ausfall des Atemzentrums oder der Steuerung des Schluckvorgangs, woraus sich eine terminale Lungenentzündung entwickeln kann. Aber auch viele andere Folgekrankheiten entstehen mit dem allgemeinen Abbau der zentralen Lebensfunktionen. Quelle: Bundesamt für Statistik, 2014. Todesursachenstatistik. Sterblichkeit und deren Hauptursachen in der Schweiz, 2012, Seite 2. Neuchâtel.\n\nAllgemein\n\nIn der Todesursachenstatistik ist diejenige Krankheit die Haupttodesursache, welche am Anfang eines Krankheitsverlaufs steht. Die Kausalkette ist ausschlaggebend. Quelle: Bundesamt für Statistik, 2014. Todesursachenstatistik. Sterblichkeit und deren Hauptursachen in der Schweiz, 2012, Seite 2. Neuchâtel.\n\nPerinatale Todesursache\n\nTodesfälle mit perinataler Todesursache sind ab 2013 nur vereinzelt ermittelbar.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Todesfälle nach Todesursache, Altersklasse und Geschlecht",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Integer)."
+               },
+               {
+                  "name": "Todesursache Sort Level2 (technisch: TodesursacheLevel2Sort)",
+                  "description": "Todesursache Level 2 (Integer)."
+               },
+               {
+                  "name": "Todesursache Code Level2 (technisch: TodesursacheLevel2Cd)",
+                  "description": "Todesursache Level 2 (String)."
+               },
+               {
+                  "name": "Todesursache Lang Level2 (technisch: TodesursacheLevel2Lang)",
+                  "description": "Todesursache Level 2 (String)."
+               },
+               {
+                  "name": "Geschlecht Cd (technisch: SexCd)",
+                  "description": "Geschlecht (String)."
+               },
+               {
+                  "name": "Geschlecht Kurz (technisch: SexKurz)",
+                  "description": "Geschlecht (String)."
+               },
+               {
+                  "name": "Geschlecht Lang (technisch: SexLang)",
+                  "description": "Geschlecht (String)."
+               },
+               {
+                  "name": "Altersklasse Sort (technisch: AlterVTodSort_noDM)",
+                  "description": "Altersklasse (Integer)."
+               },
+               {
+                  "name": "Altersklasse Cd (technisch: AlterVTodCd_noDM)",
+                  "description": "Altersklasse (String)."
+               },
+               {
+                  "name": "Altersklasse Lang (technisch: AlterVTodLang_noDM)",
+                  "description": "Altersklasse (String)."
+               },
+               {
+                  "name": "Anzahl Todesfälle (technisch: AnzSterWir)",
+                  "description": "Anzahl Todesfälle aus der wirtschaftlichen Wohnbevölkerung (Integer)."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-01-18"
+}

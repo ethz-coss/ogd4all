@@ -1,0 +1,1107 @@
+{
+   "title": "Schulanlagen",
+   "keywords": [
+      "Bildung",
+      "Schule",
+      "Kindergarten",
+      "Kinderhort",
+      "Volksschule",
+      "Sonderschule"
+   ],
+   "metadata_date": "2023-09-08T06:40:16",
+   "updateFrequency": "weekly",
+   "purpose": "Lokalisation der Standorte der Schulanlagen",
+   "abstract": "Standorte der Schulanlagen (Kindergarten, Kinderhort, Volksschule, Sonderschule)",
+   "identificationDate": "2025-03-18",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Schul- und Sportdepartement - Schulamt",
+   "contactPerson": "Carole Signer",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Schulanlagen",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "SCHULANLAGEN_ARCHIV",
+            "description": "Jeweils Ende Jahr werden die Schulanlagen mit dem Jahrgang in die Tabelle geschrieben.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "JAHRESSTAND",
+                  "description": null
+               },
+               {
+                  "name": "TYP",
+                  "description": null
+               },
+               {
+                  "name": "ADRESSE",
+                  "description": null
+               },
+               {
+                  "name": "DA",
+                  "description": null
+               },
+               {
+                  "name": "DEP",
+                  "description": null
+               },
+               {
+                  "name": "EDITOR",
+                  "description": null
+               },
+               {
+                  "name": "FAX",
+                  "description": null
+               },
+               {
+                  "name": "HAUSNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "NAMENZUS",
+                  "description": null
+               },
+               {
+                  "name": "ORT",
+                  "description": null
+               },
+               {
+                  "name": "PLZ",
+                  "description": null
+               },
+               {
+                  "name": "POI_ID",
+                  "description": null
+               },
+               {
+                  "name": "STRASSE",
+                  "description": null
+               },
+               {
+                  "name": "SUCHEN",
+                  "description": null
+               },
+               {
+                  "name": "TEL",
+                  "description": null
+               },
+               {
+                  "name": "TEL2",
+                  "description": null
+               },
+               {
+                  "name": "WWW",
+                  "description": null
+               },
+               {
+                  "name": "ZVV_LABEL",
+                  "description": null
+               },
+               {
+                  "name": "ZVV_LINK",
+                  "description": null
+               },
+               {
+                  "name": "EINHEIT",
+                  "description": null
+               },
+               {
+                  "name": "SCHULKREIS",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "POI_KINDERGARTEN_ATT",
+            "description": "Zusatzinformationen",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "EINHEIT",
+                  "description": null
+               },
+               {
+                  "name": "POI_ID",
+                  "description": null
+               },
+               {
+                  "name": "SCHULKREIS",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "POI_VOLKSSCHULE_ATT",
+            "description": "Zusatzinformationen",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "EINHEIT",
+                  "description": null
+               },
+               {
+                  "name": "SCHULKREIS",
+                  "description": null
+               },
+               {
+                  "name": "POI_ID",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "POI_VOLKSSCHULE_VIEW",
+            "description": "Standorte der Volksschulen",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ADR_INTER",
+                  "description": null
+               },
+               {
+                  "name": "ADRESSE",
+                  "description": null
+               },
+               {
+                  "name": "ADRZUS_INT",
+                  "description": null
+               },
+               {
+                  "name": "BEHINDERTENPARKPLATZ",
+                  "description": null
+               },
+               {
+                  "name": "BEMERKUNG",
+                  "description": null
+               },
+               {
+                  "name": "CCMAIL",
+                  "description": null
+               },
+               {
+                  "name": "DA",
+                  "description": null
+               },
+               {
+                  "name": "DATUM",
+                  "description": null
+               },
+               {
+                  "name": "DATUM_CMS",
+                  "description": null
+               },
+               {
+                  "name": "DEP",
+                  "description": null
+               },
+               {
+                  "name": "EDITOR",
+                  "description": null
+               },
+               {
+                  "name": "ERFORDERLICHEDOKUMENTE",
+                  "description": null
+               },
+               {
+                  "name": "FAX",
+                  "description": null
+               },
+               {
+                  "name": "HAUSNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "HINDERNISFREIHEIT",
+                  "description": null
+               },
+               {
+                  "name": "INFRASTRUKTUR",
+                  "description": null
+               },
+               {
+                  "name": "ISBETRIEBSFERIEN_GEBAEUDE",
+                  "description": null
+               },
+               {
+                  "name": "ISBETRIEBSFERIEN_SCHALTER",
+                  "description": null
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": null
+               },
+               {
+                  "name": "MAIL",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "NAMENZUS",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_DI",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_DO",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_FR",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_MI",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_MO",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_SA",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_SO",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_DI",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_DO",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_FR",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_MI",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_MO",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_SA",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_SO",
+                  "description": null
+               },
+               {
+                  "name": "ORT",
+                  "description": null
+               },
+               {
+                  "name": "PLZ",
+                  "description": null
+               },
+               {
+                  "name": "POI_ID",
+                  "description": null
+               },
+               {
+                  "name": "POSTADRESSE",
+                  "description": null
+               },
+               {
+                  "name": "PUBLISH_INTERNET",
+                  "description": null
+               },
+               {
+                  "name": "STRASSE",
+                  "description": null
+               },
+               {
+                  "name": "SUCHEN",
+                  "description": null
+               },
+               {
+                  "name": "TEL",
+                  "description": null
+               },
+               {
+                  "name": "TEL2",
+                  "description": null
+               },
+               {
+                  "name": "WWW",
+                  "description": null
+               },
+               {
+                  "name": "ZAHLUNGSMITTEL_INTERNET",
+                  "description": null
+               },
+               {
+                  "name": "ZAHLUNGSMITTEL_SCHALTER",
+                  "description": null
+               },
+               {
+                  "name": "ZAHLUNGSMITTEL_TELEFON",
+                  "description": null
+               },
+               {
+                  "name": "ZVV_LABEL",
+                  "description": null
+               },
+               {
+                  "name": "ZVV_LINK",
+                  "description": null
+               },
+               {
+                  "name": "EINHEIT",
+                  "description": null
+               },
+               {
+                  "name": "SCHULKREIS",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "POI_SONDERSCHULE_VIEW",
+            "description": "Standorte der Sonderschulen",
+            "attributes": [
+               {
+                  "name": "KATEGORIE",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ADR_INTER",
+                  "description": null
+               },
+               {
+                  "name": "ADRESSE",
+                  "description": null
+               },
+               {
+                  "name": "ADRZUS_INT",
+                  "description": null
+               },
+               {
+                  "name": "BEHINDERTENPARKPLATZ",
+                  "description": null
+               },
+               {
+                  "name": "BEMERKUNG",
+                  "description": null
+               },
+               {
+                  "name": "CCMAIL",
+                  "description": null
+               },
+               {
+                  "name": "DA",
+                  "description": null
+               },
+               {
+                  "name": "DATUM",
+                  "description": null
+               },
+               {
+                  "name": "DATUM_CMS",
+                  "description": null
+               },
+               {
+                  "name": "DEP",
+                  "description": null
+               },
+               {
+                  "name": "EDITOR",
+                  "description": null
+               },
+               {
+                  "name": "ERFORDERLICHEDOKUMENTE",
+                  "description": null
+               },
+               {
+                  "name": "FAX",
+                  "description": null
+               },
+               {
+                  "name": "HAUSNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "HINDERNISFREIHEIT",
+                  "description": null
+               },
+               {
+                  "name": "INFRASTRUKTUR",
+                  "description": null
+               },
+               {
+                  "name": "ISBETRIEBSFERIEN_GEBAEUDE",
+                  "description": null
+               },
+               {
+                  "name": "ISBETRIEBSFERIEN_SCHALTER",
+                  "description": null
+               },
+               {
+                  "name": "MAIL",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "NAMENZUS",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_DI",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_DO",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_FR",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_MI",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_MO",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_SA",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_SO",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_DI",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_DO",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_FR",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_MI",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_MO",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_SA",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_SO",
+                  "description": null
+               },
+               {
+                  "name": "ORT",
+                  "description": null
+               },
+               {
+                  "name": "PLZ",
+                  "description": null
+               },
+               {
+                  "name": "POI_ID",
+                  "description": null
+               },
+               {
+                  "name": "POSTADRESSE",
+                  "description": null
+               },
+               {
+                  "name": "PUBLISH_INTERNET",
+                  "description": null
+               },
+               {
+                  "name": "STRASSE",
+                  "description": null
+               },
+               {
+                  "name": "SUCHEN",
+                  "description": null
+               },
+               {
+                  "name": "TEL",
+                  "description": null
+               },
+               {
+                  "name": "TEL2",
+                  "description": null
+               },
+               {
+                  "name": "WWW",
+                  "description": null
+               },
+               {
+                  "name": "ZAHLUNGSMITTEL_INTERNET",
+                  "description": null
+               },
+               {
+                  "name": "ZAHLUNGSMITTEL_SCHALTER",
+                  "description": null
+               },
+               {
+                  "name": "ZAHLUNGSMITTEL_TELEFON",
+                  "description": null
+               },
+               {
+                  "name": "ZVV_LABEL",
+                  "description": null
+               },
+               {
+                  "name": "ZVV_LINK",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "POI_KINDERGARTEN_VIEW",
+            "description": "Standorte Kindergarten",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ADR_INTER",
+                  "description": null
+               },
+               {
+                  "name": "ADRESSE",
+                  "description": null
+               },
+               {
+                  "name": "ADRZUS_INT",
+                  "description": null
+               },
+               {
+                  "name": "BEHINDERTENPARKPLATZ",
+                  "description": null
+               },
+               {
+                  "name": "BEMERKUNG",
+                  "description": null
+               },
+               {
+                  "name": "CCMAIL",
+                  "description": null
+               },
+               {
+                  "name": "DA",
+                  "description": null
+               },
+               {
+                  "name": "DATUM",
+                  "description": null
+               },
+               {
+                  "name": "DATUM_CMS",
+                  "description": null
+               },
+               {
+                  "name": "DEP",
+                  "description": null
+               },
+               {
+                  "name": "EDITOR",
+                  "description": null
+               },
+               {
+                  "name": "ERFORDERLICHEDOKUMENTE",
+                  "description": null
+               },
+               {
+                  "name": "FAX",
+                  "description": null
+               },
+               {
+                  "name": "HAUSNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "INFRASTRUKTUR",
+                  "description": null
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_FR",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_MI",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_MO",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_SA",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_SO",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_DI",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_DO",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_FR",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_MI",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_MO",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_SA",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_SO",
+                  "description": null
+               },
+               {
+                  "name": "ORT",
+                  "description": null
+               },
+               {
+                  "name": "PLZ",
+                  "description": null
+               },
+               {
+                  "name": "POI_ID",
+                  "description": null
+               },
+               {
+                  "name": "POSTADRESSE",
+                  "description": null
+               },
+               {
+                  "name": "PUBLISH_INTERNET",
+                  "description": null
+               },
+               {
+                  "name": "STRASSE",
+                  "description": null
+               },
+               {
+                  "name": "SUCHEN",
+                  "description": null
+               },
+               {
+                  "name": "TEL",
+                  "description": null
+               },
+               {
+                  "name": "TEL2",
+                  "description": null
+               },
+               {
+                  "name": "WWW",
+                  "description": null
+               },
+               {
+                  "name": "ZAHLUNGSMITTEL_INTERNET",
+                  "description": null
+               },
+               {
+                  "name": "ZAHLUNGSMITTEL_SCHALTER",
+                  "description": null
+               },
+               {
+                  "name": "ZAHLUNGSMITTEL_TELEFON",
+                  "description": null
+               },
+               {
+                  "name": "ZVV_LABEL",
+                  "description": null
+               },
+               {
+                  "name": "ZVV_LINK",
+                  "description": null
+               },
+               {
+                  "name": "EINHEIT",
+                  "description": null
+               },
+               {
+                  "name": "SCHULKREIS",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_DI",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_DO",
+                  "description": null
+               },
+               {
+                  "name": "HINDERNISFREIHEIT",
+                  "description": null
+               },
+               {
+                  "name": "ISBETRIEBSFERIEN_GEBAEUDE",
+                  "description": null
+               },
+               {
+                  "name": "ISBETRIEBSFERIEN_SCHALTER",
+                  "description": null
+               },
+               {
+                  "name": "MAIL",
+                  "description": null
+               },
+               {
+                  "name": "NAMENZUS",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "POI_KINDERHORT_ATT",
+            "description": "Zusatzinformationen",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "EINHEIT",
+                  "description": null
+               },
+               {
+                  "name": "POI_ID",
+                  "description": null
+               },
+               {
+                  "name": "SCHULKREIS",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "POI_KINDERHORT_VIEW",
+            "description": "Standorte Kinderhort",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ADR_INTER",
+                  "description": null
+               },
+               {
+                  "name": "ADRESSE",
+                  "description": null
+               },
+               {
+                  "name": "ADRZUS_INT",
+                  "description": null
+               },
+               {
+                  "name": "BEHINDERTENPARKPLATZ",
+                  "description": null
+               },
+               {
+                  "name": "BEMERKUNG",
+                  "description": null
+               },
+               {
+                  "name": "CCMAIL",
+                  "description": null
+               },
+               {
+                  "name": "DA",
+                  "description": null
+               },
+               {
+                  "name": "DATUM",
+                  "description": null
+               },
+               {
+                  "name": "DATUM_CMS",
+                  "description": null
+               },
+               {
+                  "name": "FAX",
+                  "description": null
+               },
+               {
+                  "name": "INFRASTRUKTUR",
+                  "description": null
+               },
+               {
+                  "name": "ISBETRIEBSFERIEN_SCHALTER",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_DO",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_MI",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_SO",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_DO",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_MI",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_SA",
+                  "description": null
+               },
+               {
+                  "name": "ORT",
+                  "description": null
+               },
+               {
+                  "name": "PUBLISH_INTERNET",
+                  "description": null
+               },
+               {
+                  "name": "TEL2",
+                  "description": null
+               },
+               {
+                  "name": "ZAHLUNGSMITTEL_SCHALTER",
+                  "description": null
+               },
+               {
+                  "name": "ZVV_LINK",
+                  "description": null
+               },
+               {
+                  "name": "DEP",
+                  "description": null
+               },
+               {
+                  "name": "EDITOR",
+                  "description": null
+               },
+               {
+                  "name": "ERFORDERLICHEDOKUMENTE",
+                  "description": null
+               },
+               {
+                  "name": "HAUSNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "HINDERNISFREIHEIT",
+                  "description": null
+               },
+               {
+                  "name": "ISBETRIEBSFERIEN_GEBAEUDE",
+                  "description": null
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": null
+               },
+               {
+                  "name": "MAIL",
+                  "description": null
+               },
+               {
+                  "name": "NAMENZUS",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_DI",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_FR",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_MO",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_SA",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_DI",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_FR",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_MO",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_SO",
+                  "description": null
+               },
+               {
+                  "name": "PLZ",
+                  "description": null
+               },
+               {
+                  "name": "POI_ID",
+                  "description": null
+               },
+               {
+                  "name": "POSTADRESSE",
+                  "description": null
+               },
+               {
+                  "name": "STRASSE",
+                  "description": null
+               },
+               {
+                  "name": "SUCHEN",
+                  "description": null
+               },
+               {
+                  "name": "TEL",
+                  "description": null
+               },
+               {
+                  "name": "WWW",
+                  "description": null
+               },
+               {
+                  "name": "ZAHLUNGSMITTEL_INTERNET",
+                  "description": null
+               },
+               {
+                  "name": "ZAHLUNGSMITTEL_TELEFON",
+                  "description": null
+               },
+               {
+                  "name": "ZVV_LABEL",
+                  "description": null
+               },
+               {
+                  "name": "EINHEIT",
+                  "description": null
+               },
+               {
+                  "name": "SCHULKREIS",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         }
+      ]
+   }
+}

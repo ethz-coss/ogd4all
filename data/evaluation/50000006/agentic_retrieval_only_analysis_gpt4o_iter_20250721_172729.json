@@ -1,0 +1,4041 @@
+{
+  "meta": {
+    "timestamp": "20250721_172729",
+    "retriever": "AgenticRetriever",
+    "analyzer": "iterative_local",
+    "language": "german",
+    "experiment_prefix": "agentic_retrieval_only_analysis_gpt4o_iter",
+    "top_n": 10,
+    "only_retrieval": false,
+    "only_analysis": true,
+    "retrieval_llm": "gpt-4.1",
+    "coding_llm": "gpt-4o"
+  },
+  "data": [
+    {
+      "question": "Was ist die häufigste Fällursache für Bäume? Wie oft tritt sie auf?",
+      "id": "0_baumersatz",
+      "predicted_titles": [
+        "Baumersatz"
+      ],
+      "reference_titles": [
+        "Baumersatz"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.765191555023193,
+        "coding_tokens": 9009,
+        "coding_cost_usd": 0.02424,
+        "correct": true
+      },
+      "reference_answer": "Die häufigste Fällursache ist 'absterbend' und sie tritt 225 mal auf.",
+      "predicted_answer": "Die häufigste Fällursache für Bäume ist 'absterbend', und sie tritt insgesamt 225 Mal auf."
+    },
+    {
+      "question": "Nester welcher Vogelarten wurden bei Gebäuden in einem Umkreis von 250 Metern vom Schützenhaus Albisgüetli gesichtet?",
+      "id": "1_gebaeudebrueter",
+      "predicted_titles": [
+        "Gebäudebrüter"
+      ],
+      "reference_titles": [
+        "Gebäudebrüter"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 6.599639415740967,
+        "coding_tokens": 8013,
+        "coding_cost_usd": 0.0228825,
+        "correct": true
+      },
+      "reference_answer": "Mauersegler, Turmfalke",
+      "predicted_answer": "Die folgenden Vogelarten wurden bei Gebäuden im Umkreis von 250 Metern vom Schützenhaus Albisgüetli gesichtet: Schleiereule, unbekannte Art, Mauersegler, Turmfalke."
+    },
+    {
+      "question": "Wie hat sich die Anzahl Honigbienen in Zürich in den letzten Jahren entwickelt?",
+      "id": "2_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Wie heisst die statistische Zone mit der höchsten Dichte an Bäumen in der Stadt Zürich? Bitte gib auch die Dichte an in Bäumen pro Quadratkilometern, auf eine ganze Zahl gerundet.",
+      "id": "3_statistische_baumkataster_0",
+      "predicted_titles": [
+        "Statistische Zonen",
+        "Baumkataster"
+      ],
+      "reference_titles": [
+        "Statistische Zonen",
+        "Baumkataster"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 9.348961591720581,
+        "coding_tokens": 9261,
+        "coding_cost_usd": 0.02613,
+        "correct": true
+      },
+      "reference_answer": "Friedhof Sihlfeld mit 4970 Bäumen pro Quadratkilometer",
+      "predicted_answer": "Die statistische Zone mit der höchsten Dichte an Bäumen ist 'Friedhof Sihlfeld' mit einer Dichte von 4970 Bäumen pro Quadratkilometer."
+    },
+    {
+      "question": "Wie heisst die statistische Zone mit der tiefsten Dichte an Bäumen in der Stadt Zürich? Bitte gib auch die Dichte an in Bäumen pro Quadratkilometern, auf eine ganze Zahl gerundet.",
+      "id": "3_statistische_baumkataster_1",
+      "predicted_titles": [
+        "Statistische Zonen",
+        "Baumkataster"
+      ],
+      "reference_titles": [
+        "Statistische Zonen",
+        "Baumkataster"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 11.277116060256958,
+        "coding_tokens": 18528,
+        "coding_cost_usd": 0.0495525,
+        "correct": true
+      },
+      "reference_answer": "See Nord mit 0 Bäumen pro Quadratkilometer",
+      "predicted_answer": "Die statistische Zone mit der niedrigsten Dichte an Bäumen in der Stadt Zürich ist 'See Nord' mit einer Dichte von 0 Bäumen pro Quadratkilometer."
+    },
+    {
+      "question": "Was ist der deutsche Name der häufigsten Baumart in der Stadt Zürich? Wie viele Bäume dieser Art gibt es in der Stadt?",
+      "id": "4_baumkataster",
+      "predicted_titles": [
+        "Baumkataster"
+      ],
+      "reference_titles": [
+        "Baumkataster"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 8.815516948699951,
+        "coding_tokens": 12446,
+        "coding_cost_usd": 0.032855,
+        "correct": true
+      },
+      "reference_answer": "Spitz-Ahorn: 4472",
+      "predicted_answer": "Die häufigste Baumart in der Stadt Zürich ist der **Spitz-Ahorn** mit insgesamt **4472 Bäumen**."
+    },
+    {
+      "question": "Auf wieviel Prozent der Fläche der Stadt Zürich gilt der Hochtarif für das Parkieren? Runde auf zwei Nachkommastellen.",
+      "id": "5_gebietseinteilung_0",
+      "predicted_titles": [
+        "Gebietseinteilung Parkierungsgebühren"
+      ],
+      "reference_titles": [
+        "Gebietseinteilung Parkierungsgebühren"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 6.026972532272339,
+        "coding_tokens": 7507,
+        "coding_cost_usd": 0.0217,
+        "correct": true
+      },
+      "reference_answer": "5.06",
+      "predicted_answer": "Auf 5.06% der Fläche der Stadt Zürich gilt der Hochtarif für das Parkieren."
+    },
+    {
+      "question": "Auf wieviel Prozent der Fläche der Stadt Zürich gilt der Niedertarif für das Parkieren? Runde auf zwei Nachkommastellen.",
+      "id": "5_gebietseinteilung_1",
+      "predicted_titles": [
+        "Gebietseinteilung Parkierungsgebühren"
+      ],
+      "reference_titles": [
+        "Gebietseinteilung Parkierungsgebühren"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 8.823598861694336,
+        "coding_tokens": 15917,
+        "coding_cost_usd": 0.0443375,
+        "correct": true
+      },
+      "reference_answer": "94.94",
+      "predicted_answer": "Auf 94.94% der Fläche der Stadt Zürich gilt der Niedertarif für das Parkieren."
+    },
+    {
+      "question": "Was ist das Verhältnis (in Prozent) von Behindertenparkplätzen zu der Gesamtanzahl an öffentlichen Parkplätzen? Runde auf zwei Nachkommastellen.",
+      "id": "6_behindertenparkplaetze_oeffentlich_oeffentlich",
+      "predicted_titles": [
+        "Öffentlich zugängliche Parkhäuser",
+        "Öffentlich zugängliche Strassenparkplätze OGD"
+      ],
+      "reference_titles": [
+        "Öffentlich zugängliche Parkhäuser",
+        "Öffentlich zugängliche Strassenparkplätze OGD"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.16360068321228,
+        "coding_tokens": 16214,
+        "coding_cost_usd": 0.0427325,
+        "correct": false
+      },
+      "reference_answer": "1.1",
+      "predicted_answer": "Das Verhältnis von Behindertenparkplätzen zu der Gesamtanzahl an öffentlichen Parkplätzen beträgt 1.57%."
+    },
+    {
+      "question": "Welches Spital ist dem Hauptgebäude der ETH Zürich am nächsten?",
+      "id": "7_spital",
+      "predicted_titles": [
+        "Spital"
+      ],
+      "reference_titles": [
+        "Spital"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 11.140411138534546,
+        "coding_tokens": 39882,
+        "coding_cost_usd": 0.1044825,
+        "correct": true
+      },
+      "reference_answer": "Universitätsspital",
+      "predicted_answer": "Das nächstgelegene Spital zum Hauptgebäude der ETH Zürich ist das Universitätsspital an der Rämistrasse 100, mit einer Entfernung von etwa 76 Metern."
+    },
+    {
+      "question": "Wieviele Kilometer für den Ausnahmetransport von Typ I sind geplant? Bitte runde auf zwei Nachkommastellen.",
+      "id": "8_ausnahmetransportrouten_0",
+      "predicted_titles": [
+        "Ausnahmetransportrouten"
+      ],
+      "reference_titles": [
+        "Ausnahmetransportrouten"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.47231912612915,
+        "coding_tokens": 12034,
+        "coding_cost_usd": 0.03274,
+        "correct": true
+      },
+      "reference_answer": "0.95",
+      "predicted_answer": "Die Gesamtlänge der geplanten Ausnahmetransportrouten des Typs I beträgt 0.95 Kilometer."
+    },
+    {
+      "question": "Wieviele Kilometer für den Ausnahmetransport von Typ II sind geplant? Bitte runde auf zwei Nachkommastellen.",
+      "id": "8_ausnahmetransportrouten_1",
+      "predicted_titles": [
+        "Ausnahmetransportrouten"
+      ],
+      "reference_titles": [
+        "Ausnahmetransportrouten"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.165698528289795,
+        "coding_tokens": 7891,
+        "coding_cost_usd": 0.0219025,
+        "correct": true
+      },
+      "reference_answer": "0.26",
+      "predicted_answer": "Die Gesamtlänge der geplanten Ausnahmetransportrouten des Typs II beträgt 0.26 Kilometer."
+    },
+    {
+      "question": "Wieviele Kilometer für den Ausnahmetransport von Typ III sind geplant? Bitte runde auf zwei Nachkommastellen.",
+      "id": "8_ausnahmetransportrouten_2",
+      "predicted_titles": [
+        "Ausnahmetransportrouten"
+      ],
+      "reference_titles": [
+        "Ausnahmetransportrouten"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.692228078842163,
+        "coding_tokens": 7898,
+        "coding_cost_usd": 0.021935,
+        "correct": true
+      },
+      "reference_answer": "3.12",
+      "predicted_answer": "Die Gesamtlänge der geplanten Ausnahmetransportrouten vom Typ III beträgt 3.12 Kilometer."
+    },
+    {
+      "question": "Welche VBZ-Verkaufsstelle ist am nächsten beim Esri R&D Center in Zürich?",
+      "id": "9_vbz",
+      "predicted_titles": [
+        "VBZ-Verkaufsstelle"
+      ],
+      "reference_titles": [
+        "VBZ-Verkaufsstelle"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 8.936809778213501,
+        "coding_tokens": 29270,
+        "coding_cost_usd": 0.0776525,
+        "correct": true
+      },
+      "reference_answer": "Albisriederplatz",
+      "predicted_answer": "Die nächstgelegene VBZ-Verkaufsstelle zum Esri R&D Center in Zürich ist die Verkaufsstelle 'Albisriederplatz' mit einer Entfernung von etwa 1564 Metern."
+    },
+    {
+      "question": "Wie gross ist die Fläche der Quaibrücke in Quadratmetern (gerundet auf ganze Zahl)?",
+      "id": "10_kunstbauteninventar_0",
+      "predicted_titles": [
+        "Kunstbauteninventar"
+      ],
+      "reference_titles": [
+        "Kunstbauteninventar"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.8838050365448,
+        "coding_tokens": 9474,
+        "coding_cost_usd": 0.02559,
+        "correct": true
+      },
+      "reference_answer": "3725",
+      "predicted_answer": "Die Fläche der Quaibrücke beträgt 3725 Quadratmeter."
+    },
+    {
+      "question": "Wie gross ist die Fläche der Rathausbrücke in Quadratmetern (gerundet auf ganze Zahl)?",
+      "id": "10_kunstbauteninventar_1",
+      "predicted_titles": [
+        "Kunstbauteninventar"
+      ],
+      "reference_titles": [
+        "Kunstbauteninventar"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.362108945846558,
+        "coding_tokens": 9483,
+        "coding_cost_usd": 0.0257325,
+        "correct": true
+      },
+      "reference_answer": "2259",
+      "predicted_answer": "Die Fläche der Rathausbrücke beträgt ungefähr 2259 Quadratmeter."
+    },
+    {
+      "question": "Wie gross ist die Fläche der Rudolf Brun-Brücke in Quadratmetern (gerundet auf ganze Zahl)?",
+      "id": "10_kunstbauteninventar_2",
+      "predicted_titles": [
+        "Kunstbauteninventar"
+      ],
+      "reference_titles": [
+        "Kunstbauteninventar"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.672591209411621,
+        "coding_tokens": 9528,
+        "coding_cost_usd": 0.0260025,
+        "correct": true
+      },
+      "reference_answer": "1744",
+      "predicted_answer": "Die Fläche der Rudolf Brun-Brücke beträgt etwa 1744 Quadratmeter."
+    },
+    {
+      "question": "Wie gross ist die Fläche der Walchebrücke in Quadratmetern (gerundet auf ganze Zahl)?",
+      "id": "10_kunstbauteninventar_3",
+      "predicted_titles": [
+        "Kunstbauteninventar"
+      ],
+      "reference_titles": [
+        "Kunstbauteninventar"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.28389310836792,
+        "coding_tokens": 9484,
+        "coding_cost_usd": 0.025735,
+        "correct": true
+      },
+      "reference_answer": "1824",
+      "predicted_answer": "Die Fläche der Walchebrücke beträgt rund 1824 Quadratmeter."
+    },
+    {
+      "question": "Wieviele Fussgängerunterführungen hat es in der Stadt Zürich?",
+      "id": "11_kunstbauteninventar_0",
+      "predicted_titles": [
+        "Kunstbauteninventar"
+      ],
+      "reference_titles": [
+        "Kunstbauteninventar"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.0733654499053955,
+        "coding_tokens": 9346,
+        "coding_cost_usd": 0.0250225,
+        "correct": true
+      },
+      "reference_answer": "91",
+      "predicted_answer": "In der Stadt Zürich gibt es insgesamt 91 Fussgängerunterführungen."
+    },
+    {
+      "question": "Wieviele Strassenunterführungen hat es in der Stadt Zürich?",
+      "id": "11_kunstbauteninventar_1",
+      "predicted_titles": [
+        "Kunstbauteninventar"
+      ],
+      "reference_titles": [
+        "Kunstbauteninventar"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 8.230377912521362,
+        "coding_tokens": 9375,
+        "coding_cost_usd": 0.025275,
+        "correct": true
+      },
+      "reference_answer": "19",
+      "predicted_answer": "In der Stadt Zürich gibt es insgesamt 19 Strassenunterführungen."
+    },
+    {
+      "question": "Wieviele Strassentunnel hat es in der Stadt Zürich?",
+      "id": "11_kunstbauteninventar_2",
+      "predicted_titles": [
+        "Kunstbauteninventar"
+      ],
+      "reference_titles": [
+        "Kunstbauteninventar"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.11180305480957,
+        "coding_tokens": 9416,
+        "coding_cost_usd": 0.02555,
+        "correct": true
+      },
+      "reference_answer": "4",
+      "predicted_answer": "In der Stadt Zürich gibt es insgesamt 4 Strassentunnel."
+    },
+    {
+      "question": "Wieviele Stützzmauern gibt es, die komplett innerhalb der statistischen Zone 'ETH / Universität' liegen?",
+      "id": "13_statistische_kunstbauteninventar_0",
+      "predicted_titles": [
+        "Statistische Zonen",
+        "Kunstbauteninventar"
+      ],
+      "reference_titles": [
+        "Statistische Zonen",
+        "Kunstbauteninventar"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 8.05233907699585,
+        "coding_tokens": 22957,
+        "coding_cost_usd": 0.06034,
+        "correct": true
+      },
+      "reference_answer": "15",
+      "predicted_answer": "Es gibt 15 Stützmauern, die vollständig innerhalb der statistischen Zone 'ETH / Universität' liegen."
+    },
+    {
+      "question": "Wieviele Stützzmauern gibt es, die komplett innerhalb der statistischen Zone 'Waidbad' liegen?",
+      "id": "13_statistische_kunstbauteninventar_1",
+      "predicted_titles": [
+        "Statistische Zonen",
+        "Kunstbauteninventar"
+      ],
+      "reference_titles": [
+        "Statistische Zonen",
+        "Kunstbauteninventar"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 7.627816438674927,
+        "coding_tokens": 23033,
+        "coding_cost_usd": 0.0607775,
+        "correct": true
+      },
+      "reference_answer": "29",
+      "predicted_answer": "Es gibt 29 Stützmauern, die vollständig innerhalb der statistischen Zone 'Waidbad' liegen."
+    },
+    {
+      "question": "Wieviele Stützzmauern gibt es, die komplett innerhalb der statistischen Zone 'Riedhof' liegen?",
+      "id": "13_statistische_kunstbauteninventar_2",
+      "predicted_titles": [
+        "Statistische Zonen",
+        "Kunstbauteninventar"
+      ],
+      "reference_titles": [
+        "Statistische Zonen",
+        "Kunstbauteninventar"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 6.914984464645386,
+        "coding_tokens": 22946,
+        "coding_cost_usd": 0.06032,
+        "correct": true
+      },
+      "reference_answer": "7",
+      "predicted_answer": "Es gibt 7 Stützmauern, die vollständig innerhalb der statistischen Zone 'Riedhof' liegen."
+    },
+    {
+      "question": "Wieviele Stützzmauern gibt es, die komplett innerhalb der statistischen Zone 'Bellariastrasse' liegen?",
+      "id": "13_statistische_kunstbauteninventar_3",
+      "predicted_titles": [
+        "Statistische Zonen",
+        "Kunstbauteninventar"
+      ],
+      "reference_titles": [
+        "Statistische Zonen",
+        "Kunstbauteninventar"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.349914073944092,
+        "coding_tokens": 15287,
+        "coding_cost_usd": 0.0406325,
+        "correct": true
+      },
+      "reference_answer": "7",
+      "predicted_answer": "Es gibt 7 Stützmauern, die komplett innerhalb der statistischen Zone 'Bellariastrasse' liegen."
+    },
+    {
+      "question": "Um wie viele Kilometer wurde das Rohrleitungsnetz der Stadt Zürich zwischen Ende 2008 und Ende 2024 kürzer? Runde auf zwei Nachkommastellen.",
+      "id": "14_amtliche_amtliche",
+      "predicted_titles": [
+        "Amtliche Vermessungsdaten Stadt Zürich Jahresendstand 2008",
+        "Amtliche Vermessungsdaten Stadt Zürich Jahresendstand 2024"
+      ],
+      "reference_titles": [
+        "Amtliche Vermessungsdaten Stadt Zürich Jahresendstand 2008",
+        "Amtliche Vermessungsdaten Stadt Zürich Jahresendstand 2024"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 35.2964973449707,
+        "coding_tokens": 69306,
+        "coding_cost_usd": 0.175515,
+        "correct": true
+      },
+      "reference_answer": "23.51",
+      "predicted_answer": "Das Rohrleitungsnetz der Stadt Zürich wurde zwischen Ende 2008 und Ende 2024 um 23.51 Kilometer kürzer."
+    },
+    {
+      "question": "Was ist die Objekt ID der flächenmässig grössten Liegenschaft in Zürich Ende 2023?",
+      "id": "16_amtliche",
+      "predicted_titles": [
+        "Amtliche Vermessungsdaten Stadt Zürich Jahresendstand 2023"
+      ],
+      "reference_titles": [
+        "Amtliche Vermessungsdaten Stadt Zürich Jahresendstand 2023"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 21.524338006973267,
+        "coding_tokens": 49643,
+        "coding_cost_usd": 0.12605,
+        "correct": true
+      },
+      "reference_answer": "25272",
+      "predicted_answer": "Die Objekt ID der flächenmässig grössten Liegenschaft in Zürich Ende 2023 ist: 25272."
+    },
+    {
+      "question": "Wieviele Kilometer der Strassen in Zürich verfügen über einen beidseitigen Velostreifen? Runde auf ganze Kilometer.",
+      "id": "17_fuss",
+      "predicted_titles": [
+        "Fuss- und Velowegnetz"
+      ],
+      "reference_titles": [
+        "Fuss- und Velowegnetz"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.793076753616333,
+        "coding_tokens": 9341,
+        "coding_cost_usd": 0.0253175,
+        "correct": true
+      },
+      "reference_answer": "38",
+      "predicted_answer": "Die Gesamtlänge der Straßen in Zürich mit beidseitigem Velostreifen beträgt 38 Kilometer."
+    },
+    {
+      "question": "Welches ist der flächenmässig grösste Stimmkreis der Stadt Zürich? Gib auch die Fläche an, in Quadratkilometern auf eine Nachkommastelle gerundet.",
+      "id": "18_stimmkreise",
+      "predicted_titles": [
+        "Stimmkreise"
+      ],
+      "reference_titles": [
+        "Stimmkreise"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 26.130648612976074,
+        "coding_tokens": 106764,
+        "coding_cost_usd": 0.2762175,
+        "correct": false
+      },
+      "reference_answer": "7 und 8 mit 19.8 km²",
+      "predicted_answer": "Unfortunately, I was not able to find a solution to your request."
+    },
+    {
+      "question": "An welchem Standort hat die Stadtverwaltung Zürich die meisten Überwachungskameras im Aussenbereich installiert?",
+      "id": "19_aktuelle",
+      "predicted_titles": [
+        "Aktuelle Auflistung von Videokameras der Stadtverwaltung Zürich"
+      ],
+      "reference_titles": [
+        "Aktuelle Auflistung von Videokameras der Stadtverwaltung Zürich"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 3.3895697593688965,
+        "coding_tokens": 5023,
+        "coding_cost_usd": 0.014095,
+        "correct": true
+      },
+      "reference_answer": "Stadtspital Zürich, Standort Triemli",
+      "predicted_answer": "Der Standort mit den meisten Überwachungskameras im Außenbereich ist 'Stadtspital Zürich, Standort Triemli' mit insgesamt 274.0 Kameras."
+    },
+    {
+      "question": "Wo ist das nächste rollstuhlgängige, öffentliche WC beim Seebad Enge?",
+      "id": "21_zueri",
+      "predicted_titles": [
+        "Züri WC"
+      ],
+      "reference_titles": [
+        "Züri WC"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 11.20406699180603,
+        "coding_tokens": 69870,
+        "coding_cost_usd": 0.1800525,
+        "correct": false
+      },
+      "reference_answer": "Mythenquai 19 / Beim Kiosk Hafen Enge",
+      "predicted_answer": "Das nächste rollstuhlgängige öffentliche WC beim Seebad Enge ist das 'Arboretum (nicht rollstuhlgängig)' am Standort 'General-Guisan-Quai 37', etwa 239.34 Meter entfernt."
+    },
+    {
+      "question": "Wie viele Brunnen gibt es im Stadtkreis 4?",
+      "id": "24_brunnen_0",
+      "predicted_titles": [
+        "Brunnen"
+      ],
+      "reference_titles": [
+        "Brunnen"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.133749008178711,
+        "coding_tokens": 12213,
+        "coding_cost_usd": 0.03219,
+        "correct": true
+      },
+      "reference_answer": "61",
+      "predicted_answer": "Im Stadtkreis 4 gibt es insgesamt 61 Brunnen."
+    },
+    {
+      "question": "Wie viele Brunnen gibt es im Stadtkreis 3?",
+      "id": "24_brunnen_1",
+      "predicted_titles": [
+        "Brunnen"
+      ],
+      "reference_titles": [
+        "Brunnen"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.009883403778076,
+        "coding_tokens": 12185,
+        "coding_cost_usd": 0.031985,
+        "correct": true
+      },
+      "reference_answer": "117",
+      "predicted_answer": "Im Stadtkreis 3 gibt es insgesamt 117 Brunnen."
+    },
+    {
+      "question": "Wie viele Brunnen gibt es im Stadtkreis 10?",
+      "id": "24_brunnen_2",
+      "predicted_titles": [
+        "Brunnen"
+      ],
+      "reference_titles": [
+        "Brunnen"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.030072450637817,
+        "coding_tokens": 12185,
+        "coding_cost_usd": 0.0320075,
+        "correct": true
+      },
+      "reference_answer": "112",
+      "predicted_answer": "Im Stadtkreis 10 gibt es insgesamt 112 Brunnen."
+    },
+    {
+      "question": "Wie viele Brunnen gibt es im Stadtkreis 12?",
+      "id": "24_brunnen_3",
+      "predicted_titles": [
+        "Brunnen"
+      ],
+      "reference_titles": [
+        "Brunnen"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 3.87996244430542,
+        "coding_tokens": 12180,
+        "coding_cost_usd": 0.0319125,
+        "correct": true
+      },
+      "reference_answer": "67",
+      "predicted_answer": "Im Stadtkreis 12 gibt es insgesamt 67 Brunnen."
+    },
+    {
+      "question": "Was ist die Objekt ID des nächstgelegenen Notwasserbrunnens zur Adresse Förrlibuckstrasse 110 in Zürich?",
+      "id": "25_brunnen_0",
+      "predicted_titles": [
+        "Brunnen"
+      ],
+      "reference_titles": [
+        "Brunnen"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.529075384140015,
+        "coding_tokens": 12475,
+        "coding_cost_usd": 0.03376,
+        "correct": true
+      },
+      "reference_answer": "118",
+      "predicted_answer": "Die Objekt-ID des nächstgelegenen Notwasserbrunnens zur Adresse Förrlibuckstrasse 110 in Zürich ist 118."
+    },
+    {
+      "question": "Was ist die Brunnennummer des nächstgelegenen Notwasserbrunnens zur Adresse Förrlibuckstrasse 110 in Zürich?",
+      "id": "25_brunnen_1",
+      "predicted_titles": [
+        "Brunnen"
+      ],
+      "reference_titles": [
+        "Brunnen"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 6.314205884933472,
+        "coding_tokens": 12522,
+        "coding_cost_usd": 0.034035,
+        "correct": true
+      },
+      "reference_answer": "6027",
+      "predicted_answer": "Die Brunnennummer des nächstgelegenen Notwasserbrunnens zur Adresse Förrlibuckstrasse 110 in Zürich ist 6027."
+    },
+    {
+      "question": "Was ist der Name des statistischen Quartiers in Zürich mit der höchsten Spielplatzdichte? Gib auch die entsprechende Dichte in Spielplatz pro Quadratkilometer an (gerundet auf ganze Zahl).",
+      "id": "26_poi_statistische",
+      "predicted_titles": [
+        "POI öffentliche Spielplätze",
+        "Statistische Quartiere"
+      ],
+      "reference_titles": [
+        "POI öffentliche Spielplätze",
+        "Statistische Quartiere"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 6.151362895965576,
+        "coding_tokens": 20652,
+        "coding_cost_usd": 0.0542925,
+        "correct": true
+      },
+      "reference_answer": "Sihlfeld mit 10 Spielplätzen pro Quadratkilometer",
+      "predicted_answer": "Das statistische Quartier mit der höchsten Spielplatzdichte in Zürich ist 'Sihlfeld' mit einer Dichte von 10 Spielplätzen pro Quadratkilometer."
+    },
+    {
+      "question": "In welchem statistischen Quartier gibt es die meisten Wertstoffsammelstellen für Textilien? Wieviele sind es?",
+      "id": "27_sammelstelle_statistische_0",
+      "predicted_titles": [
+        "Sammelstelle",
+        "Statistische Quartiere"
+      ],
+      "reference_titles": [
+        "Sammelstelle",
+        "Statistische Quartiere"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 6.964617490768433,
+        "coding_tokens": 18232,
+        "coding_cost_usd": 0.0486625,
+        "correct": true
+      },
+      "reference_answer": "Altstetten mit 12 Sammelstellen für Textilien",
+      "predicted_answer": "Das statistische Quartier mit den meisten Wertstoffsammelstellen für Textilien ist 'Altstetten' mit insgesamt 12 Sammelstellen."
+    },
+    {
+      "question": "In welchem statistischen Quartier gibt es die meisten Wertstoffsammelstellen für Kleinmetalle? Wieviele sind es?",
+      "id": "27_sammelstelle_statistische_1",
+      "predicted_titles": [
+        "Sammelstelle",
+        "Statistische Quartiere"
+      ],
+      "reference_titles": [
+        "Sammelstelle",
+        "Statistische Quartiere"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 7.454953908920288,
+        "coding_tokens": 18160,
+        "coding_cost_usd": 0.0481975,
+        "correct": true
+      },
+      "reference_answer": "Altstetten mit 13 Sammelstellen für Kleinmetalle",
+      "predicted_answer": "Das statistische Quartier mit den meisten Wertstoffsammelstellen für Kleinmetalle ist Altstetten mit 13 Sammelstellen."
+    },
+    {
+      "question": "In welchem statistischen Quartier gibt es die meisten Wertstoffsammelstellen für Glas? Wieviele sind es?",
+      "id": "27_sammelstelle_statistische_2",
+      "predicted_titles": [
+        "Sammelstelle",
+        "Statistische Quartiere"
+      ],
+      "reference_titles": [
+        "Sammelstelle",
+        "Statistische Quartiere"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.684739351272583,
+        "coding_tokens": 18168,
+        "coding_cost_usd": 0.04824,
+        "correct": true
+      },
+      "reference_answer": "Altstetten mit 13 Sammelstellen für Glas",
+      "predicted_answer": "Das statistische Quartier mit den meisten Wertstoffsammelstellen für Glas ist 'Altstetten' mit insgesamt 13 Sammelstellen."
+    },
+    {
+      "question": "Wie viele Prozent der öffentlichen Spielplätze liegen innerhalb von 100 Metern um Schulanlagen? Berücksichtige bei den Schulanlagen nur solche von 2024 und runde auf zwei Nachkommastellen.",
+      "id": "28_poi_schulanlagen_0",
+      "predicted_titles": [
+        "POI öffentliche Spielplätze",
+        "Schulanlagen"
+      ],
+      "reference_titles": [
+        "POI öffentliche Spielplätze",
+        "Schulanlagen"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 10.597535848617554,
+        "coding_tokens": 54929,
+        "coding_cost_usd": 0.1409825,
+        "correct": false
+      },
+      "reference_answer": "40.54",
+      "predicted_answer": "Es liegen 0.0% der öffentlichen Spielplätze innerhalb von 100 Metern um Schulanlagen aus dem Jahr 2024."
+    },
+    {
+      "question": "Wie viele Prozent der öffentlichen Spielplätze liegen innerhalb von 200 Metern um Schulanlagen? Berücksichtige bei den Schulanlagen nur solche von 2024 und runde auf zwei Nachkommastellen.",
+      "id": "28_poi_schulanlagen_1",
+      "predicted_titles": [
+        "POI öffentliche Spielplätze",
+        "Schulanlagen"
+      ],
+      "reference_titles": [
+        "POI öffentliche Spielplätze",
+        "Schulanlagen"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 14.146512031555176,
+        "coding_tokens": 74065,
+        "coding_cost_usd": 0.1892125,
+        "correct": true
+      },
+      "reference_answer": "66.49",
+      "predicted_answer": "Insgesamt liegen 66.49% der öffentlichen Spielplätze innerhalb von 200 Metern um Schulanlagen aus dem Jahr 2024."
+    },
+    {
+      "question": "Wie viele Prozent der öffentlichen Spielplätze liegen innerhalb von 300 Metern um Schulanlagen? Berücksichtige bei den Schulanlagen nur solche von 2024 und runde auf zwei Nachkommastellen.",
+      "id": "28_poi_schulanlagen_2",
+      "predicted_titles": [
+        "POI öffentliche Spielplätze",
+        "Schulanlagen"
+      ],
+      "reference_titles": [
+        "POI öffentliche Spielplätze",
+        "Schulanlagen"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 8.131890296936035,
+        "coding_tokens": 54836,
+        "coding_cost_usd": 0.140465,
+        "correct": true
+      },
+      "reference_answer": "81.62",
+      "predicted_answer": "Insgesamt liegen 81.62% der öffentlichen Spielplätze innerhalb von 300 Metern um Schulanlagen aus dem Jahr 2024."
+    },
+    {
+      "question": "Wie heisst das statistische Quartier ohne öffentlichen Spielplätze?",
+      "id": "29_poi_statistische",
+      "predicted_titles": [
+        "POI öffentliche Spielplätze",
+        "Statistische Quartiere"
+      ],
+      "reference_titles": [
+        "POI öffentliche Spielplätze",
+        "Statistische Quartiere"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.7812888622283936,
+        "coding_tokens": 20460,
+        "coding_cost_usd": 0.05322,
+        "correct": true
+      },
+      "reference_answer": "Werd",
+      "predicted_answer": "Das statistische Quartier ohne öffentliche Spielplätze ist 'Werd'."
+    },
+    {
+      "question": "Wie viele Bäume sind im Baumkataster erfasst?",
+      "id": "31_baumkataster",
+      "predicted_titles": [
+        "Baumkataster"
+      ],
+      "reference_titles": [
+        "Baumkataster"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 8.632331371307373,
+        "coding_tokens": 12253,
+        "coding_cost_usd": 0.031765,
+        "correct": true
+      },
+      "reference_answer": "79384",
+      "predicted_answer": "Im Baumkataster sind insgesamt 79384 Bäume erfasst."
+    },
+    {
+      "question": "Wieviele Strassen-, Wegleuchten und ähnliche (auch Spezialbeleuchtung/Verkehr) gibt es gesamthaft in Zürich?",
+      "id": "32_oeffentliche",
+      "predicted_titles": [
+        "Öffentliche Beleuchtung der Stadt Zürich"
+      ],
+      "reference_titles": [
+        "Öffentliche Beleuchtung der Stadt Zürich"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.2176313400268555,
+        "coding_tokens": 7206,
+        "coding_cost_usd": 0.0197175,
+        "correct": true
+      },
+      "reference_answer": "41824",
+      "predicted_answer": "In Zürich gibt es insgesamt 41824 Beleuchtungsstellen, davon 41269 für Straßen- und Wegbeleuchtung und 555 für Verkehr."
+    },
+    {
+      "question": "Wieviele automatische Zählstellen für Fussgänger und Velos in Zürich sind aktuell im Einsatz?",
+      "id": "33_standorte",
+      "predicted_titles": [
+        "Standorte der automatischen Fuss- und Velozählungen"
+      ],
+      "reference_titles": [
+        "Standorte der automatischen Fuss- und Velozählungen"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.101586818695068,
+        "coding_tokens": 8887,
+        "coding_cost_usd": 0.0238825,
+        "correct": true
+      },
+      "reference_answer": "39",
+      "predicted_answer": "In Zürich sind derzeit 39 automatische Zählstellen für Fußgänger und Velos im Einsatz."
+    },
+    {
+      "question": "Welche Schulanlage ist am weitesten vom nächsten öffentlichen Spielplatz entfernt? Berücksichtige bei den Schulanlagen nur solche von 2024. Gib auch die Entfernung in Metern an (gerundet auf ganze Zahl).",
+      "id": "34_schulanlagen_poi",
+      "predicted_titles": [
+        "Schulanlagen",
+        "POI öffentliche Spielplätze"
+      ],
+      "reference_titles": [
+        "Schulanlagen",
+        "POI öffentliche Spielplätze"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 7.74607515335083,
+        "coding_tokens": 52652,
+        "coding_cost_usd": 0.1350425,
+        "correct": true
+      },
+      "reference_answer": "Kindergarten Vista Verde 1 (Distanz: 1148 m)",
+      "predicted_answer": "Die Schulanlage 'Vista Verde 1' ist am weitesten vom nächsten öffentlichen Spielplatz entfernt, mit einer Entfernung von 1148 Metern."
+    },
+    {
+      "question": "Welche Strasse ist die längste in Zürich, und wie viele Kilometer lang ist sie (runde auf zwei Nachkommastellen)? Bitte ignoriere Autobahnen.",
+      "id": "37_strassennamenverzeichnis",
+      "predicted_titles": [
+        "Strassennamenverzeichnis"
+      ],
+      "reference_titles": [
+        "Strassennamenverzeichnis"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 11.834933519363403,
+        "coding_tokens": 39243,
+        "coding_cost_usd": 0.103215,
+        "correct": true
+      },
+      "reference_answer": "Wehntalerstrasse (5.66 km)",
+      "predicted_answer": "Die längste Straße in Zürich ist die Wehntalerstrasse mit einer Länge von 5.66 km."
+    },
+    {
+      "question": "Welche Strasse verbindet die Adressen Hohlstrasse 18 und Kasernenstrasse 11 in Zürich?",
+      "id": "38_strassennamenverzeichnis_0",
+      "predicted_titles": [
+        "Strassennamenverzeichnis"
+      ],
+      "reference_titles": [
+        "Strassennamenverzeichnis"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 207.06486988067627,
+        "coding_tokens": 61213,
+        "coding_cost_usd": 0.1620775,
+        "correct": false
+      },
+      "reference_answer": "Müllerstrasse",
+      "predicted_answer": "Unfortunately, there was an error during the LLM invocation. Please try again."
+    },
+    {
+      "question": "Welche Strasse verbindet die Adressen Rebbergstrasse 1 und Lehenstrasse 43 in Zürich?",
+      "id": "38_strassennamenverzeichnis_1",
+      "predicted_titles": [
+        "Strassennamenverzeichnis"
+      ],
+      "reference_titles": [
+        "Strassennamenverzeichnis"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.690064907073975,
+        "coding_tokens": 18442,
+        "coding_cost_usd": 0.0484075,
+        "correct": true
+      },
+      "reference_answer": "Wunderlistrasse",
+      "predicted_answer": "Die Straße, die die Adressen Rebbergstrasse 1 und Lehenstrasse 43 in Zürich verbindet, ist die Wunderlistrasse."
+    },
+    {
+      "question": "Welche Strasse verbindet die Adressen Rämistrasse 100 und Gladbachstrasse 76 in Zürich?",
+      "id": "38_strassennamenverzeichnis_2",
+      "predicted_titles": [
+        "Strassennamenverzeichnis"
+      ],
+      "reference_titles": [
+        "Strassennamenverzeichnis"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 12.647746324539185,
+        "coding_tokens": 38831,
+        "coding_cost_usd": 0.104825,
+        "correct": false
+      },
+      "reference_answer": "Schmelzbergstrasse",
+      "predicted_answer": "Die Strasse, die die Adressen Rämistrasse 100 und Gladbachstrasse 76 in Zürich verbindet, ist der Ober Betentalweg."
+    },
+    {
+      "question": "Wie heist die statistische Zone mit der höchsten Dichte an Gastwirtschaftsbetrieben, und wie hoch ist sie? Runde auf eine Nachkommastelle und nutze Gastwirtschaftsbetrieb/km² als Einheit.",
+      "id": "39_gastwirtschaftsbetriebe_statistische",
+      "predicted_titles": [
+        "Gastwirtschaftsbetriebe",
+        "Statistische Zonen"
+      ],
+      "reference_titles": [
+        "Gastwirtschaftsbetriebe",
+        "Statistische Zonen"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 7.162194013595581,
+        "coding_tokens": 15977,
+        "coding_cost_usd": 0.043655,
+        "correct": true
+      },
+      "reference_answer": "Zähringerstrasse mit 1228.0 Gastwirtschaftsbetrieben pro Quadratkilometer",
+      "predicted_answer": "Die statistische Zone mit der höchsten Dichte an Gastwirtschaftsbetrieben ist 'Zähringerstrasse' mit einer Dichte von 1228.0 Gastwirtschaftsbetrieben pro km²."
+    },
+    {
+      "question": "In was für einem Bauzonen Typ liegt Stampfenbrunnenstrasse 12, Zürich?",
+      "id": "40_nutzungsplanung_0",
+      "predicted_titles": [
+        "Nutzungsplanung - kommunale Bau- und Zonenordnung (BZO)"
+      ],
+      "reference_titles": [
+        "Nutzungsplanung - kommunale Bau- und Zonenordnung (BZO)"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 10.862505197525024,
+        "coding_tokens": 105884,
+        "coding_cost_usd": 0.2684525,
+        "correct": true
+      },
+      "reference_answer": "W4",
+      "predicted_answer": "Die Adresse Stampfenbrunnenstrasse 12, Zürich liegt in der Bauzone Typ W4."
+    },
+    {
+      "question": "In was für einem Bauzonen Typ liegt Attenhoferstrasse 10, Zürich?",
+      "id": "40_nutzungsplanung_1",
+      "predicted_titles": [
+        "Nutzungsplanung - kommunale Bau- und Zonenordnung (BZO)"
+      ],
+      "reference_titles": [
+        "Nutzungsplanung - kommunale Bau- und Zonenordnung (BZO)"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 11.307013511657715,
+        "coding_tokens": 79301,
+        "coding_cost_usd": 0.201605,
+        "correct": true
+      },
+      "reference_answer": "W2",
+      "predicted_answer": "Die Adresse Attenhoferstrasse 10, Zürich liegt in einer Bauzone des Typs 'W2' mit dem Rechtsstatus 'inKraft'."
+    },
+    {
+      "question": "In was für einem Bauzonen Typ liegt Funkwiesenstrasse 64, Zürich?",
+      "id": "40_nutzungsplanung_2",
+      "predicted_titles": [
+        "Nutzungsplanung - kommunale Bau- und Zonenordnung (BZO)"
+      ],
+      "reference_titles": [
+        "Nutzungsplanung - kommunale Bau- und Zonenordnung (BZO)"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 9.332927942276001,
+        "coding_tokens": 79204,
+        "coding_cost_usd": 0.2009725,
+        "correct": true
+      },
+      "reference_answer": "W3",
+      "predicted_answer": "Die Adresse Funkwiesenstrasse 64, Zürich liegt in der Bauzone Typ W3 mit dem Rechtsstatus 'inKraft'."
+    },
+    {
+      "question": "Was ist der Projektbeschrieb des aktuellen Tiefbauprojekts neben der Schule im Herrlig?",
+      "id": "41_aktuelle_schulanlagen_0",
+      "predicted_titles": [
+        "Aktuelle Tiefbauprojekte im öffentlichen Grund"
+      ],
+      "reference_titles": [
+        "Aktuelle Tiefbauprojekte im öffentlichen Grund"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 7.9401490688323975,
+        "coding_tokens": 23435,
+        "coding_cost_usd": 0.0620675,
+        "correct": false
+      },
+      "reference_answer": "Mit einem Microtunneling-Verfahren wird Altstetten über eine Anergieleitung für Fernwärme und -kälte mit der Energiequelle des Klärwerks Werdhölzli erschlossen.",
+      "predicted_answer": "Es gibt keine aktuellen Tiefbauprojekte, die direkt mit der Schule im Herrlig in Verbindung stehen, basierend auf den verfügbaren Daten."
+    },
+    {
+      "question": "Was ist der Projektbeschrieb des aktuellen Tiefbauprojekts beim Schiffsteg Wollishofen?",
+      "id": "41_aktuelle_schulanlagen_1",
+      "predicted_titles": [
+        "Aktuelle Tiefbauprojekte im öffentlichen Grund"
+      ],
+      "reference_titles": [
+        "Aktuelle Tiefbauprojekte im öffentlichen Grund"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 7.7022809982299805,
+        "coding_tokens": 25344,
+        "coding_cost_usd": 0.0671475,
+        "correct": false
+      },
+      "reference_answer": "Beim Schifflandungssteg Wollishofen kommt es öfter zu Gefahrensituationen zwischen Schwimmenden und Schiffen der Zürichsee¿Schifffahrtsgesellschaft (ZSG). Deswegen wird anstelle des bestehenden rund 14 m langen Stegs ein neuer, 63 m langer Steg gebaut.\n\nAls Ausgleich für die Beanspruchung des natürlichen Gewässerraums sind ökologische Ersatzmassnahmen erforderlich, die mehrheitlich in der Flachwasserzone am Ufer umgesetzt werden. Ein Stück der bestehenden Ufermauer wird abgebrochen, der bestehende Naturraum am Ufer abgesenkt und mit der angrenzenden Flachwasserzone namentlich durch zusätzliche Bepflanzungen ökologisch vernetzt und aufgewertet.",
+      "predicted_answer": "Der Projektbeschrieb des aktuellen Tiefbauprojekts beim Schiffsteg Wollishofen lautet: \"Beim Schifflandungssteg Wollishofen kommt es öfters zu Hochwasserproblemen. Um dies zu beheben, wird die Uferbefestigung angepasst und die Entwässerung optimiert.\""
+    },
+    {
+      "question": "Was ist der Projektbeschrieb des aktuellen Tiefbauprojekts beim Beckenhof?",
+      "id": "41_aktuelle_schulanlagen_2",
+      "predicted_titles": [
+        "Aktuelle Tiefbauprojekte im öffentlichen Grund"
+      ],
+      "reference_titles": [
+        "Aktuelle Tiefbauprojekte im öffentlichen Grund"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.770251035690308,
+        "coding_tokens": 11051,
+        "coding_cost_usd": 0.0295625,
+        "correct": true
+      },
+      "reference_answer": "Umfassende Sanierung Parkanlage durch Grün Stadt Zürich",
+      "predicted_answer": "Das aktuelle Tiefbauprojekt beim Beckenhof hat den folgenden Projektbeschrieb: 'Umfassende Sanierung Parkanlage durch Grün Stadt Zürich'."
+    },
+    {
+      "question": "Wieviele laufende Hochbauprojekte enthalten formal unter Schutz gestellte Denkmale in ihrem Gebiet?",
+      "id": "42_ahb_denkmalpflege",
+      "predicted_titles": [
+        "AHB-Hochbauprojekte in Ausfuehrung OGD",
+        "Denkmalpflege-Inventar"
+      ],
+      "reference_titles": [
+        "AHB-Hochbauprojekte in Ausfuehrung OGD",
+        "Denkmalpflege-Inventar"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 6.312979698181152,
+        "coding_tokens": 12113,
+        "coding_cost_usd": 0.032825,
+        "correct": true
+      },
+      "reference_answer": "5",
+      "predicted_answer": "Es gibt 5 laufende Hochbauprojekte, die formal unter Schutz gestellte Denkmale in ihrem Gebiet enthalten."
+    },
+    {
+      "question": "Wieviele Quadratmeter designierte Abstellflächen stellt die Stadt Zürich für Mikromobilitätsanbieter zur Verfügung? Runde auf ganze Zahlen.",
+      "id": "43_sharing",
+      "predicted_titles": [
+        "Sharing Zonen"
+      ],
+      "reference_titles": [
+        "Sharing Zonen"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 3.8920464515686035,
+        "coding_tokens": 7514,
+        "coding_cost_usd": 0.0204275,
+        "correct": true
+      },
+      "reference_answer": "4006",
+      "predicted_answer": "Die Stadt Zürich stellt insgesamt 4006 Quadratmeter designierte Abstellflächen für Mikromobilitätsanbieter zur Verfügung."
+    },
+    {
+      "question": "Welcher Stadtkreis hat die meisten Hauskatzen?",
+      "id": "48_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Wie viele Menschen nutzen täglich die Spielplätze in Zürich?",
+      "id": "49_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "In welchem Monat blühen die Kirschbäume in Zürich?",
+      "id": "50_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Welche Strassenlaternen werden mit Solarstrom betrieben?",
+      "id": "51_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Welche Schulen haben aktuell eine offene Stelle für Lehrpersonen?",
+      "id": "52_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Wie viele Verkehrsunfälle mit E-Trottinetten gab es 2024?",
+      "id": "53_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Welcher Kindergarten hat den besten Betreuungsschlüssel?",
+      "id": "55_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Wie viele Fahrräder wurden letztes Jahr in Zürich gestohlen?",
+      "id": "57_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Wie oft werden die öffentlichen Brunnen gereinigt?",
+      "id": "58_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Welche Parkplätze beim ETH Hauptgebäude sind aktuell belegt?",
+      "id": "59_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Welche öffentlichen Gebäude haben Photovoltaikanlagen?",
+      "id": "60_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Welche Schulen verfügen über eigene Psychologen?",
+      "id": "61_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Wo befinden sich WLAN-Hotspots in der Stadt Zürich?",
+      "id": "62_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Wieviele Abfallhaie gibt es in Zürich?",
+      "id": "63_abfallgefaesse_0",
+      "predicted_titles": [
+        "Abfallgefässe"
+      ],
+      "reference_titles": [
+        "Abfallgefässe"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.214983940124512,
+        "coding_tokens": 9987,
+        "coding_cost_usd": 0.02652,
+        "correct": true
+      },
+      "reference_answer": "2268",
+      "predicted_answer": "In Zürich gibt es insgesamt 2268 Abfallhaie."
+    },
+    {
+      "question": "Wieviele Robidogs gibt es in Zürich?",
+      "id": "63_abfallgefaesse_1",
+      "predicted_titles": [
+        "Abfallgefässe"
+      ],
+      "reference_titles": [
+        "Abfallgefässe"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.120297193527222,
+        "coding_tokens": 9941,
+        "coding_cost_usd": 0.0261875,
+        "correct": true
+      },
+      "reference_answer": "186",
+      "predicted_answer": "In Zürich gibt es insgesamt 186 Robidogs."
+    },
+    {
+      "question": "Wieviele Zürikübel gibt es in Zürich?",
+      "id": "63_abfallgefaesse_2",
+      "predicted_titles": [
+        "Abfallgefässe"
+      ],
+      "reference_titles": [
+        "Abfallgefässe"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.928481578826904,
+        "coding_tokens": 10003,
+        "coding_cost_usd": 0.026605,
+        "correct": true
+      },
+      "reference_answer": "1355",
+      "predicted_answer": "In Zürich gibt es insgesamt 1355 Zürikübel."
+    },
+    {
+      "question": "Wieviele Behindertenparkplätze gibt es insgesamt in öffentlichen Zürcher Parkhäusern?",
+      "id": "64_oeffentlich_0",
+      "predicted_titles": [
+        "Öffentlich zugängliche Parkhäuser"
+      ],
+      "reference_titles": [
+        "Öffentlich zugängliche Parkhäuser"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.963387727737427,
+        "coding_tokens": 13546,
+        "coding_cost_usd": 0.035545,
+        "correct": true
+      },
+      "reference_answer": "318",
+      "predicted_answer": "In den öffentlichen Zürcher Parkhäusern gibt es insgesamt 318.0 Behindertenparkplätze."
+    },
+    {
+      "question": "Wieviele Elektroparkplätze gibt es insgesamt in öffentlichen Zürcher Parkhäusern?",
+      "id": "64_oeffentlich_1",
+      "predicted_titles": [
+        "Öffentlich zugängliche Parkhäuser"
+      ],
+      "reference_titles": [
+        "Öffentlich zugängliche Parkhäuser"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.688507080078125,
+        "coding_tokens": 13399,
+        "coding_cost_usd": 0.0346525,
+        "correct": true
+      },
+      "reference_answer": "132",
+      "predicted_answer": "In den öffentlichen Zürcher Parkhäusern gibt es insgesamt 132.0 Elektroparkplätze."
+    },
+    {
+      "question": "Wieviele Kilometer sogenannter 'erholungsorientierter Fusswege' sind markiert als zu Fuss nicht begehbar? Runde auf ganze Kilometer.",
+      "id": "65_fuss",
+      "predicted_titles": [
+        "Fuss- und Velowegnetz"
+      ],
+      "reference_titles": [
+        "Fuss- und Velowegnetz"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.563166856765747,
+        "coding_tokens": 9455,
+        "coding_cost_usd": 0.02612,
+        "correct": true
+      },
+      "reference_answer": "5",
+      "predicted_answer": "Es gibt insgesamt 5 Kilometer erholungsorientierter Fußwege, die als zu Fuß nicht begehbar markiert sind."
+    },
+    {
+      "question": "Wieviele Hunde hatte es im statistischen Quartier Höngg pro Quadratkilometer im Jahr 2023? Runde auf eine Nachkommastelle.",
+      "id": "66_aktueller_quartiere_0",
+      "predicted_titles": [
+        "Hundebestände der Stadt Zürich, seit 2014",
+        "Statistische Quartiere"
+      ],
+      "reference_titles": [
+        "Hundebestände der Stadt Zürich, seit 2014",
+        "Statistische Quartiere"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 7.228253602981567,
+        "coding_tokens": 17187,
+        "coding_cost_usd": 0.046695,
+        "correct": true
+      },
+      "reference_answer": "83.8 Hunde/km²",
+      "predicted_answer": "Im statistischen Quartier Höngg gab es im Jahr 2023 etwa 83,8 Hunde pro Quadratkilometer."
+    },
+    {
+      "question": "Wieviele Hunde hatte es im statistischen Quartier Albisrieden pro Quadratkilometer im Jahr 2023? Runde auf eine Nachkommastelle.",
+      "id": "66_aktueller_quartiere_1",
+      "predicted_titles": [
+        "Hundebestände der Stadt Zürich, seit 2014",
+        "Statistische Quartiere"
+      ],
+      "reference_titles": [
+        "Hundebestände der Stadt Zürich, seit 2014",
+        "Statistische Quartiere"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 7.500950574874878,
+        "coding_tokens": 17057,
+        "coding_cost_usd": 0.0458525,
+        "correct": true
+      },
+      "reference_answer": "103.6 Hunde/km²",
+      "predicted_answer": "Die Hundedichte im statistischen Quartier Albisrieden im Jahr 2023 beträgt 103,6 Hunde pro Quadratkilometer."
+    },
+    {
+      "question": "Wieviele Hunde hatte es im statistischen Quartier Witikon pro Quadratkilometer im Jahr 2023? Runde auf eine Nachkommastelle.",
+      "id": "66_aktueller_quartiere_2",
+      "predicted_titles": [
+        "Hundebestände der Stadt Zürich, seit 2014",
+        "Statistische Quartiere"
+      ],
+      "reference_titles": [
+        "Hundebestände der Stadt Zürich, seit 2014",
+        "Statistische Quartiere"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 8.37988829612732,
+        "coding_tokens": 16995,
+        "coding_cost_usd": 0.0454425,
+        "correct": true
+      },
+      "reference_answer": "91.6 Hunde/km²",
+      "predicted_answer": "Die Hundedichte im statistischen Quartier Witikon im Jahr 2023 beträgt 91,6 Hunde pro Quadratkilometer."
+    },
+    {
+      "question": "Wieviele Hunde hatte es im statistischen Quartier Enge pro Quadratkilometer im Jahr 2023? Runde auf eine Nachkommastelle.",
+      "id": "66_aktueller_quartiere_3",
+      "predicted_titles": [
+        "Hundebestände der Stadt Zürich, seit 2014",
+        "Statistische Quartiere"
+      ],
+      "reference_titles": [
+        "Hundebestände der Stadt Zürich, seit 2014",
+        "Statistische Quartiere"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 7.169760465621948,
+        "coding_tokens": 17027,
+        "coding_cost_usd": 0.04565,
+        "correct": true
+      },
+      "reference_answer": "129.8 Hunde/km²",
+      "predicted_answer": "Die Hundedichte im statistischen Quartier Enge im Jahr 2023 beträgt 129,8 Hunde pro Quadratkilometer."
+    },
+    {
+      "question": "Wieviel Prozent der Hundebesitzer im statistischen Quartier Saatlen waren im Jahr 2024 männlich? Runde auf zwei Nachkommastellen.",
+      "id": "67_aktueller_0",
+      "predicted_titles": [
+        "Hundebestände der Stadt Zürich, seit 2014"
+      ],
+      "reference_titles": [
+        "Hundebestände der Stadt Zürich, seit 2014"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.298931837081909,
+        "coding_tokens": 12306,
+        "coding_cost_usd": 0.033255,
+        "correct": false
+      },
+      "reference_answer": "31.19 %",
+      "predicted_answer": "Im Jahr 2024 waren 25.55% der Hundebesitzer im statistischen Quartier Saatlen männlich."
+    },
+    {
+      "question": "Wieviel Prozent der Hundebesitzer im statistischen Quartier Wollishofen waren im Jahr 2024 männlich? Runde auf zwei Nachkommastellen.",
+      "id": "67_aktueller_1",
+      "predicted_titles": [
+        "Hundebestände der Stadt Zürich, seit 2014"
+      ],
+      "reference_titles": [
+        "Hundebestände der Stadt Zürich, seit 2014"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 7.47063136100769,
+        "coding_tokens": 25192,
+        "coding_cost_usd": 0.0664375,
+        "correct": true
+      },
+      "reference_answer": "28.79 %",
+      "predicted_answer": "Im statistischen Quartier Wollishofen waren im Jahr 2024 etwa 28.79% der Hundebesitzer männlich."
+    },
+    {
+      "question": "Wieviel Prozent der Hundebesitzer im statistischen Quartier Leimbach waren im Jahr 2024 männlich? Runde auf zwei Nachkommastellen.",
+      "id": "67_aktueller_2",
+      "predicted_titles": [
+        "Hundebestände der Stadt Zürich, seit 2014"
+      ],
+      "reference_titles": [
+        "Hundebestände der Stadt Zürich, seit 2014"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.952661991119385,
+        "coding_tokens": 12315,
+        "coding_cost_usd": 0.0333075,
+        "correct": false
+      },
+      "reference_answer": "22.96 %",
+      "predicted_answer": "Im statistischen Quartier Leimbach waren im Jahr 2024 etwa 22.52% der Hundebesitzer männlich."
+    },
+    {
+      "question": "Wieviel Prozent der Hundebesitzer im statistischen Quartier Hirslanden waren im Jahr 2024 männlich? Runde auf zwei Nachkommastellen.",
+      "id": "67_aktueller_3",
+      "predicted_titles": [
+        "Hundebestände der Stadt Zürich, seit 2014"
+      ],
+      "reference_titles": [
+        "Hundebestände der Stadt Zürich, seit 2014"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.143511533737183,
+        "coding_tokens": 12316,
+        "coding_cost_usd": 0.0332275,
+        "correct": false
+      },
+      "reference_answer": "29.44 %",
+      "predicted_answer": "Im Jahr 2024 waren 30.09% der Hundebesitzer im statistischen Quartier Hirslanden männlich."
+    },
+    {
+      "question": "Wieviele Quadratmeter der Stadtfläche sind gemäss Bedeutungsplan von internationaler Bedeutung? Runde auf eine ganze Zahl.",
+      "id": "68_bedeutungsplan_0",
+      "predicted_titles": [
+        "Bedeutungsplan"
+      ],
+      "reference_titles": [
+        "Bedeutungsplan"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.350103378295898,
+        "coding_tokens": 7456,
+        "coding_cost_usd": 0.0205375,
+        "correct": true
+      },
+      "reference_answer": "694394 m²",
+      "predicted_answer": "Gemäß Bedeutungsplan beträgt die Stadtfläche von internationaler Bedeutung **694394 Quadratmeter**."
+    },
+    {
+      "question": "Wieviele Quadratmeter der Stadtfläche sind gemäss Bedeutungsplan von stadtweiter Bedeutung? Runde auf eine ganze Zahl.",
+      "id": "68_bedeutungsplan_1",
+      "predicted_titles": [
+        "Bedeutungsplan"
+      ],
+      "reference_titles": [
+        "Bedeutungsplan"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 7.333292484283447,
+        "coding_tokens": 15311,
+        "coding_cost_usd": 0.04097,
+        "correct": true
+      },
+      "reference_answer": "4980074 m²",
+      "predicted_answer": "Gemäß dem Bedeutungsplan beträgt die Fläche der Stadtfläche mit stadtweiter Bedeutung insgesamt 4980074 Quadratmeter."
+    },
+    {
+      "question": "Wieviele Quadratmeter der Stadtfläche sind gemäss Bedeutungsplan von quartierweiter Bedeutung? Runde auf eine ganze Zahl.",
+      "id": "68_bedeutungsplan_2",
+      "predicted_titles": [
+        "Bedeutungsplan"
+      ],
+      "reference_titles": [
+        "Bedeutungsplan"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.659085273742676,
+        "coding_tokens": 11411,
+        "coding_cost_usd": 0.030935,
+        "correct": true
+      },
+      "reference_answer": "3144126 m²",
+      "predicted_answer": "Die Stadtfläche von quartierweiter Bedeutung beträgt gemäß Bedeutungsplan etwa 3144126 Quadratmeter."
+    },
+    {
+      "question": "Wieviele Quadratmeter der Stadtfläche sind gemäss Bedeutungsplan von nachbarschaftlicher Bedeutung? Runde auf eine ganze Zahl.",
+      "id": "68_bedeutungsplan_3",
+      "predicted_titles": [
+        "Bedeutungsplan"
+      ],
+      "reference_titles": [
+        "Bedeutungsplan"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.227183818817139,
+        "coding_tokens": 7507,
+        "coding_cost_usd": 0.0208975,
+        "correct": true
+      },
+      "reference_answer": "5084683 m²",
+      "predicted_answer": "Die Gesamtfläche der Stadtfläche, die gemäß Bedeutungsplan von nachbarschaftlicher Bedeutung ist, beträgt 5084683 Quadratmeter."
+    },
+    {
+      "question": "Um was für einen Faktor hat es mehr Sitzbänke pro Fläche in Gebieten von internationaler Bedeutung, im Vergleich zu Gebieten nachbarschaftlicher Bedeutung? Runde auf zwei Nachkommastellen.",
+      "id": "69_bedeutungsplan_sitzbankkataster_0",
+      "predicted_titles": [
+        "Bedeutungsplan",
+        "Sitzbankkataster OGD"
+      ],
+      "reference_titles": [
+        "Bedeutungsplan",
+        "Sitzbankkataster OGD"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 9.052672624588013,
+        "coding_tokens": 9766,
+        "coding_cost_usd": 0.02746,
+        "correct": false
+      },
+      "reference_answer": "11.36",
+      "predicted_answer": "In Gebieten von internationaler Bedeutung gibt es einen Faktor von 11.52 mehr Sitzbänke pro Fläche im Vergleich zu Gebieten nachbarschaftlicher Bedeutung."
+    },
+    {
+      "question": "Um was für einen Faktor hat es mehr Sitzbänke pro Fläche in Gebieten von stadtweiter Bedeutung, im Vergleich zu Gebieten nachbarschaftlicher Bedeutung? Runde auf zwei Nachkommastellen.",
+      "id": "69_bedeutungsplan_sitzbankkataster_1",
+      "predicted_titles": [
+        "Bedeutungsplan",
+        "Sitzbankkataster OGD"
+      ],
+      "reference_titles": [
+        "Bedeutungsplan",
+        "Sitzbankkataster OGD"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 11.340490341186523,
+        "coding_tokens": 9997,
+        "coding_cost_usd": 0.028945,
+        "correct": true
+      },
+      "reference_answer": "2.67",
+      "predicted_answer": "In Gebieten von stadtweiter Bedeutung gibt es etwa 2.64-mal mehr Sitzbänke pro Fläche als in Gebieten nachbarschaftlicher Bedeutung."
+    },
+    {
+      "question": "Um was für einen Faktor hat es mehr Sitzbänke pro Fläche in Gebieten von quartierweiter Bedeutung, im Vergleich zu Gebieten nachbarschaftlicher Bedeutung? Runde auf zwei Nachkommastellen.",
+      "id": "69_bedeutungsplan_sitzbankkataster_2",
+      "predicted_titles": [
+        "Bedeutungsplan",
+        "Sitzbankkataster OGD"
+      ],
+      "reference_titles": [
+        "Bedeutungsplan",
+        "Sitzbankkataster OGD"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 9.64388108253479,
+        "coding_tokens": 9956,
+        "coding_cost_usd": 0.0287,
+        "correct": true
+      },
+      "reference_answer": "4.24",
+      "predicted_answer": "In Gebieten von quartierweiter Bedeutung gibt es etwa einen Faktor von 4.3 mehr Sitzbänke pro Fläche im Vergleich zu Gebieten nachbarschaftlicher Bedeutung."
+    },
+    {
+      "question": "Wieviele Quadratkilometer sind aktuell durch Wald bedeckt in der Stadt Zürich? Runde auf eine Nachkommastelle.",
+      "id": "70_biotoptypenkartierung_0",
+      "predicted_titles": [
+        "Biotoptypenkartierung"
+      ],
+      "reference_titles": [
+        "Biotoptypenkartierung"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 10.195003747940063,
+        "coding_tokens": 11154,
+        "coding_cost_usd": 0.0302025,
+        "correct": true
+      },
+      "reference_answer": "21.3 km²",
+      "predicted_answer": "Die aktuelle Waldfläche in der Stadt Zürich beträgt 21.3 Quadratkilometer."
+    },
+    {
+      "question": "Wieviele Quadratkilometer sind aktuell durch Gewässer bedeckt in der Stadt Zürich? Runde auf eine Nachkommastelle.",
+      "id": "70_biotoptypenkartierung_1",
+      "predicted_titles": [
+        "Biotoptypenkartierung"
+      ],
+      "reference_titles": [
+        "Biotoptypenkartierung"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 8.745211362838745,
+        "coding_tokens": 11032,
+        "coding_cost_usd": 0.02941,
+        "correct": true
+      },
+      "reference_answer": "5.2 km²",
+      "predicted_answer": "In der Stadt Zürich sind aktuell 5.2 Quadratkilometer durch Gewässer bedeckt."
+    },
+    {
+      "question": "Wieviele Quadratkilometer sind aktuell durch Ruderalfluren bedeckt in der Stadt Zürich? Runde auf eine Nachkommastelle.",
+      "id": "70_biotoptypenkartierung_2",
+      "predicted_titles": [
+        "Biotoptypenkartierung"
+      ],
+      "reference_titles": [
+        "Biotoptypenkartierung"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 9.491496801376343,
+        "coding_tokens": 11112,
+        "coding_cost_usd": 0.02991,
+        "correct": true
+      },
+      "reference_answer": "1.6 km²",
+      "predicted_answer": "Die Ruderalfluren in der Stadt Zürich bedecken aktuell etwa 1.6 Quadratkilometer."
+    },
+    {
+      "question": "Ist die thermische Regeneration von Erdwärmesonden zulässig bei der Adresse Neumünsterstrasse 25, Zürich?",
+      "id": "71_einsatz_0",
+      "predicted_titles": [
+        "Einsatz Luft-Wasser-Wärmepumpen"
+      ],
+      "reference_titles": [
+        "Einsatz Luft-Wasser-Wärmepumpen"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.127544403076172,
+        "coding_tokens": 3659,
+        "coding_cost_usd": 0.01136,
+        "correct": false
+      },
+      "reference_answer": "ja",
+      "predicted_answer": "Die Adresse Neumünsterstrasse 25, Zürich befindet sich in keiner definierten Zone für die thermische Regeneration von Erdwärmesonden."
+    },
+    {
+      "question": "Ist die thermische Regeneration von Erdwärmesonden zulässig bei der Adresse Rebenstrasse 33, Zürich?",
+      "id": "71_einsatz_1",
+      "predicted_titles": [
+        "Einsatz Luft-Wasser-Wärmepumpen"
+      ],
+      "reference_titles": [
+        "Einsatz Luft-Wasser-Wärmepumpen"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 7.251498699188232,
+        "coding_tokens": 11654,
+        "coding_cost_usd": 0.0334175,
+        "correct": true
+      },
+      "reference_answer": "nein",
+      "predicted_answer": "Thermische Regeneration ist nicht zulässig bei der Adresse Rebenstrasse 33, Zürich."
+    },
+    {
+      "question": "Ist die thermische Regeneration von Erdwärmesonden zulässig bei der Adresse Vorhaldenstrasse 15, Zürich?",
+      "id": "71_einsatz_2",
+      "predicted_titles": [
+        "Einsatz Luft-Wasser-Wärmepumpen"
+      ],
+      "reference_titles": [
+        "Einsatz Luft-Wasser-Wärmepumpen"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 14.43225383758545,
+        "coding_tokens": 29168,
+        "coding_cost_usd": 0.0788825,
+        "correct": true
+      },
+      "reference_answer": "ja",
+      "predicted_answer": "Thermal regeneration of geothermal probes is allowed at Vorhaldenstrasse 15, Zürich."
+    },
+    {
+      "question": "Was ist die flächenmässig grösste römisch-katholische Kirchgemeinde in der Stadt Zürich? Was ist die Fläche in Quadratkilometern, gerundet auf eine Nachkommastelle?",
+      "id": "72_gebietseinteilung_0",
+      "predicted_titles": [
+        "Gebietseinteilung der römisch-katholischen Kirchgemeinden"
+      ],
+      "reference_titles": [
+        "Gebietseinteilung der römisch-katholischen Kirchgemeinden"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.035603046417236,
+        "coding_tokens": 7481,
+        "coding_cost_usd": 0.02123,
+        "correct": true
+      },
+      "reference_answer": "Heilig Kreuz mit 7.6 km²",
+      "predicted_answer": "Die flächenmässig grösste römisch-katholische Kirchgemeinde in der Stadt Zürich ist **Heilig Kreuz** mit einer Fläche von **7.6 Quadratkilometern**."
+    },
+    {
+      "question": "Was ist die flächenmässig kleinste römisch-katholische Kirchgemeinde in der Stadt Zürich? Was ist die Fläche in Quadratkilometern, gerundet auf eine Nachkommastelle?",
+      "id": "72_gebietseinteilung_1",
+      "predicted_titles": [
+        "Gebietseinteilung der römisch-katholischen Kirchgemeinden"
+      ],
+      "reference_titles": [
+        "Gebietseinteilung der römisch-katholischen Kirchgemeinden"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 6.5146803855896,
+        "coding_tokens": 11319,
+        "coding_cost_usd": 0.0311325,
+        "correct": true
+      },
+      "reference_answer": "St. Felix und Regula mit 1.5 km²",
+      "predicted_answer": "Die flächenmäßig kleinste römisch-katholische Kirchgemeinde in der Stadt Zürich ist 'St. Felix und Regula' mit einer Fläche von 1.5 Quadratkilometern."
+    },
+    {
+      "question": "Zu welcher römisch-katholischen Kirchgemeinde gehört die Adresse Neugutstrasse 6, Zürich?",
+      "id": "73_gebietseinteilung_0",
+      "predicted_titles": [
+        "Gebietseinteilung der römisch-katholischen Kirchgemeinden"
+      ],
+      "reference_titles": [
+        "Gebietseinteilung der römisch-katholischen Kirchgemeinden"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 6.564851522445679,
+        "coding_tokens": 11373,
+        "coding_cost_usd": 0.03159,
+        "correct": true
+      },
+      "reference_answer": "Dreikönigen",
+      "predicted_answer": "Die Adresse Neugutstrasse 6, Zürich gehört zur römisch-katholischen Kirchgemeinde 'Dreikönigen'."
+    },
+    {
+      "question": "Zu welcher römisch-katholischen Kirchgemeinde gehört die Adresse Heerenschürlistrasse 43, Zürich?",
+      "id": "73_gebietseinteilung_1",
+      "predicted_titles": [
+        "Gebietseinteilung der römisch-katholischen Kirchgemeinden"
+      ],
+      "reference_titles": [
+        "Gebietseinteilung der römisch-katholischen Kirchgemeinden"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 50.568063259124756,
+        "coding_tokens": 184886,
+        "coding_cost_usd": 0.49022,
+        "correct": false
+      },
+      "reference_answer": "St. Gallus",
+      "predicted_answer": "Unfortunately, I was not able to find a solution to your request."
+    },
+    {
+      "question": "Zu welcher römisch-katholischen Kirchgemeinde gehört die Adresse Wehntalerstrasse 607, Zürich?",
+      "id": "73_gebietseinteilung_2",
+      "predicted_titles": [
+        "Gebietseinteilung der römisch-katholischen Kirchgemeinden"
+      ],
+      "reference_titles": [
+        "Gebietseinteilung der römisch-katholischen Kirchgemeinden"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 6.956830739974976,
+        "coding_tokens": 11458,
+        "coding_cost_usd": 0.031885,
+        "correct": true
+      },
+      "reference_answer": "St. Katharina",
+      "predicted_answer": "Die Adresse Wehntalerstrasse 607, Zürich gehört zur römisch-katholischen Kirchgemeinde 'St. Katharina'."
+    },
+    {
+      "question": "Wieviele geschützte Bäume hat es in einem 100 Meter Radius um Schlösslistrasse 17, Zürich?",
+      "id": "74_geschuetzte_0",
+      "predicted_titles": [
+        "Geschützte Einzelbäume"
+      ],
+      "reference_titles": [
+        "Geschützte Einzelbäume"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.868322849273682,
+        "coding_tokens": 7914,
+        "coding_cost_usd": 0.02262,
+        "correct": false
+      },
+      "reference_answer": "2",
+      "predicted_answer": "Es gibt 27 geschützte Bäume in einem 100-Meter-Radius um die Schlösslistrasse 17, Zürich."
+    },
+    {
+      "question": "Wieviele geschützte Bäume hat es in einem 100 Meter Radius um Binzmühlestrasse 370, Zürich?",
+      "id": "74_geschuetzte_1",
+      "predicted_titles": [
+        "Geschützte Einzelbäume"
+      ],
+      "reference_titles": [
+        "Geschützte Einzelbäume"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.045499563217163,
+        "coding_tokens": 7878,
+        "coding_cost_usd": 0.022365,
+        "correct": true
+      },
+      "reference_answer": "7",
+      "predicted_answer": "Es gibt 7 geschützte Bäume in einem 100-Meter-Radius um die Binzmühlestrasse 370, Zürich."
+    },
+    {
+      "question": "Wieviele geschützte Bäume hat es in einem 100 Meter Radius um Friesenbergstrasse 102, Zürich?",
+      "id": "74_geschuetzte_2",
+      "predicted_titles": [
+        "Geschützte Einzelbäume"
+      ],
+      "reference_titles": [
+        "Geschützte Einzelbäume"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.920063257217407,
+        "coding_tokens": 7991,
+        "coding_cost_usd": 0.0233225,
+        "correct": false
+      },
+      "reference_answer": "Kein geschützter Baum im 100 m Umkreis.",
+      "predicted_answer": "Es gibt 27 geschützte Bäume innerhalb eines 100-Meter-Radius um die Adresse Friesenbergstrasse 102, Zürich."
+    },
+    {
+      "question": "Was ist die Objekt ID der nächste Hundefreilaufzone zu Luggwegstrasse 142A, Zürich?",
+      "id": "75_hundezonen_0",
+      "predicted_titles": [
+        "Hundezonen"
+      ],
+      "reference_titles": [
+        "Hundezonen"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 7.551593542098999,
+        "coding_tokens": 12823,
+        "coding_cost_usd": 0.036115,
+        "correct": true
+      },
+      "reference_answer": "274",
+      "predicted_answer": "Die Objekt ID der nächsten Hundefreilaufzone zu Luggwegstrasse 142A, Zürich ist 274."
+    },
+    {
+      "question": "Was ist die Objekt ID der nächste Hundefreilaufzone zu Merkurstrasse 4, Zürich?",
+      "id": "75_hundezonen_1",
+      "predicted_titles": [
+        "Hundezonen"
+      ],
+      "reference_titles": [
+        "Hundezonen"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.049439907073975,
+        "coding_tokens": 8102,
+        "coding_cost_usd": 0.0226325,
+        "correct": true
+      },
+      "reference_answer": "392",
+      "predicted_answer": "Die Objekt ID der nächsten Hundefreilaufzone zu Merkurstrasse 4, Zürich ist 392."
+    },
+    {
+      "question": "Was ist die Objekt ID der nächste Hundefreilaufzone zu Paulstrasse 7, Zürich?",
+      "id": "75_hundezonen_2",
+      "predicted_titles": [
+        "Hundezonen"
+      ],
+      "reference_titles": [
+        "Hundezonen"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 9.455984115600586,
+        "coding_tokens": 12821,
+        "coding_cost_usd": 0.0361325,
+        "correct": true
+      },
+      "reference_answer": "182",
+      "predicted_answer": "Die Objekt ID der nächsten Hundefreilaufzone zu Paulstrasse 7, Zürich ist 182."
+    },
+    {
+      "question": "Gilt die Leinenpflicht beim Zürichhorn den ganzen Tag?",
+      "id": "76_hundezonen_0",
+      "predicted_titles": [
+        "Hundezonen"
+      ],
+      "reference_titles": [
+        "Hundezonen"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.08440899848938,
+        "coding_tokens": 7941,
+        "coding_cost_usd": 0.0216,
+        "correct": true
+      },
+      "reference_answer": "Nein, nur von 1. April bis 30. September 10-22 Uhr.",
+      "predicted_answer": "Die Leinenpflicht beim Zürichhorn gilt nicht den ganzen Tag, sondern nur vom 1. April bis 30. September zwischen 10 und 22 Uhr."
+    },
+    {
+      "question": "Gilt die Leinenpflicht bei der Landiwiese den ganzen Tag?",
+      "id": "76_hundezonen_1",
+      "predicted_titles": [
+        "Hundezonen"
+      ],
+      "reference_titles": [
+        "Hundezonen"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.149887561798096,
+        "coding_tokens": 7897,
+        "coding_cost_usd": 0.0213175,
+        "correct": true
+      },
+      "reference_answer": "Nein, nur von 1. April bis 30. September 10-22 Uhr.",
+      "predicted_answer": "Die Leinenpflicht bei der Landiwiese gilt nicht den ganzen Tag, sondern nur vom 1. April bis 30. September zwischen 10 und 22 Uhr."
+    },
+    {
+      "question": "Gilt die Leinenpflicht im Belvoirpark den ganzen Tag?",
+      "id": "76_hundezonen_2",
+      "predicted_titles": [
+        "Hundezonen"
+      ],
+      "reference_titles": [
+        "Hundezonen"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.17272162437439,
+        "coding_tokens": 7981,
+        "coding_cost_usd": 0.02185,
+        "correct": true
+      },
+      "reference_answer": "Nein, nur von 10 bis 22 Uhr.",
+      "predicted_answer": "Die Leinenpflicht im Belvoirpark gilt nicht den ganzen Tag, sondern nur von 10 bis 22 Uhr."
+    },
+    {
+      "question": "Auf wieviel Quadratkilometern der Stadt Zürich gilt Hundeverbot? Runde auf zwei Nachkommastellen.",
+      "id": "77_hundezonen_0",
+      "predicted_titles": [
+        "Hundezonen"
+      ],
+      "reference_titles": [
+        "Hundezonen"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 6.306630849838257,
+        "coding_tokens": 12126,
+        "coding_cost_usd": 0.0324675,
+        "correct": true
+      },
+      "reference_answer": "6.5 km²",
+      "predicted_answer": "In der Stadt Zürich gilt Hundeverbot auf insgesamt 6.5 Quadratkilometern."
+    },
+    {
+      "question": "Auf wieviel Quadratkilometern der Stadt Zürich gilt Leinenpflicht für Hunde (auch wenn nur teilweise)? Runde auf zwei Nachkommastellen.",
+      "id": "77_hundezonen_1",
+      "predicted_titles": [
+        "Hundezonen"
+      ],
+      "reference_titles": [
+        "Hundezonen"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 7.16005539894104,
+        "coding_tokens": 12204,
+        "coding_cost_usd": 0.03291,
+        "correct": true
+      },
+      "reference_answer": "0.74 km²",
+      "predicted_answer": "In der Stadt Zürich gilt Leinenpflicht für Hunde auf insgesamt 0.74 Quadratkilometern."
+    },
+    {
+      "question": "Was ist die Adresse des nächsten Stimmlokals zu Guthirtstrasse 7a",
+      "id": "78_stimmlokale_0",
+      "predicted_titles": [
+        "Stimmlokale"
+      ],
+      "reference_titles": [
+        "Stimmlokale"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 10.029423236846924,
+        "coding_tokens": 45825,
+        "coding_cost_usd": 0.1191525,
+        "correct": true
+      },
+      "reference_answer": "Nordstrasse 248",
+      "predicted_answer": "Das nächste Stimmlokal zur Adresse Guthirtstrasse 7a ist an der Nordstrasse 248."
+    },
+    {
+      "question": "Was ist die Adresse des nächsten Stimmlokals zu Gämsenstrasse 6",
+      "id": "78_stimmlokale_1",
+      "predicted_titles": [
+        "Stimmlokale"
+      ],
+      "reference_titles": [
+        "Stimmlokale"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 7.827833652496338,
+        "coding_tokens": 27419,
+        "coding_cost_usd": 0.0730175,
+        "correct": true
+      },
+      "reference_answer": "Röslistrasse 14",
+      "predicted_answer": "Das nächste Stimmlokal zur Gämsenstrasse 6 ist an der Adresse Röslistrasse 14."
+    },
+    {
+      "question": "Was ist die Adresse des nächsten Stimmlokals zu Bürkliplatz",
+      "id": "78_stimmlokale_2",
+      "predicted_titles": [
+        "Stimmlokale"
+      ],
+      "reference_titles": [
+        "Stimmlokale"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 8.053545713424683,
+        "coding_tokens": 27288,
+        "coding_cost_usd": 0.0721125,
+        "correct": true
+      },
+      "reference_answer": "Stadthausquai 17",
+      "predicted_answer": "Das nächste Stimmlokal zum Bürkliplatz befindet sich an der Adresse: Stadthausquai 17."
+    },
+    {
+      "question": "Wieviele Stimmlokale hat es im Stimmkreis '7 und 8'?",
+      "id": "79_stimmlokale_stimmkreise_0",
+      "predicted_titles": [
+        "Stimmlokale",
+        "Stimmkreise"
+      ],
+      "reference_titles": [
+        "Stimmlokale",
+        "Stimmkreise"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.6762261390686035,
+        "coding_tokens": 21094,
+        "coding_cost_usd": 0.055105,
+        "correct": true
+      },
+      "reference_answer": "3",
+      "predicted_answer": "Im Stimmkreis '7 und 8' gibt es 3 Stimmlokale."
+    },
+    {
+      "question": "Wieviele Stimmlokale hat es im Stimmkreis '9'?",
+      "id": "79_stimmlokale_stimmkreise_1",
+      "predicted_titles": [
+        "Stimmlokale",
+        "Stimmkreise"
+      ],
+      "reference_titles": [
+        "Stimmlokale",
+        "Stimmkreise"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.008165597915649,
+        "coding_tokens": 20917,
+        "coding_cost_usd": 0.0539725,
+        "correct": true
+      },
+      "reference_answer": "1",
+      "predicted_answer": "Im Stimmkreis '9' gibt es 1 Stimmlokal."
+    },
+    {
+      "question": "Wieviele Stimmlokale hat es im Stimmkreis '11'?",
+      "id": "79_stimmlokale_stimmkreise_2",
+      "predicted_titles": [
+        "Stimmlokale",
+        "Stimmkreise"
+      ],
+      "reference_titles": [
+        "Stimmlokale",
+        "Stimmkreise"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.0447163581848145,
+        "coding_tokens": 21161,
+        "coding_cost_usd": 0.0553775,
+        "correct": true
+      },
+      "reference_answer": "2",
+      "predicted_answer": "Im Stimmkreis '11' gibt es 2 Stimmlokale."
+    },
+    {
+      "question": "Wieviele Stimmlokale hat es im Stimmkreis '12'?",
+      "id": "79_stimmlokale_stimmkreise_3",
+      "predicted_titles": [
+        "Stimmlokale",
+        "Stimmkreise"
+      ],
+      "reference_titles": [
+        "Stimmlokale",
+        "Stimmkreise"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.004220247268677,
+        "coding_tokens": 20897,
+        "coding_cost_usd": 0.0538175,
+        "correct": true
+      },
+      "reference_answer": "1",
+      "predicted_answer": "Im Stimmkreis '12' gibt es 1 Stimmlokal."
+    },
+    {
+      "question": "Auf wievielen Kilometern der Zürcher Strassen gilt am Tag Tempo-50 und in der Nacht Tempo-30. Runde auf eine Nachkommastelle.",
+      "id": "80_verkehrsachsensystem_0",
+      "predicted_titles": [
+        "Verkehrsachsensystem Stadt Zuerich"
+      ],
+      "reference_titles": [
+        "Verkehrsachsensystem Stadt Zuerich"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 7.3384318351745605,
+        "coding_tokens": 41507,
+        "coding_cost_usd": 0.1060625,
+        "correct": false
+      },
+      "reference_answer": "0.3 km",
+      "predicted_answer": "Es gibt keine Straßenabschnitte in Zürich, auf denen tagsüber Tempo-50 und nachts Tempo-30 gilt."
+    },
+    {
+      "question": "Auf wievielen Kilometern der Zürcher Strassen gilt Tempo-80. Runde auf eine Nachkommastelle.",
+      "id": "80_verkehrsachsensystem_1",
+      "predicted_titles": [
+        "Verkehrsachsensystem Stadt Zuerich"
+      ],
+      "reference_titles": [
+        "Verkehrsachsensystem Stadt Zuerich"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 7.946115255355835,
+        "coding_tokens": 41486,
+        "coding_cost_usd": 0.1059575,
+        "correct": true
+      },
+      "reference_answer": "16.6 km",
+      "predicted_answer": "Auf den Zürcher Strassen gilt Tempo-80 auf insgesamt 16.6 Kilometern."
+    },
+    {
+      "question": "Auf wievielen Kilometern der Zürcher Strassen gilt Fahrverbot (am Tag). Runde auf eine Nachkommastelle.",
+      "id": "80_verkehrsachsensystem_2",
+      "predicted_titles": [
+        "Verkehrsachsensystem Stadt Zuerich"
+      ],
+      "reference_titles": [
+        "Verkehrsachsensystem Stadt Zuerich"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 8.92472791671753,
+        "coding_tokens": 41535,
+        "coding_cost_usd": 0.10626,
+        "correct": true
+      },
+      "reference_answer": "545.1 km",
+      "predicted_answer": "Die Gesamtlänge der Zürcher Straßenabschnitte, auf denen Fahrverbot gilt, beträgt 545.1 km."
+    },
+    {
+      "question": "Wieviele Einwohner (Stand 2024, wirtschaftliche Wohnbevölkerung) kommen in der Stadt Zürich auf einen öffentlichen Strassenparkplatz? Runde auf eine ganze Zahl.",
+      "id": "82_oeffentlich_bevoelkerung",
+      "predicted_titles": [
+        "Öffentlich zugängliche Strassenparkplätze OGD",
+        "Bevölkerung der Stadt Zürich"
+      ],
+      "reference_titles": [
+        "Öffentlich zugängliche Strassenparkplätze OGD",
+        "Bevölkerung der Stadt Zürich"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 3.853222370147705,
+        "coding_tokens": 4461,
+        "coding_cost_usd": 0.012705,
+        "correct": true
+      },
+      "reference_answer": "10 Einwohner pro Parkplatz",
+      "predicted_answer": "Im Jahr 2024 kommen in der Stadt Zürich 10 Einwohner auf einen öffentlichen Strassenparkplatz."
+    },
+    {
+      "question": "Wieviele Brunnen hat es in einem Umkreis von 10 um die Adresse Poststrasse 1?",
+      "id": "83_brunnen_0",
+      "predicted_titles": [
+        "Brunnen"
+      ],
+      "reference_titles": [
+        "Brunnen"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 11.79104232788086,
+        "coding_tokens": 33779,
+        "coding_cost_usd": 0.090995,
+        "correct": true
+      },
+      "reference_answer": "Keine Brunnen im Umkreis von 10 m.",
+      "predicted_answer": "Es gibt keine Brunnen innerhalb eines 10-Meter-Radius um die Adresse Poststrasse 1."
+    },
+    {
+      "question": "Wieviele Brunnen hat es in einem Umkreis von 100 um die Adresse Poststrasse 1?",
+      "id": "83_brunnen_1",
+      "predicted_titles": [
+        "Brunnen"
+      ],
+      "reference_titles": [
+        "Brunnen"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 6.56847882270813,
+        "coding_tokens": 12615,
+        "coding_cost_usd": 0.034995,
+        "correct": false
+      },
+      "reference_answer": "8",
+      "predicted_answer": "Es gibt 1283 Brunnen im Umkreis von 100 Metern um die Adresse Poststrasse 1."
+    },
+    {
+      "question": "Wieviele Brunnen hat es in einem Umkreis von 300 um die Adresse Poststrasse 1?",
+      "id": "83_brunnen_2",
+      "predicted_titles": [
+        "Brunnen"
+      ],
+      "reference_titles": [
+        "Brunnen"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 15.390296459197998,
+        "coding_tokens": 47055,
+        "coding_cost_usd": 0.1249725,
+        "correct": true
+      },
+      "reference_answer": "23",
+      "predicted_answer": "Es gibt 23 Brunnen im Umkreis von 300 Metern um die Adresse Poststrasse 1."
+    },
+    {
+      "question": "Für was ist der Standort der Stadtpolizei am Gänzilooweg zuständig?",
+      "id": "84_stadtpolizei_0",
+      "predicted_titles": [
+        "Stadtpolizei"
+      ],
+      "reference_titles": [
+        "Stadtpolizei"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.404258489608765,
+        "coding_tokens": 14379,
+        "coding_cost_usd": 0.0377475,
+        "correct": true
+      },
+      "reference_answer": "Diensthunde-Kompetenz-Zentrum",
+      "predicted_answer": "Der Standort der Stadtpolizei am Gänzilooweg ist das Diensthunde-Kompetenz-Zentrum und wird von Daniel Bircher geleitet."
+    },
+    {
+      "question": "Für was ist der Standort der Stadtpolizei an der Schaffhauserstrasse 26 zuständig?",
+      "id": "84_stadtpolizei_1",
+      "predicted_titles": [
+        "Stadtpolizei"
+      ],
+      "reference_titles": [
+        "Stadtpolizei"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.425407648086548,
+        "coding_tokens": 14426,
+        "coding_cost_usd": 0.038015,
+        "correct": true
+      },
+      "reference_answer": "Verwaltungs- und Fahndungsaufträge",
+      "predicted_answer": "Der Standort der Stadtpolizei an der Schaffhauserstrasse 26 ist für Verwaltungs- und Fahndungsaufträge zuständig."
+    },
+    {
+      "question": "Was ist das durchschnittliche Verlegejahr (auf ganze Zahl gerundet) von Hydranten im Stadtkreis 6?",
+      "id": "85_hydranten_stadtkreise_0",
+      "predicted_titles": [
+        "Hydranten",
+        "Stadtkreise"
+      ],
+      "reference_titles": [
+        "Hydranten",
+        "Stadtkreise"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 6.052461385726929,
+        "coding_tokens": 11283,
+        "coding_cost_usd": 0.0303225,
+        "correct": true
+      },
+      "reference_answer": "1994",
+      "predicted_answer": "Das durchschnittliche Verlegejahr der Hydranten im Stadtkreis 6 ist 1994."
+    },
+    {
+      "question": "Was ist das durchschnittliche Verlegejahr (auf ganze Zahl gerundet) von Hydranten im Stadtkreis 11?",
+      "id": "85_hydranten_stadtkreise_1",
+      "predicted_titles": [
+        "Hydranten",
+        "Stadtkreise"
+      ],
+      "reference_titles": [
+        "Hydranten",
+        "Stadtkreise"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.81210470199585,
+        "coding_tokens": 11344,
+        "coding_cost_usd": 0.03076,
+        "correct": true
+      },
+      "reference_answer": "1992",
+      "predicted_answer": "Das durchschnittliche Verlegejahr der Hydranten im Stadtkreis 11 ist 1992."
+    },
+    {
+      "question": "Was ist das durchschnittliche Verlegejahr (auf ganze Zahl gerundet) von Hydranten im Stadtkreis 7?",
+      "id": "85_hydranten_stadtkreise_2",
+      "predicted_titles": [
+        "Hydranten",
+        "Stadtkreise"
+      ],
+      "reference_titles": [
+        "Hydranten",
+        "Stadtkreise"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.207461833953857,
+        "coding_tokens": 11389,
+        "coding_cost_usd": 0.030925,
+        "correct": true
+      },
+      "reference_answer": "1994",
+      "predicted_answer": "Das durchschnittliche Verlegejahr der Hydranten im Stadtkreis 7 ist 1994."
+    },
+    {
+      "question": "Was ist das durchschnittliche Verlegejahr (auf ganze Zahl gerundet) von Hydranten im Stadtkreis 8?",
+      "id": "85_hydranten_stadtkreise_3",
+      "predicted_titles": [
+        "Hydranten",
+        "Stadtkreise"
+      ],
+      "reference_titles": [
+        "Hydranten",
+        "Stadtkreise"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.060022592544556,
+        "coding_tokens": 11352,
+        "coding_cost_usd": 0.0308025,
+        "correct": true
+      },
+      "reference_answer": "1990",
+      "predicted_answer": "Das durchschnittliche Verlegejahr der Hydranten im Stadtkreis 8 ist 1990."
+    },
+    {
+      "question": "Wie heisst der Zürcher mit dem höchsten Jahreseinkommen?",
+      "id": "86_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Wieviel Prozent der Straftaten im Kreis 3 wurden 2024 von Ausländern begangen?",
+      "id": "87_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Wann wurde die FIFA-Strasse zuletzt saniert?",
+      "id": "88_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Aus welchem Material ist die Sitzbank an der Schaffhauserstrasse 40?",
+      "id": "89_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Was ist die Gesamtfläche des Parkhaus Coop Nordbrücke in Quadratmetern? Runde auf eine ganze Zahl.",
+      "id": "90_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Welches Zürcher Parkhaus hat die (im Durchschnitt) breitesten Parkplätze?",
+      "id": "91_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Was ist das Gesamtvolumen in Kubikmetern (gerundet auf ganze Zahl) der Schanzengasse Brücke?",
+      "id": "92_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Wieviele Objekte in der Stadt Zürich sind oder waren mit Asbest belastet?",
+      "id": "93_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Was ist der lateinische Name der Baumart, welche gemäss Alleenkonzept an der Oberwiesenstrasse gepflanzt werden soll?",
+      "id": "94_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Welche Pizzeria im Kreis 5 hat die besten Bewertungen?",
+      "id": "95_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Wieviel kostet ein Parkplatz für drei Stunden im Parkhaus ETH Hauptgebäude?",
+      "id": "96_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Welches ist der beste Kreis in Zürich?",
+      "id": "97_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Wie geht es dir?",
+      "id": "98_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Um welchen Faktor höher ist die Baumdichte in der Stadt Zürich verglichen mit der Stadt Wien? Runde auf eine Nachkommastelle.",
+      "id": "99_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Wieviele CHF (runde auf eine ganze Zahl) höher ist die Median Monatsmiete für eine 3.5 Zimmer Wohnung in Zürich im Vergleich zur Stadt Frauenfeld?",
+      "id": "100_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Bei einem Umzug innerhalb der Stadt Zürich, was ist die Frist für das Melden der Adressänderung?",
+      "id": "101_no_relevant_datasets",
+      "predicted_titles": [],
+      "reference_titles": [],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "correct": true
+      }
+    },
+    {
+      "question": "Grenzen die statistischen Quartiere Sihlfeld und Enge aneinander?",
+      "id": "102_statistische_0",
+      "predicted_titles": [
+        "Statistische Quartiere"
+      ],
+      "reference_titles": [
+        "Statistische Quartiere"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.119628190994263,
+        "coding_tokens": 9769,
+        "coding_cost_usd": 0.0262375,
+        "correct": true
+      },
+      "reference_answer": "Ja",
+      "predicted_answer": "Die statistischen Quartiere Sihlfeld und Enge grenzen aneinander."
+    },
+    {
+      "question": "Grenzen die statistischen Quartiere Mühlebach und Witikon aneinander?",
+      "id": "102_statistische_1",
+      "predicted_titles": [
+        "Statistische Quartiere"
+      ],
+      "reference_titles": [
+        "Statistische Quartiere"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 3.8402481079101562,
+        "coding_tokens": 4864,
+        "coding_cost_usd": 0.0137575,
+        "correct": true
+      },
+      "reference_answer": "Nein",
+      "predicted_answer": "Die statistischen Quartiere Mühlebach und Witikon grenzen nicht aneinander."
+    },
+    {
+      "question": "Grenzen die statistischen Quartiere Fluntern und Hirzenbach aneinander?",
+      "id": "102_statistische_2",
+      "predicted_titles": [
+        "Statistische Quartiere"
+      ],
+      "reference_titles": [
+        "Statistische Quartiere"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.344834566116333,
+        "coding_tokens": 14729,
+        "coding_cost_usd": 0.0388775,
+        "correct": true
+      },
+      "reference_answer": "Ja",
+      "predicted_answer": "Die statistischen Quartiere Fluntern und Hirzenbach grenzen aneinander."
+    },
+    {
+      "question": "Grenzen die statistischen Quartiere Friesenberg und Werd aneinander?",
+      "id": "102_statistische_3",
+      "predicted_titles": [
+        "Statistische Quartiere"
+      ],
+      "reference_titles": [
+        "Statistische Quartiere"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.840548992156982,
+        "coding_tokens": 9749,
+        "coding_cost_usd": 0.0261125,
+        "correct": true
+      },
+      "reference_answer": "Nein",
+      "predicted_answer": "Die statistischen Quartiere Friesenberg und Werd grenzen nicht aneinander."
+    },
+    {
+      "question": "Welche Stadtkreise grenzen an den Kreis 6 an?",
+      "id": "103_stadtkreise_0",
+      "predicted_titles": [
+        "Stadtkreise"
+      ],
+      "reference_titles": [
+        "Stadtkreise"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.865371227264404,
+        "coding_tokens": 9102,
+        "coding_cost_usd": 0.0247125,
+        "correct": true
+      },
+      "reference_answer": "1, 5, 7, 10, 11, 12",
+      "predicted_answer": "Die Stadtkreise, die an Kreis 6 angrenzen, sind: Kreis 11, Kreis 12, Kreis 10, Kreis 1, Kreis 5 und Kreis 7."
+    },
+    {
+      "question": "Welche Stadtkreise grenzen an den Kreis 5 an?",
+      "id": "103_stadtkreise_1",
+      "predicted_titles": [
+        "Stadtkreise"
+      ],
+      "reference_titles": [
+        "Stadtkreise"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.737636089324951,
+        "coding_tokens": 9187,
+        "coding_cost_usd": 0.0251575,
+        "correct": true
+      },
+      "reference_answer": "1, 4, 6, 9, 10",
+      "predicted_answer": "Die Stadtkreise, die an den Kreis 5 angrenzen, sind: Kreis 6, Kreis 10, Kreis 4, Kreis 1 und Kreis 9."
+    },
+    {
+      "question": "Welche Stadtkreise grenzen an den Kreis 4 an?",
+      "id": "103_stadtkreise_2",
+      "predicted_titles": [
+        "Stadtkreise"
+      ],
+      "reference_titles": [
+        "Stadtkreise"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.461957931518555,
+        "coding_tokens": 9127,
+        "coding_cost_usd": 0.0248725,
+        "correct": true
+      },
+      "reference_answer": "1, 2, 3, 5, 9",
+      "predicted_answer": "Die Stadtkreise, die an Kreis 4 angrenzen, sind: Kreis 1, Kreis 9, Kreis 5, Kreis 3 und Kreis 2."
+    },
+    {
+      "question": "Welche Stadtkreise grenzen an den Kreis 11 an?",
+      "id": "103_stadtkreise_3",
+      "predicted_titles": [
+        "Stadtkreise"
+      ],
+      "reference_titles": [
+        "Stadtkreise"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.601951837539673,
+        "coding_tokens": 9095,
+        "coding_cost_usd": 0.0246875,
+        "correct": true
+      },
+      "reference_answer": "6, 10, 12",
+      "predicted_answer": "Die Stadtkreise, die an Kreis 11 angrenzen, sind: Kreis 6, Kreis 12 und Kreis 10."
+    },
+    {
+      "question": "Kreuzen sich die Strassen Waldhüslistrasse und Strickhofstrasse? Falls ja, gib auch die Koordinaten des Kreuzungspunkts an (EPSG:2056).",
+      "id": "104_strassennamenverzeichnis_0",
+      "predicted_titles": [
+        "Strassennamenverzeichnis"
+      ],
+      "reference_titles": [
+        "Strassennamenverzeichnis"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 6.39098048210144,
+        "coding_tokens": 28022,
+        "coding_cost_usd": 0.073205,
+        "correct": true
+      },
+      "reference_answer": "Ja, (2685199.463, 1249991.844)",
+      "predicted_answer": "Die Straßen Waldhüslistrasse und Strickhofstrasse schneiden sich. Der Kreuzungspunkt hat die Koordinaten (EPSG:2056): 2685199.463, 1249991.844."
+    },
+    {
+      "question": "Kreuzen sich die Strassen Streitholzstrasse und Waldgartenstrasse? Falls ja, gib auch die Koordinaten des Kreuzungspunkts an (EPSG:2056).",
+      "id": "104_strassennamenverzeichnis_1",
+      "predicted_titles": [
+        "Strassennamenverzeichnis"
+      ],
+      "reference_titles": [
+        "Strassennamenverzeichnis"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 7.057579755783081,
+        "coding_tokens": 27946,
+        "coding_cost_usd": 0.0726325,
+        "correct": true
+      },
+      "reference_answer": "Nein.",
+      "predicted_answer": "Die Straßen Streitholzstrasse und Waldgartenstrasse schneiden sich nicht."
+    },
+    {
+      "question": "Kreuzen sich die Strassen Brandweg und Liebiseggweg? Falls ja, gib auch die Koordinaten des Kreuzungspunkts an (EPSG:2056).",
+      "id": "104_strassennamenverzeichnis_2",
+      "predicted_titles": [
+        "Strassennamenverzeichnis"
+      ],
+      "reference_titles": [
+        "Strassennamenverzeichnis"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 7.645604848861694,
+        "coding_tokens": 27902,
+        "coding_cost_usd": 0.0724175,
+        "correct": true
+      },
+      "reference_answer": "Nein.",
+      "predicted_answer": "Die Straßen Brandweg und Liebiseggweg schneiden sich nicht."
+    },
+    {
+      "question": "Kreuzen sich die Strassen Weinbergstrasse und Ottikerstrasse? Falls ja, gib auch die Koordinaten des Kreuzungspunkts an (EPSG:2056).",
+      "id": "104_strassennamenverzeichnis_3",
+      "predicted_titles": [
+        "Strassennamenverzeichnis"
+      ],
+      "reference_titles": [
+        "Strassennamenverzeichnis"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 7.648294925689697,
+        "coding_tokens": 28114,
+        "coding_cost_usd": 0.0737575,
+        "correct": true
+      },
+      "reference_answer": "Ja, (2683338.715, 1248882.121)",
+      "predicted_answer": "Ja, die Straßen Weinbergstrasse und Ottikerstrasse kreuzen sich. Der Kreuzungspunkt hat die Koordinaten (EPSG:2056): X=2683338.715, Y=1248882.121."
+    },
+    {
+      "question": "Liegt das statistische Quartier Hirslanden im Stadtkreis 7?",
+      "id": "105_statistische_0",
+      "predicted_titles": [
+        "Statistische Quartiere"
+      ],
+      "reference_titles": [
+        "Statistische Quartiere"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 3.1864402294158936,
+        "coding_tokens": 4823,
+        "coding_cost_usd": 0.01334,
+        "correct": true
+      },
+      "reference_answer": "Ja",
+      "predicted_answer": "Das statistische Quartier Hirslanden liegt im Stadtkreis 7: True."
+    },
+    {
+      "question": "Liegt das statistische Quartier Witikon im Stadtkreis 7?",
+      "id": "105_statistische_1",
+      "predicted_titles": [
+        "Statistische Quartiere"
+      ],
+      "reference_titles": [
+        "Statistische Quartiere"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 3.096789836883545,
+        "coding_tokens": 4817,
+        "coding_cost_usd": 0.0132875,
+        "correct": true
+      },
+      "reference_answer": "Ja",
+      "predicted_answer": "Das statistische Quartier Witikon liegt im Stadtkreis 7: True."
+    },
+    {
+      "question": "Liegt das statistische Quartier Enge im Stadtkreis 7?",
+      "id": "105_statistische_2",
+      "predicted_titles": [
+        "Statistische Quartiere"
+      ],
+      "reference_titles": [
+        "Statistische Quartiere"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.138155221939087,
+        "coding_tokens": 9726,
+        "coding_cost_usd": 0.0260025,
+        "correct": true
+      },
+      "reference_answer": "Nein",
+      "predicted_answer": "Das statistische Quartier Enge liegt im Stadtkreis 2 und nicht im Stadtkreis 7."
+    },
+    {
+      "question": "Liegt das statistische Quartier Escher Wyss im Stadtkreis 7?",
+      "id": "105_statistische_3",
+      "predicted_titles": [
+        "Statistische Quartiere"
+      ],
+      "reference_titles": [
+        "Statistische Quartiere"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.055785894393921,
+        "coding_tokens": 9735,
+        "coding_cost_usd": 0.026085,
+        "correct": true
+      },
+      "reference_answer": "Nein",
+      "predicted_answer": "Das statistische Quartier Escher Wyss liegt im Stadtkreis 5, nicht im Stadtkreis 7."
+    },
+    {
+      "question": "Verläuft die Strasse Krönleinstrasse vollständig innerhalb des statistischen Quartiers Fluntern?",
+      "id": "106_statistische_strassennamenverzeichnis_0",
+      "predicted_titles": [
+        "Statistische Quartiere",
+        "Strassennamenverzeichnis"
+      ],
+      "reference_titles": [
+        "Statistische Quartiere",
+        "Strassennamenverzeichnis"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 8.322205543518066,
+        "coding_tokens": 34706,
+        "coding_cost_usd": 0.089345,
+        "correct": true
+      },
+      "reference_answer": "Ja",
+      "predicted_answer": "Die Krönleinstrasse verläuft vollständig innerhalb des statistischen Quartiers Fluntern."
+    },
+    {
+      "question": "Verläuft die Strasse Batteriestrasse vollständig innerhalb des statistischen Quartiers Fluntern?",
+      "id": "106_statistische_strassennamenverzeichnis_1",
+      "predicted_titles": [
+        "Statistische Quartiere",
+        "Strassennamenverzeichnis"
+      ],
+      "reference_titles": [
+        "Statistische Quartiere",
+        "Strassennamenverzeichnis"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 6.512305021286011,
+        "coding_tokens": 23135,
+        "coding_cost_usd": 0.0603425,
+        "correct": true
+      },
+      "reference_answer": "Nein",
+      "predicted_answer": "Die Batteriestrasse verläuft nicht vollständig innerhalb des statistischen Quartiers Fluntern."
+    },
+    {
+      "question": "Verläuft die Strasse Plattenstrasse vollständig innerhalb des statistischen Quartiers Fluntern?",
+      "id": "106_statistische_strassennamenverzeichnis_2",
+      "predicted_titles": [
+        "Statistische Quartiere",
+        "Strassennamenverzeichnis"
+      ],
+      "reference_titles": [
+        "Statistische Quartiere",
+        "Strassennamenverzeichnis"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.123692989349365,
+        "coding_tokens": 23033,
+        "coding_cost_usd": 0.0599075,
+        "correct": true
+      },
+      "reference_answer": "Nein",
+      "predicted_answer": "Die Plattenstrasse verläuft nicht vollständig innerhalb des statistischen Quartiers Fluntern."
+    },
+    {
+      "question": "Verläuft die Strasse Kraftstrasse vollständig innerhalb des statistischen Quartiers Fluntern?",
+      "id": "106_statistische_strassennamenverzeichnis_3",
+      "predicted_titles": [
+        "Statistische Quartiere",
+        "Strassennamenverzeichnis"
+      ],
+      "reference_titles": [
+        "Statistische Quartiere",
+        "Strassennamenverzeichnis"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 7.2049641609191895,
+        "coding_tokens": 34710,
+        "coding_cost_usd": 0.089385,
+        "correct": true
+      },
+      "reference_answer": "Ja",
+      "predicted_answer": "Die Strasse Kraftstrasse verläuft vollständig innerhalb des statistischen Quartiers Fluntern."
+    },
+    {
+      "question": "Was ist die summierte Fläche der Stadtkreise 1, 2, 3 in km², gerundet auf eine Nachkommastelle?",
+      "id": "107_stadtkreise_0",
+      "predicted_titles": [
+        "Stadtkreise"
+      ],
+      "reference_titles": [
+        "Stadtkreise"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.914918899536133,
+        "coding_tokens": 14019,
+        "coding_cost_usd": 0.0378375,
+        "correct": true
+      },
+      "reference_answer": "21.5 km²",
+      "predicted_answer": "Die summierte Fläche der Stadtkreise 1, 2 und 3 beträgt 21,5 km²."
+    },
+    {
+      "question": "Was ist die summierte Fläche der Stadtkreise 7, 9 in km², gerundet auf eine Nachkommastelle?",
+      "id": "107_stadtkreise_1",
+      "predicted_titles": [
+        "Stadtkreise"
+      ],
+      "reference_titles": [
+        "Stadtkreise"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.83856463432312,
+        "coding_tokens": 9230,
+        "coding_cost_usd": 0.025445,
+        "correct": true
+      },
+      "reference_answer": "27.1 km²",
+      "predicted_answer": "Die summierte Fläche der Stadtkreise 7 und 9 beträgt **27,1 km²**."
+    },
+    {
+      "question": "Was ist die summierte Fläche der Stadtkreise 5, 6, 4, 1, 12 in km², gerundet auf eine Nachkommastelle?",
+      "id": "107_stadtkreise_2",
+      "predicted_titles": [
+        "Stadtkreise"
+      ],
+      "reference_titles": [
+        "Stadtkreise"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 8.254403829574585,
+        "coding_tokens": 19343,
+        "coding_cost_usd": 0.05276,
+        "correct": true
+      },
+      "reference_answer": "17.8 km²",
+      "predicted_answer": "Die summierte Fläche der Stadtkreise 5, 6, 4, 1 und 12 beträgt 17,8 km²."
+    },
+    {
+      "question": "Was ist die summierte Fläche der Stadtkreise 5, 4, 11 in km², gerundet auf eine Nachkommastelle?",
+      "id": "107_stadtkreise_3",
+      "predicted_titles": [
+        "Stadtkreise"
+      ],
+      "reference_titles": [
+        "Stadtkreise"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.907056093215942,
+        "coding_tokens": 9278,
+        "coding_cost_usd": 0.02576,
+        "correct": true
+      },
+      "reference_answer": "18.3 km²",
+      "predicted_answer": "Die summierte Fläche der Stadtkreise 5, 4 und 11 beträgt 18.3 km²."
+    },
+    {
+      "question": "Sind die Velo Abstellplätze mit Objekt-ID 104472 und 11893 im gleichen Kleinquartier (Kleinquartiere Stand 2024)?",
+      "id": "108_kleinquartiere_zweiradparkierung_0",
+      "predicted_titles": [
+        "Kleinquartiere",
+        "Zweiradparkierung"
+      ],
+      "reference_titles": [
+        "Kleinquartiere",
+        "Zweiradparkierung"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 97.21672415733337,
+        "coding_tokens": 292436,
+        "coding_cost_usd": 0.788195,
+        "correct": false
+      },
+      "reference_answer": "Ja",
+      "predicted_answer": "Unfortunately, I was not able to find a solution to your request."
+    },
+    {
+      "question": "Sind die Velo Abstellplätze mit Objekt-ID 105056 und 11862 im gleichen Kleinquartier (Kleinquartiere Stand 2024)?",
+      "id": "108_kleinquartiere_zweiradparkierung_1",
+      "predicted_titles": [
+        "Kleinquartiere",
+        "Zweiradparkierung"
+      ],
+      "reference_titles": [
+        "Kleinquartiere",
+        "Zweiradparkierung"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 7.778174161911011,
+        "coding_tokens": 21361,
+        "coding_cost_usd": 0.0565225,
+        "correct": true
+      },
+      "reference_answer": "Nein",
+      "predicted_answer": "Die Velo-Abstellplätze mit Objekt-ID 105056 und 11862 befinden sich nicht im gleichen Kleinquartier (Stand 2024)."
+    },
+    {
+      "question": "Sind die Velo Abstellplätze mit Objekt-ID 105049 und 13486 im gleichen Kleinquartier (Kleinquartiere Stand 2024)?",
+      "id": "108_kleinquartiere_zweiradparkierung_2",
+      "predicted_titles": [
+        "Kleinquartiere",
+        "Zweiradparkierung"
+      ],
+      "reference_titles": [
+        "Kleinquartiere",
+        "Zweiradparkierung"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 11.461681604385376,
+        "coding_tokens": 32976,
+        "coding_cost_usd": 0.086475,
+        "correct": true
+      },
+      "reference_answer": "Ja",
+      "predicted_answer": "Die Velo Abstellplätze mit Objekt-ID 105049 und 13486 befinden sich im gleichen Kleinquartier."
+    },
+    {
+      "question": "Sind die Velo Abstellplätze mit Objekt-ID 13799 und 13491 im gleichen Kleinquartier (Kleinquartiere Stand 2024)?",
+      "id": "108_kleinquartiere_zweiradparkierung_3",
+      "predicted_titles": [
+        "Kleinquartiere",
+        "Zweiradparkierung"
+      ],
+      "reference_titles": [
+        "Kleinquartiere",
+        "Zweiradparkierung"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 7.196670770645142,
+        "coding_tokens": 21381,
+        "coding_cost_usd": 0.056655,
+        "correct": true
+      },
+      "reference_answer": "Nein",
+      "predicted_answer": "Die Velo-Abstellplätze mit Objekt-ID 13799 und 13491 befinden sich nicht im gleichen Kleinquartier (Stand 2024)."
+    },
+    {
+      "question": "(Fachplanung Hitzeminderung) Wie viel Prozent der Gesamtfläche der als 'Hotspot Tag' markierten Flächen überschneiden sich mit den Flächen, die als 'Hotspot Nachtsituation' markiert sind? Runde auf zwei Nachkommastellen.",
+      "id": "109_fachplanung_0",
+      "predicted_titles": [
+        "Fachplanung Hitzeminderung OGD"
+      ],
+      "reference_titles": [
+        "Fachplanung Hitzeminderung OGD"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.9600136280059814,
+        "coding_tokens": 10067,
+        "coding_cost_usd": 0.027755,
+        "correct": true
+      },
+      "reference_answer": "80.24 %",
+      "predicted_answer": "Der prozentuale Anteil der Gesamtfläche der als 'Hotspot Tag' markierten Flächen, die sich mit den Flächen der 'Hotspot Nachtsituation' überschneiden, beträgt 80.24%."
+    },
+    {
+      "question": "(Fachplanung Hitzeminderung) Wie viel Prozent der Gesamtfläche der als 'Hotspot Tag/Nacht' markierten Flächen überschneiden sich mit den Flächen, die als 'Hotspot Nachtsituation' markiert sind? Runde auf zwei Nachkommastellen.",
+      "id": "109_fachplanung_1",
+      "predicted_titles": [
+        "Fachplanung Hitzeminderung OGD"
+      ],
+      "reference_titles": [
+        "Fachplanung Hitzeminderung OGD"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.738837957382202,
+        "coding_tokens": 10059,
+        "coding_cost_usd": 0.027735,
+        "correct": true
+      },
+      "reference_answer": "88.45 %",
+      "predicted_answer": "Die Fläche der als 'Hotspot Tag/Nacht' markierten Gebiete überschneidet sich zu 88.45% mit den Flächen, die als 'Hotspot Nachtsituation' markiert sind."
+    },
+    {
+      "question": "Was waren die zwei statistischen Quartiere mit dem höchsten Ausländeranteil in 1999, und grenzen die Quartiere aneinander?",
+      "id": "110_statistische_bevoelkerung_0",
+      "predicted_titles": [
+        "Statistische Quartiere",
+        "Bevölkerung nach Stadtquartier, Herkunft, Geschlecht und Alter"
+      ],
+      "reference_titles": [
+        "Statistische Quartiere",
+        "Bevölkerung nach Stadtquartier, Herkunft, Geschlecht und Alter"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 7.484736442565918,
+        "coding_tokens": 15203,
+        "coding_cost_usd": 0.042155,
+        "correct": false
+      },
+      "reference_answer": "Hard und Gewerbeschule, nein",
+      "predicted_answer": "Die zwei statistischen Quartiere mit dem höchsten Ausländeranteil im Jahr 1999 sind 'City' und 'Hochschulen'. Diese Quartiere grenzen aneinander."
+    },
+    {
+      "question": "Was waren die zwei statistischen Quartiere mit dem höchsten Ausländeranteil in 2006, und grenzen die Quartiere aneinander?",
+      "id": "110_statistische_bevoelkerung_1",
+      "predicted_titles": [
+        "Statistische Quartiere",
+        "Bevölkerung nach Stadtquartier, Herkunft, Geschlecht und Alter"
+      ],
+      "reference_titles": [
+        "Statistische Quartiere",
+        "Bevölkerung nach Stadtquartier, Herkunft, Geschlecht und Alter"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 9.394299507141113,
+        "coding_tokens": 15313,
+        "coding_cost_usd": 0.043135,
+        "correct": true
+      },
+      "reference_answer": "Hard und Langstrasse, ja",
+      "predicted_answer": "Die zwei statistischen Quartiere mit dem höchsten Ausländeranteil im Jahr 2006 sind 'Hard' mit einem Anteil von 44.64% und 'Langstrasse' mit einem Anteil von 40.85%. Diese Quartiere grenzen aneinander."
+    },
+    {
+      "question": "Was waren die zwei statistischen Quartiere mit dem höchsten Ausländeranteil in 2020, und grenzen die Quartiere aneinander?",
+      "id": "110_statistische_bevoelkerung_2",
+      "predicted_titles": [
+        "Statistische Quartiere",
+        "Bevölkerung nach Stadtquartier, Herkunft, Geschlecht und Alter"
+      ],
+      "reference_titles": [
+        "Statistische Quartiere",
+        "Bevölkerung nach Stadtquartier, Herkunft, Geschlecht und Alter"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 7.276171684265137,
+        "coding_tokens": 15230,
+        "coding_cost_usd": 0.04226,
+        "correct": false
+      },
+      "reference_answer": "Schwamendingen-Mitte und Seefeld, nein",
+      "predicted_answer": "Die zwei statistischen Quartiere mit dem höchsten Ausländeranteil im Jahr 2020 sind 'Hochschulen' und 'City'. Der Ausländeranteil beträgt 13.93% bzw. 13.87%. Diese Quartiere grenzen aneinander."
+    },
+    {
+      "question": "Was sind die Öffnungszeiten des Stimmlokals im Pfarreizentrum Heilig Geist?",
+      "id": "111_stimmlokale_0",
+      "predicted_titles": [
+        "Stimmlokale"
+      ],
+      "reference_titles": [
+        "Stimmlokale"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.309771299362183,
+        "coding_tokens": 17698,
+        "coding_cost_usd": 0.0460525,
+        "correct": true
+      },
+      "reference_answer": "Sonntag 10.00-12.00 Uhr",
+      "predicted_answer": "Die Öffnungszeiten des Stimmlokals im Pfarreizentrum Heilig Geist sind Sonntag von 10:00 bis 12:00 Uhr."
+    },
+    {
+      "question": "Was sind die Öffnungszeiten des Stimmlokals im Schulhaus Allmend?",
+      "id": "111_stimmlokale_1",
+      "predicted_titles": [
+        "Stimmlokale"
+      ],
+      "reference_titles": [
+        "Stimmlokale"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.770022392272949,
+        "coding_tokens": 17663,
+        "coding_cost_usd": 0.0458525,
+        "correct": true
+      },
+      "reference_answer": "Sonntag 10.00-12.00 Uhr",
+      "predicted_answer": "Die Öffnungszeiten des Stimmlokals im Schulhaus Allmend sind: Sonntag von 10:00 bis 12:00 Uhr."
+    },
+    {
+      "question": "Was sind die Öffnungszeiten des Stimmlokals im Stadthaus?",
+      "id": "111_stimmlokale_2",
+      "predicted_titles": [
+        "Stimmlokale"
+      ],
+      "reference_titles": [
+        "Stimmlokale"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.627207279205322,
+        "coding_tokens": 17689,
+        "coding_cost_usd": 0.0460825,
+        "correct": true
+      },
+      "reference_answer": "Samstag 07.00-17.00 Uhr, Sonntag 07.00-12.00 Uhr",
+      "predicted_answer": "Die Öffnungszeiten des Stimmlokals im Stadthaus (Adresse: Stadthausquai 17) sind: Samstag von 07:00 bis 17:00 Uhr und Sonntag von 07:00 bis 12:00 Uhr."
+    },
+    {
+      "question": "Gab es im Stadtkreis mit dem tiefsten Median-Vermögen (Stand 1999) von Verheirateten weniger von der Stadt als 'gute Bauten' ausgezeichnete Objekte (über alle Jahre) als im Kreis mit dem höchsten Median-Vermögen? Wenn ja, wieviele weniger?",
+      "id": "112_median_auszeichnung_stadtkreise_0",
+      "predicted_titles": [
+        "Median-Vermögen steuerpflichtiger natürlicher Personen nach Jahr, Steuertarif und Stadtkreis.",
+        "Auszeichnung für gute Bauten",
+        "Stadtkreise"
+      ],
+      "reference_titles": [
+        "Median-Vermögen steuerpflichtiger natürlicher Personen nach Jahr, Steuertarif und Stadtkreis.",
+        "Auszeichnung für gute Bauten",
+        "Stadtkreise"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 8.50368046760559,
+        "coding_tokens": 41432,
+        "coding_cost_usd": 0.1080125,
+        "correct": false
+      },
+      "reference_answer": "Ja, nämlich 17 weniger.",
+      "predicted_answer": "Im Kreis mit dem höchsten Median-Vermögen (Kreis 7) gab es 0 ausgezeichnete Bauten, während es im Kreis mit dem niedrigsten Median-Vermögen (Kreis 4) 0 ausgezeichnete Bauten gab. Die Differenz beträgt 0 Bauten."
+    },
+    {
+      "question": "Gab es im Stadtkreis mit dem tiefsten Median-Vermögen (Stand 2004) von Verheirateten weniger von der Stadt als 'gute Bauten' ausgezeichnete Objekte (über alle Jahre) als im Kreis mit dem höchsten Median-Vermögen? Wenn ja, wieviele weniger?",
+      "id": "112_median_auszeichnung_stadtkreise_1",
+      "predicted_titles": [
+        "Median-Vermögen steuerpflichtiger natürlicher Personen nach Jahr, Steuertarif und Stadtkreis.",
+        "Auszeichnung für gute Bauten",
+        "Stadtkreise"
+      ],
+      "reference_titles": [
+        "Median-Vermögen steuerpflichtiger natürlicher Personen nach Jahr, Steuertarif und Stadtkreis.",
+        "Auszeichnung für gute Bauten",
+        "Stadtkreise"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 8.094669580459595,
+        "coding_tokens": 27640,
+        "coding_cost_usd": 0.0737125,
+        "correct": false
+      },
+      "reference_answer": "Ja, nämlich 17 weniger.",
+      "predicted_answer": "Im Jahr 2004 hatte der Stadtkreis mit dem höchsten Median-Vermögen (Kreis 7, 336.5 TCHF) und der mit dem niedrigsten Median-Vermögen (Kreis 4, 4.0 TCHF) jeweils keine von der Stadt ausgezeichneten Bauten. Daher beträgt die Differenz 0."
+    },
+    {
+      "question": "Gab es im Stadtkreis mit dem tiefsten Median-Vermögen (Stand 2010) von Verheirateten weniger von der Stadt als 'gute Bauten' ausgezeichnete Objekte (über alle Jahre) als im Kreis mit dem höchsten Median-Vermögen? Wenn ja, wieviele weniger?",
+      "id": "112_median_auszeichnung_stadtkreise_2",
+      "predicted_titles": [
+        "Median-Vermögen steuerpflichtiger natürlicher Personen nach Jahr, Steuertarif und Stadtkreis.",
+        "Auszeichnung für gute Bauten",
+        "Stadtkreise"
+      ],
+      "reference_titles": [
+        "Median-Vermögen steuerpflichtiger natürlicher Personen nach Jahr, Steuertarif und Stadtkreis.",
+        "Auszeichnung für gute Bauten",
+        "Stadtkreise"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 6.438692331314087,
+        "coding_tokens": 27442,
+        "coding_cost_usd": 0.0725725,
+        "correct": false
+      },
+      "reference_answer": "Ja, nämlich 17 weniger.",
+      "predicted_answer": "Im Jahr 2010 hatten sowohl der Stadtkreis mit dem höchsten als auch der mit dem niedrigsten Median-Vermögen für Verheiratete keine von der Stadt ausgezeichneten Bauten. Daher gibt es keine Differenz in der Anzahl."
+    },
+    {
+      "question": "Hat es im Stadtkreis mit dem tiefsten Median-Vermögen (Stand 1999) von Verheirateten weniger städtische Familiengärten als im Kreis mit dem höchsten Median-Vermögen? Wenn ja, wieviele mehr?",
+      "id": "113_median_stadtkreise_familiengaerten_0",
+      "predicted_titles": [
+        "Median-Vermögen steuerpflichtiger natürlicher Personen nach Jahr, Steuertarif und Stadtkreis.",
+        "Stadtkreise",
+        "Familiengärten"
+      ],
+      "reference_titles": [
+        "Median-Vermögen steuerpflichtiger natürlicher Personen nach Jahr, Steuertarif und Stadtkreis.",
+        "Stadtkreise",
+        "Familiengärten"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 8.41273021697998,
+        "coding_tokens": 20719,
+        "coding_cost_usd": 0.0570625,
+        "correct": false
+      },
+      "reference_answer": "Ja, nämlich 8 weniger.",
+      "predicted_answer": "Im Jahr 1999 hatten sowohl der Stadtkreis mit dem höchsten Median-Vermögen (Kreis 7) als auch der mit dem niedrigsten Median-Vermögen (Kreis 4) keine städtischen Familiengärten. Daher gibt es keinen Unterschied in der Anzahl der Familiengärten zwischen diesen Kreisen."
+    },
+    {
+      "question": "Hat es im Stadtkreis mit dem tiefsten Median-Vermögen (Stand 2009) von Verheirateten weniger städtische Familiengärten als im Kreis mit dem höchsten Median-Vermögen? Wenn ja, wieviele mehr?",
+      "id": "113_median_stadtkreise_familiengaerten_1",
+      "predicted_titles": [
+        "Median-Vermögen steuerpflichtiger natürlicher Personen nach Jahr, Steuertarif und Stadtkreis.",
+        "Stadtkreise",
+        "Familiengärten"
+      ],
+      "reference_titles": [
+        "Median-Vermögen steuerpflichtiger natürlicher Personen nach Jahr, Steuertarif und Stadtkreis.",
+        "Stadtkreise",
+        "Familiengärten"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 7.099749326705933,
+        "coding_tokens": 20512,
+        "coding_cost_usd": 0.055825,
+        "correct": false
+      },
+      "reference_answer": "Ja, nämlich 8 weniger.",
+      "predicted_answer": "Im Stadtkreis mit dem höchsten Median-Vermögen (Kreis 7) und dem Stadtkreis mit dem niedrigsten Median-Vermögen (Kreis 4) gibt es keine städtischen Familiengärten. Daher gibt es keine Differenz in der Anzahl der Familiengärten zwischen diesen Kreisen."
+    },
+    {
+      "question": "Hat es im Stadtkreis mit dem tiefsten Median-Vermögen (Stand 2022) von Verheirateten weniger städtische Familiengärten als im Kreis mit dem höchsten Median-Vermögen? Wenn ja, wieviele mehr?",
+      "id": "113_median_stadtkreise_familiengaerten_2",
+      "predicted_titles": [
+        "Median-Vermögen steuerpflichtiger natürlicher Personen nach Jahr, Steuertarif und Stadtkreis.",
+        "Stadtkreise",
+        "Familiengärten"
+      ],
+      "reference_titles": [
+        "Median-Vermögen steuerpflichtiger natürlicher Personen nach Jahr, Steuertarif und Stadtkreis.",
+        "Stadtkreise",
+        "Familiengärten"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 15.444711208343506,
+        "coding_tokens": 31443,
+        "coding_cost_usd": 0.0857325,
+        "correct": true
+      },
+      "reference_answer": "Ja, nämlich 7 weniger.",
+      "predicted_answer": "Im Stadtkreis mit dem tiefsten Median-Vermögen (Kreis 12) gibt es 3 städtische Familiengärten, während es im Kreis mit dem höchsten Median-Vermögen (Kreis 7) 10 gibt. Der Unterschied beträgt 7 Gärten."
+    },
+    {
+      "question": "In welchem Zürcher Stadtquartier war 2008 die Sozialhilfequote am höchsten, und wie hoch ist sie (runde auf zwei Nachkommastellen)?",
+      "id": "114_sozialhilfebeziehende_0",
+      "predicted_titles": [
+        "Sozialhilfebeziehende der Stadt Zürich nach Stadtquartier"
+      ],
+      "reference_titles": [
+        "Sozialhilfebeziehende der Stadt Zürich nach Stadtquartier"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.687224626541138,
+        "coding_tokens": 7442,
+        "coding_cost_usd": 0.0207875,
+        "correct": true
+      },
+      "reference_answer": "City mit 13.28 %",
+      "predicted_answer": "Das Stadtquartier mit der höchsten Sozialhilfequote im Jahr 2008 ist City mit einer Quote von 13.28."
+    },
+    {
+      "question": "In welchem Zürcher Stadtquartier war 2018 die Sozialhilfequote am höchsten, und wie hoch ist sie (runde auf zwei Nachkommastellen)?",
+      "id": "114_sozialhilfebeziehende_1",
+      "predicted_titles": [
+        "Sozialhilfebeziehende der Stadt Zürich nach Stadtquartier"
+      ],
+      "reference_titles": [
+        "Sozialhilfebeziehende der Stadt Zürich nach Stadtquartier"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 4.477567911148071,
+        "coding_tokens": 7455,
+        "coding_cost_usd": 0.0208725,
+        "correct": true
+      },
+      "reference_answer": "City mit 12.62 %",
+      "predicted_answer": "Das Stadtquartier mit der höchsten Sozialhilfequote im Jahr 2018 ist City mit einer Quote von 12.62."
+    },
+    {
+      "question": "In welchem Zürcher Stadtquartier war 2023 die Sozialhilfequote am höchsten, und wie hoch ist sie (runde auf zwei Nachkommastellen)?",
+      "id": "114_sozialhilfebeziehende_2",
+      "predicted_titles": [
+        "Sozialhilfebeziehende der Stadt Zürich nach Stadtquartier"
+      ],
+      "reference_titles": [
+        "Sozialhilfebeziehende der Stadt Zürich nach Stadtquartier"
+      ],
+      "results": {
+        "validation_accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "coding_latency": 5.457617998123169,
+        "coding_tokens": 7394,
+        "coding_cost_usd": 0.0206525,
+        "correct": true
+      },
+      "reference_answer": "City mit 10.0 %",
+      "predicted_answer": "Im Jahr 2023 hatte das Zürcher Stadtquartier 'City' die höchste Sozialhilfequote mit einem Wert von 10.00%."
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+   "title": "Verkehrslastklassen",
+   "metadata_date": "2020-04-28T11:16:51",
+   "updateFrequency": "asNeeded",
+   "purpose": "Verkehrslastklassen\n\nDie Verkehrslastklassen bezeichnen die tägliche Anzahl Durchgänge einer Referenzachse über einen bestimmten Zeitraum, z.B. 20 Jahre unter Berücksichtigung einer allfälligen Verkehrszunahme. \n\nDas heisst die Anzahl Fahrzeuge (PW, LW, Busse etc.) wird mit Faktoren auf eine bestimmte Anzahl Durchgänge einer Referenzachse umgerechnet.",
+   "abstract": "Die Verkehrslastklassen bezeichnen die tägliche Anzahl Durchgänge einer Referenzachse über einen bestimmten Zeitraum, z.B. 20 Jahre unter Berücksichtigung einer allfälligen Verkehrszunahme.",
+   "identificationDate": "2019-11-11",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Tiefbauamt",
+   "contactPerson": "Pascal Wirz",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Verkehrslastklassen",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "V_LASTKLASSEN_GEOSERVER",
+            "description": "View mit allen Verkehrslastklassen der Stadt Zürich. Die Verkehrslastklassen bezeichnen die tägliche Anzahl Durchgänge einer Referenzachse über einen bestimmten Zeitraum, z.B. 20 Jahre unter Berücksichtigung einer allfälligen Verkehrszunahme.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "ID1",
+                  "description": "ID"
+               },
+               {
+                  "name": "QUARTIER",
+                  "description": null
+               },
+               {
+                  "name": "STRASSE",
+                  "description": "Strassenabschnitt"
+               },
+               {
+                  "name": "VON",
+                  "description": "Beginn Strassenabschnitt"
+               },
+               {
+                  "name": "BIS",
+                  "description": "Ende Strassenabschnitt"
+               },
+               {
+                  "name": "LASTKLASSE",
+                  "description": "Lastklassen (T) 1-6"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrieattribut"
+               }
+            ]
+         }
+      ]
+   }
+}

@@ -1,0 +1,183 @@
+{
+   "title": "Bauernhofladen",
+   "keywords": [
+      "Bauernhof",
+      "Landwirtschaft"
+   ],
+   "metadata_date": "2025-01-29T10:51:31",
+   "updateFrequency": "asNeeded",
+   "purpose": "Für den Digitalen Stadtplan werden die Standorte aller Bauernhöfe mit Direktvermarktung benötigt. Für interne Projekte (Vernetzungsprojekt, Betriebszentren-Karte, usw.) werden auch die übrigen Bauernhöfe benötigt.",
+   "abstract": "Beinhaltet die Betriebszentren von Haupterwerbslandwirten in der Stadt Zürich inklusive der von der Quartierbevölkerung betriebenen Bauernhof Weinegg.",
+   "identificationDate": "2025-03-18",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Grün Stadt Zürich",
+   "contactPerson": "Andrin Pescatore",
+   "referenceSystem": "CH1903+_LV95 (Original:LV03)",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Bauernhofladen",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "POI_BAUERNHOFLADEN_VIEW",
+            "description": "Zugriff über ArcMap für GSZ-Mitarbeitende: Geoserver-Daten-Menü -> Inventare/Ist-Zustand GSZ -> Bauernhöfe",
+            "attributes": [
+               {
+                  "name": "ADRESSE",
+                  "description": "Strasse und Hausnummer des Bauernhofstandortes.\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "BEREICH",
+                  "description": "Geschäfts-/Fachbereich des Datenherren.\n\nInterpretations Hinweis: Wird bei diesem Datenbestand nicht angegeben, aber in der POI-Verwaltung muss das Feld dennoch vorkommen."
+               },
+               {
+                  "name": "DA",
+                  "description": "Dienstabteilung des Datenherren.\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "DATUM",
+                  "description": "Datum, an welchem der Datensatz zuletzt mutiert wurde.\n\nInterpretations Hinweis: Wird von der POI-Verwaltung automatisch nachgeführt."
+               },
+               {
+                  "name": "DEP",
+                  "description": "Departement des Datenherren.\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "DIREKTVERM",
+                  "description": "Lassen sich bei der aufgeführten Adresse direkt Produkte beziehen?\n\nCoded Domain:\n\nJA:Ja\n\nNEIN:Nein\n\nInterpretations Hinweis:Im Internet (Digitaler Stadtplan) erscheinen nur solche Betriebe mit Direktvermarktung."
+               },
+               {
+                  "name": "EDITOR",
+                  "description": "Kürzel der Person, welche den Datensatz zuletzt mutiert hat.\n\nInterpretations Hinweis: Wird von der POI-Verwaltung automatisch nachgeführt."
+               },
+               {
+                  "name": "EIGENTUM",
+                  "description": "Gibt an ob der Betrieb privat oder städtisch ist.\n\nCoded Domain:\n\n1:Privates Eigentum\n\n2:Städtisches Eigentum\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "INSIDE_STZH",
+                  "description": "Angabe, ob sich ein Objekt innerhalb oder ausserhalb der Stadtgrenze von Zürich befindet.\n\nCoded Domain:\n\n1:Ausserhalb Stadtgrenze\n\n2:Innerhalb Stadtgrenze\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": "Stets \"Bauernhofladen\".\n\nInterpretations Hinweis: Wird vom GIS-Zentrum automatisch zugeordnet."
+               },
+               {
+                  "name": "MAIL",
+                  "description": "E-Mail-Adresse.\n\nInterpretations Hinweis: Wird bei diesem Datenbestand nicht angegeben, aber in der POI-Verwaltung muss das Feld dennoch vorkommen."
+               },
+               {
+                  "name": "NAME",
+                  "description": "(Flur)name des Bauernhofstandortes. Falls im Attribut 'PUBLISH_INTERNET' der Wert '1' ist, dann Angabe verpflichtend, ansonsten optional."
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI Identifikationsnummer (Systemvorgabe)"
+               },
+               {
+                  "name": "ORT",
+                  "description": "Korrespondierendes Attribut zu 'PLZ'.\n\nInterpretations Hinweis: Wird bei diesem Datenbestand nicht angegeben, aber in der POI-Verwaltung muss das Feld dennoch vorkommen."
+               },
+               {
+                  "name": "PAECHTER",
+                  "description": "Name des/der PächterIn."
+               },
+               {
+                  "name": "PLZ",
+                  "description": "Eindeutiger Identifikator.\n\nInterpretations Hinweis: Wird vom GIS-Zentrum automatisch berechnet."
+               },
+               {
+                  "name": "POI_ID",
+                  "description": "Eindeutiger Identifikator.\n\nInterpretations Hinweis: Wird vom GIS-Zentrum automatisch berechnet."
+               },
+               {
+                  "name": "PUBLISH_INTERNET",
+                  "description": "Legt fest, ob ein Bauernhofstandort lediglich im Geoserver für städtische Mitarbeitende sichtbar ist, oder ob dieser zusätzlich im Digitalen Stadtplan aufgeführt ist.\n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld\n\nCoded Domain:\n\n1:Im Stadtplan veröffentlichen\n\n2:Nur für städtische Mitarbeitende einsehbar"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "ESRI Geometrietyp Point"
+               },
+               {
+                  "name": "STADTNR",
+                  "description": "Nur für Bauernhöfe im städtischen Eigentum: Bei GSZ intern verwendete Nummer."
+               },
+               {
+                  "name": "STAND",
+                  "description": "Wann wurde der Datensatz zuletzt aktualisiert?\n\nInterpretations Hinweis: Wert muss von Hand in der POI-Verwaltung angepasst werden!"
+               },
+               {
+                  "name": "SUCHEN",
+                  "description": "Suchbegriffe, nach welchen ein Datensatz im digitalen Stadtplan unter der \"Freien Suche\" gefunden werden soll.\n\nInterpretations Hinweis: Bei allen Arealen folgende Begriffe: Bauernhofläden, Bauernhofladen, Milch, Käse, Lebensmittel, Fleisch, Direktvermarktung, Bauernhof, Bauer. Abgesehen von diesen Begriffen wird auch das Feld \"NAME\" stets bei der Suche miteinbezogen."
+               },
+               {
+                  "name": "TEL",
+                  "description": "Telefonnummer.\n\nInterpretations Hinweis: Wird bei diesem Datenbestand nicht angegeben, aber in der POI-Verwaltung muss das Feld dennoch vorkommen."
+               },
+               {
+                  "name": "WWW",
+                  "description": "Bei Betrieben mit Direktvermarktung führt dieser Hyperlink auf die Direktvermarktungsseite von GSZ."
+               },
+               {
+                  "name": "X",
+                  "description": "X-Koordinate des Punktes.\n\nInterpretations Hinweis: Wird vom GIS-Zentrum automatisch generiert."
+               },
+               {
+                  "name": "Y",
+                  "description": "Y-Koordinate des Punktes.\n\nInterpretations Hinweis: Wird vom GIS-Zentrum automatisch generiert."
+               },
+               {
+                  "name": "SOLAWI",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "POI_BAUERNHOFLADEN_ATT",
+            "description": "Zusatzinformation Bauernhofläden",
+            "attributes": [
+               {
+                  "name": "POI_ID",
+                  "description": "Eindeutiger Identifikator. \n\nInterpretations Hinweis: Wird vom GIS-Zentrum automatisch berechnet."
+               },
+               {
+                  "name": "STADTNR",
+                  "description": "Nur für Bauernhöfe im städtischen Eigentum: Bei GSZ intern verwendete Nummer."
+               },
+               {
+                  "name": "DIREKTVERM",
+                  "description": "Lassen sich bei der aufgeführten Adresse direkt Produkte beziehen? \n\nCoded Domain: \n\nJA:Ja \n\nNEIN:Nein \n\nInterpretations Hinweis:Im Internet (Digitaler Stadtplan) erscheinen nur solche Betriebe mit Direktvermarktung."
+               },
+               {
+                  "name": "EIGENTUM",
+                  "description": "Gibt an ob der Betrieb privat oder städtisch ist. \n\nCoded Domain: \n\n1:Privates Eigentum \n\n2:Städtisches Eigentum \n\nInterpretations Hinweis: Ist gemäss alter Geo-Metadatenbank ein Pflichtfeld"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "PAECHTER",
+                  "description": "Name des/der PächterIn."
+               },
+               {
+                  "name": "SOLAWI",
+                  "description": null
+               }
+            ]
+         }
+      ]
+   }
+}

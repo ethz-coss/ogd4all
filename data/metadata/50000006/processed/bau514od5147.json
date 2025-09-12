@@ -1,0 +1,108 @@
+{
+   "title": "Grundstückspreise (Median) der im Freihandkauf umgesetzten bebauten Grundstücke nach Stadtquartier und Zonenart (nur BZO16)",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bau_hae_preis_quartier_zonenart_bzo16_seit2019_od5147",
+   "abstract": "Diese Daten beinhalten die Medianpreise pro Quadratmeter Bauland von gehandelten Grundstücken in der Stadt Zürich nach Handänderungsjahr, Stadtquartier und Zonenart. Aufgrund der Einführung der neuen Bau- und Zonenordnung im November 2018 beginnt die Zeitreihe erst im Januar 2019.\nBitte beachten Sie für das korrekte Verständnis zu den Daten die unten aufgeführten weiteren Erläuterungen in der Rubrik «Bemerkungen».",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "BetrachteteHA:\n\nDie dargestellten Werte beziehen sich auf alle Handänderungen von Grundstücken in Bauzonen der Stadt Zürich. Ob Transaktionen von Stockwerkeigentum nicht mitberücksichtigt oder anteilsmässig mitberücksichtigt werden beschreibt die Variable \"BetrachteteHA\".\n\nDefinition: AnzHA\n\nGibt an, wie viele Handänderungen für die Preiswerte berücksichtigt wurden. Handänderungen, die herausgefiltert worden sind (siehe dazu \"Allgemein\"), werden nicht mitgezählt. In Fällen wo es weniger als vier Handänderungen gibt, oder Rückschlüsse darauf möglich sind, wird die Anzahl der Handänderungen anonymisiert.\n\nVariablen mit mehreren Varianten\n\nGewisse Variablen werden in verschiedenen Formen aufgeführt. Die \"Lang\"-Variante beschreibt den Inhalt (z.B. StatZoneLang beschreibt die statistische Zone, mögliche Werte sind Central oder Oberdorf). Die \"Cd\"-Variante kodiert die Variable alphanumerisch, quasi als Kurzform (Central und Oberdorf sind 1104 und 1201). Die \"Sort\"-Variante kodiert die Variable numerisch (Central und Oberdorf sind 5 und 4) und erlaubt eine Sortierung. \"Cd\" und \"Sort\" können auch identisch sein.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Grundstückspreise (Median) der im Freihandkauf umgesetzten bebauten Grundstücke nach Stadtquartier und Zonenart (nur BZO16)",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: Stichtagdatjahr)",
+                  "description": "Jahr (numerisch)"
+               },
+               {
+                  "name": "Datenstand (Code) (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (P = provisorisch, D = definitiv)"
+               },
+               {
+                  "name": "Sortierung des Quartiers (technisch: QuarSort)",
+                  "description": "Stadtquartier (Numerisch)"
+               },
+               {
+                  "name": "Nummer des Quartiers (technisch: QuarCd)",
+                  "description": "Stadtquartier Code (String)"
+               },
+               {
+                  "name": "Name des Quartiers (technisch: QuarLang)",
+                  "description": "Stadtquartier (String)"
+               },
+               {
+                  "name": "Handänderungsart (Sort) (technisch: HAArtLevel2Sort)",
+                  "description": "Art der Handänderung (Numerisch)"
+               },
+               {
+                  "name": "Handänderungsart (Code) (technisch: HAArtLevel2Cd)",
+                  "description": "Art der Handänderung (String)"
+               },
+               {
+                  "name": "Handänderungsart (Lang) (technisch: HAArtLevel2Lang)",
+                  "description": "Art der Handänderung (String)"
+               },
+               {
+                  "name": "Zonenart der Handänderungen (Sort) (technisch: ZoneLevel2Sort)",
+                  "description": "Zonenart der Handänderungen (String)"
+               },
+               {
+                  "name": "Zonenart der Handänderungen (Code) (technisch: ZoneLevel2Cd)",
+                  "description": "Zonenart der Handänderungen (Numerisch)"
+               },
+               {
+                  "name": "Zonenart der Handänderungen (Lang) (technisch: ZoneLevel2Lang)",
+                  "description": "Zonenart der Handänderungen (String)"
+               },
+               {
+                  "name": "Betrachtete Handänderungen (Sort) (technisch: BetrachteteHASort_noDM)",
+                  "description": "Gibt an, ob die Zahl alle Handänderungen berücksichtigt oder Handänderungen im / nicht im Stockwerkeigentum ausschliesst (Numerisch)"
+               },
+               {
+                  "name": "Betrachtete Handänderungen (Cd) (technisch: BetrachteteHACd_noDM)",
+                  "description": "Gibt an, ob die Zahl alle Handänderungen berücksichtigt oder Handänderungen im / nicht im Stockwerkeigentum ausschliesst (String)"
+               },
+               {
+                  "name": "Betrachtete Handänderungen (Lang) (technisch: BetrachteteHALang_noDM)",
+                  "description": "Gibt an, ob die Zahl alle Handänderungen berücksichtigt oder Handänderungen im / nicht im Stockwerkeigentum ausschliesst (String)"
+               },
+               {
+                  "name": "Flag, ob der Gebäudeversicherungswert vom Handänderungspreis abgezogen worden ist (Sort) (technisch: AbzugGVZSort_noDM)",
+                  "description": "Gibt an, ob die Preise in Franken von bebauten Grundstücken ausgewiesen werden oder ob die theoretisch errechneten Landwerte nach Abzug des Gebäudeversicherungswertes in Franken ausgewiesen werden (Numerisch)"
+               },
+               {
+                  "name": "Flag zum Abzug des Gebäudeversicherungswertes (Cd) (technisch: AbzugGVZCd_noDM)",
+                  "description": "Gibt an, ob die Preise in Franken von bebauten Grundstücken ausgewiesen werden oder ob die theoretisch errechneten Landwerte nach Abzug des Gebäudeversicherungswertes in Franken ausgewiesen werden (String)"
+               },
+               {
+                  "name": "Flag, ob der Gebäudeversicherungswert vom Handänderungspreis abgezogen worden ist (Lang) (technisch: AbzugGVZLang_noDM)",
+                  "description": "Gibt an, ob die Preise in Franken von bebauten Grundstücken ausgewiesen werden oder ob die theoretisch errechneten Landwerte nach Abzug des Gebäudeversicherungswertes in Franken ausgewiesen werden (String)"
+               },
+               {
+                  "name": "Betrachtete Bau- und Zonenordnung (Sort) (technisch: BZOSort_noDM)",
+                  "description": "Gibt an, in welcher Bau- und Zonenordnung die betrachteten Handänderungen gefallen sind (Numerisch)"
+               },
+               {
+                  "name": "Betrachtete Bau- und Zonenordnung (Cd) (technisch: BZOCd_noDM)",
+                  "description": "Gibt an, in welcher Bau- und Zonenordnung die betrachteten Handänderungen gefallen sind (String)"
+               },
+               {
+                  "name": "Betrachtete Bau- und Zonenordnung (Lang) (technisch: BZOLang_noDM)",
+                  "description": "Gibt an, in welcher Bau- und Zonenordnung die betrachteten Handänderungen gefallen sind (String)"
+               },
+               {
+                  "name": "Anzahl Handänderungen (technisch: AnzHA)",
+                  "description": "Anzahl Handänderungen, auf denen die ausgewiesenen Preise beruhen (String)"
+               },
+               {
+                  "name": "Medianpreis pro Quadratmeter (technisch: HAMedianQMPreis)",
+                  "description": "Medianpreis in Franken pro Quadratmeter Grundfläche aller betrachteten Freihandkäufe (Numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-01-20"
+}

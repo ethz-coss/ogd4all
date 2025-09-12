@@ -1,0 +1,96 @@
+{
+   "title": "Wohnflächenverbrauch und Wohndichte nach Stadtquartier",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bau_best_whg_wfl_pers_ea_quartier_jahr_od6982",
+   "abstract": "Diese Daten umfassen die bewohnten Wohnungen, sowie die zugehörige Wohnungsfläche und Personenzahl nach Stadtquartier in der Stadt Zürich. Mit den Daten können Kennwerte zur Wohndichte berechnet werden (Personen pro Wohnung, Wohnungsfläche pro Person). \nBitte beachten Sie für das korrekte Verständnis zu den Daten die unten aufgeführten weiteren Erläuterungen in der Rubrik «Bemerkungen».",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Stand und Nachführung:\n\nDas Gebäude- und Wohnungsregister der Stadt Zürich wird ständig nachgeführt. Seit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.\n\nBewohnte Wohnungen, bewohnte Wohnungsfläche, Personen in Wohnungen\n\nIm vorliegenden Datensatz sind nur Wohnungen mit registrierten Personen berücksichtigt sowie die zugehörigen Wohnungsflächen und Personenzahl. Diese Werte erlauben die Berechnung von Kennwerten zur Wohndichte (Personen pro Wohnung, Wohnungsfläche pro Person).\n\nWohnungsfläche\n\nAls Wohnungsfläche (früher und im Zusammenhang mit dem Flächenkonsum pro Person auch als «Wohnfläche» bezeichnet) gilt die Fläche sämtlicher Räume einer Wohnung hinter der Wohnungstüre, abzüglich Wandquerschnitten. Dazu gehören Wohn- und Schlafzimmer, Küche, Kochnische, Badezimmer, Toiletten, Abstellräume und Gänge. Ausser Betracht fallen bei der Berechnung zusätzliche Wohnräume ausserhalb der Wohnung (z.B. der Wohnung zugeordnete Einzelzimmer), offene Balkone und Terrassen sowie nicht bewohnbare Keller- und Dachgeschossräume. Wo keine genauen Flächen ermittelt werden können, sind Schätzwerte (Länge × Breite) erfasst.\n\nPersonen pro Wohnung und Wohnfäche pro Person nicht aggregieren\n\nAchtung: Durchschnittswerte, können nicht aggregiert werden. Neuberechnung auf jeder Aggregationsstufe erforderlich.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Wohnflächenverbrauch und Wohndichte nach Stadtquartier",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Numerisch)"
+               },
+               {
+                  "name": "Datenstand (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (Integer)"
+               },
+               {
+                  "name": "Stadtquartier Sortiercode (technisch: QuarSort)",
+                  "description": "Stadtquartier (Numerisch)"
+               },
+               {
+                  "name": "Stadtquartier (Code) (technisch: QuarCd)",
+                  "description": "Stadtquartier Code (Integer)"
+               },
+               {
+                  "name": "Stadtquartier Beschreibung (technisch: QuarLang)",
+                  "description": "Stadtquartier (String)"
+               },
+               {
+                  "name": "Stadtkreis Sortiercode (technisch: KreisSort)",
+                  "description": "Stadtkreis (Numerisch)"
+               },
+               {
+                  "name": "Stadtkreis (Code) (technisch: KreisCd)",
+                  "description": "Stadtkreis (Integer)"
+               },
+               {
+                  "name": "Stadtkreis Beschreibung (technisch: KreisLang)",
+                  "description": "Stadtkreis (String)"
+               },
+               {
+                  "name": "Sortiercode der Eigentumsgruppe für Publikationen (technisch: EigentuemerSSZPubl1Sort)",
+                  "description": "Eigentumsart (Numerisch)"
+               },
+               {
+                  "name": "Code der Eigentumsgruppe für Publikationen (technisch: EigentuemerSSZPubl1Cd)",
+                  "description": "Eigentumsart (Integer)"
+               },
+               {
+                  "name": "Bezeichnung der Eigentumsgruppe für Publikationen (technisch: EigentuemerSSZPubl1Lang)",
+                  "description": "Eigentumsart (String)"
+               },
+               {
+                  "name": "Flag für bewohnte Wohnungen (Sortiercode) (technisch: WohnungBewohntSort_noDM)",
+                  "description": "Wohnung bewohnt (Numerisch)"
+               },
+               {
+                  "name": "Flag für bewohnte Wohnungen (Code) (technisch: WohnungBewohntCd_noDM)",
+                  "description": "Wohnung bewohnt (Integer)"
+               },
+               {
+                  "name": "Flag für bewohnte Wohnungen (technisch: WohnungBewohntLang_noDM)",
+                  "description": "Wohnung bewohnt (String)"
+               },
+               {
+                  "name": "Zahl der Wohnungen (nur bewohnte) (technisch: AnzWhgStat)",
+                  "description": "Anzahl statistische Wohnungen (Numerisch)"
+               },
+               {
+                  "name": "Wohnungsfläche der bewohnten Wohnungen (technisch: Wohnflaeche)",
+                  "description": "Wohnungsfläche in Quadratmeter (Numerisch)"
+               },
+               {
+                  "name": "Personenzahl in bewohnten Wohnungen (technisch: AnzBestWir)",
+                  "description": "Wirtschaftliche Bevölkerung in bewohnten Wohnungen (Numerisch)"
+               },
+               {
+                  "name": "Durchschnittliche Personenzahl pro Wohnung (technisch: PersProWhg_noDM)",
+                  "description": "Quotient aus AnzBestWir und AnzWhgStat. Achtung: Durchschnittswert, darf nicht aggregiert werden. Neuberechnung auf jeder Aggregationsstufe erforderlich."
+               },
+               {
+                  "name": "Durchschnittliche Wohnungsfläche pro Person (technisch: WohnungsflProPers_noDM)",
+                  "description": "Quotient aus Wohnflaeche in Quadratmetern und AnzBestWir. Achtung: Durchschnittswert, darf nicht aggregiert werden. Neuberechnung auf jeder Aggregationsstufe erforderlich."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-03-07"
+}

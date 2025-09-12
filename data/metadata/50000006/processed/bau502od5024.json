@@ -1,0 +1,80 @@
+{
+   "title": "Neubaugebäude am Jahresende nach Bauprojektstatus, Eigentumsart und Statistischer Zone",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bau_neubau_projstatus_gebart_quartier_od5024",
+   "abstract": "Der Datensatz enthält die Anzahl bewilligter und im Bau befindlicher Gebäude in Neubauprojekten nach Eigentumsart und statistischer Zone.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Hinweis:\n\nSeit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen. Ein technisches Problem beim Datenerfassungsprozess von Neubauprojekten Wohnen hat dazu geführt, dass seit 2021 neu bewilligte Projekte verzögert im Gebäude- und Wohnungsregister eingeflossen sind. Da diese Projekte grösstenteils in 2023 erfasst wurden, liegen diese in den beiden Vorjahren 2021 und 2022 tiefer.\n\nHinweis:\n\nStichtagDatJahr entspricht dem Stichtag am Jahresende für Neubauprojekte mit Status Bewilligt harmonisiert und Baubegonnen.\n\nBauprojektstatus:\n\n«Bewilligt harmonisiert»: Bauprojekte, welche am Jahresende bewilligt, sistiert oder zum Bau freigegeben sind. Freigegebene oder sistierte Projekte werden seit 2021 im Gebäude- und Wohnungsregister erfasst. Davor wurden diese beide Status auch als bewilligt erfasst. Bei sistierten Projekten handelt es sich um bewilligte Projekte, die zum Beispiel wegen Einsprachen blockiert sind.\n«Baubegonnen»: Bauprojekte, welche am Jahresende baubegonnen sind.\n\nEigentumsart\n\nÖffentliches Eigentum: Bund, Kanton Zürich, Stadt Zürich inklusive städtischer Stiftungen und anderes öffentliches Eigentum\nWohnbaugenossenschaften: Nur Wohnbaugenossenschaften\nAndere private Gesellschaften: Aktien-, Kollektiv- und Kommanditgesellschaften, Handels-, Produktiv-, Versicherungs- und übrige Genossenschaften, Gesellschaften mit beschränkter Haftung, Pensionskassen, Vereine, private Stiftungen, gemischtes Eigentum und Religionsgemeinschaften\nPrivatpersonen: Einzelpersonen, Erbgemeinschaften und mehrere natürliche Personen\nIm Stochwerkeigentum: Stockwerkeigentumsgesellschaften\n\nAlternativprojekte\n\nWerden für ein geplantes Bauprojekt dem Amt für Baubewilligungen zwei Projekte eingereicht, von denen nur eines ausgeführt wird, handelt es sich bei einem der beiden Projekte um ein Alternativprojekt. Da diese Projekte nicht immer eindeutig identifizierbar sind, kann der Bauprojektstatus «bewilligt» auch Alternativprojekte enthalten.\n\nStand und Nachführung:\n\nDas Gebäude- und Wohnungsregister der Stadt Zürich wird ständig nachgeführt.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Neubaugebäude am Jahresende nach Bauprojektstatus, Eigentumsart und Statistischer Zone",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Integer). Entspricht dem Stichtag am Jahresende."
+               },
+               {
+                  "name": "Datenstand (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (Integer)"
+               },
+               {
+                  "name": "Stadtquartier Sortiervariable (technisch: QuarSort)",
+                  "description": "Stadtquartier (Numerisch)"
+               },
+               {
+                  "name": "Stadtquartier Code (technisch: QuarCd)",
+                  "description": "Stadtquartier Code (Integer)"
+               },
+               {
+                  "name": "Stadtquartier Beschreibung (technisch: QuarLang)",
+                  "description": "Stadtquartier (String)"
+               },
+               {
+                  "name": "Stadtkreis Sortiervariable (technisch: KreisSort)",
+                  "description": "Stadtkreis (Numerisch)"
+               },
+               {
+                  "name": "Stadtkreis Code (technisch: KreisCd)",
+                  "description": "Stadtkreis (Integer)"
+               },
+               {
+                  "name": "Stadtkreis Beschreibung (technisch: KreisLang)",
+                  "description": "Stadtkreis (String)"
+               },
+               {
+                  "name": "Bauprojektstatus (technisch: ProjektStatusSSZPubl1Sort)",
+                  "description": "Status des Bauprojektes am Jahresende (Numerisch)"
+               },
+               {
+                  "name": "Bauprojektstatus (technisch: ProjektStatusSSZPubl1Cd)",
+                  "description": "Status des Bauprojektes am Jahresende (Integer)"
+               },
+               {
+                  "name": "Bauprojektstatus (technisch: ProjektStatusSSZPubl1Lang)",
+                  "description": "Status des Bauprojektes am Jahresende (String)"
+               },
+               {
+                  "name": "Art der Arbeiten (technisch: ArtArbeitenSort)",
+                  "description": "Art der Arbeiten des Bauprojektes (Numerisch)"
+               },
+               {
+                  "name": "Art der Arbeiten (technisch: ArtArbeitenCd)",
+                  "description": "Art der Arbeiten des Bauprojektes (Integer)"
+               },
+               {
+                  "name": "Art der Arbeiten (technisch: ArtArbeitenLang)",
+                  "description": "Art der Arbeiten des Bauprojektes (String)"
+               },
+               {
+                  "name": "Anzahl Gebäude (technisch: AnzGbd)",
+                  "description": "Anzahl Gebäude (Numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-01-08"
+}

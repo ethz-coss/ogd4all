@@ -1,0 +1,88 @@
+{
+   "title": "Wegzüge nach auswärts nach Wegzugsort und Stadtquartier",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bev_wegz_jahr_quartier_od3521",
+   "abstract": "Anzahl Wegzüge aus der Stadt Zürich nach Wegzugsort, Stadtkreis, Statistischem Stadtquartier und Jahr. \nDie Wegzugsorte sind auf Bezirks- und Kantonensebene aggregiert, in welche die Personen in der Schweiz weggezogen sind. Wenn sie ins Ausland weggezogen sind, so ist eine Aggregierung nach Region und Kontinent möglich.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Wegzüge nach auswärts\n\nPersonen, die aus der Stadt Zürich wegziehen.\n\nUnbekannte bei Wegzugsorten:\n\nDer Wegzugsort ist relativ oft - in den letzten Jahren bei rund 10% - unbekannt. Bei Personen, welche in der Schweiz bleiben, gibt es weniger unbekannte Wegzugsorte, da sie sich erneut in der Schweiz anmelden. Es ist daher ratsam den Wegzugsort primär für Orte innerhalb der Schweiz auszuwerten. Bei Auswertungen ist es sinnvoll auf die vielen unbekannten Wegzugsorte hinzuweisen.\n\nBerechnungen des Wanderungssaldos für einzelne Wegzugsorte sind aus diesem Grunde nicht zu empfehlen.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Wegzüge nach auswärts nach Wegzugsort und Stadtquartier",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Ereignisjahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr"
+               },
+               {
+                  "name": "Wegzugsort historisch (Sort) (technisch: WegOrtHistSort)",
+                  "description": "BfS Code der Gemeinde, in welche die Personen weggezogen sind (Integer). Wert 9999 bei Wegzug ins Ausland."
+               },
+               {
+                  "name": "Wegzugsort historisch (Lang) (technisch: WegOrtHistLang)",
+                  "description": "Name der Gemeinde, in welche die Personen weggezogen sind (CHAR)."
+               },
+               {
+                  "name": "Wegzugsbezirk historisch (Sort) (technisch: WegBezirkHistSort)",
+                  "description": "BfS Code des Bezirks, in welchen die Personen weggezogen sind (Integer). Wert 9999 bei Wegzug ins Ausland."
+               },
+               {
+                  "name": "Wegzugsbezirk historisch (lang) (technisch: WegBezirkHistLang)",
+                  "description": "Name des Bezirks, in welchen die Personen weggezogen sind (CHAR)."
+               },
+               {
+                  "name": "Wegzugskanton historisch (Sort) (technisch: WegKtHistSort)",
+                  "description": "BfS Code des Kantons, in welchen die Personen weggezogen sind (Integer). Wert 99 bei Wegzug ins Ausland."
+               },
+               {
+                  "name": "Wegzugskanton historisch (Lang) (technisch: WegKtHistLang)",
+                  "description": "Name des Kantons, in welchen die Personen weggezogen sind (CHAR)."
+               },
+               {
+                  "name": "Wegzugsland historisch (Sort) (technisch: WegLandHistSort)",
+                  "description": "BFS-Code des Wegzugslandes einer Person."
+               },
+               {
+                  "name": "Wegzugsland historisch (Lang) (technisch: WegLandHistLang)",
+                  "description": "Bezeichnung des Wegzugslandes einer Person."
+               },
+               {
+                  "name": "Wegzugsregion (Sort) (technisch: WegRegionSort)",
+                  "description": "Sortierungscode der Wegzugsregion. Die Wegzugsregion entspricht einer Gliederung verschiedener Staaten in Regionen, z.B. Südeuropa, Nordeuropa, etc."
+               },
+               {
+                  "name": "Wegzugsregion (Lang) (technisch: WegRegionLang)",
+                  "description": "Bezeichnung der Wegzugsregion. Die Wegzugsregion entspricht einer Gliederung verschiedener Staaten in Regionen, z.B. Südeuropa, Nordeuropa, etc."
+               },
+               {
+                  "name": "Wegzugskontinent (Sort) (technisch: WegKontinentSort)",
+                  "description": "Sortierungscode des Wegzugskontinents der Person. Wegzugskontinent gemäss der Nomenklatur des Bundesamtes für Statistik."
+               },
+               {
+                  "name": "Wegzugskontinent (Lang) (technisch: WegKontinentLang)",
+                  "description": "Bezeichnungs des Wegzugskontinents der Person. Wegzugskontinent gemäss der Nomenklatur des Bundesamtes für Statistik."
+               },
+               {
+                  "name": "Wegzug_von_Quartier_sort (technisch: QuarSort)",
+                  "description": "ID des Stadtquartiers, von welchem die Personen weggezogen sind (Numerisch, 8 Zeichen lang)."
+               },
+               {
+                  "name": "Wegzug_von_Quartier (technisch: QuarLang)",
+                  "description": "Name des Stadtquartiers, von welchem die Personen weggezogen sind."
+               },
+               {
+                  "name": "Wegzug_von_Kreis (technisch: KreisSort)",
+                  "description": "ID des Stadtkreises, von welchem die Personen weggezogen sind (Numerisch, 8 Zeichen lang)."
+               },
+               {
+                  "name": "Anzahl Wegzüge wirtschaftlich (technisch: AnzWezuWir)",
+                  "description": "Anzal Personen aus der wirtschaftlichen Wohnbevölkerung, die Weggezogen ist."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-05-23"
+}

@@ -1,0 +1,108 @@
+{
+   "title": "Leerstehende Wohnungen nach Stadtquartier, Zimmerzahl, Gebäudeart, Bewohnungsart und Gebäudealter",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bau_leerwhg_whg_quartier_zizahl_efh_nb_we_od5427",
+   "abstract": "Der Datensatz enthält die leerstehenden Wohnungen gemäss der jährlichen Leerwohnungserhebung vom 1. Juni. Enthalten sind auch Angaben zum Gesamtwohnungsbestand, so dass auch für Untergruppen die Leerwohnungsziffer berechnet werden kann.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Definition\n\nAls leer im Sinne der Zählung gilt eine Wohnung (auch in einem Einfamilienhaus) dann, wenn sie am 1. Juni des Zähljahres unbewohnt ist und zum Kauf oder mindestens für drei Monate zur Miete angeboten wird. Nicht mitgezählt werden Dienst-, Alters-, und Werkwohnungen, Wohnungen in Abbruch- oder Umbauliegenschaften, Notwohnungen in Baracken und Wohnräume ohne Küche oder Kochnische.\n\nLeerwohnungsziffer\n\nDie Leerwohnungsziffer errechnet sich als Prozentanteil der leerstehenden Wohnungen (Variable AnzWhgStatLeer) am Wohnungsbestand (AnzWhgStat) per 1. Juni.\n\nAnzWhgStatLeer\n\nAnzahl der leerstehenden statistischen Wohnungen per 1. Juni.\n\nSelbstbewohnt\n\nEine Wohnung gilt als Selbstbewohnt, wenn die Eigentümerschaft die Wohnung selbst bewohnt. Ist die Wohnung nicht selbstbewoht, ist es eine vermietete Wohnung.\n\nNeubau\n\nEine Wohnung gilt als Neubau, wenn sie in zwei letzten Kalenderjahren vor der Erhebung oder im Erhebungsjahr selbst fertigerstellt wurde.\n\nHinweis\n\nAufgrund von Umklassierungen bei der Bearbeitung der Leerwohnungszählungen kommt es in wenigen Fällen vor dass der Datensatz Zeilen mit Leerwohnungen (AnzWhgStatLeer>0) bei einem Wohnungsbestand von Null (AnzWhgStat=0) enthält.\n\nStatistische Wohnung\n\nAls statistische Wohnung zählen bestehende Wohnungen, welche über eine Kocheinrichtung verfügen und zu Wohnzwecken (keine zweckentfremdeten Wohnungen) verwendet werden.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Leerstehende Wohnungen nach Stadtquartier, Zimmerzahl, Gebäudeart, Bewohnungsart und Gebäudealter",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Stichtag (technisch: StichtagDat)",
+                  "description": "Stichtag der Zählung (String)"
+               },
+               {
+                  "name": "Datenstand (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (Integer)"
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarSort)",
+                  "description": "Stadtquartier (Numerisch)"
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarCd)",
+                  "description": "Stadtquartier Code (Integer)"
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarLang)",
+                  "description": "Stadtquartier (String)"
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisSort)",
+                  "description": "Stadtkreis (Numerisch)"
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisCd)",
+                  "description": "Stadtkreis (Integer)"
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisLang)",
+                  "description": "Stadtkreis (String)"
+               },
+               {
+                  "name": "Anzahl Zimmer der Wohnung (technisch: AnzZimmerLevel2Sort_noDM)",
+                  "description": "Anzahl Zimmer der Wohnung (Numerisch)"
+               },
+               {
+                  "name": "Anzahl Zimmer der Wohnung (technisch: AnzZimmerLevel2Cd_noDM)",
+                  "description": "Anzahl Zimmer der Wohnung (Integer)"
+               },
+               {
+                  "name": "Anzahl Zimmer der Wohnung (technisch: AnzZimmerLevel2Lang_noDM)",
+                  "description": "Anzahl Zimmer der Wohnung (String)"
+               },
+               {
+                  "name": "Einfamilienhaus (technisch: EinfamilienhausSort_noDM)",
+                  "description": "Einfamilienhäuser (Numerisch)"
+               },
+               {
+                  "name": "Einfamilienhaus (technisch: EinfamilienhausCd_noDM)",
+                  "description": "Einfamilienhäuser (Integer)"
+               },
+               {
+                  "name": "Einfamilienhaus (technisch: EinfamilienhausLang_noDM)",
+                  "description": "Einfamilienhäuser (String)"
+               },
+               {
+                  "name": "Selbstbewohntes Wohnobjekt (technisch: SelbstbewohntSort_noDM)",
+                  "description": "Selbstbewohntes Wohnobjekt (Numerisch)"
+               },
+               {
+                  "name": "Selbstbewohntes Wohnobjekt (technisch: SelbstbewohntCd_noDM)",
+                  "description": "Selbstbewohntes Wohnobjekt (Integer)"
+               },
+               {
+                  "name": "Selbstbewohntes Wohnobjekt (technisch: SelbstbewohntLang_noDM)",
+                  "description": "Selbstbewohntes Wohnobjekt (String)"
+               },
+               {
+                  "name": "Neubau (technisch: NeubauSort_noDM)",
+                  "description": "Neubau (Numerisch)"
+               },
+               {
+                  "name": "Neubau (technisch: NeubauCd_noDM)",
+                  "description": "Neubau (Integer)"
+               },
+               {
+                  "name": "Neubau (technisch: NeubauLang_noDM)",
+                  "description": "Neubau (String)"
+               },
+               {
+                  "name": "Anzahl Leerwohnungen (technisch: AnzWhgStatLeer_noDM)",
+                  "description": "Zahl der leerstehenden statistischen Wohnungen gemäss Leerwohnungszählung (Numerisch)"
+               },
+               {
+                  "name": "Wohnungsbestand (technisch: AnzWhgStat)",
+                  "description": "Anzahl statistische Wohnungen (Numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2024-12-11"
+}

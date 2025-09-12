@@ -1,0 +1,898 @@
+{
+   "title": "Liegenschafteninventar OGD",
+   "keywords": [
+      "Wohnungen",
+      "Liegenschaften",
+      "Stiftungen",
+      "Grundstücke",
+      "Gebäude"
+   ],
+   "metadata_date": "2023-06-06T05:44:40",
+   "updateFrequency": "weekly",
+   "purpose": "Das Inventar dient der Stadt Zürich, Liegenschaften, beim Verwalten, Kaufen und Verkaufen von Grundstücken und Gebäuden.\n\nDas Inventar dient den Dienststellen der Stadt Zürich als Grundlage für die verwaltungsinternen Aufgaben sowie der Öffentlichkeit als Information über das städtische Eigentum. Der Datensatz enthält keine Finanzwerte.",
+   "abstract": "Das Liegenschafteninventar OGD umfasst alle Grundstücke und Gebäude, die im Eigentum der Stadt Zürich sind mit Ausnahme der Strassen und Plätze (öffentlicher Grund). Zusätzlich sind wichtige Rechte (Wegrechte etc.) enthalten.\n\n\n\nMit Gemeindeabstimmung vom 27. September 2020 wurden die Finanzkompetenzen für den Erwerb von Liegenschaften neu geregelt (Teilrevision Gemeindeordnung, Inkraftsetzung 1. Juli 2021). Parallel dazu hat der Gemeinderat in Art. 14bis Finanzhaushaltverordnung (AS 611.101) neue Informations- und Dokumentationspflichten im Zusammenhang mit dem Erwerb und der Zuordnung von städtischen Liegenschaften festgelegt. Diese umfassen u.a. die laufende Aktualisierung eines öffentlich einsehbaren geodatenbasierten Liegenschafteninventars einschliesslich Angaben zur Vermögenszuweisung.",
+   "identificationDate": "2025-03-15",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Finanzdepartement - Liegenschaften Stadt Zürich",
+   "contactPerson": "André Graf",
+   "referenceSystem": "CH1903+_LV95 (Original:LV03)",
+   "boundingBox": {
+      "westBoundLongitude": 3.5294858999497936,
+      "eastBoundLongitude": 10.558940646069203,
+      "southBoundLatitude": 45.761004939883115,
+      "northBoundLatitude": 47.77212553217851
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Liegenschafteninventar_OGD",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "V_LVZ_GRUNDSTUECK",
+            "description": "Alle Grundstücke, die im Besitz der Stadt Zürich sind.\n\nAchtung: Ausserhalb des Gemeindegebietes der Stadt Zürich ist nur ein Teil der Grundstücke geometrisch korrekt aufgenommen. Bitte Rücksprache mit LSZ nehmen.\n\nDie Tabelle mit den Daten des aktuellen Jahres ist jeweils vom 1. Januar bis zum Abschluss der Historisierung des vorangegangenen Jahresendstandes leer. Die Zeitspanne dauert normalerweise von Januar bis März. Während dieser Zeit werden noch Änderungen am Datenbestand vorgenommen. Sobald der Jahresabschluss durchgeführt ist, sind die Daten des aktuellen Jahres sowie der definitive Jahresstand des Vorjahres verfügbar.",
+            "attributes": [
+               {
+                  "name": "FLAECHE_RECHTLICH_VEREINBART",
+                  "description": "Rechtlich vereinbarte Fläche"
+               },
+               {
+                  "name": "ADR_PLZ",
+                  "description": "Postleitzahl (vierstellig)"
+               },
+               {
+                  "name": "DATE_MODIFIED",
+                  "description": "Datum vorgenommener Änderungen"
+               },
+               {
+                  "name": "BFS_NR",
+                  "description": "BFS-Gemeindenummer"
+               },
+               {
+                  "name": "DATE_CREATED",
+                  "description": "technisches Erstellungsdatum, erst seit ca. 2017 genutzt. Ältere Objekte haben keinen Eintrag"
+               },
+               {
+                  "name": "EIGENTUMSVERHAELTNIS_DESC",
+                  "description": "Bezeichnung für die farbliche Darstellung des Eigentumsverhältnis. Siehe Attribut EIGENTUEMERVERHAELTNIS_CODE"
+               },
+               {
+                  "name": "INVENTAR_ID_MANUELL",
+                  "description": "Inventarnummer auch als Wirtschaftseinheitsnummer bezeichnet (WE-Nr.)"
+               },
+               {
+                  "name": "VERMOEGENSART_WE",
+                  "description": "Bezeichnung der Vermögensart:\n\n- Verwaltungsvermögen\n\n- Finanzvermögen\n\n- Stiftung"
+               },
+               {
+                  "name": "IST_HAUPTADRESSE",
+                  "description": "NULL = keine Adressangaben vorhanden\n\n0 = keine Information vorhanden, ob es sich um eine Hauptadresse handelt\n\n1 = ja, ist die Hauptadresse\n\n2 = nein, ist eine Nebenadresse"
+               },
+               {
+                  "name": "FLAECHE",
+                  "description": "Vom GIS-System berechnete Grundstücksfläche."
+               },
+               {
+                  "name": "ADR_KANTON",
+                  "description": "Kantonsbezeichnung"
+               },
+               {
+                  "name": "BEZEICHNUNG_WE",
+                  "description": "Bezeichnung der Wirtschaftseinheit"
+               },
+               {
+                  "name": "GUELTIG_BIS",
+                  "description": "Datum der Beendigung des Objekteintrages"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "UNTERVERMOEGEN_TEILPORTFOLI",
+                  "description": "weitere Unterteilung des Vermögens, Null: kein Untervermögen"
+               },
+               {
+                  "name": "ADR_GEMEINDE",
+                  "description": "Gemeindename"
+               },
+               {
+                  "name": "ADR_HAUSNR",
+                  "description": "Hausnummer"
+               },
+               {
+                  "name": "ADR_KREIS_STADTZH",
+                  "description": "Stadtkreis"
+               },
+               {
+                  "name": "ADR_ORT",
+                  "description": "Ortsname"
+               },
+               {
+                  "name": "ADR_QUARTIER_STADTZH",
+                  "description": "Stadtquartier"
+               },
+               {
+                  "name": "ADR_STRASSE",
+                  "description": "Strassenname"
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": "Objektbezeichnung"
+               },
+               {
+                  "name": "EIGENTUEMERVERTRETER_GRDSTUECK",
+                  "description": "Name des Eigentümervertreters des Grundstückes"
+               },
+               {
+                  "name": "EIGENTUEMERVERTRETER_WE",
+                  "description": "Name des Eigentümervertreters der Wirtschaftseinheit"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Flächengeometrie"
+               },
+               {
+                  "name": "GUELTIG_AB",
+                  "description": "Datum ab welchem das Objekt gültig ist"
+               },
+               {
+                  "name": "HISTORY_JAHR",
+                  "description": "Angabe des Jahresstandes"
+               },
+               {
+                  "name": "LAGEGENAUIGKEIT",
+                  "description": "Angabe für interne Verwendung"
+               },
+               {
+                  "name": "BUCHUNGSKREIS",
+                  "description": "Angabe des Buchungskreises bei LSZ-Objekten"
+               },
+               {
+                  "name": "STATUS",
+                  "description": "1 = aktiv"
+               },
+               {
+                  "name": "STATUS_WE",
+                  "description": "1 = aktiv"
+               },
+               {
+                  "name": "EIGENTUMSVERHAELTNIS_CODE",
+                  "description": "3 Übriges Verwaltungsvermögen (ÜVV)\n\n7 Finanzvermögen LSZ\n\n8 Finanzvermögen LSZ + Privat\n\n9 Verwaltungsvermögen Werke\n\n12 Finanzvermögen Wohnsiedlung\n\n14 Stiftung\n\n16 Verwaltungsvermögen LSZ (LVV)\n\n18 Finanzvermögen Baurechtsareale\n\n23 Verwaltungsvermögen LSZ Wohnsiedlung\n\n25 Verwaltungsvermögen LSZ Baurechte\n\n26 Verwaltungsvermögen GSZ\n\n30 Verwaltungsvermögen TAZ\n\n34 Verwaltungsvermögen Immo\n\n51 Verwaltungsvermögen LSZ Einzelwohnliegenschaft\n\n52 Liegenschaften VV\n\n53 Baurechte VV\n\n54 Baurechte FV\n\n55 Baurechte Gasversorgung\n\n56 Gewerbe FV\n\n57 Wohnen FV\n\n58 Landreserven\n\n59 Wohnen & Gewerbe (2034)\n\n60 Gastronomie (2035)\n\n61 Parkierungsbauten (2036)"
+               },
+               {
+                  "name": "AV_GRUNDSTUECK_NR",
+                  "description": "Grundstücknummer aus der Amtlichen Vermessung"
+               },
+               {
+                  "name": "EGRID",
+                  "description": "Eidgenössischer Grundstückidentifikator"
+               },
+               {
+                  "name": "BZO_ZONE",
+                  "description": "Zonenbezeichnung aus der Bau- und Zonenordnung"
+               },
+               {
+                  "name": "TYP_GRUNDSTUECK_LVZ",
+                  "description": "Typbezeichnung aus Sicht LSZ, CODE"
+               },
+               {
+                  "name": "GRUNDSTUECKTYP",
+                  "description": "Typbezeichnung aus Sicht LSZ"
+               }
+            ]
+         },
+         {
+            "name": "V_LVZ_GEBAEUDE",
+            "description": "Alle Gebäude, die im Besitz der Stadt Zürich sind.\n\nAchtung: Ausserhalb des Gemeindegebietes der Stadt Zürich ist nur ein Teil der Gebäudegrundrisse korrekt aufgenommen. Bitte Rücksprache mit LSZ nehmen.\n\nDie Tabelle mit den Daten des aktuellen Jahres ist jeweils vom 1. Januar bis zum Abschluss der Historisierung des vorangegangenen Jahresendstandes leer. Die Zeitspanne dauert normalerweise von Januar bis März. Während dieser Zeit werden noch Änderungen am Datenbestand vorgenommen. Sobald der Jahresabschluss durchgeführt ist, sind die Daten des aktuellen Jahres sowie der definitive Jahresstand des Vorjahres verfügbar.",
+            "attributes": [
+               {
+                  "name": "INVENTAR_ID_MANUELL",
+                  "description": "Inventarnummer auch als Wirtschaftseinheitsnummer bezeichnet (WE-Nr.)"
+               },
+               {
+                  "name": "IST_TEIL_VON_LVZ_GEBAEUDE",
+                  "description": "NULL = keine Angaben vorhanden\n\n1 = ja, betrifft nur einen Prozentanteil des Gebäude (mehreren Eigentümervertretern zugeteilt)\n\n2 = nein, gesamtes Gebäude gehört einem Eigentümervertreter"
+               },
+               {
+                  "name": "GV_NR",
+                  "description": "Präfix der Gebäudeversicherungsnummer, in der Stadt Zürich das Kurzzeichen des Stadtquartiers (z.B. AA), ausserhalb der Stadt Zürich entspricht dies der BFS-Nr."
+               },
+               {
+                  "name": "ADR_GEMEINDE",
+                  "description": "Stadtkreis"
+               },
+               {
+                  "name": "ADR_HAUSNR",
+                  "description": "Hausnummer"
+               },
+               {
+                  "name": "ADR_KANTON",
+                  "description": "Kantonsbezeichnung (Kürzel)"
+               },
+               {
+                  "name": "ADR_KREIS_STADTZH",
+                  "description": "Stadtkreis"
+               },
+               {
+                  "name": "ADR_ORT",
+                  "description": "Ortsname"
+               },
+               {
+                  "name": "ADR_PLZ",
+                  "description": "Postleitzahl (vierstellig)"
+               },
+               {
+                  "name": "ADR_QUARTIER_STADTZH",
+                  "description": "Stadtquartier"
+               },
+               {
+                  "name": "ADR_STRASSE",
+                  "description": "Strassenname"
+               },
+               {
+                  "name": "BAUJAHR",
+                  "description": "Gebäudebaujahr"
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": "Objektbezeichnung"
+               },
+               {
+                  "name": "BEZEICHNUNG_WE",
+                  "description": "Bezeichnung der Wirtschaftseinheit"
+               },
+               {
+                  "name": "BFS_NR",
+                  "description": "BFS-Gemeindenummer"
+               },
+               {
+                  "name": "DATE_CREATED",
+                  "description": "technisches Erstellungsdatum, erst seit ca. 2017 genutzt. Ältere Objekte haben keinen Eintrag"
+               },
+               {
+                  "name": "DATE_MODIFIED",
+                  "description": "Datum vorgenommener Änderungen"
+               },
+               {
+                  "name": "EGID",
+                  "description": "Eidgenössische Gebäudeidentifikator"
+               },
+               {
+                  "name": "EIGENTUEMERVERTRETER_GEBAEUDE",
+                  "description": "Name des Eigentümervertreters des Gebäudes"
+               },
+               {
+                  "name": "EIGENTUMSANTEIL",
+                  "description": "Prozentualer Eigentumsanteil am Gebäude"
+               },
+               {
+                  "name": "FLAECHE",
+                  "description": "Gebäudegrundfläche"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Flächengeometrie"
+               },
+               {
+                  "name": "GVERNR",
+                  "description": "Gebäudeversicherungsnummer ohne Präfix (z.B. AA)"
+               },
+               {
+                  "name": "IST_HAUPTADRESSE",
+                  "description": "NULL = keine Adressangaben vorhanden\n\n0 = keine Information vorhanden, ob es sich um eine Hauptadresse handelt\n\n1 = ja, ist die Hauptadresse\n\n2 = nein, ist eine Nebenadresse"
+               },
+               {
+                  "name": "LAGEGENAUIGKEIT",
+                  "description": "Angabe für interne Verwendung"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "TYP_GEBAEUDE_LVZ",
+                  "description": "LSZ-interne Typenbezeichnung des Gebäudes\n\nNull: keine Angabe\n\n0: unbekannt\n\n1: Wohnen und Gewerbe\n\n2: Wohnen\n\n3: Unterricht, Bildung und Forschung\n\n4: Industriegebäude\n\n5: Werkstatt- und Gewerbegebäude\n\n6: Lagergebäude\n\n7: Büro- und Verwaltungsgebäude\n\n8: Land- und Forstwirtschaft\n\n9: Justiz, Polizei, Militär und Sicherheit\n\n10: Fürsorge und Gesundheit\n\n11: Kultus\n\n12: Kultur\n\n13: Restauration und Hotellerie\n\n14: Verkehr\n\n15: Sport- und Freizeitanlage\n\n16: Energie- und Kommunikationsanlage\n\n17: Wasserversorgung\n\n18: Reinigung und Entsorgung\n\n19: nicht zugewiesen"
+               },
+               {
+                  "name": "VERMOEGENSART_WE",
+                  "description": "Bezeichnung der Vermögensart:\n\n- Verwaltungsvermögen\n\n- Finanzvermögen\n\n- Stiftung"
+               },
+               {
+                  "name": "EIGENTUEMERVERTRETER_WE",
+                  "description": "Name des Eigentümervertreters der Wirtschaftseinheit"
+               },
+               {
+                  "name": "EIGENTUMSVERHAELTNIS_CODE",
+                  "description": "2 Diverse\n\n3 Übriges Verwaltungsvermögen (ÜVV)\n\n4 Übriges Verwaltungsvermögen (ÜVV) + Privat\n\n5 Finanzvermögen LSZ + ÜVV\n\n7 Finanzvermögen LSZ\n\n8 Finanzvermögen LSZ + Privat\n\n9 Verwaltungsvermögen Werke\n\n10 Verwaltungsvermögen Werke + Privat\n\n11 Finanzvermögen LSZ + Werke\n\n12 Finanzvermögen Wohnsiedlung\n\n14 Stiftung\n\n16 Verwaltungsvermögen LSZ (LVV)\n\n19 Übriges Verwaltungsvermögen (ÜVV) + Werke\n\n20 Übriges Verwaltungsvermögen (ÜVV) + Stiftungen\n\n21 Übriges Verwaltungsvermögen (ÜVV) + Wohnsiedlung\n\n23 Verwaltungsvermögen LSZ Wohnsiedlung\n\n25 Verwaltungsvermögen LSZ Baurechte\n\n26 Verwaltungsvermögen GSZ\n\n27 Verwaltungsvermögen GSZ + Privat\n\n28 Verwaltungsvermögen GSZ + Werke\n\n29 Verwaltungsvermögen GSZ + Stiftungen\n\n30 Verwaltungsvermögen TAZ\n\n31 Verwaltungsvermögen TAZ+ Privat\n\n32 Verwaltungsvermögen TAZ+ Werke\n\n33 Verwaltungsvermögen TAZ+ Stiftungen\n\n34 Verwaltungsvermögen Immo\n\n35 Verwaltungsvermögen Immo+ Privat\n\n36 Verwaltungsvermögen Immo+ Werke\n\n37 Verwaltungsvermögen Immo+ Stiftungen\n\n38 Finanzvermögen LSZ + GSZ\n\n39 Finanzvermögen LSZ + TAZ\n\n40 Finanzvermögen LSZ + + Immo\n\n41 Verwaltungsvermögen LSZ Einzelwohnliegenschaft + Finanzvermögen LSZ\n\n42 Verwaltungsvermögen LSZ Einzelwohnliegenschaft + Immo\n\n43 Verwaltungsvermögen LSZ Einzelwohnliegenschaft + GSZ\n\n44 Verwaltungsvermögen LSZ Einzelwohnliegenschaft + TAZ\n\n45 Verwaltungsvermögen LSZ Einzelwohnliegenschaft + ÜVV\n\n46 Verwaltungsvermögen LSZ Wohnsiedlung + Finanzvermögen LSZ\n\n47 Verwaltungsvermögen LSZ Wohnsiedlung + Immo\n\n48 Verwaltungsvermögen LSZ Wohnsiedlung + GSZ\n\n49 Verwaltungsvermögen LSZ Wohnsiedlung + TAZ\n\n50 Verwaltungsvermögen LSZ Wohnsiedlung + ÜVV\n\n51 Verwaltungsvermögen LSZ Einzelwohnliegenschaft\n\n52 Liegenschaften VV\n\n53 Baurechte VV\n\n54 Baurechte FV\n\n55 Baurechte Gasversorgung\n\n56 Gewerbe FV\n\n57 Wohnen FV\n\n58 Landreserven\n\n59 Wohnen & Gewerbe (2034)\n\n60 Gastronomie (2035)\n\n61 Parkierungsbauten (2036)\n\n62 Baurechte Gasversorgung + ÜVV\n\n63 Gastronomie (2035) + ÜVV\n\n64 Parkierungsbauten (2036) + ÜVV\n\n65 Baurechte Gasversorgung + Privat\n\n66 Gastronomie (2035) + Privat\n\n67 Parkierungsbauten (2036) + Privat\n\n68 Baurechte Gasversorgung + Werke\n\n69 Gastronomie (2035) + Werke\n\n70 Parkierungsbauten (2036) + Werke\n\n71 Liegenschaften VV + Privat\n\n72 Baurechte Gasversorgung + Werke + Privat\n\n73 Gastronomie (2035) + Werke + Privat\n\n74 Parkierungsbauten (2036) + Werke + Privat\n\n75 Wohnen & Gewerbe + Privat\n\n76 Baurechte Gasversorgung + GSZ\n\n77 Gastronomie (2035) + GSZ\n\n78 Parkierungsbauten (2036) + GSZ\n\n79 Baurechte Gasversorgung + TAZ\n\n80 Gastronomie (2035) + TAZ\n\n81 Parkierungsbauten (2036) + TAZ\n\n82 Baurechte Gasversorgung + IMMO\n\n83 Gastronomie (2035) + IMMO\n\n84 Parkierungsbauten (2036) + IMMO\n\n85 Wohnen & Gewerbe + Baurechte Gasversorgung\n\n86 Wohnen & Gewerbe + Gastronomie (2035)\n\n87 Wohnen & Gewerbe + Parkierungsbauten (2036)\n\n88 Wohnen & Gewerbe + Baurechte Gasversorgung\n\n89 Wohnen & Gewerbe + Gastronomie (2035)\n\n90 Wohnen & Gewerbe + Parkierungsbauten (2036)\n\n91 Wohnen & Gewerbe + IMMO\n\n92 Wohnen & Gewerbe + GSZ\n\n93 Wohnen & Gewerbe + TAZ\n\n94 Wohnen & Gewerbe + ÜVV\n\n95 Wohnen & Gewerbe + Finanzvermögen LSZ\n\n96 Gastronomie & Finanzvermögen LSZ\n\n97 Parkierungsbauten + Finanzvermögen LSZ"
+               },
+               {
+                  "name": "EIGENTUMSVERHAELTNIS_DESC",
+                  "description": "Bezeichnung für die farbliche Darstellung des Eigentumsverhältnis. Siehe Attribut EIGENTUEMERVERHAELTNIS_CODE"
+               },
+               {
+                  "name": "GEBAEUDEEINGANGSNUMMER",
+                  "description": "Gebäudeeingangsnummer"
+               },
+               {
+                  "name": "GUELTIG_AB",
+                  "description": "Datum ab welchem das Objekt gültig ist"
+               },
+               {
+                  "name": "GUELTIG_BIS",
+                  "description": "Datum der Beendigung des Objekteintrages"
+               },
+               {
+                  "name": "HISTORY_JAHR",
+                  "description": "Angabe des Jahresstandes"
+               },
+               {
+                  "name": "LVZ_GRUNDSTUECK_REF",
+                  "description": "Interne Referenz auf die Katasternummer des Grundstückes"
+               },
+               {
+                  "name": "BUCHUNGSKREIS",
+                  "description": "Angabe des Buchungskreises bei LSZ-Objekten"
+               },
+               {
+                  "name": "STATUS",
+                  "description": "1 = aktiv"
+               },
+               {
+                  "name": "STATUS_WE",
+                  "description": "1 = aktiv"
+               },
+               {
+                  "name": "UNTERVERMOEGEN_TEILPORTFOLI",
+                  "description": "weitere Unterteilung des Vermögens, Null: kein Untervermögen"
+               },
+               {
+                  "name": "GEBAEUDETYP",
+                  "description": "LSZ-interne Typenbezeichnung des Gebäudes\n\nNull: keine Angabe\n\n0: unbekannt\n\n1: Wohnen und Gewerbe\n\n2: Wohnen\n\n3: Unterricht, Bildung und Forschung\n\n4: Industriegebäude\n\n5: Werkstatt- und Gewerbegebäude\n\n6: Lagergebäude\n\n7: Büro- und Verwaltungsgebäude\n\n8: Land- und Forstwirtschaft\n\n9: Justiz, Polizei, Militär und Sicherheit\n\n10: Fürsorge und Gesundheit\n\n11: Kultus\n\n12: Kultur\n\n13: Restauration und Hotellerie\n\n14: Verkehr\n\n15: Sport- und Freizeitanlage\n\n16: Energie- und Kommunikationsanlage\n\n17: Wasserversorgung\n\n18: Reinigung und Entsorgung\n\n19: nicht zugewiesen"
+               }
+            ]
+         },
+         {
+            "name": "V_LVZ_GEBAEUDE_VORJAHR",
+            "description": "Alle Gebäude, die im Besitz der Stadt Zürich sind. Stand der Daten entspricht dem Vorjahr.\n\nAchtung: Ausserhalb des Gemeindegebietes der Stadt Zürich ist nur ein Teil der Gebäudegrundrisse korrekt aufgenommen. Bitte Rücksprache mit LSZ nehmen.",
+            "attributes": [
+               {
+                  "name": "EIGENTUMSVERHAELTNIS_CODE",
+                  "description": "2 Diverse \n\n3 Übriges Verwaltungsvermögen (ÜVV) \n\n4 Übriges Verwaltungsvermögen (ÜVV) + Privat \n\n5 Finanzvermögen LSZ + ÜVV \n\n7 Finanzvermögen LSZ \n\n8 Finanzvermögen LSZ + Privat \n\n9 Verwaltungsvermögen Werke \n\n10 Verwaltungsvermögen Werke + Privat \n\n11 Finanzvermögen LSZ + Werke \n\n12 Finanzvermögen Wohnsiedlung \n\n14 Stiftung \n\n16 Verwaltungsvermögen LSZ (LVV) \n\n19 Übriges Verwaltungsvermögen (ÜVV) + Werke \n\n20 Übriges Verwaltungsvermögen (ÜVV) + Stiftungen \n\n21 Übriges Verwaltungsvermögen (ÜVV) + Wohnsiedlung \n\n23 Verwaltungsvermögen LSZ Wohnsiedlung \n\n25 Verwaltungsvermögen LSZ Baurechte \n\n26 Verwaltungsvermögen GSZ \n\n27 Verwaltungsvermögen GSZ + Privat \n\n28 Verwaltungsvermögen GSZ + Werke \n\n29 Verwaltungsvermögen GSZ + Stiftungen \n\n30 Verwaltungsvermögen TAZ \n\n31 Verwaltungsvermögen TAZ + Privat \n\n32 Verwaltungsvermögen TAZ + Werke \n\n33 Verwaltungsvermögen TAZ + Stiftungen \n\n34 Verwaltungsvermögen Immo \n\n35 Verwaltungsvermögen Immo + Privat \n\n36 Verwaltungsvermögen Immo + Werke \n\n37 Verwaltungsvermögen Immo + Stiftungen \n\n38 Finanzvermögen LSZ + GSZ \n\n39 Finanzvermögen LSZ + TAZ \n\n40 Finanzvermögen LSZ + Immo \n\n41 Verwaltungsvermögen LSZ Einzelwohnliegenschaft + Finanzvermögen LSZ \n\n42 Verwaltungsvermögen LSZ Einzelwohnliegenschaft + Immo \n\n43 Verwaltungsvermögen LSZ Einzelwohnliegenschaft + GSZ \n\n44 Verwaltungsvermögen LSZ Einzelwohnliegenschaft + TAZ \n\n45 Verwaltungsvermögen LSZ Einzelwohnliegenschaft + ÜVV \n\n46 Verwaltungsvermögen LSZ Wohnsiedlung + Finanzvermögen LSZ \n\n47 Verwaltungsvermögen LSZ Wohnsiedlung + Immo \n\n48 Verwaltungsvermögen LSZ Wohnsiedlung + GSZ \n\n49 Verwaltungsvermögen LSZ Wohnsiedlung + TAZ \n\n50 Verwaltungsvermögen LSZ Wohnsiedlung + ÜVV \n\n51 Verwaltungsvermögen LSZ Einzelwohnliegenschaft \n\n52 Liegenschaften VV \n\n53 Baurechte VV \n\n54 Baurechte FV \n\n55 Baurechte Gasversorgung \n\n56 Gewerbe FV \n\n57 Wohnen FV \n\n58 Landreserven \n\n59 Wohnen & Gewerbe (2034) \n\n60 Gastronomie (2035) \n\n61 Parkierungsbauten (2036) \n\n62 Baurechte Gasversorgung + ÜVV \n\n63 Gastronomie (2035) + ÜVV \n\n64 Parkierungsbauten (2036) + ÜVV \n\n65 Baurechte Gasversorgung + Privat \n\n66 Gastronomie (2035) + Privat \n\n67 Parkierungsbauten (2036) + Privat \n\n68 Baurechte Gasversorgung + Werke \n\n69 Gastronomie (2035) + Werke \n\n70 Parkierungsbauten (2036) + Werke \n\n71 Liegenschaften VV + Privat \n\n72 Baurechte Gasversorgung + Werke + Privat \n\n73 Gastronomie (2035) + Werke + Privat \n\n74 Parkierungsbauten (2036) + Werke + Privat \n\n75 Wohnen & Gewerbe + Privat \n\n76 Baurechte Gasversorgung + GSZ \n\n77 Gastronomie (2035) + GSZ \n\n78 Parkierungsbauten (2036) + GSZ \n\n79 Baurechte Gasversorgung + TAZ \n\n80 Gastronomie (2035) + TAZ \n\n81 Parkierungsbauten (2036) + TAZ \n\n82 Baurechte Gasversorgung + IMMO \n\n83 Gastronomie (2035) + IMMO \n\n84 Parkierungsbauten (2036) + IMMO \n\n85 Wohnen & Gewerbe + Baurechte Gasversorgung \n\n86 Wohnen & Gewerbe + Gastronomie (2035) \n\n87 Wohnen & Gewerbe + Parkierungsbauten (2036) \n\n88 Wohnen & Gewerbe + Baurechte Gasversorgung \n\n89 Wohnen & Gewerbe + Gastronomie (2035) \n\n90 Wohnen & Gewerbe + Parkierungsbauten (2036) \n\n91 Wohnen & Gewerbe + IMMO \n\n92 Wohnen & Gewerbe + GSZ \n\n93 Wohnen & Gewerbe + TAZ \n\n94 Wohnen & Gewerbe + ÜVV \n\n95 Wohnen & Gewerbe + Finanzvermögen LSZ \n\n96 Gastronomie & Finanzvermögen LSZ \n\n97 Parkierungsbauten + Finanzvermögen LSZ"
+               },
+               {
+                  "name": "UNTERVERMOEGEN_TEILPORTFOLI",
+                  "description": "weitere Unterteilung des Vermögens, Null: kein Untervermögen"
+               },
+               {
+                  "name": "ADR_KREIS_STADTZH",
+                  "description": "Stadtkreis"
+               },
+               {
+                  "name": "ADR_QUARTIER_STADTZH",
+                  "description": "Stadtquartier"
+               },
+               {
+                  "name": "BEZEICHNUNG_WE",
+                  "description": "Bezeichnung der Wirtschaftseinheit"
+               },
+               {
+                  "name": "DATE_MODIFIED",
+                  "description": "Datum vorgenommener Änderungen"
+               },
+               {
+                  "name": "EIGENTUEMERVERTRETER_WE",
+                  "description": "Name des Eigentümervertreters der Wirtschaftseinheit"
+               },
+               {
+                  "name": "EIGENTUMSVERHAELTNIS_DESC",
+                  "description": "Bezeichnung für die farbliche Darstellung des Eigentumsverhältnis. Siehe Attribut EIGENTUEMERVERHAELTNIS_CODE"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Flächengeometrie"
+               },
+               {
+                  "name": "GUELTIG_BIS",
+                  "description": "Datum der Beendigung des Objekteintrages"
+               },
+               {
+                  "name": "INVENTAR_ID_MANUELL",
+                  "description": "Inventarnummer auch als Wirtschaftseinheitsnummer bezeichnet (WE-Nr.)"
+               },
+               {
+                  "name": "LAGEGENAUIGKEIT",
+                  "description": "Angabe für interne Verwendung"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "STATUS_WE",
+                  "description": "1 = aktiv"
+               },
+               {
+                  "name": "VERMOEGENSART_WE",
+                  "description": "Bezeichnung der Vermögensart:\n\n- Verwaltungsvermögen\n\n- Finanzvermögen\n\n- Stiftung"
+               },
+               {
+                  "name": "ADR_GEMEINDE",
+                  "description": "Gemeindename"
+               },
+               {
+                  "name": "ADR_HAUSNR",
+                  "description": "Hausnummer"
+               },
+               {
+                  "name": "ADR_KANTON",
+                  "description": "Kantonsbezeichnung (Kürzel)"
+               },
+               {
+                  "name": "ADR_ORT",
+                  "description": "Ortsname"
+               },
+               {
+                  "name": "ADR_PLZ",
+                  "description": "Postleitzahl (vierstellig)"
+               },
+               {
+                  "name": "ADR_STRASSE",
+                  "description": "Strassenname"
+               },
+               {
+                  "name": "BAUJAHR",
+                  "description": "Gebäudebaujahr"
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": "Objektbezeichnung"
+               },
+               {
+                  "name": "BFS_NR",
+                  "description": "BFS-Gemeindenummer"
+               },
+               {
+                  "name": "DATE_CREATED",
+                  "description": "technisches Erstellungsdatum, erst seit ca. 2017 genutzt. Ältere Objekte haben keinen Eintrag"
+               },
+               {
+                  "name": "EGID",
+                  "description": "Eidgenössische Gebäudeidentifikator"
+               },
+               {
+                  "name": "EIGENTUEMERVERTRETER_GEBAEUDE",
+                  "description": "Name des Eigentümervertreters des Gebäudes"
+               },
+               {
+                  "name": "EIGENTUMSANTEIL",
+                  "description": "Prozentualer Eigentumsanteil am Gebäude"
+               },
+               {
+                  "name": "FLAECHE",
+                  "description": "Gebäudegrundfläche"
+               },
+               {
+                  "name": "GEBAEUDEEINGANGSNUMMER",
+                  "description": "Gebäudeeingangsnummer"
+               },
+               {
+                  "name": "GUELTIG_AB",
+                  "description": "Datum ab welchem das Objekt gültig ist"
+               },
+               {
+                  "name": "GVERNR",
+                  "description": "Gebäudeversicherungsnummer ohne Präfix (z.B. AA)"
+               },
+               {
+                  "name": "GV_NR",
+                  "description": "Präfix der Gebäudeversicherungsnummer, in der Stadt Zürich das Kurzzeichen des Stadtquartiers (z.B. AA), ausserhalb der Stadt Zürich entspricht dies der BFS-Nr."
+               },
+               {
+                  "name": "HISTORY_JAHR",
+                  "description": "Angabe des Jahresstandes"
+               },
+               {
+                  "name": "IST_HAUPTADRESSE",
+                  "description": "NULL = keine Adressangaben vorhanden\n\n0 = keine Information vorhanden, ob es sich um eine Hauptadresse handelt\n\n1 = ja, ist die Hauptadresse\n\n2 = nein, ist eine Nebenadresse"
+               },
+               {
+                  "name": "IST_TEIL_VON_LVZ_GEBAEUDE",
+                  "description": "NULL = keine Angaben vorhanden\n\n1 = ja, betrifft nur einen Prozentanteil des Gebäude (mehreren Eigentümervertretern zugeteilt)\n\n2 = nein, gesamtes Gebäude gehört einem Eigentümervertreter"
+               },
+               {
+                  "name": "LVZ_GRUNDSTUECK_REF",
+                  "description": "Interne Referenz auf die Katasternummer des Grundstückes"
+               },
+               {
+                  "name": "BUCHUNGSKREIS",
+                  "description": "Angabe des Buchungskreises bei LSZ-Objekten"
+               },
+               {
+                  "name": "STATUS",
+                  "description": "1 = aktiv"
+               },
+               {
+                  "name": "TYP_GEBAEUDE_LVZ",
+                  "description": "LSZ-interne Typenbezeichnung des Gebäudes\n\nNull: keine Angabe\n\n0: unbekannt\n\n1: Wohnen und Gewerbe\n\n2: Wohnen\n\n3: Unterricht, Bildung und Forschung\n\n4: Industriegebäude\n\n5: Werkstatt- und Gewerbegebäude\n\n6: Lagergebäude\n\n7: Büro- und Verwaltungsgebäude\n\n8: Land- und Forstwirtschaft\n\n9: Justiz, Polizei, Militär und Sicherheit\n\n10: Fürsorge und Gesundheit\n\n11: Kultus\n\n12: Kultur\n\n13: Restauration und Hotellerie\n\n14: Verkehr \n\n15: Sport- und Freizeitanlage\n\n16: Energie- und Kommunikationsanlage\n\n17: Wasserversorgung\n\n18: Reinigung und Entsorgung\n\n19: nicht zugewiesen"
+               },
+               {
+                  "name": "GEBAEUDETYP",
+                  "description": "LSZ-interne Typenbezeichnung des Gebäudes\n\nNull: keine Angabe\n\n0: unbekannt\n\n1: Wohnen und Gewerbe\n\n2: Wohnen\n\n3: Unterricht, Bildung und Forschung\n\n4: Industriegebäude\n\n5: Werkstatt- und Gewerbegebäude\n\n6: Lagergebäude\n\n7: Büro- und Verwaltungsgebäude\n\n8: Land- und Forstwirtschaft\n\n9: Justiz, Polizei, Militär und Sicherheit\n\n10: Fürsorge und Gesundheit\n\n11: Kultus\n\n12: Kultur\n\n13: Restauration und Hotellerie\n\n14: Verkehr\n\n15: Sport- und Freizeitanlage\n\n16: Energie- und Kommunikationsanlage\n\n17: Wasserversorgung\n\n18: Reinigung und Entsorgung\n\n19: nicht zugewiesen"
+               }
+            ]
+         },
+         {
+            "name": "V_LVZ_GRUNDSTUECK_VORJAHR",
+            "description": "Alle Grundstücke, die im Besitz der Stadt Zürich sind. Der Stand der Daten entspricht dem Vorjahr.\n\nAchtung: Ausserhalb des Gemeindegebietes der Stadt Zürich ist nur ein Teil der Grundstücke geometrisch korrekt aufgenommen. Bitte Rücksprache mit LSZ nehmen.",
+            "attributes": [
+               {
+                  "name": "FLAECHE_RECHTLICH_VEREINBART",
+                  "description": "Rechtlich vereinbarte Fläche"
+               },
+               {
+                  "name": "DATE_CREATED",
+                  "description": "technisches Erstellungsdatum, erst seit ca. 2017 genutzt. Ältere Objekte haben keinen Eintrag"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Flächengeometrie"
+               },
+               {
+                  "name": "GUELTIG_BIS",
+                  "description": "Datum der Beendigung des Objekteintrages"
+               },
+               {
+                  "name": "INVENTAR_ID_MANUELL",
+                  "description": "Inventarnummer auch als Wirtschaftseinheitsnummer bezeichnet (WE-Nr.)"
+               },
+               {
+                  "name": "IST_HAUPTADRESSE",
+                  "description": "NULL = keine Adressangaben vorhanden \n\n0 = keine Information vorhanden, ob es sich um eine Hauptadresse handelt \n\n1 = ja, ist die Hauptadresse \n\n2 = nein, ist eine Nebenadresse"
+               },
+               {
+                  "name": "VERMOEGENSART_WE",
+                  "description": "Bezeichnung der Vermögensart: \n\n- Verwaltungsvermögen \n\n- Finanzvermögen \n\n- Stiftung"
+               },
+               {
+                  "name": "ADR_HAUSNR",
+                  "description": "Hausnummer"
+               },
+               {
+                  "name": "ADR_ORT",
+                  "description": "Ortsname"
+               },
+               {
+                  "name": "ADR_STRASSE",
+                  "description": "Strassenname"
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": "Objektbezeichnung"
+               },
+               {
+                  "name": "EIGENTUEMERVERTRETER_WE",
+                  "description": "Name des Eigentümervertreters der Wirtschaftseinheit"
+               },
+               {
+                  "name": "EIGENTUMSVERHAELTNIS_DESC",
+                  "description": "Bezeichnung für die farbliche Darstellung des Eigentumsverhältnis. Siehe Attribut EIGENTUEMERVERHAELTNIS_CODE"
+               },
+               {
+                  "name": "FLAECHE",
+                  "description": "Grundstücksfläche"
+               },
+               {
+                  "name": "GUELTIG_AB",
+                  "description": "Datum ab welchem das Objekt gültig ist"
+               },
+               {
+                  "name": "HISTORY_JAHR",
+                  "description": "Angabe des Jahresstandes"
+               },
+               {
+                  "name": "LAGEGENAUIGKEIT",
+                  "description": "Angabe für interne Verwendung"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "BUCHUNGSKREIS",
+                  "description": "Angabe des Buchungskreises bei LSZ-Objekten"
+               },
+               {
+                  "name": "STATUS",
+                  "description": "1 = aktiv"
+               },
+               {
+                  "name": "STATUS_WE",
+                  "description": "1 = aktiv"
+               },
+               {
+                  "name": "UNTERVERMOEGEN_TEILPORTFOLIO",
+                  "description": "weitere Unterteilung des Vermögens, Null: kein Untervermögen"
+               },
+               {
+                  "name": "ADR_GEMEINDE",
+                  "description": "Gemeindename"
+               },
+               {
+                  "name": "ADR_KANTON",
+                  "description": "Kantonsbezeichnung"
+               },
+               {
+                  "name": "ADR_KREIS_STADTZH",
+                  "description": "Stadtkreis"
+               },
+               {
+                  "name": "ADR_PLZ",
+                  "description": "Postleitzahl (vierstellig)"
+               },
+               {
+                  "name": "ADR_QUARTIER_STADTZH",
+                  "description": "Stadtquartier"
+               },
+               {
+                  "name": "BEZEICHNUNG_WE",
+                  "description": "Bezeichnung der Wirtschaftseinheit"
+               },
+               {
+                  "name": "BFS_NR",
+                  "description": "BFS-Gemeindenummer"
+               },
+               {
+                  "name": "DATE_MODIFIED",
+                  "description": "Datum vorgenommener Änderungen"
+               },
+               {
+                  "name": "EIGENTUEMERVERTRETER_GRDSTUECK",
+                  "description": "Name des Eigentümervertreters des Grundstückes"
+               },
+               {
+                  "name": "EIGENTUMSVERHAELTNIS_CODE",
+                  "description": "3 Übriges Verwaltungsvermögen (ÜVV)\n\n7 Finanzvermögen LSZ\n\n8 Finanzvermögen LSZ + Privat\n\n9 Verwaltungsvermögen Werke\n\n12 Finanzvermögen Wohnsiedlung\n\n14 Stiftung\n\n16 Verwaltungsvermögen LSZ (LVV)\n\n18 Finanzvermögen Baurechtsareale\n\n23 Verwaltungsvermögen LSZ Wohnsiedlung\n\n25 Verwaltungsvermögen LSZ Baurechte\n\n26 Verwaltungsvermögen GSZ\n\n30 Verwaltungsvermögen TAZ\n\n34 Verwaltungsvermögen Immo\n\n51 Verwaltungsvermögen LSZ Einzelwohnliegenschaft\n\n52 Liegenschaften VV\n\n53 Baurechte VV\n\n54 Baurechte FV\n\n55 Baurechte Gasversorgung\n\n56 Gewerbe FV\n\n57 Wohnen FV\n\n58 Landreserven\n\n59 Wohnen & Gewerbe (2034)\n\n60 Gastronomie (2035)\n\n61 Parkierungsbauten (2036)"
+               },
+               {
+                  "name": "EGRID",
+                  "description": "Eidgenössischer Grundstückidentifikator"
+               },
+               {
+                  "name": "TYP_GRUNDSTUECK_LVZ",
+                  "description": "Typbezeichnung aus Sicht LSZ, CODE"
+               },
+               {
+                  "name": "GRUNDSTUECKTYP",
+                  "description": "Typbezeichnung aus Sicht LSZ"
+               },
+               {
+                  "name": "AV_GRUNDSTUECK_NR",
+                  "description": "Grundstücknummer aus der Amtlichen Vermessung"
+               }
+            ]
+         },
+         {
+            "name": "V_LVZ_RECHT",
+            "description": "Rechte der Stadt Zürich, die sich auf Grundstücke befinden, die nicht im Besitz der Stadt Zürich sind.\n\nAchtung: Ausserhalb des Gemeindegebietes der Stadt Zürich ist nur ein Teil der Rechte geometrisch korrekt aufgenommen. Bitte Rücksprache mit LSZ nehmen.\n\nDie Tabelle mit den Daten des aktuellen Jahres ist jeweils vom 1. Januar bis zum Abschluss der Historisierung des vorangegangenen Jahresendstandes leer. Die Zeitspanne dauert normalerweise von Januar bis März. Während dieser Zeit werden noch Änderungen am Datenbestand vorgenommen. Sobald der Jahresabschluss durchgeführt ist, sind die Daten des aktuellen Jahres sowie der definitive Jahresstand des Vorjahres verfügbar.",
+            "attributes": [
+               {
+                  "name": "DATE_CREATED",
+                  "description": "technisches Erstellungsdatum, erst seit ca. 2017 genutzt. Ältere Objekte haben keinen Eintrag"
+               },
+               {
+                  "name": "BEZEICHNUNG_WE",
+                  "description": "Bezeichnung der Wirtschaftseinheit"
+               },
+               {
+                  "name": "EIGENTUEMERVERTRETER_WE",
+                  "description": "Name des Eigentümervertreters der Wirtschaftseinheit"
+               },
+               {
+                  "name": "INVENTAR_ID_MANUELL",
+                  "description": "Inventarnummer auch als Wirtschaftseinheitsnummer bezeichnet (WE-Nr.)"
+               },
+               {
+                  "name": "IST_HAUPTADRESSE",
+                  "description": "NULL = keine Adressangaben vorhanden\n\n0 = keine Information vorhanden, ob es sich um eine Hauptadresse handelt\n\n1 = ja, ist die Hauptadresse\n\n2 = nein, ist eine Nebenadresse"
+               },
+               {
+                  "name": "VERMOEGENSART_WE",
+                  "description": "Bezeichnung der Vermögensart:\n\n- Verwaltungsvermögen\n\n- Finanzvermögen\n\n- Stiftung"
+               },
+               {
+                  "name": "ADR_GEMEINDE",
+                  "description": "Gemeindename"
+               },
+               {
+                  "name": "ADR_HAUSNR",
+                  "description": "Hausnummer"
+               },
+               {
+                  "name": "ADR_KANTON",
+                  "description": "Kantonsbezeichnung"
+               },
+               {
+                  "name": "ADR_ORT",
+                  "description": "Ortsname"
+               },
+               {
+                  "name": "ADR_STRASSE",
+                  "description": "Strassenname"
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": "Objektbezeichnung"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Punktgeometrie"
+               },
+               {
+                  "name": "HISTORY_JAHR",
+                  "description": "Angabe des Jahresstandes"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "STATUS_WE",
+                  "description": "1 = aktiv"
+               },
+               {
+                  "name": "ADR_KREIS_STADTZH",
+                  "description": "Stadtkreis"
+               },
+               {
+                  "name": "ADR_PLZ",
+                  "description": "Postleitzahl (vierstellig)"
+               },
+               {
+                  "name": "ADR_QUARTIER_STADTZH",
+                  "description": "Stadtquartier"
+               },
+               {
+                  "name": "BFS_NR",
+                  "description": "BFS-Gemeindenummer"
+               },
+               {
+                  "name": "DATE_MODIFIED",
+                  "description": "Datum vorgenommener Änderungen"
+               },
+               {
+                  "name": "GUELTIG_AB",
+                  "description": "Datum ab welchem das Objekt gültig ist"
+               },
+               {
+                  "name": "GUELTIG_BIS",
+                  "description": "Datum der Beendigung des Objekteintrages"
+               },
+               {
+                  "name": "BUCHUNGSKREIS",
+                  "description": "Angabe des Buchungskreises bei LSZ-Objekten"
+               },
+               {
+                  "name": "STATUS",
+                  "description": "1 = aktiv"
+               },
+               {
+                  "name": "UNTERVERMOEGEN_TEILPORTFOLI",
+                  "description": "weitere Unterteilung des Vermögens, Null: kein Untervermögen"
+               }
+            ]
+         },
+         {
+            "name": "V_LVZ_RECHT_VORJAHR",
+            "description": "Rechte der Stadt Zürich, die sich auf Grundstücke befinden, die nicht im Besitz der Stadt Zürich sind. Der Stand der Daten entspricht dem Vorjahr.\n\nAchtung: Ausserhalb des Gemeindegebietes der Stadt Zürich ist nur ein Teil der Rechte geometrisch korrekt aufgenommen. Bitte Rücksprache mit LSZ nehmen.",
+            "attributes": [
+               {
+                  "name": "ADR_HAUSNR",
+                  "description": "Hausnummer"
+               },
+               {
+                  "name": "ADR_KREIS_STADTZH",
+                  "description": "Stadtkreis"
+               },
+               {
+                  "name": "ADR_QUARTIER_STADTZH",
+                  "description": "Stadtquartier"
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": "Objektbezeichnung"
+               },
+               {
+                  "name": "DATE_CREATED",
+                  "description": "technisches Erstellungsdatum, erst seit ca. 2017 genutzt. Ältere Objekte haben keinen Eintrag"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Punktgeometrie"
+               },
+               {
+                  "name": "HISTORY_JAHR",
+                  "description": "Angabe des Jahresstandes"
+               },
+               {
+                  "name": "STATUS_WE",
+                  "description": "1 = aktiv"
+               },
+               {
+                  "name": "ADR_GEMEINDE",
+                  "description": "Gemeindename"
+               },
+               {
+                  "name": "ADR_KANTON",
+                  "description": "Kantonsbezeichnung"
+               },
+               {
+                  "name": "ADR_ORT",
+                  "description": "Ortsname"
+               },
+               {
+                  "name": "ADR_PLZ",
+                  "description": "Postleitzahl (vierstellig)"
+               },
+               {
+                  "name": "ADR_STRASSE",
+                  "description": "Strassenname"
+               },
+               {
+                  "name": "BEZEICHNUNG_WE",
+                  "description": "Bezeichnung der Wirtschaftseinheit"
+               },
+               {
+                  "name": "BFS_NR",
+                  "description": "BFS-Gemeindenummer"
+               },
+               {
+                  "name": "DATE_MODIFIED",
+                  "description": "Datum vorgenommener Änderungen"
+               },
+               {
+                  "name": "EIGENTUEMERVERTRETER_WE",
+                  "description": "Name des Eigentümervertreters der Wirtschaftseinheit"
+               },
+               {
+                  "name": "GUELTIG_AB",
+                  "description": "Datum ab welchem das Objekt gültig ist"
+               },
+               {
+                  "name": "GUELTIG_BIS",
+                  "description": "Datum der Beendigung des Objekteintrages"
+               },
+               {
+                  "name": "INVENTAR_ID_MANUELL",
+                  "description": "Inventarnummer auch als Wirtschaftseinheitsnummer bezeichnet (WE-Nr.)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "BUCHUNGSKREIS",
+                  "description": "Angabe des Buchungskreises bei LSZ-Objekten"
+               },
+               {
+                  "name": "STATUS",
+                  "description": "1 = aktiv"
+               },
+               {
+                  "name": "UNTERVERMOEGEN_TEILPORTFOLIO",
+                  "description": "weitere Unterteilung des Vermögens, Null: kein Untervermögen"
+               },
+               {
+                  "name": "VERMOEGENSART_WE",
+                  "description": "Bezeichnung der Vermögensart: \n\n- Verwaltungsvermögen \n\n- Finanzvermögen \n\n- Stiftung"
+               }
+            ]
+         }
+      ]
+   }
+}

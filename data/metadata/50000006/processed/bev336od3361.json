@@ -1,0 +1,72 @@
+{
+   "title": "Bevölkerung nach Nationalität und Stadtquartier",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bev_bestand_jahr_quartier_nationalitaet_od3361",
+   "abstract": "Wirtschaftliche Wohnbevölkerung der Stadt Zürich nach Staatsangehörigkeit, Statistischem Stadtquartier und Jahr.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Hinweis:\n\nDie Geodaten zu den Statistischen Stadtquartieren finden Sie unter diesem Link auf dem Open-Data-Katalog.\n\nSerbien, Montenegro, Kosovo:\n\nDie Staaten Serbien, Montenegro und Kosovo wurden bis im Jahr 2009 zusammengefasst. Ab dem Jahr 2010 sind sie getrennt ausgewiesen.\n\nNordmazedonien\n\nAb dem 13.02.2019 heisst Mazedonien neu Nordmazedonien. Für Bewegungen bis vor dem 13.02.2019 wird Mazedonien als Staatsangehörigkeit verwendet. Danach nur noch Nordmazedonien. Ab dem Jahresendbestand 2019 wird nur Nordmazedonien verwendet.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Bevölkerung nach Nationalität und Stadtquartier",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Ereignisjahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr"
+               },
+               {
+                  "name": "Stadtquartier (Sort) (technisch: QuarSort)",
+                  "description": "Offizielle ID des Statistischen Stadtquartiers (Integer)"
+               },
+               {
+                  "name": "Stadtquartier (Code) (technisch: QuarCd)",
+                  "description": "Offizielle ID des Statistischen Stadtquartiers (String)"
+               },
+               {
+                  "name": "Stadtquartier (lang) (technisch: QuarLang)",
+                  "description": "Name des Statistischen Stadtquartiers (String)"
+               },
+               {
+                  "name": "Staatsangehörigkeit historisch (Sort) (technisch: NationHistSort)",
+                  "description": "Sortierungscode der historischen Staatsangehörigkeit einer Person. Historisch bedeutet, dass der gültige Landesname in Bezug auf den Zeitbereich der ausgewerteten Daten, ausgewiesen wird. (Integer)"
+               },
+               {
+                  "name": "Staatsangehörigkeit historisch (lang) (technisch: NationHistLang)",
+                  "description": "Bezeichnung der historischen Staatsangehörigkeit einer Person. Historisch bedeutet, dass der gültige Landesname in Bezug auf den Zeitbereich der ausgewerteten Daten, ausgewiesen wird. (String)"
+               },
+               {
+                  "name": "Staatsangehörigkeit (Sort) (technisch: NationSort)",
+                  "description": "Sortierungscode der Staatsangehörigkeit einer Person. Für alle Zeitbereiche die Staatsangehörigkeit gemäss der aktuellen Nomenklatur des Bundesamtes für Statistik. (Integer)"
+               },
+               {
+                  "name": "Staatsangehörigkeit (lang) (technisch: NationLang)",
+                  "description": "Bezeichnung der Staatsangehörigkeit einer Person. Für alle Zeitbereiche die Staatsangehörigkeit gemäss der aktuellen Nomenklatur des Bundesamtes für Statistik. (String)"
+               },
+               {
+                  "name": "Region (Sort) (technisch: RegionSort)",
+                  "description": "Code der Region. Gliederung verschiedener Staaten in Regionen, beispielsweise Südeuropa, Nordeuropa, etc. (Integer)."
+               },
+               {
+                  "name": "Kontinent (lang) (technisch: RegionLang)",
+                  "description": "Bezeichnung der Region (String)."
+               },
+               {
+                  "name": "Kontinent (Sort) (technisch: KontinentSort)",
+                  "description": "Code des Kontinents nach Staatsangehörigkeit der Person. Kontinent gemäss der Nomenklatur des Bundesamtes für Statistik (String)."
+               },
+               {
+                  "name": "Kontinent (lang) (technisch: KontinentLang)",
+                  "description": "Bezeichnung des Kontinents nach Staatsangehörigkeit der Person (String)."
+               },
+               {
+                  "name": "Wirtschaftliche Bevölkerung (technisch: AnzBestWir)",
+                  "description": "Anzal Personen aus der wirtschaftlichen Wohnbevölkerung (Integer)."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-03-05"
+}

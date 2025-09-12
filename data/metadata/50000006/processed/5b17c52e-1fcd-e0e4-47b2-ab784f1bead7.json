@@ -1,0 +1,150 @@
+{
+   "title": "Baumkataster",
+   "keywords": [
+      "Baum",
+      "Stassenbaum",
+      "Obstbaum"
+   ],
+   "metadata_date": "2025-01-14T10:35:19",
+   "updateFrequency": "weekly",
+   "purpose": "Das Baumkataster dient der Verwaltung der Bäume im öffentlichen Raum. Es ist Hilfsmittel für die Pflege dieser Bäume und für den Ersatz \"alter\" Bäume. Zudem ist es eine wichtige Informationsgrundlage für Planende, Projektierende die sich über die bestehenden Baumstandorte orientieren wollen. Interessierte sollen jederzeit aktuell und präzise über Baumarten und Baumstandorte informieren können.",
+   "abstract": "Im Baumkataster werden alle städtischen Bäume im Strassenraum erfasst, welche von Grün Stadt Zürich verwaltet oder gepflegt werden. Ergänzt wird das Baumkataster durch das Obstbauminventar sowie Bäume ausgewählter öffentlicher Grünanlagen und private Bäume.",
+   "identificationDate": "2025-03-09",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Grün Stadt Zürich",
+   "contactPerson": "Michel Ries",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.36167308488333,
+      "eastBoundLongitude": 8.71238105752889,
+      "southBoundLatitude": 47.15426421794444,
+      "northBoundLatitude": 47.483753735111094
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Baumkataster",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "BAUMKATASTER_BAUMSTANDORTE",
+            "description": "Baumstandorte in der Stadt Zürich",
+            "attributes": [
+               {
+                  "name": "OBJID",
+                  "description": "Interlis/Geomedia Identifikationsnummer (Systemvorgabe)"
+               },
+               {
+                  "name": "POI_ID",
+                  "description": "Identifikationsnummer für Züriplan\n\n\"bm_\" + OBJID"
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": "Kategorie für Züriplan (Zusammnzug aus Attribut Status):\n\n- \"Strasssenbaum\": Attribut 'STATUS', Werte 'Strassenbaum' + 'Strassebaum (A)'\n\n- \"Grünanlage\": Attribut 'STATUS', Wert 'Grünanlage'"
+               },
+               {
+                  "name": "QUARTIER",
+                  "description": "Name des statistischen Quartiers in dem der Baum liegt"
+               },
+               {
+                  "name": "STRASSE",
+                  "description": "Strasse an der Baum steht"
+               },
+               {
+                  "name": "BAUMGATTUNGLAT",
+                  "description": "Gattung (lateinisch)"
+               },
+               {
+                  "name": "BAUMARTLAT",
+                  "description": "Art (lateinisch)"
+               },
+               {
+                  "name": "BAUMNAMELAT",
+                  "description": "Gattung, Art und Sorte (lateinisch)"
+               },
+               {
+                  "name": "BAUMNAMEDEU",
+                  "description": "Gattung, Art und Sorte (deutsch)"
+               },
+               {
+                  "name": "BAUMNUMMER",
+                  "description": "Eindeutige Baumnummer.\n\nVermessungsbezirk (z.B.  AL  für Altstetten) + \"-\" + eindeutige Identifikationsnummer pro Vermessungsbezirk"
+               },
+               {
+                  "name": "BAUMTYP",
+                  "description": "Umschreibung der Wuchsform.\n\nCoded Domain\n\n1: Höhe: >20m, Breite: >10m; grosskronige, breit wachsende Bäume\n\n2: Höhe: >20m, Breite: &lt;10m; grosskronige, schmal wachsende  Bäume\n\n3: Höhe: 10-20m, Breite: >10m; mittelgrosse, breit wachsende Bäume\n\n4: Höhe:10-20m, Breite: &lt;10m; mittelgrosse, schmal wachsende  Bäume \n\n5: Höhe: &lt;10m, Breite: &lt;10m; kleinkronige Bäume\n\n6: Obstbäume"
+               },
+               {
+                  "name": "BAUMTYPTEXT",
+                  "description": "Umschreibung der Wuchsform.\n\nCoded Domain\n\n1: Höhe: >20m, Breite: >10m; grosskronige, breit wachsende Bäume\n\n2: Höhe: >20m, Breite: &lt;10m; grosskronige, schmal wachsende  Bäume\n\n3: Höhe: 10-20m, Breite: >10m; mittelgrosse, breit wachsende Bäume\n\n4: Höhe: 10-20m, Breite: &lt;10m; mittelgrosse, schmal wachsende  Bäume \n\n5: Höhe: &lt;10m, Breite: &lt;10m; kleinkronige Bäume\n\n6: Obstbäume"
+               },
+               {
+                  "name": "PFLANZJAHR",
+                  "description": "Jahr, in welchem der Baum gepflanzt wurde. Ist nicht für alle Bäume bekannt."
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI Identifikationsnummer (Systemvorgabe)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "ESRI Geometrietyp"
+               },
+               {
+                  "name": "Kronendurchmesser",
+                  "description": "Krondendurchmesser in m. Die Kronendurchmesser im Baumkataster sind unvollständig, werden unregelmässig nachgeführt und sind nur geschätzt. Bei Bäumen bei denen keine Kronendurchmesser vorhanden ist, wird ein Durchmesser von 8m verwendet."
+               },
+               {
+                  "name": "GENAUIGKEIT",
+                  "description": "Art der Koordinaten-Bestimmung\n\n  - Bildschirmeingabe\n\n  - Digitalisierung oder ELTA2\n\n  - Eingemessen\n\n  - Eingemessen (Nachpflanzung)\n\n  - Luftbild\n\n  - Unbekannte Quelle"
+               },
+               {
+                  "name": "STATUS",
+                  "description": "Kategorisierung der Bäume.\n\n- Strassenbaum: Baum, der vollständig im Strassenraum steht\n\n- Strassenbaum (A): Baum in einer Grünanlage, welcher den Strassenraum mitprägt \n\n- Grünanlage: Baum in einer Grünanlage (wichtig: nicht alle Grünanlagenbäume sind erfasst)\n\n- Bund: Bäume, die auf Grundstücken im Eigentum des Bundes stehen\n\n- Kanton: Bäume, die auf Grundstücken im Eigentum des Kantones stehen\n\n- Schulen: Bäume auf Schularealen\n\n- Privat: Bäume auf Privatgrund\n\n- Obst: separat erfasste Obstbäume, die nicht in eine andere Kategorie fallen"
+               }
+            ]
+         },
+         {
+            "name": "BAUMKATASTER_KRONENDURCHMESSER",
+            "description": "Darstellung des Kronendurchmessers für den CAD-Export. Die Kronendurchmesser im Baumkataster sind unvollständig, werden unregelmässig nachgeführt und sind nur geschätzt. Bei Bäumen bei denen kein Kronendurchmesser vorhanden ist, wird ein Durchmesser von 8m verwendet.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI Identifikationsnummer (Systemvorgabe)"
+               },
+               {
+                  "name": "BAUMNUMMER",
+                  "description": "Eindeutige Baumnummer.\n\nVermessungsbezirk (z.B. AL für Altstetten) + \"-\" + eindeutige Identifikationsnummer pro Vermessungsbezirk"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "ESRI Geometrietyp"
+               }
+            ]
+         },
+         {
+            "name": "BAUMSTANDORTE_K",
+            "description": "Darstellung des Baumstandortes als Kreis (10cm Radius) für den CAD-Export.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI Identifikationsnummer (Systemvorgabe)"
+               },
+               {
+                  "name": "BAUMNAMEDEU",
+                  "description": "Gattung, Art und Sorte (deutsch)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "ESRI Geometrietyp"
+               }
+            ]
+         }
+      ]
+   }
+}

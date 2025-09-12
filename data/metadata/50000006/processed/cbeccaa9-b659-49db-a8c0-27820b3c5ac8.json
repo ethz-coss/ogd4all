@@ -1,0 +1,233 @@
+{
+   "title": "öffentlich zugängliche Parkplätze DAV",
+   "metadata_date": "2024-10-23T07:24:39",
+   "updateFrequency": "daily",
+   "purpose": "Für verschieden Verwaltungs- und Kontrollaufgaben",
+   "abstract": "Gebühren- oder bewilligungspflichtige Parkplätze",
+   "identificationDate": "2025-03-18",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Sicherheitsdepartement - Dienstabteilung Verkehr",
+   "contactPerson": "Marc Aeberhard",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "OEFF_STRASSEN_GUETERUMSCHLAG_P",
+            "description": "Güterumschlag",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "TYP",
+                  "description": "= Güterumschlag"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Punkt am Schwerpunkt des Güterumschlagparkplatzes"
+               }
+            ]
+         },
+         {
+            "name": "OEFF_STRASSENPARKIERUNG_DAV_L",
+            "description": "Berechneter Abschnitt mit Parkplätzen (Blaue Zone, Güter/Taxi, Güterumschlag und Parkscheibe) aufgrund der Längenangabe.",
+            "attributes": [
+               {
+                  "name": "PARKIERUNGSFLAECHEID",
+                  "description": null
+               },
+               {
+                  "name": "ABSTELLART",
+                  "description": null
+               },
+               {
+                  "name": "TYP",
+                  "description": "Wert aus Liste:\n\nBlaue Zone, Güter/Taxi, Güterumschlag und Parkscheibe"
+               },
+               {
+                  "name": "LAENGE",
+                  "description": "Länge des Parkfeldes"
+               },
+               {
+                  "name": "LOKALISATIONNUMMER",
+                  "description": "offizielle Strassennummer"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Liniengeometrie"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               }
+            ]
+         },
+         {
+            "name": "OEFF_STRASSENPARKIERUNG_DAV_P",
+            "description": "Strassenparkplätze DAV",
+            "attributes": [
+               {
+                  "name": "ART",
+                  "description": "Wert aus Liste:\n\nBlaue Zone, Güter/Taxi, Güterumschlag und Parkscheibe"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": null
+               },
+               {
+                  "name": "DIENSTABTEILUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEBPFLICHT",
+                  "description": null
+               },
+               {
+                  "name": "ZUGANG",
+                  "description": null
+               },
+               {
+                  "name": "EIGENTUM",
+                  "description": null
+               },
+               {
+                  "name": "PARKDAUER",
+                  "description": null
+               },
+               {
+                  "name": "STAND",
+                  "description": null
+               },
+               {
+                  "name": "ORIENTIERUNG",
+                  "description": null
+               },
+               {
+                  "name": "INBETRIEBNAHME",
+                  "description": null
+               },
+               {
+                  "name": "INPROJEKT",
+                  "description": null
+               },
+               {
+                  "name": "DAVNR",
+                  "description": null
+               },
+               {
+                  "name": "BEZEICHNUNG",
+                  "description": null
+               },
+               {
+                  "name": "PARKFELDNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Punktgeometrie"
+               }
+            ]
+         },
+         {
+            "name": "OEFF_STRASSENPARKIERUNG_SPUZPU",
+            "description": "Standort der Parkuhr",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": null
+               },
+               {
+                  "name": "DAVNR",
+                  "description": null
+               },
+               {
+                  "name": "TYP",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSWERT",
+                  "description": null
+               },
+               {
+                  "name": "HOCHWERT",
+                  "description": null
+               },
+               {
+                  "name": "GEOSERVERSTRASSEID",
+                  "description": null
+               },
+               {
+                  "name": "GEOSERVERHAUSNUMMERID",
+                  "description": null
+               },
+               {
+                  "name": "PARKIERUNGZONENUMMER",
+                  "description": null
+               },
+               {
+                  "name": "PARKIERUNGZONENAME",
+                  "description": null
+               },
+               {
+                  "name": "TARIF",
+                  "description": null
+               },
+               {
+                  "name": "FILE_PATH",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "OEFF_STRASSENP_DAV_OPU_MIT_L_P",
+            "description": "ungefährer Punkt im Bereich eines Parkfeldes (Blaue Zone, Güter/Taxi, Güterumschlag, Parkscheibe)",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "PARKIERUNGSFLAECHEID",
+                  "description": null
+               },
+               {
+                  "name": "ABSTELLART",
+                  "description": null
+               },
+               {
+                  "name": "TYP",
+                  "description": "Wert aus Liste: Blaue Zone, Güter/Taxi, Güterumschlag, Parkscheibe"
+               },
+               {
+                  "name": "LAENGE",
+                  "description": "Länge des Parkfeldes"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Punktgeometrie"
+               }
+            ]
+         }
+      ]
+   }
+}

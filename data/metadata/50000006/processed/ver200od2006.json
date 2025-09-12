@@ -1,0 +1,48 @@
+{
+   "title": "Bestand der Personenwagen von natürlichen Personen nach Altersklasse und Herkunft der Halter*innen",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/prd_ssz_fz_pw_bestand_natpers_altersklasse_herkunft_jahr_od2006",
+   "abstract": "Dieser Datensatz beinhaltet die Anzahl Personenwagen der Stadt Zürich im Besitz natürlicher Personen nach Jahr sowie Alter und Herkunft der Halter*innen.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Stichtag:\n\nDer Stichtag zur Bestimmung des Jahresstandes ist jeweils der 30. September. Nicht wie normalerweise üblich der 31. Dezember.\n\nFahrzeugbestand:\n\nDer Datensatz enthält verschiedene Informationen zu den in der Stadt Zürich gemeldeten Motorfahrzeugen mit Zürcher Nummernschild im Besitz von natürlichen und juristischen Fahrzeughalter*innen.\n\nPersonenwagen:\n\nPersonenwagen sind Fahrzeuge mit höchstens 9 Sitzplätzen inklusive Sitzplatz für die Person, die fährt.\n\nRechtsform:\n\nDie Rechtsform sagt aus, ob das Fahrzeug einer natürlichen oder einer juristischen Person gehört. Hier werden nur Fahrzeuge im Besitz natürlicher Personen ausgewiesen.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Bestand der Personenwagen von natürlichen Personen nach Altersklasse und Herkunft der Halter*innen",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Stichtag (technisch: StichtagDat)",
+                  "description": "Stichtag zur Bestimmung des Fahrzeugbestands. Der Stichtag ist in diesem Datensatz jeweils der 30. September."
+               },
+               {
+                  "name": "Bestandsjahr (technisch: StichtagDatJahr)",
+                  "description": "Kalenderjahr, zu dem der Bestand zugeordnet wird."
+               },
+               {
+                  "name": "Altersgruppe Sortiervariable (technisch: FhAlterVGrpSort)",
+                  "description": "Sortiervariable zur Altersgruppe (numerisch)."
+               },
+               {
+                  "name": "Altersgruppe (technisch: FhAlterVGrpLang)",
+                  "description": "Altersgruppe der Halter*innen (string)."
+               },
+               {
+                  "name": "Herkunft Codevariable (technisch: FhHerkunftCd)",
+                  "description": "Codevariable zur Herkunft (numerisch)."
+               },
+               {
+                  "name": "Herkunft (technisch: FhHerkunftLang)",
+                  "description": "Herkunft der Halter*innen (string)."
+               },
+               {
+                  "name": "Anzahl Fahrzeuge (technisch: FzAnz)",
+                  "description": "Anzahl Fahrzeuge (numerisch)."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-02-11"
+}

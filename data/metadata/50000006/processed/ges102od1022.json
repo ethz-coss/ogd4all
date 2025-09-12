@@ -1,0 +1,56 @@
+{
+   "title": "Feuerwehreinsätze",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/sid_srz_od1022_feuerwehreinsaetze_jahr_monat_kategorie_thema",
+   "abstract": "Feuerwehreinsätze von Schutz und Rettung nach Kategorie (z.B. Brand, Unfall), Thema (höherer Detaillierungsgrad passend zur Kategorie), Jahr und Monat.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Standorte\n\nStandorte: Von 2003 bis 2007 nur Wache Süd. Seit 2008 die Wachen Süd und Flughafen.\n\nZeitreihe zu Kategorien und Themen\n\nZeitreihe zu Kategorien und Themen: Je nach Jahr wurden von Schutz und Rettung andere Kategorien und Themen veröffentlicht.\n\nElementarereignisse\n\nElementarereignisse: Ereignisse im Zusammenhang mit Unwetter oder Wasser\n\nUmweltgefährdung\n\nUmweltgefährdung: Einsätze von Oel-, Chemie- oder Strahlenwehr\n\nBMA\n\nBMA: Brandmeldeanlagen",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Feuerwehreinsätze",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: Jahr)",
+                  "description": "Jahr (Numeric)"
+               },
+               {
+                  "name": "Jahr und Monat (technisch: JahrMonat)",
+                  "description": "Jahr und Monat (JJJJ-MM, String)"
+               },
+               {
+                  "name": "Monat (technisch: Monat)",
+                  "description": "Monat (String)"
+               },
+               {
+                  "name": "Standorte (technisch: Standorte)",
+                  "description": "Standorte der Wachen (String)"
+               },
+               {
+                  "name": "KategorieSort (technisch: KategorieSort)",
+                  "description": "KategorieSort (Numeric)"
+               },
+               {
+                  "name": "Kategorie (technisch: Kategorie)",
+                  "description": "Kategorie (String)"
+               },
+               {
+                  "name": "ThemaSort (technisch: ThemaSort)",
+                  "description": "ThemaSort (Numeric)"
+               },
+               {
+                  "name": "Thema (technisch: Thema)",
+                  "description": "Thema (String; höherer Detaillierungsgrad; passend zu der Kategorie)"
+               },
+               {
+                  "name": "Anzahl (technisch: Anzahl)",
+                  "description": "Anzahl Einsätze (Numeric)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-04-01"
+}

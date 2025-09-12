@@ -1,0 +1,290 @@
+{
+   "title": "Strassennamenverzeichnis",
+   "keywords": [
+      "Strassennamen",
+      "Lokalisationnamen",
+      "Lokalisationsnamen"
+   ],
+   "metadata_date": "2025-02-17T13:52:31",
+   "updateFrequency": "asNeeded",
+   "purpose": "Führen der offiziellen Strassennamen der Stadt Zürich.",
+   "abstract": "Offizielle Lokalisationsnamen mit Liniengeometrie (in der Folge Strassennamen genannt) der Stadt Zürich mit Angaben aus dem Strassennamenbuch. Unter Lokalisationsnamen versteht man Strassenplätze und Wege (Strassennamen).",
+   "identificationDate": "2025-03-17",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Geomatik + Vermessung",
+   "contactPerson": "André Graf",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.351987544965217,
+      "eastBoundLongitude": 8.995762202764812,
+      "southBoundLatitude": 47.16239242364716,
+      "northBoundLatitude": 47.69020608441791
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Strassennamenverzeichnis",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "SV_SNB_BESCHLUESSE",
+            "description": "Angaben zu den Beschlüssen (mehrfache Einträge zu Strassen)",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "VT_STR_NR",
+                  "description": "Lokalisationnummer"
+               },
+               {
+                  "name": "VT_BE_ID",
+                  "description": "Referenz-ID"
+               },
+               {
+                  "name": "QU_BEZEICHNUNG",
+                  "description": "Bezeichnung der Quelle (Abkürzung)"
+               },
+               {
+                  "name": "QU_BEZEICH_K",
+                  "description": "Bezeichnung der Quelle (Kurzvariante)"
+               },
+               {
+                  "name": "QU_BEZEICH_L",
+                  "description": "Bezeichnung der Quelle (ausgeschrieben)"
+               },
+               {
+                  "name": "BE_JAHR",
+                  "description": "Beschlussjahr"
+               },
+               {
+                  "name": "BE_NUMMER",
+                  "description": "Beschlussnummer"
+               },
+               {
+                  "name": "BE_DOK_NAME",
+                  "description": "Dokumentenname"
+               },
+               {
+                  "name": "DOK_PFAD",
+                  "description": "Pfad des PDF-Files (intern)"
+               }
+            ]
+         },
+         {
+            "name": "SV_STR_LIN",
+            "description": "Alle rechtsgültigen und projektierten Strassen in der Stadt Zürich. Angereichert mit Sachinformationen aus dem Strassennamenbuch.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "STR_NR",
+                  "description": "Lokalisationnummer"
+               },
+               {
+                  "name": "STR_NAME",
+                  "description": "Lokalisationsname"
+               },
+               {
+                  "name": "STR_ST_ID_REF",
+                  "description": "Referenz auf Status der Strasse [1, 2, 3]"
+               },
+               {
+                  "name": "STR_VON",
+                  "description": "Lokalisationsbezeichnung evtl. mit Hausnummer am Start"
+               },
+               {
+                  "name": "STR_BIS",
+                  "description": "Lokalisationsbezeichnung evtl. mit Hausnummer am Ende"
+               },
+               {
+                  "name": "STR_KREIS",
+                  "description": "Namen der Stadtkreise in welchen die Strasse liegt."
+               },
+               {
+                  "name": "STR_PLANQUADRAT",
+                  "description": "Namen der Orell-Füssli Planquadrate"
+               },
+               {
+                  "name": "STR_VB",
+                  "description": "Namen der betroffenen Vermessungsbezirke"
+               },
+               {
+                  "name": "STR_UP_KANTON",
+                  "description": "Namen der betroffenen Planeinteilungsrechtecke des kantonalen Übersichtsplanes"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "SNB_STR_NR_REF",
+                  "description": "Referenz auf Strassennummer"
+               },
+               {
+                  "name": "SNB_ERLAEUTERUNG",
+                  "description": "Erläuterung zum Strassennamen aus dem Strassennamenbuch"
+               },
+               {
+                  "name": "SNB_TAFELTEXT_1",
+                  "description": "Text, welcher auf der Strassennamentafel aufgedruckt ist. Teil1."
+               },
+               {
+                  "name": "SNB_TAFELTEXT_2",
+                  "description": "Text, welcher auf der Strassennamentafel aufgedruckt ist. Teil2."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               }
+            ]
+         },
+         {
+            "name": "SV_STR_VERZ",
+            "description": "Sachdaten aus Strassennamenverzeichnis inkl. Attribute aus Strassennamenbuch. Enthält neben den rechtsgültigen Strassenamen die projektierten und die vergangenen.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "XTF_ID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "STR_NR",
+                  "description": "Lokalisationnummer"
+               },
+               {
+                  "name": "STR_NAME",
+                  "description": "Lokalisationsname"
+               },
+               {
+                  "name": "STR_ST_ID_REF",
+                  "description": "Referenz auf Status der Strasse [1, 2, 3]"
+               },
+               {
+                  "name": "STR_VON",
+                  "description": "Lokalisationsbezeichnung evtl. mit Hausnummer am Start"
+               },
+               {
+                  "name": "STR_BIS",
+                  "description": "Lokalisationsbezeichnung evtl. mit Hausnummer am Ende"
+               },
+               {
+                  "name": "STR_KREIS",
+                  "description": "Namen der Stadtkreise in welchen die Strasse liegt."
+               },
+               {
+                  "name": "STR_PLANQUADRAT",
+                  "description": "Namen der Orell-Füssli Planquadrate"
+               },
+               {
+                  "name": "STR_VB",
+                  "description": "Namen der betroffenen Vermessungsbezirke"
+               },
+               {
+                  "name": "STR_UP_KANTON",
+                  "description": "Namen der betroffenen Planeinteilungsrechtecke des kantonalen Übersichtsplanes"
+               },
+               {
+                  "name": "VON_PF_ID_REF_1",
+                  "description": "Referenz auf ...  Evtl. liegt hier kein Stadtratsbeschluss vor."
+               },
+               {
+                  "name": "VON_STR_NR_REF_1",
+                  "description": "Referenz auf Lokalisation am Start"
+               },
+               {
+                  "name": "VON_HNR_1",
+                  "description": "Hausnummer am Start"
+               },
+               {
+                  "name": "VON_SF_ID_REF_1",
+                  "description": "Referenz auf ..."
+               },
+               {
+                  "name": "VON_PF_ID_REF_2",
+                  "description": "Referenz auf ..."
+               },
+               {
+                  "name": "VON_STR_NR_REF_2",
+                  "description": "Referenz auf Lokalisation am Start, falls eine zweite vorhanden ist."
+               },
+               {
+                  "name": "VON_HNR_2",
+                  "description": "Hausnummer am Start, falls eine zweite vorhanden ist."
+               },
+               {
+                  "name": "VON_SF_ID_REF_2",
+                  "description": "Referenz auf ..."
+               },
+               {
+                  "name": "BIS_PF_ID_REF_1",
+                  "description": "Referenz auf ..."
+               },
+               {
+                  "name": "BIS_STR_NR_REF_1",
+                  "description": "Referenz auf Lokalisation am Ende"
+               },
+               {
+                  "name": "BIS_HNR_1",
+                  "description": "Hausnummer am Ende"
+               },
+               {
+                  "name": "BIS_SF_ID_REF_1",
+                  "description": "Referenz auf ..."
+               },
+               {
+                  "name": "BIS_PF_ID_REF_2",
+                  "description": "Referenz auf ..."
+               },
+               {
+                  "name": "BIS_STR_NR_REF_2",
+                  "description": "Referenz auf Lokalisation am Ende, falls eine zweite vorhanden ist."
+               },
+               {
+                  "name": "BIS_HNR_2",
+                  "description": "Hausnummer am Ende, falls eine zweite vorhanden ist."
+               },
+               {
+                  "name": "BIS_SF_ID_REF_2",
+                  "description": "Referenz auf ..."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "SNB_STR_NR_REF",
+                  "description": "Referenz auf ..."
+               },
+               {
+                  "name": "SNB_ERLAEUTERUNG",
+                  "description": "Erläuterung zum Strassennamen aus dem Strassennamenbuch"
+               },
+               {
+                  "name": "SNB_TAFELTEXT_1",
+                  "description": "Text, welcher auf der Strassennamentafel aufgedruckt ist. Teil1."
+               },
+               {
+                  "name": "SNB_TAFELTEXT_2",
+                  "description": "Text, welcher auf der Strassennamentafel aufgedruckt ist. Teil2."
+               }
+            ]
+         }
+      ]
+   }
+}

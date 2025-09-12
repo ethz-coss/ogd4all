@@ -1,0 +1,92 @@
+{
+   "title": "Verkaufspreise (Median) pro Wohnung und pro Quadratmeter Wohnungsfläche im Stockwerkeigentum, nach Zimmerzahl und Baualtersklasse",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bau_hae_preis_stockwerkeigentum_zimmerzahl_gebaeudealter_od5156",
+   "abstract": "Diese Daten beinhalten die Medianpreise pro Wohnung nach Zimmerzahl sowie pro Quadratmeter Wohnungsfläche von im Freihandkauf gehandelten Wohnungen im Stockwerkeigentum in der Stadt Zürich nach Handänderungsjahr und Gebäudealtersklasse.\nBitte beachten Sie für das korrekte Verständnis zu den Daten die unten aufgeführten weiteren Erläuterungen in der Rubrik «Bemerkungen».",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Allgemein:\n\nDie Daten beziehen sich ausschliesslich auf Freihandkäufe von Wohnungen im Stockwerkeigentum.\n\nGebäude-Alterklassen\n\n1=Neubauten, Alter unter 2 Jahren, 2=Gebäude mit einem Alter von 2–9 Jahren, 3=Gebäude mit einem Alter von 10-19 Jahren, 4=Altbauten ab 20 Jahren mit Umbau seit 9 Jahren, 5=Altbauten ab 20 Jahren ohne Umbau seit 9 Jahren\n\nVariablen mit mehreren Varianten\n\nDie meisten Variablen werden in drei Varianten aufgeführt. Die \"Lang\"-Variante beschreibt jeweils den Inhalt (z.B. Handänderungsart HAArtLevel1Lang='Kauf'). Die \"Cd\"-Variante kodiert die Variable alphanumerisch (HAArtLevel1Cd='22'). Die \"Sort\"-Variante kodiert die Variable numerisch (HAArtLevel1Sort=14) und erlaubt eine Sortierung. \"Cd\" und \"Sort\" können auch die gleichen Zahlen enthalten.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Verkaufspreise (Median) pro Wohnung und pro Quadratmeter Wohnungsfläche im Stockwerkeigentum, nach Zimmerzahl und Baualtersklasse",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: Stichtagdatjahr)",
+                  "description": "Jahr (Numerisch)"
+               },
+               {
+                  "name": "Datenstand (Code) (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (P = provisorisch, D = definitiv)"
+               },
+               {
+                  "name": "Art der Handänderung (Sort) (technisch: HAArtLevel1Sort)",
+                  "description": "Im vorliegenden Datensatz ist der Sortiercode der Handänderungsart überall 14 (Numerisch)"
+               },
+               {
+                  "name": "Art der Handänderung (Code) (technisch: HAArtLevel1Cd)",
+                  "description": "Im vorliegenden Datensatz ist der Code der Handänderungsart überall '22' (String)"
+               },
+               {
+                  "name": "Art der Handänderung (Lang) (technisch: HAArtLevel1Lang)",
+                  "description": "Im vorliegenden Datensatz ist die Handänderungsart überall 'Kauf' (String)"
+               },
+               {
+                  "name": "Flag mit Angabe, ob Stockwerkeigentum (Sort) (technisch: HASTWESort)",
+                  "description": "Im vorliegenden Datensatz enthalten alle Handänderungen Stockwerkeigentum (1=Ja) (Numerisch)"
+               },
+               {
+                  "name": "Flag mit Angabe, ob Stockwerkeigentum (Cd) (technisch: HASTWECd)",
+                  "description": "Im vorliegenden Datensatz enthalten alle Handänderungen Stockwerkeigentum ('J'=Ja) (String)"
+               },
+               {
+                  "name": "Flag mit Angabe, ob Stockwerkeigentum (Lang) (technisch: HASTWELang)",
+                  "description": "Im vorliegenden Datensatz enthalten alle Handänderungen Stockwerkeigentum ('Ja') (String)"
+               },
+               {
+                  "name": "Gebäudealtersklasse (Sort) (technisch: BaualterSort_noDM)",
+                  "description": "Gebäudealtersklasse Sortiercode (Numerisch)"
+               },
+               {
+                  "name": "Gebäudealtersklasse (Cd) (technisch: BaualterCd_noDM)",
+                  "description": "Gebäudealtersklasse Code (String)"
+               },
+               {
+                  "name": "Gebäudealtersklasse (Lang) (technisch: BaualterLang_noDM)",
+                  "description": "Gebäudealtersklasse Bezeichnung (String)"
+               },
+               {
+                  "name": "Anzahl Zimmer (Sort) (technisch: AnzZimmerLevel2Sort_noDM)",
+                  "description": "Anzahl Zimmer in statistischen Wohnungen (1 bis 6) (Numerisch)"
+               },
+               {
+                  "name": "Anzahl Zimmer (Cd) (technisch: AnzZimmerLevel2Cd_noDM)",
+                  "description": "Anzahl Zimmer in statistischen Wohnungen ('1' bis '6') (String)"
+               },
+               {
+                  "name": "Anzahl Zimmer (Lang) (technisch: AnzZimmerLevel2Lang_noDM)",
+                  "description": "Anzahl Zimmer in statistischen Wohnungen ('1-Zimmer'-'6-Zimmer und mehr') (String)"
+               },
+               {
+                  "name": "Anzahl Handänderungen (technisch: AnzHA)",
+                  "description": "Anzahl Handänderungen, auf denen die ausgewiesenen Preise beruhen. Aus Datenschutzgründen sind verschiedene Werte maskiert, d.h. enthalten Bereiche (String)"
+               },
+               {
+                  "name": "Medianpreis pro Quadratmeter Wohnungsfläche (technisch: HAPreisWohnflaeche)",
+                  "description": "Medianpreis in Franken pro Quadratmeter Wohnungsfläche aller betrachteten Freihandkäufe (Numerisch)"
+               },
+               {
+                  "name": "Medianpreis pro Gruppe (technisch: HAMedianPreis)",
+                  "description": "Medianpreis in Franken aller betrachteten Käufe (Numerisch)"
+               },
+               {
+                  "name": "Verkaufspreissumme (technisch: HASumPreis)",
+                  "description": "Preissumme in Franken aller betrachteten Käufe (Transaktionsvolumen) (Numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-01-20"
+}

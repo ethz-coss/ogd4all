@@ -1,0 +1,48 @@
+{
+   "title": "Fläche nach Bodenbedeckungsart und unterschiedlichen räumlichen Ausprägungen",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bev_jahr_flaechen_bodenbedeckungsart_od5803",
+   "abstract": "In diesem Datensatz wird die Fläche nach Bodenbedeckungsart als Zeitreihe angeboten, nämlich nach Stadtkreis, nach Stadquartier, nach gesamter Stadt, pro Gesamtfläche, pro Landfläche ohne Wald und pro Siedlungsfläche.\nDie Daten zur Anzahl Personen nach Bodenbedeckungsart finden Sie im Dataset «Bevölkerungdichte nach unterschiedlichen räumlichen Ausprägungen» unter https://data.stadt-zuerich.ch/dataset/bev_bestand_jahr_bevoelkerungsdichten_od5802",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Fläche nach Bodenbedeckungsart und unterschiedlichen räumlichen Ausprägungen",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Raum-Kategorie (technisch: RaumKategorie)",
+                  "description": "Raum-Kategorie (String). Gesamte Stadt, Stadtkreis, Stadtquartier"
+               },
+               {
+                  "name": "Sortier-Variable zum Raum (technisch: RaumSort)",
+                  "description": "Sortier-Variable zum Raum (Integer). 0 für gesamte Stadt, für Stadtkreise: Kreisnummer mal 10 (Beispiel: 80 für Kreis 8), Quartiernummer"
+               },
+               {
+                  "name": "Text-Variable zum Raum (technisch: RaumLang)",
+                  "description": "Text-Variable zum Raum (Integer). Bezeichnung der Stadtquartiere und Stadtkreise"
+               },
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Integer)."
+               },
+               {
+                  "name": "Gesamte Fläche (technisch: FlaecheT)",
+                  "description": "Gesamte Fläche in ha (Integer). T = Total"
+               },
+               {
+                  "name": "Landfläche ohne Wald (technisch: FlaecheL)",
+                  "description": "Gesamte Fläche ohne Gewässer und Wald in ha (Integer). L = Landfläche ohne Wald"
+               },
+               {
+                  "name": "Siedlungsfläche (technisch: FlaecheS)",
+                  "description": "Siedlungsfläche in ha (Integer). S = Siedlungfläche (d.h. Gebäudegrundfläche, Hausumschwung, Gartenanlagen, Parkplätze, Wasserbecken)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-03-05"
+}

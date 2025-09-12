@@ -1,0 +1,101 @@
+{
+   "title": "Kunstbauteninventar",
+   "keywords": [
+      "Ufermauern Stützmauern Brücken Kunstbauten"
+   ],
+   "metadata_date": "2019-10-23T07:13:40",
+   "updateFrequency": "asNeeded",
+   "purpose": "Bewirtschaftung und Erhaltungsmanagement für Kunstbauten, Planungsgrundlage",
+   "abstract": "Kunstbauten sind Bauwerke des Tiefbaus wie Brücken, Tunnels, Stützmauern oder Unterführungen, mit denen natürlich-topografische und künstliche Hindernisse überwunden werden. Das Zürcher Kunstbauteninventar umfasst alle öffentlichen Brücken, Stege- und Fussgängerüberführungen, Strassentunnels, Tramtunnels, Strassenunterführungen, Fussgängerunterführungen, Bachdurchlässe, Leitungsgänge, Uferbauten, Stützmauern, Lärmschutzwände und Uferböschungen auf Stadtgebiet.",
+   "identificationDate": "2025-03-13",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Tiefbauamt",
+   "contactPerson": "Sabina Mächler",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Kunstbauteninventar",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "VIEW_KUBA_FLAECHEN",
+            "description": "View enthält alle Kuba-Objekte, die eine Flächengeometrie haben",
+            "attributes": [
+               {
+                  "name": "BW_NR",
+                  "description": "Bauwerks-Nummer"
+               },
+               {
+                  "name": "BW_NAME",
+                  "description": "Bauwerksname"
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": "Kategorie des Bauwerks"
+               },
+               {
+                  "name": "UNTERKATEGORIE",
+                  "description": "Unterkategorie des Bauwerks"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "ID1",
+                  "description": "eindeutige ID des Bauwerks"
+               }
+            ]
+         },
+         {
+            "name": "VIEW_KUBA_LINIEN",
+            "description": "View enthält alle Kuba-Objekte, welche eine Liniengeometrie haben",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "ID1",
+                  "description": "eindeutige ID des Bauwerks"
+               },
+               {
+                  "name": "BW_NR",
+                  "description": "Bauwerksnummer"
+               },
+               {
+                  "name": "BW_NAME",
+                  "description": "Bauwerksname"
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": "Kategorie des Bauwerks"
+               },
+               {
+                  "name": "UNTERKATEGORIE",
+                  "description": "Unterkategorie des Bauwerks"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               }
+            ]
+         }
+      ]
+   }
+}

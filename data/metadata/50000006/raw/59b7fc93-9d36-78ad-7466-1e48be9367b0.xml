@@ -1,0 +1,2088 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<che:CHE_MD_Metadata xmlns:che="http://www.geocat.ch/2008/che" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gco:isoType="gmd:MD_Metadata" xsi:schemaLocation="http://www.geocat.ch/2008/che http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd http://www.isotc211.org/2005/srv http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd">
+  <gmd:fileIdentifier xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:CharacterString>59b7fc93-9d36-78ad-7466-1e48be9367b0</gco:CharacterString>
+  </gmd:fileIdentifier>
+  <gmd:language xmlns:comp="http://www.geocat.ch/2003/05/gateway/GM03Comprehensive" xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:CharacterString>deu</gco:CharacterString>
+  </gmd:language>
+  <gmd:characterSet xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+  </gmd:characterSet>
+  <gmd:hierarchyLevel xmlns:comp="http://www.geocat.ch/2003/05/gateway/GM03Comprehensive" xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" />
+  </gmd:hierarchyLevel>
+  <gmd:hierarchyLevelName>
+    <gco:CharacterString>Strassenlärmkataster der Stadt Zürich (inkl. 3D)</gco:CharacterString>
+  </gmd:hierarchyLevelName>
+  <gmd:contact>
+    <che:CHE_CI_ResponsibleParty gco:isoType="gmd:CI_ResponsibleParty">
+      <gmd:organisationName>
+        <gco:CharacterString>Stadt Zürich - Gesundheits- und Umweltdepartement - Umwelt- und Gesundheitsschutz</gco:CharacterString>
+      </gmd:organisationName>
+      <gmd:contactInfo>
+        <gmd:CI_Contact>
+          <gmd:phone>
+            <che:CHE_CI_Telephone gco:isoType="gmd:CI_Telephone">
+              <gmd:voice>
+                <gco:CharacterString>+41 44 412 11 73</gco:CharacterString>
+              </gmd:voice>
+              <che:directNumber>
+                <gco:CharacterString>+41 44 412 46 72</gco:CharacterString>
+              </che:directNumber>
+            </che:CHE_CI_Telephone>
+          </gmd:phone>
+          <gmd:address>
+            <che:CHE_CI_Address gco:isoType="gmd:CI_Address">
+              <gmd:city>
+                <gco:CharacterString>Zürich</gco:CharacterString>
+              </gmd:city>
+              <gmd:postalCode>
+                <gco:CharacterString>8050</gco:CharacterString>
+              </gmd:postalCode>
+              <gmd:country>
+                <gco:CharacterString>CH</gco:CharacterString>
+              </gmd:country>
+              <gmd:electronicMailAddress>
+                <gco:CharacterString>Rainer.Bobst@zuerich.ch</gco:CharacterString>
+              </gmd:electronicMailAddress>
+              <che:streetName>
+                <gco:CharacterString>Eggbühlstrasse</gco:CharacterString>
+              </che:streetName>
+              <che:streetNumber>
+                <gco:CharacterString>23</gco:CharacterString>
+              </che:streetNumber>
+            </che:CHE_CI_Address>
+          </gmd:address>
+          <gmd:onlineResource>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage>
+                <gmd:URL>https://www.stadt-zuerich.ch/ugz</gmd:URL>
+              </gmd:linkage>
+            </gmd:CI_OnlineResource>
+          </gmd:onlineResource>
+        </gmd:CI_Contact>
+      </gmd:contactInfo>
+      <gmd:role>
+        <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact" />
+      </gmd:role>
+      <che:individualFirstName>
+        <gco:CharacterString>Rainer</gco:CharacterString>
+      </che:individualFirstName>
+      <che:individualLastName>
+        <gco:CharacterString>Bobst</gco:CharacterString>
+      </che:individualLastName>
+      <che:organisationAcronym>
+        <gco:CharacterString>UGZ</gco:CharacterString>
+      </che:organisationAcronym>
+    </che:CHE_CI_ResponsibleParty>
+  </gmd:contact>
+  <gmd:dateStamp xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:DateTime>2022-10-18T09:28:31</gco:DateTime>
+  </gmd:dateStamp>
+  <gmd:metadataStandardName xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:CharacterString>GM03 2+</gco:CharacterString>
+  </gmd:metadataStandardName>
+  <gmd:spatialRepresentationInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_VectorSpatialRepresentation>
+      <gmd:geometricObjects>
+        <gmd:MD_GeometricObjects>
+          <gmd:geometricObjectType>
+            <gmd:MD_GeometricObjectTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_GeometricObjectTypeCode" codeListValue="composite" />
+          </gmd:geometricObjectType>
+        </gmd:MD_GeometricObjects>
+      </gmd:geometricObjects>
+    </gmd:MD_VectorSpatialRepresentation>
+  </gmd:spatialRepresentationInfo>
+  <gmd:referenceSystemInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_ReferenceSystem>
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gco:CharacterString>CH1903+_LV95</gco:CharacterString>
+          </gmd:code>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:identificationInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <che:CHE_MD_DataIdentification gco:isoType="gmd:MD_DataIdentification">
+      <gmd:citation>
+        <gmd:CI_Citation>
+          <gmd:title xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>Strassenlärmkataster der Stadt Zürich</gco:CharacterString>
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#DE" />
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
+          </gmd:title>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:Date>2024-05-01</gco:Date>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+        </gmd:CI_Citation>
+      </gmd:citation>
+      <gmd:abstract xsi:type="gmd:PT_FreeText_PropertyType">
+        <gco:CharacterString>GIS-gestützter Strassenlärmkataster der Stadt Zürich</gco:CharacterString>
+        <gmd:PT_FreeText>
+          <gmd:textGroup>
+            <gmd:LocalisedCharacterString locale="#DE" />
+          </gmd:textGroup>
+        </gmd:PT_FreeText>
+      </gmd:abstract>
+      <gmd:purpose xsi:type="gmd:PT_FreeText_PropertyType">
+        <gmd:PT_FreeText>
+          <gmd:textGroup>
+            <gmd:LocalisedCharacterString locale="#DE">Strassenlärmemissionspegel auf Strassenachsen sowie maximale Strassenlärmimmissionen der Gebäude. 
+Vollzug von: 
+* SR 814.41 Lärmschutz-Verordnung (LSV) Art. 37
+* GeoIV, Anhang 1, Lärmbelastungskataster für Haupt- und übrige Strassen, ID 144
+* KGeoIV, Anhang 1 Lärmbelastungskataster für Staatsstrassen (nur Städte Zürich und Winterthur), ID 144B</gmd:LocalisedCharacterString>
+          </gmd:textGroup>
+        </gmd:PT_FreeText>
+      </gmd:purpose>
+      <gmd:resourceMaintenance>
+        <che:CHE_MD_MaintenanceInformation xmlns:gts="http://www.isotc211.org/2005/gts" gco:isoType="gmd:MD_MaintenanceInformation">
+          <gmd:maintenanceAndUpdateFrequency>
+            <gmd:MD_MaintenanceFrequencyCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="annually" />
+          </gmd:maintenanceAndUpdateFrequency>
+          <gmd:contact>
+            <che:CHE_CI_ResponsibleParty gco:isoType="gmd:CI_ResponsibleParty">
+              <gmd:organisationName>
+                <gco:CharacterString>Gesundheits- und Umweltdepartement
+                     - Umwelt- und Gesundheitsschutz</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:phone>
+                    <che:CHE_CI_Telephone gco:isoType="gmd:CI_Telephone">
+                      <gmd:voice>
+                        <gco:CharacterString>+41 44 412 11 73</gco:CharacterString>
+                      </gmd:voice>
+                      <che:directNumber>
+                        <gco:CharacterString>+41 44 412 46 72</gco:CharacterString>
+                      </che:directNumber>
+                    </che:CHE_CI_Telephone>
+                  </gmd:phone>
+                  <gmd:address>
+                    <che:CHE_CI_Address gco:isoType="gmd:CI_Address">
+                      <gmd:city>
+                        <gco:CharacterString>Zürich</gco:CharacterString>
+                      </gmd:city>
+                      <gmd:postalCode>
+                        <gco:CharacterString>8050</gco:CharacterString>
+                      </gmd:postalCode>
+                      <gmd:country>
+                        <gco:CharacterString>CH</gco:CharacterString>
+                      </gmd:country>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString>Rainer.Bobst@zuerich.ch</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                      <che:streetName>
+                        <gco:CharacterString>Eggbühlstrasse</gco:CharacterString>
+                      </che:streetName>
+                      <che:streetNumber>
+                        <gco:CharacterString>23</gco:CharacterString>
+                      </che:streetNumber>
+                    </che:CHE_CI_Address>
+                  </gmd:address>
+                  <gmd:onlineResource>
+                    <gmd:CI_OnlineResource>
+                      <gmd:linkage>
+                        <gmd:URL>https://www.stadt-zuerich.ch/ugz</gmd:URL>
+                      </gmd:linkage>
+                    </gmd:CI_OnlineResource>
+                  </gmd:onlineResource>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodeLists.xml#CI_RoleCode" codeListValue="owner" />
+              </gmd:role>
+              <che:individualFirstName>
+                <gco:CharacterString>Bobst</gco:CharacterString>
+              </che:individualFirstName>
+              <che:individualLastName>
+                <gco:CharacterString>Rainer</gco:CharacterString>
+              </che:individualLastName>
+              <che:organisationAcronym>
+                <gco:CharacterString>UGZ</gco:CharacterString>
+              </che:organisationAcronym>
+            </che:CHE_CI_ResponsibleParty>
+          </gmd:contact>
+        </che:CHE_MD_MaintenanceInformation>
+      </gmd:resourceMaintenance>
+      <gmd:graphicOverview>
+        <gmd:MD_BrowseGraphic>
+          <gmd:fileName>
+            <gco:CharacterString>https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/59b7fc93-9d36-78ad-7466-1e48be9367b0.png</gco:CharacterString>
+          </gmd:fileName>
+        </gmd:MD_BrowseGraphic>
+      </gmd:graphicOverview>
+      <gmd:descriptiveKeywords>
+        <gmd:MD_Keywords>
+          <gmd:keyword>
+            <gco:CharacterString>Strassenlärm, Immissionen, Emissionen, Verkehr, Individualverkehr, ÖV, MIV, MÖV, Bus, Tram</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:type>
+            <gmd:MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodeLists.xml#MD_KeywordTypeCode" codeListValue="theme" />
+          </gmd:type>
+        </gmd:MD_Keywords>
+      </gmd:descriptiveKeywords>
+      <gmd:resourceConstraints>
+        <che:CHE_MD_LegalConstraints gco:isoType="gmd:MD_LegalConstraints">
+          <gmd:useLimitation>
+            <gco:CharacterString>1. Nutzungsbestimmung
+
+Diese Geodaten unterliegen folgenden Nutzungsbeschränkungen:	
+
+- Sie dürfen ausschliesslich zu dem unter 4. beschriebenen Zweck genutzt werden.
+	            		
+Die Quelle ist zu bezeichnen: „Quelle: Stadt Zürich“. 
+		        
+   			
+2. Haftungsausschluss
+
+Die in der Verwaltung der Stadt Zürich zuständige Stelle gemäss Art. 8 Abs. 1 GeoIG (SR 510.62) schliesst jede Haftung für direkte und indirekte Schäden durch die Nutzung der Geodaten aus. Sie übernimmt keine Garantie für die Aktualität, Richtigkeit, Vollständigkeit und Genauigkeit der veröffentlichten Geodaten.
+        		
+3. Rahmenbedingungen
+
+Folgende Dokumente bilden die Rahmenbedingungen für Geodaten und Geodienste in der Stadt Zürich:
+       			
+- Städtisches Geoinformationsreglement (StGeoIR), AS 704.100
+https://www.stadt-zuerich.ch/content/dam/stzh/portal/Deutsch/AmtlicheSammlung/Erlasse/704/100/704.100_StGeoIR%20V2.pdf     			
+   			
+
+		       
+4. Nutzungszweck
+
+Stadtinterne Nutzung</gco:CharacterString>
+          </gmd:useLimitation>
+        </che:CHE_MD_LegalConstraints>
+      </gmd:resourceConstraints>
+      <gmd:spatialRepresentationType>
+        <gmd:MD_SpatialRepresentationTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodeLists.xml#MD_SpatialRepresentationTypeCode" codeListValue="" />
+      </gmd:spatialRepresentationType>
+      <gmd:language>
+        <gco:CharacterString>deu</gco:CharacterString>
+      </gmd:language>
+      <gmd:characterSet>
+        <gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+      </gmd:characterSet>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>transportation</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>environment</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>environment_EnvironmentalProtection</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:extent>
+        <gmd:EX_Extent>
+          <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>Stadt Zürich</gco:CharacterString>
+          </gmd:description>
+          <gmd:geographicElement>
+            <gmd:EX_GeographicDescription>
+              <gmd:geographicIdentifier>
+                <gmd:MD_Identifier>
+                  <gmd:code xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString />
+                  </gmd:code>
+                </gmd:MD_Identifier>
+              </gmd:geographicIdentifier>
+            </gmd:EX_GeographicDescription>
+          </gmd:geographicElement>
+          <gmd:geographicElement>
+            <gmd:EX_BoundingPolygon>
+              <gmd:extentTypeCode>
+                <gco:Boolean>true</gco:Boolean>
+              </gmd:extentTypeCode>
+              <gmd:polygon>
+                <gml:MultiSurface gml:id="N10285">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="N1028A">
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList />
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </gmd:polygon>
+            </gmd:EX_BoundingPolygon>
+          </gmd:geographicElement>
+          <gmd:geographicElement>
+            <gmd:EX_GeographicBoundingBox>
+              <gmd:extentTypeCode>
+                <gco:Boolean>true</gco:Boolean>
+              </gmd:extentTypeCode>
+              <gmd:westBoundLongitude>
+                <gco:Decimal>8.443821782566665</gco:Decimal>
+              </gmd:westBoundLongitude>
+              <gmd:eastBoundLongitude>
+                <gco:Decimal>8.631776103472221</gco:Decimal>
+              </gmd:eastBoundLongitude>
+              <gmd:southBoundLatitude>
+                <gco:Decimal>47.31549273037445</gco:Decimal>
+              </gmd:southBoundLatitude>
+              <gmd:northBoundLatitude>
+                <gco:Decimal>47.43963707749998</gco:Decimal>
+              </gmd:northBoundLatitude>
+            </gmd:EX_GeographicBoundingBox>
+          </gmd:geographicElement>
+        </gmd:EX_Extent>
+      </gmd:extent>
+    </che:CHE_MD_DataIdentification>
+  </gmd:identificationInfo>
+  <gmd:contentInfo>
+    <che:CHE_MD_FeatureCatalogueDescription gco:isoType="gmd:MD_FeatureCatalogueDescription">
+      <gmd:includedWithDataset>
+        <gco:Boolean>0</gco:Boolean>
+      </gmd:includedWithDataset>
+      <gmd:featureCatalogueCitation>
+        <gmd:CI_Citation>
+          <gmd:title>
+            <gco:CharacterString>Strassenlärmkataster der Stadt Zürich</gco:CharacterString>
+          </gmd:title>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:Date>2024-05-01</gco:Date>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+        </gmd:CI_Citation>
+      </gmd:featureCatalogueCitation>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>VAS_SDE.VAS_E_STRASSENLAERMEMISSION</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Der Datensatz beinhaltet die Strassenlaermemissionen (gemäss Lärmschutzverordnung LSV) ausgewählter Verkehrsabschnitte der Stadt Zürich. Zum Strassenlärm wird gemäss LSV der Motorfahrzeugverkehr (inkl. motorisiertem öffentlichen Verkehr) sowie der Tramverkehr, wo dieser nicht auf einem separaten Trasse verläuft, gezählt. Die Emissionen wurden gemäss dem eidgenössischen Strassenlärmberechnungsmodell "StL86+" berechnet.</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LOKALISATIONNUMMER</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Nummer der Lokalisation gemäss AV und VAS.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LOKALISATIONSNAME</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Name der Lokalisation gemäss AV und VAS.
+Bildet zusammen mit MESSWERT_VON und MESSWERT_BIS den Schlüssel zur Darstellung als Linienereignis auf VAS_SDE.VAS_ROUTE.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LRETMFZ</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Emission Tag motorisierter Individualverkehr (MIV)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LRENMFZ</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Emission Nacht motorisierter Individualverkehr (MIV)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LAENGE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Bemerkungen zum Tramverkehr</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LRETTRAM</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Emission Tag Tramverkehr</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LRENTRAM</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Emission Nacht Tramverkehr</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LRET</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Emission Tag gesamt</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LREN</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Emission Nacht gesamt</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>MESSWERT_VON</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Anfangs-Kilometrierungswert des Linienereignisses.
+Bildet zusammen mit LOKALISATIONSNAME und MESSWERT_BIS den Schlüssel zur Darstellung als Linienereignis auf VAS_SDE.VAS_ROUTE.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>MESSWERT_BIS</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>End-Kilometrierungswert des Linienereignisses. 
+Bildet zusammen mit LOKALISATIONSNAME und MESSWERT_VON den Schlüssel zur Darstellung als Linienereignis auf VAS_SDE.VAS_ROUTE.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>systeminternes Feld, hat keine fachliche Bedeutung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>UGZ_SDE.STRLAERM_IMMISSIONEN_IST_A</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Strassenlärm-Immissionen bei Gebäuden IST-Zustand</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>systeminternes Attribut, hat keine fachliche Bedeutung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>mapLärm-interner Identifikator des Gebäudes</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ES_MAPLAER</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>für die Beurteilung der Lärmimmission angenommene Empfindlichkeitsstufe (ES) (komma-separierte Aufzählung bei mehreren):
+* "0" / NULL = Empfindlichkeitsstufe fehlt
+* "2" = ES II
+* "3" = ES III
+* "4" = ES IV</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ES_MULTIPL</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>* "ja": dieses Gebäude liegt in mehr als einer Empfindlichkeitsstufe (ES)
+* "nein": dieses Gebäude liegt in max. 1 Empfindlichkeitsstufe (ES)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LRT_MAX</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>maximaler (modellierter) Immissions-Lärmpegel Tag bei diesem Gebäude</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LRN_MAX</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>maximaler (modellierter) Immissions-Lärmpegel Nacht bei diesem Gebäude</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>KAT_WOHN</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>* -1: keine EO für dieses Gebäude (nicht beurteilt)
+* 0: nicht berechnet (beurteilt)
+* 1: Empfindlichkeitsstufe (ES) fehlt
+* 2: &amp;lt;IGW
+* 3: IGW
+* 4: AW-5
+* 7: AW erreicht oder überschritten</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>KAT_WOHN_T</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>* "keine EO für dieses Gebäude"
+* "nicht berechnet"
+* "&amp;lt;IGW"
+* "IGW"
+* "AW-5"
+* "AW"</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>KAT_BETR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>* -1: keine EO für dieses Gebäude (nicht beurteilt) 
+* 0: nicht berechnet (beurteilt) 
+* 1: Empfindlichkeitsstufe (ES) fehlt 
+* 12: &amp;lt;IGW 
+* 14: AW-5 
+* 17: AW erreicht oder überschritten</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>KAT_BETR_T</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>* "keine EO für dieses Gebäude" 
+* "nicht berechnet" 
+* "&amp;lt;IGW" 
+* "AW-5"
+* "AW"</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ZUSTAND</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>* "IST" = IST-Zustand</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>QUELLE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STAND</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Datenstand</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BEMERKUNG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>UGZ_SDE.STRLAERM_EMISSIONEN_IST_L</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Strassenlärm-Emissionen IST-Zustand</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EINBAHN</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Fahrtrichtung:
+* "ALL" = Strassenabschnitt ist in beide Richtungen befahrbar.
+* "TF" = Einbahnstrasse, nur entgegen der Digitalisierrichtung befahrbar.
+* "FT" = Einbahnstrasse, nur in Digitalisierrichtung befahrbar.
+* *N" = Fahrverbot (?)
+(Abgeleitet aus der VAS-Ereignistabelle VAS_SDE.VAS_E_FAHRTRICHTUNG.)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>VT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Geschwindigkeit Tag</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>VN</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Geschwindigkeit Nacht</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>NT1</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Motorfahrzeuge Tag</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>NT2</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Schwerverkehr Tag</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>NT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Motorisierter Individualverkehr (MIV) gesamt Tag</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>NTB</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Schwerverkehrsanteil Tag</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>NN1</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Motorfahrzeuge Nacht</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>NN2</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Schwerverkehr Nacht</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>NN</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Motorisierter Individualverkehr (MIV) gesamt Nacht</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>NNB</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Schwerkehrsanteil Nacht</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LRET_MFZ</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Emission Tag motorisierter Individualverkehr (MIV)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LREN_MFZ</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Emission Nacht motorisierter Individualverkehr (MIV)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BEMERKUNG_TRAM</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Bemerkungen zum Tramverkehr</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LRET_TRAM</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Emission Tag Tramverkehr</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LREN_TRAM</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Emission Nacht Tramverkehr</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LRET</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Emission Tag gesamt</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LREN</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Emission Nacht gesamt</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>MODELL</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>angewendetes Berechnungsmodell:
+* "StL-86+"</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OK</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>OK-Status der Emissionsberechnung auf diesem Abschnitt:
+* "ja"
+* "nein" = Detailinformationen sind bei der Fachstelle Lärmschutz (UGZ) einzuholen</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>MESSWERT_VON</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Anfangs-Kilometrierungswert des Linienereignisses.
+Bildet zusammen mit LOKALISATIONSNAME und MESSWERT_BIS den Schlüssel zur Darstellung als Linienereignis auf VAS_SDE.VAS_ROUTE.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>MESSWERT_BIS</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>End-Kilometrierungswert des Linienereignisses. 
+Bildet zusammen mit LOKALISATIONSNAME und MESSWERT_VON den Schlüssel zur Darstellung als Linienereignis auf VAS_SDE.VAS_ROUTE.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>VAS_ID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BELT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Belagskorrektur Tag</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BELN</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Belagskorrektur Nacht</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STEIGUNG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Steigung des Strassenabschnitts.
+(Abgeleitet aus der VAS-Ereignistabelle VAS_SDE.VAS_E_STEIGUNG.)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>systeminternes Feld, hat keine fachliche Bedeutung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LOKALISATIONNUMMER</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Nummer der Lokalisation gemäss AV und VAS.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LOKALISATIONSNAME</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Name der Lokalisation gemäss AV und VAS.
+Bildet zusammen mit MESSWERT_VON und MESSWERT_BIS den Schlüssel zur Darstellung als Linienereignis auf VAS_SDE.VAS_ROUTE.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>STRLAERM_EP</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Empfangspunkte (Immissionen) an den Gebäudefassaden.
+Gegenwärtig noch mit experimentellem Charakter hinsichtlich wie gut die Empfangspunkte zu anderen 3D Daten passen.</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Interne System-ID</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LR_DAY</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Immissionpegel Lr Tag</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LR_NIGHT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Immissionpegel Lr Nacht</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EXPOSURE_LIMIT_VALUE_D</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Belastungsgrenzwert Beurteilung des Lr Tag</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EXPOSURE_LIMIT_VALUE_N</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Belastungsgrenzwert Beurteilung des Lr Nacht</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>REL_HEIGHT_POD</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Relative Höhe über Boden des Empfangspunktes</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRY_POD</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Z-Wert bestimmt die absolute Höhe des Punktes über Meer</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ES</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Empfindlichkeitsstufe</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>POD_TYP</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Typ des Ermittlungspunktes</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OPERATION_STATUS</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Beurteilung des Ermittlungspunkts, ob es sich dabei beim Objekt um einen Betriebsraum handelt oder nicht.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DETERMINATION_REMARK</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Bemerkungen zum Ermittlungspunkt</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>MCD_STREET</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Modellkorrektur Tag für Strassen</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>MCN_STREET</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Modellkorrektur Nacht für Strassen</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADDRESS_POD</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Adresse des Ermittlungspunkts am Gebäude</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EGID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Eidgenössischer Gebäudeidentifikator</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EDID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Eidgenössischer Wohnungsidentifikator</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ID_POD</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Objektidentifikation Ermittlungsort</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EXPOSURE_LIMIT_DATE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Datum der Publikation</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>E</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Easting</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>N</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Northing</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LBK_ID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Objektidentifikation Strassenlärmbelastungskataster</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Geometriefeld</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>STRLAERM_EP_SZENARIO_MIN3DB</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString />
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LR_DAY</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LR_NIGHT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EXPOSURE_LIMIT_VALUE_D</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EXPOSURE_LIMIT_VALUE_N</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>REL_HEIGHT_POD</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRY_POD</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ES</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>POD_TYP</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OPERATION_STATUS</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DETERMINATION_REMARK</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>MCD_STREET</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>MCN_STREET</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADDRESS_POD</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EGID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EDID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ID_POD</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EXPOSURE_LIMIT_DATE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>E</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>N</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LBK_ID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>STRLAERM_EP_SZENARIO_MIN5DB</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString />
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LR_DAY</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LR_NIGHT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EXPOSURE_LIMIT_VALUE_D</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EXPOSURE_LIMIT_VALUE_N</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>REL_HEIGHT_POD</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRY_POD</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ES</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>POD_TYP</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OPERATION_STATUS</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DETERMINATION_REMARK</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>MCD_STREET</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>MCN_STREET</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADDRESS_POD</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EGID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EDID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ID_POD</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EXPOSURE_LIMIT_DATE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>E</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>N</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LBK_ID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>STRLAERM_EP_SZENARIO_MIN7DB</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString />
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ID_POD</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>E</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>N</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LBK_ID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LR_DAY</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LR_NIGHT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EXPOSURE_LIMIT_VALUE_D</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EXPOSURE_LIMIT_VALUE_N</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>REL_HEIGHT_POD</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRY_POD</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ES</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>POD_TYP</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OPERATION_STATUS</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DETERMINATION_REMARK</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>MCD_STREET</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>MCN_STREET</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADDRESS_POD</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EGID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EDID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EXPOSURE_LIMIT_DATE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>STRLAERM_IMMISSIONEN_GEB_2017</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Strassenlärm-Immissionen auf Gebäuden im Jahr 2017. 
+Für diesen Layer wurde von den Empfangspunkten auf der Gebäudefassade die lautesten Tages- und Nachtpegel übertragen und beurteilt, ob diese Pegel die Grenzwerte für Wohnen und Betrieb einhalten oder überschreiten.
+Diese Daten geben keine Auskunft darüber, wie ein Gebäude tatsächlich genutzt wird.
+Kann nicht für das Baubewilligungsverfahren genutzt werden.</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Systemidentifikator</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EGID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Eidgenössischer Gebäudeidentifikator</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LRT_MAX</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>maximaler (modellierter) Immissions-Lärmpegel Tag bei diesem Gebäude</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LRN_MAX</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>maximaler (modellierter) Immissions-Lärmpegel Nacht bei diesem Gebäude</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>H_REL_TRAUF_BODEN</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Traufhöhe minus Bodenhöhe (H_BODEN) [m]</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>H_REL_FIRST_BODEN</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Firsthöhe minus Bodenhöhe (H_BODEN) [m]</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>REFERENZJAHR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Referenzjahr</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BER_MODELL</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Name des Berechnungsmodells</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Geometriefeld</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ES</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>für die Beurteilung der Lärmimmission angenommene Empfindlichkeitsstufe (ES) (komma-separierte Aufzählung bei mehreren):
+* "0" / NULL = Empfindlichkeitsstufe fehlt
+* "2" = ES II
+* "3" = ES III
+* "4" = ES IV</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ES_MULTIPLE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>* "ja": dieses Gebäude liegt in mehr als einer Empfindlichkeitsstufe (ES) 
+* "nein": dieses Gebäude liegt in max. 1 Empfindlichkeitsstufe (ES)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BEURT_BETRIEB</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Beurteilung, ob der Immissionsgrenzwert (IGW) oder Alarmwert (AW) für die betriebliche Nutzung eingehalten oder überschritten ist:  
+* "AW"
+* "AW-5"
+* "IGW"
+* "&amp;lt;IGW"
+* "ES fehlt"
+* "keine EO für dieses Gebäude"
+* "nicht berechnet"</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>H_BODEN</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Höhe des Grundrisses [Meter über Meer]. Tiefster, sichtbarer Schnittpunkt (Gebäude / Gelände) und zusätzlich minus 3 Meter. Also ca. 1 Stockwerk unter dem Boden.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BEURT_WOHNEN</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Beurteilung, ob der Immissionsgrenzwert (IGW) oder Alarmwert (AW) für die Wohnnutzung eingehalten oder überschritten ist:  
+* "AW"
+* "AW-5"
+* "IGW"
+* "&amp;lt;IGW"
+* "ES fehlt"
+* "keine EO für dieses Gebäude"
+* "nicht berechnet"</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>LBK_EMISSIONSABSCHNITT</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString />
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EMI_VERSION_ID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EMI_VERSION</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOIV_IDENTIFIKATOR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEMEINDE_NR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEMEINDE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ZUSTAENDIGE_STELLE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ZUSTAND_ART</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>REFERENZJAHR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EMISSIONSMODELL</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ZUSCHLAG_PLANUNGSHORIZONT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GUELTIG_AB</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EMI_ABSCHNITT_ID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LRE_TAG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LRE_NACHT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>Z_ERFASSUNG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STEIGUNG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STRASSENBELAG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>KORREKTURWERT_BELAG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OK</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>VT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>VN</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TUNNEL</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BRUECKE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STRASSENBAHN</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>VERKEHR_BEMERKUNG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STRASSENTYP</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>NT1</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>NN1</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>NT2</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>NN2</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ANZ_TRAM_TAG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ANZ_TRAM_NACHT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString />
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:modelType>
+        <che:CHE_MD_modelTypeCode codeList="" codeListValue="FeatureDescription" />
+      </che:modelType>
+    </che:CHE_MD_FeatureCatalogueDescription>
+  </gmd:contentInfo>
+  <gmd:distributionInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_Distribution />
+  </gmd:distributionInfo>
+  <gmd:dataQualityInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:DQ_DataQuality>
+      <gmd:scope>
+        <gmd:DQ_Scope>
+          <gmd:level>
+            <gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" />
+          </gmd:level>
+        </gmd:DQ_Scope>
+      </gmd:scope>
+      <gmd:lineage>
+        <gmd:LI_Lineage />
+      </gmd:lineage>
+    </gmd:DQ_DataQuality>
+  </gmd:dataQualityInfo>
+</che:CHE_MD_Metadata>
+

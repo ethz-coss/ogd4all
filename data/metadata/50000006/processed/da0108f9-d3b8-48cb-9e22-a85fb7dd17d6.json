@@ -1,0 +1,323 @@
+{
+   "title": "Sammelstelle",
+   "keywords": [
+      "Sammelstelle",
+      "Sammelstellen",
+      "Glassammelstelle",
+      "Glassammelstellen",
+      "Altglas",
+      "Altöl",
+      "Recycling",
+      "Metall",
+      "Altmetall",
+      "Öl",
+      "Oel",
+      "Glas",
+      "Wertstoff",
+      "Texttilien"
+   ],
+   "metadata_date": "2023-09-08T06:38:59",
+   "updateFrequency": "weekly",
+   "purpose": "Lokalisation der Standorte Wertstoffsammelstellen",
+   "abstract": "Standorte der Wertstoffsammelstellen (Glas, Kleinmetall, Altöl und Textilien) in der Stadt Zürich",
+   "identificationDate": "2025-03-18",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Entsorgung + Recycling Zürich",
+   "contactPerson": "Peter Kreuzer",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Sammelstelle",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "POI_SAMMELSTELLE_ATT",
+            "description": "Zusatzinformationen zu den Wertstoffsammelstellen (Glas, Kleinmetall und Altöl) in der Stadt Zürich",
+            "attributes": [
+               {
+                  "name": "POI_ID",
+                  "description": "Identifikationsnummer des Objekts in der POI-Verwaltung ('sa' gefolgt von einer vierstelligen Nummer)"
+               },
+               {
+                  "name": "BEHINDERTENGERECHT",
+                  "description": "Bezeichnet, ob die Wertstoffsammelstelle von Rollstuhlfahrenden benutzt werden kann"
+               },
+               {
+                  "name": "TEXTILIEN",
+                  "description": "Bezeichnet den Sammelbehälter für Textilien (X oder Null)"
+               },
+               {
+                  "name": "METALL",
+                  "description": "Bezeichnet den Sammelbehälter für Kleinmetall (X oder Null)"
+               },
+               {
+                  "name": "GLAS",
+                  "description": "Bezeichnet den Sammelbehälter für Braun-, Grün- und Weissglas (X oder Null)"
+               },
+               {
+                  "name": "OEL",
+                  "description": "Bezeichnet den Sammelbehälter für Altöl (X oder Null)"
+               },
+               {
+                  "name": "STANDORT_ID",
+                  "description": "Identifikationsnummer des Objekts in der Dienstabteilung"
+               }
+            ]
+         },
+         {
+            "name": "POI_SAMMELSTELLE_VIEW",
+            "description": "Standorte der Wertstoffsammelstellen (Glas, Kleinmetall und Altöl) in der Stadt Zürich",
+            "attributes": [
+               {
+                  "name": "ISBETRIEBSFERIEN_GEBAEUDE",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "NAME",
+                  "description": "Zusatzangaben zur Adresse der Wertstoffsammelstelle für die genauere Bestimmung der Lage"
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_FR",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_DO",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "POI_ID",
+                  "description": "Identifikationsnummer des Objekts in der POI-Verwaltung ('sa' gefolgt von einer vierstelligen Nummer)"
+               },
+               {
+                  "name": "METALL",
+                  "description": "Bezeichnet den Sammelbehälter für Kleinmetall ( X oder Null)"
+               },
+               {
+                  "name": "BEHINDERTENGERECHT",
+                  "description": "Bezeichnet, ob die Sammelstelle auch von Rollstuhlfahrenden benutzt werden kann (X oder Null)"
+               },
+               {
+                  "name": "TEXTILIEN",
+                  "description": "Bezeichnet den Sammelbehälter für Textilien (X oder Null)"
+               },
+               {
+                  "name": "ADR_INTER",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "ADRZUS_INT",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "BEHINDERTENPARKPLATZ",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "BEMERKUNG",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "CCMAIL",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "DA",
+                  "description": "Dienstabteilung: ERZ Entsorgung + Recycling Zürich"
+               },
+               {
+                  "name": "DATUM_CMS",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "EDITOR",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "ERFORDERLICHEDOKUMENTE",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "FAX",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "HAUSNUMMER",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "HINDERNISFREIHEIT",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "INFRASTRUKTUR",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "ISBETRIEBSFERIEN_SCHALTER",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": "Kategorie der Objekte in der POI-Verwaltung: Sammelstelle"
+               },
+               {
+                  "name": "MAIL",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "NAMENZUS",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_DI",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_DO",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_MI",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_MO",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_SA",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_SO",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_DI",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_FR",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_MI",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_MO",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "ORT",
+                  "description": "Ortsbezeichnung: Zürich"
+               },
+               {
+                  "name": "STRASSE",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "ZAHLUNGSMITTEL_INTERNET",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "ZVV_LABEL",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_SA",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_SO",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "PLZ",
+                  "description": "Bezeichnet das Postleitzahlgebiet in der Stadt Zürich in dem sich die Wertstoffsammelstelle befindet"
+               },
+               {
+                  "name": "POSTADRESSE",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "PUBLISH_INTERNET",
+                  "description": "Bezeichnet, ob die Wertstoffsammelstelle publiziert wird (immer 1)"
+               },
+               {
+                  "name": "SUCHEN",
+                  "description": "Schlagwortkatalog: Sammelstelle, Sammelstellen, Glassammelstelle, Glassammelstellen, Altglas, Altöl, Recycling, Metall, Altmetall, Öl, Oel, Glas, Wertstoff"
+               },
+               {
+                  "name": "TEL",
+                  "description": "Hauptnummer der Dienstabteilung: +41 44 645 77 77"
+               },
+               {
+                  "name": "TEL2",
+                  "description": "Nicht vewendet"
+               },
+               {
+                  "name": "WWW",
+                  "description": "Website-Adresse der Dienstabteilung"
+               },
+               {
+                  "name": "ZAHLUNGSMITTEL_SCHALTER",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "ZAHLUNGSMITTEL_TELEFON",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "ZVV_LINK",
+                  "description": "Nicht verwendet"
+               },
+               {
+                  "name": "GLAS",
+                  "description": "Bezeichnet den Sammelbehälter für Grün-, Weiss- und Braunglas ( X oder Null)"
+               },
+               {
+                  "name": "OEL",
+                  "description": "Bezeichnet den Sammelbehälter für Altöl ( X oder Null)"
+               },
+               {
+                  "name": "STANDORT_ID",
+                  "description": "Identifikationsnummer der Wertstoffsammelstelle"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Punktgeometrie"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "Interne Identifikationsnummer des Objekts in der Dienstabteilung"
+               },
+               {
+                  "name": "ADRESSE",
+                  "description": "Adresse der Wertstoffsammelstelle (Strasse und Hausnummer), nimmt Bezug auf eine Liegenschaftsadresse in der Umgebung"
+               },
+               {
+                  "name": "DATUM",
+                  "description": "Aktualisierung der Daten: dd.mm.yyyy hh:mm"
+               },
+               {
+                  "name": "DEP",
+                  "description": "Departement: Tiefbau- und Entsorgungsdepartement (TED)"
+               }
+            ]
+         }
+      ]
+   }
+}

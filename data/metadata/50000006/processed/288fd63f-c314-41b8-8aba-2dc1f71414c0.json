@@ -1,0 +1,60 @@
+{
+   "title": "Sitzbankkataster OGD",
+   "keywords": [
+      "Bank",
+      "Sitzbank"
+   ],
+   "metadata_date": "2024-10-21T13:10:31",
+   "updateFrequency": "annually",
+   "purpose": "Auszug aus dem Sitzbankkataster von Grün Stadt Zürich.",
+   "abstract": "Im Sitzbankkataster OGD sind alle Sitzbänke auf dem Stadtgebiet im Eigentum von Grün Stadt Zürich (GSZ) und dem Tiefbauamt (TAZ) enthalten.",
+   "identificationDate": "2024-02-26",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Grün Stadt Zürich",
+   "contactPerson": "Dieter Halpern",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Sitzbankkataster_OGD",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "BANKSTANDORTE_OGD",
+            "description": "Datensatz der Bankstandorte von GSZ & TAZ des Sitzbankkatasters.\n\nDie Liste enthält ausschlisslich Bänke von GSZ (Grün Stadt Zürich) und TAZ (Tiefbau- und Amt). Private Bänke und solche im Wald werden nicht aufgeführt.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "Eine Objekt-ID ist eine eindeutige Kennung oder Nummer, die einem Objekt in einer Datenbank oder einem Informationssystem zugewiesen wird. Sie dient dazu, das Objekt eindeutig zu identifizieren und darauf zu verweisen."
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "SITZBANKMODELLE",
+                  "description": "Modellausprägung"
+               },
+               {
+                  "name": "ADRESSE",
+                  "description": "Adresse des Bankstandortes"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Das Attribut \"Geometrie\" beschreibt die räumliche Form oder Position des Objektes"
+               }
+            ]
+         }
+      ]
+   }
+}

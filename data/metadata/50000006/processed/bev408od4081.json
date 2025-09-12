@@ -1,0 +1,88 @@
+{
+   "title": "Geburten nach Monat (effektives Geburtsdatum), Stadtquartier, Geschlecht und Herkunft",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bev_monat_effektiv_geburten_quartier_geschl_ag_herkunft_od4081",
+   "abstract": "Anzahl Geburten nach Monat (effektives Geburtsdatum), Geschlecht, Herkunft, Stadtkreis und Stadtquartier.\nBei den Daten des aktuellsten Jahres handelt es sich um provisorische Daten. Diese können laufend korrigiert werden. Erst mit dem Jahresabschluss werden die Daten definitiv.\nEs ist möglich, dass eine Geburt z.B. vom 28. Dezember 2020 erst Ende Januar 2021, also nach dem Jahresabschluss von Statistik Stadt Zürich, gemeldet wurde. Im vorliegenden Datensatz wird das effektive Geburtsdatum (28. Dezember 2020) und nicht das korrigierte (1. Januar 2021) verwendet. Daher können die vorliegenden Daten von den anderen Daten von Statistik Stadt Zürich abweichen.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Datenstand\n\nAktuellster Monat: Der aktuellste Monat in den Daten entspricht dem aktuellen Monat - 2 Monate.\n\nVariable Datenstand: Die Variablen DatenstandCd und DatenstandLang beschreiben den Datenstand. Provisorische Daten werden laufend korrigiert.\n\nDatenqualität\n\nDatenqualität: Die Daten des aktuellsten Jahres sind jeweils provisorisch und werden laufend korrigiert.\n\nEs ist möglich, dass eine Geburt z.B. vom 28. Dezember 2020 erst Ende Januar 2021, also nach dem Jahresabschluss von Statistik Stadt Zürich, gemeldet wurde. Im vorliegenden Datensatz wird das effektive Geburtsdatum (28. Dezember 2020) und nicht das korrigierte (1. Januar 2021) verwendet. Daher können die vorliegenden Daten von den anderen Daten von Statistik Stadt Zürich abweichen.\n\nAnwendungszweck\n\nAnwendungszweck: In welchen Fällen macht es Sinn mit diesen Daten zu arbeiten?\n\nWenn das effektive Geburtsdatum eine Rolle spielt (insbesondere Anzahl Geburten in den Monaten Dezember und Januar) wird empfohlen mit diesen Daten zu arbeiten.\n\nAber: die Bilanzen (Bestand, Geburten, Todesfälle, Zuzüge, Wegzüge) gemäss Webseite von Statistik Stadt Zürich stimmen nicht mit den vorliegenden Monatsdaten überein. Zudem ergibt die Summe der monatlichen Geburten nicht die von Statistik Stadt Zürich veröffentlichte Zahl der Geburten pro Jahr. Falls das gewünscht wird, sollte der folgende Datensatz verwendet werden: Geburten nach Monat, Stadtquartier, Geschlecht und Herkunft, seit 1998",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Geburten nach Monat (effektives Geburtsdatum), Stadtquartier, Geschlecht und Herkunft",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Geburtsjahr (technisch: GueltigAbDatJahr)",
+                  "description": "Jahr des Ereignisses (der Bewegung, effektives Geburtsjahr) (Integer)."
+               },
+               {
+                  "name": "Geburtsmonat (technisch: GueltigAbDatMM)",
+                  "description": "Monat des Ereignisses (der Bewegung, effektiver Geburtsmonat) (Integer)."
+               },
+               {
+                  "name": "Geburtsmonat (technisch: GueltigAbDatMonat)",
+                  "description": "Monat des Ereignisses (der Bewegung, effektiver Geburtsmonat) (String)."
+               },
+               {
+                  "name": "Tag (technisch: StichtagDat)",
+                  "description": "Tag des Stichtages (String); ISO 8601 YYYY-MM-DD."
+               },
+               {
+                  "name": "Geschlecht (technisch: SexCd)",
+                  "description": "Geschlecht Code (Integer)."
+               },
+               {
+                  "name": "Geschlecht (technisch: SexLang)",
+                  "description": "Geschlecht (String)."
+               },
+               {
+                  "name": "Herkunft (technisch: HerkunftCd)",
+                  "description": "Herkunft Code (Integer)."
+               },
+               {
+                  "name": "Herkunft (technisch: HerkunftLang)",
+                  "description": "Herkunft Bezeichnung (String)."
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisCd)",
+                  "description": "Stadtkreis Code (Integer)."
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisLang)",
+                  "description": "Stadtkreis (String)."
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarCd)",
+                  "description": "Stadtquartier Code (Integer)."
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarLang)",
+                  "description": "Stadtquartier (String)."
+               },
+               {
+                  "name": "Datenstand (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (Integer)."
+               },
+               {
+                  "name": "Datenstand (technisch: DatenstandLang)",
+                  "description": "Datenstand (String)."
+               },
+               {
+                  "name": "Lebensfähigkeit (Code) (technisch: LebensfaehigkeitCd)",
+                  "description": "Lebensfähigkeit des geborenen Kindes (String)."
+               },
+               {
+                  "name": "Lebensfähigkeit (Lang) (technisch: LebensfaehigkeitLang)",
+                  "description": "Lebensfähigkeit des geborenen Kindes (String)."
+               },
+               {
+                  "name": "wirtschaftliche Geburten (technisch: AnzGebuWir)",
+                  "description": "Anzahl Geburten aus der wirtschaftlichen Wohnbevölkerung (Integer)."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-05-20"
+}

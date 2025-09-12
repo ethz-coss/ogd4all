@@ -1,0 +1,112 @@
+{
+   "title": "Bauten - Kombinierte Darstellung mittelfristige Zukunft (3D)",
+   "keywords": [
+      "Geodaten",
+      "Vektordaten",
+      "3D",
+      "3D-Stadtmodell",
+      "LoD1",
+      "LoD2",
+      "3D-Blockmodell",
+      "3D-Dachmodell",
+      "Architekturwettbewerbe",
+      "Gestaltungspläne",
+      "Studien"
+   ],
+   "metadata_date": "2024-03-04T10:03:25",
+   "updateFrequency": "weekly",
+   "purpose": "Ein 3D-Stadtmodell liefert die Grundlagen für folgende, wichtige Einsatzgebiete:\n\n- Lärmkataster\n\n- Sichtbarkeitsanalysen\n\n- Schattenberechnungen\n\n- Visualisierungen grosser Bau- und Infrastrukturprojekte\n\n- Stadtplanung\n\n- Städtebauliche Betrachtungen\n\n- Fahrsimulatoren\n\n- Einsatzunterstützung Blaulichtorganisationen\n\n- Standortmarketing\n\n- Tourismus\n\n- Solarenergiepotentialberechnungen\n\n- ...",
+   "abstract": "Dieser Datensatz beinhaltet nebst den aktuellen 3D-Modellen der Bauten der Stadt Zürich auch jene, welche voraussichtlich in den nächsten ca. 3 Jahren realisiert werden, sowie möglicherweise in mittelfristiger Zukunft erstellt werden könnten. Er ist eine Kombination der beiden Originaldatensätzen 'Bauten - Dachmodell (3D)' und 'Bauten - Blockmodell (inkl. 3D)' und wurde angereichert mit Gebäuden aus Architekturwettbewerben, Gestaltungsplänen und städtebaulichen Studien.\n\n\n\nTeil dieses Datensatzes sind demnach:\n\n- Gebäude, welche in der Amtlichen Vermessung den Status \"real\", \"erstellt\", \"freigegeben\" oder \"eingereicht\" haben\n\n- Gebäude aus abgeschlossenen, durch das Amt für Hochbauten der Stadt Zürich oder das Hochbauamt des Kantons Zürich durchgeführten Architekturwettbewerben von öffentlichen Bauten\n\n- Gebäude aus öffentlichen und privaten Gestaltungspläne, die vom Stadtrat gutgeheissen wurden oder bereits rechtskräftig sind (die 3D-Modelle zeigen eine mögliche Bebauung gemäss den Vorschriften des jeweiligen Gestaltungsplans auf).\n\n- Gebäude aus veröffentlichten städtebaulichen Studien (z.B. Leitbilder) (die 3D-Modelle zeigen eine mögliche bauliche Entwicklung auf).\n\n\n\nSomit handelt es sich um einen möglichen Bestand in der mittelfristigen Zukunft (inkl. projektierten Gebäuden und Gebäuden aus Architekturwettbewerben, Gestaltungsplänen und städtebaulichen Studien). Um eine bessere Verständlichkeit des Datensatzes zu erreichen, wurden gegenüber den Originaldatensätzen einige Attribute umbenannt, angereichert oder entfernt. Grundriss und Fassade der bestehenden 3D-Modelle basieren auf den Gebäudegrundrissen der Amtlichen Vermessung. Die Dachstrukturen sind auf Basis von Luftbildern photogrammetrisch bestimmt worden. Neuere Gebäude oder Gebäude der kurzfristigen sowie mittelfristigen Zukunft, von welchen noch keine detaillierten 3D-Dachmodelle vorhanden sind, sind vereinfacht als Blockmodelle modelliert.",
+   "identificationDate": "2025-03-13",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Geomatik + Vermessung",
+   "contactPerson": "Gianna Müller",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI File Geodatabase (.gdb)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Bauten___Kombinierte_Darstellung_mittelfristige_Zukunft",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "KOMBI_LOD1_2_MITTELFR_3D",
+            "description": "3D Featureklasse, mit Kombination aus detaillierten und generalisierten Dachstrukturen. Im ESRI-Multipatch gespeichert und in Oracle Spatial als 3D-Objekt.",
+            "attributes": [
+               {
+                  "name": "EGID",
+                  "description": "Eidgenössischer Gebäudeidentifikator\n\n(nicht vorhanden für geplante Gebäude)"
+               },
+               {
+                  "name": "GID",
+                  "description": "Die Gebäude-ID, welche sich wie folgt zusammensetzt: OGID [17 Zeichen] - Löschzähler [00-99] - Zähler der Objektunterteilung [0000-9999]\n\n(nicht vorhanden für geplante Gebäude)"
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": "Status des 3D-Objekts:\n\n- eingereicht: Baugesuch / -antrag wurde eingereicht\n\n- freigegeben: Baufreigabe wurde erteilt\n\n- erstellt: Bauvollendung / Bezugsbewilligung wurde erteilt\n\n- real: Erstellt und von der Amtlichen Vermessung vermessen\n\n(nicht vorhanden für geplante Gebäude)"
+               },
+               {
+                  "name": "ART",
+                  "description": "Art der Bodenbedeckung oder des Einzelobjektes: (links des :)\n\nBB00: Gebaeude_Verwaltung\n\nBB01: Gebaeude_Wohngebaeude\n\nBB02: Gebaeude_Land_Forstwirtschaft\n\nBB03: Gebaeude_Verkehr\n\nBB04: Gebaeude_Handel\n\nBB05: Gebaeude_Industrie_Gewerbe\n\nBB06: Gebaeude_Gastgewerbe\n\nBB07: Gebaeude_Nebengebaeude\n\nEO00: Mauer\n\nEO03: uebriger_Gebaeudeteil\n\nEO06: wichtige_Treppe\n\nEO08: Bruecke_Passerelle\n\nEO13: Unterstand\n\nEO14: Silo_Turm_Gasometer\n\nEO16: Hochkamin\n\nEO18: Mast_Antenne\n\nEO19: Aussichtsturm\n\nEO20: Uferverbauung\n\nEO23: massiver_Sockel\n\nEO25: Landungssteg\n\n(nicht vorhanden für geplante Gebäude)"
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": "Art der Bodenbedeckung oder des Einzelobjektes: (rechts des :)\n\nBB00: Gebaeude_Verwaltung\n\nBB01: Gebaeude_Wohngebaeude\n\nBB02: Gebaeude_Land_Forstwirtschaft\n\nBB03: Gebaeude_Verkehr\n\nBB04: Gebaeude_Handel\n\nBB05: Gebaeude_Industrie_Gewerbe\n\nBB06: Gebaeude_Gastgewerbe\n\nBB07: Gebaeude_Nebengebaeude\n\nEO00: Mauer\n\nEO03: uebriger_Gebaeudeteil\n\nEO06: wichtige_Treppe\n\nEO08: Bruecke_Passerelle\n\nEO13: Unterstand\n\nEO14: Silo_Turm_Gasometer\n\nEO16: Hochkamin\n\nEO18: Mast_Antenne\n\nEO19: Aussichtsturm\n\nEO20: Uferverbauung\n\nEO23: massiver_Sockel\n\nEO25: Landungssteg\n\n(nicht vorhanden für geplante Gebäude)"
+               },
+               {
+                  "name": "H_REL_FIRST_BODEN",
+                  "description": "Firsthöhe (H_FIRST) minus Bodenhöhe (H_BODEN) [m]"
+               },
+               {
+                  "name": "HERKUNFT",
+                  "description": "Angabe aus welchem Datensatz ein Objekt stammt (LoD1: 3D-Blockmodell / LoD2: 3D-Dachmodell / Wettbewerb / Gestaltungsplan / Studie)"
+               },
+               {
+                  "name": "REGION",
+                  "description": "Nummer der Filterfläche [01-10], Hinweis auf Filterfläche (Unterteilung des Stadtgebietes)\n\n(nicht vorhanden für geplante Gebäude)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "STATUS",
+                  "description": "Status des 3D-Objekts:\n\n0: eingereicht\n\n1: freigegeben\n\n2: erstellt\n\n3: real\n\n(nicht vorhanden für geplante Gebäude)"
+               },
+               {
+                  "name": "H_BODEN",
+                  "description": "Höhe des Grundrisses [Meter über Meer]. Tiefster, sichtbarer Schnittpunkt (Gebäude / Gelände) und zusätzlich minus 3 Meter. Also ca. 1 Stockwerk unter dem Boden. (Ausnahme: geplante Gebäude)"
+               },
+               {
+                  "name": "H_FIRST",
+                  "description": "Höhe des Dachfirst [Meter über Meer]"
+               },
+               {
+                  "name": "PROJEKTBEZEICHNUNG",
+                  "description": "Namen des Wettbewerbes / der Studie\t\n\n(nur vorhanden für geplante Gebäude)"
+               },
+               {
+                  "name": "WEITERE_INFORMATIONEN",
+                  "description": "Link zum Projekt\n\n(nur vorhanden für geplante Gebäude)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der Gebäude"
+               },
+               {
+                  "name": "GUID",
+                  "description": "Eindeutiger Identifikator"
+               }
+            ]
+         }
+      ]
+   }
+}

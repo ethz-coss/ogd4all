@@ -1,0 +1,4004 @@
+{
+   "title": "Amtliche Vermessungsdaten Stadt Zürich Jahresendstand 2020",
+   "keywords": [
+      "AV",
+      "Geobasidaten",
+      "Liegenschaften",
+      "Bodenbedeckung",
+      "Vermessung",
+      "Adressen",
+      "Archiv"
+   ],
+   "metadata_date": "2021-01-14T10:46:21",
+   "updateFrequency": "notPlanned",
+   "purpose": "Als amtliche Vermessung im Sinne von Artikel 950 ZGB gelten die zur Anlage und Führung des Grundbuchs vom Kanton genehmigten und vom Bund anerkannten Vermessungen. Die Daten der amtlichen Vermessung sind Georeferenzdaten, die von Behörden des Bundes, der Kantone und der Gemeinden sowie von der Wirtschaft, der Wissenschaft und Dritten zur Gewinnung von Geoinformationen verwendet werden. Auf dem GeoServer sind für die stadtinternen Nutzenden optimierte Tabellenstrukturen aufgeschaltet.",
+   "abstract": "Die amtliche Vermessung (AV) liefert geometrische Daten zum Grundeigentum und ist die Grundlage für viele weitere Geodaten und Anwendungen in Wirtschaft, Verwaltung und Privatleben. \n\nAchtung: Dies ist der Jahresendstand 2020 der AV-Daten!",
+   "identificationDate": "2021-01-06",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Geomatik + Vermessung",
+   "contactPerson": "André Graf",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Amtliche_Vermessungsdaten_Stadt_Zuerich_Jahresendstand_2020",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "AV_EI_ALLEGEBAEUDE_A_V",
+            "description": "Alle Gebäude aus EI",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "MONAT",
+                  "description": null
+               },
+               {
+                  "name": "BAUJAHR",
+                  "description": null
+               },
+               {
+                  "name": "UMBAUJAHR",
+                  "description": null
+               },
+               {
+                  "name": "NUTZUNGSAENDERUNGJAHR",
+                  "description": null
+               },
+               {
+                  "name": "EKOORD",
+                  "description": null
+               },
+               {
+                  "name": "NKOORD",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "FLAECHENELEMENT_VON",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDENUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GWR_EGID",
+                  "description": null
+               },
+               {
+                  "name": "NUTZUNGSCODE",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "OBJIDGN",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_BO_ALLEGEBAEUDE_A_V",
+            "description": "Alle Gebäude aus BO und PROJ_BO",
+            "attributes": [
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "GWR_EGID",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDENUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "NUTZUNGSCODE",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJIDGN",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_NO_FLURNAME_UEP5_T",
+            "description": "Flurnamen im Massstab 1:5000",
+            "attributes": [
+               {
+                  "name": "FLURNAMEPOS_UEP5_VON",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "STIL",
+                  "description": null
+               },
+               {
+                  "name": "STIL_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_BE_BEZIRKSGRENZABSCHNITT",
+            "description": "Bezirksgrenze.",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGKEIT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGKEIT_TXT",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_BO_GEBAEUDENUMMER_T",
+            "description": "Nummer der Gebaeudeversicherung GVZ.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDENUMMER_VON",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDENUMMERPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDENUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GWR_EGID",
+                  "description": null
+               },
+               {
+                  "name": "LAUFNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GBVKREIS",
+                  "description": null
+               },
+               {
+                  "name": "GEBEAUDEHAUPTNUTZUNG",
+                  "description": null
+               },
+               {
+                  "name": "NUTZUNGSCODE",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HILFSNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_BO_PROJGEBAEUDENUMMER_T",
+            "description": "Projektierte Nummer der Gebaeudeversicherung GVZ.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "PROJGEBAEUDENUMMER_VON",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDENUMMER",
+                  "description": null
+               },
+               {
+                  "name": "LAUFNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "NUTZUNGSCODE",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "PROJGEBAEUDENUMMERPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "GWR_EGID",
+                  "description": null
+               },
+               {
+                  "name": "GBVKREIS",
+                  "description": null
+               },
+               {
+                  "name": "GEBEAUDEHAUPTNUTZUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HILFSNUMMER",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_EI_LINIENELEMENT",
+            "description": "Linienelement. Die meisten Linien wurden ab Grundbuchplan digitalisiert. Ihr mittlerer Fehler beträgt\n\nca. ± 10 cm.",
+            "attributes": [
+               {
+                  "name": "LINIENART",
+                  "description": "Code Linienart (Zahl)\n\n\n\nAttribut Linienart nur verwenden, wenn Linieneigenschaft vom angenommenen Standard abweicht (Kennzeichnung der speziellen Eigenschaft)"
+               },
+               {
+                  "name": "NAME",
+                  "description": "Name aus Tabelle Objektname; !! z.B. Name von eingedolten oeffentlichen Gewaessern"
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": "Code Qualitaetsstandard (Text)"
+               },
+               {
+                  "name": "STATUS",
+                  "description": "Code Nachführungsstatus (Zahl)"
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG_TXT",
+                  "description": "Status_Bewilligung = fuer bewilligungspflichtige Objekte BB,EO,RL,GA \n\n- eingereicht, !! Gesuch / Antrag wurde eingereicht \n\n- freigegeben, !! Baufreigabe wurde erteilt \n\n- erstellt; !! Bauvollendung / Bezugsbewilligung wurde erteilt"
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": "Datum der Bearbeitung. Für zusammengefasste Bestandesänderungen: Datum Letzte Nachführung."
+               },
+               {
+                  "name": "STATUS_HERKUNFT",
+                  "description": "Code Herkunftsart (Zahl); zur Unterscheidung: Projekt / andere"
+               },
+               {
+                  "name": "STATUS_HERKUNFT_TXT",
+                  "description": "Code Herkunftsart (Text); zur Unterscheidung: Projekt / andere"
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": "Status = (projektiert, gueltig); \n\nCode Nachführungsstatus (Text) \n\nFür nachgeführte Bestandesänderungen immer gueltig (auch wenn erst Teile von zusammengefassten Bestandesänderungen nachgeführt sind oder die allfällige Mutation der Liegenschaften noch pendent ist)."
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": "Verknüpfungsattribut zur Tabelle AV_EI_EONACHFUEHRUNG (OBJID)"
+               },
+               {
+                  "name": "LINIENART_TXT",
+                  "description": "Code Linienart (Text);\n\n\n\nAttribut Linienart nur verwenden, wenn Linieneigenschaft vom angenommenen Standard abweicht (Kennzeichnung der speziellen Eigenschaft)\n\n\n\nLinienart: !! undefiniert bedeutet gemaess Objektart. \n\nMauer_hinterfuellt,\n\nunterirdisches_Gebaeude_sichtbar,\n\nGebaeudeunterteilung, !! exakt definiert, erhoben\n\nReservoir_sichtbar,\n\nUnterstand_geschlossen,\n\nSchwelle_hinterfuellt,\n\nRuine_unterirdisch,\n\nDruckleitung_oberirdisch,\n\nunterdrueckte_Linie, !! z.B. bei gleichartigen Objekten\n\nverdeckte_Linie, !! durch andere BB-, EO-Objekte verdeckt\n\nunsichere_Linie, !! Lage unsicher, keine AV93-Genauigkeit, z.B. Gebaeudeunterteilung\n\nweitere;"
+               },
+               {
+                  "name": "LINIENELEMENT_VON",
+                  "description": "Verknüpfungsattribut zur Tabelle Einzelobjekt (OBJID)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ART",
+                  "description": "Einzelobjektcode (Zahl)"
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG",
+                  "description": "Code Status_Bewilligung (Zahl)"
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": "Einzelobjektcode (Text)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               }
+            ]
+         },
+         {
+            "name": "AV_EI_OBJEKTNAME_T",
+            "description": "Objektnamen.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "OBJEKTNAME_VON",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "OBJEKTNAMEPOS_VON",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_EI_OBJEKTNUMMER_T",
+            "description": "Nummer der Gebaeudeversicherung GVZ.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "OBJEKTNUMMERPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "OBJEKTNUMMER_VON",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GWR_EGID",
+                  "description": null
+               },
+               {
+                  "name": "LAUFNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GBVKREIS",
+                  "description": null
+               },
+               {
+                  "name": "HAUPTNUTZUNG",
+                  "description": null
+               },
+               {
+                  "name": "NUTZUNGSCODE",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_FI_HFP1",
+            "description": "Landesnivellement\n\nDie Höhenfixpunkte sind vollständig vorhanden und werden laufend nachgeführt (Lage und\n\nHöhe).\n\nDie Höhen der HFP sind mit einem mittleren Fehler von ± 3 mm behaftet.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEOM",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "LAGEGEN",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEN",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_FI_HFP1_T",
+            "description": "Label-Punkt des Landesnivellement",
+            "attributes": [
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "HFP1POS_VON",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_FI_HFP3_T",
+            "description": "Label-Punkt des Gemeindenivellement",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "HFP3POS_VON",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_FI_LFP2_T",
+            "description": "Label-Punkt des Triangulationspunkt IVter Ordnung",
+            "attributes": [
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "LFP2POS_VON",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_GEB_GEBAEUDEADRESSE_T",
+            "description": "Gebäudeadresse; alle Stati (real, projektiert ...) enthalten..",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "HAUSNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GWR_EGID",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_GA",
+                  "description": null
+               },
+               {
+                  "name": "INAENDERUNG",
+                  "description": null
+               },
+               {
+                  "name": "ATTRIBUTEPROVISORISCH_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ISTOFFIZIELLEBEZEICHNUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HOEHENLAGE",
+                  "description": null
+               },
+               {
+                  "name": "IM_GEBAEUDE",
+                  "description": null
+               },
+               {
+                  "name": "IM_GEBAEUDE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GWR_EDID",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDENUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDEEINGANGNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "ADRESSE",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "HAUSNUMMERPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDEEINGANG_VON",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_GA_TXT",
+                  "description": null
+               },
+               {
+                  "name": "INAENDERUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ATTRIBUTEPROVISORISCH",
+                  "description": null
+               },
+               {
+                  "name": "ISTOFFIZIELLEBEZEICHNUNG",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_GEB_KURZSTRNAMEN_UEP5_T",
+            "description": "Kurzstrassennamen; alle Stati (real, projektiert ...) enthalten. Optimiert für Übersichtsplan 5000. Muss mit AV_GEB_STRASSENNAMEN_UEP5_T kombiniert werden.",
+            "attributes": [
+               {
+                  "name": "INAENDERUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "TEXT",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "ATTRIBUTEPROVISORISCH_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ISTOFFIZIELLEBEZEICHNUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "INAENDERUNG",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ANFINDEX",
+                  "description": null
+               },
+               {
+                  "name": "ENDINDEX",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STIL",
+                  "description": null
+               },
+               {
+                  "name": "STIL_TXT",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONSNAMEPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "NUMMERIERUNGSPRINZIP",
+                  "description": null
+               },
+               {
+                  "name": "NUMMERIERUNGSPRINZIP_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ATTRIBUTEPROVISORISCH",
+                  "description": null
+               },
+               {
+                  "name": "ISTOFFIZIELLEBEZEICHNUNG",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_GEB_LOKALISATIONSNAME",
+            "description": "Offizielle und nicht offizielle Strassennamen.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "BENANNTE",
+                  "description": null
+               },
+               {
+                  "name": "ISTOFFIZIELLEBEZEICHNUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "TEXT",
+                  "description": null
+               },
+               {
+                  "name": "KURZTEXT",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_GEB_STRASSENSTUECK",
+            "description": "Strassenachsen (Polylines).",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "ISTACHSE",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "STRASSENSTUECK_VON",
+                  "description": null
+               },
+               {
+                  "name": "ORDNUNG",
+                  "description": null
+               },
+               {
+                  "name": "ISTACHSE_TXT",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_GEB_STRASSENSTUECK_AP",
+            "description": "Anfangspunkte der Strassenachsen.",
+            "attributes": [
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               }
+            ]
+         },
+         {
+            "name": "AV_GE_HOHEITSGRENZPUNKT",
+            "description": "Hoheitsgrenzpunkt.",
+            "attributes": [
+               {
+                  "name": "HOHEITSGRENZSTEIN",
+                  "description": null
+               },
+               {
+                  "name": "HOHEITSGRENZSTEIN_TXT",
+                  "description": null
+               },
+               {
+                  "name": "EXAKTDEFINIERT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEOM",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "HOHEITSGRENZPUNKTSYMBOL_VON",
+                  "description": null
+               },
+               {
+                  "name": "IDENTIFIKATOR",
+                  "description": null
+               },
+               {
+                  "name": "LAGEGEN",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV",
+                  "description": null
+               },
+               {
+                  "name": "PUNKTZEICHEN",
+                  "description": null
+               },
+               {
+                  "name": "PUNKTZEICHEN_TXT",
+                  "description": null
+               },
+               {
+                  "name": "EXAKTDEFINIERT",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEN",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               }
+            ]
+         },
+         {
+            "name": "AV_GE_HOHEITSGRENZPUNKT_T",
+            "description": "Nummer der Hoheitsgrenzpunkt",
+            "attributes": [
+               {
+                  "name": "HOEHEGEN",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "HOHEITSGRENZPUNKTPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "LAGEGEN",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV",
+                  "description": null
+               },
+               {
+                  "name": "PUNKTZEICHEN",
+                  "description": null
+               },
+               {
+                  "name": "PUNKTZEICHEN_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HOHEITSGRENZSTEIN_TXT",
+                  "description": null
+               },
+               {
+                  "name": "EXAKTDEFINIERT",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEOM",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "IDENTIFIKATOR",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HOHEITSGRENZSTEIN",
+                  "description": null
+               },
+               {
+                  "name": "EXAKTDEFINIERT_TXT",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_LI_GRENZPUNKT_T",
+            "description": "Grenzpunktummer.",
+            "attributes": [
+               {
+                  "name": "GRENZPUNKTPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "IDENTIFIKATOR",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_LI_GRUNDSTUECK_T",
+            "description": "Grundstücksnummer.",
+            "attributes": [
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGKEIT",
+                  "description": null
+               },
+               {
+                  "name": "VOLLSTAENDIGKEIT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "GRUNDSTUECKPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "EGRIS_EGRID",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGKEIT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "VOLLSTAENDIGKEIT",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GESAMTEFLAECHENMASS",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HILFSNUMMER",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_LI_LIEGENSCHAFT_A",
+            "description": "Liegenschaft.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "LIEGENSCHAFT_VON",
+                  "description": "Verknüpfungsattribut zur Tabelle Grundstueck (OBJID)"
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": "Verknüpfungsattribut zur Tabelle LSNachfuehrung (OBJID)"
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": "Beziehung 1-m zu Nummerierungsbereich"
+               },
+               {
+                  "name": "EGRIS_EGRID",
+                  "description": "Elektronisches Grundstueckinformationssystem (EGRIS)\n\nEidgenössische Grundstücksidentifikation (E_GRID)\n\nZH020000xxxx"
+               },
+               {
+                  "name": "GUELTIGKEIT",
+                  "description": "Code Gueltigkeit (Zahl)"
+               },
+               {
+                  "name": "GUELTIGKEIT_TXT",
+                  "description": "Code Gueltigkeit (Text):\n\n- rechtskraeftig,\n\n- streitig;"
+               },
+               {
+                  "name": "ART",
+                  "description": "Code Art (Zahl)"
+               },
+               {
+                  "name": "GESAMTEFLAECHENMASS",
+                  "description": "GesamteFlaechenmass wird nur benutzt, falls TeilGrundstuecke existieren. Das heisst mehrere Objekte Liegenschaft, SelbstRecht oder Bergwerk werden zu einem Objekt Grundstueck"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "FLAECHENMASS",
+                  "description": "Grundstücksfläche in m2"
+               },
+               {
+                  "name": "NUMMER",
+                  "description": "Grundstücksnummer (Katasternummer)"
+               },
+               {
+                  "name": "NUMMERTEILGRUNDSTUECK",
+                  "description": "NummerTeilGrundstueck ist fuer Teil Grundstueck noetig"
+               },
+               {
+                  "name": "QUALITAET",
+                  "description": "Code Qualitaetsstandard (Zahl)"
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": "Code Qualitaetsstandard (Text)"
+               },
+               {
+                  "name": "VOLLSTAENDIGKEIT_TXT",
+                  "description": "Code Vollstaendigkeit (Text): unvollstaendig, falls z.B. das Grundstueck teilweise ausserhalb des Perimeters liegt.\n\n- Vollstaendig,\n\n- unvollstaendig;"
+               },
+               {
+                  "name": "VOLLSTAENDIGKEIT",
+                  "description": "Code Vollstaendigkeit (Zahl)"
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": "Datum Anerkennung AV / Datum Grundbuchvollzug (GBEintrag)"
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": "Code Art (Text) = Liegenschaft"
+               }
+            ]
+         },
+         {
+            "name": "AV_LI_PROJGRUNDSTUECK_T",
+            "description": "Projektierte Grundstuecksnummer.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "PROJGRUNDSTUECKPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "EGRIS_EGRID",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGKEIT",
+                  "description": null
+               },
+               {
+                  "name": "VOLLSTAENDIGKEIT",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "HILFSNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GUELTIGKEIT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "VOLLSTAENDIGKEIT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GESAMTEFLAECHENMASS",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_LI_PROJSELBSTRECHT_A",
+            "description": "Projektiertes Selbstständiges Recht.",
+            "attributes": [
+               {
+                  "name": "GESAMTEFLAECHENMASS",
+                  "description": "GesamteFlaechenmass wird nur benutzt, falls TeilGrundstuecke existieren. Das heisst mehrere Objekte Liegenschaft, SelbstRecht oder Bergwerk werden zu einem Objekt Grundstueck"
+               },
+               {
+                  "name": "GUELTIGKEIT_TXT",
+                  "description": "Code Gueltigkeit (Text): \n\n- rechtskraeftig, \n\n- streitig;"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": "Beziehung 1-m zu Nummerierungsbereich"
+               },
+               {
+                  "name": "NUMMER",
+                  "description": "Grundstücksnummer (Katasternummer)"
+               },
+               {
+                  "name": "NUMMERTEILGRUNDSTUECK",
+                  "description": "NummerTeilGrundstueck ist fuer Teil Grundstueck noetig"
+               },
+               {
+                  "name": "QUALITAET",
+                  "description": "Code Qualitaetsstandard (Zahl)"
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": "Code Qualitaetsstandard (Text)"
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": "Ausfertigungsdatum Mutation (GueltigerEintrag)"
+               },
+               {
+                  "name": "VOLLSTAENDIGKEIT",
+                  "description": "Code Vollstaendigkeit (Zahl)"
+               },
+               {
+                  "name": "VOLLSTAENDIGKEIT_TXT",
+                  "description": "Code Vollstaendigkeit (Text): unvollstaendig, falls z.B. das Grundstueck teilweise ausserhalb des Perimeters liegt. \n\n- Vollstaendig, \n\n- unvollstaendig;"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "PROJSELBSTRECHT_VON",
+                  "description": "Verknüpfungsattribut zur Tabelle Grundstueck (OBJID)"
+               },
+               {
+                  "name": "GUELTIGKEIT",
+                  "description": "Code Gueltigkeit (Zahl)"
+               },
+               {
+                  "name": "ART",
+                  "description": "Code Art (Zahl)"
+               },
+               {
+                  "name": "FLAECHENMASS",
+                  "description": "Grundstücksfläche in m2"
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": "Code Art (Text) = Liegenschaft"
+               },
+               {
+                  "name": "EGRIS_EGRID",
+                  "description": "Elektronisches Grundstueckinformationssystem (EGRIS) \n\nEidgenössische Grundstücksidentifikation (E_GRID) \n\nZH020000xxxx"
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": "Verknüpfungsattribut zur Tabelle LSNachfuehrung (OBJID)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               }
+            ]
+         },
+         {
+            "name": "AV_RO_LINIENELEMENT",
+            "description": "Rohrleitungen.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "LINIENELEMENT_VON",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "LINIENART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "BETREIBER",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "LINIENART",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_FI_LFP3_T",
+            "description": "Label-Punkt des Basispunkt, Verdichtungspunkt, Polygonpunkt, Passpunkt",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "LFP3POS_VON",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_BO_BOFLAECHESYMBOL",
+            "description": "Bodenbedeckungsflächensymbol.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "BOFLAECHESYMBOL_VON",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_BO_OBJEKTNAME_T",
+            "description": "Objektnamen.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "OBJEKTNAME_VON",
+                  "description": null
+               },
+               {
+                  "name": "OBJEKTNAMEPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_BO_PROJBOFLAECHE_A",
+            "description": "Projektierte Bodenbedeckungsfläche.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": "Bodenbedeckungscode (Text)"
+               },
+               {
+                  "name": "STATUS",
+                  "description": "Code Status_Bewilligung (Zahl)"
+               },
+               {
+                  "name": "NUTZUNGSCODE",
+                  "description": "Code Gebaeudeversicherung."
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": "Status_Bewilligung = fuer bewilligungspflichtige Objekte BB,EO,RL,GA \n\n- eingereicht, !! Gesuch / Antrag wurde eingereicht \n\n- freigegeben, !! Baufreigabe wurde erteilt \n\n- erstellt; !! Bauvollendung / Bezugsbewilligung wurde erteilt"
+               },
+               {
+                  "name": "ART",
+                  "description": "Bodenbedeckungscode (Zahl)"
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": "Verknüpfungsattribut zur Nachführungstabelle (OBJID)"
+               },
+               {
+                  "name": "GEBAEUDENUMMER",
+                  "description": "Nummer der Gebaeudeversicherung (GVZ), oder aus reserviertem Nummernbereich fuer nicht versicherte Bauten. \n\nMehrere BB-Flächen können die gleiche GVZVersicherungsnummer haben. Nicht GVZ-versichert: auch zulässig Eintrag n.v."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "GWR_EGID",
+                  "description": "EGID (Eidgenössischer Gebäudeidentifikator) gemäss GWR-ZH. Gleicher GWR_EGID für mehrere BB-Flächen zulässig (abweichend von Kommentar Bund), nicht aber mehrere GWR_EGID für eine BB-Fläche (Verzicht auf Tabelleneintrag)"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJIDGN",
+                  "description": "System-Identifikator der verknüpften Tabelle Bo_Gebaeudenummer. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "QUALITAET",
+                  "description": "Code Qualitaetsstandard (Zahl)"
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": "Code Qualitaetsstandard (Text)"
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": "Datum der Bearbeitung. Für zusammengefasste Bestandesänderungen: Datum Letzte Nachführung."
+               }
+            ]
+         },
+         {
+            "name": "AV_EI_FLAECHENELEMENT_A_R_V",
+            "description": "View auf AV_EI_FLAECHENELEMENT_A; STATUS_TXT = 'real'.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "FLAECHENELEMENT_VON",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "NUTZUNGSCODE",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": null
+               },
+               {
+                  "name": "OBJIDGN",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDENUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GWR_EGID",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_EI_FLAECHENELEMENT_A_P_V",
+            "description": "View auf AV_EI_FLAECHENELEMENT_A; STATUS_TXT <> 'real'.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "FLAECHENELEMENT_VON",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDENUMMER",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "OBJIDGN",
+                  "description": null
+               },
+               {
+                  "name": "NUTZUNGSCODE",
+                  "description": null
+               },
+               {
+                  "name": "GWR_EGID",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_NO_FLURNAME_T",
+            "description": "Flurnamen.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "FLURNAMEPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STIL",
+                  "description": null
+               },
+               {
+                  "name": "STIL_TXT",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_LI_GRENZPUNKT",
+            "description": "Grenzpunkt.",
+            "attributes": [
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "IDENTIFIKATOR",
+                  "description": null
+               },
+               {
+                  "name": "LAGEGEN",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "PUNKTZEICHEN_TXT",
+                  "description": null
+               },
+               {
+                  "name": "EXAKTDEFINIERT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HOHEITSGRENZSTEINALT",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEOM",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "GRENZPUNKTSYMBOL_VON",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "PUNKTZEICHEN",
+                  "description": null
+               },
+               {
+                  "name": "EXAKTDEFINIERT",
+                  "description": null
+               },
+               {
+                  "name": "HOHEITSGRENZSTEINALT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEN",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               }
+            ]
+         },
+         {
+            "name": "AV_LI_PROJLIEGENSCHAFT_A",
+            "description": "Projektierte Liegenschaft.",
+            "attributes": [
+               {
+                  "name": "FLAECHENMASS",
+                  "description": "Grundstücksfläche in m2"
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": "Code Art (Text) = Liegenschaft"
+               },
+               {
+                  "name": "EGRIS_EGRID",
+                  "description": "Elektronisches Grundstueckinformationssystem (EGRIS) \n\nEidgenössische Grundstücksidentifikation (E_GRID) \n\nZH020000xxxx"
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": "Verknüpfungsattribut zur Tabelle LSNachfuehrung (OBJID)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "GESAMTEFLAECHENMASS",
+                  "description": "GesamteFlaechenmass wird nur benutzt, falls TeilGrundstuecke existieren. Das heisst mehrere Objekte Liegenschaft, SelbstRecht oder Bergwerk werden zu einem Objekt Grundstueck"
+               },
+               {
+                  "name": "GUELTIGKEIT_TXT",
+                  "description": "Code Gueltigkeit (Text): \n\n- rechtskraeftig, \n\n- streitig;"
+               },
+               {
+                  "name": "PROJLIEGENSCHAFT_VON",
+                  "description": "Verknüpfungsattribut zur Tabelle Grundstueck (OBJID)"
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": "Beziehung 1-m zu Nummerierungsbereich"
+               },
+               {
+                  "name": "NUMMERTEILGRUNDSTUECK",
+                  "description": "NummerTeilGrundstueck ist fuer Teil Grundstueck noetig"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "QUALITAET",
+                  "description": "Code Qualitaetsstandard (Zahl)"
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": "Code Qualitaetsstandard (Text)"
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": "Ausfertigungsdatum Mutation (GueltigerEintrag)"
+               },
+               {
+                  "name": "VOLLSTAENDIGKEIT_TXT",
+                  "description": "Code Vollstaendigkeit (Text): unvollstaendig, falls z.B. das Grundstueck teilweise ausserhalb des Perimeters liegt. \n\n- Vollstaendig, \n\n- unvollstaendig;"
+               },
+               {
+                  "name": "ART",
+                  "description": "Code Art (Zahl)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "NUMMER",
+                  "description": "Grundstücksnummer (Katasternummer)"
+               },
+               {
+                  "name": "GUELTIGKEIT",
+                  "description": "Code Gueltigkeit (Zahl)"
+               },
+               {
+                  "name": "VOLLSTAENDIGKEIT",
+                  "description": "Code Vollstaendigkeit (Zahl)"
+               }
+            ]
+         },
+         {
+            "name": "AV_LI_SELBSTRECHT_A",
+            "description": "Selbständiges Recht (Baurecht, Quellenrecht, ...).",
+            "attributes": [
+               {
+                  "name": "SELBSTRECHT_VON",
+                  "description": "Verknüpfungsattribut zur Tabelle Grundstueck (OBJID)"
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": "Datum Anerkennung AV / Datum Grundbuchvollzug (GBEintrag)"
+               },
+               {
+                  "name": "VOLLSTAENDIGKEIT",
+                  "description": "Code Vollstaendigkeit (Zahl)"
+               },
+               {
+                  "name": "VOLLSTAENDIGKEIT_TXT",
+                  "description": "Code Vollstaendigkeit (Text): unvollstaendig, falls z.B. das Grundstueck teilweise ausserhalb des Perimeters liegt. \n\n- Vollstaendig, \n\n- unvollstaendig;"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": "Beziehung 1-m zu Nummerierungsbereich"
+               },
+               {
+                  "name": "ART",
+                  "description": "Code Art (Zahl)"
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": "Code Qualitaetsstandard (Text)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": "Code Art (Text) = Baurecht, Quellenrecht, Konzessionsrecht oder weitere"
+               },
+               {
+                  "name": "EGRIS_EGRID",
+                  "description": "Elektronisches Grundstueckinformationssystem (EGRIS) \n\nEidgenössische Grundstücksidentifikation (E_GRID) \n\nZH020000xxxx"
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": "Verknüpfungsattribut zur Tabelle LSNachfuehrung (OBJID)"
+               },
+               {
+                  "name": "FLAECHENMASS",
+                  "description": "Grundstücksfläche in m2"
+               },
+               {
+                  "name": "GESAMTEFLAECHENMASS",
+                  "description": "GesamteFlaechenmass wird nur benutzt, falls TeilGrundstuecke existieren. Das heisst mehrere Objekte Liegenschaft, SelbstRecht oder Bergwerk werden zu einem Objekt Grundstueck"
+               },
+               {
+                  "name": "GUELTIGKEIT",
+                  "description": "Code Gueltigkeit (Zahl)"
+               },
+               {
+                  "name": "GUELTIGKEIT_TXT",
+                  "description": "Code Gueltigkeit (Text): \n\n- rechtskraeftig, \n\n- streitig;"
+               },
+               {
+                  "name": "NUMMER",
+                  "description": "Grundstücksnummer (Katasternummer)"
+               },
+               {
+                  "name": "NUMMERTEILGRUNDSTUECK",
+                  "description": "NummerTeilGrundstueck ist fuer Teil Grundstueck noetig"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "QUALITAET",
+                  "description": "Code Qualitaetsstandard (Zahl)"
+               }
+            ]
+         },
+         {
+            "name": "AV_GE_GEMEINDEGRENZE_BOUNDARY",
+            "description": "Gemeindegrenze.",
+            "attributes": [
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               }
+            ]
+         },
+         {
+            "name": "AV_PLZ_EINTEILUNG_A",
+            "description": "Postleitzahleinteilung in AV-Genauigkeit.",
+            "attributes": [
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": null
+               },
+               {
+                  "name": "INAENDERUNG",
+                  "description": null
+               },
+               {
+                  "name": "PLZ",
+                  "description": null
+               },
+               {
+                  "name": "ZUSATZZIFFERN",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "PLZ6_VON",
+                  "description": null
+               },
+               {
+                  "name": "INAENDERUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_GEB_GEBAEUDEADRESSE_UEP5_T",
+            "description": "Gebäudeadresse; alle Stati (real, projektiert ...) enthalten. Optimiert für Übersichtsplan 5000.",
+            "attributes": [
+               {
+                  "name": "IM_GEBAEUDE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "GWR_EDID",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDENUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDEEINGANGNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "ADRESSE",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "HAUSNUMMERPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "ANFINDEX",
+                  "description": null
+               },
+               {
+                  "name": "ENDINDEX",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "GEBAEUDEEINGANG_VON",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_GA",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_GA_TXT",
+                  "description": null
+               },
+               {
+                  "name": "INAENDERUNG",
+                  "description": null
+               },
+               {
+                  "name": "INAENDERUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ATTRIBUTEPROVISORISCH",
+                  "description": null
+               },
+               {
+                  "name": "ATTRIBUTEPROVISORISCH_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ISTOFFIZIELLEBEZEICHNUNG",
+                  "description": null
+               },
+               {
+                  "name": "ISTOFFIZIELLEBEZEICHNUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HOEHENLAGE",
+                  "description": null
+               },
+               {
+                  "name": "HAUSNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "IM_GEBAEUDE",
+                  "description": null
+               },
+               {
+                  "name": "GWR_EGID",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_GEB_STRASSENNAMEN_T",
+            "description": "Strassenamen; alle Stati (real, projektiert ...) enthalten.",
+            "attributes": [
+               {
+                  "name": "ISTOFFIZIELLEBEZEICHNUNG",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": null
+               },
+               {
+                  "name": "INAENDERUNG",
+                  "description": null
+               },
+               {
+                  "name": "INAENDERUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "ENDINDEX",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "STIL",
+                  "description": null
+               },
+               {
+                  "name": "STIL_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONSNAMEPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "KURZTEXT",
+                  "description": null
+               },
+               {
+                  "name": "INDEXTEXT",
+                  "description": null
+               },
+               {
+                  "name": "SPRACHE",
+                  "description": null
+               },
+               {
+                  "name": "NUMMERIERUNGSPRINZIP",
+                  "description": null
+               },
+               {
+                  "name": "NUMMERIERUNGSPRINZIP_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ATTRIBUTEPROVISORISCH",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ISTOFFIZIELLEBEZEICHNUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ANFINDEX",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "TEXT",
+                  "description": null
+               },
+               {
+                  "name": "SPRACHE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "ATTRIBUTEPROVISORISCH_TXT",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_GEB_STRASSENNAMEN_UEP5_T",
+            "description": "Strassenamen; alle Stati (real, projektiert ...) enthalten. Optimiert für Übersichtsplan 5000. Muss mit AV_GEB_KURZSTRNAMEN_UEP5_T kombiniert werden.",
+            "attributes": [
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STIL_TXT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONSNAMEPOS_VON",
+                  "description": null
+               },
+               {
+                  "name": "KURZTEXT",
+                  "description": null
+               },
+               {
+                  "name": "INDEXTEXT",
+                  "description": null
+               },
+               {
+                  "name": "SPRACHE",
+                  "description": null
+               },
+               {
+                  "name": "NUMMERIERUNGSPRINZIP",
+                  "description": null
+               },
+               {
+                  "name": "NUMMERIERUNGSPRINZIP_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ATTRIBUTEPROVISORISCH",
+                  "description": null
+               },
+               {
+                  "name": "ISTOFFIZIELLEBEZEICHNUNG",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": null
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": null
+               },
+               {
+                  "name": "INAENDERUNG",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": null
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ANFINDEX",
+                  "description": null
+               },
+               {
+                  "name": "ENDINDEX",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "STIL",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "TEXT",
+                  "description": null
+               },
+               {
+                  "name": "SPRACHE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "ATTRIBUTEPROVISORISCH_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ISTOFFIZIELLEBEZEICHNUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "INAENDERUNG_TXT",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               }
+            ]
+         },
+         {
+            "name": "AV_FI_LFP2",
+            "description": "Triangulationspunkt IVter Ordnung\n\nDie Lagefixpunkte sind vollständig vorhanden und werden laufend nachgeführt. Die LFP1\n\nund LFP2 (alt Triangulationspunkte) haben Lage- und Höhen-Koordinaten, bei den LFP3 (alt\n\nPolygonpunkte) ist nur die Lage bestimmt worden.\n\nDie Genauigkeit der LFP3 entspricht den Anforderungen der amtlichen Vermessung in der\n\nToleranzstufe 2. Das heisst, sie sind mit einem mittleren Fehler von ± 3 cm behaftet.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEOM",
+                  "description": null
+               },
+               {
+                  "name": "LAGEGEN",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEN",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "BEGEHBARKEIT",
+                  "description": null
+               },
+               {
+                  "name": "BEGEHBARKEIT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "SCHUTZ",
+                  "description": null
+               },
+               {
+                  "name": "SCHUTZ_TXT",
+                  "description": null
+               },
+               {
+                  "name": "PUNKTZEICHEN_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "LFP2SYMBOL_VON",
+                  "description": null
+               },
+               {
+                  "name": "PUNKTZEICHEN",
+                  "description": null
+               },
+               {
+                  "name": "DATUMHOEHENAENDERUNG",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_FI_LFP3",
+            "description": "Bisher Basispunkt, Verdichtungspunkt, Polygonpunkt, Passpunkt\n\nDie Lagefixpunkte sind vollständig vorhanden und werden laufend nachgeführt. Die LFP1\n\nund LFP2 (alt Triangulationspunkte) haben Lage- und Höhen-Koordinaten, bei den LFP3 (alt\n\nPolygonpunkte) ist nur die Lage bestimmt worden.\n\nDie Genauigkeit der LFP3 entspricht den Anforderungen der amtlichen Vermessung in der\n\nToleranzstufe 2. Das heisst, sie sind mit einem mittleren Fehler von ± 3 cm behaftet.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "LFP3SYMBOL_VON",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "LAGEGEN",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEN",
+                  "description": null
+               },
+               {
+                  "name": "PUNKTZEICHEN",
+                  "description": null
+               },
+               {
+                  "name": "PROTOKOLL_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEOM",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "PUNKTZEICHEN_TXT",
+                  "description": null
+               },
+               {
+                  "name": "PROTOKOLL",
+                  "description": null
+               },
+               {
+                  "name": "SCHUTZ",
+                  "description": null
+               },
+               {
+                  "name": "SCHUTZ_TXT",
+                  "description": null
+               },
+               {
+                  "name": "DATUMHOEHENAENDERUNG",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_FI_HFP3",
+            "description": "Gemeindenivellement\n\nDie Höhenfixpunkte sind vollständig vorhanden und werden laufend nachgeführt (Lage und\n\nHöhe).\n\nDie Höhen der HFP sind mit einem mittleren Fehler von ± 3 mm behaftet.",
+            "attributes": [
+               {
+                  "name": "LAGEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEN",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEOM",
+                  "description": null
+               },
+               {
+                  "name": "LAGEGEN",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_FI_HFP2",
+            "description": "Kantonsnivellement\n\nDie Höhenfixpunkte sind vollständig vorhanden und werden laufend nachgeführt (Lage und\n\nHöhe).\n\nDie Höhen der HFP sind mit einem mittleren Fehler von ± 3 mm behaftet.",
+            "attributes": [
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEOM",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "LAGEGEN",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEN",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_BO_BOFLAECHE_A",
+            "description": "Bodenbedeckungsfläche\n\nDie Ebene ist vollständig erfasst und wird laufend nachgeführt.\n\nDie meisten Linien sind digitalisiert (ab Grundbuchplan). Ihr mittlerer Fehler beträgt\n\nca. ± 10-15 cm.",
+            "attributes": [
+               {
+                  "name": "GWR_EGID",
+                  "description": "EGID (Eidgenössischer Gebäudeidentifikator) gemäss GWR-ZH. Gleicher GWR_EGID für mehrere BB-Flächen zulässig (abweichend von Kommentar Bund), nicht aber mehrere GWR_EGID für eine BB-Fläche (Verzicht auf Tabelleneintrag)"
+               },
+               {
+                  "name": "NUTZUNGSCODE",
+                  "description": "Code Gebaeudeversicherung."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJIDGN",
+                  "description": "System-Identifikator der verknüpften Tabelle Bo_Gebaeudenummer. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "QUALITAET",
+                  "description": "Code Qualitaetsstandard (Zahl)"
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": "Datum der Bearbeitung. Für zusammengefasste Bestandesänderungen: Datum Letzte Nachführung."
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": "Status = (projektiert, gueltig);\n\nCode Nachführungsstatus (Text) \n\nFür nachgeführte Bestandesänderungen immer gueltig (auch wenn erst Teile von zusammengefassten Bestandesänderungen nachgeführt sind oder die allfällige Mutation der Liegenschaften noch pendent ist)."
+               },
+               {
+                  "name": "STATUS",
+                  "description": "Code Nachführungsstatus (Zahl)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": "Verknüpfungsattribut zur Nachführungstabelle (OBJID)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": "Code Qualitaetsstandard (Text)"
+               },
+               {
+                  "name": "ART",
+                  "description": "Bodenbedeckungscode (Zahl)"
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": "Bodenbedeckungscode (Text)"
+               },
+               {
+                  "name": "GEBAEUDENUMMER",
+                  "description": "Nummer der Gebaeudeversicherung (GVZ), oder aus reserviertem Nummernbereich fuer nicht versicherte Bauten.\n\nMehrere BB-Flächen können die gleiche GVZVersicherungsnummer haben. Nicht GVZ-versichert: auch zulässig Eintrag n.v."
+               }
+            ]
+         },
+         {
+            "name": "AV_EI_FLAECHENELEMENT_A",
+            "description": "Flächenelement. Die Ebene ist vollständig erfasst und wird laufend nachgeführt.\n\nDie Einzelobjekte Unterkellerungen, Überdachungen, Tunnel, Brücken, Unterführungen, eingedolte\n\nöffentliche Gewässer, Silos, Brunnen, Mauern, Treppen, massive Sockel etc. sind\n\nals Flächen erfasst.\n\nDie meisten Linien wurden ab Grundbuchplan digitalisiert. Ihr mittlerer Fehler beträgt\n\nca. ± 10 cm.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "STATUS_HERKUNFT",
+                  "description": "Code Herkunftsart (Zahl); zur Unterscheidung: Projekt / andere"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "NUTZUNGSCODE",
+                  "description": "Code Gebaeudeversicherung."
+               },
+               {
+                  "name": "ART",
+                  "description": "Einzelobjektcode (Zahl)"
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": "Einzelobjektcode (Text)"
+               },
+               {
+                  "name": "FLAECHENELEMENT_VON",
+                  "description": "Verknüpfungsattribut zur Tabelle Einzelobjekt (OBJID)"
+               },
+               {
+                  "name": "GEBAEUDENUMMER",
+                  "description": "Nummer der Gebaeudeversicherung (GVZ), oder aus reserviertem Nummernbereich fuer nicht versicherte Bauten. \n\nMehrere EO-Flächen können die gleiche GVZVersicherungsnummer haben. Nicht GVZ-versichert: auch zulässig Eintrag n.v."
+               },
+               {
+                  "name": "GWR_EGID",
+                  "description": "EGID (Eidgenössischer Gebäudeidentifikator) gemäss GWR-ZH. Gleicher GWR_EGID für mehrere EO-Flächen zulässig (abweichend von Kommentar Bund), nicht aber mehrere GWR_EGID für eine EO-Fläche (Verzicht auf Tabelleneintrag)"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJIDGN",
+                  "description": "System-Identifikator der verknüpften Tabelle Bo_Gebaeudenummer. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "QUALITAET_TXT",
+                  "description": "Code Qualitaetsstandard (Text)"
+               },
+               {
+                  "name": "STATUS",
+                  "description": "Code Nachführungsstatus (Zahl)"
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": "Status = (projektiert, gueltig);\n\nCode Nachführungsstatus (Text) \n\nFür nachgeführte Bestandesänderungen immer gueltig (auch wenn erst Teile von zusammengefassten Bestandesänderungen nachgeführt sind oder die allfällige Mutation der Liegenschaften noch pendent ist)."
+               },
+               {
+                  "name": "STATUS_DATUM",
+                  "description": "Datum der Bearbeitung. Für zusammengefasste Bestandesänderungen: Datum Letzte Nachführung."
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG",
+                  "description": "Code Status_Bewilligung (Zahl)"
+               },
+               {
+                  "name": "STATUS_BEWILLIGUNG_TXT",
+                  "description": "Status_Bewilligung = fuer bewilligungspflichtige Objekte BB,EO,RL,GA\n\n- eingereicht, !! Gesuch / Antrag wurde eingereicht\n\n- freigegeben, !! Baufreigabe wurde erteilt\n\n- erstellt; !! Bauvollendung / Bezugsbewilligung wurde erteilt"
+               },
+               {
+                  "name": "STATUS_HERKUNFT_TXT",
+                  "description": "Code Herkunftsart (Text); zur Unterscheidung: Projekt / andere"
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": "Verknüpfungsattribut zur Tabelle AV_EI_EONACHFUEHRUNG (OBJID)"
+               }
+            ]
+         },
+         {
+            "name": "AV_FI_HFP2_T",
+            "description": "Label-Punkt des Kantonsnivellement",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "HFP2POS_VON",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_FI_LFP1_T",
+            "description": "Label-Punkt des Triangulationspunkt I-IIIter Ordnung",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "LFP1POS_VON",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_BO_BBNACHFUEHRUNG",
+            "description": "Nachführungstabelle TOPIC Bodenbedeckung",
+            "attributes": [
+               {
+                  "name": "GUELTIGEREINTRAG",
+                  "description": "Datum der Bearbeitung\n\n\n\nFuer zukuenftige Nachfuehrungen ist das Attribut GueltigerEintrag zu erfassen. Datum1 betrifft die alten Nachfuehrungen und wird nicht mehr angewendet. In der naechsten Revision des Datenmodells wird das Attribut Datum1 geloescht und das Attribut GueltigerEintrag wird obligatorisch."
+               },
+               {
+                  "name": "GUELTIGKEIT",
+                  "description": "Status der Bearbeitung; Nummer. \n\n0 = projektiert\n\n1 = gueltig"
+               },
+               {
+                  "name": "BESCHREIBUNG",
+                  "description": "Kurze Erläuterung zum Nachführungsgeschäft. Das kann eine Adresse oder auch eine Bezeichnung eines Projektes sein."
+               },
+               {
+                  "name": "DATUM1",
+                  "description": "Diese Datumsangabe wird im Kanton Zürich nicht verwendet."
+               },
+               {
+                  "name": "GUELTIGKEIT_TXT",
+                  "description": "Status der Bearbeitung; Text. \n\nprojektiert \n\ngueltig"
+               },
+               {
+                  "name": "IDENTIFIKATOR",
+                  "description": "Mutationsnummer im Nummerierungssystem fuer grundbuchrelevante Tatbestaende"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": "Beziehung 1-m zu Nummerierungsbereich"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               }
+            ]
+         },
+         {
+            "name": "AV_BO_BOFLAECHE_L",
+            "description": "Berandungslinien der Bodenbedeckungsflächen",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "LINIENART",
+                  "description": "Code Linienart (Zahl)\n\nLINEATTR nur verwenden, wenn Linieneigenschaft\n\nabweichend vom angenommenen Standard (Kennzeichnung\n\nder speziellen Eigenschaft)"
+               },
+               {
+                  "name": "LINIENART_TXT",
+                  "description": "Code Linienart (Text)\n\nLINEATTR nur verwenden, wenn Linieneigenschaft\n\nabweichend vom angenommenen Standard (Kennzeichnung\n\nder speziellen Eigenschaft)\n\n\n\nLinienart: Darstellung der Linie grundsaetzlich gemaess Nachbarschaftsbeziehung\n\n- Fassade_offen, \n\n- Fassade_unterirdisch,\n\n- weicher_Uebergang,\n\n- harter_Uebergang,\n\n- unterdrueckte_Linie, !! z.B. bei gleichartigen Flaechen\n\n- verdeckte_Linie, !! z.B. durch Einzelobjekte verdeckt\n\n- unsichere_Linie, !! z.B. nicht feststellbare, nicht eingemessene Gebaeudeunterteilung\n\n- weitere;"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               }
+            ]
+         },
+         {
+            "name": "AV_EI_EONACHFUEHRUNG",
+            "description": "Nachführungstabelle TOPIC Einzelobjekte",
+            "attributes": [
+               {
+                  "name": "DATUM1",
+                  "description": "Diese Datumsangabe wird im Kanton Zürich nicht verwendet."
+               },
+               {
+                  "name": "GUELTIGEREINTRAG",
+                  "description": "Datum der Bearbeitung \n\n\n\nFuer zukuenftige Nachfuehrungen ist das Attribut GueltigerEintrag zu erfassen. Datum1 betrifft die alten Nachfuehrungen und wird nicht mehr angewendet. In der naechsten Revision des Datenmodells wird das Attribut Datum1 geloescht und das Attribut GueltigerEintrag wird obligatorisch."
+               },
+               {
+                  "name": "IDENTIFIKATOR",
+                  "description": "Mutationsnummer im Nummerierungssystem fuer grundbuchrelevante Tatbestaende"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "BESCHREIBUNG",
+                  "description": "Kurze Erläuterung zum Nachführungsgeschäft. Das kann eine Adresse oder auch eine Bezeichnung eines Projektes sein."
+               },
+               {
+                  "name": "GUELTIGKEIT",
+                  "description": "Status der Bearbeitung; Nummer. \n\n0 = projektiert \n\n1 = gueltig"
+               },
+               {
+                  "name": "GUELTIGKEIT_TXT",
+                  "description": "Status der Bearbeitung; Text. \n\nprojektiert \n\ngueltig"
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": "Beziehung 1-m zu Nummerierungsbereich"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               }
+            ]
+         },
+         {
+            "name": "AV_LI_LSNACHFUEHRUNG",
+            "description": "Nachführungstabelle TOPIC Liegenschaften",
+            "attributes": [
+               {
+                  "name": "GUELTIGKEIT_TXT",
+                  "description": "Status der Bearbeitung; Text. \n\nprojektiert \n\ngueltig"
+               },
+               {
+                  "name": "IDENTIFIKATOR",
+                  "description": "Mutationsnummer im Nummerierungssystem fuer grundbuchrelevante Tatbestaende"
+               },
+               {
+                  "name": "DATUM1",
+                  "description": "Diese Datumsangabe wird im Kanton Zürich nicht verwendet."
+               },
+               {
+                  "name": "GBEINTRAG",
+                  "description": "Datum Anerkennung AV / Datum Grundbuchvollzug"
+               },
+               {
+                  "name": "GUELTIGKEIT",
+                  "description": "Status der Bearbeitung; Nummer. \n\n0 = projektiert \n\n1 = gueltig"
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": "Beziehung 1-m zu Nummerierungsbereich"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "BESCHREIBUNG",
+                  "description": "Kurze Erläuterung zum Nachführungsgeschäft. Das kann eine Adresse oder auch eine Bezeichnung eines Projektes sein."
+               },
+               {
+                  "name": "DATUM2",
+                  "description": "Diese Datumsangabe wird im Kanton Zürich nicht verwendet."
+               },
+               {
+                  "name": "GUELTIGEREINTRAG",
+                  "description": "gueltig: Datum der Bearbeitung\n\nprojektiert: Ausfertigungsdatum Mutation\n\n\n\nFuer zukuenftige Nachfuehrungen sind die Attribute GueltigerEintrag und GBEintrag zu erfassen. Datum1 und Datum2 betreffen die alten Nachfuehrungen und werden nicht mehr angewendet. In der naechsten Revision des Datenmodells werden die Attribute Datum1 und Datum2 geloescht und die Attribute GueltigerEintrag und GBEintrag werden obligatorisch."
+               }
+            ]
+         },
+         {
+            "name": "AV_GE_GEMEINDEGRENZE_A",
+            "description": "Gemeindegebiet",
+            "attributes": [
+               {
+                  "name": "BFSNR",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_BO_OBJEKTNAME_UEP5_T",
+            "description": "Objektnamen Bodenbedeckung. Optimiert für Übersichtsplan 5000.",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJEKTNAMEPOS_UEP5_VON",
+                  "description": null
+               },
+               {
+                  "name": "OBJEKTNAME_UEP5_VON",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_EI_OBJEKTNAME_UEP5_T",
+            "description": "Objektnamen Einzelobjekte. Optimiert für Übersichtsplan 5000.",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE",
+                  "description": null
+               },
+               {
+                  "name": "GROESSE_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HALI",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "OBJEKTNAMEPOS_UEP5_VON",
+                  "description": null
+               },
+               {
+                  "name": "OBJEKTNAME_UEP5_VON",
+                  "description": null
+               },
+               {
+                  "name": "VALI",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "AV_FI_LFP1",
+            "description": "Triangulationspunkt I-IIIter Ordnung\n\nDie Lagefixpunkte sind vollständig vorhanden und werden laufend nachgeführt. Die LFP1\n\nund LFP2 (alt Triangulationspunkte) haben Lage- und Höhen-Koordinaten, bei den LFP3 (alt\n\nPolygonpunkte) ist nur die Lage bestimmt worden.\n\nDie Genauigkeit der LFP3 entspricht den Anforderungen der amtlichen Vermessung in der\n\nToleranzstufe 2. Das heisst, sie sind mit einem mittleren Fehler von ± 3 cm behaftet.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEOM",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "BEGEHBARKEIT",
+                  "description": null
+               },
+               {
+                  "name": "SCHUTZ_TXT",
+                  "description": null
+               },
+               {
+                  "name": "DATUMHOEHENAENDERUNG",
+                  "description": null
+               },
+               {
+                  "name": "ORI",
+                  "description": null
+               },
+               {
+                  "name": "OBJID",
+                  "description": null
+               },
+               {
+                  "name": "LFP1SYMBOL_VON",
+                  "description": null
+               },
+               {
+                  "name": "NBIDENT",
+                  "description": null
+               },
+               {
+                  "name": "NUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "LAGEGEN",
+                  "description": null
+               },
+               {
+                  "name": "LAGEZUV",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEGEN",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV",
+                  "description": null
+               },
+               {
+                  "name": "HOEHEZUV_TXT",
+                  "description": null
+               },
+               {
+                  "name": "BEGEHBARKEIT_TXT",
+                  "description": null
+               },
+               {
+                  "name": "SCHUTZ",
+                  "description": null
+               },
+               {
+                  "name": "PUNKTZEICHEN",
+                  "description": null
+               },
+               {
+                  "name": "PUNKTZEICHEN_TXT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT",
+                  "description": null
+               },
+               {
+                  "name": "HERKUNFT_TXT",
+                  "description": null
+               }
+            ]
+         }
+      ]
+   }
+}

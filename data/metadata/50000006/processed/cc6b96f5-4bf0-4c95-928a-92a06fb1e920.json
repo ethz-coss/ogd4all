@@ -1,0 +1,92 @@
+{
+   "title": "AHB-Hochbauprojekte in Ausfuehrung OGD",
+   "keywords": [
+      "Hochbauten",
+      "Bauvorhaben",
+      "Hochbauvorhaben",
+      "Bauprojekte",
+      "Ausführungsphase",
+      "AHB",
+      "HBD"
+   ],
+   "metadata_date": "2023-11-14T14:12:58",
+   "updateFrequency": "daily",
+   "purpose": "Dokumentation städtischer Hochbauprojekte, die vom Amt für Hochbauten in der Ausführungsphase durchgeführt werden mit Geolokalisierungsinformationen.",
+   "abstract": "Städtische Hochbauprojekte, die vom Amt für Hochbauten in der Ausführungsphase (nach Abschluss der Planung und Bewilligung des Kredits) durchgeführt werden.",
+   "identificationDate": "2025-03-18",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Hochbaudepartement - Amt für Hochbauten",
+   "contactPerson": "Mauro Tibolla",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/AHB_Hochbauprojekte_in_Ausfuehrung_OGD",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "AHB_PROJEKTE_OGD",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "AUFTRAGS_NR",
+                  "description": "Auftragsnummer Amt für Hochbauten z.B. 1234.PM"
+               },
+               {
+                  "name": "BAV",
+                  "description": "5-stellige Bauvorhaben-Nummer"
+               },
+               {
+                  "name": "PROJEKTBEZEICHNUNG",
+                  "description": "Bezeichnung des Projekts"
+               },
+               {
+                  "name": "STATUS",
+                  "description": "Phase \"Ausführung\" bedeutet, dass die Planung abgeschlossen ist und sich das Bauobjekt in der Ausführung befindet."
+               },
+               {
+                  "name": "EGID",
+                  "description": "Eidgenössischer Gebäudeidentifikator"
+               },
+               {
+                  "name": "KREDIT",
+                  "description": "Kredit (z.B. durch Volksabstimmung beschlossener Kredit. Die Baukosten können daraus nicht abgeleitet werden.)"
+               },
+               {
+                  "name": "STRASSE",
+                  "description": "Strassenname"
+               },
+               {
+                  "name": "HAUSNUMMER",
+                  "description": "Hausnummer"
+               },
+               {
+                  "name": "POSTLEITZAHL",
+                  "description": "Postleitzahl"
+               },
+               {
+                  "name": "ORT",
+                  "description": "Ortschaft"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Flächengeometrie"
+               }
+            ]
+         }
+      ]
+   }
+}

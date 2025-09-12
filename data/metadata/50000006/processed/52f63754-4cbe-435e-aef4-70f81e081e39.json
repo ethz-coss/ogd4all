@@ -1,0 +1,123 @@
+{
+   "title": "Dachstrukturen 2D (inkl. 3D)",
+   "keywords": [
+      "Gebäude",
+      "3D",
+      "Dachstrukturen",
+      "Gebäudeschatten"
+   ],
+   "metadata_date": "2024-06-07T12:10:45",
+   "updateFrequency": "asNeeded",
+   "purpose": "Planhintergrund, Visualisierung",
+   "abstract": "Die 2D Dachstrukturen werden aus dem LoD2-Datensatz erzeugt und um Schattengeometrien ergänzt. Die Flächen der Dächer sind entsprechend ihrer Ausrichtung (aspect) und ihrer Neigung (slope) eingefärbt und erzeugen so die Illusion einer 3D Darstellung.",
+   "identificationDate": "2021-04-25",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Geomatik + Vermessung",
+   "contactPerson": "Adriana Kissling",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Dachstrukturen_2D",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "DACHSTRUKTUREN",
+            "description": "Dachflächen des Datensatzes \"Bauten - Dachmodell\" mit zusätzlichen Werten Slope, Aspect und Shadow.",
+            "attributes": [
+               {
+                  "name": "AREA_2D",
+                  "description": "Flächenmass der projizierten 2D-Fläche"
+               },
+               {
+                  "name": "AREA_3D",
+                  "description": "Flächenmass im 3D-Raum"
+               },
+               {
+                  "name": "REL_HOEHE_MIN",
+                  "description": "Minimale Höhe des Objektes über dem Boden. Berechnet als Differenz der absoluten minimalen Höhe des Objektes minus der absoluten Höhe des Bodens des Objektes. Vom Resultat wird nochmals 3 Meter abgezogen, da der Boden der Gebäude 3 Meter unter Terrain erfasst ist. Resultat gerundet auf Dezimeter."
+               },
+               {
+                  "name": "REL_HOEHE_MAX",
+                  "description": "Maximale Höhe des Objektes über dem Boden. Berechnet als Differenz der absoluten maximalen Höhe des Objektes minus der absoluten Höhe des Bodens des Objektes. Vom Resultat wird nochmals 3 Meter abgezogen, da der Boden der Gebäude 3 Meter unter Terrain erfasst ist. Resultat gerundet auf Dezimeter."
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "EGID",
+                  "description": "Eidgenössischer Gebäudeidentifikator"
+               },
+               {
+                  "name": "ASPECT",
+                  "description": "Ausrichtung gerundet auf ganze Zahlen"
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": "Art der Bodenbedeckung oder des Einzelobjektes: (rechts des :)\n\nBB00: Gebaeude_Verwaltung\n\nBB01: Gebaeude_Wohngebaeude\n\nBB02: Gebaeude_Land_Forstwirtschaft\n\nBB03: Gebaeude_Verkehr\n\nBB04: Gebaeude_Handel\n\nBB05: Gebaeude_Industrie_Gewerbe\n\nBB06: Gebaeude_Gastgewerbe\n\nBB07: Gebaeude_Nebengebaeude\n\nEO03: uebriger_Gebaeudeteil\n\nEO13: Unterstand\n\nEO14: Silo_Turm_Gasometer\n\nEO16: Hochkamin\n\nEO19: Aussichtsturm"
+               },
+               {
+                  "name": "GID",
+                  "description": "GeosPro-Identifikator"
+               },
+               {
+                  "name": "GEBAEUDE_STATUS",
+                  "description": "wird nicht mehr geführt, siehe Attribute \"STATUS\" und \"STATUS_TXT\""
+               },
+               {
+                  "name": "GEOMTYPE",
+                  "description": "Geometrietyp \n\n1: Hauptgeometrie (2D-Fläche >3m2 und Volumen >3m3) \n\n2: Detailgeometrie (2D-Fläche &lt;3m2 und Volumen &lt;3m3)"
+               },
+               {
+                  "name": "SHADOW",
+                  "description": "Stärke der Beschattung aufgrund von Slope und Aspect"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie"
+               },
+               {
+                  "name": "SLOPE",
+                  "description": "Neigung gerundet auf ganze Zahlen. Horizontal = 0°."
+               },
+               {
+                  "name": "ART",
+                  "description": "Art der Bodenbedeckung oder des Einzelobjektes: (rechts des :)\n\nBB00: Gebaeude_Verwaltung\n\nBB01: Gebaeude_Wohngebaeude\n\nBB02: Gebaeude_Land_Forstwirtschaft\n\nBB03: Gebaeude_Verkehr\n\nBB04: Gebaeude_Handel\n\nBB05: Gebaeude_Industrie_Gewerbe\n\nBB06: Gebaeude_Gastgewerbe\n\nBB07: Gebaeude_Nebengebaeude\n\nEO03: uebriger_Gebaeudeteil\n\nEO13: Unterstand\n\nEO14: Silo_Turm_Gasometer\n\nEO16: Hochkamin\n\nEO19: Aussichtsturm"
+               },
+               {
+                  "name": "STATUS",
+                  "description": "Status der Baubewilligung (links des :)\n\n3: real"
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": "Status der Baubewilligung (rechts des :)\n\n3: real"
+               }
+            ]
+         },
+         {
+            "name": "GEB_SCHATTEN_DISS",
+            "description": "Schatten der Gebäude. Die einzelnen Schatten wurden dissolved.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ID"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie"
+               }
+            ]
+         }
+      ]
+   }
+}

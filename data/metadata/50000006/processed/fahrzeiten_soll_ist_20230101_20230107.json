@@ -1,0 +1,204 @@
+{
+   "title": "Fahrzeiten 2023 der VBZ im SOLL-IST-Vergleich (Nachführung eingestellt)",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/vbz_fahrzeiten_ogd_2023",
+   "abstract": "Diese Daten ermöglichen einen sehr genauen Vergleich zwischen den geplanten (SOLL) und den effektiv erfolgten (IST) Fahrzeiten jedes Fahrzeugs der Verkehrsbetriebe Zürich (VBZ). Die Haltestellenankünfte und -abfahrten jedes Fahrzeugs auf seiner Linie wird sekundengenau gemessen.\nWir publizieren Datensätze zu einer Woche bezüglich der geplanten (SOLL) und effektiven (IST) Fahrzeiten, da das Datenvolumen sonst schnell zu gross wird. Ein Datensatz einer Woche umfasst rund 250 MB. Die Dateinamen zeigen den Zeitraum der Fahrzeitenvergleiche an: «Fahrzeiten_SOLL_IST_VON-DATUM_BIS-DATUM.csv». \nDie beiden Tabellen Haltepunkt.csv und Haltestelle.csv sind Matchingtabellen.\nHier finden Sie die Pünktlichkeitsdaten der VBZ vom 1. Januar 2023 bis am 29.07.2023. Die wöchentlich nachgeführten Fahrzeiten der vergangenen Jahre (seit 2015) finden sie in den Datasets «Fahrzeiten [JAHR] der VBZ im SOLL-IST-Vergleich (Nachführung eingestellt)».\nFahrzeiten der VBZ im SOLL-IST-Vergleich nach dem 29.07.2023 finden Sie zusammen mit Daten von weiteren Schweizer Verkehrsunternehmen und einer Anleitung auf dem Open-Data-Katalog von opentransportdata.swiss unter https://opentransportdata.swiss/de/dataset/istdaten.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Fahrzeiten der VBZ im SOLL-IST-Vergleich nach dem 29.07.2023\n\nSeit Mitte 2023 werden diese VBZ-Daten nicht mehr auf diesem OGD-Katalog veröffentlicht, stattdessen werden sie von allen Schweizer Verkehrsunternehmen über standardisierte Schnittstellen eingeliefert und stehen bei opentransportdata.swiss zur freien Nutzung zur Verfügung.\n\nVBZ-Github-Repository:\n\nUm die Arbeit mit den OGD der VBZ einfacher zu gestalten, haben die VBZ ein eigenes Github-Repository erstellt. Darin finden Sie Anwendungsbeispiele und insbesondere Beispielcodes, wie mit den Daten in R oder mit Python gearbeitet werden kann. Siehe dazu die Repos:\n\nOGD-Beispielcode mit R\nOGD-Beispielcode mit Python\n\nDatenbankschema:\n\nMatchingtabellen:\n\nDie beiden Tabellen «Haltestelle.csv» und «Haltepunkt.csv» dienen als Matchingtabellen. Damit können die wöchentlichen SOLL- und IST-Werte der Fahrzeiten mit weiteren Detailinformationen angereichert werden.\n\nAls Fremdschlüssel dienen dabei die Attribute «halt_punkt_id_von» und «halt_punkt_id_nach».\n\nKoordinatenangaben:\n\nDie Koordinatenangaben in der Tabelle «Haltepunkt.csv» wurden aus den ursprünglichen GPS-Koordinaten berechnet.\n\nAktualität:\n\nDie aktuellsten Messungen liegen 1-2 Wochen zurück. Die Datenupdates finden Sonntags statt. Daher ist die zeitliche Verzögerung Sonntags jeweils eine und Samstags jeweils zwei Wochen nach der letzten Messung des aktuellsten Datensatzes.\n\nWeitere Daten (GTFS) für Zürich:\n\nDie VBZ publiziert ihre statischen GTFS-Daten auch auf diesem Datenkatalog unter «ZVV Fahrplan Tram und Bus (Static GTFS)». Siehe dazu auch der Verweis auf die schweizweiten GTFS-Daten, auch in Realtime (!).",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Fahrzeiten 2023 der VBZ im SOLL-IST-Vergleich (Nachführung eingestellt)",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Liniennummer (technisch: linie)",
+                  "description": "Die von der VBZ benutzte Liniennummer (z.T. nicht identisch mit publizierter Linie). Datentyp: (smallint, 3)."
+               },
+               {
+                  "name": "Richtung (technisch: richtung)",
+                  "description": "Die Richtung einer Fahrt. Werte: 1 oder 2. Datentyp: (tinyint, 1)."
+               },
+               {
+                  "name": "Betriebsdatum (technisch: betriebsdatum)",
+                  "description": "Das Tagesdatum für das Haltestellenereignis. Betriebstag: 5:00 Uhr bis nächster Tag 01:30 Uhr. Datentyp: (datetime, 8)."
+               },
+               {
+                  "name": "Fahrzeugnummer (technisch: fahrzeug)",
+                  "description": "Die VBZ-intern verwendete Fahrzeugnummer. Datentyp: (int, 10)."
+               },
+               {
+                  "name": "Kursnummer (technisch: kurs)",
+                  "description": "Die VBZ-intern verwendete Kursnummer: Datentyp: (tinyint, 2)."
+               },
+               {
+                  "name": "Sequenz der Haltestelle von (technisch: seq_von)",
+                  "description": "Die Sequenz der «von»-Haltestelle einer Fahrt: Datentyp: (int, 10)."
+               },
+               {
+                  "name": "Haltestellennummer DIVA von (technisch: halt_diva_von)",
+                  "description": "Die VBZ-intern verwendete Haltestellennummer der «von»-Haltestelle: Datentyp: (int, 10)."
+               },
+               {
+                  "name": "Haltepunktnummer von (technisch: halt_punkt_diva_von)",
+                  "description": "Die VBZ-intern verwendete Haltepunktnummer der «von»-Haltestelle: Datentyp: (int, 10)."
+               },
+               {
+                  "name": "Kurzcode Haltestelle von (technisch: halt_kurz_von1)",
+                  "description": "Die VBZ-intern verwendete Haltestellenabkürzung der «von»-Haltestelle: Datentyp: (varchar(8))."
+               },
+               {
+                  "name": "Datum von (technisch: datum_von)",
+                  "description": "Das Tagesdatum für das Haltestellenereignis der «von»-Haltestelle: Datentyp: (datetime, 8)."
+               },
+               {
+                  "name": "Sollankunft von (technisch: soll_an_von)",
+                  "description": "Die Sollankunft der «von»-Haltestellen in Sekunden nach Mitternacht: Datentyp: (int, 10). Hinweis: enthält Werte zwischen 0 und 86399."
+               },
+               {
+                  "name": "Istankunft von (technisch: ist_an_von)",
+                  "description": "Die Istankunft der «von»-Haltestellen in Sekunden nach Mitternacht: Datentyp: (int, 10). Hinweis 1: Kann Werte grösser als 86400 enthalten, wenn „Betriebsdatum“ und „Datum von“ gleich sind und die Istankunft nach Mitternacht erfolgte, obwohl diese vor Mitternacht geplant war. Hinweis 2: Kann negative Werte enthalten, wenn „Betriebsdatum“ und „Datum von“ ungleich sind und die Istankunft vor Mitternacht erfolgte, obwohl diese nach Mitternacht geplant war."
+               },
+               {
+                  "name": "Sollabfahrt von (technisch: soll_ab_von)",
+                  "description": "Die Sollabfahrt der «von»-Haltestellen in Sekunden nach Mitternacht: Datentyp: (int, 10). Hinweis: Kann Werte grösser als 86400 enthalten, wenn die Ankunft vor und die Abfahrt nach Mitternacht geplant ist."
+               },
+               {
+                  "name": "Istabfahrt von (technisch: ist_ab_von)",
+                  "description": "Die Istabfahrt der «von»-Haltestellen in Sekunden nach Mitternacht: Datentyp: (int, 10). Hinweis 1: Kann Werte grösser als 86400 enthalten, wenn „Betriebsdatum“ und „Datum von“ gleich sind und die Istabfahrt nach Mitternacht erfolgte, obwohl diese vor Mitternacht geplant war Hinweis 2: Kann negative Werte enthalten, wenn „Betriebsdatum“ und „Datum von“ ungleich sind und die Istabfahrt vor Mitternacht erfolgte, obwohl diese nach Mitternacht geplant war."
+               },
+               {
+                  "name": "Sequenz der Haltestelle nach (technisch: seq_nach)",
+                  "description": "Die Sequenz der «nach»-Haltestelle einer Fahrt: Datentyp: (int, 10)."
+               },
+               {
+                  "name": "Haltestellennummer DIVA nach (technisch: halt_diva_nach)",
+                  "description": "Die VBZ-intern verwendete Haltestellennummer der «nach»-Haltestelle: Datentyp: (int, 10)."
+               },
+               {
+                  "name": "Haltepunktnummer DIVA nach (technisch: halt_punkt_diva_nach)",
+                  "description": "Die VBZ-intern verwendete Haltepunktnummer der «nach»-Haltestelle: Datentyp: (int, 10)."
+               },
+               {
+                  "name": "Kurzcode Haltestelle nach (technisch: halt_kurz_nach1)",
+                  "description": "Die VBZ-intern verwendete Haltestellenabkürzung der «nach»-Haltestelle: Datentyp: (varchar(8))."
+               },
+               {
+                  "name": "Datum nach (technisch: datum_nach)",
+                  "description": "Das Tagesdatum für das Haltestellenereignis der «nach»-Haltestelle: Datentyp: (datetime, 8)."
+               },
+               {
+                  "name": "Sollankunft nach (technisch: soll_an_nach)",
+                  "description": "Die Sollankunft der «nach»-Haltestellen in Sekunden nach Mitternacht: Datentyp: (int, 10). Hinweis: enthält Werte zwischen 0 und 86399."
+               },
+               {
+                  "name": "Istankunft nach (technisch: ist_an_nach1)",
+                  "description": "Die Istankunft der «nach»-Haltestellen in Sekunden nach Mitternacht: Datentyp: (int, 10). Hinweis 1: Kann Werte grösser als 86400 enthalten, wenn „Betriebsdatum“ und „Datum nach“ gleich sind und die Istankunft nach Mitternacht erfolgte, obwohl diese vor Mitternacht geplant war. Hinweis 2: Kann negative Werte enthalten, wenn „Betriebsdatum“ und „Datum nach“ ungleich sind und Istankunft vor Mitternacht erfolgte, obwohl diese nach Mitternacht geplant war."
+               },
+               {
+                  "name": "Sollabfahrt nach (technisch: soll_ab_nach)",
+                  "description": "Die Sollabfahrt der «nach»-Haltestellen in Sekunden nach Mitternacht: Datentyp: (int, 10). Hinweis: Kann Werte grösser als 86400 enthalten, wenn die Ankunft vor und die Abfahrt nach Mitternacht geplant ist."
+               },
+               {
+                  "name": "Istabfahrt nach (technisch: ist_ab_nach)",
+                  "description": "Die Istabfahrt der «nach»-Haltestellen in Sekunden nach Mitternacht: Datentyp: (int, 10). Hinweis 1: Kann Werte grösser als 86400 enthalten, wenn „Betriebsdatum“ und „Datum nach“ gleich sind und die Istabfahrt nach Mitternacht erfolgte, obwohl diese vor Mitternacht geplant war. Hinweis 2: Kann negative Werte enthalten, wenn „Betriebsdatum“ und „Datum nach“ ungleich sind und die Istabfahrt vor Mitternacht erfolgte, obwohl diese nach Mitternacht geplant war."
+               },
+               {
+                  "name": "Fahrt ID (technisch: fahrt_id)",
+                  "description": "Die VBZ-intern verwendete ID einer Fahrt pro Betriebstag: Datentyp: (bigint, 19)."
+               },
+               {
+                  "name": "Fahrweg ID (technisch: fahrweg_id)",
+                  "description": "Der VBZ-intern verwendete Fremdschlüssel zum Fahrwegstamm: Datentyp: (bigint, 19)."
+               },
+               {
+                  "name": "Fahrwegnummer (technisch: fw_no)",
+                  "description": "Die VBZ-intern verwendete Fahrwegnummer: Datentyp: (smallint, 5)."
+               },
+               {
+                  "name": "Fahrwegtyp (technisch: fw_typ)",
+                  "description": "Der VBZ-Intern verwendete Fahrwegtyp: Datentyp: (tinyint, 1). Werte: 1 = Normalfahrt, 2 = Ausfahrt, 3 = Einfahrt, 4 = Zusatzfahrt."
+               },
+               {
+                  "name": "Fahrweg Kurzcode (technisch: fw_kurz)",
+                  "description": "Der VBZ-intern verwendete Fahrweg-Kurzcode: Datentyp: (varchar(6))."
+               },
+               {
+                  "name": "Fahrwegbezeichnung (technisch: fw_lang)",
+                  "description": "Die VBZ-intern verwendete Fahrwegbezeichnung: Datentyp: (varchar(40))."
+               },
+               {
+                  "name": "Umlaufnummer (technisch: umlauf_von)",
+                  "description": "Die VBZ-intern verwendete ID eines Umlaufes von Fahrten pro Betriebstag. Entspricht einer Sammlung, Reihenfolge von Fahrten. Datentyp: (bigint, 19)."
+               },
+               {
+                  "name": "Halt ID von (technisch: halt_id_von)",
+                  "description": "Fremdschlüssel zum Haltestellenstamm (halt_id); Zuordnung der «von»-Haltestelle: Datentyp: (bigint, 19)."
+               },
+               {
+                  "name": "Halt ID nach (technisch: halt_id_nach)",
+                  "description": "Fremdschlüssel zum Haltestellenstamm (halt_id); Zuordnung der «nach»-Haltestelle: Datentyp: (bigint, 19)."
+               },
+               {
+                  "name": "Haltepunkt ID von (technisch: halt_punkt_id_von)",
+                  "description": "Fremdschlüssel zum Haltepunktstamm (halt_punkt_id); Zuordnung des «von»-Haltepunktes: Datentyp: (bigint, 19)."
+               },
+               {
+                  "name": "Haltepunkt ID nach (technisch: halt_punkt_id_nach)",
+                  "description": "Fremdschlüssel zum Haltepunktstamm (halt_punkt_id); Zuordnung des «nach»-Haltepunktes: Datentyp: (bigint, 19)."
+               },
+               {
+                  "name": "Haltepunkt ID (technisch: halt_punkt_id)",
+                  "description": "Schlüsselfeld Haltepunkt. Datentyp: (bigint, 19)."
+               },
+               {
+                  "name": "Haltepunktnummer DIVA (technisch: halt_punkt_diva)",
+                  "description": "Die VBZ-intern verwendete Haltepunktnummer ( redundant vorkommend in Fahrzeiten_SOLL_IST). Werte 0-99. Datentyp (int, 2)."
+               },
+               {
+                  "name": "Haltestelle ID (technisch: halt_id)",
+                  "description": "Schlüsselfeld Haltestelle. Datentyp: (bigint, 19)."
+               },
+               {
+                  "name": "Y-Koordinate (technisch: GPS_Latitude)",
+                  "description": "Die Y-Koordinate (geographische Breite) des Haltepunktes in WGS84. Datentyp (int, 10)."
+               },
+               {
+                  "name": "X-Koordinate (technisch: GPS_Longitude)",
+                  "description": "Die X-Koordinate (geographische Länge) des Haltepunktes in WGS84. Datentyp (int, 10)."
+               },
+               {
+                  "name": "Kompassrichtung (technisch: GPS_Bearing)",
+                  "description": "Die Kompassrichtung des Haltepunktes. Datentyp (int, 10)."
+               },
+               {
+                  "name": "Haltepunktstatus (technisch: halt_punkt_ist_aktiv)",
+                  "description": "Haltestelle aktiv/inaktiv. Werte: true/false. Datentyp (boolean: bit, 1)."
+               },
+               {
+                  "name": "Haltestelle ID (technisch: halt_id1)",
+                  "description": "Schlüsselfeld Haltestelle. Datentyp: (bigint, 19)."
+               },
+               {
+                  "name": "Haltestellennummer DIVA (technisch: halt_diva)",
+                  "description": "Die VBZ-intern verwendete Haltestellennummer. Datentyp: (int, 10)."
+               },
+               {
+                  "name": "Haltestelle Kurzcode (technisch: halt_kurz)",
+                  "description": "Die VBZ-intern verwendete Haltestellenabkürzung. Datentyp (varchar(8))."
+               },
+               {
+                  "name": "Haltestelle Beschreibung (technisch: halt_lang)",
+                  "description": "Haltestellenbezeichnung. Datentyp (varchar(40))."
+               },
+               {
+                  "name": "Haltstellenstatus (technisch: halt_ist_aktiv)",
+                  "description": "Haltestelle aktiv/inaktiv. Werte: true/false. Datentyp (boolean: bit, 1)."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "jeweils Montags"
+}

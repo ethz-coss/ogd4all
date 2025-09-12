@@ -1,0 +1,414 @@
+{
+   "title": "Strassenlärmimmissionen der Stadt Zürich - Zustand 2022 und Szenarien",
+   "keywords": [
+      "Strassenlärm",
+      "Lärmimmissionen",
+      "Immissionsgrenzwert",
+      "Alarmwert",
+      "Lärmarmer Belag",
+      "Tempo 30",
+      "Elektromobilität"
+   ],
+   "metadata_date": "2025-03-03T16:08:40",
+   "updateFrequency": "notPlanned",
+   "purpose": "Die Szenarien zu den Strassenlärm-Immissionsdaten wurden erstellt, um die Wirkung der vom Stadtrat beschlossenen Geschwindigkeitsmassnahmen und des Einbaus lärmarmer Beläge zu visualisieren.",
+   "abstract": "Strassenlärmbelastung (Immissionen) als Punkte auf Gebäudefassaden aus Strassenlärmbelastungskataster und drei Szenarien:\n\n\n\n-Strassenlärmbelastungskataster der Stadt Zürich: IST-Zustand 2022\n\n\n\n-Erstes Szenario: Geschwindigkeitsmassnahmen gemäss Stadtratsbeschluss 1217/2021, Umsetzung abgeschlossen 2035.\n\n\n\n-Zweites Szenario: Zusätzlich zum ersten Szenario Einbau lärmarmer Beläge gemäss Stadtratsbeschuss 317/2022, Umsetzung abgeschlossen 2045.\n\n\n\n-Drittes Szenario: Zusätzlich zum zweiten Szenario Volldurchdringung des motorisierten Verkehrs mit Elektromobilität ist voraussichtlich im Jahr 2050 erreicht.\n\n\n\nEnthalten sind jeweils der Immissionspegel (Lr) in Dezibel A für den Tag (6-22) und die Nacht (22-6) sowie Beurteilungen hinsichtlich Einhaltung oder Überschreitung der Grenzwerte.",
+   "identificationDate": "2024-08-26",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Gesundheits- und Umweltdepartement - Umwelt- und Gesundheitsschutz",
+   "contactPerson": "Rainer Bobst",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "Geopackage (.gpkg)",
+      "ESRI File Geodatabase",
+      "ESRI File Geodatabase"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Strassenlaermimmissionen_der_Stadt_Zuerich___Zustand_2022_und_Szenarien",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "strlaerm_ep_szenario_min5db",
+            "description": "Strassenlärmbelastung, Szenario Geschwindigkeitsmassnahmen und Einbau lärmarmer Beläge gemäss Stadtratsbeschuss 317/2022, Umsetzung abgeschlossen 2045.",
+            "attributes": [
+               {
+                  "name": "determination_remark",
+                  "description": "Bemerkungen zur Berechnung und Bedeutung des Datensatzes"
+               },
+               {
+                  "name": "mcd_street",
+                  "description": "Modellkorrektur für Strassen, tags"
+               },
+               {
+                  "name": "address_pod",
+                  "description": "Adresse des Ermittlungspunkts am \n\nGebäude"
+               },
+               {
+                  "name": "egid",
+                  "description": "Eidgenössischer \n\nGebäude-Identifikator"
+               },
+               {
+                  "name": "id_pod",
+                  "description": "Identifikator des Ermittlungsortes"
+               },
+               {
+                  "name": "e",
+                  "description": "Landeskoordinaten: Easting (X)"
+               },
+               {
+                  "name": "n",
+                  "description": "Landeskoordinaten: Northing (Y)"
+               },
+               {
+                  "name": "lbk_id",
+                  "description": "ID des Datensatzes"
+               },
+               {
+                  "name": "mcn_street",
+                  "description": "Modellkorrektur für Strassen, nachts"
+               },
+               {
+                  "name": "edid",
+                  "description": "Eidgenössischer Gebäudeeingangs-Identifikator"
+               },
+               {
+                  "name": "exposure_limit_date",
+                  "description": "Datum der Publikation der Originalda"
+               },
+               {
+                  "name": "objectid",
+                  "description": "Systeminterne ID des Records"
+               },
+               {
+                  "name": "geometrie",
+                  "description": "Geometrie des Records"
+               },
+               {
+                  "name": "lr_night",
+                  "description": "Beurteilungspegel in der Nacht"
+               },
+               {
+                  "name": "exposure_limit_value_n",
+                  "description": "Beurteilung der Einhaltung der Belastungsgrenzwerte in der Nacht"
+               },
+               {
+                  "name": "pod_typ",
+                  "description": "Typ des Ermittlungsortes"
+               },
+               {
+                  "name": "operation_status",
+                  "description": "Repräsentiert der Ermittlungsort einen einen Betriebsraum oder nicht"
+               },
+               {
+                  "name": "lr_day",
+                  "description": "Beurteilungspegel am Tag"
+               },
+               {
+                  "name": "exposure_limit_value_d",
+                  "description": "Beurteilung der Einhaltung der Belastungsgrenzwerte am Tag"
+               },
+               {
+                  "name": "rel_height_pod",
+                  "description": "Relative Höhe des Ermittlungsortes"
+               },
+               {
+                  "name": "geometry_pod",
+                  "description": "Absolute Höhe des Ermittlungsortes"
+               },
+               {
+                  "name": "es",
+                  "description": "Empfindlichkeitsstufe"
+               }
+            ]
+         },
+         {
+            "name": "strlaerm_ep_lbk2020",
+            "description": "Strassenlärmbelastung des Strassenlärmbelastungskataster der Stadt Zürich: IST-Zustand 2020",
+            "attributes": [
+               {
+                  "name": "objectid",
+                  "description": "Systeminterne ID des Records"
+               },
+               {
+                  "name": "lr_day",
+                  "description": "Beurteilungspegel am Tag"
+               },
+               {
+                  "name": "lr_night",
+                  "description": "Beurteilungspegel in der Nacht"
+               },
+               {
+                  "name": "exposure_limit_value_d",
+                  "description": "Beurteilung der Einhaltung der Belastungsgrenzwerte am Tag"
+               },
+               {
+                  "name": "exposure_limit_value_n",
+                  "description": "Beurteilung der Einhaltung der Belastungsgrenzwerte in der Nacht"
+               },
+               {
+                  "name": "rel_height_pod",
+                  "description": "Relative Höhe des Ermittlungsortes"
+               },
+               {
+                  "name": "geometry_pod",
+                  "description": "Absolute Höhe des Ermittlungsortes"
+               },
+               {
+                  "name": "es",
+                  "description": "Empfindlichkeitsstufe"
+               },
+               {
+                  "name": "pod_typ",
+                  "description": "Typ des Ermittlungsortes"
+               },
+               {
+                  "name": "operation_status",
+                  "description": "Repräsentiert der Ermittlungsort einen einen Betriebsraum oder nicht"
+               },
+               {
+                  "name": "determination_remark",
+                  "description": "Bemerkungen zur Berechnung und Bedeutung des Datensatzes"
+               },
+               {
+                  "name": "mcd_street",
+                  "description": "Modellkorrektur für Strassen, tags"
+               },
+               {
+                  "name": "mcn_street",
+                  "description": "Modellkorrektur für Strassen, nachts"
+               },
+               {
+                  "name": "address_pod",
+                  "description": "Adresse des Ermittlungspunkts am \n\nGebäude"
+               },
+               {
+                  "name": "egid",
+                  "description": "Eidgenössischer \n\nGebäude-Identifikator"
+               },
+               {
+                  "name": "edid",
+                  "description": "Eidgenössischer Gebäudeeingangs-Identifikator"
+               },
+               {
+                  "name": "id_pod",
+                  "description": "Identifikator des Ermittlungsortes"
+               },
+               {
+                  "name": "exposure_limit_date",
+                  "description": "Datum der Publikation der Originalda"
+               },
+               {
+                  "name": "e",
+                  "description": "Landeskoordinaten: Easting (X)"
+               },
+               {
+                  "name": "n",
+                  "description": "Landeskoordinaten: Northing (Y)"
+               },
+               {
+                  "name": "lbk_id",
+                  "description": "ID des Datensatzes"
+               },
+               {
+                  "name": "geometrie",
+                  "description": "Geometrie des Records"
+               }
+            ]
+         },
+         {
+            "name": "strlaerm_ep_szenario_min7db",
+            "description": "Strassenlärmbelastung, Szenario Geschwindigkeitsmassnahmen, Einbau lärmarmer Beläge und  Volldurchdringung des motorisierten Verkehrs mit Elektromobilität , voraussichtlich im Jahr 2050 erreicht.",
+            "attributes": [
+               {
+                  "name": "lr_night",
+                  "description": "Beurteilungspegel in der Nacht"
+               },
+               {
+                  "name": "es",
+                  "description": "Empfindlichkeitsstufe"
+               },
+               {
+                  "name": "determination_remark",
+                  "description": "Bemerkungen zur Berechnung und Bedeutung des Datensatzes"
+               },
+               {
+                  "name": "exposure_limit_date",
+                  "description": "Datum der Publikation der Originalda"
+               },
+               {
+                  "name": "geometrie",
+                  "description": "Geometrie des Records"
+               },
+               {
+                  "name": "exposure_limit_value_n",
+                  "description": "Beurteilung der Einhaltung der Belastungsgrenzwerte in der Nacht"
+               },
+               {
+                  "name": "egid",
+                  "description": "Eidgenössischer \n\nGebäude-Identifikator"
+               },
+               {
+                  "name": "lr_day",
+                  "description": "Beurteilungspegel am Tag"
+               },
+               {
+                  "name": "exposure_limit_value_d",
+                  "description": "Beurteilung der Einhaltung der Belastungsgrenzwerte am Tag"
+               },
+               {
+                  "name": "rel_height_pod",
+                  "description": "Relative Höhe des Ermittlungsortes"
+               },
+               {
+                  "name": "geometry_pod",
+                  "description": "Absolute Höhe des Ermittlungsortes"
+               },
+               {
+                  "name": "pod_typ",
+                  "description": "Typ des Ermittlungsortes"
+               },
+               {
+                  "name": "operation_status",
+                  "description": "Repräsentiert der Ermittlungsort einen einen Betriebsraum oder nicht"
+               },
+               {
+                  "name": "mcd_street",
+                  "description": "Modellkorrektur für Strassen, tags"
+               },
+               {
+                  "name": "mcn_street",
+                  "description": "Modellkorrektur für Strassen, nachts"
+               },
+               {
+                  "name": "address_pod",
+                  "description": "Adresse des Ermittlungspunkts am \n\nGebäude"
+               },
+               {
+                  "name": "edid",
+                  "description": "Eidgenössischer Gebäudeeingangs-Identifikator"
+               },
+               {
+                  "name": "id_pod",
+                  "description": "Identifikator des Ermittlungsortes"
+               },
+               {
+                  "name": "e",
+                  "description": "Landeskoordinaten: Easting (X)"
+               },
+               {
+                  "name": "n",
+                  "description": "Landeskoordinaten: Northing (Y)"
+               },
+               {
+                  "name": "lbk_id",
+                  "description": "ID des Datensatzes"
+               },
+               {
+                  "name": "objectid",
+                  "description": "Systeminterne ID des Records"
+               }
+            ]
+         },
+         {
+            "name": "strlaerm_ep_szenario_min3db",
+            "description": "Strassenlärmbelastung, Szenario Geschwindigkeitsmassnahmen gemäss Stadtratsbeschluss 1217/2021, Umsetzung abgeschlossen 2035.",
+            "attributes": [
+               {
+                  "name": "objectid",
+                  "description": "Systeminterne ID des Records"
+               },
+               {
+                  "name": "geometrie",
+                  "description": "Geometrie des Records"
+               },
+               {
+                  "name": "rel_height_pod",
+                  "description": "Relative Höhe des Ermittlungsortes"
+               },
+               {
+                  "name": "geometry_pod",
+                  "description": "Absolute Höhe des Ermittlungsortes"
+               },
+               {
+                  "name": "es",
+                  "description": "Empfindlichkeitsstufe"
+               },
+               {
+                  "name": "pod_typ",
+                  "description": "Typ des Ermittlungsortes"
+               },
+               {
+                  "name": "operation_status",
+                  "description": "Repräsentiert der Ermittlungsort einen einen Betriebsraum oder nicht"
+               },
+               {
+                  "name": "determination_remark",
+                  "description": "Bemerkungen zur Berechnung und Bedeutung des Datensatzes"
+               },
+               {
+                  "name": "mcd_street",
+                  "description": "Modellkorrektur für Strassen, tags"
+               },
+               {
+                  "name": "mcn_street",
+                  "description": "Modellkorrektur für Strassen, nachts"
+               },
+               {
+                  "name": "address_pod",
+                  "description": "Adresse des Ermittlungspunkts am \n\nGebäude"
+               },
+               {
+                  "name": "egid",
+                  "description": "Eidgenössischer \n\nGebäude-Identifikator"
+               },
+               {
+                  "name": "edid",
+                  "description": "Eidgenössischer Gebäudeeingangs-Identifikator"
+               },
+               {
+                  "name": "id_pod",
+                  "description": "Identifikator des Ermittlungsortes"
+               },
+               {
+                  "name": "exposure_limit_date",
+                  "description": "Datum der Publikation der Originaldaten"
+               },
+               {
+                  "name": "e",
+                  "description": "Landeskoordinaten: Easting (X)"
+               },
+               {
+                  "name": "n",
+                  "description": "Landeskoordinaten: Northing (Y)"
+               },
+               {
+                  "name": "lbk_id",
+                  "description": "ID des Datensatzes"
+               },
+               {
+                  "name": "lr_day",
+                  "description": "Beurteilungspegel am Tag"
+               },
+               {
+                  "name": "lr_night",
+                  "description": "Beurteilungspegel in der Nacht"
+               },
+               {
+                  "name": "exposure_limit_value_d",
+                  "description": "Beurteilung der Einhaltung der Belastungsgrenzwerte am Tag"
+               },
+               {
+                  "name": "exposure_limit_value_n",
+                  "description": "Beurteilung der Einhaltung der Belastungsgrenzwerte in der Nacht"
+               }
+            ]
+         }
+      ]
+   }
+}

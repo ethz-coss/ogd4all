@@ -1,0 +1,56 @@
+{
+   "title": "Wohnungssaldo nach Umbau und Umbaukategorie",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bau_whg_bestand_umbau_umbaukat_ea_zizahlkat_kreis_saldo_jahr_od5102",
+   "abstract": "Der Datensatz enthält den Wohnungssaldo nach Umbaut nach Umbaukategorie, Jahr und Wohnungsgrösse.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Hinweis:\n\nJahr entspricht der ganzen Jahresperiode.\n\nHinweis:\n\nDer Wohnungssaldo nach Umbau enthält alle Änderungen der Anzahl Wohnungen im Monat, in welchem ein Umbau abgeschlossen wurde. Es können auch Änderungen enthalten sein, die nicht baulich mit einem Umbau zusammenhängen, sondern durch Korrekturen im Gebäude- und Wohnungsregister zustande kommen.\n\nUmbaukategorie\n\nReine Erneuerung: Die Grundfläche und die Anzahl Stockwerke des Gebäudes bleiben unverändert. Die gesamte Wohnungsfläche im Gebäude bleibt unverändert. Innerhalb des bestehenden Wohnraums sind Änderungen möglich, indem Wohnungen getrennt oder zusammengelegt werden.\nNutzung innerer Reserven: Die Grundfläche und die Anzahl Stockwerke des Gebäudes bleiben unverändert. Die Wohnungsfläche im Gebäude nimmt zu, indem der Dachboden ausgebaut wird oder vereinzelte Nicht-Wohnnutzungen in Wohnungen umgewandelt werden.\nAnbau/Aufstockung: Die Gebäudehülle wird durch Anbau oder Aufstockung vergrössert. Die Wohnungsfläche im Gebäude nimmt zu.\nUmnutzung zu Wohnen: Die Grundfläche und die Anzahl Stockwerke des Gebäudes bleiben unverändert. Kommerzielle oder andere Nutzflächen werden in Wohnraum umgewandelt. Die Wohnungsfläche des Gebäudes wird mindestens verdoppelt.\nUmnutzung zu Nichtwohnen: Die Grundfläche und die Anzahl Stockwerke des Gebäudes bleiben unverändert. Wohnraum wird in kommerzielle oder andere Nutzflächen umgewandelt. Die Wohnungsfläche des Gebäudes nimmt ab.\n\nAnzWhgStat\n\nSaldo der statistischen Wohnungen, die bei einem Umbau entstehen oder aufgelöst werden.\n\nStand und Nachführung:\n\nDas Gebäude- und Wohnungsregister der Stadt Zürich wird ständig nachgeführt. Seit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.\n\nStatistische Wohnung\n\nAls statistische Wohnung zählen bestehende Wohnungen, welche über eine Kocheinrichtung verfügen und zu Wohnzwecken (keine zweckentfremdeten Wohnungen) verwendet werden.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Wohnungssaldo nach Umbau und Umbaukategorie",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Numerisch)"
+               },
+               {
+                  "name": "Datenstand (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (P = provisorisch, D = definitiv)"
+               },
+               {
+                  "name": "Einteilung des Umbaus in eine Kategorie (technisch: UmbaukategorieSort_noDM)",
+                  "description": "Einteilung des Umbaus in eine Kategorie (Numerisch)"
+               },
+               {
+                  "name": "Einteilung des Umbaus in eine Kategorie (technisch: UmbaukategorieCd_noDM)",
+                  "description": "Einteilung des Umbaus in eine Kategorie (String)"
+               },
+               {
+                  "name": "Einteilung des Umbaus in eine Kategorie (technisch: UmbaukategorieLang_noDM)",
+                  "description": "Einteilung des Umbaus in eine Kategorie (String)"
+               },
+               {
+                  "name": "Anzahl Zimmer der Wohnung (technisch: AnzZimmerLevel2Sort_noDM)",
+                  "description": "Anzahl Zimmer der Wohnung (Numerisch)"
+               },
+               {
+                  "name": "Anzahl Zimmer der Wohnung (technisch: AnzZimmerLevel2Cd_noDM)",
+                  "description": "Anzahl Zimmer der Wohnung (String)"
+               },
+               {
+                  "name": "Anzahl Zimmer der Wohnung (technisch: AnzZimmerLevel2Lang_noDM)",
+                  "description": "Anzahl Zimmer der Wohnung (String)"
+               },
+               {
+                  "name": "Anzahl statistische Wohnungen (technisch: AnzUmbauWhgStatSaldo_noDM)",
+                  "description": "Anzahl statistische Wohnungen (Numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-01-08"
+}

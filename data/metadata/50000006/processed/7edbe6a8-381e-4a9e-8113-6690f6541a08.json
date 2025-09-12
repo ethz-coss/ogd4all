@@ -1,0 +1,116 @@
+{
+   "title": "Gebietsnamen",
+   "keywords": [
+      "Gebietseinteilungen",
+      "Entwicklungsgebiete",
+      "Areale"
+   ],
+   "metadata_date": "2024-06-18T13:58:08",
+   "updateFrequency": "fortnightly",
+   "purpose": "Die Gebietsnamen dienen den Dienststellen der Stadt Zürich als Grundlage für die verwaltungsinternen Aufgaben.",
+   "abstract": "Die Gebietsnamen sind Flächen von Entwicklungsgebieten und Arealen. Die Namen dieser Gebiete sind in der Bevölkerung bekannt. Die Perimeter der Flächen werden vom Amt für Städtebau festgelegt. Die Gebietsbenennung wir durch die Strassenbenennungskommission festgelegt.",
+   "identificationDate": "2025-03-17",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Geomatik + Vermessung",
+   "contactPerson": "Philipp Christen",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Gebietsnamen",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "adm_gebietsnamen_a",
+            "description": "Gebietsnamen AV",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               },
+               {
+                  "name": "ENTSTEHUNG",
+                  "description": "Fremdschlüssel für Verbindung zur Tabelle GNamenNachf. Diese Tabelle ist im Geoserver nicht sichtbar"
+               },
+               {
+                  "name": "GEBIETSNAME",
+                  "description": "Name des Stadtgebietes, zwingend + eindeutig"
+               },
+               {
+                  "name": "STRBDATUM",
+                  "description": "Datum des Stadtratsbeschlusses"
+               },
+               {
+                  "name": "STRBNR",
+                  "description": "Nummer des Stadtratsbeschlusses"
+               },
+               {
+                  "name": "GEBIETSART",
+                  "description": "Code Gebietsart; 1(=Quartierteile), 2(=Entwicklungsgebiete), 3(=Areale)"
+               },
+               {
+                  "name": "GEBIETSART_TXT",
+                  "description": "Text Gebietsart; 1(=Quartierteile), 2(=Entwicklungsgebiete), 3(=Areale)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "BEMERKUNG",
+                  "description": "Bemerkung"
+               }
+            ]
+         },
+         {
+            "name": "adm_gebietsnamen_beschr_p",
+            "description": "Beschriftungspunkte der Gebietsnamen AV",
+            "attributes": [
+               {
+                  "name": "HALI",
+                  "description": "Horizontaler Versatz zum Ursprungspunkt; undefiniert = Center"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ORI",
+                  "description": "Rotation der Beschriftung; undefiniert = 100.0; Masseinheit ist Gon."
+               },
+               {
+                  "name": "VALI",
+                  "description": "Vertikaler Versatz zum Ursprungspunkt; undefiniert = Half"
+               },
+               {
+                  "name": "GEBIETSNAME",
+                  "description": "Bezeichnung des Objektes"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld"
+               }
+            ]
+         }
+      ]
+   }
+}

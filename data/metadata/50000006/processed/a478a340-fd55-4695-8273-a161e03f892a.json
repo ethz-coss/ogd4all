@@ -1,0 +1,76 @@
+{
+   "title": "Hochhäuser (3D)",
+   "keywords": [
+      "Geodaten",
+      "3D",
+      "Hochhaus"
+   ],
+   "metadata_date": "2024-07-15T08:14:34",
+   "updateFrequency": "weekly",
+   "purpose": "Ein Hochhausdatensatz liefert Grundlagen für verschiedene Einsatzgebiete wie z.B. städtebauliche Entwicklung",
+   "abstract": "Dieser stadtinterne Datensatz beinhaltet nebst den aktuellen 3D-Modellen der Bauten der Stadt Zürich auch jene, welche voraussichtlich in den nächsten ca. 3 Jahren realisiert werden, sowie möglicherweise in mittelfristiger Zukunft erstellt werden könnten.   \n\n\n\nDie 3D-Modelle basieren auf den Originaldatensätzen &lt;a href=\"https://www.stadt-zuerich.ch/geodaten/download/Bauten___Kombinierte_Darstellung_heute\" target=\"_blank\">Bauten - Kombinierte Darstellung heute&lt;/a>, &lt;a href=\"https://www.stadt-zuerich.ch/geodaten/download/Bauten___Kombinierte_Darstellung_kurzfristige_Zukunft\" target=\"_blank\">Bauten - Kombinierte Darstellung kurzfristige Zukunft&lt;/a>, &lt;a href=\"https://www.stadt-zuerich.ch/geodaten/download/Bauten___Kombinierte_Darstellung_mittelfristige_Zukunft\" target=\"_blank\">Bauten - Kombinierte Darstellung mittelfristige Zukunft&lt;/a>, welche im Geodatenkatalog zu finden sind.\n\n\n\nOb ein Gebäude baurechtlich ein Hochhaus ist, hängt von der zum Zeitpunkt seiner Bewilligung geltenden Gesetzesgrundlage ab. Gemäss der für die Stadt Zürich aktuell anwendbaren Fassung von § 282 Planungs- und Baugesetz (&lt;a href=\"https://www.zh.ch/de/politik-staat/gesetze-beschluesse/gesetzessammlung/zhlex-ls/erlass-700_1-1975_09_07-1976_04_01-107.html\" target=\"_blank\">PBG&lt;/a>) sind Hochhäuser Gebäude mit einer Höhe von mehr als 25 m. \n\nIm vorliegenden Datensatz wird zunächst aus den 3D-Modellen in einem automatisierten Prozess die Firsthöhe ausgelesen. Ist diese grösser als 25 m, wird das Gebäude als Verdachtsfall vermerkt. Liegt für ein so identifiziertes Gebäude eine Baubewilligung vor, wird anhand des Bauentscheids überprüft, ob es sich baurechtlich um ein Hochhaus handelt. Dieser Abgleich findet periodisch statt. Der Datensatz kann deshalb vorübergehend nicht verifizierte Verdachtsfälle enthalten, die nachträglich als nicht zugehörig entfallen. \n\nAls zusätzliche Information wird der Hochhaustyp ausgewiesen, dieser gibt genauere Information zu der Art des Hochhauses - ein Hochhaus nach Planungs- und Baugesetz (\"Hochhaus PBG\") und Kirchen mit einer Firsthöhe über 25m (\"Hochhaus PBG / Kirche\"). Gebäude, welche noch kein vorliegendes Baugesuch aufweisen, werden in den kurzfristigen Zukunft als \"noch nicht geprüft\" ausgewiesen. Potentielle Hochhäuser der mittelfristigen Zukunft werden als \"Hochhaus Studie\" ausgewiesen. \n\nHochhäuser, die auf Grund der Feststellungen im Baubewilligungsverfahren baurechtlich als solche gelten, werden der Kategorie \"Hochhaus PBG\" zugewiesen.\n\n\n\nZu beachten: Da dieser Datensatz automatisiert erstellt wird, kann keine 100% Genauigkeit und Richtigkeit garantiert werden.",
+   "identificationDate": "2025-03-11",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Hochbaudepartement - Amt für Städtebau",
+   "contactPerson": "Nicole Kesselring",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Hochhaeuser",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "ALLE_HOCHHAEUSER",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "EGID",
+                  "description": "Eidgenössischer Gebäudeidentifikator"
+               },
+               {
+                  "name": "AKTUALISIERUNGSDATUM",
+                  "description": "Datum der letzten Erstellung"
+               },
+               {
+                  "name": "HOCHHAUS_KLEINER_25M",
+                  "description": "Information zu altrechtlichen Hochhäusern. Ein Gebäude wird als Hochhaus klassiert, obwohl es kleiner als 25m ist."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": "Status der Baubewilligung\n\n\"Wettbewerb\" / \"Sondernutzungsplanung\" / ¿"
+               },
+               {
+                  "name": "FIRSTHOEHE",
+                  "description": "Die Firsthöhe ab Boden des Hochhauses. Entspricht nicht der Gesamthöhe!\n\n\n\nEs wird die Firsthöhe angegeben, obwohl die baurechtliche Höhe ausschlaggebend ist für die Einstufung als Hochhaus. Die baurechtliche Höhe wird jedoch nicht erfasst und kann deshalb nicht ausgegeben werden."
+               },
+               {
+                  "name": "HOCHHAUSTYP",
+                  "description": "- Hochhaus PBG: Hochhaus nach Planungs- und Baugesetzt\n\n- noch nicht geprüft: Gebäude mit Status \"eingreicht\", bei welchen noch kein Baugesuch vorliegt\n\n- Hochhaus Studie: Hochhaus in mittelfr. Zukunft erfasst (noch nicht im ABIS)\n\n- Hochhaus PBG / Kirche: Aus alter Aufbereitung für den alten Hochhausviewer \n\n- kein Hochhaus"
+               },
+               {
+                  "name": "BAUJAHR",
+                  "description": "Baujahr des Hochhauses. Das Attribut ist nur ausgefüllt, wenn der Status = \"real\"/\"erstellt\""
+               }
+            ]
+         }
+      ]
+   }
+}

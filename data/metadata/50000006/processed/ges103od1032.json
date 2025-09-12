@@ -1,0 +1,44 @@
+{
+   "title": "Sanitätseinsätze",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/sid_srz_od1032_sanitaetseinsaetze_jahr_kategorie",
+   "abstract": "Sanitätseinsätze von Schutz und Rettung nach Kategorie und Jahr.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Einsätze der Notärzt*innen\n\nEinsätze der Notärzt*innen: Ab 2019 werden die Einsätze der Notärztinnen nur als Teilmenge des Gesamttotals der Sanitätseinsätze ausgewiesen. Es ist möglich, dass Notärtzinnen beim Rettungs- oder beim Verlegungsdienst im Einsatz waren.\n\nNotärzt*innendienst Spital Bülach\n\nNotärzt*innendienst Spital Bülach: Seit 1. Januar 2018 hat das Spital Bülach einen eigenen Notärzt*innendienst aufgebaut. Schutz & Rettung Zürich leistet in diesem Gebiet keine entsprechenden Einsätze mehr.\n\nSanitätseinsätze SRZ\n\nSanitätseinsätze SRZ: Einsätze von Rettungs- und Verlegungsdienst. Das Total der Sanitätseinsätze entspricht der Summe der Einsätze von Rettungs- und Verlegungsdienst.\n\nVergleichbarkeit\n\nVergleichbarkeit: Bis und mit 2013: In dieser Zeit wurde die Anzahl der sogenannten K1-Einsätze (höchste medizinische Dringlichkeitsstufe) als Einsatz mit Notarzt ausgewiesen.\n\n2014 bis 2018: Die effektive Anzahl Notarzteinsätze, unabhängig von der Einsatzkategorie, wird ausgewiesen. Die Zahlen ab 2014 bis 2018 sind deshalb nicht mit den Vorjahren vergleichbar.\n\nSeit 2019: Ab dann werden die Einsätze der Notärzt*innen nur noch als Teilmenge am Gesamttotal der Sanitätseinsätze (Summe von Rettungsdienst und Verlegungsdienst) ausgewiesen. Die Zahlen ab 2019 sind deshalb nicht mit den Vorjahren vergleichbar.\n\nVerlegungsdienst\n\nVerlegungsdienst: Seit dem 01.01.2017 gilt im Kanton Zürich die neue Verordnung über das Rettungswesen mit neuen Einsatzkategorien. Insbesondere gelten für Verlegungstransporte eigene Bestimmungen. Verlegungstransporte werden deshalb neu ab 2019 separat ausgewiesen. Eine nachträgliche Aufschlüsselung der Zahlen der Vorjahre nach diesem Raster ist nicht möglich. Die Gesamteinsatzzahlen bleiben vergleichbar.\n\nWerte 2014: Korrektur\n\nWerte 2014: Korrektur: Es wurde festgestellt, dass in den Jahren bis und mit 2014 eine falsch programmierte Datenbankabfrage zum Einsatz kam. Die ausgewiesenen Zahlen waren deshalb tendenziell zu hoch. Die Zahl für 2014 wurde mit einer Nachauswertung korrigiert, für die Vorjahre ist dies nicht mehr möglich.\n\nWerte 2015: Hinweis\n\nWerte 2015: Hinweis: Erklärung zum Anstieg gegenüber dem Vorjahr: Im Jahr 2015 übernahm der Rettungsdienst von SRZ von Februar bis Dezember zusätzlich zu den Vorjahren die notärztliche Abdeckung des Gebiets Horgen.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Sanitätseinsätze",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: Jahr)",
+                  "description": "Jahr (Numeric)"
+               },
+               {
+                  "name": "KategorieSort (technisch: KategorieSort)",
+                  "description": "KategorieSort (Numeric)"
+               },
+               {
+                  "name": "Kategorie (technisch: Kategorie)",
+                  "description": "Kategorie (Total, Rettungsdienst, Verlegungsdienst, Notärzt*in; String)"
+               },
+               {
+                  "name": "GebietSort (technisch: GebietSort)",
+                  "description": "GebietSort (Numeric)"
+               },
+               {
+                  "name": "Gebiet (technisch: Gebiet)",
+                  "description": "Gebiet (Total, innerhalb oder ausserhalb Stadt Zürich, String)"
+               },
+               {
+                  "name": "Anzahl (technisch: Anzahl)",
+                  "description": "Anzahl Einsätze pro Jahr (Numeric)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-04-01"
+}

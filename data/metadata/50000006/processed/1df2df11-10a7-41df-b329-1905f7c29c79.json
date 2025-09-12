@@ -1,0 +1,1344 @@
+{
+   "title": "Nutzungsplanung - kommunale Bau- und Zonenordnung (BZO)",
+   "keywords": [
+      "Bauordnung",
+      "Nutzungsplanung",
+      "Abstandslinien",
+      "Zonenplan",
+      "Ergänzungspläne",
+      "BZO"
+   ],
+   "metadata_date": "2023-07-20T05:27:32",
+   "updateFrequency": "daily",
+   "purpose": "Der Datensatz ist Teil der Bau- und Zonenordnung und somit gesetzlich vorgeschrieben.",
+   "abstract": "Geodaten des Zonenplans und der Ergänzungspläne gemäss Art. 2 BauO.\n\nEs handelt sich um ein Extrakt des Geodatensatzes \"ÖREB-Kataster-STZH\" und wird stadtintern als \"Sekundärdatensatz ÖREB Nutzungsplaung\" bezeichnet.",
+   "identificationDate": "2025-03-18",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Hochbaudepartement - Amt für Städtebau",
+   "contactPerson": "Denis Metz",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Nutzungsplanung___kommunale_Bau__und_Zonenordnung__BZO_",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "BZO_PROJ_REVISIONSGEBIET_V",
+            "description": "Gebiete in Revisions- oder Rekursverfahren (= projektierte Zonen oder Lärmempfindlichkeitsstufen)",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "MUTATIONSNUMMER",
+                  "description": "Zur Identifikation ist jeder BZO-Revision mindestens eine Mutationsnummer zugewiesen. Grosse BZO-Revisionen sind in mehrere Mutationen aufgeteilt. Die Vergabe der  Mutationsnummer erfolgt durch den Katasterbearbeiter (GeoZ)."
+               }
+            ]
+         },
+         {
+            "name": "BZO_ZONE_INNENL_F_V",
+            "description": "innenliegende Freihaltezone (informativ)",
+            "attributes": [
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Kann in diesem Datensatz nur den folgenden Wert haben:\n\n* inKraft"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "BZO_ZONE_ES_V",
+            "description": "Empfindlichkeitsstufen nach Art. 3 BauO",
+            "attributes": [
+               {
+                  "name": "PLAN_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Plandokumenten (PDF)"
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Rechtsvorschriften (PDF)"
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Kann in diesem Datensatz nur den folgenden Wert haben:\n\n* inKraft"
+               },
+               {
+                  "name": "TYP",
+                  "description": "Empfindlichkeitsstufe. Einer der folgenden Werte:\n\n* II\n\n* III\n\n* IIIA\n\n* IV"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "BZO_QUEZ_V",
+            "description": "Quartiererhaltungszonen",
+            "attributes": [
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Kann in diesem Datensatz nur den folgenden Wert haben:\n\n* inKraft"
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Rechtsvorschriften (PDF)"
+               },
+               {
+                  "name": "TYP",
+                  "description": "Zonentyp. Einer der folgenden Werte:\n\n* QI\n\n* QII\n\n* QIII"
+               },
+               {
+                  "name": "TYP_DETAIL",
+                  "description": "Geschosszahl und gebietsbezogene Vorschriften (siehe Art. 24b-m BauO)"
+               },
+               {
+                  "name": "PLAN_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Plandokumenten (PDF)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "BZO_KERNZONE_V",
+            "description": "Kernzonen",
+            "attributes": [
+               {
+                  "name": "PLAN_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Plandokumenten (PDF)"
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Rechtsvorschriften (PDF)"
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Kann in diesem Datensatz nur den folgenden Wert haben:\n\n* inKraft"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": "Name der Kernzone"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "BZO_HOCHHAUSGEBIET_V",
+            "description": "Hochhausgebiete nach Art. 9 BauO (Bestandteil der Sondernutzung)",
+            "attributes": [
+               {
+                  "name": "PLAN_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Plandokumenten (PDF)"
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Rechtsvorschriften (PDF)"
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Kann in diesem Datensatz nur den folgenden Wert haben:\n\n* inKraft"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "TYP",
+                  "description": "Hochhausgebiet-Typ. Einer der folgenden Werte:\n\n* I\n\n* II\n\n* III"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "BZO_GP_V",
+            "description": "Gestaltungspläne (Bestandteil der Sondernutzung)",
+            "attributes": [
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Kann in diesem Datensatz nur den folgenden Wert haben:\n\n* inKraft"
+               },
+               {
+                  "name": "PLAN_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Plandokumenten (PDF)"
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Rechtsvorschriften (PDF)"
+               },
+               {
+                  "name": "NAME",
+                  "description": "Name des Gestaltungsplans"
+               },
+               {
+                  "name": "NUMMER",
+                  "description": "Nummer des Gestaltungsplans innerhalb der AfS-Geschäftskontrolle"
+               },
+               {
+                  "name": "TYP",
+                  "description": "Gestaltungsplantyp. Einer der folgenden Werte:\n\n* Kantonaler Gestaltungsplan allgemein\n\n* Kommunaler Gestaltungsplan"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": "Gestaltungsplanart. Einer der folgenden Werte:\n\n* oeffentlich\n\n* privat"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "BZO_SBV_V",
+            "description": "Sonderbauvorschriften (Bestandteil der Sondernutzung)",
+            "attributes": [
+               {
+                  "name": "NAME",
+                  "description": "Name der Sonderbauvorschrift"
+               },
+               {
+                  "name": "NUMMER",
+                  "description": "Nummer des Gestaltungsplans innerhalb der AfS-Geschäftskontrolle"
+               },
+               {
+                  "name": "PLAN_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Plandokumenten (PDF)"
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Rechtsvorschriften (PDF)"
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Kann in diesem Datensatz nur den folgenden Wert haben:\n\n* inKraft"
+               },
+               {
+                  "name": "TYP",
+                  "description": "Sonderbauvorschrift-Typ. Einer der folgenden Werte:\n\n* Sonderbauvorschriften nach BauO\n\n* Sonderbauvorschriften nicht nach BauO"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "BZO_GP_PFLICHT_V",
+            "description": "Gebiete mit Gestaltungsplanpflicht nach Art. 4 BauO (Bestandteil der Sondernutzung)",
+            "attributes": [
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Rechtsvorschriften (PDF)"
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Kann in diesem Datensatz nur den folgenden Wert haben:\n\n* inKraft"
+               },
+               {
+                  "name": "NAME",
+                  "description": "Name des Gebiets"
+               },
+               {
+                  "name": "PLAN_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Plandokumenten (PDF)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "BZO_PLANUNGSZONE_V",
+            "description": "Planungszonen (Bestandteil der Sondernutzung)",
+            "attributes": [
+               {
+                  "name": "PLAN_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Plandokumenten (PDF)"
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Rechtsvorschriften (PDF)"
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Kann in diesem Datensatz nur den folgenden Wert haben:\n\n* inKraft"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": "Name der Planungszone"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "BZO_AUSSICHTSSCHUTZ_V",
+            "description": "Aussichtsschutz (Bestandteil der Sondernutzung)",
+            "attributes": [
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Rechtsvorschriften (PDF)"
+               },
+               {
+                  "name": "PLAN_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Plandokumenten (PDF)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Kann in diesem Datensatz nur den folgenden Wert haben:\n\n* inKraft"
+               },
+               {
+                  "name": "NAME",
+                  "description": "Name des Aussichtsschutzgebietes"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "BZO_GEWAESSERABSTANDSL_V",
+            "description": "Gewässerabstandslinien",
+            "attributes": [
+               {
+                  "name": "PLAN_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Plandokumenten (PDF)"
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Rechtsvorschriften (PDF)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Kann in diesem Datensatz nur den folgenden Wert haben:\n\n* inKraft"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "BZO_WALDABSTANDSL_V",
+            "description": "Waldabstandslinien",
+            "attributes": [
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Rechtsvorschriften (PDF)"
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Kann in diesem Datensatz nur den folgenden Wert haben:\n\n* inKraft"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "PLAN_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Plandokumenten (PDF)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "BZO_PROJ_GP_V",
+            "description": "Gestaltungspläne (projektiert) (Bestandteil der Sondernutzung)",
+            "attributes": [
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Einer der folgenden Werte: \n\n* provisorisch \n\n* laufendeAenderung.Festsetzung \n\n* laufendeAenderung.Genehmigung \n\n* laufendeAenderung.Rechtsmittelverfahren\n\n* Aufhebung.Festsetzung \n\n* Aufhebung.Genehmigung \n\n* Aufhebung.Rechtsmittelverfahren"
+               },
+               {
+                  "name": "NAME",
+                  "description": "Name des Gestaltungsplans"
+               },
+               {
+                  "name": "NUMMER",
+                  "description": "Nummer des Gestaltungsplans innerhalb der AfS-Geschäftskontrolle"
+               },
+               {
+                  "name": "PLAN_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Plandokumenten (PDF)"
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Rechtsvorschriften (PDF)"
+               },
+               {
+                  "name": "TYP",
+                  "description": "Gestaltungsplantyp. Einer der folgenden Werte: \n\n * Kantonaler Gestaltungsplan allgemein \n\n * Kommunaler Gestaltungsplan"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ART",
+                  "description": "Gestaltungsplanart. Einer der folgenden Werte: \n\n * oeffentlich \n\n * privat"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "MUTATIONSNUMMER",
+                  "description": "Zur Identifikation ist jeder BZO-Revision mindestens eine Mutationsnummer zugewiesen. Grosse BZO-Revisionen sind in mehrere Mutationen aufgeteilt. Die Vergabe der  Mutationsnummer erfolgt durch den Katasterbearbeiter (GeoZ)."
+               }
+            ]
+         },
+         {
+            "name": "BZO_PROJ_GEWAESSERABSTANDSL_V",
+            "description": "Gewässerabstandslinien (projektiert)",
+            "attributes": [
+               {
+                  "name": "PLAN_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Plandokumenten (PDF)"
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Rechtsvorschriften (PDF)"
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Einer der folgenden Werte: \n\n* provisorisch \n\n* laufendeAenderung.Festsetzung \n\n* laufendeAenderung.Genehmigung \n\n* laufendeAenderung.Rechtsmittelverfahren\n\n* Aufhebung.Festsetzung \n\n* Aufhebung.Genehmigung \n\n* Aufhebung.Rechtsmittelverfahren"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "MUTATIONSNUMMER",
+                  "description": "Zur Identifikation ist jeder BZO-Revision mindestens eine Mutationsnummer zugewiesen. Grosse BZO-Revisionen sind in mehrere Mutationen aufgeteilt. Die Vergabe der  Mutationsnummer erfolgt durch den Katasterbearbeiter (GeoZ)."
+               }
+            ]
+         },
+         {
+            "name": "BZO_PROJ_KERNZONE_V",
+            "description": "Kernzonen (projektiert)",
+            "attributes": [
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Einer der folgenden Werte: \n\n* provisorisch \n\n* laufendeAenderung.Festsetzung \n\n* laufendeAenderung.Genehmigung \n\n* laufendeAenderung.Rechtsmittelverfahren\n\n* Aufhebung.Festsetzung \n\n* Aufhebung.Genehmigung \n\n* Aufhebung.Rechtsmittelverfahren"
+               },
+               {
+                  "name": "NAME",
+                  "description": "Name der Kernzone"
+               },
+               {
+                  "name": "PLAN_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Plandokumenten (PDF)"
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Rechtsvorschriften (PDF)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "MUTATIONSNUMMER",
+                  "description": "Zur Identifikation ist jeder BZO-Revision mindestens eine Mutationsnummer zugewiesen. Grosse BZO-Revisionen sind in mehrere Mutationen aufgeteilt. Die Vergabe der  Mutationsnummer erfolgt durch den Katasterbearbeiter (GeoZ)."
+               }
+            ]
+         },
+         {
+            "name": "BZO_PROJ_QUEZ_V",
+            "description": "Quartiererhaltungszonen (projektiert)",
+            "attributes": [
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Rechtsvorschriften (PDF)"
+               },
+               {
+                  "name": "TYP_DETAIL",
+                  "description": "Geschosszahl und gebietsbezogene Vorschriften (siehe Art. 24b-m BauO)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "TYP",
+                  "description": "Zonentyp. Einer der folgenden Werte: \n\n * QI \n\n * QII \n\n * QIII"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Einer der folgenden Werte: \n\n* provisorisch \n\n* laufendeAenderung.Festsetzung \n\n* laufendeAenderung.Genehmigung \n\n* laufendeAenderung.Rechtsmittelverfahren\n\n* Aufhebung.Festsetzung \n\n* Aufhebung.Genehmigung \n\n* Aufhebung.Rechtsmittelverfahren"
+               },
+               {
+                  "name": "PLAN_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Plandokumenten (PDF)"
+               },
+               {
+                  "name": "MUTATIONSNUMMER",
+                  "description": "Zur Identifikation ist jeder BZO-Revision mindestens eine Mutationsnummer zugewiesen. Grosse BZO-Revisionen sind in mehrere Mutationen aufgeteilt. Die Vergabe der  Mutationsnummer erfolgt durch den Katasterbearbeiter (GeoZ)."
+               }
+            ]
+         },
+         {
+            "name": "BZO_PROJ_WALDABSTANDSL_V",
+            "description": "Waldabstandslinien (projektiert)",
+            "attributes": [
+               {
+                  "name": "MUTATIONSNUMMER",
+                  "description": "Zur Identifikation ist jeder BZO-Revision mindestens eine Mutationsnummer zugewiesen. Grosse BZO-Revisionen sind in mehrere Mutationen aufgeteilt. Die Vergabe der  Mutationsnummer erfolgt durch den Katasterbearbeiter (GeoZ)."
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Einer der folgenden Werte: \n\n* provisorisch \n\n* laufendeAenderung.Festsetzung \n\n* laufendeAenderung.Genehmigung \n\n* laufendeAenderung.Rechtsmittelverfahren\n\n* Aufhebung.Festsetzung \n\n* Aufhebung.Genehmigung \n\n* Aufhebung.Rechtsmittelverfahren"
+               },
+               {
+                  "name": "PLAN_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Plandokumenten (PDF)"
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Rechtsvorschriften (PDF)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "BZO_PROJ_ZONE_FFZ_V",
+            "description": "Gebiete mit Freiflächenziffer gemäss Art. 18 Abs. 2 BauO (projektiert)",
+            "attributes": [
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Einer der folgenden Werte: \n\n* provisorisch \n\n* laufendeAenderung.Festsetzung \n\n* laufendeAenderung.Genehmigung \n\n* laufendeAenderung.Rechtsmittelverfahren\n\n* Aufhebung.Festsetzung \n\n* Aufhebung.Genehmigung \n\n* Aufhebung.Rechtsmittelverfahren"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "FFZ",
+                  "description": "Freiflächenziffer"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "MUTATIONSNUMMER",
+                  "description": "Zur Identifikation ist jeder BZO-Revision mindestens eine Mutationsnummer zugewiesen. Grosse BZO-Revisionen sind in mehrere Mutationen aufgeteilt. Die Vergabe der  Mutationsnummer erfolgt durch den Katasterbearbeiter (GeoZ)."
+               }
+            ]
+         },
+         {
+            "name": "BZO_ZONE_LAERMVORBELAST_V",
+            "description": "Lärmvorbelastetes Gebiet gemäss Art. 3 BauO",
+            "attributes": [
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Kann in diesem Datensatz nur den folgenden Wert haben:\n\n* inKraft"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "BZO_PROJ_ZONE_INNENL_F_V",
+            "description": "innenliegende Freihaltezone (projektiert) (informativ)",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Einer der folgenden Werte: \n\n* provisorisch \n\n* laufendeAenderung.Festsetzung \n\n* laufendeAenderung.Genehmigung \n\n* laufendeAenderung.Rechtsmittelverfahren\n\n* Aufhebung.Festsetzung \n\n* Aufhebung.Genehmigung \n\n* Aufhebung.Rechtsmittelverfahren"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "MUTATIONSNUMMER",
+                  "description": "Zur Identifikation ist jeder BZO-Revision mindestens eine Mutationsnummer zugewiesen. Grosse BZO-Revisionen sind in mehrere Mutationen aufgeteilt. Die Vergabe der  Mutationsnummer erfolgt durch den Katasterbearbeiter (GeoZ)."
+               }
+            ]
+         },
+         {
+            "name": "BZO_PROJ_ZONE_ES_V",
+            "description": "Empfindlichkeitsstufen nach Art. 3 BauO (projektiert)",
+            "attributes": [
+               {
+                  "name": "PLAN_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Plandokumenten (PDF)"
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Rechtsvorschriften (PDF)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Einer der folgenden Werte: \n\n* provisorisch \n\n* laufendeAenderung.Festsetzung \n\n* laufendeAenderung.Genehmigung \n\n* laufendeAenderung.Rechtsmittelverfahren\n\n* Aufhebung.Festsetzung \n\n* Aufhebung.Genehmigung \n\n* Aufhebung.Rechtsmittelverfahren"
+               },
+               {
+                  "name": "TYP",
+                  "description": "Empfindlichkeitsstufe. Einer der folgenden Werte: \n\n * II \n\n * III \n\n * IIIA \n\n * IV"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "MUTATIONSNUMMER",
+                  "description": "Zur Identifikation ist jeder BZO-Revision mindestens eine Mutationsnummer zugewiesen. Grosse BZO-Revisionen sind in mehrere Mutationen aufgeteilt. Die Vergabe der  Mutationsnummer erfolgt durch den Katasterbearbeiter (GeoZ)."
+               }
+            ]
+         },
+         {
+            "name": "BZO_PROJ_ZONE_LAERMVORBELAST_V",
+            "description": "Lärmvorbelastetes Gebiet gemäss Art. 3 BauO (projektiert)",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Einer der folgenden Werte: \n\n* provisorisch \n\n* laufendeAenderung.Festsetzung \n\n* laufendeAenderung.Genehmigung \n\n* laufendeAenderung.Rechtsmittelverfahren\n\n* Aufhebung.Festsetzung \n\n* Aufhebung.Genehmigung \n\n* Aufhebung.Rechtsmittelverfahren"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "MUTATIONSNUMMER",
+                  "description": "Zur Identifikation ist jeder BZO-Revision mindestens eine Mutationsnummer zugewiesen. Grosse BZO-Revisionen sind in mehrere Mutationen aufgeteilt. Die Vergabe der Mutationsnummer erfolgt durch den Katasterbearbeiter (GeoZ)."
+               }
+            ]
+         },
+         {
+            "name": "BZO_PROJ_ZONE_V",
+            "description": "Zonen (projektiert)",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Einer der folgenden Werte: \n\n* provisorisch \n\n* laufendeAenderung.Festsetzung \n\n* laufendeAenderung.Genehmigung \n\n* laufendeAenderung.Rechtsmittelverfahren\n\n* Aufhebung.Festsetzung \n\n* Aufhebung.Genehmigung \n\n* Aufhebung.Rechtsmittelverfahren"
+               },
+               {
+                  "name": "PLAN_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Plandokumenten (PDF)"
+               },
+               {
+                  "name": "TYP",
+                  "description": "Zonentyp. Einer der folgenden Werte: \n\n * W2 (zweigeschossige Wohnzone ) \n\n * W2bI (zweigeschossige Wohnzone) \n\n * W2bII (zweigeschossige Wohnzone) \n\n * W2bIII (zweigeschossige Wohnzone) \n\n * W3 (dreigeschossige Wohnzone) \n\n * W4 (viergeschossige Wohnzone) \n\n * W5 (fünfgeschossige Wohnzone) \n\n * Z5 (fünfgeschossige Zentrumszone) \n\n * Z6 (sechsgeschossige Zentrumszone) \n\n * Z7 (siebengeschossige Zentrumszone) \n\n * IHD (Industriezone mit Zulassung von Handel- und Dienstleistungsbetrieben) \n\n * I (Industriezone) \n\n * Oe (Zonen für öffentliche Bauten) \n\n * Oe2 (Zonen für öffentliche Bauten) \n\n * Oe2F (Zonen für öffentliche Bauten) \n\n * Oe3 (Zonen für öffentliche Bauten) \n\n * Oe3F (Zonen für öffentliche Bauten) \n\n * Oe4 (Zonen für öffentliche Bauten) \n\n * Oe4F (Zonen für öffentliche Bauten) \n\n * Oe5 (Zonen für öffentliche Bauten) \n\n * Oe5F (Zonen für öffentliche Bauten) \n\n * Oe6 (Zonen für öffentliche Bauten) \n\n * Oe7 (Zonen für öffentliche Bauten) \n\n * OeI (Zonen für öffentliche Bauten) \n\n * OeII (Zonen für öffentliche Bauten) \n\n * OeIII (Zonen für öffentliche Bauten) \n\n * QI (Quartiererhaltungszone) \n\n * QII (Quartiererhaltungszone) \n\n * QIII (Quartiererhaltungszone) \n\n * K (Kernzonen) \n\n * E1 (Erholungszone) \n\n * E2 (Erholungszone) \n\n * E3 (Erholungszone) \n\n * F (Freihaltezonen) \n\n * FA (Freihaltezone Allmend) \n\n * FC (Freihaltezone Sport- und Badeanlagen) \n\n * FD (Freihaltezone Camping) \n\n * FE (Freihaltezone Friedhöfe) \n\n * Fk (Freihaltezone Kantonal/Regional) \n\n * L (Landwirtschaftszone) \n\n * R (Reservezone) \n\n * (Wald (informativ)) \n\n * (Gewässer (informativ))"
+               },
+               {
+                  "name": "MUTATIONSNUMMER",
+                  "description": "Zur Identifikation ist jeder BZO-Revision mindestens eine Mutationsnummer zugewiesen. Grosse BZO-Revisionen sind in mehrere Mutationen aufgeteilt. Die Vergabe der  Mutationsnummer erfolgt durch den Katasterbearbeiter (GeoZ)."
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Rechtsvorschriften (PDF)"
+               }
+            ]
+         },
+         {
+            "name": "BZO_ZONE_V",
+            "description": "Zonen",
+            "attributes": [
+               {
+                  "name": "TYP",
+                  "description": "Zonentyp. Einer der folgenden Werte:\n\n* W2 (zweigeschossige Wohnzone )\n\n* W2bI (zweigeschossige Wohnzone)\n\n* W2bII (zweigeschossige Wohnzone)\n\n* W2bIII (zweigeschossige Wohnzone)\n\n* W3 (dreigeschossige Wohnzone)\n\n* W4 (viergeschossige Wohnzone)\n\n* W5 (fünfgeschossige Wohnzone)\n\n* Z5 (fünfgeschossige Zentrumszone)\n\n* Z6 (sechsgeschossige Zentrumszone)\n\n* Z7 (siebengeschossige Zentrumszone)\n\n* IHD (Industriezone mit Zulassung von Handel- und Dienstleistungsbetrieben)\n\n* I (Industriezone)\n\n* Oe (Zonen für öffentliche Bauten)\n\n* Oe2 (Zonen für öffentliche Bauten)\n\n* Oe2F (Zonen für öffentliche Bauten)\n\n* Oe3 (Zonen für öffentliche Bauten)\n\n* Oe3F (Zonen für öffentliche Bauten)\n\n* Oe4 (Zonen für öffentliche Bauten)\n\n* Oe4F (Zonen für öffentliche Bauten)\n\n* Oe5 (Zonen für öffentliche Bauten)\n\n* Oe5F (Zonen für öffentliche Bauten)\n\n* Oe6 (Zonen für öffentliche Bauten)\n\n* Oe7 (Zonen für öffentliche Bauten)\n\n* OeI (Zonen für öffentliche Bauten)\n\n* OeII (Zonen für öffentliche Bauten)\n\n* OeIII (Zonen für öffentliche Bauten)\n\n* QI (Quartiererhaltungszone)\n\n* QII (Quartiererhaltungszone)\n\n* QIII (Quartiererhaltungszone)\n\n* K (Kernzonen)\n\n* E1 (Erholungszone)\n\n* E2 (Erholungszone)\n\n* E3 (Erholungszone)\n\n* F (Freihaltezonen)\n\n* FA (Freihaltezone Allmend)\n\n* FC (Freihaltezone Sport- und Badeanlagen)\n\n* FD (Freihaltezone Camping)\n\n* FE (Freihaltezone Friedhöfe)\n\n* Fk (Freihaltezone Kantonal/Regional)\n\n* L (Landwirtschaftszone)\n\n* R (Reservezone)\n\n* (Wald (informativ))\n\n* (Gewässer (informativ))"
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Rechtsvorschriften (PDF)"
+               },
+               {
+                  "name": "PLAN_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Plandokumenten (PDF)"
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Kann in diesem Datensatz nur den folgenden Wert haben:\n\n* inKraft"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "BZO_ZONE_ERHOEHTE_AZ_V",
+            "description": "Gebiete mit erhöhter Ausnützung gemäss Art. 13 Abs. 2 BauO",
+            "attributes": [
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Kann in diesem Datensatz nur den folgenden Wert haben:\n\n* inKraft"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "BZO_ZONE_FFZ_V",
+            "description": "Gebiete mit Freiflächenziffer gemäss Art. 18 Abs. 2 BauO",
+            "attributes": [
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Kann in diesem Datensatz nur den folgenden Wert haben:\n\n* inKraft"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "FFZ",
+                  "description": "Freiflächenziffer"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "BZO_PROJ_AUSSICHTSSCHUTZ_V",
+            "description": "Aussichtsschutz (projektiert) (Bestandteil der Sondernutzung)",
+            "attributes": [
+               {
+                  "name": "PLAN_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Plandokumenten (PDF)"
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Einer der folgenden Werte: \n\n* provisorisch \n\n* laufendeAenderung.Festsetzung \n\n* laufendeAenderung.Genehmigung \n\n* laufendeAenderung.Rechtsmittelverfahren\n\n* Aufhebung.Festsetzung \n\n* Aufhebung.Genehmigung \n\n* Aufhebung.Rechtsmittelverfahren"
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Rechtsvorschriften (PDF)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": "Name des Aussichtsschutzgebietes"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "MUTATIONSNUMMER",
+                  "description": "Zur Identifikation ist jeder BZO-Revision mindestens eine Mutationsnummer zugewiesen. Grosse BZO-Revisionen sind in mehrere Mutationen aufgeteilt. Die Vergabe der  Mutationsnummer erfolgt durch den Katasterbearbeiter (GeoZ)."
+               }
+            ]
+         },
+         {
+            "name": "BZO_PROJ_ZONE_WOHNANTEIL_V",
+            "description": "Wohnanteilsgrenze (projektiert)",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "MUTATIONSNUMMER",
+                  "description": "Zur Identifikation ist jeder BZO-Revision mindestens eine Mutationsnummer zugewiesen. Grosse BZO-Revisionen sind in mehrere Mutationen aufgeteilt. Die Vergabe der  Mutationsnummer erfolgt durch den Katasterbearbeiter (GeoZ)."
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Einer der folgenden Werte: \n\n* provisorisch \n\n* laufendeAenderung.Festsetzung \n\n* laufendeAenderung.Genehmigung \n\n* laufendeAenderung.Rechtsmittelverfahren\n\n* Aufhebung.Festsetzung \n\n* Aufhebung.Genehmigung \n\n* Aufhebung.Rechtsmittelverfahren"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "WOHNANTEIL",
+                  "description": "Wohnanteil (0-90 %)"
+               }
+            ]
+         },
+         {
+            "name": "BZO_PROJ_GP_PFLICHT_V",
+            "description": "Gebiete mit Gestaltungsplanpflicht nach Art. 4 BauO (projektiert) (Bestandteil der Sondernutzung)",
+            "attributes": [
+               {
+                  "name": "PLAN_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Plandokumenten (PDF)"
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Rechtsvorschriften (PDF)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": "Name des Gebiets"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "MUTATIONSNUMMER",
+                  "description": "Zur Identifikation ist jeder BZO-Revision mindestens eine Mutationsnummer zugewiesen. Grosse BZO-Revisionen sind in mehrere Mutationen aufgeteilt. Die Vergabe der  Mutationsnummer erfolgt durch den Katasterbearbeiter (GeoZ)."
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Einer der folgenden Werte: \n\n* provisorisch \n\n* laufendeAenderung.Festsetzung \n\n* laufendeAenderung.Genehmigung \n\n* laufendeAenderung.Rechtsmittelverfahren\n\n* Aufhebung.Festsetzung \n\n* Aufhebung.Genehmigung \n\n* Aufhebung.Rechtsmittelverfahren"
+               }
+            ]
+         },
+         {
+            "name": "BZO_PROJ_HOCHHAUSGEBIET_V",
+            "description": "Hochhausgebiete nach Art. 9 BauO (projektiert) (Bestandteil der Sondernutzung)",
+            "attributes": [
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Einer der folgenden Werte: \n\n* provisorisch \n\n* laufendeAenderung.Festsetzung \n\n* laufendeAenderung.Genehmigung \n\n* laufendeAenderung.Rechtsmittelverfahren\n\n* Aufhebung.Festsetzung \n\n* Aufhebung.Genehmigung \n\n* Aufhebung.Rechtsmittelverfahren"
+               },
+               {
+                  "name": "PLAN_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Plandokumenten (PDF)"
+               },
+               {
+                  "name": "TYP",
+                  "description": "Hochhausgebiet-Typ. Einer der folgenden Werte: \n\n * I \n\n * II \n\n * III"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Rechtsvorschriften (PDF)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "MUTATIONSNUMMER",
+                  "description": "Zur Identifikation ist jeder BZO-Revision mindestens eine Mutationsnummer zugewiesen. Grosse BZO-Revisionen sind in mehrere Mutationen aufgeteilt. Die Vergabe der  Mutationsnummer erfolgt durch den Katasterbearbeiter (GeoZ)."
+               }
+            ]
+         },
+         {
+            "name": "BZO_PROJ_PLANUNGSZONE_V",
+            "description": "Planungszonen (projektiert) (Bestandteil der Sondernutzung)",
+            "attributes": [
+               {
+                  "name": "PLAN_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Plandokumenten (PDF)"
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Rechtsvorschriften (PDF)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Einer der folgenden Werte: \n\n* provisorisch \n\n* laufendeAenderung.Festsetzung \n\n* laufendeAenderung.Genehmigung \n\n* laufendeAenderung.Rechtsmittelverfahren\n\n* Aufhebung.Festsetzung \n\n* Aufhebung.Genehmigung \n\n* Aufhebung.Rechtsmittelverfahren"
+               },
+               {
+                  "name": "NAME",
+                  "description": "Name der Planungszone"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "MUTATIONSNUMMER",
+                  "description": "Zur Identifikation ist jeder BZO-Revision mindestens eine Mutationsnummer zugewiesen. Grosse BZO-Revisionen sind in mehrere Mutationen aufgeteilt. Die Vergabe der  Mutationsnummer erfolgt durch den Katasterbearbeiter (GeoZ)."
+               }
+            ]
+         },
+         {
+            "name": "BZO_PROJ_SBV_V",
+            "description": "Sonderbauvorschriften (projektiert) (Bestandteil der Sondernutzung)",
+            "attributes": [
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Einer der folgenden Werte: \n\n* provisorisch \n\n* laufendeAenderung.Festsetzung \n\n* laufendeAenderung.Genehmigung \n\n* laufendeAenderung.Rechtsmittelverfahren\n\n* Aufhebung.Festsetzung \n\n* Aufhebung.Genehmigung \n\n* Aufhebung.Rechtsmittelverfahren"
+               },
+               {
+                  "name": "NAME",
+                  "description": "Name der Sonderbauvorschrift"
+               },
+               {
+                  "name": "NUMMER",
+                  "description": "Nummer des Gestaltungsplans innerhalb der AfS-Geschäftskontrolle"
+               },
+               {
+                  "name": "PLAN_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Plandokumenten (PDF)"
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": "Strichpunkt-separierte Liste von Hyperlinks zu im ÖREBK hinterlegten Rechtsvorschriften (PDF)"
+               },
+               {
+                  "name": "TYP",
+                  "description": "Sonderbauvorschrift-Typ. Einer der folgenden Werte: \n\n * Sonderbauvorschriften nach BauO \n\n * Sonderbauvorschriften nicht nach BauO"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "MUTATIONSNUMMER",
+                  "description": "Zur Identifikation ist jeder BZO-Revision mindestens eine Mutationsnummer zugewiesen. Grosse BZO-Revisionen sind in mehrere Mutationen aufgeteilt. Die Vergabe der  Mutationsnummer erfolgt durch den Katasterbearbeiter (GeoZ)."
+               }
+            ]
+         },
+         {
+            "name": "BZO_PROJ_ZONE_ERHOEHTE_AZ_V",
+            "description": "Gebiete mit erhöhter Ausnützung gemäss Art. 13 Abs. 2 BauO (projektiert)",
+            "attributes": [
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Einer der folgenden Werte: \n\n* provisorisch \n\n* laufendeAenderung.Festsetzung \n\n* laufendeAenderung.Genehmigung \n\n* laufendeAenderung.Rechtsmittelverfahren\n\n* Aufhebung.Festsetzung \n\n* Aufhebung.Genehmigung \n\n* Aufhebung.Rechtsmittelverfahren"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "MUTATIONSNUMMER",
+                  "description": "Zur Identifikation ist jeder BZO-Revision mindestens eine Mutationsnummer zugewiesen. Grosse BZO-Revisionen sind in mehrere Mutationen aufgeteilt. Die Vergabe der  Mutationsnummer erfolgt durch den Katasterbearbeiter (GeoZ)."
+               }
+            ]
+         },
+         {
+            "name": "BZO_ZONE_WOHNANTEIL_V",
+            "description": "Wohnanteilsgrenze",
+            "attributes": [
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": "Rechtsstatus. Kann in diesem Datensatz nur den folgenden Wert haben:\n\n* inKraft"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "WOHNANTEIL",
+                  "description": "Wohnanteil (0-90 %)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "BZO_BAUMSCHUTZ_V",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "PLAN_URL",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": null
+               },
+               {
+                  "name": "MUTATIONSNUMMER",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "BZO_EG_NUTZUNG_FLAECHE_V",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "PLAN_URL",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": null
+               },
+               {
+                  "name": "MUTATIONSNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "BZO_EG_NUTZUNG_LINIE_V",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "PLAN_URL",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": null
+               },
+               {
+                  "name": "MUTATIONSNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "BZO_PROJ_BAUMSCHUTZ_V",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "PLAN_URL",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": null
+               },
+               {
+                  "name": "MUTATIONSNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "BZO_PROJ_EG_NUTZUNG_FLAECHE_V",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "PLAN_URL",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": null
+               },
+               {
+                  "name": "MUTATIONSNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "BZO_PROJ_EG_NUTZUNG_LINIE_V",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "PLAN_URL",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": null
+               },
+               {
+                  "name": "MUTATIONSNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "BZO_PROJ_QUEZ_LINIE_V",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "PLAN_URL",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": null
+               },
+               {
+                  "name": "MUTATIONSNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "BZO_QUEZ_LINIE_V",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSSTATUS",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "PLAN_URL",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSVORSCHRIFT_URL",
+                  "description": null
+               },
+               {
+                  "name": "MUTATIONSNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         }
+      ]
+   }
+}

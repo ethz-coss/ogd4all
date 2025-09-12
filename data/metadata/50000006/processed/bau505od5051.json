@@ -1,0 +1,84 @@
+{
+   "title": "Durch Umbau mit Leerkündigungen betroffene Wohnungen von privaten Eigentümerschaften und deren Bewohnerschaft",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bau_umbau_leerkuendigung_whg_baujahr_personen_od5051",
+   "abstract": "Der Datensatz zeigt, wie viele Wohnungen von einem Umbau betroffen waren, wie viele umgebaute Wohnungen leergekündigt wurden und und wie gross die davon betroffene Bewohnerschaft war. Die Auswertung basiert auf Gebäuden von privaten Eigentümerschaften ohne Wohnbaugenossenschaften und Stockwerkeigentum.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Umbau:\n\nUmbau bezeichnet die bauliche Veränderung bestehender Gebäude, soweit sie im Gebäude- und Wohnungsregister erfasst werden. In der Grössenordnung entspricht die Zahl der umgebauten Wohnungen denen in energetisch erneuerten Gebäuden, für deren Umbau eine Baubewilligung erforderlich ist.\n\nLeerkündigung:\n\nWir sprechen von einer Leerkündigung, wenn bei einem Umbau das Gebäude entleert wird indem alle Mietverträge gekündigt werden. Für die Berechnung wurde die Aufenthaltsdauer der Bewohnenden im Gebäude ein Jahr nach dem Umbauende betrachtet. Falls zu diesem Zeitpunkt alle Bewohnenden weniger als 1 Jahr im Gebäude wohnen, wird von einer Leerkündigung ausgegangen. Die Ausprägung ist 1 oder Ja, falls es eine Leerkündigung gegeben hat und 0 oder Nein falls es keine Leerkündigung gegeben hat\n\nBetrachtete Gebäude:\n\nDie Auswertungen beziehen sich nur auf Gebäude von privaten Eigentümerschaften, ohne Baugenossenschaften und Stockwerkeigentum, da die öffentliche Hand und die Baugenossenschaften der Mieterschaft bei Umbauten in der Regel Ersatzwohnungen anbieten. Weiter werden folgende Gebäude von der Auswertung ausgeschlossen:\n\nGebäude mit weniger als 6 Wohnungen\nGebäude, bei denen der Umbau in den ersten 15 Jahren nach der Erstellung durchgeführt wurde\nGebäude, die die zwei Jahre vor Umbaubeginn einen der folgenden Wohnungstypen beinhalten: Alters-/Pflegewohnungen, Bewirtschaftete Wohnungen, Dienstwohnungen, Personalwohnungen, Studentenwohnungen, Technische Wohnungen\nGebäude, bei denen ein Jahr vor Umbau keine statistischen Wohnungen erfasst waren\n\nPersonenzahl:\n\nGezählt wird die wirtschaftliche Bevölkerung, welche zwei Jahre vor Umbaubeginn in den betroffenen Gebäuden gemeldet war und wegen Leerkündigung die Wohnung gewechselt hat.\n\nStand und Nachführung:\n\nDas Gebäude- und Wohnungsregister der Stadt Zürich wird ständig nachgeführt. Seit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.\n\nEigentumsart\n\nAndere private Gesellschaften: Aktien-, Kollektiv- und Kommanditgesellschaften, Handels-, Produktiv-, Versicherungs- und übrige Genossenschaften, Gesellschaften mit beschränkter Haftung, Pensionskassen, Vereine, private Stiftungen, gemischtes Eigentum und Religionsgemeinschaften\nPrivatpersonen: Einzelpersonen, Erbgemeinschaften und mehrere natürliche Personen",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Durch Umbau mit Leerkündigungen betroffene Wohnungen von privaten Eigentümerschaften und deren Bewohnerschaft",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Numerisch). Entspricht dem Stichtag am Jahresende des Umbaujahres"
+               },
+               {
+                  "name": "Datenstand (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (Integer)"
+               },
+               {
+                  "name": "Bauperiode Gebäude (technisch: BauperiodeSort)",
+                  "description": "Bauperiode Gebäude (Numerisch)"
+               },
+               {
+                  "name": "Bauperiode Gebäude (technisch: BauperiodeCd)",
+                  "description": "Bauperiode Gebäude (Integer)"
+               },
+               {
+                  "name": "Bauperiode Gebäude (technisch: BauperiodeLang)",
+                  "description": "Bauperiode Gebäude (String)"
+               },
+               {
+                  "name": "Eigentumsart (technisch: EigentuemerSSZPubl1Sort)",
+                  "description": "Eigentumsart (Numerisch)"
+               },
+               {
+                  "name": "Eigentumsart (technisch: EigentuemerSSZPubl1Cd)",
+                  "description": "Eigentumsart (Integer)"
+               },
+               {
+                  "name": "Eigentumsart (technisch: EigentuemerSSZPubl1Lang)",
+                  "description": "Eigentumsart (String)"
+               },
+               {
+                  "name": "Gebäude für Leerkündigungen (technisch: GbdLeerkuendigungenSort_noDM)",
+                  "description": "Gebäude welche für Leerkündigungen betrachtet werden (Numerisch)"
+               },
+               {
+                  "name": "Gebäude für Leerkündigungen (technisch: GbdLeerkuendigungenCd_noDM)",
+                  "description": "Gebäude welche für Leerkündigungen betrachtet werden (Integer)"
+               },
+               {
+                  "name": "Gebäude für Leerkündigungen (technisch: GbdLeerkuendigungenLang_noDM)",
+                  "description": "Gebäude welche für Leerkündigungen betrachtet werden (String)"
+               },
+               {
+                  "name": "Leerkündigungen der Wohnungen (technisch: LeerkuendigungSort_noDM)",
+                  "description": "Leerkündigug der Wohnungen in Gebäuden mit einem Umbau (Numerisch)"
+               },
+               {
+                  "name": "Leerkündigungen der Wohnungen (technisch: LeerkuendigungCd_noDM)",
+                  "description": "Leerkündigug der Wohnungen in Gebäuden mit einem Umbau (Integer)"
+               },
+               {
+                  "name": "Leerkündigungen der Wohnungen (technisch: LeerkuendigungLang_noDM)",
+                  "description": "Leerkündigug der Wohnungen in Gebäuden mit einem Umbau (String)"
+               },
+               {
+                  "name": "Anzahl Wohnungen (technisch: AnzWhgStat)",
+                  "description": "Anzahl Wohnungen in Gebäuden mit einem Umbau (Numerisch)"
+               },
+               {
+                  "name": "Anzahl Personen (technisch: AnzBestWir)",
+                  "description": "Anzahl Personen in Gebäuden mit einem Umbau (Numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-03-20"
+}

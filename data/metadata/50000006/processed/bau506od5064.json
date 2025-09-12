@@ -1,0 +1,48 @@
+{
+   "title": "Anzahl Gebäude durch Neubau und Abbruch nach Gebäudeart",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bau_neubau_abbruch_geb_gebaeudeart_jahr_od5064",
+   "abstract": "Der Datensatz enthält die Anzahl Gebäude durch Neubau und Abbruch nach Gebäudeart.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Hinweis\n\nSeit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.\n\nStichtagDatJahr\n\nJahr entspricht dem Stichtag am Jahresende für den Bestand. Für Neubauten und Abbrüche entspricht das Jahr der ganzen Jahresperiode.\n\nGebäudeart\n\nEinfamililenhäuser: Einfamilienhaus freistehend oder angebaut ohne Geschäftsräume\nMehrfamililenhäuser: Gebäude mit zwei oder mehr Wohnungen mit ausschliesslicher Wohnnutzung. Enthält auch Wohngebäude für Gemeinschaften und Alterswohnhäuser/-heime.\nWohnhaus mit Geschäftsräumen: Gebäude, das sowohl Nutzflächen als auch eine oder mehrere Wohnungen enthält. Die Wohnungen haben einen Anteil von über 50 Prozent. (Vergleiche Nichtwohngebäude)\nNichtwohngebäude: Gebäude für Dienstleistungsbetriebe, öffentliche Verwaltungen, Bildungsund Gesundheitswesen, Industrie oder Landwirtschaft, auch Parkhäuser und andere. Enthält das Gebäude auch Wohnungen, wird es so lange als Nutzbau mit Wohnungen geführt, wie der Wohnanteil der Nutzfläche unter fünfzig Prozent bleibt; ist der Wohnanteil höher, gilt das Gebäude als Wohnhaus mit Geschäftsräumen.\n\nZeitreihe:\n\nDie Anzahl Gebäude für den Bestand und die Abbrüche sind erst ab 1934 verfügbar.\n\nGebäude\n\nGebäude sind auf Dauer angelegte, mit dem Boden fest verbundene Bauten. Ein Gebäude gilt als selbständig, wenn es einen eigenen Zugang von aussen hat und wenn zwischen den Gebäuden eine senkrechte vom Erdgeschoss bis zum Dach reichende tragende Trennmauer besteht. Zusammengebaute Gebäude werden nach dem so genannten Trennmauerkriterium unterteilt. Das Trennmauerkriterium gewährleistet eine einheitliche Differenzierung der Gebäude nach ausschliesslich baulichen Kriterien.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Anzahl Gebäude durch Neubau und Abbruch nach Gebäudeart",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Numerisch). Entspricht dem Stichtag am Jahresende."
+               },
+               {
+                  "name": "Datenstand (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (Integer)"
+               },
+               {
+                  "name": "Gebäudeart (technisch: GbdArtSSZPubl1Sort)",
+                  "description": "Gebäudeart (Numerisch)"
+               },
+               {
+                  "name": "Gebäudeart (technisch: GbdArtSSZPubl1Cd)",
+                  "description": "Gebäudeart (Integer)"
+               },
+               {
+                  "name": "Gebäudeart (technisch: GbdArtSSZPubl1Lang)",
+                  "description": "Gebäudeart (String)"
+               },
+               {
+                  "name": "Anzahl fertiggestellte Gebäude (technisch: AnzNeubauGbd_noDM)",
+                  "description": "Anzahl fertiggestellte Gebäude (Numerisch)"
+               },
+               {
+                  "name": "Anzahl abgebrochene Gebäude (technisch: AnzAbbruchGbd_noDM)",
+                  "description": "Anzahl abgebrochene Gebäude (Numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-01-08"
+}

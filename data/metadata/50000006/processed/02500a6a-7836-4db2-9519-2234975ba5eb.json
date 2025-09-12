@@ -1,0 +1,333 @@
+{
+   "title": "meteoblue Sommerbericht",
+   "keywords": [
+      "Stadtklima",
+      "Klimaänderung",
+      "Hitze",
+      "Temperatur",
+      "Luftfeuchtigkeit",
+      "Niederschlag",
+      "Hitzetage",
+      "Sommertage",
+      "Tropennächte",
+      "Kühlgradtage"
+   ],
+   "metadata_date": "2024-10-31T13:30:42",
+   "updateFrequency": "annually",
+   "purpose": "Beurteilung der stadtklimatologischen Situation in Zürich",
+   "abstract": "Mit dem fortschreitenden Klimawandel sind die Städte der Hitze stärker ausgesetzt als ihr Umland, wodurch Hitzewellen in Zukunft länger, intensiver und häufiger auftreten. Daten aus dem meteorologischen Stadtklima-Messnetz von meteoblue (seit 2019) und Satellitendaten werden verwendet, um mit Hilfe künstlicher Intelligenz und dem meteoblue-Stadtklimamodell (MCCM) hochaufgelöste Lufttemperaturfelder (10x10m) zu berechnen. Aus diesen können zusätzlich verschiedene klimatologische Kennzahlen sowie der städtische Wärmeinseleffekt berechnet und damit die Hitze- beziehungsweise Kältebelastung in der Stadt Zürich quantifiziert werden. Die Daten beziehen sich jeweils auf die Sommermonate Juni, Juli, August.",
+   "identificationDate": "2024-10-16",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Gesundheits- und Umweltdepartement - Umwelt- und Gesundheitsschutz",
+   "contactPerson": "Tobias Kugler",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "GeoTIFF (.tif)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/meteoblue_Sommerbericht",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "ugz_lufqualitaet_uhi_nacht_sommer_2022.tif",
+            "description": "Modellierter Wert, \"Urban Heat Island\", urbane Wärmeinseleffekt Nacht (22:00 - 06:00, Sommermonate Juni, Juli, August) in °C für die Stadt Zürich",
+            "attributes": []
+         },
+         {
+            "name": "ugz_lufqualitaet_uhi_nacht_sommer_2024.tif",
+            "description": "Modellierter Wert, \"Urban Heat Island\", urbane Wärmeinseleffekt Nacht (22:00 - 06:00, Sommermonate Juni, Juli, August) in °C für die Stadt Zürich",
+            "attributes": []
+         },
+         {
+            "name": "ugz_lufqualitaet_uhi_tag_sommer_2020.tif",
+            "description": "Modellierter Wert, \"Urban Heat Island\", urbane Wärmeinseleffekt Tag (10:00 - 18:00, Sommermonate Juni, Juli, August) in °C für die Stadt Zürich",
+            "attributes": []
+         },
+         {
+            "name": "ugz_luftqualitaet_hitzetage_sommer_2020.tif",
+            "description": "Dieser Layer gibt Auskunft über die Anzahl Hitzetage auf einer Höhe von 3 m in der Stadt Zürich (maximale Lufttemperatur mindestens 30 °C, Sommermonate Juni, Juli, August).",
+            "attributes": []
+         },
+         {
+            "name": "ugz_lufqualitaet_sommertage_sommer_2020.tif",
+            "description": "Dieser Layer gibt Auskunft über die Anzahl Sommertage auf einer Höhe von 3 m in der Stadt Zürich (maximale Lufttemperatur über 25 °C, Sommermonate Juni, Juli, August).",
+            "attributes": []
+         },
+         {
+            "name": "ugz_lufqualitaet_sommertage_sommer_2021.tif",
+            "description": "Dieser Layer gibt Auskunft über die Anzahl Sommertage auf einer Höhe von 3 m in der Stadt Zürich (maximale Lufttemperatur über 25 °C, Sommermonate Juni, Juli, August).",
+            "attributes": []
+         },
+         {
+            "name": "ugz_lufqualitaet_sommertage_sommer_2023.tif",
+            "description": "Dieser Layer gibt Auskunft über die Anzahl Sommertage auf einer Höhe von 3 m in der Stadt Zürich (maximale Lufttemperatur über 25 °C, Sommermonate Juni, Juli, August).",
+            "attributes": []
+         },
+         {
+            "name": "ugz_lufqualitaet_tropennaechte_sommer_2020.tif",
+            "description": "Dieser Layer gibt Auskunft über die Anzahl Tropennächte auf einer Höhe von 3 m in der Stadt Zürich (minimale Lufttemperatur nicht unter 20 °C, Sommermonate Juni, Juli, August).",
+            "attributes": []
+         },
+         {
+            "name": "ugz_lufqualitaet_tropennaechte_sommer_2021.tif",
+            "description": "Dieser Layer gibt Auskunft über die Anzahl Tropennächte auf einer Höhe von 3 m in der Stadt Zürich (minimale Lufttemperatur nicht unter 20 °C, Sommermonate Juni, Juli, August).",
+            "attributes": []
+         },
+         {
+            "name": "ugz_lufqualitaet_tropennaechte_sommer_2023.tif",
+            "description": "Dieser Layer gibt Auskunft über die Anzahl Tropennächte auf einer Höhe von 3 m in der Stadt Zürich (minimale Lufttemperatur nicht unter 20 °C, Sommermonate Juni, Juli, August).",
+            "attributes": []
+         },
+         {
+            "name": "ugz_lufqualitaet_uhi_mittel_sommer_2020.tif",
+            "description": "Modellierter Wert, \"Urban Heat Island\", urbane Wärmeinseleffekt (Sommermonate Juni, Juli, August) in °C für die Stadt Zürich",
+            "attributes": []
+         },
+         {
+            "name": "ugz_lufqualitaet_uhi_mittel_sommer_2022.tif",
+            "description": "Modellierter Wert, \"Urban Heat Island\", urbane Wärmeinseleffekt (Sommermonate Juni, Juli, August) in °C für die Stadt Zürich",
+            "attributes": []
+         },
+         {
+            "name": "ugz_lufqualitaet_uhi_mittel_sommer_2023.tif",
+            "description": "Modellierter Wert, \"Urban Heat Island\", urbane Wärmeinseleffekt (Sommermonate Juni, Juli, August) in °C für die Stadt Zürich",
+            "attributes": []
+         },
+         {
+            "name": "ugz_lufqualitaet_uhi_nacht_sommer_2020.tif",
+            "description": "Modellierter Wert, \"Urban Heat Island\", urbane Wärmeinseleffekt Nacht (22:00 - 06:00, Sommermonate Juni, Juli, August) in °C für die Stadt Zürich",
+            "attributes": []
+         },
+         {
+            "name": "MESSNETZ_METEOBLUE",
+            "description": "Der Datensatz gibt Auskunft über die stadtklimatologische Situation in Zürich über die Sommermonate Juni, Juli und August, welche von 90 verschiedenen, über die Stadt Zürich verteilten Messstationen gemessen wurden. Gemessen werden die Parameter Lufttemperatur, Niederschlag und relative Luftfeuchte. Aus den Temperaturmessungen werden Minimal-, Maximal- und Mitteltemperaturen und verschiedene klimatologische Kenntage ermittelt (Hitzetage, Sommertage, Tropennächte und Kühlgradtage). Aus den Niederschlagswerten werden (mittlere) Niederschlagssummen und -stunden, maximale Niederschlagssummen und die maximale Anzahl zusammenhängender Nass- und Trockentage bestimmt. Durch die Messung der relativen Luftfeuchte werden stationsbasierte Analysen der mittleren relativen Luftfeuchte und die Anzahl der Zeitpunkte mit einer relativen Luftfeuchte von 100 % ermittelt. Ausserdem gibt der Datensatz Auskunft über die Koordinaten der einzelnen Messstationen. Die beschriebenen Informationen sind als Vektordaten vorhanden. Zusätzlich gibt es verschiedene Rasterdaten:  Anzahl Hitzetage (maximale Lufttemperatur mindestens 30 °C), Sommertage (maximale Lufttemperatur über 25 °C), Tropennächte (minimale Lufttemperatur nicht unter 20 °C), Kühlgradtage (Summe der täglich ermittelten Differenz zwischen einer angestrebten Raumlufttemperatur von 18.3 °C und der mittleren Tagestemperatur aller Kühltage.).",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "JAHR",
+                  "description": "Jahr, in welchem die Messungen durchgeführt wurden"
+               },
+               {
+                  "name": "LOCATIONID",
+                  "description": "ID des Standorts"
+               },
+               {
+                  "name": "BREITENGRAD",
+                  "description": "Koordinatensystem EPSG:4326, Geografische (geo-zentrische) lat/long Koordinaten"
+               },
+               {
+                  "name": "LAENGENGRAD",
+                  "description": "Koordinatensystem EPSG:4326, Geografische (geo-zentrische) lat/long Koordinaten"
+               },
+               {
+                  "name": "X_KOORDIANTE",
+                  "description": "Koordinatessystem EPSG:2056, Kartesische 2D-Koordinaten für die Schweiz (Militärkoordinatensystem)"
+               },
+               {
+                  "name": "Y_KOORDINATE",
+                  "description": "Koordinatensystem EPSG:2056, Kartesische 2D-Koordinaten für die Schweiz (Militärkoordinatensystem)"
+               },
+               {
+                  "name": "STANDORT",
+                  "description": "Name des Standorts"
+               },
+               {
+                  "name": "BEMERKUNG",
+                  "description": "Textfeld für allfällige Bemerkungen"
+               },
+               {
+                  "name": "MITTELTEMPERATUR_C",
+                  "description": "Mitteltemperatur pro Sommer (in °C)"
+               },
+               {
+                  "name": "MINIMALTEMPERATUR_C",
+                  "description": "Minimaltemperatur pro Sommer (in °C)"
+               },
+               {
+                  "name": "MAXIMALTEMPERATUR_C",
+                  "description": "Maximaltemperatur pro Sommer (in °C)"
+               },
+               {
+                  "name": "KUEHLGRADTAGE",
+                  "description": "Summe der täglich ermittelten Differenz zwischen einer angestrebten Raumlufttemperatur von 18.3 °C und der mittleren Tagestemperatur aller Kühltage."
+               },
+               {
+                  "name": "HITZETAGE",
+                  "description": "Hitzetage pro Sommer (maximale Lufttemperatur mindestens 30 °C)"
+               },
+               {
+                  "name": "SOMMERTAGE",
+                  "description": "Sommertage pro Sommer (maximale Lufttemperatur über 25 °C)"
+               },
+               {
+                  "name": "TROPENNAECHTE",
+                  "description": "Tropennächte pro Sommer (minimale Lufttemperatur nicht unter 20 °C)"
+               },
+               {
+                  "name": "NIEDERSCHLAGSSUMME_MM",
+                  "description": "Niederschlagssumme pro Sommer (in mm)"
+               },
+               {
+                  "name": "NIEDERSCHLAGSSTUNDEN_H",
+                  "description": "Niederschlagsstunden pro Sommer (in Stunden)"
+               },
+               {
+                  "name": "MAX_TAGESNIEDERSCHLAGSSUMME_MM",
+                  "description": "Maximale Tagesniederschlagssumme pro Sommer (in mm)"
+               },
+               {
+                  "name": "MAX_NASSTAGE_IN_FOLGE",
+                  "description": "Maximum Nasstage in Folge pro Sommer"
+               },
+               {
+                  "name": "MAX_TROCKENTAGE_IN_FOLGE",
+                  "description": "Maximum Trockentage in Folge pro Sommer"
+               },
+               {
+                  "name": "MITTLERE_REL_FEUCHTE_PROZENT",
+                  "description": "Mittlere Rel. Feuchte pro Sommer (in %)"
+               },
+               {
+                  "name": "REL_FEUCHTE_100_PROZENT_H",
+                  "description": "Rel. Feuchte pro Sommer (100%, in Stunden)"
+               },
+               {
+                  "name": "ANFANGSZEIT",
+                  "description": "Anfangsdatum der berücksichtigten Periode"
+               },
+               {
+                  "name": "ENDZEIT",
+                  "description": "Enddatum der berücksichtigten Periode"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "ugz_lufqualitaet_uhi_tag_sommer_2022.tif",
+            "description": "Modellierter Wert, \"Urban Heat Island\", urbane Wärmeinseleffekt Tag (10:00 - 18:00, Sommermonate Juni, Juli, August) in °C für die Stadt Zürich",
+            "attributes": []
+         },
+         {
+            "name": "ugz_lufqualitaet_LCZ.tif",
+            "description": "Dieser Layer gibt Auskunft über die lokalen Klimazonen der Stadt Zürich.\n\nLokale Klimazonen:\n\n- 1 (Kompakte, hohe Bebauung)\n\n- 2 (Kompakte, mittelhohe Bebauung)\n\n- 3 (Kompakte, niedrige Bebauung)\n\n- 4 (Offene, hohe Bebauung)\n\n- 5 (Offene, mittelhohe Bebauung)\n\n- 6 (Offene, niedrige Bebauung)\n\n- 7 (Leichte, niedrige Bebauung)\n\n- 8 (Grosse, niedrige Bebauung)\n\n- 9 (Spärliche Bebauung)\n\n- 10 (Schwerindustrie)\n\n- A (Dichte Bäume)\n\n- B (Vereinzelte Bäume)\n\n- C (Büsche, Sträucher)\n\n- D (Niedrige Bepflanzung)\n\n- E (Blanker Fels, Versiegelung)\n\n- F (Blanker Boden, Sand)\n\n- G (Wasser)\n\n- E (Blanker Fels, Versiegelung)\n\n- F (Blanker Boden, Sand)\n\n- G (Wasser)",
+            "attributes": []
+         },
+         {
+            "name": "ugz_lufqualitaet_sommertage_sommer_2022.tif",
+            "description": "Dieser Layer gibt Auskunft über die Anzahl Sommertage auf einer Höhe von 3 m in der Stadt Zürich (maximale Lufttemperatur über 25 °C, Sommermonate Juni, Juli, August).",
+            "attributes": []
+         },
+         {
+            "name": "ugz_lufqualitaet_sommertage_sommer_2024.tif",
+            "description": "Dieser Layer gibt Auskunft über die Anzahl Sommertage auf einer Höhe von 3 m in der Stadt Zürich (maximale Lufttemperatur über 25 °C, Sommermonate Juni, Juli, August).",
+            "attributes": []
+         },
+         {
+            "name": "ugz_lufqualitaet_tropennaechte_sommer_2022.tif",
+            "description": "Dieser Layer gibt Auskunft über die Anzahl Tropennächte auf einer Höhe von 3 m in der Stadt Zürich (minimale Lufttemperatur nicht unter 20 °C, Sommermonate Juni, Juli, August).",
+            "attributes": []
+         },
+         {
+            "name": "ugz_lufqualitaet_tropennaechte_sommer_2024.tif",
+            "description": "Dieser Layer gibt Auskunft über die Anzahl Tropennächte auf einer Höhe von 3 m in der Stadt Zürich (minimale Lufttemperatur nicht unter 20 °C, Sommermonate Juni, Juli, August).",
+            "attributes": []
+         },
+         {
+            "name": "ugz_lufqualitaet_uhi_mittel_sommer_2021.tif",
+            "description": "Modellierter Wert, \"Urban Heat Island\", urbane Wärmeinseleffekt (Sommermonate Juni, Juli, August) in °C für die Stadt Zürich",
+            "attributes": []
+         },
+         {
+            "name": "ugz_lufqualitaet_uhi_mittel_sommer_2024.tif",
+            "description": "Modellierter Wert, \"Urban Heat Island\", urbane Wärmeinseleffekt (Sommermonate Juni, Juli, August) in °C für die Stadt Zürich",
+            "attributes": []
+         },
+         {
+            "name": "ugz_lufqualitaet_uhi_nacht_sommer_2021.tif",
+            "description": "Modellierter Wert, \"Urban Heat Island\", urbane Wärmeinseleffekt Nacht (22:00 - 06:00, Sommermonate Juni, Juli, August) in °C für die Stadt Zürich",
+            "attributes": []
+         },
+         {
+            "name": "ugz_lufqualitaet_uhi_nacht_sommer_2023.tif",
+            "description": "Modellierter Wert, \"Urban Heat Island\", urbane Wärmeinseleffekt Nacht (22:00 - 06:00, Sommermonate Juni, Juli, August) in °C für die Stadt Zürich",
+            "attributes": []
+         },
+         {
+            "name": "ugz_lufqualitaet_uhi_tag_sommer_2021.tif",
+            "description": "Modellierter Wert, \"Urban Heat Island\", urbane Wärmeinseleffekt Tag (10:00 - 18:00, Sommermonate Juni, Juli, August) in °C für die Stadt Zürich",
+            "attributes": []
+         },
+         {
+            "name": "ugz_lufqualitaet_uhi_tag_sommer_2023.tif",
+            "description": "Modellierter Wert, \"Urban Heat Island\", urbane Wärmeinseleffekt Tag (10:00 - 18:00, Sommermonate Juni, Juli, August) in °C für die Stadt Zürich",
+            "attributes": []
+         },
+         {
+            "name": "ugz_luftqualitaet_hitzetage_sommer_2021.tif",
+            "description": "Dieser Layer gibt Auskunft über die Anzahl Hitzetage auf einer Höhe von 3 m in der Stadt Zürich (maximale Lufttemperatur mindestens 30 °C, Sommermonate Juni, Juli, August).",
+            "attributes": []
+         },
+         {
+            "name": "ugz_luftqualitaet_hitzetage_sommer_2022.tif",
+            "description": "Dieser Layer gibt Auskunft über die Anzahl Hitzetage auf einer Höhe von 3 m in der Stadt Zürich (maximale Lufttemperatur mindestens 30 °C, Sommermonate Juni, Juli, August).",
+            "attributes": []
+         },
+         {
+            "name": "ugz_lufqualitaet_uhi_tag_sommer_2024.tif",
+            "description": "Modellierter Wert, \"Urban Heat Island\", urbane Wärmeinseleffekt Tag (10:00 - 18:00, Sommermonate Juni, Juli, August) in °C für die Stadt Zürich",
+            "attributes": []
+         },
+         {
+            "name": "ugz_luftqualitaet_hitzetage_sommer_2023.tif",
+            "description": "Dieser Layer gibt Auskunft über die Anzahl Hitzetage auf einer Höhe von 3 m in der Stadt Zürich (maximale Lufttemperatur mindestens 30 °C, Sommermonate Juni, Juli, August).",
+            "attributes": []
+         },
+         {
+            "name": "ugz_luftqualitaet_hitzetage_sommer_2024.tif",
+            "description": "Dieser Layer gibt Auskunft über die Anzahl Hitzetage auf einer Höhe von 3 m in der Stadt Zürich (maximale Lufttemperatur mindestens 30 °C, Sommermonate Juni, Juli, August).",
+            "attributes": []
+         },
+         {
+            "name": "ugz_luftqualitaet_kuehlgradtage_sommer_2020.tif",
+            "description": "Diese Layer geben Auskunft über die Kühlgradtage auf einer Höhe von 3 m in der Stadt Zürich (Summe der täglich ermittelten Differenz zwischen einer angestrebten\n\nRaumlufttemperatur von 18.3 °C und der mittleren Tagestemperatur aller Kühltage, Sommermonate Juni, Juli, August).",
+            "attributes": []
+         },
+         {
+            "name": "ugz_luftqualitaet_kuehlgradtage_sommer_2021.tif",
+            "description": "Diese Layer geben Auskunft über die Kühlgradtage auf einer Höhe von 3 m in der Stadt Zürich (Summe der täglich ermittelten Differenz zwischen einer angestrebten\n\nRaumlufttemperatur von 18.3 °C und der mittleren Tagestemperatur aller Kühltage, Sommermonate Juni, Juli, August).",
+            "attributes": []
+         },
+         {
+            "name": "ugz_luftqualitaet_kuehlgradtage_sommer_2022.tif",
+            "description": "Diese Layer geben Auskunft über die Kühlgradtage auf einer Höhe von 3 m in der Stadt Zürich (Summe der täglich ermittelten Differenz zwischen einer angestrebten\n\nRaumlufttemperatur von 18.3 °C und der mittleren Tagestemperatur aller Kühltage, Sommermonate Juni, Juli, August).",
+            "attributes": []
+         },
+         {
+            "name": "ugz_luftqualitaet_kuehlgradtage_sommer_2023.tif",
+            "description": "Diese Layer geben Auskunft über die Kühlgradtage auf einer Höhe von 3 m in der Stadt Zürich (Summe der täglich ermittelten Differenz zwischen einer angestrebten\n\nRaumlufttemperatur von 18.3 °C und der mittleren Tagestemperatur aller Kühltage, Sommermonate Juni, Juli, August).",
+            "attributes": []
+         },
+         {
+            "name": "ugz_luftqualitaet_kuehlgradtage_sommer_2024.tif",
+            "description": "Diese Layer geben Auskunft über die Kühlgradtage auf einer Höhe von 3 m in der Stadt Zürich (Summe der täglich ermittelten Differenz zwischen einer angestrebten\n\nRaumlufttemperatur von 18.3 °C und der mittleren Tagestemperatur aller Kühltage, Sommermonate Juni, Juli, August).",
+            "attributes": []
+         }
+      ]
+   }
+}

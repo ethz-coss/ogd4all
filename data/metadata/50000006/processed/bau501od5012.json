@@ -1,0 +1,60 @@
+{
+   "title": "Fertiggestellte Neubautprojekte nach Stadtquartier",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bau_neubau_fertiggestellt_bausm_rinh_quartier_od5012",
+   "abstract": "Der Datensatz enthält die Bausumme von fertiggestellten Neubauprojekten nach Stadtquartier.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Hinweis:\n\nStichtagDatJahr entspricht der ganzen Jahresperiode.\n\nHinweis:\n\nSeit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.\n\nKeine Angaben bei Bausummen:\n\nDie Bausumme wird aus Datenschutzgründen nicht ausgewiesen, wenn weniger als 2 Bauprojekte pro Quartier vorhanden sind.\n\nStand und Nachführung:\n\nDas Gebäude- und Wohnungsregister der Stadt Zürich wird ständig nachgeführt.\n\nFertigerstellt\n\nEnthält Bauprojekte, welche im entsprechenden Jahr abgeschlossen wurden.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Fertiggestellte Neubautprojekte nach Stadtquartier",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Numerisch)"
+               },
+               {
+                  "name": "Datenstand (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (Integer)"
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarSort)",
+                  "description": "Stadtquartier (Numerisch)"
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarCd)",
+                  "description": "Stadtquartier Code (Integer)"
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarLang)",
+                  "description": "Stadtquartier (String)"
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisSort)",
+                  "description": "Stadtkreis (Numerisch)"
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisCd)",
+                  "description": "Stadtkreis (Integer)"
+               },
+               {
+                  "name": "Stadtkreis (technisch: KreisLang)",
+                  "description": "Stadtkreis (String)"
+               },
+               {
+                  "name": "Anzahl fertiggestellte Neubauprojekte (technisch: AnzProjNeubau_noDM)",
+                  "description": "Anzahl fertiggestellte Neubauprojekte (Numerisch)"
+               },
+               {
+                  "name": "Bausumme (1000 Fr.) (technisch: BKNeubau_noDM)",
+                  "description": "Effektive Bausumme von fertiggestellten Bauprojekten (Numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-01-07"
+}

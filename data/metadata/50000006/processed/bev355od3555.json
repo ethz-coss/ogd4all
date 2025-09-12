@@ -1,0 +1,60 @@
+{
+   "title": "Umzüge innerhalb der Stadt nach Stadtkreis und Stadtquartier",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bev_umzuege_jahr_quartier_od3555",
+   "abstract": "Anzahl Umzüge innerhalb der Stadt nach Stadtkreis und Stadtquartier nach Jahr.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Hinweis:\n\nLink zu den Geodaten Statistische Stadtquartiere.\n\nUmzüge:\n\nPersonen, die innerhalb der Stadt Zürich umziehen.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Umzüge innerhalb der Stadt nach Stadtkreis und Stadtquartier",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Ereignisjahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr"
+               },
+               {
+                  "name": "Umzug von Stadtquartier (Sort) (technisch: QuarBisherSort)",
+                  "description": "ID des Quartiers, von welchem die Personen umgezogen sind (Numerisch, 8 Zeichen lang)."
+               },
+               {
+                  "name": "Umzug von Stadtquartier (Code) (technisch: QuarBisherCd)",
+                  "description": "ID des Quartiers, von welchem die Personen umgezogen sind (CHAR, mit führender 0 bei zweistelligen Codes, 200 Zeichen lang)."
+               },
+               {
+                  "name": "Umzug von Stadtquartier (lang) (technisch: QuarBisherLang)",
+                  "description": "Name des Quartiers, von welchem die Personen umgezogen sind."
+               },
+               {
+                  "name": "Umzug von Kreis (technisch: KreisBisherCd)",
+                  "description": "ID des Kreises, von welchem die Personen umgezogen sind."
+               },
+               {
+                  "name": "Umzug nach Stadtquartier (Sort) (technisch: QuarSort)",
+                  "description": "ID des Quartiers, in welches die Personen umgezogen sind (Numerisch, 8 Zeichen lang)."
+               },
+               {
+                  "name": "Umzug nach Stadtquartier (Code) (technisch: QuarCd)",
+                  "description": "ID des Quartiers, in welches die Personen umgezogen sind (CHAR, mit führender 0 bei zweistelligen Codes, 200 Zeichen lang)."
+               },
+               {
+                  "name": "Umzug nach Stadtquartier (lang) (technisch: QuarLang)",
+                  "description": "Name des Quartiers, in welches die Personen umgezogen sind."
+               },
+               {
+                  "name": "Umzug von Kreis (technisch: KreisCd)",
+                  "description": "ID des Kreises, in welches die Personen umgezogen sind."
+               },
+               {
+                  "name": "wirtschaftliche Umzüge (technisch: AnzUmzuWir)",
+                  "description": "Anzal Umzüge von Personen aus der wirtschaftlichen Wohnbevölkerung"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-03-07"
+}

@@ -1,0 +1,98 @@
+{
+   "title": "Baumersatz",
+   "keywords": [
+      "Stadtbäume",
+      "Stadtbaum",
+      "Baum",
+      "Strassenbaum",
+      "Parkbaum",
+      "Baumersatz",
+      "Baumersatzliste",
+      "Fällung"
+   ],
+   "metadata_date": "2025-01-14T10:33:09",
+   "updateFrequency": "annually",
+   "purpose": "Der Baumersatzdatensatz widerspiegelt den Inhalt der Baumersatzliste. Diese dient der Bevölkerung zur Information, wo Bäume durch Grün Stadt Zürich neu gepflanzt oder  ersetzt werden.",
+   "abstract": "Im Baumersatz werden alle städtischen Bäume im Strassenraum und in Grünanlagen erfasst, welche von Grün Stadt Zürich in der aktuellen Periode (jährlich ab Dezember) neu gepflanzt oder ersetzt werden.",
+   "identificationDate": "2024-11-11",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Grün Stadt Zürich",
+   "contactPerson": "Michel Ries",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Baumersatz",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "BAUMERSATZ",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "BAUMNUMMER",
+                  "description": "Eindeutige Baumnummer.\n\nVermessungsbezirk (z.B. AL für Altstetten) + \"-\" + eindeutige Identifikationsnummer pro Vermessungsbezirk"
+               },
+               {
+                  "name": "BAUMARTLAT",
+                  "description": "Art (lateinisch)"
+               },
+               {
+                  "name": "BAUMARTDT",
+                  "description": "Art (deutsch)"
+               },
+               {
+                  "name": "UNTERHALTSBEZIRK",
+                  "description": "Zuständiger Unterhaltsbezirk"
+               },
+               {
+                  "name": "VERMESSBEZIRK",
+                  "description": "Vermessungsbezirk"
+               },
+               {
+                  "name": "FAELLURSACHE",
+                  "description": "Kategorie der Ursache der Fällung"
+               },
+               {
+                  "name": "FAELLGRUND",
+                  "description": "Kategorie des Fällgrundes"
+               },
+               {
+                  "name": "ERSATZPLFANZUNG",
+                  "description": "Kategorie der Ersatzpflanzung"
+               },
+               {
+                  "name": "NEUEBAUMART",
+                  "description": "Neue Baumart, falls es sich bei der Ersatzpflanzung um eine neue Baumart handelt."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Punktgeometrie"
+               },
+               {
+                  "name": "STANDORT",
+                  "description": "Lagebeschreibung mittels Gebietsbezeichnung und/oder Strasse und/oder Hausnummer als Referenz für den Standort des Baumes.\n\nBsp.:\n\n- Lindenhof (Gebietsbezeichnung)\n\n- Birmensdorferstrasse, 486 (Adresse mit Hausnummer)\n\n- Kindergarten Wiedikon 3-6; Zentralstrasse, 105 (Gebietsbezeichnung, Strasse und Hausnummer)\n\n(aus Baumersatzliste)"
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": "Kategorie für Züriplan (Zusammenzug aus Attribut Kontrolle in Original Baumkatasterauszug):\n\n- \"Strasssenbaum\": Werte 'Strassenbaum' + 'Strassebaum (A)'\n\n- \"Parkbaum\": alle anderen Werte"
+               }
+            ]
+         }
+      ]
+   }
+}

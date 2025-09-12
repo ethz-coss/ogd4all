@@ -1,0 +1,288 @@
+{
+   "title": "Adressen Stadt Zürich",
+   "keywords": [
+      "Adressen"
+   ],
+   "metadata_date": "2024-10-22T11:54:30",
+   "updateFrequency": "daily",
+   "purpose": "Diese Daten werden von städtischen Dienstabteilungen in Applikationen mit Adresssuche und Info-Abfragen genutzt.",
+   "abstract": "Die Gebäudeadressen der Stadt Zürich werden aus den amtlichen Vermessungsdaten erstellt und mit einem Hausnummernsortierschlüssel und mit Informationen (PLZ, Liegenschaften, etc.) ergänzt.",
+   "identificationDate": "2025-03-17",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Geomatik + Vermessung",
+   "contactPerson": "André Graf",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Adressen_Stadt_Zuerich",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "ADRSTZH_ADRESSEN_STZH_P",
+            "description": "Alle Gebäudeadressen aus der Stadt Zürich inkl. Verschnitt-Infos für Adresssuche und Info-Abfrage in Applikationen.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ST_ADR_SCHNITTE_OBJID",
+                  "description": "System-Identifikator der verknüpftenTabelle. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "GEBAEUDEEINGANGNUMMER",
+                  "description": "Identifikator (Schlüssel) der Gebäudeadresse (DM01: GebaeudeeingangNummer)."
+               },
+               {
+                  "name": "LOKALISATIONNUMMER",
+                  "description": "Identifikator der Lokalisation (im DM01: LokalisationNummer)."
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": "Name der Lokalisation."
+               },
+               {
+                  "name": "HAUSNUMMER",
+                  "description": "Hausnummer (Polizeinummer)."
+               },
+               {
+                  "name": "HAUSNUMMER_SORT",
+                  "description": "Werte zum einfachen Sortieren der Hausnummern."
+               },
+               {
+                  "name": "ADRESSE",
+                  "description": "Text, Lokalisationsname und Hausnummer für Anzeige."
+               },
+               {
+                  "name": "STATUS",
+                  "description": "Status der Gebäudeadresse (d.h. Status des Gebäudes an dieser Adresse); Nummer.\n\n0 = (projektiert) eingereicht\n\n1 = (projektiert) freigegeben\n\n2 = (projektiert) erstellt\n\n3 = real\n\n(4 = vergangen; Die Daten mit Status 4 werden nicht auf dem GeoServer publiziert)"
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": "Status der Gebäudeadresse (d.h. Status des Gebäudes an dieser Adresse); Text."
+               },
+               {
+                  "name": "ADRESSE_ART",
+                  "description": "Art der Adresse; Bodenbedeckung, Einzelobjekt.\n\nBB = Bodenbedeckung\n\nEO = Einzelobjekt"
+               },
+               {
+                  "name": "GEBAEUDENUMMER",
+                  "description": "GVZ-Versicherungsnummer"
+               },
+               {
+                  "name": "GWR_EGID",
+                  "description": "Eidgenössischer Gebäudeidentifikator."
+               },
+               {
+                  "name": "HAUSNUMMER_KOORD_OST",
+                  "description": "Y-Koord. Hausnummerbeschriftung."
+               },
+               {
+                  "name": "HAUSNUMMER_KOORD_NORD",
+                  "description": "X-Koord. Hausnummerbeschriftung."
+               },
+               {
+                  "name": "PLZ",
+                  "description": "PLZ Nummer."
+               },
+               {
+                  "name": "PLZ_ZUSATZZIFFERN",
+                  "description": "PLZ Nummer Zusatzzahl (0 - 99, für eindeutigen Kennung)."
+               },
+               {
+                  "name": "PLZ_ORTSCHAFT",
+                  "description": "PLZ_ORTSCHAFT."
+               },
+               {
+                  "name": "LI_NUMMER_GUELTIG",
+                  "description": "Grundstücknummer (Liegenschaften) rechtsgültig."
+               },
+               {
+                  "name": "LI_NUMMER_PROJEKTIERT",
+                  "description": "Grundstücknummer (Liegenschaften) projektiert."
+               },
+               {
+                  "name": "ZONE",
+                  "description": "Zonencode der Bau- und Zonenordnung Stadt Zürich."
+               },
+               {
+                  "name": "STADTKREIS",
+                  "description": "Stadtkreis Nummer."
+               },
+               {
+                  "name": "STATISTISCHES_QUARTIER",
+                  "description": "Name des statistischen Quartiers."
+               },
+               {
+                  "name": "STATISTISCHE_ZONE",
+                  "description": "Nummer der Statistischen Zone."
+               },
+               {
+                  "name": "SCHULKREIS",
+                  "description": "Name des Schulkreises."
+               },
+               {
+                  "name": "VERWALTUNGSQUARTIER",
+                  "description": "Name des Verwaltungsquartiers."
+               },
+               {
+                  "name": "ROEM_KATH_KIRCHGEMEINDE",
+                  "description": "Name der römisch-katholischen Kirchgemeinde."
+               },
+               {
+                  "name": "EV_REF_KIRCHGEMEINDE",
+                  "description": "Name der evangelisch reformierten Kirchgemeinde."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld."
+               },
+               {
+                  "name": "EV_REF_KIRCHENKREIS",
+                  "description": "Name des evangelisch reformierten Kirchenkreises"
+               },
+               {
+                  "name": "HAUSNUMMER_ORI",
+                  "description": "Drehwinkel für die Beschriftung [nnn.n]"
+               },
+               {
+                  "name": "HAUSNUMMER_KOORD_LONG",
+                  "description": "WGS Längengrad (Dezimal)"
+               },
+               {
+                  "name": "HAUSNUMMER_KOORD_LAT",
+                  "description": "WGS Breitengrad (Dezimal)"
+               },
+               {
+                  "name": "STATISTISCHES_QUARTIER_NR",
+                  "description": "Nummer des statistischen Quartiers."
+               }
+            ]
+         },
+         {
+            "name": "ADRSTZH_STRASSENNAMEN_STZH_P",
+            "description": "Alle Strassenamen der Stadt Zürich. Jeder Strassennamen ist einmal inkl. einer Punktkoordinate vorhanden.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "LOKALISATIONNUMMER",
+                  "description": "Identifikator der Lokalisation (im DM01: LokalisationNummer)."
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": "Name der Lokalisation."
+               },
+               {
+                  "name": "STATUS",
+                  "description": "Status der Lokalisation; Nummer.\n\n0 = (projektiert) eingereicht\n\n1 = (projektiert) freigegeben\n\n2 = (projektiert) erstellt\n\n3 = real"
+               },
+               {
+                  "name": "STATUS_TXT",
+                  "description": "Status der Lokalisation; Text.\n\nprojektiert_eingereicht\n\nprojektiert_freigegeben\n\nprojektiert_erstellt\n\nreal"
+               },
+               {
+                  "name": "LOKALISATION_ART",
+                  "description": "Art der Lokalisation; Nummer.\n\n1 = Strasse\n\n2 = Platz"
+               },
+               {
+                  "name": "LOKALISATION_ART_TXT",
+                  "description": "Art der Lokalisation; Text.\n\nStrasse\n\nPlatz"
+               },
+               {
+                  "name": "LOKALISATION_KOORD_OST",
+                  "description": "Y-Koord. Strassennamenbeschriftung."
+               },
+               {
+                  "name": "LOKALISATION_KOORD_NORD",
+                  "description": "X-Koord. Strassennamenbeschriftung."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "LOKALISATION_ORI",
+                  "description": "Drehwinkel für die Beschriftung [nnn.n]"
+               }
+            ]
+         },
+         {
+            "name": "EGID_BB_EO_ADR_TBL",
+            "description": "Zusatzinformationen für EGID aus Bodenbedeckung (BB), Einzelobjekten (EO) und Adressen (ADR)",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "System-ID"
+               },
+               {
+                  "name": "GWR_EGID",
+                  "description": "Eidgenössischer Gebäudeidentifikator"
+               },
+               {
+                  "name": "ADRESSE",
+                  "description": "Adresse aus der Amtlichen Vermessung [LOKALISATIONSNAME + HAUSNUMMER]"
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": "Offizieller Strassenname"
+               },
+               {
+                  "name": "HAUSNUMMER",
+                  "description": "Hausnummer"
+               },
+               {
+                  "name": "FLAECHE_TOTAL",
+                  "description": "Gebäudegrundfläche als Summer aller EGID-Gebäudeteile (BB (real und projektiert), EO (real und projektiert))"
+               },
+               {
+                  "name": "FLAECHE_REAL",
+                  "description": "Gebäudegrundfläche als Summer aller realen EGID-Gebäudeteile (BB (real), EO (real))"
+               },
+               {
+                  "name": "FLAECHE_PROJEKTIERT",
+                  "description": "Gebäudegrundfläche als Summer aller projektierten EGID-Gebäudeteile (BB (projektiert), EO (projektiert))"
+               },
+               {
+                  "name": "ANZAHL_FLA_REAL",
+                  "description": "Anzahl berücksichtigter realer Geometrien"
+               },
+               {
+                  "name": "ANZAHL_FLA_PROJEKTIERT",
+                  "description": "Anzahl berücksichtigter projektierter Geometrien"
+               },
+               {
+                  "name": "STADTKREIS",
+                  "description": "Name des Stadtkreises"
+               },
+               {
+                  "name": "STATISTISCHES_QUARTIER",
+                  "description": "Name des statistischen Quartiers"
+               }
+            ]
+         }
+      ]
+   }
+}

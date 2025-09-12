@@ -1,0 +1,104 @@
+{
+   "title": "Wohnungsbestand, Wohnungsfläche und Personenzahl nach Statistischer Zone",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bau_best_whg_geb_gebmwhg_wfl_pers_statzone_jahr_od6981",
+   "abstract": "Diese Daten umfassen den Wohnungsbestand (Anzahl Wohnungen und Wohnungsfläche) sowie die Personenzahl in der Stadt Zürich nach administrativer Einteilung. \nBitte beachten Sie für das korrekte Verständnis zu den Daten die unten aufgeführten weiteren Erläuterungen in der Rubrik «Bemerkungen».",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Stand und Nachführung:\n\nDas Gebäude- und Wohnungsregister der Stadt Zürich wird ständig nachgeführt.\n\nWohnungsfläche\n\nAls Wohnungsfläche (früher und im Zusammenhang mit dem Flächenkonsum pro Person auch als «Wohnfläche» bezeichnet) gilt die Fläche sämtlicher Räume einer Wohnung hinter der Wohnungstüre, abzüglich Wandquerschnitten. Dazu gehören Wohn- und Schlafzimmer, Küche, Kochnische, Badezimmer, Toiletten, Abstellräume und Gänge. Ausser Betracht fallen bei der Berechnung zusätzliche Wohnräume ausserhalb der Wohnung (z.B. der Wohnung zugeordnete Einzelzimmer), offene Balkone und Terrassen sowie nicht bewohnbare Keller- und Dachgeschossräume. Wo keine genauen Flächen ermittelt werden können, sind Schätzwerte (Länge × Breite) erfasst.\n\nPersonen in Gebäuden (Variable AnzBestWir)\n\nDie Gesamtzahl der Personen in Gebäuden ist mit den ausgewiesenen Bevölkerungszahlen statistisch nicht zu 100 Prozent konsistent. Personen in fertiggestellten Gebäuden mit leichtem Meldungsverzug (die statistisch noch als im Bau stehend gelten) werden nicht erfasst. Gesamtstädtisch aufsummiert ist die Personenzahl etwa ein halbes Promille kleiner als die ausgewiesene Einwohnerzahl.\n\nHinweis\n\nSeit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.\n\nGebäude\n\nGebäude sind auf Dauer angelegte, mit dem Boden fest verbundene Bauten. Ein Gebäude gilt als selbständig, wenn es einen eigenen Zugang von aussen hat und wenn zwischen den Gebäuden eine senkrechte vom Erdgeschoss bis zum Dach reichende tragende Trennmauer besteht. Zusammengebaute Gebäude werden nach dem so genannten Trennmauerkriterium unterteilt. Das Trennmauerkriterium gewährleistet eine einheitliche Differenzierung der Gebäude nach ausschliesslich baulichen Kriterien.\n\nStatistische Wohnung\n\nAls statistische Wohnung zählen bestehende Wohnungen, welche über eine Kocheinrichtung verfügen und zu Wohnzwecken (keine zweckentfremdeten Wohnungen) verwendet werden.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Wohnungsbestand, Wohnungsfläche und Personenzahl nach Statistischer Zone",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Numerisch)"
+               },
+               {
+                  "name": "Datenstand (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (Integer)"
+               },
+               {
+                  "name": "Statistische Zone (Nr.) (technisch: StatZoneSort)",
+                  "description": "Offizielle ID der Statistischen Zone (Numerisch)"
+               },
+               {
+                  "name": "Statistische Zone (Code) (technisch: StatZoneCd)",
+                  "description": "Offizielle ID der Statistischen Zone (Integer)"
+               },
+               {
+                  "name": "Statistische Zone (Name) (technisch: StatZoneLang)",
+                  "description": "Name der Statistischen Zone (String)"
+               },
+               {
+                  "name": "Stadtquartier Sortiercode (technisch: QuarSort)",
+                  "description": "Stadtquartier (Numerisch)"
+               },
+               {
+                  "name": "Stadtquartier (Code) (technisch: QuarCd)",
+                  "description": "Stadtquartier Code (Integer)"
+               },
+               {
+                  "name": "Stadtquartier Beschreibung (technisch: QuarLang)",
+                  "description": "Stadtquartier (String)"
+               },
+               {
+                  "name": "Stadtkreis Sortiercode (technisch: KreisSort)",
+                  "description": "Stadtkreis (Numerisch)"
+               },
+               {
+                  "name": "Stadtkreis (Code) (technisch: KreisCd)",
+                  "description": "Stadtkreis (Integer)"
+               },
+               {
+                  "name": "Stadtkreis Beschreibung (technisch: KreisLang)",
+                  "description": "Stadtkreis (String)"
+               },
+               {
+                  "name": "Eigentumsart (Sortiercode) (technisch: EigentuemerSSZPubl3Sort_noDM)",
+                  "description": "Eigentumsart (Numerisch)"
+               },
+               {
+                  "name": "Eigentumsart (Code) (technisch: EigentuemerSSZPubl3Cd_noDM)",
+                  "description": "Eigentumsart (Integer)"
+               },
+               {
+                  "name": "Eigentumsart (Name) (technisch: EigentuemerSSZPubl3Lang_noDM)",
+                  "description": "Eigentumsart (String)"
+               },
+               {
+                  "name": "Flag Gebäude mit Wohnung (Sortiercode) (technisch: GebaeudeMitWohnungSort_noDM)",
+                  "description": "Gebäude mit Wohnung (Numerisch)"
+               },
+               {
+                  "name": "Flag Gebäude mit Wohnung (Code) (technisch: GebaeudeMitWohnungCd_noDM)",
+                  "description": "Gebäude mit Wohnung (Integer)"
+               },
+               {
+                  "name": "Flag Gebäude mit Wohnung (Beschreibung) (technisch: GebaeudeMitWohnungLang_noDM)",
+                  "description": "Gebäude mit Wohnung (String)"
+               },
+               {
+                  "name": "Anzahl Gebäude (technisch: AnzGbd)",
+                  "description": "Anzahl Gebäude (Numerisch)"
+               },
+               {
+                  "name": "Zahl der Wohnungen (technisch: AnzWhgStat)",
+                  "description": "Anzahl statistische Wohnungen (Numerisch)"
+               },
+               {
+                  "name": "Wohnungsfläche (technisch: Wohnflaeche)",
+                  "description": "Wohnungsfläche in Quadratmeter (Numerisch)"
+               },
+               {
+                  "name": "Personenzahl (technisch: AnzBestWir)",
+                  "description": "Wirtschaftliche Bevölkerung in statistisch als fertiggestellt geltenden Gebäuden (vgl. Bemerkungen) (Numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-03-07"
+}

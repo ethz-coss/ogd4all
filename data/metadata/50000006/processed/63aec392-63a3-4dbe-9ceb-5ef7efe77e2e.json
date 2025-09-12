@@ -1,0 +1,90 @@
+{
+   "title": "Zweiradparkierung",
+   "keywords": [
+      "Zweiradabstellplätze",
+      "Velo",
+      "Motorrad",
+      "Mofa",
+      "Abstellplatz",
+      "Fahrrad",
+      "Parkplatz"
+   ],
+   "metadata_date": "2022-11-02T11:28:07",
+   "updateFrequency": "annually",
+   "purpose": "Parkraumplanung, Statistisches Jahrbuch und statistisches Informationsportal, Controlling Masterplan Velo, Mobilitätsmanagement, allgemeine Planungsgrundlage",
+   "abstract": "Der Datensatz umfasst den aktuellen Stand (soweit bekannt) der öffentlich zugänglichen Abstellplätze für Velo, Motorräder oder kombinierte Velo/Motorräder-Abstellplätze auf dem Gebiet der Stadt Zürich. Neben der Lage der Abstellplätze enthält der Datensatz weitere Attribute wie Pfostentyp, Kapazität, Gebührenpflicht. Die Daten werden alle zwei Jahre manuell bei einer Begehung erhoben und der Datensatz entsprechend nachgführt. Aber auch zwischendurch werden bei bekannt gewordenen Änderungen oder Rückmeldungen Daten aktualisiert. Die Daten zeigen nicht in allen Fällen das aktuelle und reale Abstellplatzangebot vor Ort: So ist das temporäre Wegfallen von Abstellplätzen wegen Baustellen oder Ähnlichem nicht berücksichtigt. Bei allen Anlagen wird die Kapazität an Abstellplätzen bestmöglich abgeschätzt. Die Daten enthalten keine Informationen darüber, ob ein Abstellplatz frei oder belegt ist. Auch besteht keine Garantie, dass die aufgeführten Abstellplätze zu jedem Zeitpunkt nutzbar und zugänglich sind. Die gemischten Abstellplätze können trotz sorgfältiger Datenaufnahme in der Praxis an Orten sein, deren Zufahrt für Motorräder verboten ist. Sollten aufgeführte Abstellplätze nicht öffentlich zugänglich sein, so werden diese auf Wunsch oder nach Rückmeldung aus der Datentabelle entfernt. Fehlerhafte Attribute werden nach Rückmeldung ebenfalls korrigiert.",
+   "identificationDate": "2025-03-13",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Tiefbauamt",
+   "contactPerson": "Raphaël Duchoud",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Zweiradparkierung",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "ZWEIRADABSTELLPLAETZE_P",
+            "description": "Abstellplätze für Velo, Motorräder oder kombinierte Velo/Motorrad-Abstellplätze",
+            "attributes": [
+               {
+                  "name": "GEOMETRY",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "POI_ID",
+                  "description": null
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": "Fahrzeugart, welche parkiert werden dürfen:\n\n- Velo\n\n- Motorrad\n\n- Velo / Motorrad gemäss örtlicher Signalisation"
+               },
+               {
+                  "name": "ANZAHL_PP",
+                  "description": null
+               },
+               {
+                  "name": "GEBUEHR",
+                  "description": "1: gebührenpflichtig, 0: nicht gebührenpflichtig"
+               },
+               {
+                  "name": "OEFFENTLICHER_GRUND",
+                  "description": null
+               },
+               {
+                  "name": "FOTO_PFAD",
+                  "description": null
+               },
+               {
+                  "name": "BEMERKUNG",
+                  "description": null
+               },
+               {
+                  "name": "UNT_ERZ",
+                  "description": "1: Unterhalt durch ERZ, 0: Kein Unterhalt durch ERZ"
+               }
+            ]
+         }
+      ]
+   }
+}

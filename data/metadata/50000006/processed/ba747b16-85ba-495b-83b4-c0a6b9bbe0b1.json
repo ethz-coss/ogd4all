@@ -1,0 +1,109 @@
+{
+   "title": "3D-Dachmodell LoD2 Jahresstand 2011 (3D)",
+   "keywords": [
+      "3D-Stadtmodell",
+      "LoD2",
+      "3D",
+      "Dachstrukturen"
+   ],
+   "metadata_date": "2022-10-18T09:37:14",
+   "updateFrequency": "notPlanned",
+   "purpose": "Ein 3D-Stadtmodell liefert die Grundlagen für folgende, wichtige Einsatzgebiete:\n\n- Lärmkataster\n\n- Sichtbarkeitsanalysen\n\n- Schattenberechnungen\n\n- Visualisierungen grosser Bau- und Infrastrukturprojekte\n\n- Stadtplanung\n\n- Städtebauliche Betrachtungen\n\n- Fahrsimulatoren\n\n- Einsatzunterstützung Blaulichtorganisationen\n\n- Standortmarketing\n\n- Tourismus\n\n- Solarenergiepotentialberechnungen\n\n- ...",
+   "abstract": "Das 3D-Modell der Aussenhülle und Dachstrukturen basiert auf den Gebäudegrundrissen der AV, deren Höhe unter dem Terrain liegt. Zusätzlich sind die Dachstrukturen photogrammetrisch bestimmt worden. Luftbild 2011.",
+   "identificationDate": "2011-04-03",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Geomatik + Vermessung",
+   "contactPerson": "André Graf",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI File Geodatabase (.gdb)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/3D_Dachmodell_LoD2_Jahresstand_2011",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "GEOZ_2011_SDE.LOD2_GEB3D",
+            "description": "3D Featureklasse, mit detaillierten Dachstrukturen. Im ESRI-Multipatch gespeichert und in Oracle Spatial als 3D-Objekt.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": "Art der Bodenbedeckung oder des Einzelobjektes: (rechts des :) \n\nBB00: Gebaeude_Verwaltung \n\nBB01: Gebaeude_Wohngebaeude \n\nBB02: Gebaeude_Land_Forstwirtschaft \n\nBB03: Gebaeude_Verkehr \n\nBB04: Gebaeude_Handel \n\nBB05: Gebaeude_Industrie_Gewerbe \n\nBB06: Gebaeude_Gastgewerbe \n\nBB07: Gebaeude_Nebengebaeude \n\nEO08: Bruecke_Passerelle \n\nEO12: Pfeiler \n\nEO13: Unterstand \n\nEO14: Silo_Turm_Gasometer \n\nEO16: Hochkamin \n\nEO18: Mast_Antenne"
+               },
+               {
+                  "name": "TYPE",
+                  "description": null
+               },
+               {
+                  "name": "GEOMTYPE",
+                  "description": "Geometrietyp\n\n1: Hauptgeometrie (2D-Fläche >3m2 und Volumen >3m3)\n\n2: Detailgeometrie (2D-Fläche &lt;3m2 und Volumen &lt;3m3)"
+               },
+               {
+                  "name": "LAST_MODIFICATION_DATE",
+                  "description": "Modifikationsdatum YYYYMMDDHHMMSS"
+               },
+               {
+                  "name": "CREATION_DATE",
+                  "description": "Herstellungsdatum YYYYMMDDHHMMSS"
+               },
+               {
+                  "name": "ART",
+                  "description": "Art der Bodenbedeckung oder des Einzelobjektes: (links des :)\n\nBB00: Gebaeude_Verwaltung\n\nBB01: Gebaeude_Wohngebaeude\n\nBB02: Gebaeude_Land_Forstwirtschaft\n\nBB03: Gebaeude_Verkehr\n\nBB04: Gebaeude_Handel\n\nBB05: Gebaeude_Industrie_Gewerbe\n\nBB06: Gebaeude_Gastgewerbe\n\nBB07: Gebaeude_Nebengebaeude\n\nEO08: Bruecke_Passerelle\n\nEO12: Pfeiler\n\nEO13: Unterstand\n\nEO14: Silo_Turm_Gasometer\n\nEO16: Hochkamin\n\nEO18: Mast_Antenne"
+               },
+               {
+                  "name": "REGION",
+                  "description": "Nummer der Filterfläche [01-10], Hinweis auf Filterfläche (Unterteilung\n\ndes Stadtgebietes)"
+               },
+               {
+                  "name": "REASON_FOR_UPDATE",
+                  "description": null
+               },
+               {
+                  "name": "CLASS_ID",
+                  "description": null
+               },
+               {
+                  "name": "QUALITAET_STATUS",
+                  "description": "Beschreibt die Qualität der Geometrie:\n\n0: Qualität nicht eingehalten. Gebäudehöhe wurde nicht gemessen die Baute hat eine generische Höhe von 3m\n\n1: normale Kontrolle. Gebäudehöhen sind photogrammetrisch bestimmt\n\n2: spezielle Kontrolle. Gebäudehöhen sind photogrammetrisch bestimmt\n\nund speziell kontrolliert"
+               },
+               {
+                  "name": "UPDATING_PERSON",
+                  "description": null
+               },
+               {
+                  "name": "GID",
+                  "description": "Die GID des unterteilten Gebäudes, welche sich wie folgt zusammensetzt:\n\nOGID [17 Zeichen] - Löschzähler [00-99] - Zähler der Objektunterteilung\n\n[0000-9999]"
+               },
+               {
+                  "name": "LINEAGE",
+                  "description": null
+               },
+               {
+                  "name": "EGID",
+                  "description": "Eidgenössischer Gebäudeidentifikator"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der Gebäude"
+               },
+               {
+                  "name": "GEBAEUDE_STATUS",
+                  "description": "Gebäudestatus:\n\n0: gelöscht (archiviertes Objekt)\n\n1: real (Objekt des aktuellen LoD2-Datenbestandes)"
+               }
+            ]
+         }
+      ]
+   }
+}

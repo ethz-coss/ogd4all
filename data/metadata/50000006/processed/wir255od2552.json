@@ -1,0 +1,76 @@
+{
+   "title": "Arbeitsstätten, Beschäftigte und Vollzeitäquivalente nach Rechtsform und Betriebsgrösse",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bfs_wir_statent_ast_beschaeftigte_vza_rechtsform_betrgr_jahr_od2552",
+   "abstract": "Diese Daten beinhalten aggreggierte Zahlen der Statistik der Unternehmensstruktur in der Stadt Zürich. Die Daten für die Stadt Zürich sind für den Zeitraum seit 2011 verfügbar.\nBitte beachten Sie für das korrekte Verständnis zu den Daten die unten aufgeführten weiteren Erläuterungen in der Rubrik «Bemerkungen».",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Statistik der Unternehmensstruktur (STATENT):\n\nDie Statistik der Unternehmensstruktur (STATENT) des Bundesamtes für Statistik (BFS) liefert zentrale Informationen zur Struktur der Schweizer Wirtschaft. Die STATENT ersetzt die Betriebszählung (BZ), die 2008 zum letzten Mal durchgeführt wurde. Die STATENT erfasst alle Unternehmen, die verpflichtet sind, für ihre Angestellten sowie für sich selber (Selbstständigerwerbende) bei einem Mindesteinkommen von jährlich Fr. 2300.- AHV-Beiträge zu bezahlen. Die Auswertungseinheiten sind die Arbeitsstätte und das Unternehmen (institutionelle Einheit). Die STATENT basiert im Wesentlichen auf Daten des Registers der Alters- und Hinterlassenenversicherung AHV sowie auf Informationen aus dem Unternehmens- und Betriebsregister des BFS. Die Zahlen werden mit Daten aus laufenden Erhebungen bei Unternehmen ergänzt. Die Daten erscheinen einmal jährlich, jeweils knapp zwei Jahre nach dem Stichtag per Jahresende.\n\nVollzeitäquivalente:\n\nAngaben zu den Vollzeitäquivalenten dürfen erst ab einem Schwellenwert von mindestens vier Arbeitsstätten veröffentlicht werden. Anonymisierte Vollzeitäquivalente sind mit \"K\" gekennzeichnet.\n\nRaum:\n\nDiese Daten werden für die Webapplikation STATENT-Tool verwendet. Daher sind die Quartiere und Kreise im Long-Format. Mit folgendem Code können die Quartiere oder Kreise in einer neu berechneten Spalte identifiziert werden:\n\nBeispiel in R:\n    mutate(Raum = case_when(\n        RaumSort == \"1\" ~ \"Ganze Stadt\",\n        as.numeric(RaumSort) %% 10 == 0 ~ \"Kreise\",\n        TRUE ~ \"Quartiere\",\n    ))\n\nBeispiel in Python mit Pandas:\n    def classify_raumsort(value):\n    if value == 1:\n        return 'Ganze Stadt'\n    elif int(value) % 10 == 0:\n        return 'Kreise'\n    else:\n        return 'Quartiere'\n        \n    df['Raum'] = df['RaumSort'].apply(classify_raumsort)",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Arbeitsstätten, Beschäftigte und Vollzeitäquivalente nach Rechtsform und Betriebsgrösse",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: Jahr)",
+                  "description": "Jahr (Numeric)"
+               },
+               {
+                  "name": "Raum (Sort) (technisch: RaumSort)",
+                  "description": "Raum (Numeric)"
+               },
+               {
+                  "name": "Raum (Lang) (technisch: RaumLang)",
+                  "description": "Raum (String)"
+               },
+               {
+                  "name": "Rechtsform (Sort) (technisch: RechtsformSort)",
+                  "description": "Rechtsform (Numeric)"
+               },
+               {
+                  "name": "Rechtsform (Lang) (technisch: RechtsformLang)",
+                  "description": "Rechtsform (String)"
+               },
+               {
+                  "name": "Betriebsgrösse (Sort) (technisch: BetriebsgrSort)",
+                  "description": "Betriebsgrösse (Numeric)"
+               },
+               {
+                  "name": "Betriebsgrösse (Lang) (technisch: BetriebsgrLang)",
+                  "description": "Betriebsgrösse (String)"
+               },
+               {
+                  "name": "Arbeitsstätten (technisch: Arbeitsstaetten)",
+                  "description": "Arbeitsstätten (Numeric)"
+               },
+               {
+                  "name": "Beschäftigte (technisch: AnzBesch)",
+                  "description": "Beschäftigte (Numeric)"
+               },
+               {
+                  "name": "Beschäftigte Frauen (technisch: AnzBeschW)",
+                  "description": "Beschäftigte Frauen (Numeric)"
+               },
+               {
+                  "name": "Beschäftigte Männer (technisch: AnzBeschM)",
+                  "description": "Beschäftigte Männer (Numeric)"
+               },
+               {
+                  "name": "Vollzeitäquivalente (technisch: AnzVZA)",
+                  "description": "Vollzeitäquivalente (Numeric)"
+               },
+               {
+                  "name": "Vollzeitäquivalente Frauen (technisch: AnzVZAW)",
+                  "description": "Vollzeitäquivalente Frauen (Numeric)"
+               },
+               {
+                  "name": "Vollzeitäquivalente Männer (technisch: AnzVZAM)",
+                  "description": "Vollzeitäquivalente Männer (Numeric)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-02-28"
+}

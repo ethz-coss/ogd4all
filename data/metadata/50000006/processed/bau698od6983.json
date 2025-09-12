@@ -1,0 +1,108 @@
+{
+   "title": "Personen nach Altersgruppe, Nationalität, Eigentumsart des Gebäudes und Stadtquartier",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bau_best_geb_ea_pers_altersgruppe_quartier_jahr_od6983",
+   "abstract": "Diese Daten zeigen die Verteilung nach Alter, Geburtsland, Nationalität, Stadtquartier und Eigentumsart des Gebäudes in der Stadt Zürich. \nBitte beachten Sie für das korrekte Verständnis zu den Daten die unten aufgeführten weiteren Erläuterungen in der Rubrik «Bemerkungen».",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Stand und Nachführung:\n\nDas Gebäude- und Wohnungsregister der Stadt Zürich wird ständig nachgeführt. Seit 2021 wird in der Stadt Zürich ein neues Gebäude- und Wohnungsregister verwendet. Infolge der damit einhergehenden technischen Anpassungen, Änderungen und Bereinigungen können einzelne Daten von früheren Publikationen abweichen.\n\nPersonen in Gebäuden (Variable AnzBestWir)\n\nDie Gesamtzahl der Personen in Gebäuden ist mit den ausgewiesenen Bevölkerungszahlen statistisch nicht zu 100 Prozent konsistent. Personen in fertiggestellten Gebäuden mit leichtem Meldungsverzug (die statistisch noch als im Bau stehend gelten) werden nicht erfasst. Gesamtstädtisch aufsummiert ist die Personenzahl etwa ein halbes Promille kleiner als die ausgewiesene Einwohnerzahl.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Personen nach Altersgruppe, Nationalität, Eigentumsart des Gebäudes und Stadtquartier",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Numerisch)"
+               },
+               {
+                  "name": "Datenstand (technisch: DatenstandCd)",
+                  "description": "Datenstand Code (Integer)"
+               },
+               {
+                  "name": "Stadtquartier Sortiercode (technisch: QuarSort)",
+                  "description": "Stadtquartier (Numerisch)"
+               },
+               {
+                  "name": "Stadtquartier Code (technisch: QuarCd)",
+                  "description": "Stadtquartier Code (Integer)"
+               },
+               {
+                  "name": "Stadtquartier Beschreibung (technisch: QuarLang)",
+                  "description": "Stadtquartier (String)"
+               },
+               {
+                  "name": "Stadtkreis Sortiercode (technisch: KreisSort)",
+                  "description": "Stadtkreis (Numerisch)"
+               },
+               {
+                  "name": "Stadtkreis Code (technisch: KreisCd)",
+                  "description": "Stadtkreis (Integer)"
+               },
+               {
+                  "name": "Stadtkreis Beschreibung (technisch: KreisLang)",
+                  "description": "Stadtkreis (String)"
+               },
+               {
+                  "name": "Vollendetes Alter 10 (Sort) (technisch: AlterV10Sort)",
+                  "description": "Vollendetes Alter in 10-Jahres-Altersgruppen (Numerisch)"
+               },
+               {
+                  "name": "Vollendetes Alter 10 (Code) (technisch: AlterV10Cd)",
+                  "description": "Vollendetes Alter in 10-Jahres-Altersgruppen (Numerisch)"
+               },
+               {
+                  "name": "Vollendetes Alter 10 (kurz) (technisch: AlterV10Kurz)",
+                  "description": "Vollendetes Alter in 10-Jahres-Altersgruppen (Integer)"
+               },
+               {
+                  "name": "Vollendetes Alter 10 (lang) (technisch: AlterV10Lang)",
+                  "description": "Vollendetes Alter in 10-Jahres-Altersgruppen (String)"
+               },
+               {
+                  "name": "Geburtsland Schweiz-Ausland (Sortiercode) (technisch: GebCHAUSort)",
+                  "description": "Geburtsland Schweiz-Ausland (Numerisch)"
+               },
+               {
+                  "name": "Geburtsland Schweiz-Ausland (Code) (technisch: GebCHAUCd)",
+                  "description": "Geburtsland Schweiz-Ausland (Integer)"
+               },
+               {
+                  "name": "Geburtsland Schweiz-Ausland (lang) (technisch: GebCHAULang)",
+                  "description": "Geburtsland Schweiz-Ausland (String)"
+               },
+               {
+                  "name": "Nationalität Schweiz-Ausland (Sortiercode) (technisch: HerkunftSort)",
+                  "description": "Nationalität Schweiz-Ausland (Numerisch)"
+               },
+               {
+                  "name": "Nationalität Schweiz-Ausland (Code) (technisch: HerkunftCd)",
+                  "description": "Nationalität Schweiz-Ausland (Integer)"
+               },
+               {
+                  "name": "Nationalität Schweiz-Ausland (Lang) (technisch: HerkunftLang)",
+                  "description": "Nationalität Schweiz-Ausland (String)"
+               },
+               {
+                  "name": "Eigentumsgruppe Sortiercode (technisch: EigentuemerSSZPubl1Sort)",
+                  "description": "Eigentumsart (Numerisch)"
+               },
+               {
+                  "name": "Eigentumsgruppe Code (technisch: EigentuemerSSZPubl1Cd)",
+                  "description": "Eigentumsart (Integer)"
+               },
+               {
+                  "name": "Eigentumsgruppe Lang (technisch: EigentuemerSSZPubl1Lang)",
+                  "description": "Eigentumsart (String)"
+               },
+               {
+                  "name": "Personenzahl Total (technisch: AnzBestWir)",
+                  "description": "Wirtschaftliche Bevölkerung in statistisch als fertiggestellt geltenden Gebäuden (vgl. Bemerkungen) (Numerisch)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-03-07"
+}

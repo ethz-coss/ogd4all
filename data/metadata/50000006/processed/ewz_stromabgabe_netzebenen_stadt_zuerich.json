@@ -1,0 +1,32 @@
+{
+   "title": "Viertelstundenwerte des Stromverbrauchs in den Netzebenen 5 und 7 in der Stadt Zürich, seit 2015",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/ewz_stromabgabe_netzebenen_stadt_zuerich",
+   "abstract": "Dieser Datensatz beinhaltet Stromverbrauchsdaten des ewz-Netzes in der Stadt Zürich. Es handelt sich um die Bruttoenergie, das heisst der konsumierten Energie der Verbraucherinnen und Verbraucher. Netzverluste etc. sind in der Bruttoenergie nicht enthalten.\nDie Daten sind aufgeteilt in:\n\nHaushalte, KMU's und Dienstleistungen (Niederspannung, Netzebene 7 -> NE7) \nUnternehmen und Dienstleistungen mit höherem Stromverbrauch (Mittelspannung, Netzebene 5 -> NE5).\n\nDie Daten liegen als 15-Minuten Zeitreihe seit dem 1.1.2015 vor.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Zu beachten:\n\nDie Stromverbrauchsdaten werden basierend auf zahlreichen Messungen zum Verbrauch berechnet. Einzelne Messungen können dabei fehlen und müssen nachträglich nochmals eingepflegt werden. Daher sind die in diesem Datensatz vorliegenden Viertelstundenwerte der letzten Tage möglicherweise noch nicht ganz als definitiv der Realität entsprechend zu interpretieren. Sie können entsprechend im Verlaufe der Zeit - bis max. 6 Monate zurück - noch nachträglich angepasst werden.\n\nKilo, Giga, Tera: Watt?!\n\nNicht nur Ingenieur*innen verwenden diese Einheiten: Kilowatt und Gigawattstunden haben auch Einzug in unsere alltägliche Kommunikation gehalten. Doch wie ordnen wir diese Grössen ein? Dieser kurze Webartikel hilft Dir bei der Einordnung: ** Link**.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Viertelstundenwerte des Stromverbrauchs in den Netzebenen 5 und 7 in der Stadt Zürich, seit 2015",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Datum und Zeit (technisch: Timestamp)",
+                  "description": "Datum und Zeit der Messung (in ISO8601). Die Werte der Bruttoenergie beziehen sich auf die 15 Minuten vor dieser Zeitangabe."
+               },
+               {
+                  "name": "Bruttoenergie Netzebene 5 (technisch: Value_NE5)",
+                  "description": "Bruttoenergie in der Netzebene 5 in kWh."
+               },
+               {
+                  "name": "Bruttoenergie Netzebene 7 (technisch: Value_NE7)",
+                  "description": "Bruttoenergie in der Netzebene 7 in kWh."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": ""
+}

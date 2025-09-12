@@ -1,0 +1,85 @@
+{
+   "title": "ZüriACT barrierefreie Mobilität",
+   "keywords": [
+      "Mobilität",
+      "Barrierefreiheit"
+   ],
+   "metadata_date": "2024-10-02T10:56:55",
+   "updateFrequency": "irregular",
+   "purpose": "Diese Daten wurden vorerst aus Forschungszwecken im Rahmen eines Pilotprojektes erhoben, welches sich auf den Stadtzürcher Kreis 1 beschränken. Dank den gemachten Erfahrungen sollen weitere Methoden und/oder Verfahren studiert werden, welche in Zukunft eine barrierefreie Mobilität&Navigation in grösserem Umfang ermöglichen soll.",
+   "abstract": "Im Rahmen des von Dr. Hoda Allahbashki und François Rüttimann geleiteten Pilot-Projekts \"ZüriACT\" (Züri Accessible CiTy) hat die Universität Zürich - in Zusammenarbeit mit der Stadt Zürich - die Erfassung neuer Methoden erforscht, welche die Mobilität&Navigation mobilitätseingeschränkter Personen (ältere Personen mit altersbedingten Gangstörungen, gehbehinderte Menschen wie z.B. Rollstuhlfahrende, Mütter oder Väter mit Kinderwagen, schwer beladene Passanten usw.) erleichtern soll. Dank der Partizipation von verschiedenen Bevölkerungsgruppen wurden basierend auf bildbasierten digitalen Tools über 9'000 Punktdaten im Kreis 1 erfasst, welche die Fussweg-Navigation dieser Bevölkerungsruppe entweder erschweren, verunmöglichen oder umgekehrt erleichtern.",
+   "identificationDate": "2024-09-25",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Geomatik + Vermessung",
+   "contactPerson": "François Rüttimann",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/ZueriACT_barrierefreie_Mobilitaet",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "zueriact_daten_aufbereitet",
+            "description": "Georeferenzierte Punkt-Daten der im Rahmen vom ZüriACT-Projekt erfassten Merkmale.",
+            "attributes": [
+               {
+                  "name": "temporaer",
+                  "description": "1 bedeutet, dass es sich um ein temporäres Hinderniss handelt."
+               },
+               {
+                  "name": "beschreibung",
+                  "description": "Zusätzliche Beschreibung bzw. Präzisierung."
+               },
+               {
+                  "name": "erfassungsdatum",
+                  "description": "Datum an dem das Objekt erfasst wurde."
+               },
+               {
+                  "name": "quartier",
+                  "description": "Bezeichnung vom Quartier bzw. vom Teilgebiet innerhalb des Stadtkreises 1."
+               },
+               {
+                  "name": "erfasst_von_teilnehmer_gruppe",
+                  "description": "Zugehörigkeitsgruppe des erfassenden Teilnehmenden."
+               },
+               {
+                  "name": "beschriftungs_kategorie",
+                  "description": "Kennzeichnung des Zugänglichkeitsmerkmals."
+               },
+               {
+                  "name": "geometrie",
+                  "description": "Punktgeometrie"
+               },
+               {
+                  "name": "objectid",
+                  "description": "System-Identifikator"
+               },
+               {
+                  "name": "label_id",
+                  "description": "Objekt-Nummerierung entsprechend der Erfassungs-Reihenfolge."
+               },
+               {
+                  "name": "auspraegung",
+                  "description": "Schweregrad zwischen 1 (passierbar) und 5 (nicht passierbar). 0 bedeutet ein Schweregrad trifft nicht zu."
+               },
+               {
+                  "name": "tags",
+                  "description": "Anhand dieser Tags ist die Art des Zugänglichkeitsmerkmals genauer definiert."
+               }
+            ]
+         }
+      ]
+   }
+}

@@ -1,0 +1,2570 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<che:CHE_MD_Metadata xmlns:che="http://www.geocat.ch/2008/che" xmlns:srv="http://www.isotc211.org/2005/srv" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" gco:isoType="gmd:MD_Metadata" xsi:schemaLocation="http://www.geocat.ch/2008/che http://www.isotc211.org/2005/gmd http://www.isotc211.org/2005/gmd/gmd.xsd http://www.isotc211.org/2005/srv http://schemas.opengis.net/iso/19139/20060504/srv/srv.xsd">
+  <gmd:fileIdentifier xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:CharacterString>256ae0c2-db9a-4988-be32-3dca6e00c1b3</gco:CharacterString>
+  </gmd:fileIdentifier>
+  <gmd:language xmlns:comp="http://www.geocat.ch/2003/05/gateway/GM03Comprehensive" xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:CharacterString>deu</gco:CharacterString>
+  </gmd:language>
+  <gmd:characterSet xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_CharacterSetCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+  </gmd:characterSet>
+  <gmd:hierarchyLevel xmlns:comp="http://www.geocat.ch/2003/05/gateway/GM03Comprehensive" xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_ScopeCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" />
+  </gmd:hierarchyLevel>
+  <gmd:hierarchyLevelName>
+    <gco:CharacterString>Liegenschafteninventar OGD</gco:CharacterString>
+  </gmd:hierarchyLevelName>
+  <gmd:contact>
+    <che:CHE_CI_ResponsibleParty gco:isoType="gmd:CI_ResponsibleParty">
+      <gmd:organisationName>
+        <gco:CharacterString>Stadt Zürich - Finanzdepartement - Liegenschaften Stadt Zürich</gco:CharacterString>
+      </gmd:organisationName>
+      <gmd:contactInfo>
+        <gmd:CI_Contact>
+          <gmd:phone>
+            <che:CHE_CI_Telephone gco:isoType="gmd:CI_Telephone">
+              <gmd:voice>
+                <gco:CharacterString>+41 44 412 53 53</gco:CharacterString>
+              </gmd:voice>
+              <che:directNumber>
+                <gco:CharacterString>+41 44 412 53 89</gco:CharacterString>
+              </che:directNumber>
+            </che:CHE_CI_Telephone>
+          </gmd:phone>
+          <gmd:address>
+            <che:CHE_CI_Address gco:isoType="gmd:CI_Address">
+              <gmd:city>
+                <gco:CharacterString>Zürich</gco:CharacterString>
+              </gmd:city>
+              <gmd:postalCode>
+                <gco:CharacterString>8004</gco:CharacterString>
+              </gmd:postalCode>
+              <gmd:country>
+                <gco:CharacterString>CH</gco:CharacterString>
+              </gmd:country>
+              <gmd:electronicMailAddress>
+                <gco:CharacterString>Susanna.Casale@zuerich.ch</gco:CharacterString>
+              </gmd:electronicMailAddress>
+              <che:streetName>
+                <gco:CharacterString>Werdstrasse</gco:CharacterString>
+              </che:streetName>
+              <che:streetNumber>
+                <gco:CharacterString>75</gco:CharacterString>
+              </che:streetNumber>
+            </che:CHE_CI_Address>
+          </gmd:address>
+          <gmd:onlineResource>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage>
+                <gmd:URL>https://stadt-zuerich.ch/geoz</gmd:URL>
+              </gmd:linkage>
+            </gmd:CI_OnlineResource>
+          </gmd:onlineResource>
+        </gmd:CI_Contact>
+      </gmd:contactInfo>
+      <gmd:role>
+        <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#CI_RoleCode" codeListValue="pointOfContact" />
+      </gmd:role>
+      <che:individualFirstName>
+        <gco:CharacterString>André</gco:CharacterString>
+      </che:individualFirstName>
+      <che:individualLastName>
+        <gco:CharacterString>Graf</gco:CharacterString>
+      </che:individualLastName>
+      <che:organisationAcronym>
+        <gco:CharacterString>GeoZ</gco:CharacterString>
+      </che:organisationAcronym>
+    </che:CHE_CI_ResponsibleParty>
+  </gmd:contact>
+  <gmd:dateStamp xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:DateTime>2023-06-06T05:44:40</gco:DateTime>
+  </gmd:dateStamp>
+  <gmd:metadataStandardName xmlns:xalan="http://xml.apache.org/xalan">
+    <gco:CharacterString>GM03 2+</gco:CharacterString>
+  </gmd:metadataStandardName>
+  <gmd:spatialRepresentationInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_VectorSpatialRepresentation>
+      <gmd:geometricObjects>
+        <gmd:MD_GeometricObjects>
+          <gmd:geometricObjectType>
+            <gmd:MD_GeometricObjectTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_GeometricObjectTypeCode" codeListValue="composite" />
+          </gmd:geometricObjectType>
+        </gmd:MD_GeometricObjects>
+      </gmd:geometricObjects>
+    </gmd:MD_VectorSpatialRepresentation>
+  </gmd:spatialRepresentationInfo>
+  <gmd:referenceSystemInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_ReferenceSystem>
+      <gmd:referenceSystemIdentifier>
+        <gmd:RS_Identifier>
+          <gmd:code>
+            <gco:CharacterString>CH1903+_LV95 (Original:LV03)</gco:CharacterString>
+          </gmd:code>
+        </gmd:RS_Identifier>
+      </gmd:referenceSystemIdentifier>
+    </gmd:MD_ReferenceSystem>
+  </gmd:referenceSystemInfo>
+  <gmd:identificationInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <che:CHE_MD_DataIdentification gco:isoType="gmd:MD_DataIdentification">
+      <gmd:citation>
+        <gmd:CI_Citation>
+          <gmd:title xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>Liegenschafteninventar OGD</gco:CharacterString>
+            <gmd:PT_FreeText>
+              <gmd:textGroup>
+                <gmd:LocalisedCharacterString locale="#DE" />
+              </gmd:textGroup>
+            </gmd:PT_FreeText>
+          </gmd:title>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:Date>2025-03-15</gco:Date>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+        </gmd:CI_Citation>
+      </gmd:citation>
+      <gmd:abstract xsi:type="gmd:PT_FreeText_PropertyType">
+        <gco:CharacterString>Das Liegenschafteninventar OGD umfasst alle Grundstücke und Gebäude, die im Eigentum der Stadt Zürich sind mit Ausnahme der Strassen und Plätze (öffentlicher Grund). Zusätzlich sind wichtige Rechte (Wegrechte etc.) enthalten.
+
+Mit Gemeindeabstimmung vom 27. September 2020 wurden die Finanzkompetenzen für den Erwerb von Liegenschaften neu geregelt (Teilrevision Gemeindeordnung, Inkraftsetzung 1. Juli 2021). Parallel dazu hat der Gemeinderat in Art. 14bis Finanzhaushaltverordnung (AS 611.101) neue Informations- und Dokumentationspflichten im Zusammenhang mit dem Erwerb und der Zuordnung von städtischen Liegenschaften festgelegt. Diese umfassen u.a. die laufende Aktualisierung eines öffentlich einsehbaren geodatenbasierten Liegenschafteninventars einschliesslich Angaben zur Vermögenszuweisung.</gco:CharacterString>
+        <gmd:PT_FreeText>
+          <gmd:textGroup>
+            <gmd:LocalisedCharacterString locale="#DE" />
+          </gmd:textGroup>
+        </gmd:PT_FreeText>
+      </gmd:abstract>
+      <gmd:purpose xsi:type="gmd:PT_FreeText_PropertyType">
+        <gmd:PT_FreeText>
+          <gmd:textGroup>
+            <gmd:LocalisedCharacterString locale="#DE">Das Inventar dient der Stadt Zürich, Liegenschaften, beim Verwalten, Kaufen und Verkaufen von Grundstücken und Gebäuden.
+Das Inventar dient den Dienststellen der Stadt Zürich als Grundlage für die verwaltungsinternen Aufgaben sowie der Öffentlichkeit als Information über das städtische Eigentum. Der Datensatz enthält keine Finanzwerte.</gmd:LocalisedCharacterString>
+          </gmd:textGroup>
+        </gmd:PT_FreeText>
+      </gmd:purpose>
+      <gmd:resourceMaintenance>
+        <che:CHE_MD_MaintenanceInformation xmlns:gts="http://www.isotc211.org/2005/gts" gco:isoType="gmd:MD_MaintenanceInformation">
+          <gmd:maintenanceAndUpdateFrequency>
+            <gmd:MD_MaintenanceFrequencyCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodelists.xml#MD_MaintenanceFrequencyCode" codeListValue="weekly" />
+          </gmd:maintenanceAndUpdateFrequency>
+          <gmd:contact>
+            <che:CHE_CI_ResponsibleParty gco:isoType="gmd:CI_ResponsibleParty">
+              <gmd:organisationName>
+                <gco:CharacterString>Finanzdepartement
+                     - Liegenschaften Stadt Zürich</gco:CharacterString>
+              </gmd:organisationName>
+              <gmd:contactInfo>
+                <gmd:CI_Contact>
+                  <gmd:phone>
+                    <che:CHE_CI_Telephone gco:isoType="gmd:CI_Telephone">
+                      <gmd:voice>
+                        <gco:CharacterString>+41 44 412 53 53</gco:CharacterString>
+                      </gmd:voice>
+                      <che:directNumber>
+                        <gco:CharacterString>+41 44 412 53 89</gco:CharacterString>
+                      </che:directNumber>
+                    </che:CHE_CI_Telephone>
+                  </gmd:phone>
+                  <gmd:address>
+                    <che:CHE_CI_Address gco:isoType="gmd:CI_Address">
+                      <gmd:city>
+                        <gco:CharacterString>Zürich</gco:CharacterString>
+                      </gmd:city>
+                      <gmd:postalCode>
+                        <gco:CharacterString>8004</gco:CharacterString>
+                      </gmd:postalCode>
+                      <gmd:country>
+                        <gco:CharacterString>CH</gco:CharacterString>
+                      </gmd:country>
+                      <gmd:electronicMailAddress>
+                        <gco:CharacterString>Susanna.Casale@zuerich.ch</gco:CharacterString>
+                      </gmd:electronicMailAddress>
+                      <che:streetName>
+                        <gco:CharacterString>Werdstrasse</gco:CharacterString>
+                      </che:streetName>
+                      <che:streetNumber>
+                        <gco:CharacterString>75</gco:CharacterString>
+                      </che:streetNumber>
+                    </che:CHE_CI_Address>
+                  </gmd:address>
+                  <gmd:onlineResource>
+                    <gmd:CI_OnlineResource>
+                      <gmd:linkage>
+                        <gmd:URL>https://www.stadt-zuerich.ch/liegenschaften</gmd:URL>
+                      </gmd:linkage>
+                    </gmd:CI_OnlineResource>
+                  </gmd:onlineResource>
+                </gmd:CI_Contact>
+              </gmd:contactInfo>
+              <gmd:role>
+                <gmd:CI_RoleCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodeLists.xml#CI_RoleCode" codeListValue="owner" />
+              </gmd:role>
+              <che:individualFirstName>
+                <gco:CharacterString>Casale</gco:CharacterString>
+              </che:individualFirstName>
+              <che:individualLastName>
+                <gco:CharacterString>Susanna</gco:CharacterString>
+              </che:individualLastName>
+              <che:organisationAcronym>
+                <gco:CharacterString>LSZ</gco:CharacterString>
+              </che:organisationAcronym>
+            </che:CHE_CI_ResponsibleParty>
+          </gmd:contact>
+        </che:CHE_MD_MaintenanceInformation>
+      </gmd:resourceMaintenance>
+      <gmd:graphicOverview>
+        <gmd:MD_BrowseGraphic>
+          <gmd:fileName>
+            <gco:CharacterString>https://www.gis.stadt-zuerich.ch/zueriplan_docs/geocat/256ae0c2-db9a-4988-be32-3dca6e00c1b3.png</gco:CharacterString>
+          </gmd:fileName>
+        </gmd:MD_BrowseGraphic>
+      </gmd:graphicOverview>
+      <gmd:descriptiveKeywords>
+        <gmd:MD_Keywords>
+          <gmd:keyword>
+            <gco:CharacterString>Wohnungen, Liegenschaften, Stiftungen, Grundstücke, Gebäude</gco:CharacterString>
+          </gmd:keyword>
+          <gmd:type>
+            <gmd:MD_KeywordTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodeLists.xml#MD_KeywordTypeCode" codeListValue="theme" />
+          </gmd:type>
+        </gmd:MD_Keywords>
+      </gmd:descriptiveKeywords>
+      <gmd:resourceConstraints>
+        <che:CHE_MD_LegalConstraints gco:isoType="gmd:MD_LegalConstraints">
+          <gmd:useLimitation>
+            <gco:CharacterString>1. Nutzungsbestimmung
+
+Diese Geodaten stehen unter der international gültigen Creative-Commons-Zero-Lizenz (CC-0). Sie dürfen:
+
+- vervielfältigt, verbreitet und weiter zugänglich gemacht werden,
+- angereichert und bearbeitet werden,
+- kommerziell genutzt werden.
+
+Eine Quellenangabe (CC-BY) wird empfohlen: Sie lautet: „Quelle: Stadt Zürich“.
+				
+2. Haftungsausschluss
+
+Die in der Verwaltung der Stadt Zürich zuständige Stelle gemäss Art. 8 Abs. 1 GeoIG (SR 510.62) schliesst jede Haftung für direkte und indirekte Schäden durch die Nutzung der Geodaten [Nutzung der Geodienste] aus. Sie übernimmt keine Garantie für die Aktualität, Richtigkeit, Vollständigkeit und Genauigkeit der veröffentlichten Geodaten.
+                  
+3. Rahmenbedingungen 
+
+- Reglement über offene Verwaltungsdaten, AS 170.410
+https://www.stadt-zuerich.ch/portal/de/index/politik_u_recht/amtliche_sammlung/inhaltsverzeichnis/1/170/410.html
+
+- Städtisches Geoinformationsreglement (StGeoIR), AS 704.100
+https://www.stadt-zuerich.ch/content/dam/stzh/portal/Deutsch/AmtlicheSammlung/Erlasse/704/100/704.100_StGeoIR%20V2.pdf</gco:CharacterString>
+          </gmd:useLimitation>
+        </che:CHE_MD_LegalConstraints>
+      </gmd:resourceConstraints>
+      <gmd:spatialRepresentationType>
+        <gmd:MD_SpatialRepresentationTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/gmxCodeLists.xml#MD_SpatialRepresentationTypeCode" codeListValue="vector" />
+      </gmd:spatialRepresentationType>
+      <gmd:language>
+        <gco:CharacterString>deu</gco:CharacterString>
+      </gmd:language>
+      <gmd:characterSet>
+        <gmd:MD_CharacterSetCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#MD_CharacterSetCode" codeListValue="utf8" />
+      </gmd:characterSet>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>boundaries</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>biota</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>society</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>health</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>structure</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>transportation</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>utilitiesCommunication</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>intelligenceMilitary</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:topicCategory>
+        <gmd:MD_TopicCategoryCode>farming</gmd:MD_TopicCategoryCode>
+      </gmd:topicCategory>
+      <gmd:extent>
+        <gmd:EX_Extent>
+          <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
+            <gco:CharacterString>Schweiz</gco:CharacterString>
+          </gmd:description>
+          <gmd:geographicElement>
+            <gmd:EX_GeographicDescription>
+              <gmd:geographicIdentifier>
+                <gmd:MD_Identifier>
+                  <gmd:code xsi:type="gmd:PT_FreeText_PropertyType">
+                    <gco:CharacterString />
+                  </gmd:code>
+                </gmd:MD_Identifier>
+              </gmd:geographicIdentifier>
+            </gmd:EX_GeographicDescription>
+          </gmd:geographicElement>
+          <gmd:geographicElement>
+            <gmd:EX_BoundingPolygon>
+              <gmd:extentTypeCode>
+                <gco:Boolean>true</gco:Boolean>
+              </gmd:extentTypeCode>
+              <gmd:polygon>
+                <gml:MultiSurface gml:id="N10285">
+                  <gml:surfaceMember>
+                    <gml:Polygon gml:id="N1028A">
+                      <gml:exterior>
+                        <gml:LinearRing>
+                          <gml:posList />
+                        </gml:LinearRing>
+                      </gml:exterior>
+                    </gml:Polygon>
+                  </gml:surfaceMember>
+                </gml:MultiSurface>
+              </gmd:polygon>
+            </gmd:EX_BoundingPolygon>
+          </gmd:geographicElement>
+          <gmd:geographicElement>
+            <gmd:EX_GeographicBoundingBox>
+              <gmd:extentTypeCode>
+                <gco:Boolean>true</gco:Boolean>
+              </gmd:extentTypeCode>
+              <gmd:westBoundLongitude>
+                <gco:Decimal>3.5294858999497936</gco:Decimal>
+              </gmd:westBoundLongitude>
+              <gmd:eastBoundLongitude>
+                <gco:Decimal>10.558940646069203</gco:Decimal>
+              </gmd:eastBoundLongitude>
+              <gmd:southBoundLatitude>
+                <gco:Decimal>45.761004939883115</gco:Decimal>
+              </gmd:southBoundLatitude>
+              <gmd:northBoundLatitude>
+                <gco:Decimal>47.77212553217851</gco:Decimal>
+              </gmd:northBoundLatitude>
+            </gmd:EX_GeographicBoundingBox>
+          </gmd:geographicElement>
+        </gmd:EX_Extent>
+      </gmd:extent>
+    </che:CHE_MD_DataIdentification>
+  </gmd:identificationInfo>
+  <gmd:distributionInfo xmlns:comp="http://www.geocat.ch/2003/05/gateway/GM03Comprehensive" xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_Distribution>
+      <gmd:transferOptions>
+        <gmd:MD_DigitalTransferOptions>
+          <gmd:onLine>
+            <gmd:CI_OnlineResource>
+              <gmd:linkage xsi:type="gmd:PT_FreeURL_PropertyType">
+                <gmd:URL>https://www.stadt-zuerich.ch/geodaten/download/Liegenschafteninventar_OGD</gmd:URL>
+                <che:PT_FreeURL>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#EN">https://www.stadt-zuerich.ch/geodaten/download/Liegenschafteninventar_OGD</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#FR">https://www.stadt-zuerich.ch/geodaten/download/Liegenschafteninventar_OGD</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#IT">https://www.stadt-zuerich.ch/geodaten/download/Liegenschafteninventar_OGD</che:LocalisedURL>
+                  </che:URLGroup>
+                  <che:URLGroup>
+                    <che:LocalisedURL locale="#DE">https://www.stadt-zuerich.ch/geodaten/download/Liegenschafteninventar_OGD</che:LocalisedURL>
+                  </che:URLGroup>
+                </che:PT_FreeURL>
+              </gmd:linkage>
+              <gmd:protocol>
+                <gco:CharacterString>WWW:LINK-1.0-http--download</gco:CharacterString>
+              </gmd:protocol>
+              <gmd:description xsi:type="gmd:PT_FreeText_PropertyType">
+                <gco:CharacterString>Liegenschafteninventar OGD - Datenbezug</gco:CharacterString>
+                <gmd:PT_FreeText>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#DE">Liegenschafteninventar OGD - Datenbezug</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#FR">Liegenschafteninventar OGD - Distribution des données</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#IT">Liegenschafteninventar OGD - Procacciamento dei dati</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                  <gmd:textGroup>
+                    <gmd:LocalisedCharacterString locale="#EN">Liegenschafteninventar OGD - Order data</gmd:LocalisedCharacterString>
+                  </gmd:textGroup>
+                </gmd:PT_FreeText>
+              </gmd:description>
+              <gmd:function>
+                <gmd:CI_OnLineFunctionCode codeList="http://standards.iso.org/ittf/PubliclyAvailableStandards/ISO_19139_Schemas/resources/codelist/ML_gmxCodelists.xml#CI_OnLineFunctionCode" codeListValue="download" />
+              </gmd:function>
+            </gmd:CI_OnlineResource>
+          </gmd:onLine>
+        </gmd:MD_DigitalTransferOptions>
+      </gmd:transferOptions>
+      <gmd:transferOptions>
+        <gmd:MD_DigitalTransferOptions />
+      </gmd:transferOptions>
+    </gmd:MD_Distribution>
+  </gmd:distributionInfo>
+  <gmd:contentInfo>
+    <che:CHE_MD_FeatureCatalogueDescription gco:isoType="gmd:MD_FeatureCatalogueDescription">
+      <gmd:includedWithDataset>
+        <gco:Boolean>0</gco:Boolean>
+      </gmd:includedWithDataset>
+      <gmd:featureCatalogueCitation>
+        <gmd:CI_Citation>
+          <gmd:title>
+            <gco:CharacterString>Liegenschafteninventar OGD</gco:CharacterString>
+          </gmd:title>
+          <gmd:date>
+            <gmd:CI_Date>
+              <gmd:date>
+                <gco:Date>2025-03-15</gco:Date>
+              </gmd:date>
+              <gmd:dateType>
+                <gmd:CI_DateTypeCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#CI_DateTypeCode" codeListValue="revision" />
+              </gmd:dateType>
+            </gmd:CI_Date>
+          </gmd:date>
+        </gmd:CI_Citation>
+      </gmd:featureCatalogueCitation>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>V_LVZ_GRUNDSTUECK</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Alle Grundstücke, die im Besitz der Stadt Zürich sind.
+Achtung: Ausserhalb des Gemeindegebietes der Stadt Zürich ist nur ein Teil der Grundstücke geometrisch korrekt aufgenommen. Bitte Rücksprache mit LSZ nehmen.
+Die Tabelle mit den Daten des aktuellen Jahres ist jeweils vom 1. Januar bis zum Abschluss der Historisierung des vorangegangenen Jahresendstandes leer. Die Zeitspanne dauert normalerweise von Januar bis März. Während dieser Zeit werden noch Änderungen am Datenbestand vorgenommen. Sobald der Jahresabschluss durchgeführt ist, sind die Daten des aktuellen Jahres sowie der definitive Jahresstand des Vorjahres verfügbar.</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>FLAECHE_RECHTLICH_VEREINBART</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Rechtlich vereinbarte Fläche</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_PLZ</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Postleitzahl (vierstellig)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DATE_MODIFIED</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Datum vorgenommener Änderungen</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BFS_NR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>BFS-Gemeindenummer</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DATE_CREATED</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>technisches Erstellungsdatum, erst seit ca. 2017 genutzt. Ältere Objekte haben keinen Eintrag</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EIGENTUMSVERHAELTNIS_DESC</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Bezeichnung für die farbliche Darstellung des Eigentumsverhältnis. Siehe Attribut EIGENTUEMERVERHAELTNIS_CODE</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>INVENTAR_ID_MANUELL</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Inventarnummer auch als Wirtschaftseinheitsnummer bezeichnet (WE-Nr.)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>VERMOEGENSART_WE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Bezeichnung der Vermögensart:
+- Verwaltungsvermögen
+- Finanzvermögen
+- Stiftung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>IST_HAUPTADRESSE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>NULL = keine Adressangaben vorhanden
+0 = keine Information vorhanden, ob es sich um eine Hauptadresse handelt
+1 = ja, ist die Hauptadresse
+2 = nein, ist eine Nebenadresse</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>FLAECHE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Vom GIS-System berechnete Grundstücksfläche.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_KANTON</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Kantonsbezeichnung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BEZEICHNUNG_WE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Bezeichnung der Wirtschaftseinheit</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GUELTIG_BIS</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Datum der Beendigung des Objekteintrages</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>System-ID</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>UNTERVERMOEGEN_TEILPORTFOLI</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>weitere Unterteilung des Vermögens, Null: kein Untervermögen</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_GEMEINDE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Gemeindename</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_HAUSNR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Hausnummer</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_KREIS_STADTZH</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Stadtkreis</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_ORT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Ortsname</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_QUARTIER_STADTZH</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Stadtquartier</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_STRASSE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Strassenname</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BEZEICHNUNG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Objektbezeichnung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EIGENTUEMERVERTRETER_GRDSTUECK</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Name des Eigentümervertreters des Grundstückes</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EIGENTUEMERVERTRETER_WE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Name des Eigentümervertreters der Wirtschaftseinheit</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Flächengeometrie</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GUELTIG_AB</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Datum ab welchem das Objekt gültig ist</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>HISTORY_JAHR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Angabe des Jahresstandes</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LAGEGENAUIGKEIT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Angabe für interne Verwendung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BUCHUNGSKREIS</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Angabe des Buchungskreises bei LSZ-Objekten</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STATUS</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>1 = aktiv</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STATUS_WE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>1 = aktiv</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EIGENTUMSVERHAELTNIS_CODE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>3 Übriges Verwaltungsvermögen (ÜVV)
+7 Finanzvermögen LSZ
+8 Finanzvermögen LSZ + Privat
+9 Verwaltungsvermögen Werke
+12 Finanzvermögen Wohnsiedlung
+14 Stiftung
+16 Verwaltungsvermögen LSZ (LVV)
+18 Finanzvermögen Baurechtsareale
+23 Verwaltungsvermögen LSZ Wohnsiedlung
+25 Verwaltungsvermögen LSZ Baurechte
+26 Verwaltungsvermögen GSZ
+30 Verwaltungsvermögen TAZ
+34 Verwaltungsvermögen Immo
+51 Verwaltungsvermögen LSZ Einzelwohnliegenschaft
+52 Liegenschaften VV
+53 Baurechte VV
+54 Baurechte FV
+55 Baurechte Gasversorgung
+56 Gewerbe FV
+57 Wohnen FV
+58 Landreserven
+59 Wohnen &amp; Gewerbe (2034)
+60 Gastronomie (2035)
+61 Parkierungsbauten (2036)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>AV_GRUNDSTUECK_NR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Grundstücknummer aus der Amtlichen Vermessung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EGRID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Eidgenössischer Grundstückidentifikator</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BZO_ZONE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Zonenbezeichnung aus der Bau- und Zonenordnung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TYP_GRUNDSTUECK_LVZ</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Typbezeichnung aus Sicht LSZ, CODE</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GRUNDSTUECKTYP</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Typbezeichnung aus Sicht LSZ</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>V_LVZ_GEBAEUDE</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Alle Gebäude, die im Besitz der Stadt Zürich sind.
+Achtung: Ausserhalb des Gemeindegebietes der Stadt Zürich ist nur ein Teil der Gebäudegrundrisse korrekt aufgenommen. Bitte Rücksprache mit LSZ nehmen.
+Die Tabelle mit den Daten des aktuellen Jahres ist jeweils vom 1. Januar bis zum Abschluss der Historisierung des vorangegangenen Jahresendstandes leer. Die Zeitspanne dauert normalerweise von Januar bis März. Während dieser Zeit werden noch Änderungen am Datenbestand vorgenommen. Sobald der Jahresabschluss durchgeführt ist, sind die Daten des aktuellen Jahres sowie der definitive Jahresstand des Vorjahres verfügbar.</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>INVENTAR_ID_MANUELL</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Inventarnummer auch als Wirtschaftseinheitsnummer bezeichnet (WE-Nr.)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>IST_TEIL_VON_LVZ_GEBAEUDE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>NULL = keine Angaben vorhanden
+1 = ja, betrifft nur einen Prozentanteil des Gebäude (mehreren Eigentümervertretern zugeteilt)
+2 = nein, gesamtes Gebäude gehört einem Eigentümervertreter</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GV_NR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Präfix der Gebäudeversicherungsnummer, in der Stadt Zürich das Kurzzeichen des Stadtquartiers (z.B. AA), ausserhalb der Stadt Zürich entspricht dies der BFS-Nr.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_GEMEINDE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Stadtkreis</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_HAUSNR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Hausnummer</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_KANTON</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Kantonsbezeichnung (Kürzel)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_KREIS_STADTZH</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Stadtkreis</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_ORT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Ortsname</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_PLZ</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Postleitzahl (vierstellig)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_QUARTIER_STADTZH</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Stadtquartier</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_STRASSE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Strassenname</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BAUJAHR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Gebäudebaujahr</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BEZEICHNUNG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Objektbezeichnung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BEZEICHNUNG_WE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Bezeichnung der Wirtschaftseinheit</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BFS_NR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>BFS-Gemeindenummer</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DATE_CREATED</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>technisches Erstellungsdatum, erst seit ca. 2017 genutzt. Ältere Objekte haben keinen Eintrag</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DATE_MODIFIED</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Datum vorgenommener Änderungen</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EGID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Eidgenössische Gebäudeidentifikator</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EIGENTUEMERVERTRETER_GEBAEUDE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Name des Eigentümervertreters des Gebäudes</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EIGENTUMSANTEIL</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Prozentualer Eigentumsanteil am Gebäude</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>FLAECHE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Gebäudegrundfläche</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Flächengeometrie</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GVERNR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Gebäudeversicherungsnummer ohne Präfix (z.B. AA)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>IST_HAUPTADRESSE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>NULL = keine Adressangaben vorhanden
+0 = keine Information vorhanden, ob es sich um eine Hauptadresse handelt
+1 = ja, ist die Hauptadresse
+2 = nein, ist eine Nebenadresse</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LAGEGENAUIGKEIT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Angabe für interne Verwendung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>System-ID</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TYP_GEBAEUDE_LVZ</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>LSZ-interne Typenbezeichnung des Gebäudes
+Null: keine Angabe
+0: unbekannt
+1: Wohnen und Gewerbe
+2: Wohnen
+3: Unterricht, Bildung und Forschung
+4: Industriegebäude
+5: Werkstatt- und Gewerbegebäude
+6: Lagergebäude
+7: Büro- und Verwaltungsgebäude
+8: Land- und Forstwirtschaft
+9: Justiz, Polizei, Militär und Sicherheit
+10: Fürsorge und Gesundheit
+11: Kultus
+12: Kultur
+13: Restauration und Hotellerie
+14: Verkehr
+15: Sport- und Freizeitanlage
+16: Energie- und Kommunikationsanlage
+17: Wasserversorgung
+18: Reinigung und Entsorgung
+19: nicht zugewiesen</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>VERMOEGENSART_WE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Bezeichnung der Vermögensart:
+- Verwaltungsvermögen
+- Finanzvermögen
+- Stiftung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EIGENTUEMERVERTRETER_WE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Name des Eigentümervertreters der Wirtschaftseinheit</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EIGENTUMSVERHAELTNIS_CODE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>2 Diverse
+3 Übriges Verwaltungsvermögen (ÜVV)
+4 Übriges Verwaltungsvermögen (ÜVV) + Privat
+5 Finanzvermögen LSZ + ÜVV
+7 Finanzvermögen LSZ
+8 Finanzvermögen LSZ + Privat
+9 Verwaltungsvermögen Werke
+10 Verwaltungsvermögen Werke + Privat
+11 Finanzvermögen LSZ + Werke
+12 Finanzvermögen Wohnsiedlung
+14 Stiftung
+16 Verwaltungsvermögen LSZ (LVV)
+19 Übriges Verwaltungsvermögen (ÜVV) + Werke
+20 Übriges Verwaltungsvermögen (ÜVV) + Stiftungen
+21 Übriges Verwaltungsvermögen (ÜVV) + Wohnsiedlung
+23 Verwaltungsvermögen LSZ Wohnsiedlung
+25 Verwaltungsvermögen LSZ Baurechte
+26 Verwaltungsvermögen GSZ
+27 Verwaltungsvermögen GSZ + Privat
+28 Verwaltungsvermögen GSZ + Werke
+29 Verwaltungsvermögen GSZ + Stiftungen
+30 Verwaltungsvermögen TAZ
+31 Verwaltungsvermögen TAZ+ Privat
+32 Verwaltungsvermögen TAZ+ Werke
+33 Verwaltungsvermögen TAZ+ Stiftungen
+34 Verwaltungsvermögen Immo
+35 Verwaltungsvermögen Immo+ Privat
+36 Verwaltungsvermögen Immo+ Werke
+37 Verwaltungsvermögen Immo+ Stiftungen
+38 Finanzvermögen LSZ + GSZ
+39 Finanzvermögen LSZ + TAZ
+40 Finanzvermögen LSZ + + Immo
+41 Verwaltungsvermögen LSZ Einzelwohnliegenschaft + Finanzvermögen LSZ
+42 Verwaltungsvermögen LSZ Einzelwohnliegenschaft + Immo
+43 Verwaltungsvermögen LSZ Einzelwohnliegenschaft + GSZ
+44 Verwaltungsvermögen LSZ Einzelwohnliegenschaft + TAZ
+45 Verwaltungsvermögen LSZ Einzelwohnliegenschaft + ÜVV
+46 Verwaltungsvermögen LSZ Wohnsiedlung + Finanzvermögen LSZ
+47 Verwaltungsvermögen LSZ Wohnsiedlung + Immo
+48 Verwaltungsvermögen LSZ Wohnsiedlung + GSZ
+49 Verwaltungsvermögen LSZ Wohnsiedlung + TAZ
+50 Verwaltungsvermögen LSZ Wohnsiedlung + ÜVV
+51 Verwaltungsvermögen LSZ Einzelwohnliegenschaft
+52 Liegenschaften VV
+53 Baurechte VV
+54 Baurechte FV
+55 Baurechte Gasversorgung
+56 Gewerbe FV
+57 Wohnen FV
+58 Landreserven
+59 Wohnen &amp; Gewerbe (2034)
+60 Gastronomie (2035)
+61 Parkierungsbauten (2036)
+62 Baurechte Gasversorgung + ÜVV
+63 Gastronomie (2035) + ÜVV
+64 Parkierungsbauten (2036) + ÜVV
+65 Baurechte Gasversorgung + Privat
+66 Gastronomie (2035) + Privat
+67 Parkierungsbauten (2036) + Privat
+68 Baurechte Gasversorgung + Werke
+69 Gastronomie (2035) + Werke
+70 Parkierungsbauten (2036) + Werke
+71 Liegenschaften VV + Privat
+72 Baurechte Gasversorgung + Werke + Privat
+73 Gastronomie (2035) + Werke + Privat
+74 Parkierungsbauten (2036) + Werke + Privat
+75 Wohnen &amp; Gewerbe + Privat
+76 Baurechte Gasversorgung + GSZ
+77 Gastronomie (2035) + GSZ
+78 Parkierungsbauten (2036) + GSZ
+79 Baurechte Gasversorgung + TAZ
+80 Gastronomie (2035) + TAZ
+81 Parkierungsbauten (2036) + TAZ
+82 Baurechte Gasversorgung + IMMO
+83 Gastronomie (2035) + IMMO
+84 Parkierungsbauten (2036) + IMMO
+85 Wohnen &amp; Gewerbe + Baurechte Gasversorgung
+86 Wohnen &amp; Gewerbe + Gastronomie (2035)
+87 Wohnen &amp; Gewerbe + Parkierungsbauten (2036)
+88 Wohnen &amp; Gewerbe + Baurechte Gasversorgung
+89 Wohnen &amp; Gewerbe + Gastronomie (2035)
+90 Wohnen &amp; Gewerbe + Parkierungsbauten (2036)
+91 Wohnen &amp; Gewerbe + IMMO
+92 Wohnen &amp; Gewerbe + GSZ
+93 Wohnen &amp; Gewerbe + TAZ
+94 Wohnen &amp; Gewerbe + ÜVV
+95 Wohnen &amp; Gewerbe + Finanzvermögen LSZ
+96 Gastronomie &amp; Finanzvermögen LSZ
+97 Parkierungsbauten + Finanzvermögen LSZ</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EIGENTUMSVERHAELTNIS_DESC</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Bezeichnung für die farbliche Darstellung des Eigentumsverhältnis. Siehe Attribut EIGENTUEMERVERHAELTNIS_CODE</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEBAEUDEEINGANGSNUMMER</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Gebäudeeingangsnummer</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GUELTIG_AB</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Datum ab welchem das Objekt gültig ist</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GUELTIG_BIS</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Datum der Beendigung des Objekteintrages</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>HISTORY_JAHR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Angabe des Jahresstandes</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LVZ_GRUNDSTUECK_REF</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Interne Referenz auf die Katasternummer des Grundstückes</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BUCHUNGSKREIS</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Angabe des Buchungskreises bei LSZ-Objekten</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STATUS</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>1 = aktiv</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STATUS_WE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>1 = aktiv</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>UNTERVERMOEGEN_TEILPORTFOLI</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>weitere Unterteilung des Vermögens, Null: kein Untervermögen</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEBAEUDETYP</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>LSZ-interne Typenbezeichnung des Gebäudes
+Null: keine Angabe
+0: unbekannt
+1: Wohnen und Gewerbe
+2: Wohnen
+3: Unterricht, Bildung und Forschung
+4: Industriegebäude
+5: Werkstatt- und Gewerbegebäude
+6: Lagergebäude
+7: Büro- und Verwaltungsgebäude
+8: Land- und Forstwirtschaft
+9: Justiz, Polizei, Militär und Sicherheit
+10: Fürsorge und Gesundheit
+11: Kultus
+12: Kultur
+13: Restauration und Hotellerie
+14: Verkehr
+15: Sport- und Freizeitanlage
+16: Energie- und Kommunikationsanlage
+17: Wasserversorgung
+18: Reinigung und Entsorgung
+19: nicht zugewiesen</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>V_LVZ_GEBAEUDE_VORJAHR</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Alle Gebäude, die im Besitz der Stadt Zürich sind. Stand der Daten entspricht dem Vorjahr.
+Achtung: Ausserhalb des Gemeindegebietes der Stadt Zürich ist nur ein Teil der Gebäudegrundrisse korrekt aufgenommen. Bitte Rücksprache mit LSZ nehmen.</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EIGENTUMSVERHAELTNIS_CODE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>2 Diverse 
+3 Übriges Verwaltungsvermögen (ÜVV) 
+4 Übriges Verwaltungsvermögen (ÜVV) + Privat 
+5 Finanzvermögen LSZ + ÜVV 
+7 Finanzvermögen LSZ 
+8 Finanzvermögen LSZ + Privat 
+9 Verwaltungsvermögen Werke 
+10 Verwaltungsvermögen Werke + Privat 
+11 Finanzvermögen LSZ + Werke 
+12 Finanzvermögen Wohnsiedlung 
+14 Stiftung 
+16 Verwaltungsvermögen LSZ (LVV) 
+19 Übriges Verwaltungsvermögen (ÜVV) + Werke 
+20 Übriges Verwaltungsvermögen (ÜVV) + Stiftungen 
+21 Übriges Verwaltungsvermögen (ÜVV) + Wohnsiedlung 
+23 Verwaltungsvermögen LSZ Wohnsiedlung 
+25 Verwaltungsvermögen LSZ Baurechte 
+26 Verwaltungsvermögen GSZ 
+27 Verwaltungsvermögen GSZ + Privat 
+28 Verwaltungsvermögen GSZ + Werke 
+29 Verwaltungsvermögen GSZ + Stiftungen 
+30 Verwaltungsvermögen TAZ 
+31 Verwaltungsvermögen TAZ + Privat 
+32 Verwaltungsvermögen TAZ + Werke 
+33 Verwaltungsvermögen TAZ + Stiftungen 
+34 Verwaltungsvermögen Immo 
+35 Verwaltungsvermögen Immo + Privat 
+36 Verwaltungsvermögen Immo + Werke 
+37 Verwaltungsvermögen Immo + Stiftungen 
+38 Finanzvermögen LSZ + GSZ 
+39 Finanzvermögen LSZ + TAZ 
+40 Finanzvermögen LSZ + Immo 
+41 Verwaltungsvermögen LSZ Einzelwohnliegenschaft + Finanzvermögen LSZ 
+42 Verwaltungsvermögen LSZ Einzelwohnliegenschaft + Immo 
+43 Verwaltungsvermögen LSZ Einzelwohnliegenschaft + GSZ 
+44 Verwaltungsvermögen LSZ Einzelwohnliegenschaft + TAZ 
+45 Verwaltungsvermögen LSZ Einzelwohnliegenschaft + ÜVV 
+46 Verwaltungsvermögen LSZ Wohnsiedlung + Finanzvermögen LSZ 
+47 Verwaltungsvermögen LSZ Wohnsiedlung + Immo 
+48 Verwaltungsvermögen LSZ Wohnsiedlung + GSZ 
+49 Verwaltungsvermögen LSZ Wohnsiedlung + TAZ 
+50 Verwaltungsvermögen LSZ Wohnsiedlung + ÜVV 
+51 Verwaltungsvermögen LSZ Einzelwohnliegenschaft 
+52 Liegenschaften VV 
+53 Baurechte VV 
+54 Baurechte FV 
+55 Baurechte Gasversorgung 
+56 Gewerbe FV 
+57 Wohnen FV 
+58 Landreserven 
+59 Wohnen &amp; Gewerbe (2034) 
+60 Gastronomie (2035) 
+61 Parkierungsbauten (2036) 
+62 Baurechte Gasversorgung + ÜVV 
+63 Gastronomie (2035) + ÜVV 
+64 Parkierungsbauten (2036) + ÜVV 
+65 Baurechte Gasversorgung + Privat 
+66 Gastronomie (2035) + Privat 
+67 Parkierungsbauten (2036) + Privat 
+68 Baurechte Gasversorgung + Werke 
+69 Gastronomie (2035) + Werke 
+70 Parkierungsbauten (2036) + Werke 
+71 Liegenschaften VV + Privat 
+72 Baurechte Gasversorgung + Werke + Privat 
+73 Gastronomie (2035) + Werke + Privat 
+74 Parkierungsbauten (2036) + Werke + Privat 
+75 Wohnen &amp; Gewerbe + Privat 
+76 Baurechte Gasversorgung + GSZ 
+77 Gastronomie (2035) + GSZ 
+78 Parkierungsbauten (2036) + GSZ 
+79 Baurechte Gasversorgung + TAZ 
+80 Gastronomie (2035) + TAZ 
+81 Parkierungsbauten (2036) + TAZ 
+82 Baurechte Gasversorgung + IMMO 
+83 Gastronomie (2035) + IMMO 
+84 Parkierungsbauten (2036) + IMMO 
+85 Wohnen &amp; Gewerbe + Baurechte Gasversorgung 
+86 Wohnen &amp; Gewerbe + Gastronomie (2035) 
+87 Wohnen &amp; Gewerbe + Parkierungsbauten (2036) 
+88 Wohnen &amp; Gewerbe + Baurechte Gasversorgung 
+89 Wohnen &amp; Gewerbe + Gastronomie (2035) 
+90 Wohnen &amp; Gewerbe + Parkierungsbauten (2036) 
+91 Wohnen &amp; Gewerbe + IMMO 
+92 Wohnen &amp; Gewerbe + GSZ 
+93 Wohnen &amp; Gewerbe + TAZ 
+94 Wohnen &amp; Gewerbe + ÜVV 
+95 Wohnen &amp; Gewerbe + Finanzvermögen LSZ 
+96 Gastronomie &amp; Finanzvermögen LSZ 
+97 Parkierungsbauten + Finanzvermögen LSZ</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>UNTERVERMOEGEN_TEILPORTFOLI</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>weitere Unterteilung des Vermögens, Null: kein Untervermögen</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_KREIS_STADTZH</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Stadtkreis</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_QUARTIER_STADTZH</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Stadtquartier</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BEZEICHNUNG_WE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Bezeichnung der Wirtschaftseinheit</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DATE_MODIFIED</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Datum vorgenommener Änderungen</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EIGENTUEMERVERTRETER_WE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Name des Eigentümervertreters der Wirtschaftseinheit</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EIGENTUMSVERHAELTNIS_DESC</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Bezeichnung für die farbliche Darstellung des Eigentumsverhältnis. Siehe Attribut EIGENTUEMERVERHAELTNIS_CODE</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Flächengeometrie</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GUELTIG_BIS</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Datum der Beendigung des Objekteintrages</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>INVENTAR_ID_MANUELL</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Inventarnummer auch als Wirtschaftseinheitsnummer bezeichnet (WE-Nr.)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LAGEGENAUIGKEIT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Angabe für interne Verwendung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>System-ID</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STATUS_WE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>1 = aktiv</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>VERMOEGENSART_WE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Bezeichnung der Vermögensart:
+- Verwaltungsvermögen
+- Finanzvermögen
+- Stiftung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_GEMEINDE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Gemeindename</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_HAUSNR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Hausnummer</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_KANTON</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Kantonsbezeichnung (Kürzel)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_ORT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Ortsname</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_PLZ</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Postleitzahl (vierstellig)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_STRASSE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Strassenname</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BAUJAHR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Gebäudebaujahr</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BEZEICHNUNG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Objektbezeichnung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BFS_NR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>BFS-Gemeindenummer</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DATE_CREATED</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>technisches Erstellungsdatum, erst seit ca. 2017 genutzt. Ältere Objekte haben keinen Eintrag</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EGID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Eidgenössische Gebäudeidentifikator</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EIGENTUEMERVERTRETER_GEBAEUDE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Name des Eigentümervertreters des Gebäudes</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EIGENTUMSANTEIL</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Prozentualer Eigentumsanteil am Gebäude</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>FLAECHE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Gebäudegrundfläche</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEBAEUDEEINGANGSNUMMER</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Gebäudeeingangsnummer</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GUELTIG_AB</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Datum ab welchem das Objekt gültig ist</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GVERNR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Gebäudeversicherungsnummer ohne Präfix (z.B. AA)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GV_NR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Präfix der Gebäudeversicherungsnummer, in der Stadt Zürich das Kurzzeichen des Stadtquartiers (z.B. AA), ausserhalb der Stadt Zürich entspricht dies der BFS-Nr.</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>HISTORY_JAHR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Angabe des Jahresstandes</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>IST_HAUPTADRESSE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>NULL = keine Adressangaben vorhanden
+0 = keine Information vorhanden, ob es sich um eine Hauptadresse handelt
+1 = ja, ist die Hauptadresse
+2 = nein, ist eine Nebenadresse</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>IST_TEIL_VON_LVZ_GEBAEUDE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>NULL = keine Angaben vorhanden
+1 = ja, betrifft nur einen Prozentanteil des Gebäude (mehreren Eigentümervertretern zugeteilt)
+2 = nein, gesamtes Gebäude gehört einem Eigentümervertreter</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LVZ_GRUNDSTUECK_REF</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Interne Referenz auf die Katasternummer des Grundstückes</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BUCHUNGSKREIS</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Angabe des Buchungskreises bei LSZ-Objekten</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STATUS</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>1 = aktiv</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TYP_GEBAEUDE_LVZ</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>LSZ-interne Typenbezeichnung des Gebäudes
+Null: keine Angabe
+0: unbekannt
+1: Wohnen und Gewerbe
+2: Wohnen
+3: Unterricht, Bildung und Forschung
+4: Industriegebäude
+5: Werkstatt- und Gewerbegebäude
+6: Lagergebäude
+7: Büro- und Verwaltungsgebäude
+8: Land- und Forstwirtschaft
+9: Justiz, Polizei, Militär und Sicherheit
+10: Fürsorge und Gesundheit
+11: Kultus
+12: Kultur
+13: Restauration und Hotellerie
+14: Verkehr 
+15: Sport- und Freizeitanlage
+16: Energie- und Kommunikationsanlage
+17: Wasserversorgung
+18: Reinigung und Entsorgung
+19: nicht zugewiesen</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEBAEUDETYP</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>LSZ-interne Typenbezeichnung des Gebäudes
+Null: keine Angabe
+0: unbekannt
+1: Wohnen und Gewerbe
+2: Wohnen
+3: Unterricht, Bildung und Forschung
+4: Industriegebäude
+5: Werkstatt- und Gewerbegebäude
+6: Lagergebäude
+7: Büro- und Verwaltungsgebäude
+8: Land- und Forstwirtschaft
+9: Justiz, Polizei, Militär und Sicherheit
+10: Fürsorge und Gesundheit
+11: Kultus
+12: Kultur
+13: Restauration und Hotellerie
+14: Verkehr
+15: Sport- und Freizeitanlage
+16: Energie- und Kommunikationsanlage
+17: Wasserversorgung
+18: Reinigung und Entsorgung
+19: nicht zugewiesen</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>V_LVZ_GRUNDSTUECK_VORJAHR</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Alle Grundstücke, die im Besitz der Stadt Zürich sind. Der Stand der Daten entspricht dem Vorjahr.
+Achtung: Ausserhalb des Gemeindegebietes der Stadt Zürich ist nur ein Teil der Grundstücke geometrisch korrekt aufgenommen. Bitte Rücksprache mit LSZ nehmen.</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>FLAECHE_RECHTLICH_VEREINBART</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Rechtlich vereinbarte Fläche</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DATE_CREATED</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>technisches Erstellungsdatum, erst seit ca. 2017 genutzt. Ältere Objekte haben keinen Eintrag</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Flächengeometrie</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GUELTIG_BIS</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Datum der Beendigung des Objekteintrages</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>INVENTAR_ID_MANUELL</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Inventarnummer auch als Wirtschaftseinheitsnummer bezeichnet (WE-Nr.)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>IST_HAUPTADRESSE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>NULL = keine Adressangaben vorhanden 
+0 = keine Information vorhanden, ob es sich um eine Hauptadresse handelt 
+1 = ja, ist die Hauptadresse 
+2 = nein, ist eine Nebenadresse</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>VERMOEGENSART_WE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Bezeichnung der Vermögensart: 
+- Verwaltungsvermögen 
+- Finanzvermögen 
+- Stiftung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_HAUSNR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Hausnummer</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_ORT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Ortsname</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_STRASSE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Strassenname</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BEZEICHNUNG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Objektbezeichnung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EIGENTUEMERVERTRETER_WE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Name des Eigentümervertreters der Wirtschaftseinheit</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EIGENTUMSVERHAELTNIS_DESC</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Bezeichnung für die farbliche Darstellung des Eigentumsverhältnis. Siehe Attribut EIGENTUEMERVERHAELTNIS_CODE</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>FLAECHE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Grundstücksfläche</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GUELTIG_AB</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Datum ab welchem das Objekt gültig ist</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>HISTORY_JAHR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Angabe des Jahresstandes</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>LAGEGENAUIGKEIT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Angabe für interne Verwendung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>System-ID</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BUCHUNGSKREIS</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Angabe des Buchungskreises bei LSZ-Objekten</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STATUS</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>1 = aktiv</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STATUS_WE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>1 = aktiv</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>UNTERVERMOEGEN_TEILPORTFOLIO</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>weitere Unterteilung des Vermögens, Null: kein Untervermögen</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_GEMEINDE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Gemeindename</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_KANTON</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Kantonsbezeichnung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_KREIS_STADTZH</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Stadtkreis</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_PLZ</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Postleitzahl (vierstellig)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_QUARTIER_STADTZH</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Stadtquartier</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BEZEICHNUNG_WE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Bezeichnung der Wirtschaftseinheit</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BFS_NR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>BFS-Gemeindenummer</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DATE_MODIFIED</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Datum vorgenommener Änderungen</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EIGENTUEMERVERTRETER_GRDSTUECK</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Name des Eigentümervertreters des Grundstückes</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EIGENTUMSVERHAELTNIS_CODE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>3 Übriges Verwaltungsvermögen (ÜVV)
+7 Finanzvermögen LSZ
+8 Finanzvermögen LSZ + Privat
+9 Verwaltungsvermögen Werke
+12 Finanzvermögen Wohnsiedlung
+14 Stiftung
+16 Verwaltungsvermögen LSZ (LVV)
+18 Finanzvermögen Baurechtsareale
+23 Verwaltungsvermögen LSZ Wohnsiedlung
+25 Verwaltungsvermögen LSZ Baurechte
+26 Verwaltungsvermögen GSZ
+30 Verwaltungsvermögen TAZ
+34 Verwaltungsvermögen Immo
+51 Verwaltungsvermögen LSZ Einzelwohnliegenschaft
+52 Liegenschaften VV
+53 Baurechte VV
+54 Baurechte FV
+55 Baurechte Gasversorgung
+56 Gewerbe FV
+57 Wohnen FV
+58 Landreserven
+59 Wohnen &amp; Gewerbe (2034)
+60 Gastronomie (2035)
+61 Parkierungsbauten (2036)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EGRID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Eidgenössischer Grundstückidentifikator</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>TYP_GRUNDSTUECK_LVZ</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Typbezeichnung aus Sicht LSZ, CODE</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GRUNDSTUECKTYP</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Typbezeichnung aus Sicht LSZ</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>AV_GRUNDSTUECK_NR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Grundstücknummer aus der Amtlichen Vermessung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>V_LVZ_RECHT</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Rechte der Stadt Zürich, die sich auf Grundstücke befinden, die nicht im Besitz der Stadt Zürich sind.
+Achtung: Ausserhalb des Gemeindegebietes der Stadt Zürich ist nur ein Teil der Rechte geometrisch korrekt aufgenommen. Bitte Rücksprache mit LSZ nehmen.
+Die Tabelle mit den Daten des aktuellen Jahres ist jeweils vom 1. Januar bis zum Abschluss der Historisierung des vorangegangenen Jahresendstandes leer. Die Zeitspanne dauert normalerweise von Januar bis März. Während dieser Zeit werden noch Änderungen am Datenbestand vorgenommen. Sobald der Jahresabschluss durchgeführt ist, sind die Daten des aktuellen Jahres sowie der definitive Jahresstand des Vorjahres verfügbar.</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DATE_CREATED</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>technisches Erstellungsdatum, erst seit ca. 2017 genutzt. Ältere Objekte haben keinen Eintrag</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BEZEICHNUNG_WE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Bezeichnung der Wirtschaftseinheit</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EIGENTUEMERVERTRETER_WE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Name des Eigentümervertreters der Wirtschaftseinheit</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>INVENTAR_ID_MANUELL</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Inventarnummer auch als Wirtschaftseinheitsnummer bezeichnet (WE-Nr.)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>IST_HAUPTADRESSE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>NULL = keine Adressangaben vorhanden
+0 = keine Information vorhanden, ob es sich um eine Hauptadresse handelt
+1 = ja, ist die Hauptadresse
+2 = nein, ist eine Nebenadresse</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>VERMOEGENSART_WE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Bezeichnung der Vermögensart:
+- Verwaltungsvermögen
+- Finanzvermögen
+- Stiftung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_GEMEINDE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Gemeindename</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_HAUSNR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Hausnummer</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_KANTON</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Kantonsbezeichnung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_ORT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Ortsname</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_STRASSE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Strassenname</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BEZEICHNUNG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Objektbezeichnung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Punktgeometrie</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>HISTORY_JAHR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Angabe des Jahresstandes</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>System-ID</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STATUS_WE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>1 = aktiv</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_KREIS_STADTZH</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Stadtkreis</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_PLZ</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Postleitzahl (vierstellig)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_QUARTIER_STADTZH</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Stadtquartier</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BFS_NR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>BFS-Gemeindenummer</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DATE_MODIFIED</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Datum vorgenommener Änderungen</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GUELTIG_AB</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Datum ab welchem das Objekt gültig ist</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GUELTIG_BIS</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Datum der Beendigung des Objekteintrages</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BUCHUNGSKREIS</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Angabe des Buchungskreises bei LSZ-Objekten</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STATUS</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>1 = aktiv</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>UNTERVERMOEGEN_TEILPORTFOLI</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>weitere Unterteilung des Vermögens, Null: kein Untervermögen</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:class>
+        <che:CHE_MD_Class>
+          <che:name>
+            <gco:CharacterString>V_LVZ_RECHT_VORJAHR</gco:CharacterString>
+          </che:name>
+          <che:description>
+            <gco:CharacterString>Rechte der Stadt Zürich, die sich auf Grundstücke befinden, die nicht im Besitz der Stadt Zürich sind. Der Stand der Daten entspricht dem Vorjahr.
+Achtung: Ausserhalb des Gemeindegebietes der Stadt Zürich ist nur ein Teil der Rechte geometrisch korrekt aufgenommen. Bitte Rücksprache mit LSZ nehmen.</gco:CharacterString>
+          </che:description>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_HAUSNR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Hausnummer</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_KREIS_STADTZH</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Stadtkreis</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_QUARTIER_STADTZH</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Stadtquartier</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BEZEICHNUNG</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Objektbezeichnung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DATE_CREATED</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>technisches Erstellungsdatum, erst seit ca. 2017 genutzt. Ältere Objekte haben keinen Eintrag</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GEOMETRIE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Punktgeometrie</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>HISTORY_JAHR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Angabe des Jahresstandes</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STATUS_WE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>1 = aktiv</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_GEMEINDE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Gemeindename</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_KANTON</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Kantonsbezeichnung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_ORT</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Ortsname</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_PLZ</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Postleitzahl (vierstellig)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>ADR_STRASSE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Strassenname</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BEZEICHNUNG_WE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Bezeichnung der Wirtschaftseinheit</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BFS_NR</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>BFS-Gemeindenummer</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>DATE_MODIFIED</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Datum vorgenommener Änderungen</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>EIGENTUEMERVERTRETER_WE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Name des Eigentümervertreters der Wirtschaftseinheit</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GUELTIG_AB</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Datum ab welchem das Objekt gültig ist</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>GUELTIG_BIS</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Datum der Beendigung des Objekteintrages</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>INVENTAR_ID_MANUELL</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Inventarnummer auch als Wirtschaftseinheitsnummer bezeichnet (WE-Nr.)</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>OBJECTID</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>System-ID</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>BUCHUNGSKREIS</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Angabe des Buchungskreises bei LSZ-Objekten</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>STATUS</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>1 = aktiv</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>UNTERVERMOEGEN_TEILPORTFOLIO</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>weitere Unterteilung des Vermögens, Null: kein Untervermögen</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+          <che:attribute>
+            <che:name>
+              <gco:CharacterString>VERMOEGENSART_WE</gco:CharacterString>
+            </che:name>
+            <che:description>
+              <gco:CharacterString>Bezeichnung der Vermögensart: 
+- Verwaltungsvermögen 
+- Finanzvermögen 
+- Stiftung</gco:CharacterString>
+            </che:description>
+          </che:attribute>
+        </che:CHE_MD_Class>
+      </che:class>
+      <che:modelType>
+        <che:CHE_MD_modelTypeCode codeList="" codeListValue="FeatureDescription" />
+      </che:modelType>
+    </che:CHE_MD_FeatureCatalogueDescription>
+  </gmd:contentInfo>
+  <gmd:distributionInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:MD_Distribution>
+      <gmd:distributionFormat>
+        <gmd:MD_Format>
+          <gmd:name>
+            <gco:CharacterString>ESRI Shape (.shp)</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>-</gco:CharacterString>
+          </gmd:version>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+      <gmd:distributionFormat>
+        <gmd:MD_Format>
+          <gmd:name>
+            <gco:CharacterString>Comma Separated Values (.csv)</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>-</gco:CharacterString>
+          </gmd:version>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+      <gmd:distributionFormat>
+        <gmd:MD_Format>
+          <gmd:name>
+            <gco:CharacterString>GeoJSON (.json)</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>-</gco:CharacterString>
+          </gmd:version>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+      <gmd:distributionFormat>
+        <gmd:MD_Format>
+          <gmd:name>
+            <gco:CharacterString>Geopackage (.gpkg)</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>-</gco:CharacterString>
+          </gmd:version>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+      <gmd:distributionFormat>
+        <gmd:MD_Format>
+          <gmd:name>
+            <gco:CharacterString>DXF (.dxf)</gco:CharacterString>
+          </gmd:name>
+          <gmd:version>
+            <gco:CharacterString>-</gco:CharacterString>
+          </gmd:version>
+        </gmd:MD_Format>
+      </gmd:distributionFormat>
+    </gmd:MD_Distribution>
+  </gmd:distributionInfo>
+  <gmd:dataQualityInfo xmlns:xalan="http://xml.apache.org/xalan">
+    <gmd:DQ_DataQuality>
+      <gmd:scope>
+        <gmd:DQ_Scope>
+          <gmd:level>
+            <gmd:MD_ScopeCode codeList="http://www.isotc211.org/2005/resources/Codelist/ML_gmxCodelists.xml#MD_ScopeCode" codeListValue="dataset" />
+          </gmd:level>
+        </gmd:DQ_Scope>
+      </gmd:scope>
+      <gmd:lineage>
+        <gmd:LI_Lineage />
+      </gmd:lineage>
+    </gmd:DQ_DataQuality>
+  </gmd:dataQualityInfo>
+</che:CHE_MD_Metadata>
+

@@ -1,0 +1,52 @@
+{
+   "title": "Fertilitätsrate nach Jahr und Alter der Mutter",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bev_fertilitaet_jahr_alterm_od411c",
+   "abstract": "Fertilitätsraten nach Jahr und Alter der Mutter.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Fertilitätsrate\n\nDie altersspezifische Fertilitätsrate beschreibt das Verhältnis der Anzahl Geburten von Müttern eines Alters zu der Gesamtzahl Frauen der Bevölkerung im entsprechenden Alter. Sie wird oft in Promille angegeben und entspricht dann der durchschnittlichen Anzahl Geburten pro 1000 Frauen eines bestimmten Alters.\n\nGeburten der Jahre 1894, 1900 und 1910 nach Alter der Mutter\n\nBei den Geburtenzahlen der Jahr 1894, 1900 und 1910 nach Alter der Mutter waren bloss Mittelwerte über mehrere Jahre verfügbar (1894: Mittelwert der Geburten 1893 bis 1895; 1900: Mittelwert der Geburten 1899 bis 1902; 1910: Mittelwert der Geburten 1909 bis 1912). Quelle: Statistisches Jahrbuch der Stadt Zürich, Jahre 1912 und 1913. Die Geburtenzahlen dieser Jahre nach Alter der Mutter wurden auf ganze Zahlen gerunden; die Fertilitätsrate wurde jedoch noch vor dem Runden berechnet.\n\nLebendgeborene\n\nGeborene gelten als lebend geboren, wenn sie nach völligem Austritt aus dem Mutterleib spontan atmen und Herzschläge aufweisen; andernfalls gelten sie als tot geboren, sofern ihr Geburtsgewicht mindestens 500 Gramm oder ihr Alter mindestens 22 vollendete Schwangerschaftswochen beträgt. Hier werden bei den Geburten nur Lebendgeborene ausgewiesen.\n\nFehlende Werte\n\nEs sind nicht in allen Jahren Daten verfügbar. Vor allem die Anzahl 15- bis 49-jähriger Frauen ist nicht für alle Jahre vorhanden.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Fertilitätsrate nach Jahr und Alter der Mutter",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr (Integer)"
+               },
+               {
+                  "name": "Alter der Mutter (technisch: AlterVMutterKlasseCd)",
+                  "description": "Alter der Mutter (0 = ohne Altersklasse, 1 = 15 bis 19, 2 = 25 bis 29, 3 = 30 bis 34, 4 = 35 bis 39, 5 = 40 bis 49)"
+               },
+               {
+                  "name": "Alter der Mutter (technisch: AlterVMutterKlasseLang)",
+                  "description": "Alter der Mutter (ohne Altersklasse, 15 bis 19, 25 bis 29, 30 bis 34, 35 bis 39, 40 bis 49)"
+               },
+               {
+                  "name": "Datenquelle der Geburten (technisch: Datenquelle_Geburten)",
+                  "description": "Datenquelle der Geburtendaten"
+               },
+               {
+                  "name": "Datenquelle des Bestandes (technisch: Datenquelle_Bestand)",
+                  "description": "Datenquelle der Bestandesdaten (15- bis 49-jährige Frauen)"
+               },
+               {
+                  "name": "Anzahl Lebendgeborene (technisch: AnzGebuWir)",
+                  "description": "Anzahl Lebendgeborene (Integer)"
+               },
+               {
+                  "name": "Anzahl 15- bis 49-jährigen Frauen (technisch: Frauen15bis49_noDM)",
+                  "description": "Anzahl 15- bis 49-jährigen Frauen (Integer, im Bestand im Jahresende)"
+               },
+               {
+                  "name": "Fertilitätsrate (technisch: Fertilitaetsrate_noDM)",
+                  "description": "Fertilitätsrate in Promille pro Jahr (Numeric)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-05-15"
+}

@@ -1,0 +1,70 @@
+{
+   "title": "Öffentlich zugängliche Strassenparkplätze OGD",
+   "keywords": [
+      "Blaue Zone",
+      "Parkplätze",
+      "Parkplatz",
+      "Parkierung",
+      "Auto",
+      "Fahrzeug",
+      "Fahrzeuge"
+   ],
+   "metadata_date": "2024-12-13T09:52:26",
+   "updateFrequency": "asNeeded",
+   "purpose": "Zweck: Parkraumplanung, Statistisches Jahrbuch und statistisches Informationsportal, Controlling \"Stadtverkehr 2025\", Bilanzierung des Historischen Parkplatzkompromisses, allgemeine Planungsgrundlage",
+   "abstract": "Der Datensatz umfasst die öffentlich zugänglichen Strassenparkplätze auf dem Gebiet der Stadt Zürich im Jahr 2021. Neben der Lage von Parkplätzen sind weitere Attribute verfügbar (maximale Parkierungsdauer, Parkplatztyp, Gebührenpflicht). Die hier veröffentlichten Daten zeigen den Datenstand per Ende 2021 und werden nicht mehr aktualisiert.\n\n \n\nBitte beachten:\n\n- Die Daten zeigen nicht das aktuelle Parkplatzangebot.\n\n- Das temporäre Wegfallen von Parkplätzen wegen Baustellen oder Ähnlichem ist nicht berücksichtigt.\n\n- Bei Parkstreifen, also längsmarkierten Parkplätzen ohne einzelne markierte Parkplätze (betrifft Blaue Zone und weiss markierte Parkplätze) wird die effektive Belegung abgebildet resp. möglichst realitätsnah abgeschätzt.\n\n- Die Daten enthalten keine Informationen darüber, ob ein Parkplatz frei oder belegt ist.\n\n- Es besteht keine Garantie, dass die aufgeführten Parkplätze zu jedem Zeitpunkt nutzbar und zugänglich sind.",
+   "identificationDate": "2021-12-31",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Tiefbauamt",
+   "contactPerson": "Robin Loop",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Oeffentlich_zugaengliche_Strassenparkplaetze_OGD",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "VIEW_PP_OGD",
+            "description": "letzter veröffentlichter Jahresstand",
+            "attributes": [
+               {
+                  "name": "ID1",
+                  "description": null
+               },
+               {
+                  "name": "PARKDAUER",
+                  "description": "Zugelassene Parkdauer in Minuten"
+               },
+               {
+                  "name": "ART",
+                  "description": "Parkplatzart"
+               },
+               {
+                  "name": "ID_ART",
+                  "description": null
+               },
+               {
+                  "name": "GEBUEHRENPFLICHTIG",
+                  "description": "1: gebührenpflichtig\n\n0: nicht gebührenpflichtig"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         }
+      ]
+   }
+}

@@ -1,0 +1,210 @@
+{
+   "title": "Erlaubte Fahrtrichtungen",
+   "keywords": [
+      "Einbahnen"
+   ],
+   "metadata_date": "2024-01-12T07:22:21",
+   "updateFrequency": "continual",
+   "purpose": "Erlaubte Fahrtrichtung in der Stadt Zürich (Einbahnen)\n\n\n\nDer Datensatz enthält alle Strassen der Stadt Zürich im Einbahnregime. Falls vorhanden, gibt es die Angabe, seit wann das Einbahnregime rechtskräftig ist und wann es umgesetzt (signalisiert/markiert) wurde.\n\nBei Einbahnen ersichtlich: Ausnahmen (falls erfasst)",
+   "abstract": "Erlaubte Fahrtrichtung in der Stadt Zürich (Einbahnen)\n\n\n\nDer Datensatz enthält alle Strassen der Stadt Zürich im Einbahnregime. Falls vorhanden, gibt es die Angabe, seit wann das Einbahnregime rechtskräftig ist und wann es umgesetzt (signalisiert/markiert) wurde.\n\nBei Einbahnen ersichtlich: Ausnahmen (falls erfasst)",
+   "identificationDate": "2023-02-07",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Sicherheitsdepartement - Dienstabteilung Verkehr",
+   "contactPerson": "Robin Loop",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Erlaubte_Fahrtrichtungen",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "VIEW_GS_EINBAHN_ANPASSUNGEN",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ID",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": null
+               },
+               {
+                  "name": "EINBAHNREGIME",
+                  "description": null
+               },
+               {
+                  "name": "EINBAHNREGIME_TECHNICAL",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSKRAEFTIG_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "PUBLIZIERT_VSI_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "VIEW_GS_EINBAHN_ANPASSUNGEN_E",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ID",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": null
+               },
+               {
+                  "name": "MESSWERT_VON",
+                  "description": null
+               },
+               {
+                  "name": "MESSWERT_BIS",
+                  "description": null
+               },
+               {
+                  "name": "EINBAHNREGIME",
+                  "description": null
+               },
+               {
+                  "name": "EINBAHNREGIME_TECHNICAL",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSKRAEFTIG_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "PUBLIZIERT_VSI_DATUM",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "VIEW_GEOSERVER_EINBAHN_IST",
+            "description": "Liniengeometrien. Fahrtrichtung gelten in Digitalisierungsrichtung.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ID",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": null
+               },
+               {
+                  "name": "EINBAHNREGIME",
+                  "description": null
+               },
+               {
+                  "name": "EINBAHNREGIME_TECHNICAL",
+                  "description": null
+               },
+               {
+                  "name": "UMGESETZT_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSKRAEFTIG_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "PUBLIZIERT_VSI_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "AUSNAHMEN_EINBAHN",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         },
+         {
+            "name": "VIEW_GEOSERVER_EINBAHN_IST_E",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ID",
+                  "description": null
+               },
+               {
+                  "name": "LOKALISATIONSNAME",
+                  "description": null
+               },
+               {
+                  "name": "MESSWERT_VON",
+                  "description": null
+               },
+               {
+                  "name": "MESSWERT_BIS",
+                  "description": null
+               },
+               {
+                  "name": "EINBAHNREGIME",
+                  "description": null
+               },
+               {
+                  "name": "EINBAHNREGIME_TECHNICAL",
+                  "description": null
+               },
+               {
+                  "name": "UMGESETZT_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "RECHTSKRAEFTIG_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "PUBLIZIERT_VSI_DATUM",
+                  "description": null
+               },
+               {
+                  "name": "AUSNAHMEN_EINBAHN",
+                  "description": null
+               }
+            ]
+         }
+      ]
+   }
+}

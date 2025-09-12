@@ -1,0 +1,88 @@
+{
+   "title": "Standorte ZüriVelo",
+   "keywords": [
+      "Velo Verleih Veloverleih Züri Zürivelo PubliBike Stationen"
+   ],
+   "metadata_date": "2024-11-21T11:53:08",
+   "updateFrequency": "continual",
+   "purpose": "Dieser Datensatz dient zur Übersicht der Standorte. Die IDs können zur Verknüpfung von Auslastungsstatistiken etc. verwendet werden. Werden täglich über eine Schnittstelle zu PubliBike aktualisiert.",
+   "abstract": "Offizielle Standorte der Veloverleihstationen von Züri Velo (PubliBike).",
+   "identificationDate": "2025-03-17",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Tiefbauamt",
+   "contactPerson": "Toni Frank",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Standorte_ZueriVelo",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "VIEW_ZUERIVELO_PUBLIBIKE",
+            "description": "Die View enthält die aktuellen, offiziellen Stationen des Veloverleihs \"Züri Velo\" (PubliBike). Die Daten stammen von PubliBike und werden täglich aktualisiert.\n\nHinweis: Es gibt auch inaktive Stationen (siehe Attribut STATUS)",
+            "attributes": [
+               {
+                  "name": "ID1",
+                  "description": "ID der Oracle-Datenbank, eindeutig, aber nicht konsistent über Zeit"
+               },
+               {
+                  "name": "ID_PUBLIBIKE",
+                  "description": "ID im PubliBike-System"
+               },
+               {
+                  "name": "NAME",
+                  "description": "Name der Station"
+               },
+               {
+                  "name": "ADRESSE",
+                  "description": "Nächstgelegene Adresse einer Station"
+               },
+               {
+                  "name": "PLZ",
+                  "description": "Postleitzahl, in der sich die Station befindet"
+               },
+               {
+                  "name": "STADT",
+                  "description": null
+               },
+               {
+                  "name": "STATUS",
+                  "description": "Status im PubliBike-System"
+               },
+               {
+                  "name": "LAT",
+                  "description": "Latitude in WGS84"
+               },
+               {
+                  "name": "LON",
+                  "description": "Longitude in WGS84"
+               },
+               {
+                  "name": "DATUM",
+                  "description": "Datenstand (letzte Aktualisierung)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Punktgeometrie aus Lat/Lon"
+               }
+            ]
+         }
+      ]
+   }
+}

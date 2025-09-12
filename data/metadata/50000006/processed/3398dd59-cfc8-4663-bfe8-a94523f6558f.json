@@ -1,0 +1,87 @@
+{
+   "title": "Move and Chill",
+   "keywords": [
+      "move and chill",
+      "sensoren",
+      "temperatur",
+      "lärm"
+   ],
+   "metadata_date": "2024-11-11T21:21:29",
+   "updateFrequency": "notPlanned",
+   "purpose": "Erhebung Daten zum freiraumspezifischen Nutzungsverhalten. Prüfung der Einsetzbarkeit der Sensoren für Langzeiterhebungen.",
+   "abstract": "Move and Chill ist ein Pilotprojekt zum Testen eines Smart-Sensors, der die Verweildauer auf einem Sitzelement erhebt. Abhängigkeiten wie Temperatur, Luftfeuchtigkeit und Lärmpegel werden miterhoben. Die Sensoren sind an Stühlen auf dem Vulkanplatz und dem Münsterhof angebracht. Die Daten werden alle 30 Minuten erhoben.\n\n\n\nErhoben wird:\n\n- Verweildauer\n\n- Lufttemperatur\n\n- Luftfeuchtigkeit\n\n- Standort (3-4m Genauigkeit)\n\n- Lärmpegel\n\n\n\nGeprüft wird:\n\n- Die Robustheit und Zuverlässigkeit der Sensoren\n\n- Die Datenübertragung und deren Schnittstellen\n\n- Die Energieeffizienz und Nachhaltigkeit\n\n- Den Aufwand für die Auswertung und Datenaufbereitung\n\n\n\nDatenaufbereitung:\n\n- Die Daten werden jeweils nächtlich aktualisiert\n\n- Die Daten werden als 30-Minuten-Werte zur Verfügung gestellt",
+   "identificationDate": "2022-07-20",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Tiefbauamt",
+   "contactPerson": "Raphaël Duchoud",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "Comma Separated Values (.csv)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Move_and_Chill",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "VIEW_MOVEANDCHILL",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "ID",
+                  "description": "eindeutig, aber nicht konsistent über Zeit"
+               },
+               {
+                  "name": "SENSOR_EUI",
+                  "description": "eindeutige und konsistente ID des Sensors"
+               },
+               {
+                  "name": "TEMPERATURE",
+                  "description": "Temperatur"
+               },
+               {
+                  "name": "HUMIDITY",
+                  "description": "Feuchtigkeit"
+               },
+               {
+                  "name": "LATITUDE",
+                  "description": null
+               },
+               {
+                  "name": "LONGITUDE",
+                  "description": null
+               },
+               {
+                  "name": "NOISE",
+                  "description": "Lärmpegel in dB"
+               },
+               {
+                  "name": "SIT",
+                  "description": "Belegung in Prozent. Z.B. 50 heisst 15min der 30min war der Stuhl besetzt."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "eindeutig, aber nicht konsistent über Zeit"
+               },
+               {
+                  "name": "ZEITPUNKT",
+                  "description": "Beschreibt das Ende einer 30-Min.-Messung. Bei Zeitpunkt 12:43 beschreiben die Messattribute \"SIT\", \"NOISE\", etc. den Zeitraum 12:14 bis 12:43.\n\n\n\nLokale Zeit wird genutzt. CEST (UTC+2)"
+               }
+            ]
+         }
+      ]
+   }
+}

@@ -1,0 +1,52 @@
+{
+   "title": "Bürgerrechtswechsel nach Stadtquartier, Alter, Geschlecht und Herkunft (alt, neu)",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bev_brw_jahr_alter_geschlecht_herkunft_quartier_od5707",
+   "abstract": "Anzahl Bürgerrechtswechsel (Ein- und Ausbürgerungen) nach Stadtquartier, Alter, Geschlecht und Herkunft (alt, neu).",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Datenstand\n\nBevölkerungsszenarien: Die vorliegenden Daten dienen als Inputdaten für die Bevölkerungsszenarien.\n\nNur Ein- und Ausbürgerungen\n\nNur Ein- und Ausbürgerungen: Es werden nur Einbürgerungen (Herkunft Ausland zu Herkunft Schweiz) und Ausbürgerungen (Herkunft Schweiz zu Herkunft Ausland) ausgewiesen. Falls eine Person von einem ausländischen Bürgerrecht (z.B. Deutschland) zu einem anderen (z.B. Frankreich) wechselt, wird das hier nicht ausgewiesen.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Bürgerrechtswechsel nach Stadtquartier, Alter, Geschlecht und Herkunft (alt, neu)",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr (technisch: EreignisDatJahr)",
+                  "description": "Jahr (Integer)."
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarCd)",
+                  "description": "Stadtquartier, Code (String)."
+               },
+               {
+                  "name": "Stadtquartier (technisch: QuarLang)",
+                  "description": "Stadtquartier, Name (String)."
+               },
+               {
+                  "name": "Vollendetes Alter (Altersjahr) (technisch: AlterVCd)",
+                  "description": "Vollendetes Alter (String)."
+               },
+               {
+                  "name": "Geschlecht (technisch: SexCd)",
+                  "description": "Geschlecht, Code (String), 1 = männlich, 2 = weiblich."
+               },
+               {
+                  "name": "Herkunft (alt, also vor dem Bürgerrechtswechsel) (technisch: HerkunftBisherCd)",
+                  "description": "Herkunft (alt, also vor dem Bürgerrechtswechsel), Code (String), 1 = Schweizer/-in, 2 = Ausländer/-in."
+               },
+               {
+                  "name": "Herkunft (neu, also nach dem Bürgerrechtswechsel) (technisch: HerkunftCd)",
+                  "description": "Herkunft (neu, also nach dem Bürgerrechtswechsel), Code (String), 1 = Schweizer/-in, 2 = Ausländer/-in."
+               },
+               {
+                  "name": "Anzahl Bürgerrechtswechsel (technisch: AnzEinbWir)",
+                  "description": "Anzahl Bürgerrechtswechsel (Integer)."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-03-10"
+}

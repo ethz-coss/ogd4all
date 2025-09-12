@@ -1,0 +1,137 @@
+{
+   "title": "Biotoptypenkartierung 2010",
+   "keywords": [
+      "Biotoptyp",
+      "Lebensraum",
+      "BTK"
+   ],
+   "metadata_date": "2022-10-26T12:22:44",
+   "updateFrequency": "notPlanned",
+   "purpose": "Mit dieser Kartierung wird die aktuelle Biotop- und Strukturqualität des Stadtgefüges erfasst und die Naturqualität ausserhalb bezeichneter Schutzgebiete bezeichnet. Sie ist ein wichtiges Instrument für alle Aspekte der Naturförderung in der Stadt und stellt eine wesentliche Grundlage für die Beratung sowie für die Ableitung und Priorisierung von Handlungsoptionen dar. Im Sinne einer Definierung der ökologischen Grünqualität der bewachsenen Fläche ergänzt sie die Bodenbedeckung qualitativ.",
+   "abstract": "Flächendeckende Kartierung der Biotoptypen der Stadt Zürich",
+   "identificationDate": "2022-05-18",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Grün Stadt Zürich",
+   "contactPerson": "Andreas Noack",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Biotoptypenkartierung_2010",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "BTK_2010",
+            "description": "lächendeckende Kartierung der Biotoptypen der Stadt Zürich;\n\nDie Kartierung erfasst die aktuelle Biotop- und ökologische Vernetzungsqualität des Stadtgebiets mittels eines spezifischen Biotoptypenschlüssels. Der Schlüssel ist dreistufig gegliedert in Kategorien, Unterkategorien- und Einheiten.",
+            "attributes": [
+               {
+                  "name": "BIOTOPTYPENQUALITAET",
+                  "description": "Bewertung der ökologischen Qualität jedes Biotoptyps; Einstufung des Biotoptyps aufgrund der Naturnähe, der Bedeutung als Lebensraum für Pflanzen und Tiere, der Gefährdung und der Seltenheit. Biotoptypen der Qualitäten 4, 5 und 6 gelten als ökologisch wertvoll.\n\n0: Von keiner Bedeutung\n\n1: Von geringer Bedeutung\n\n2: Von allgemeiner bis geringer Bedeutung\n\n3: Von allgemeiner Bedeutung\n\n4: Von besonderer bis allgemeiner Bedeutung\n\n5: Von besonderer Bedeutung\n\n6: Von ausserordentlicher Bedeutung"
+               },
+               {
+                  "name": "UMSETZUNG",
+                  "description": "Umsetzungsempfehlung zum Biotoptyp aufgrund der Biotopqualität:\n\nPotenziell inventarwürdig (Biotopqualität 6 und 5)\n\nGeeignet für den ökologischen Ausgleich (Biotopqualität 4)\n\nMit Potential für den ökologischen Ausgleich (Biotopqualität 3 und teilweise 2)\n\nkeine (Biotopqualität 1 und 0)"
+               },
+               {
+                  "name": "FEUCHTIGKEIT",
+                  "description": "Angabe zu Standortbedingungen bezüglich der Feuchtigkeit des Biotoptyps:\n\nfeucht\n\nmittel\n\ntrocken\n\nunbekannt"
+               },
+               {
+                  "name": "NAEHRSTOFFE",
+                  "description": "Angabe zu Standortbedingungen bezüglich der Nährstoffe des Biotoptyps:\n\nnährstoffreich\n\nmittel\n\nnährstoffarm\n\nunbekannt"
+               },
+               {
+                  "name": "VERNETZUNGSTYP_OFFEN",
+                  "description": "Kategorisierte Umschreibung der Vernetzungsfunktion.\n\nOffene Wiesen, Ruderalflächen u.ä., keine Barrieren für Arten des Offenlandes."
+               },
+               {
+                  "name": "VERNETZUNGSTYP_GEHOELZ",
+                  "description": "Kategorisierte Umschreibung der Vernetzungsfunktion. Wälder, Hecken, Alleen, Einzelbäume, Baumreihen, Baumraster, Ufergehölze u.ä."
+               },
+               {
+                  "name": "VERNETZUNGSTYP_TROCKEN",
+                  "description": "Kategorisierte Umschreibung der Vernetzungsfunktion.\n\nTrockene Standorte, trockene Ruderalflächen, Trockenwiesen, trockene Wälder."
+               },
+               {
+                  "name": "VERNETZUNGSTYP_FEUCHT",
+                  "description": "Kategorisierte Umschreibung der Vernetzungsfunktion. Feuchte Ruderalflächen, Überschwemmungsgebiete, Feuchtwiesen, Bruchwälder, Ufergehölze, Riedflächen, u.ä."
+               },
+               {
+                  "name": "STRUKTUR_STAUDIG",
+                  "description": "Umschreibung der Vegetationsstruktur des Biotoptyps, staudig (40-100cm)."
+               },
+               {
+                  "name": "STRUKTUR_BUESCHE",
+                  "description": "Umschreibung der Vegetationsstruktur des Biotoptyps, Büsche"
+               },
+               {
+                  "name": "STRUKTUR_BAEUME",
+                  "description": "Umschreibung der Vegetationsstruktur des Biotoptyps, Bäume"
+               },
+               {
+                  "name": "STRUKTUR_KEINE",
+                  "description": "Umschreibung der Vegetationsstruktur des Biotoptyps."
+               },
+               {
+                  "name": "LEGENDE_LEBENSRAEUME",
+                  "description": "Zuordnung eines Biotoptyps zu einer Lebensraumkategorie; eine Lebensraumkategorie fasst Biotoptypen über verschiedene Unterkategorien und Kategorien zusammen (z.B: Feldgehölz und Siedlungsgehölz)\n\n- Äcker, Gartenbauflächen, Tiergehege\n\n- Beete und Rabatten\n\n- Familiengärten\n\n- Feuchtgebiete\n\n- Gewässer\n\n- Gärten\n\n- Gehölze, Hecken, Gebüsche\n\n- Grünanlagen\n\n- Grünanlagen von Mehrfamilienhäusern\n\n- Kies- und Schotterflächen\n\n- Mauern\n\n- Obstgärten"
+               },
+               {
+                  "name": "LRTYP3TEXT",
+                  "description": "Bezeichnung der Dritten Stufe des Zürcher Biotoptypenschlüssels (Einheit oder Biotoptyp)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "LRTYP3CODE",
+                  "description": "Eindeutige Nummer der Dritten Stufe des Zürcher Biotoptypenschlüssels (Einheit oder Biotoptyp)"
+               },
+               {
+                  "name": "LRTYP2CODE",
+                  "description": "Eindeutige Nummer der Zweiten Stufe des Zürcher Biotoptypenschlüssels (Unterkategorie)"
+               },
+               {
+                  "name": "LRTYP2TEXT",
+                  "description": "Bezeichnung der Zweiten Stufe des Zürcher Biotoptypenschlüssels (Unterkategorie)"
+               },
+               {
+                  "name": "LRTYP1CODE",
+                  "description": "Eindeutige Nummer der Ersten Stufe des Zürcher Biotoptypenschlüssels (Kategorie)"
+               },
+               {
+                  "name": "LRTYP1TEXT",
+                  "description": "Bezeichnung der Ersten Stufe des Zürcher Biotoptypenschlüssels (Kategorie)"
+               },
+               {
+                  "name": "VERSIEGELUNG",
+                  "description": "Angabe zur Beeinträchtigung der natürlichen Bodenfunktion des Biotoptyps:\n\nunversiegelt\n\nteilweise versiegelt\n\nversiegelt\n\nunbekannt"
+               },
+               {
+                  "name": "VERNETZUNGSTYP_UNBEKANNT",
+                  "description": "Kategorisierte Umschreibung der Vernetzungsfunktion"
+               },
+               {
+                  "name": "STRUKTUR_NIEDRIG",
+                  "description": "Umschreibung der Vegetationsstruktur des Biotoptyps, niedrig (&lt;40cm)."
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         }
+      ]
+   }
+}

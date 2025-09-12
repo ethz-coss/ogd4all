@@ -1,0 +1,449 @@
+{
+   "title": "Auszeichnung für gute Bauten",
+   "keywords": [
+      "Gute",
+      "Bauten",
+      "Auszeichnung"
+   ],
+   "metadata_date": "2023-09-08T06:36:53",
+   "updateFrequency": "asNeeded",
+   "purpose": "Das Inventar Auszeichnung für gute Bauten wurde auf Grundlage der Buchpublikationen zu den jeweiligen Auszeichnungsperioden erstellt. Es umfasst alle Auszeichnungsobjekte, soweit diese aus den Textbeschreibungen und Bilddarstellungen ermittelt, und räumlich exakt zugeordnet werden konnten. Bei der Objektbestimmung konnte aus den manchmal eher allgemein formulierten Buchschreibungen nicht immer eindeutig festgestellt werden, ob die erwähnten Objekte jeweils allein Gegenstände der Auszeichnungen waren, oder allenfalls auch weitere Anlageelemente der unmittelbaren baulichen Umgebung.",
+   "abstract": "Die Sammlung der von der Stadt Zürich ausgezeichneten Bauten zeigt den Standort jedes Objekts sowie dessen wichtigste Attribute an. Diese Attribute sind ein Auszug aus den bisher publizierten Broschüren zu den Auszeichnungen guter Bauten.",
+   "identificationDate": "2025-03-18",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Hochbaudepartement - Amt für Städtebau",
+   "contactPerson": "Janine Sutter",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.443821782566665,
+      "eastBoundLongitude": 8.631776103472221,
+      "southBoundLatitude": 47.31549273037445,
+      "northBoundLatitude": 47.43963707749998
+   },
+   "distributionFormats": [
+      "ESRI Shape (.shp)",
+      "GeoJSON (.json)",
+      "Geopackage (.gpkg)",
+      "DXF (.dxf)"
+   ],
+   "downloadURL": "https://www.stadt-zuerich.ch/geodaten/download/Auszeichnung_fuer_gute_Bauten",
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "AGB_OBJEKTINVENTAR_A",
+            "description": null,
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometriefeld, von ArcGIS vergeben"
+               },
+               {
+                  "name": "OBJEKTNUMMER",
+                  "description": "fortlaufende Nummer, eindeutige ID"
+               },
+               {
+                  "name": "OBJEKTNAME",
+                  "description": "Name des ausgezeichneten Gebäudes"
+               },
+               {
+                  "name": "ADRESSE",
+                  "description": "Gebäudeadresse"
+               },
+               {
+                  "name": "BESCHREIBUNG",
+                  "description": "Beschreibung des ausgezeichneten Bauwerks"
+               },
+               {
+                  "name": "BAUHERRSCHAFT",
+                  "description": "Bauherrschaft ausgezeichneten Bauwerks"
+               },
+               {
+                  "name": "ARCHITEKTUR",
+                  "description": "Architekten des ausgezeichneten Bauwerks"
+               },
+               {
+                  "name": "FOTO",
+                  "description": "Fotonamen des ausgezeichneten Bauwerks, getrennt mit Semikolon"
+               },
+               {
+                  "name": "FLAECHE",
+                  "description": "Gebäudegrundfläche des ausgezeichneten Bauwerks (Summe aller Bauwerkteile)"
+               },
+               {
+                  "name": "POI_ID",
+                  "description": "eindeutige ID für den ZüriPlan, abgeleitet aus OBJEKTNUMMER und Präfix"
+               },
+               {
+                  "name": "ABBRUCH",
+                  "description": "Wurde das Bauwerk bereits abgebrochen? Mögliche Werte: ja, nein, teilweise"
+               },
+               {
+                  "name": "ABBRUCHINFO",
+                  "description": "Wenn das Bauwerk abgebrochen wurde, wann? Werte: Jahreszahl oder Zeitperiode"
+               },
+               {
+                  "name": "ZEITPERIODE",
+                  "description": "Zeitperiode, in der das Gebäude ausgezeichnet wurde (z.B. 2006-2010)"
+               },
+               {
+                  "name": "PUBLIKUMSPREIS",
+                  "description": "0 = kein Publikumspreis, 1 = Publikumspreis, seit Periode 2006 - 2010 durchgeführte öffentliche Abstimmung über bestes Bauwerk"
+               },
+               {
+                  "name": "GEOMETRIE_Length",
+                  "description": "Geometriefeld, von ArcGIS vergeben"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "fortlaufende Nummer, von ArcGIS vergeben, kann jederzeit ändern"
+               },
+               {
+                  "name": "GEOMETRIE_Area",
+                  "description": "Geometriefeld, von ArcGIS vergeben"
+               },
+               {
+                  "name": "LINK",
+                  "description": "URL auf Foto"
+               },
+               {
+                  "name": "LANDSCHAFTSARCHITEKTUR",
+                  "description": "Landschaftsarchitekten des ausgezeichneten Bauwerks"
+               }
+            ]
+         },
+         {
+            "name": "POI_AGB_OBJEKTINVENTAR_ATT",
+            "description": "Zusätzlich Attribute zu den POI-Standardinformation.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": "Systemid"
+               },
+               {
+                  "name": "OBJEKTNUMMER",
+                  "description": "fortlaufende Nummer, eindeutige ID"
+               },
+               {
+                  "name": "POI_ID",
+                  "description": "eindeutige ID für den ZüriPlan, abgeleitet aus OBJEKTNUMMER und Präfix"
+               },
+               {
+                  "name": "OBJEKTNAME",
+                  "description": "Name des ausgezeichneten Gebäudes"
+               },
+               {
+                  "name": "ZEITPERIODE",
+                  "description": "Zeitperiode, in der das Gebäude ausgezeichnet wurde (z.B. 2006-2010)"
+               },
+               {
+                  "name": "ADRESSE",
+                  "description": "Gebäudeadresse"
+               },
+               {
+                  "name": "PUBLIKUMSPREIS",
+                  "description": "0 = kein Publikumspreis, 1 = Publikumspreis, seit Periode 2006 - 2010 durchgeführte öffentliche Abstimmung über bestes Bauwerk"
+               },
+               {
+                  "name": "BESCHREIBUNG",
+                  "description": "Beschreibung des ausgezeichneten Bauwerks"
+               },
+               {
+                  "name": "BAUHERRSCHAFT",
+                  "description": "Bauherrschaft ausgezeichneten Bauwerks"
+               },
+               {
+                  "name": "ARCHITEKTUR",
+                  "description": "Architekten des ausgezeichneten Bauwerks"
+               },
+               {
+                  "name": "FLAECHE",
+                  "description": "Gebäudegrundfläche des ausgezeichneten Bauwerks (Summe aller Bauwerkteile)"
+               },
+               {
+                  "name": "ABBRUCH",
+                  "description": "Wurde das Bauwerk bereits abgebrochen? Mögliche Werte: ja, nein, teilweise"
+               },
+               {
+                  "name": "ABBRUCHINFO",
+                  "description": "Wenn das Bauwerk abgebrochen wurde, wann? Werte: Jahreszahl oder Zeitperiode"
+               },
+               {
+                  "name": "FOTO",
+                  "description": "Fotonamen des ausgezeichneten Bauwerks, getrennt mit Semikolon"
+               },
+               {
+                  "name": "LANDSCHAFTSARCHITEKTUR",
+                  "description": "Landschaftsarchitekten des ausgezeichneten Bauwerks"
+               }
+            ]
+         },
+         {
+            "name": "POI_AGB_OBJEKTINVENTAR_VIEW",
+            "description": "Punkt innerhalb der Flächengeometrie der der Featureklasse AGB_OBJEKTINVENTAR_A. Enthält alle POI-Standardattribute plus die spezifischen AGB-Informationen aus der Tabelle POI_AGB_OBJEKTINVENTAR_ATT.",
+            "attributes": [
+               {
+                  "name": "OBJECTID",
+                  "description": null
+               },
+               {
+                  "name": "ADR_INTER",
+                  "description": null
+               },
+               {
+                  "name": "ADRESSE",
+                  "description": null
+               },
+               {
+                  "name": "ADRZUS_INT",
+                  "description": null
+               },
+               {
+                  "name": "BEHINDERTENPARKPLATZ",
+                  "description": null
+               },
+               {
+                  "name": "BEMERKUNG",
+                  "description": null
+               },
+               {
+                  "name": "CCMAIL",
+                  "description": null
+               },
+               {
+                  "name": "DA",
+                  "description": null
+               },
+               {
+                  "name": "DATUM",
+                  "description": null
+               },
+               {
+                  "name": "DATUM_CMS",
+                  "description": null
+               },
+               {
+                  "name": "DEP",
+                  "description": null
+               },
+               {
+                  "name": "EDITOR",
+                  "description": null
+               },
+               {
+                  "name": "ERFORDERLICHEDOKUMENTE",
+                  "description": null
+               },
+               {
+                  "name": "FAX",
+                  "description": null
+               },
+               {
+                  "name": "HAUSNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "HINDERNISFREIHEIT",
+                  "description": null
+               },
+               {
+                  "name": "INFRASTRUKTUR",
+                  "description": null
+               },
+               {
+                  "name": "ISBETRIEBSFERIEN_GEBAEUDE",
+                  "description": null
+               },
+               {
+                  "name": "ISBETRIEBSFERIEN_SCHALTER",
+                  "description": null
+               },
+               {
+                  "name": "KATEGORIE",
+                  "description": null
+               },
+               {
+                  "name": "MAIL",
+                  "description": null
+               },
+               {
+                  "name": "NAME",
+                  "description": null
+               },
+               {
+                  "name": "NAMENZUS",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_DI",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_DO",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_FR",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_MI",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_MO",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_SA",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_GEBAEUDE_SO",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_DI",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_DO",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_FR",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_MI",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_MO",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_SA",
+                  "description": null
+               },
+               {
+                  "name": "OEFFNUNGSZEITEN_SCHALTER_SO",
+                  "description": null
+               },
+               {
+                  "name": "ORT",
+                  "description": null
+               },
+               {
+                  "name": "PLZ",
+                  "description": null
+               },
+               {
+                  "name": "POI_ID",
+                  "description": null
+               },
+               {
+                  "name": "POSTADRESSE",
+                  "description": null
+               },
+               {
+                  "name": "PUBLISH_INTERNET",
+                  "description": null
+               },
+               {
+                  "name": "STRASSE",
+                  "description": null
+               },
+               {
+                  "name": "SUCHEN",
+                  "description": null
+               },
+               {
+                  "name": "TEL",
+                  "description": null
+               },
+               {
+                  "name": "TEL2",
+                  "description": null
+               },
+               {
+                  "name": "WWW",
+                  "description": null
+               },
+               {
+                  "name": "ZAHLUNGSMITTEL_INTERNET",
+                  "description": null
+               },
+               {
+                  "name": "ZAHLUNGSMITTEL_SCHALTER",
+                  "description": null
+               },
+               {
+                  "name": "ZAHLUNGSMITTEL_TELEFON",
+                  "description": null
+               },
+               {
+                  "name": "ZVV_LABEL",
+                  "description": null
+               },
+               {
+                  "name": "ZVV_LINK",
+                  "description": null
+               },
+               {
+                  "name": "OBJEKTNUMMER",
+                  "description": null
+               },
+               {
+                  "name": "OBJEKTNAME",
+                  "description": null
+               },
+               {
+                  "name": "ZEITPERIODE",
+                  "description": null
+               },
+               {
+                  "name": "PUBLIKUMSPREIS",
+                  "description": null
+               },
+               {
+                  "name": "ARCHITEKTUR",
+                  "description": null
+               },
+               {
+                  "name": "FOTO",
+                  "description": null
+               },
+               {
+                  "name": "BESCHREIBUNG",
+                  "description": null
+               },
+               {
+                  "name": "BAUHERRSCHAFT",
+                  "description": null
+               },
+               {
+                  "name": "FLAECHE",
+                  "description": null
+               },
+               {
+                  "name": "ABBRUCH",
+                  "description": null
+               },
+               {
+                  "name": "ABBRUCHINFO",
+                  "description": null
+               },
+               {
+                  "name": "LANDSCHAFTSARCHITEKTUR",
+                  "description": null
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": null
+               }
+            ]
+         }
+      ]
+   }
+}

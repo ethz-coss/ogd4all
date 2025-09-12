@@ -1,0 +1,44 @@
+{
+   "title": "Bestand der Personenwagen nach nach Fahrzeugalter und Treibstoffart",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/prd_ssz_fz_pw_bestand_jahr_treibstoff_fahrzeugalter_od2002",
+   "abstract": "Dieser Datensatz beinhaltet die Anzahl Personenwagen der Stadt Zürich nach Fahrzeugalter, Treibstoffart und Jahr.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Stichtag:\n\nDer Stichtag zur Bestimmung des Jahresstandes ist jeweils der 30. September. Nicht wie normalerweise üblich der 31. Dezember.\n\nFahrzeugbestand:\n\nDer Datensatz enthält verschiedene Informationen zu den in der Stadt Zürich gemeldeten Motorfahrzeugen mit Zürcher Nummernschild im Besitz von natürlichen und juristischen Fahrzeughalter*innen.\n\nPersonenwagen:\n\nPersonenwagen sind Fahrzeuge mit höchstens 9 Sitzplätzen inklusive Sitzplatz für die Person, die fährt.\n\nTreibstoffart:\n\nDie Treibstoffart wird folgendermassen aggregiert: \"Benzin\" und \"Diesel\" werden direkt übernommen, \"Elektrisch\" setzt sich zusammen aus \"Elektrisch\" und \"Elektrisch mit RE\", \"Hybrid\" aus \"Hybrid\", \"Benzin /Elektrisch\", \"Diesel/Elektrisch\", und alle übrigen Arten fallen in die Kategorie \"übrige/unbekannt\".\n\nHinweis:\n\nAufgrund einer genaueren Adressüberprüfung im Dezember 2023 reduziert sich die Grundgesamtheit der Fahrzeuge leicht, und die Anzahl Fahrzeuge kann von früheren Publikationen abweichen.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Bestand der Personenwagen nach nach Fahrzeugalter und Treibstoffart",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Stichtag (technisch: StichtagDat)",
+                  "description": "Stichtag zur Bestimmung des Fahrzeugbestands. Der Stichtag ist in diesem Datensatz jeweils der 30. September."
+               },
+               {
+                  "name": "Bestandsjahr (technisch: StichtagDatJahr)",
+                  "description": "Kalenderjahr, zu dem der Bestand zugeordnet wird."
+               },
+               {
+                  "name": "Aggregierte Treibstoffart (technisch: FzTreibstoffAgg_noDM)",
+                  "description": "Treibstoffart des Fahrzeugs (string). Aggregiert zu den Klassen Benzin, Diesel, Elektrisch, Hybrid und den Übrigen."
+               },
+               {
+                  "name": "Code für aggregierte Treibstoffart (technisch: FzTreibstoffAggCd_noDM)",
+                  "description": "Code für Treibstoffart des Fahrzeugs (string)."
+               },
+               {
+                  "name": "Fahrzeugalter (technisch: FzAlterV)",
+                  "description": "Fahrzeugalter (numerisch, in Jahren)."
+               },
+               {
+                  "name": "Anzahl Fahrzeuge (technisch: FzAnz)",
+                  "description": "Anzahl Fahrzeuge (numerisch)."
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-02-11"
+}

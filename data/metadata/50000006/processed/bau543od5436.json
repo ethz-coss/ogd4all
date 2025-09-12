@@ -1,0 +1,56 @@
+{
+   "title": "Leerflächen nach Stadtquartier und Nutzungsart",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bau_leerflaechengeb_geb_nutzungsart_quartier_jahr_od5436",
+   "abstract": "Der Datensatz enthält die Leerflächen gemäss der jährlichen Leerflächenzählung vom 1. Juni. Enthalten sind bei der Büronutzung auch die Leerstandsquote pro Quartier sowie Angaben zum gesamten Büroflächenbestand im Quartier. So kann auch für Aggregationen die Leerstandsquote berechnet werden.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Über die Leerflächenzählung\n\nDie Leerflächenzählung wurde 1995 durch Statistik Stadt Zürich eingeführt. Sie existiert auf Bundesebene nicht. Befragt werden sämtliche Eigentümer und Verwaltungen von Gebäuden mit Nutzflächen von 500 Quadratmetern und mehr. Als Quelle dient das von Statistik Stadt Zürich geführte Gebäuderegister (GWZ). Für die Erhebung werden nur Verwaltungen von Gebäuden angeschrieben werden, deren Nutzflächen mindestens 500 Quadratmeter betragen, weshalb die Entwicklung bei den kleineren Ladenflächen nur teilweise abgebildet wird.\n\nDefinition Leerstand\n\nAls leer stehend gelten Nutzflächen, die am 1. Juni des Berichtsjahres nicht belegt waren, zur Dauermiete (von mindestens drei Monaten) oder zum Verkauf ausgeschrieben und sofort benutzbar waren, auch wenn der Verwendungszweck der Fläche noch nicht oder nur zum Teil bestimmt war. Nicht als leer stehend gelten Nutzflächen in Abbruch- oder Umbauobjekten sowie in noch im Bau befindlichen Gebäuden.\n\nLeerstandsquote in Prozent\n\nBei Büro- und Praxisflächen wird der Leerstand auch als Quote in Prozent des Flächenbestandes ausgewiesen. Der Flächenbestand umfasst die gesamten Büro- und Praxis-Geschossflächen, wobei von den Bruttowerten (gemäss Erhebung des Amts für Städtebau ) 25 Prozent abgezogen werden, weil die Leerflächen als Nettowerte erhoben werden. ACHTUNG: Leerstandsquoten dürfen nicht summiert werden. Bei Aufsummierungen (z.B. pro Kreis) müssen die Quoten neu berechnet werden: (Leerflaeche Buero)/(0.75 x BueroNettofl)*100",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Leerflächen nach Stadtquartier und Nutzungsart",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Jahr des Stichtages (technisch: StichtagDatJahr)",
+                  "description": "Jahr des Stichtages (Numeric)"
+               },
+               {
+                  "name": "Stadtquartier (Sort) (technisch: QuarSort)",
+                  "description": "Stadtquartier (Numeric)"
+               },
+               {
+                  "name": "Stadtquartier (Lang) (technisch: QuarLang)",
+                  "description": "Stadtquartier (String)"
+               },
+               {
+                  "name": "Stadtkreis (Sort) (technisch: KreisSort)",
+                  "description": "Stadtkreis (Numeric)"
+               },
+               {
+                  "name": "Stadtkreis (Lang) (technisch: KreisLang)",
+                  "description": "Stadtkreis (String)"
+               },
+               {
+                  "name": "Nutzungsart (technisch: Nutzung)",
+                  "description": "Nutzungsart (String)"
+               },
+               {
+                  "name": "Leersteende Nettonutzfläche in m2 (technisch: Leerflaeche)",
+                  "description": "Leersteende Nettonutzfläche in m2 (Numeric)"
+               },
+               {
+                  "name": "Gesamte Nettofläche Büro in m2 (technisch: BueroNettofl)",
+                  "description": "Gesamte Nettofläche Büro in m2 (Numeric)"
+               },
+               {
+                  "name": "Büroleerstand in Prozent (technisch: BueroLeerProz)",
+                  "description": "Büroleerstand in Prozent (Numeric)"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2024-06-11"
+}

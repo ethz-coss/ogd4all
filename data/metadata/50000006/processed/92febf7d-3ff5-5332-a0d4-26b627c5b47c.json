@@ -1,0 +1,290 @@
+{
+   "title": "ERZF Werkleitungsdaten",
+   "keywords": [
+      "Fernwärme",
+      "Leitungen",
+      "Trasse",
+      "Kammer",
+      "Leitungskataster"
+   ],
+   "metadata_date": "2020-07-28T07:04:15",
+   "updateFrequency": "weekly",
+   "purpose": "Die Daten können allein zu Planungs- und Projektierungszwecken verwendet werden.",
+   "abstract": "Verwendung von Fernwärme-Werkleitungsdaten aus dem GeoServer der Stadt Zürich.\n\nDer Datensatz von ERZ Fernwärme zeigt alle unterirdischen Leitungs-Trassen und Bauwerke in ihrer korrekten Lage. Höhen werden nicht ausgegeben. Die Gültigkeit der Daten ist zeitlich begrenzt.",
+   "identificationDate": "2025-03-14",
+   "identificationDateType": "revision",
+   "responsibleParty": "Stadt Zürich - Tiefbau- und Entsorgungsdepartement - Entsorgung + Recycling Zürich",
+   "contactPerson": "Stefan Weber",
+   "referenceSystem": "CH1903+_LV95",
+   "boundingBox": {
+      "westBoundLongitude": 8.36167308488333,
+      "eastBoundLongitude": 8.71238105752889,
+      "southBoundLatitude": 47.15426421794444,
+      "northBoundLatitude": 47.483753735111094
+   },
+   "contentInfo": {
+      "descriptionsIncludedWithDataset": false,
+      "classes": [
+         {
+            "name": "ERZF_VE_VERBINDLICHKEIT_A",
+            "description": "Gebiete, wo die Lage der ERZF-Objekte bei ERZ Fernwärme erfragt werden muss, da sie in Planung oder gerade in Ausführung sind.",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der Verbindlichkeitsflächen"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               }
+            ]
+         },
+         {
+            "name": "ERZ_FW_KAMMER_A",
+            "description": "Fläche von Fernwärmekammern. Kammern können verschiedene Armaturen (Entlüftungen, Entwässerungen, Absperrschieber, Pumpen, etc.) enthalten",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der Kammerfläche"
+               },
+               {
+                  "name": "NAME",
+                  "description": "Name der Kammer (z.B. N5945)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJEKT",
+                  "description": "Fremdschlüssel für Verbindung zur Kammer; 1:1"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit. (NISZHID)"
+               },
+               {
+                  "name": "OBJID_ITF",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               }
+            ]
+         },
+         {
+            "name": "ERZ_FW_KAMMER_FLAECHE_L",
+            "description": "Kammerbegrenzung; Randlinie der Fläche",
+            "attributes": [
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der Randlinie der Fläche"
+               },
+               {
+                  "name": "NAME",
+                  "description": "Name der Kammer (z.B. N5945)"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID_ITF",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "REFID",
+                  "description": "Referenz-ID des übergeordneten Geometrieobjektes. Die Linienobjekte mit der gleichen Referenz-ID bilden zusammen die Umrandung einer Fläche."
+               }
+            ]
+         },
+         {
+            "name": "ERZ_FW_KAMMER_L",
+            "description": "Kammerlinie, stellt die Verbindungsleitung zu einem Entwässerungsschacht oder einem Entlüftungsbauwerk dar.",
+            "attributes": [
+               {
+                  "name": "ART",
+                  "description": "0: ausgezogen\n\n1: gestrichelt"
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": "Art Text (ausgezogen,gestrichelt)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie der Kammerlinie, -grafik"
+               },
+               {
+                  "name": "NAME",
+                  "description": "Name der Kammer (z.B. N5945)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJEKT",
+                  "description": "Fremdschlüssel für Verbindung zur Kammer; 1:mc"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit. (NISZHID)"
+               },
+               {
+                  "name": "OBJID_ITF",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               }
+            ]
+         },
+         {
+            "name": "ERZ_FW_KAMMER_P",
+            "description": "Kammersymbol, Darstellung eines Entlüftungsbauwerkes oder eines Entwässerungsschachtes",
+            "attributes": [
+               {
+                  "name": "ART",
+                  "description": "0: Entlueftungsschacht\n\n1: Entwaesserungsschacht"
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": "Art Text (Entlueftungsschacht, Entwaesserungsschacht)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie des Kammersymbols"
+               },
+               {
+                  "name": "NAME",
+                  "description": "Name der Kammer (z.B. N5945)"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJEKT",
+                  "description": "Fremdschlüssel für Verbindung zur Kammer; 1:1"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit. (NISZHID)"
+               },
+               {
+                  "name": "OBJID_ITF",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "SYMBOLORI",
+                  "description": "Rotation des Symbols; undefiniert = 100.0; Masseinheit ist Gon."
+               }
+            ]
+         },
+         {
+            "name": "ERZ_FW_TRASSEEABSCHNITT_L",
+            "description": "Fernwärme-Trasseeabschnitt (Trasseestrang)",
+            "attributes": [
+               {
+                  "name": "ART",
+                  "description": "0: Haubenkanal\n\n1: erdverlegt\n\n2: begehbarer Kanal\n\n3: Pressrohr\n\n4: Freileitung\n\n5: Hausleitung"
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": "Art Text (Haubenkanal, erdverlegt, begehbarer_Kanal, Pressrohr, Freileitung, Hausleitung)"
+               },
+               {
+                  "name": "BREITE_DURCHMESSER",
+                  "description": "Breite des Fernwärmetrasse"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie des Trasseeabschnittes; Achse"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit. (NISZHID)"
+               },
+               {
+                  "name": "OBJID_ITF",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               }
+            ]
+         },
+         {
+            "name": "ERZ_FW_TRASSEEABSCHNITT_RAND_L",
+            "description": "Begrenzungsrand des Fernwärmetrasse",
+            "attributes": [
+               {
+                  "name": "ART",
+                  "description": "0: ausgezogen\n\n1: gestrichelt"
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": "Art Text (ausgezogen, gestrichelt)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie des Randes"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJEKT",
+                  "description": "Fremdschlüssel für Verbindung zur Tabelle. Trasseeabschnitt; 1:m"
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit. (NISZHID)"
+               },
+               {
+                  "name": "OBJID_ITF",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               }
+            ]
+         },
+         {
+            "name": "ERZ_FW_TRASSEEPUNKT_P",
+            "description": "Trasseepunkt, definiert die Lage eines Fixpunktes oder einer Reduktion (Verringerung des Trassequerschnittes)",
+            "attributes": [
+               {
+                  "name": "ART",
+                  "description": "0: Fixpunkt_Verankerung\n\n1: Reduktion"
+               },
+               {
+                  "name": "ART_TXT",
+                  "description": "Art Text (Fixpunkt_Verankerung, Reduktion)"
+               },
+               {
+                  "name": "GEOMETRIE",
+                  "description": "Geometrie des Trassepunktes"
+               },
+               {
+                  "name": "OBJECTID",
+                  "description": "ESRI System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "OBJID",
+                  "description": "System-Identifikator. Nicht stabil über Zeit. (NISZHID)"
+               },
+               {
+                  "name": "OBJID_ITF",
+                  "description": "System-Identifikator. Nicht stabil über Zeit."
+               },
+               {
+                  "name": "SYMBOLORI",
+                  "description": "Rotation des Symbols; undefiniert = 100.0; Masseinheit ist Gon."
+               }
+            ]
+         }
+      ]
+   }
+}

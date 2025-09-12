@@ -1,0 +1,108 @@
+{
+   "title": "Bevölkerung nach Stadtquartier, Herkunft, Geschlecht und Alter",
+   "downloadURL": "https://data.stadt-zuerich.ch/dataset/bev_bestand_jahr_quartier_alter_herkunft_geschlecht_od3903",
+   "abstract": "Anzahl Personen der wirtschaftlichen Wohnbevölkerung nach Statistischem Stadtquartier, Herkunft, Geschlecht, Altersjahr, 5-Jahres-Altersgruppen und Jahr.",
+   "distributionFormats": [
+      "Comma Separated Values (.csv)"
+   ],
+   "purpose": "Hinweis:\n\nLink zu den Geodaten Statistische Stadtquartiere.",
+   "contentInfo": {
+      "classes": [
+         {
+            "name": "Bevölkerung nach Stadtquartier, Herkunft, Geschlecht und Alter",
+            "description": "",
+            "attributes": [
+               {
+                  "name": "Ereignisjahr (technisch: StichtagDatJahr)",
+                  "description": "Jahr"
+               },
+               {
+                  "name": "Vollendetes Alter (Sort) (technisch: AlterVSort)",
+                  "description": "Sortierschlüssel des vollendeten Altersjahrs einer Person bei Jahresende (Numerisch, 8 Zeichen lang)"
+               },
+               {
+                  "name": "Vollendetes Alter (Code) (technisch: AlterVCd)",
+                  "description": "Vollendetes Altersjahr einer Person bei Jahresende (CHAR)"
+               },
+               {
+                  "name": "Vollendetes Alter 5 (Sort) (technisch: AlterV05Sort)",
+                  "description": "Sortierungsschlüssel für die 5-Jahres-Altersgruppen (Numerisch, 8 Zeichen lang)"
+               },
+               {
+                  "name": "Vollendetes Alter 5 (Cd) (technisch: AlterV05Cd)",
+                  "description": "Code für die 5-Jahres-Altersgruppen (CHAR)"
+               },
+               {
+                  "name": "Vollendetes Alter 5 (kurz) (technisch: AlterV05Kurz)",
+                  "description": "5-Jahres-Altersgruppen (CHAR). Werte: 0-4, 5-9, 10-14, 15-19, etc."
+               },
+               {
+                  "name": "Vollendetes Alter 10 (Cd) (technisch: AlterV10Cd)",
+                  "description": "Code für die 10-Jahres-Altersgruppen (CHAR)"
+               },
+               {
+                  "name": "Vollendetes Alter 10 (kurz) (technisch: AlterV10Kurz)",
+                  "description": "10-Jahres-Altersgruppen (CHAR). Werte: 0-9, 10-19, etc."
+               },
+               {
+                  "name": "Vollendetes Alter 20 (Cd) (technisch: AlterV20Cd)",
+                  "description": "Code für die 20-Jahres-Altersgruppen (CHAR)"
+               },
+               {
+                  "name": "Vollendetes Alter 20 (kurz) (technisch: AlterV20Kurz)",
+                  "description": "20-Jahres-Altersgruppen (CHAR). Werte: 0-19, 20-39, etc."
+               },
+               {
+                  "name": "Geschlecht (Code) (technisch: SexCd)",
+                  "description": "Code des Geschlechts der Person. Werte: 1 (männlich), 2 (weiblich)"
+               },
+               {
+                  "name": "Geschlecht (Lang) (technisch: SexLang)",
+                  "description": "Geschlecht der Person (CHAR, männlich, weiblich)"
+               },
+               {
+                  "name": "Geschlecht (kurz) (technisch: SexKurz)",
+                  "description": "Kurzbezeichnung des Geschlechts der Person (CHAR). Werte: M, W."
+               },
+               {
+                  "name": "Stadtkreis (Code) (technisch: KreisCd)",
+                  "description": "Offizielle ID des Stadtkreises (CHAR)"
+               },
+               {
+                  "name": "Stadtkreis (lang) (technisch: KreisLang)",
+                  "description": "Name des Stadtkreises (CHAR)"
+               },
+               {
+                  "name": "Stadtquartier (Sort) (technisch: QuarSort)",
+                  "description": "Offizielle ID des Statistischen Stadtquartiers (Numerisch, 8 Zeichen lang)"
+               },
+               {
+                  "name": "Stadtquartier (Code) (technisch: QuarCd)",
+                  "description": "Offizielle ID des Statistischen Stadtquartiers (CHAR, mit führender 0 bei zweistelligen Codes, 200 Zeichen lang)"
+               },
+               {
+                  "name": "Stadtquartier (lang) (technisch: QuarLang)",
+                  "description": "Name des Statistischen Stadtquartiers (CHAR, 200 Zeichen lang)"
+               },
+               {
+                  "name": "Herkunft (Sort) (technisch: HerkunftSort)",
+                  "description": "Sortierungscode der Herkunft einer Person. Werte: 1 (Schweiz), 2 (Ausland)."
+               },
+               {
+                  "name": "Herkunft (Code) (technisch: HerkunftCd)",
+                  "description": "Code der Herkunft einer Person. Werte: 1 (Schweiz), 2 (Ausland); (CHAR)"
+               },
+               {
+                  "name": "Herkunft (Lang) (technisch: HerkunftLang)",
+                  "description": "Bezeichnung der Herkunft einer Person (CHAR). Unterscheidung von Schweizer Staatsbürger*innen sowie Ausländer*innen."
+               },
+               {
+                  "name": "wirtschaftliche Bevölkerung (technisch: AnzBestWir)",
+                  "description": "Anzal Personen aus der wirtschaftlichen Wohnbevölkerung"
+               }
+            ]
+         }
+      ]
+   },
+   "identificationDate": "2025-03-05"
+}
