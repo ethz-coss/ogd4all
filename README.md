@@ -79,3 +79,6 @@ This will start a local gradio server where you can interact with 430 geospatial
 ```
 SUPPORTED_LLMS = ['gpt-5', 'gpt-5-mini', 'gpt-5-nano', 'gpt-4.1', 'gpt-4.1-mini', 'gpt-4o', 'gpt-o1', 'gpt-o3-mini-preview', 'gemini-2.5-pro', 'gemini-2.5-flash', 'gemini-2.5-flash-lite-preview-06-17', 'meta-llama-70B-instruct-latest', 'mistral-codestral', 'mistral-large', 'openai/gpt-oss-120b', 'meta-llama/llama-4-maverick']
 ```
+
+## Acknowledgement
+This prototype was implemented as part of Michael Siebenmann's Master's thesis at the Professorship of Computational Social Science and was further supported by the Esri R&D Center Zurich.
