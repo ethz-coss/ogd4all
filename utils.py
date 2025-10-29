@@ -573,6 +573,7 @@ def get_llm_client(llm_name: str, temperature: float = 0.0):
                       'meta-llama/llama-4-maverick']:
         return ChatOpenRouter(
             openai_api_key=os.getenv("OPENROUTER_API_KEY"),
+            model_name=llm_name,
         )
     elif llm_name in ['gpt-oss:20b']:
         return ChatOllama(
