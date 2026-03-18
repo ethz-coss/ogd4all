@@ -10,7 +10,9 @@ OGD4All is a prototype system enabling an easy-to-use, transparent interaction w
 
 
 ## ✨ Demo
-https://github.com/user-attachments/assets/b3b6c24a-a1f7-4d31-b16a-a9a23a658f77
+https://github.com/user-attachments/assets/26c2588e-1a6d-4b68-a539-a84a9e6b98aa
+
+
 
 <details>
 <summary>
