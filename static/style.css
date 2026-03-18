@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@800&display=swap');
+
+.full-height {
+    height: 80vh;
+}
+
+/* ── Default: centered layout (no class needed — avoids load flash) ── */
+#chat-col-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 12vh;
+}
+
+/* Chatbot shrinks to content by default (shows examples, hides empty space) */
+#main-chatbot {
+    flex: 0 0 auto !important;
+    min-height: 0 !important;
+    transition: flex 0.4s ease;
+}
+
+/* ChatInterface wrapper: narrower by default (targets the non-chatbot child) */
+#chat-col-inner > div:not(#main-chatbot) {
+    max-width: 780px;
+    width: 75%;
+    margin: 0 auto;
+    transition: max-width 0.4s ease, width 0.4s ease, margin 0.4s ease;
+}
+
+/* ── Active state: input at bottom, full layout ───────────── */
+#chat-col-inner.chat-active {
+    justify-content: flex-start !important;
+    padding-top: 0 !important;
+}
+
+#chat-col-inner.chat-active #main-chatbot {
+    flex: 1 1 auto !important;
+    min-height: unset !important;
+}
+
+#chat-col-inner.chat-active > div:not(#main-chatbot) {
+    max-width: none !important;
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+@media (max-width: 768px) {
+    #chat-col-inner {
+        padding-top: 5vh;
+    }
+    #chat-col-inner > div:not(#main-chatbot) {
+        width: 90% !important;
+    }
+    #chat-col-inner.chat-active > div:not(#main-chatbot) {
+        width: 100% !important;
+    }
+}
+
+/* ── Title: large mono in centered mode, compact h1 in active mode ── */
+.title-big {
+    overflow: hidden;
+    max-height: 160px;
+    opacity: 1;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+    text-align: center;
+    padding: 0.5rem 0 0.8rem;
+}
+
+.title-big-name {
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+    font-size: 3.8rem;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    line-height: 1;
+}
+
+.title-big-sub {
+    margin-top: 0.45em;
+    font-size: 0.92rem;
+    color: #999;
+    letter-spacing: 0.01em;
+}
+
+.title-small {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+    text-align: center;
+}
+
+body.chat-active .title-big {
+    max-height: 0;
+    opacity: 0;
+}
+
+body.chat-active .title-small {
+    max-height: 80px;
+    opacity: 1;
+}
+
+/* Map panel: propagate height through Gradio's wrapper divs */
+.map-panel {
+    height: 80vh;
+}
+
+.map-panel .prose,
+.map-panel > div {
+    height: 100% !important;
+    max-height: 100% !important;
+}
+
+/* Override folium's padding-bottom aspect-ratio trick */
+.map-panel div[style*="padding-bottom"] {
+    padding-bottom: 0 !important;
+    height: 100% !important;
+}
+
+/* Hide folium's Jupyter notebook trust fallback message */
+.map-panel div[style*="padding-bottom"] > span {
+    display: none;
+}
+
+.map-panel iframe {
+    height: 100% !important;
+    position: relative !important;
+}
+
+@media (max-width: 768px) {
+    /* Allow the page to scroll instead of being clipped to viewport */
+    html, body {
+        height: auto !important;
+        overflow-y: auto !important;
+    }
+
+    .gradio-container,
+    .gradio-container > .main,
+    .gradio-container > .main > .wrap {
+        height: auto !important;
+        min-height: 100vh;
+        overflow-y: visible !important;
+        overflow-x: hidden !important;
+    }
+
+    /* Remove fixed height from row/columns so stacked layout flows naturally */
+    .full-height {
+        height: auto !important;
+        min-height: unset !important;
+    }
+
+    /* Map panel: fixed height that contributes to (scrollable) page length */
+    .map-panel {
+        height: 50vh;
+        min-height: 300px;
+    }
+}
+
+/* Dynamic split layout: map column hidden until a real map is available */
+@media (min-width: 769px) {
+    #map-col {
+        flex: 0 0 0% !important;
+        width: 0 !important;
+        max-width: 0 !important;
+        min-width: 0 !important;
+        overflow: hidden !important;
+        opacity: 0;
+        transition: flex-basis 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+                    max-width 0.5s cubic-bezier(0.4, 0, 0.2, 1),
+                    opacity 0.4s ease 0.1s;
+    }
+    #map-col.map-active {
+        flex: 1 1 50% !important;
+        width: auto !important;
+        max-width: 50% !important;
+        min-width: 0 !important;
+        overflow: visible !important;
+        opacity: 1;
+    }
+}
