@@ -351,7 +351,7 @@ def start_frontend(retriever: Retriever, analyzer_type: str, coding_llm, retriev
         with gr.Row(scale=1, elem_id="footer-row"):
             gr.HTML("""
             <div id="footer-bar">
-                <p class="footer-attribution">OGD4All hat Zugriff auf 430 tabellarische und geografische Datensätze der Stadt Zürich (Datenstand: März-Mai 2025). | © OpenStreetMap contributors, Tiles © Esri — Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community, © OpenStreetMap contributors © CARTO | Der vollständige Code ist verfügbar auf <a href="https://github.com/ethz-coss/ogd4all" target="_blank" rel="noopener">GitHub</a></p>
+                <p class="footer-attribution">OGD4All hat Zugriff auf 430 tabellarische und geografische Datensätze der Stadt Zürich (Datenstand: März-Mai 2025). | © OpenStreetMap contributors, Tiles © Esri — Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community, © OpenStreetMap contributors © CARTO | <a href="https://github.com/ethz-coss/ogd4all" target="_blank" rel="noopener">GitHub Repo</a>|<a href="https://arxiv.org/abs/2602.00012" target="_blank" rel="noopener">Paper</a></p>
                 <div class="footer-mobile-btns">
                     <button id="footer-info-btn" aria-label="Info">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="8"/><line x1="12" y1="12" x2="12" y2="16"/></svg>
@@ -363,8 +363,7 @@ def start_frontend(retriever: Retriever, analyzer_type: str, coding_llm, retriev
                 <div id="info-modal" role="dialog" aria-modal="true" aria-label="Info">
                     <p>OGD4All hat Zugriff auf 430 tabellarische und geografische Datensätze der Stadt Zürich (Datenstand: März-Mai 2025).</p>
                     <p>© OpenStreetMap contributors, Tiles © Esri — Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community, © OpenStreetMap contributors © CARTO</p>
-                    <p>Der vollständige Code ist verfügbar auf <a href="https://github.com/ethz-coss/ogd4all" target="_blank" rel="noopener">GitHub</a>.</p>
-                </div>
+                    <p><a href="https://github.com/ethz-coss/ogd4all" target="_blank" rel="noopener">GitHub Repo</a>|<a href="https://arxiv.org/abs/2602.00012" target="_blank" rel="noopener">Paper</a></p></div>
             </div>
             """)
 
