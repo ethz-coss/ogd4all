@@ -108,7 +108,9 @@ class OGD4All():
                     yield [thought_msg_retrieval, explanation], updated_map
                     return
 
-                thought_msg_retrieval.content += f"\nBased on datasets retrieved with the above {"query" if search_count == 1 else "queries"}, I will be using the following dataset{"" if len(metadata_docs) == 1 else "s"} to answer your question:\n"
+                _q = "query" if search_count == 1 else "queries"
+                _s = "" if len(metadata_docs) == 1 else "s"
+                thought_msg_retrieval.content += f"\nBased on datasets retrieved with the above {_q}, I will be using the following dataset{_s} to answer your question:\n"
                 thought_msg_retrieval.content += "\n".join([f"- [{doc.title}]({doc.downloadURL})" for doc in metadata_docs])
                 #thought_msg_retrieval.content += f"\n\n{explanation}" # Explanation does not seem very helpful and is currently not optimized for display towards the user
 
@@ -214,7 +216,9 @@ class OGD4All():
                         yield [thought_msg_retrieval, explanation], updated_map
                     else:
                         self.added_datasets = True
-                        thought_msg_retrieval.content += f"\nBased on datasets retrieved with the above {"query" if search_count == 1 else "queries"}, I will be using the following additional dataset{"" if len(extra_docs) == 1 else "s"} to answer your question:\n"
+                        _q = "query" if search_count == 1 else "queries"
+                        _s = "" if len(extra_docs) == 1 else "s"
+                        thought_msg_retrieval.content += f"\nBased on datasets retrieved with the above {_q}, I will be using the following additional dataset{_s} to answer your question:\n"
                         thought_msg_retrieval.content += "\n".join([f"- [{doc.title}]({doc.downloadURL})" for doc in extra_docs])
 
                         yield thought_msg_retrieval, updated_map
