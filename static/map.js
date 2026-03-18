@@ -140,6 +140,12 @@
         backdrop.addEventListener('click', function (e) {
             if (e.target === backdrop) closeInfoModal();
         });
+
+        document.addEventListener('keydown', function (e) {
+            if (e.key !== 'Escape') return;
+            if (backdrop.classList.contains('active')) closeInfoModal();
+            else if (overlay && overlay.classList.contains('active')) closeMapOverlay();
+        });
     }
     setTimeout(initFooterBtns, 700);
 
