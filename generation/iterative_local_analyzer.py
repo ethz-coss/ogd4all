@@ -199,7 +199,7 @@ class IterativeLocalAnalyzer(Analyzer):
                         elem.canvas.draw() # Ensure the figure is rendered
                         img = np.asarray(elem.canvas.buffer_rgba())
                         pil_img = Image.fromarray(img)
-                        gradio_elems.append(gr.Image(value=pil_img, type="pil", label="Matplotlib Figure"))
+                        gradio_elems.append(gr.Image(value=pil_img, type="pil", show_label=False))
                     elif isinstance(elem, pd.DataFrame):
                         textual_answers += f"\n\n{elem.to_markdown()}"
                     # else:

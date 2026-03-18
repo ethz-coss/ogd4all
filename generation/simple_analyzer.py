@@ -76,7 +76,7 @@ class SimpleAnalyzer(Analyzer):
                 # The png is in base64 format.
                 with open(f'chart-{result_idx}.png', 'wb') as f:
                     f.write(base64.b64decode(result.png))
-                response.append(gr.Image(f'chart-{result_idx}.png', width=800))
+                response.append(gr.Image(f'chart-{result_idx}.png', width=800, show_label=False))
                 log.info(f'Chart saved to chart-{result_idx}.png')
                 result_idx += 1
 
