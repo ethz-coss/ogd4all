@@ -310,7 +310,7 @@ def start_frontend(retriever: Retriever, analyzer_type: str, coding_llm, retriev
     with gr.Blocks(title="OGD4All", fill_height=True) as demo:
         map = gr.HTML(value=map_placeholder, render=False, elem_classes="map-panel")
         ogd4all.map_component = map
-        with gr.Row(scale=1):
+        with gr.Row(scale=1, elem_id="title-row"):
             with gr.Column(scale=1):
                 gr.HTML("""
                 <div id="title-area">
@@ -325,7 +325,7 @@ def start_frontend(retriever: Retriever, analyzer_type: str, coding_llm, retriev
                 """)
         with gr.Row(elem_classes="full-height", scale=4):
             with gr.Column(scale=1, elem_classes="full-height", elem_id="chat-col-inner"):
-                chatbot = gr.Chatbot(scale=1, show_label=False, elem_id="main-chatbot")
+                chatbot = gr.Chatbot(scale=1, show_label=False, elem_id="main-chatbot", allow_tags=False, buttons=[])
 
                 def clear_all():
                     ogd4all.reset = True # reset analyzer state
@@ -348,12 +348,27 @@ def start_frontend(retriever: Retriever, analyzer_type: str, coding_llm, retriev
                 )
             with gr.Column(scale=1, elem_classes="full-height", elem_id="map-col"):
                 map.render()
-        with gr.Row(scale=1):
-            gr.HTML("""<p style="text-align:center; color:#b0b8c1; font-size:0.8rem; margin:0.4rem 0 0.2rem 0;">
-                OGD4All hat Zugriff auf 430 tabellarische und geografische Datensätze der Stadt Zürich (Datenstand: März-Mai 2025). | © OpenStreetMap contributors, Tiles © Esri — Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community, © OpenStreetMap contributors © CARTO
-            </p>""")
+        with gr.Row(scale=1, elem_id="footer-row"):
+            gr.HTML("""
+            <div id="footer-bar">
+                <p class="footer-attribution">OGD4All hat Zugriff auf 430 tabellarische und geografische Datensätze der Stadt Zürich (Datenstand: März-Mai 2025). | © OpenStreetMap contributors, Tiles © Esri — Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community, © OpenStreetMap contributors © CARTO | Der vollständige Code ist verfügbar auf <a href="https://github.com/ethz-coss/ogd4all" target="_blank" rel="noopener">GitHub</a></p>
+                <div class="footer-mobile-btns">
+                    <button id="footer-info-btn" aria-label="Info">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="8"/><line x1="12" y1="12" x2="12" y2="16"/></svg>
+                        Info
+                    </button>
+                </div>
+            </div>
+            <div id="info-modal-backdrop">
+                <div id="info-modal" role="dialog" aria-modal="true" aria-label="Info">
+                    <p>OGD4All hat Zugriff auf 430 tabellarische und geografische Datensätze der Stadt Zürich (Datenstand: März-Mai 2025).</p>
+                    <p>© OpenStreetMap contributors, Tiles © Esri — Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community, © OpenStreetMap contributors © CARTO</p>
+                    <p>Der vollständige Code ist verfügbar auf <a href="https://github.com/ethz-coss/ogd4all" target="_blank" rel="noopener">GitHub</a>.</p>
+                </div>
+            </div>
+            """)
 
-    demo.launch(theme=gr.themes.Soft(font=[gr.themes.GoogleFont("Roboto"), "Arial", "sans-serif"]), css=custom_css, head=map_js_head)
+    demo.launch(theme=gr.themes.Soft(font=[gr.themes.GoogleFont("Roboto"), "Arial", "sans-serif"]), css=custom_css, head=map_js_head, footer_links=[])
 
 
 if __name__ == "__main__":
