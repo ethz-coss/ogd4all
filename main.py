@@ -42,7 +42,6 @@ class OGD4All():
         self.analyzer = None
         self.reset = True
         self.timeout = timeout
-        self.map_component = None
         self.added_datasets = False
         self.coding_llm = coding_llm
         self.streaming = streaming
@@ -268,7 +267,7 @@ class OGD4All():
                         out.pop(i)
                         produced_new_map = True
 
-                if produced_new_map and self.map_component is not None:
+                if produced_new_map:
                     copied_map = copy.deepcopy(new_map)
                     folium.LayerControl().add_to(copied_map)
                     updated_map = gr.update(value=copied_map._repr_html_())
@@ -303,8 +302,10 @@ class OGD4All():
 def start_frontend(retriever: Retriever, analyzer_type: str, coding_llm, retrieval_check_client, streaming: bool = True):
     """Starts an interactive Gradio interface for OGD4All"""
     log.info("Starting OGD4All...")
-    ogd4all = OGD4All(retriever.groupOwner, retriever, analyzer_type, coding_llm, retrieval_check_client, streaming, timeout=360)
-    
+
+    def create_session():
+        return OGD4All(retriever.groupOwner, retriever, analyzer_type, coding_llm, retrieval_check_client, streaming, timeout=360)
+
     _static = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")
 
     with open(os.path.join(_static, "style.css")) as f:
@@ -318,7 +319,7 @@ def start_frontend(retriever: Retriever, analyzer_type: str, coding_llm, retriev
 
     with gr.Blocks(title="OGD4All", fill_height=True) as demo:
         map = gr.HTML(value=map_placeholder, render=False, elem_classes="map-panel")
-        ogd4all.map_component = map
+        session_state = gr.State(create_session)
         with gr.Row(scale=1, elem_id="title-row"):
             with gr.Column(scale=1):
                 gr.HTML("""
@@ -336,23 +337,27 @@ def start_frontend(retriever: Retriever, analyzer_type: str, coding_llm, retriev
             with gr.Column(scale=1, elem_classes="full-height", elem_id="chat-col-inner"):
                 chatbot = gr.Chatbot(scale=1, show_label=False, elem_id="main-chatbot", allow_tags=False, buttons=[])
 
-                def clear_all():
-                    ogd4all.reset = True # reset analyzer state
+                def clear_all(session):
+                    session.reset = True # reset analyzer state
                     return gr.update(value=map_placeholder) # restore placeholder
 
-                chatbot.clear(fn=clear_all, inputs=[], outputs=[map])
+                chatbot.clear(fn=clear_all, inputs=[session_state], outputs=[map])
+
+                def chat_fn(query, history, session):
+                    yield from session.chat_fn(query, history)
 
                 gr.ChatInterface(
-                    fn=ogd4all.chat_fn,
+                    fn=chat_fn,
                     multimodal=False, # we manually handle multimodal input
                     textbox=gr.MultimodalTextbox(file_types=["image", ".pdf"], placeholder="Frag mich etwas über die offenen Daten der Stadt Zürich...", file_count='multiple'),
                     examples=[
-                        "Wo plant die Stadt Zürich, neue Bäume zu pflanzen?",
-                        "Welche Hundefreilaufzone ist am nächsten zum Kunsthaus Zürich?",
-                        "In welchem Quartier der Stadt Zürich hat es die höchste Dichte an Spielplätzen?",
-                        "Wie hat sich die Anzahl Elektroautos in Zürich in den letzten 20 Jahren entwickelt?"
+                        ["Wo plant die Stadt Zürich, neue Bäume zu pflanzen?", None],
+                        ["Welche Hundefreilaufzone ist am nächsten zum Kunsthaus Zürich?", None],
+                        ["In welchem Quartier der Stadt Zürich hat es die höchste Dichte an Spielplätzen?", None],
+                        ["Wie hat sich die Anzahl Elektroautos in Zürich in den letzten 20 Jahren entwickelt?", None],
                     ],
                     chatbot=chatbot,
+                    additional_inputs=[session_state],
                     additional_outputs=[map],
                 )
             with gr.Column(scale=1, elem_classes="full-height", elem_id="map-col"):
