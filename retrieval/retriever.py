@@ -160,13 +160,10 @@ class Retriever(ABC):
             embedding, total_tokens = get_embedding(self.embedding_client, query)
             self.total_tokens += total_tokens
             # Regular semantic search based on cosine similarity
-            self.embeddings_df["similarities"] = self.embeddings_df[self.embedding_model].apply(lambda x: cosine_similarity(x, embedding))
-
-            res = (
-                self.embeddings_df
-                .sort_values("similarities", ascending=False)
-                .head(top_n)
-            )
+            similarities = np.array([cosine_similarity(x, embedding) for x in self.embeddings_df[self.embedding_model]])
+            top_indices = np.argpartition(similarities, -top_n)[-top_n:]
+            top_indices = top_indices[np.argsort(similarities[top_indices])[::-1]]
+            res = self.embeddings_df.iloc[top_indices]
 
             log.info("Vector search results", datasets=res["title"].tolist())
             return [Metadata(self.groupOwner, row["metadata_id"]) for _, row in res.iterrows()]
