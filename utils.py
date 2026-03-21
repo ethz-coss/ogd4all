@@ -570,9 +570,9 @@ def get_llm_client(llm_name: str, temperature: float = 0.0):
     if llm_name not in SUPPORTED_LLMS:
         raise ValueError(f"LLM {llm_name} is not supported. Supported LLMs are: {SUPPORTED_LLMS}")
     
-    azure_openai_endpoint = '/'.join(os.getenv("AZURE_OPENAI_ENDPOINT").split('/')[:-1]) + '/' + llm_name
     if llm_name in ['gpt-4.1', 'gpt-4.1-mini', 'gpt-4o', 'gpt-35-turbo']:
         if os.getenv("AZURE_OPENAI_API_KEY"):
+            azure_openai_endpoint = '/'.join(os.getenv("AZURE_OPENAI_ENDPOINT").split('/')[:-1]) + '/' + llm_name
             return AzureChatOpenAI(azure_deployment=llm_name, api_version="2024-10-21", temperature=temperature,
                                 max_tokens=None, timeout=None, max_retries=2, azure_endpoint=azure_openai_endpoint)
         elif os.getenv("OPENAI_API_KEY"):
@@ -582,6 +582,7 @@ def get_llm_client(llm_name: str, temperature: float = 0.0):
     elif llm_name in ['gpt-5', 'gpt-5-mini', 'gpt-5-nano', 'gpt-o1', 'gpt-o3-mini-preview']:
         # These models don't support the temperature parameter
         if os.getenv("AZURE_OPENAI_API_KEY"):
+            azure_openai_endpoint = '/'.join(os.getenv("AZURE_OPENAI_ENDPOINT").split('/')[:-1]) + '/' + llm_name
             return AzureChatOpenAI(azure_deployment=llm_name, api_version="2025-02-01-preview",
                                 max_tokens=None, timeout=None, max_retries=2, azure_endpoint=azure_openai_endpoint)
         elif os.getenv("OPENAI_API_KEY"):
