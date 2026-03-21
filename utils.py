@@ -80,6 +80,7 @@ def download_dataset_file(groupOwner: str, filename: str) -> None:
         filename=f"data/opendata/{filename}",
     )
     shutil.copy(cached, dest_path)
+    os.remove(cached)
     log.info(f"Downloaded {filename} to {dest_path}")
 
 
