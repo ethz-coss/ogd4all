@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+load_dotenv()
+
 import gradio as gr
 import argparse
 import time
