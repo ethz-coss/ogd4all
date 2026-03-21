@@ -21,7 +21,7 @@ WORKDIR $HOME/app
 
 COPY --chown=user . $HOME/app
 
-RUN mkdir -p data/opendata/50000006/extracted
+RUN mkdir -p data/opendata/50000006/extracted && mkdir -p cache
 
 RUN uv sync --frozen --no-dev
 
