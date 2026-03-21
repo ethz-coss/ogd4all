@@ -26,7 +26,7 @@ from retrieval.agentic_retriever import AgenticRetriever
 from retrieval.knn_retriever import KNNRetriever
 from retrieval.retriever import Retriever
 from retrieval.verified_retriever import VerifiedRetriever
-from utils import SUPPORTED_LLMS, get_llm_client, init_mappings
+from utils import SUPPORTED_LLMS, get_llm_client, init_mappings, download_dataset_file, get_file_from_title, get_path_from_title
 
 
 class RetrievalCheck(BaseModel):
@@ -35,7 +35,7 @@ class RetrievalCheck(BaseModel):
     retrievalRequired: bool = Field(..., description="Whether an additional dataset retrieval is required or not.")
 
 class OGD4All():
-    def __init__(self, groupOwner, retriever, analyzer_type, coding_llm, retrieval_check_client, streaming, timeout=60):
+    def __init__(self, groupOwner, retriever, analyzer_type, coding_llm, retrieval_check_client, streaming, lazy_download=False, timeout=60):
         self.groupOwner = groupOwner
         self.retriever = retriever
         self.analyzer_type = analyzer_type.lower()
@@ -45,6 +45,7 @@ class OGD4All():
         self.added_datasets = False
         self.coding_llm = coding_llm
         self.streaming = streaming
+        self.lazy_download = lazy_download
         self.retrieval_check_client = retrieval_check_client.with_structured_output(RetrievalCheck)
 
 
@@ -61,6 +62,8 @@ class OGD4All():
         """
         try:
             updated_map = gr.update()
+            thought_msg_download = None
+            _dl = []
             if self.reset:
                 # Kill previous sandbox
                 if self.analyzer is not None:
@@ -118,6 +121,30 @@ class OGD4All():
                 thought_msg_retrieval.content += "\n".join([f"- [{doc.title}]({doc.downloadURL})" for doc in metadata_docs])
                 #thought_msg_retrieval.content += f"\n\n{explanation}" # Explanation does not seem very helpful and is currently not optimized for display towards the user
 
+                if self.lazy_download:
+                    dl_start = time.time()
+                    missing = [
+                        (doc, get_file_from_title(self.groupOwner, doc.title))
+                        for doc in metadata_docs
+                        if not os.path.exists(get_path_from_title(self.groupOwner, doc.title))
+                    ]
+                    if missing:
+                        thought_msg_download = gr.ChatMessage(
+                            role="assistant",
+                            content="",
+                            metadata={"title": "Downloading open datasets...", "status": "pending"},
+                        )
+                        _dl = [thought_msg_download]
+                        yield [thought_msg_retrieval, thought_msg_download], updated_map
+                        for doc, filename in missing:
+                            thought_msg_download.content += f"- **{doc.title}** ({filename})\n"
+                            yield [thought_msg_retrieval, thought_msg_download], updated_map
+                            download_dataset_file(self.groupOwner, filename)
+                        thought_msg_download.metadata["status"] = "done"
+                        thought_msg_download.metadata["title"] = "Datasets downloaded"
+                        thought_msg_download.metadata["duration"] = time.time() - dl_start
+                        yield [thought_msg_retrieval, thought_msg_download], updated_map
+
                 start_time = time.time()
                 thought_msg_coding_init = gr.ChatMessage(
                     role="assistant",
@@ -126,7 +153,7 @@ class OGD4All():
                               "status": "pending"},
                 )
 
-                yield [thought_msg_retrieval, thought_msg_coding_init], updated_map
+                yield [thought_msg_retrieval] + _dl + [thought_msg_coding_init], updated_map
 
                 # Initialize the analyzer based on the specified type
                 if self.analyzer_type == "simple":
@@ -146,7 +173,7 @@ class OGD4All():
                 thought_msg_coding_init.content += f"I have loaded all required datasets and imported required libraries. "
                 thought_msg_coding_init.content += f"The following code has been executed to print context about the datasets:\n```python{self.analyzer.setup_code}\n```"
 
-                yield [thought_msg_retrieval, thought_msg_coding_init], updated_map
+                yield [thought_msg_retrieval] + _dl + [thought_msg_coding_init], updated_map
             else:
                 # Run a check to see whether new datasets need to be retrieved
                 prompt = f"""
@@ -227,6 +254,30 @@ class OGD4All():
 
                         yield thought_msg_retrieval, updated_map
 
+                        if self.lazy_download:
+                            dl_start = time.time()
+                            missing = [
+                                (doc, get_file_from_title(self.groupOwner, doc.title))
+                                for doc in extra_docs
+                                if not os.path.exists(get_path_from_title(self.groupOwner, doc.title))
+                            ]
+                            if missing:
+                                thought_msg_download = gr.ChatMessage(
+                                    role="assistant",
+                                    content="",
+                                    metadata={"title": "Downloading open datasets...", "status": "pending"},
+                                )
+                                _dl = [thought_msg_download]
+                                yield [thought_msg_retrieval, thought_msg_download], updated_map
+                                for doc, filename in missing:
+                                    thought_msg_download.content += f"- **{doc.title}** ({filename})\n"
+                                    yield [thought_msg_retrieval, thought_msg_download], updated_map
+                                    download_dataset_file(self.groupOwner, filename)
+                                thought_msg_download.metadata["status"] = "done"
+                                thought_msg_download.metadata["title"] = "Datasets downloaded"
+                                thought_msg_download.metadata["duration"] = time.time() - dl_start
+                                yield [thought_msg_retrieval, thought_msg_download], updated_map
+
                         start_time = time.time()
                         thought_msg_coding_extend = gr.ChatMessage(
                             role="assistant",
@@ -236,7 +287,7 @@ class OGD4All():
                         )
 
                         if isinstance(self.analyzer, SimpleLocalAnalyzerV2) or isinstance(self.analyzer, IterativeLocalAnalyzer):
-                            yield [thought_msg_retrieval, thought_msg_coding_extend], updated_map 
+                            yield [thought_msg_retrieval] + _dl + [thought_msg_coding_extend], updated_map
 
                             self.analyzer.metadata_docs.extend(extra_docs)
                             self.analyzer.extend_sandbox([m.title for m in extra_docs])
@@ -246,13 +297,13 @@ class OGD4All():
                             thought_msg_coding_extend.metadata["duration"] = time.time() - start_time
                             thought_msg_coding_extend.content += f"I have updated the persistent Python environment with new datasets. "
                             thought_msg_coding_extend.content += f"The following code has been executed to print context about the new datasets:\n```python{self.analyzer.setup_code}\n```"
-                            yield [thought_msg_retrieval, thought_msg_coding_extend], updated_map
+                            yield [thought_msg_retrieval] + _dl + [thought_msg_coding_extend], updated_map
                         else:
                             thought_msg_coding_extend.metadata["status"] = "done"
                             thought_msg_coding_extend.metadata["title"] = "Coding environment not updated"
                             thought_msg_coding_extend.metadata["duration"] = time.time() - start_time
                             thought_msg_coding_extend.content = "I am not able to extend the sandbox with additional datasets with the current analyzer type. Please reset the system to start a new analysis."
-                            yield [thought_msg_retrieval, thought_msg_coding_extend], updated_map
+                            yield [thought_msg_retrieval] + _dl + [thought_msg_coding_extend], updated_map
 
 
             for out in self.analyzer.analyze(query):
@@ -273,12 +324,12 @@ class OGD4All():
                     updated_map = gr.update(value=copied_map._repr_html_())
 
                 if self.reset:
-                    yield [thought_msg_retrieval, thought_msg_coding_init] + out, updated_map
+                    yield [thought_msg_retrieval] + _dl + [thought_msg_coding_init] + out, updated_map
                 elif self.added_datasets:
-                    yield [thought_msg_retrieval, thought_msg_coding_extend] + out, updated_map
+                    yield [thought_msg_retrieval] + _dl + [thought_msg_coding_extend] + out, updated_map
                 elif retrieval_check is not None and retrieval_check.retrievalRequired:
                     # Retrieval was performed, but no new datasets were added
-                    yield [thought_msg_retrieval] + out, updated_map
+                    yield [thought_msg_retrieval] + _dl + out, updated_map
                 else:
                     yield out, updated_map
 
@@ -299,12 +350,12 @@ class OGD4All():
             self.analyzer.finalize()
 
 
-def start_frontend(retriever: Retriever, analyzer_type: str, coding_llm, retrieval_check_client, streaming: bool = True):
+def start_frontend(retriever: Retriever, analyzer_type: str, coding_llm, retrieval_check_client, streaming: bool = True, lazy_download: bool = False):
     """Starts an interactive Gradio interface for OGD4All"""
     log.info("Starting OGD4All...")
 
     def create_session():
-        return OGD4All(retriever.groupOwner, retriever, analyzer_type, coding_llm, retrieval_check_client, streaming, timeout=360)
+        return OGD4All(retriever.groupOwner, retriever, analyzer_type, coding_llm, retrieval_check_client, streaming, lazy_download=lazy_download, timeout=360)
 
     _static = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")
 
@@ -399,13 +450,14 @@ if __name__ == "__main__":
     group.add_argument("--hybrid_search", action="store_true", help="Enable hybrid search with Milvus.")
     group.add_argument("--bm25_search", action="store_true", help="Enable BM25 search with Milvus.")
     parser.add_argument("--no_streaming", action="store_true", help="Disable streaming for the coding LLM. This enables validation of LLM responses and token counting, but makes the system feel less responsive.")
+    parser.add_argument("--lazy-download", action="store_true", dest="lazy_download", help="Enable lazy downloading of dataset files from HuggingFace Datasets on demand. Use in deployment.")
     args = parser.parse_args()
     
     log_name = f"main_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}_{args.retriever}_{args.analyzer}"
     utils.setup_logging(level=logging.INFO, log_filename=f"{log_name}.log")
 
     # Initialize utils
-    init_mappings(args.groupOwner)
+    init_mappings(args.groupOwner, lazy_download=args.lazy_download)
 
     # Initialize the retriever
     retriever = None
@@ -419,4 +471,4 @@ if __name__ == "__main__":
         log.error(f"Unknown retriever type: {args.retriever}. Exiting...")
         sys.exit(1)
 
-    start_frontend(retriever, args.analyzer, coding_llm=get_llm_client(args.coding_llm), retrieval_check_client=get_llm_client(args.retrieval_check_llm), streaming=not args.no_streaming)
+    start_frontend(retriever, args.analyzer, coding_llm=get_llm_client(args.coding_llm), retrieval_check_client=get_llm_client(args.retrieval_check_llm), streaming=not args.no_streaming, lazy_download=args.lazy_download)

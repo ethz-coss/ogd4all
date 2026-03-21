@@ -1,5 +1,6 @@
 import re
 import os
+import shutil
 import pandas as pd
 import logging
 import base64
@@ -7,6 +8,7 @@ import mimetypes
 import pymupdf4llm
 import structlog;log=structlog.get_logger()
 from typing import List, Optional, Tuple
+from huggingface_hub import hf_hub_download
 
 from azure.core.credentials import AzureKeyCredential
 from langchain_azure_ai.chat_models.inference import AzureAIChatCompletionsModel
@@ -16,30 +18,33 @@ from langchain_openai import AzureChatOpenAI, ChatOpenAI
 from pydantic import Field, SecretStr
 
 
-def init_mappings(groupOwner: str, excluded_extensions=[".tif"]):
+def init_mappings(groupOwner: str, excluded_extensions=[".tif"], lazy_download=False):
     """
     Populates the mappings dict with mappings for title to file name and path based on the group owner.
     The mappings dict is used by `get_file_from_title` and `get_path_from_title`
     It also checks which files are actually available
 
     :param groupOwner: The group owner ID.
+    :param lazy_download: If True, include all datasets from the CSV regardless of local availability.
+                          Files will be downloaded on demand. If False (default), only include files
+                          that are already present in the extracted directory.
     """
-    
+
     script_dir = os.path.dirname(os.path.abspath(__file__))
     csv_path = os.path.join(script_dir, f"./data/opendata/{groupOwner}/downloads.csv")
-
-    extracted_data_path = os.path.join(script_dir, f"./data/opendata/{groupOwner}/extracted")
-    available_files = set()
-    for filename in os.listdir(extracted_data_path):
-        available_files.add(filename)
 
     groupOwnerMapping = {}
     downloads_df = pd.read_csv(csv_path)
 
-    # Filter out rows where the extracted_file is not in the available files, and report their amount
-    filtered_df = downloads_df[downloads_df['extracted_file'].isin(available_files)]
-    if len(filtered_df) < len(downloads_df):
-        log.warning(f"Found {len(downloads_df) - len(filtered_df)} files in {csv_path} that are not available in {extracted_data_path}. They will be ignored.")
+    if lazy_download:
+        filtered_df = downloads_df
+    else:
+        extracted_data_path = os.path.join(script_dir, f"./data/opendata/{groupOwner}/extracted")
+        available_files = {filename for filename in os.listdir(extracted_data_path)}
+        # Filter out rows where the extracted_file is not in the available files, and report their amount
+        filtered_df = downloads_df[downloads_df['extracted_file'].isin(available_files)]
+        if len(filtered_df) < len(downloads_df):
+            log.warning(f"Found {len(downloads_df) - len(filtered_df)} files in {csv_path} that are not available in {extracted_data_path}. They will be ignored.")
 
     for extension in excluded_extensions:
         # Filter out files with the specified extensions
@@ -51,6 +56,31 @@ def init_mappings(groupOwner: str, excluded_extensions=[".tif"]):
     log.info(f"Will use {len(groupOwnerMapping)} files for group owner {groupOwner}.")
 
     mappings[groupOwner] = groupOwnerMapping
+
+
+_HF_DATASET_REPO = "michael7ma/ogd4all-benchmark"
+
+
+def download_dataset_file(groupOwner: str, filename: str) -> None:
+    """
+    Download a single dataset file from HuggingFace Datasets if not already present locally.
+
+    :param groupOwner: The group owner ID (used to build the local destination path).
+    :param filename: The extracted filename (e.g. 'some_dataset.gpkg').
+    """
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    dest_path = os.path.join(script_dir, f"data/opendata/{groupOwner}/extracted/{filename}")
+    if os.path.exists(dest_path):
+        return
+    log.info(f"Downloading dataset file {filename} from HuggingFace...")
+    os.makedirs(os.path.dirname(dest_path), exist_ok=True)
+    cached = hf_hub_download(
+        repo_id=_HF_DATASET_REPO,
+        repo_type="dataset",
+        filename=f"data/opendata/{filename}",
+    )
+    shutil.copy(cached, dest_path)
+    log.info(f"Downloaded {filename} to {dest_path}")
 
 
 def clean(varStr):
