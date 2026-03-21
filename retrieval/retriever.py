@@ -8,10 +8,11 @@ import ast
 import json
 import sys
 import structlog;log=structlog.get_logger()
-from pymilvus import MilvusClient, AnnSearchRequest, RRFRanker
+from pymilvus import AnnSearchRequest, MilvusClient, RRFRanker
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))) # not the nicest way of handling this, but oh well...
 from utils import does_title_exist
+
 
 def cosine_similarity(a: List[float], b: List[float]) -> float:
     """

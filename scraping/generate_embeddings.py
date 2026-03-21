@@ -1,12 +1,12 @@
+import argparse
+import json
+import logging
 import os
 import re
-import os
+
 import pandas as pd
 import tiktoken
 from openai import AzureOpenAI
-import json
-import argparse
-import logging
 from tqdm import tqdm
 
 pd.options.mode.chained_assignment = None

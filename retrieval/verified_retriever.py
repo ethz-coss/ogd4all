@@ -4,16 +4,15 @@ from typing_extensions import TypedDict, Annotated, List, Tuple, Generator
 from typing import Optional
 from pydantic import BaseModel, Field
 import structlog;log=structlog.get_logger()
-from rapidfuzz import process, fuzz
-
-from langgraph.graph import StateGraph
-from langgraph.graph.message import add_messages
-from langchain_core.messages import HumanMessage, SystemMessage, AIMessage
 from langchain_community.cache import SQLiteCache
 from langchain_core.globals import set_llm_cache
+from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
+from langgraph.graph import StateGraph
+from langgraph.graph.message import add_messages
+from rapidfuzz import fuzz, process
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))) # not the nicest way of handling this, but oh well...
-from retrieval.retriever import Retriever, Metadata
+from retrieval.retriever import Metadata, Retriever
 from utils import get_llm_client
 
 script_dir = os.path.dirname(os.path.abspath(__file__))

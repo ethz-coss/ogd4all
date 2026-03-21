@@ -1,4 +1,5 @@
 from dotenv import load_dotenv
+
 load_dotenv()
 
 import gradio as gr
@@ -8,24 +9,25 @@ import os
 import sys
 import logging
 import structlog;log=structlog.get_logger()
+import copy
+import datetime
+
 import folium
 from langchain_core.messages import HumanMessage
 from pydantic import BaseModel, Field
-import copy
+
 import utils
-import datetime
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))) # not the nicest way of handling this, but oh well...
-from retrieval.knn_retriever import KNNRetriever
-from retrieval.verified_retriever import VerifiedRetriever
-from retrieval.agentic_retriever import AgenticRetriever
-from retrieval.retriever import Retriever
-
+from generation.iterative_local_analyzer import IterativeLocalAnalyzer
 from generation.simple_analyzer import SimpleAnalyzer
 from generation.simple_local_analyzer_v2 import SimpleLocalAnalyzerV2
-from generation.iterative_local_analyzer import IterativeLocalAnalyzer
+from retrieval.agentic_retriever import AgenticRetriever
+from retrieval.knn_retriever import KNNRetriever
+from retrieval.retriever import Retriever
+from retrieval.verified_retriever import VerifiedRetriever
+from utils import SUPPORTED_LLMS, get_llm_client, init_mappings
 
-from utils import init_mappings, get_llm_client, SUPPORTED_LLMS
 
 class RetrievalCheck(BaseModel):
     """Results of whether an additional dataset retrieval is required"""

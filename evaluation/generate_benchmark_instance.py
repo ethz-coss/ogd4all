@@ -1,11 +1,12 @@
-import os
+import copy  # Import copy module for deep copying
 import json
+import os
+import random
+import re
 import subprocess
 import sys
+
 import tqdm
-import re
-import copy  # Import copy module for deep copying
-import random
 
 """
 This script executes the GT scripts for the benchmark questions and saves their outputs.

@@ -6,24 +6,29 @@ import datetime
 import tqdm
 import logging
 import structlog;log=structlog.get_logger()
-import time
 import argparse
+import time
+
+import pandas as pd
 from langchain_core.messages import HumanMessage, SystemMessage
 from pydantic import BaseModel, Field
-import pandas as pd
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))) # not the nicest way of handling this, but oh well...
 
-from utils import init_mappings, setup_logging, get_llm_client, get_llm_pricing, LLM_JUDGE_SYSTEM_PROMPT, SUPPORTED_LLMS
-
-from retrieval.retriever import Retriever, Metadata
-from retrieval.verified_retriever import VerifiedRetriever
-from retrieval.agentic_retriever import AgenticRetriever
-
-from generation.analyzer import Analyzer
+from generation.iterative_local_analyzer import IterativeLocalAnalyzer
 from generation.simple_analyzer import SimpleAnalyzer
 from generation.simple_local_analyzer_v2 import SimpleLocalAnalyzerV2
-from generation.iterative_local_analyzer import IterativeLocalAnalyzer
+from retrieval.agentic_retriever import AgenticRetriever
+from retrieval.retriever import Metadata, Retriever
+from retrieval.verified_retriever import VerifiedRetriever
+from utils import (
+    LLM_JUDGE_SYSTEM_PROMPT,
+    SUPPORTED_LLMS,
+    get_llm_client,
+    get_llm_pricing,
+    init_mappings,
+    setup_logging,
+)
 
 
 class Eval(BaseModel):

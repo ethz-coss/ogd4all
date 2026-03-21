@@ -1,8 +1,8 @@
-import xml.etree.ElementTree as ET
-import os
-import json
 import argparse
+import json
 import logging
+import os
+import xml.etree.ElementTree as ET
 
 """
 Parse XML metadata file from Geocat and extract the following information:

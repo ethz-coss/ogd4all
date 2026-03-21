@@ -1,6 +1,5 @@
 from typing_extensions import List, Any, Union
 from e2b_code_interpreter import Sandbox
-from pydantic import BaseModel, Field
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 import os
 import sys
@@ -10,9 +9,9 @@ import time
 import structlog;log=structlog.get_logger()
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))) # not the nicest way of handling this, but oh well...
-from retrieval.retriever import Metadata
 from generation.analyzer import Analyzer, CodeAct
-from utils import get_path_from_title, get_file_from_title, generate_system_prompt
+from retrieval.retriever import Metadata
+from utils import generate_system_prompt, get_file_from_title, get_path_from_title
 
 
 class SimpleAnalyzer(Analyzer):

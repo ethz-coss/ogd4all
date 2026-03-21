@@ -1,7 +1,8 @@
-import requests
-import os
 import argparse
 import logging
+import os
+
+import requests
 
 """
 Get metadata records from the Geocat API for a specific groupOwner.

@@ -1,5 +1,4 @@
 from typing_extensions import List, Any, Union
-from pydantic import BaseModel, Field
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 from smolagents.local_python_executor import LocalPythonExecutor
 import os
@@ -8,17 +7,24 @@ import gradio as gr
 import time
 import structlog;log=structlog.get_logger()
 import textwrap
+
 import folium
 import matplotlib
 import numpy as np
 import pandas as pd
+from geopy.geocoders import GoogleV3, Nominatim
 from PIL import Image
-from geopy.geocoders import Nominatim, GoogleV3
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))) # not the nicest way of handling this, but oh well...
+from generation.analyzer import Analyzer, CodeAct, CodeAction
 from retrieval.retriever import Metadata
-from generation.analyzer import Analyzer, CodeAction, CodeAct
-from utils import get_path_from_title, get_file_from_title, generate_system_prompt_v2, clean, handle_attached_files
+from utils import (
+    clean,
+    generate_system_prompt_v2,
+    get_file_from_title,
+    get_path_from_title,
+    handle_attached_files,
+)
 
 
 def setup_code_for_file(name: str, file_path: str, idx: int) -> str:

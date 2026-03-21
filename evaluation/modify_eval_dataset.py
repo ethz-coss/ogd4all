@@ -1,15 +1,16 @@
 import argparse
 import json
 import os
-import sys
-from tqdm import tqdm
-from deep_translator import DeeplTranslator
-import re
-from langchain_openai import AzureChatOpenAI
-from langchain_core.messages import HumanMessage, SystemMessage
-from pydantic import BaseModel, Field
 import random
+import re
+import sys
 import time
+
+from deep_translator import DeeplTranslator
+from langchain_core.messages import HumanMessage, SystemMessage
+from langchain_openai import AzureChatOpenAI
+from pydantic import BaseModel, Field
+from tqdm import tqdm
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))) # not the nicest way of handling this, but oh well...
 from utils import generate_rephrasal_prompt

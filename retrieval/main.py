@@ -1,11 +1,9 @@
-from retriever import Metadata
 from knn_retriever import KNNRetriever
 from verified_retriever import VerifiedRetriever
 from agentic_retriever import AgenticRetriever
 import structlog;log=structlog.get_logger()
 
 import argparse
-
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Retrieve top k metadata documents for a query using a simple KNN approach.")

@@ -2,18 +2,17 @@ import re
 import os
 import pandas as pd
 import logging
-import warnings
-import re
 import base64
 import mimetypes
 import pymupdf4llm
 import structlog;log=structlog.get_logger()
-from langchain_openai import AzureChatOpenAI, ChatOpenAI
-from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain_azure_ai.chat_models.inference import AzureAIChatCompletionsModel
-from langchain_ollama import ChatOllama
+from typing import List, Optional, Tuple
+
 from azure.core.credentials import AzureKeyCredential
-from typing import Tuple, List, Optional
+from langchain_azure_ai.chat_models.inference import AzureAIChatCompletionsModel
+from langchain_google_genai import ChatGoogleGenerativeAI
+from langchain_ollama import ChatOllama
+from langchain_openai import AzureChatOpenAI, ChatOpenAI
 from pydantic import Field, SecretStr
 
 

@@ -3,23 +3,21 @@ import sys
 import structlog;log=structlog.get_logger()
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))) # not the nicest way of handling this, but oh well...
-from retrieval.verified_retriever import Validation
-from retrieval.retriever import Retriever, Metadata
-from typing_extensions import TypedDict, Annotated, List, Tuple, Union, Generator
-from rapidfuzz import process, fuzz
-
-from langgraph.graph import StateGraph, END
-from langgraph.graph.message import add_messages
-from langgraph.prebuilt import ToolNode, tools_condition, InjectedState
-from langgraph.types import Command
-
 from langchain_community.cache import SQLiteCache
 from langchain_core.globals import set_llm_cache
-from langchain_core.messages import HumanMessage, SystemMessage, ToolMessage, AIMessage
+from langchain_core.messages import HumanMessage, SystemMessage, ToolMessage
 from langchain_core.tools import tool
 from langchain_core.tools.base import InjectedToolCallId
+from langgraph.graph import END, StateGraph
+from langgraph.graph.message import add_messages
+from langgraph.prebuilt import InjectedState, ToolNode, tools_condition
+from langgraph.types import Command
+from rapidfuzz import fuzz, process
+from typing_extensions import Annotated, Generator, List, Tuple, TypedDict, Union
 
-from utils import get_llm_client, AGENTIC_RETRIEVER_SYSTEM_PROMPT, handle_attached_files
+from retrieval.retriever import Metadata, Retriever
+from retrieval.verified_retriever import Validation
+from utils import AGENTIC_RETRIEVER_SYSTEM_PROMPT, get_llm_client, handle_attached_files
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 set_llm_cache(SQLiteCache(database_path=os.path.join(script_dir, f"../cache/.langchain.db"))) # For evals, comment this out!

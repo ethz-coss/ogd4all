@@ -1,9 +1,11 @@
 from abc import ABC, abstractmethod
 from typing import List, Union
+
+from pydantic import BaseModel, Field
+from typing_extensions import Annotated, TypedDict
+
 from retrieval.retriever import Metadata
 from utils import get_llm_client
-from pydantic import BaseModel, Field
-from typing_extensions import TypedDict, Annotated
 
 
 class CodeAct(BaseModel):
