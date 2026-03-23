@@ -407,10 +407,10 @@ def start_frontend(retriever: Retriever, analyzer_type: str, coding_llm, retriev
                     multimodal=False, # we manually handle multimodal input
                     textbox=gr.MultimodalTextbox(file_types=["image", ".pdf"], placeholder=i18n("placeholder"), file_count='multiple'),
                     examples=[
-                        ["Wo plant die Stadt Zürich, neue Bäume zu pflanzen?", None],
-                        ["Welche Hundefreilaufzone ist am nächsten zum Kunsthaus Zürich?", None],
-                        ["In welchem Quartier der Stadt Zürich hat es die höchste Dichte an Spielplätzen?", None],
-                        ["Wie hat sich die Anzahl Elektroautos in Zürich in den letzten 20 Jahren entwickelt?", None],
+                        ["Where is the City of Zurich planning to plant new trees?", None],
+                        ["Which off-leash dog zone is closest to the Kunsthaus Zurich?", None],
+                        ["Which neighborhood in Zurich has the highest density of playgrounds?", None],
+                        ["How has the number of electric vehicles in Zurich changed over the last 20 years?", None],
                     ],
                     chatbot=chatbot,
                     additional_inputs=[session_state],
@@ -421,7 +421,7 @@ def start_frontend(retriever: Retriever, analyzer_type: str, coding_llm, retriev
         with gr.Row(scale=1, elem_id="footer-row"):
             gr.HTML("""
             <div id="footer-bar">
-                <p class="footer-attribution">OGD4All hat Zugriff auf 430 tabellarische und geografische Datensätze der Stadt Zürich (Datenstand: März-Mai 2025). | © OpenStreetMap contributors, Tiles © Esri — Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community, © OpenStreetMap contributors © CARTO | <a href="https://github.com/ethz-coss/ogd4all" target="_blank" rel="noopener">GitHub Repo</a>|<a href="https://arxiv.org/abs/2602.00012" target="_blank" rel="noopener">Paper</a></p>
+                <p class="footer-attribution">OGD4All has access to 430 tabular and geographic datasets from the City of Zurich (data as of March-May 2025). | Source: City of Zurich | © OpenStreetMap contributors, Tiles © Esri — Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community, © OpenStreetMap contributors © CARTO | <a href="https://github.com/ethz-coss/ogd4all" target="_blank" rel="noopener">GitHub Repo</a>|<a href="https://arxiv.org/abs/2602.00012" target="_blank" rel="noopener">Paper</a></p>
                 <div class="footer-mobile-btns">
                     <button id="footer-info-btn" aria-label="Info">
                         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="8"/><line x1="12" y1="12" x2="12" y2="16"/></svg>
@@ -431,7 +431,7 @@ def start_frontend(retriever: Retriever, analyzer_type: str, coding_llm, retriev
             </div>
             <div id="info-modal-backdrop">
                 <div id="info-modal" role="dialog" aria-modal="true" aria-label="Info">
-                    <p>OGD4All hat Zugriff auf 430 tabellarische und geografische Datensätze der Stadt Zürich (Datenstand: März-Mai 2025).</p>
+                    <p>OGD4All has access to 430 tabular and geographic datasets from the City of Zurich (data as of March-May 2025). Source: City of Zurich.</p>
                     <p>© OpenStreetMap contributors, Tiles © Esri — Source: Esri, i-cubed, USDA, USGS, AEX, GeoEye, Getmapping, Aerogrid, IGN, IGP, UPR-EGP, and the GIS User Community, © OpenStreetMap contributors © CARTO</p>
                     <p><a href="https://github.com/ethz-coss/ogd4all" target="_blank" rel="noopener">GitHub Repo</a>|<a href="https://arxiv.org/abs/2602.00012" target="_blank" rel="noopener">Paper</a></p></div>
             </div>
