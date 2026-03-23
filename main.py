@@ -471,4 +471,21 @@ if __name__ == "__main__":
         log.error(f"Unknown retriever type: {args.retriever}. Exiting...")
         sys.exit(1)
 
-    start_frontend(retriever, args.analyzer, coding_llm=get_llm_client(args.coding_llm), retrieval_check_client=get_llm_client(args.retrieval_check_llm), streaming=not args.no_streaming, lazy_download=args.lazy_download)
+    coding_llm = get_llm_client(args.coding_llm)
+    retrieval_check_client = get_llm_client(args.retrieval_check_llm)
+
+    _SENSITIVE_ENV_VARS = [
+        "OPENAI_API_KEY",
+        "AZURE_OPENAI_API_KEY",
+        "AZURE_OPENAI_ENDPOINT",
+        "AZURE_OPENAI_ENDPOINT_EMBEDDING_LARGE",
+        "MILVUS_CLUSTER_TOKEN",
+        "GOOGLE_GEOCODING_API_KEY",
+        "E2B_API_KEY",
+        "OPENROUTER_API_KEY"
+    ]
+    for key in _SENSITIVE_ENV_VARS:
+        os.environ.pop(key, None)
+    log.info("Cleared sensitive environment variables from process environment.")
+
+    start_frontend(retriever, args.analyzer, coding_llm=coding_llm, retrieval_check_client=retrieval_check_client, streaming=not args.no_streaming, lazy_download=args.lazy_download)
