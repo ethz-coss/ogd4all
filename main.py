@@ -368,6 +368,11 @@ def start_frontend(retriever: Retriever, analyzer_type: str, coding_llm, retriev
     with open(os.path.join(_static, "map.js")) as f:
         map_js_head = f"<script>\n{f.read()}\n</script>"
 
+    i18n = gr.I18n(
+        en={"placeholder": "Ask me anything about Zurich's open data..."},
+        de={"placeholder": "Frag mich etwas über die offenen Daten der Stadt Zürich..."},
+    )
+
     with gr.Blocks(title="OGD4All", fill_height=True) as demo:
         map = gr.HTML(value=map_placeholder, render=False, elem_classes="map-panel")
         session_state = gr.State(create_session)
@@ -400,7 +405,7 @@ def start_frontend(retriever: Retriever, analyzer_type: str, coding_llm, retriev
                 gr.ChatInterface(
                     fn=chat_fn,
                     multimodal=False, # we manually handle multimodal input
-                    textbox=gr.MultimodalTextbox(file_types=["image", ".pdf"], placeholder="Frag mich etwas über die offenen Daten der Stadt Zürich...", file_count='multiple'),
+                    textbox=gr.MultimodalTextbox(file_types=["image", ".pdf"], placeholder=i18n("placeholder"), file_count='multiple'),
                     examples=[
                         ["Wo plant die Stadt Zürich, neue Bäume zu pflanzen?", None],
                         ["Welche Hundefreilaufzone ist am nächsten zum Kunsthaus Zürich?", None],
@@ -432,7 +437,7 @@ def start_frontend(retriever: Retriever, analyzer_type: str, coding_llm, retriev
             </div>
             """)
 
-    demo.launch(theme=gr.themes.Soft(font=[gr.themes.GoogleFont("Roboto"), "Arial", "sans-serif"]), css=custom_css, head=map_js_head, footer_links=[])
+    demo.launch(theme=gr.themes.Soft(font=[gr.themes.GoogleFont("Roboto"), "Arial", "sans-serif"]), css=custom_css, head=map_js_head, footer_links=[], i18n=i18n)
 
 
 if __name__ == "__main__":
