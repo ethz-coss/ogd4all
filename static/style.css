@@ -394,3 +394,33 @@ body.chat-active .title-small {
 
 #info-modal p:last-child { margin-bottom: 0; }
 
+/* ── Image lightbox for chatbot charts ── */
+#img-lightbox {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 20000;
+    background: rgba(0, 0, 0, 0.85);
+    align-items: center;
+    justify-content: center;
+    cursor: zoom-out;
+}
+
+#img-lightbox.active {
+    display: flex;
+}
+
+#img-lightbox img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 4px 32px rgba(0, 0, 0, 0.5);
+    cursor: default;
+}
+
+/* Zoom cursor hint on the image */
+#main-chatbot .image-frame {
+    cursor: zoom-in;
+}
+

@@ -36,6 +36,7 @@
     var mapChatBtn = null;
     var mapReady = false;
     var reinjecting = false;
+    var imgLightbox = null;
 
     function setMapReady(ready) {
         mapReady = ready;
@@ -120,7 +121,43 @@
     }
     setTimeout(buildOverlay, 600);
 
-    /* ── 5. Info modal & dark-mode toggle (mobile footer) ── */
+    /* ── 5. Image lightbox for chatbot charts ── */
+    function buildImageLightbox() {
+        var chatbot = document.getElementById('main-chatbot');
+        if (!chatbot) { setTimeout(buildImageLightbox, 400); return; }
+
+        var lb = document.createElement('div');
+        lb.id = 'img-lightbox';
+        lb.setAttribute('role', 'dialog');
+        lb.setAttribute('aria-modal', 'true');
+        lb.setAttribute('aria-label', 'Full-size chart');
+        var lbImg = document.createElement('img');
+        lbImg.setAttribute('alt', '');
+        lb.appendChild(lbImg);
+        document.body.appendChild(lb);
+        imgLightbox = lb;
+
+        lb.addEventListener('click', function () {
+            lb.classList.remove('active');
+        });
+        lbImg.addEventListener('click', function (e) {
+            e.stopPropagation();
+        });
+
+        // Intercept clicks anywhere in .image-container (capture phase = before Gradio's broken handler)
+        chatbot.addEventListener('click', function (e) {
+            var container = e.target.closest('.image-container');
+            if (!container) return;
+            var img = container.querySelector('.image-frame img');
+            if (!img || !img.src) return;
+            lbImg.src = img.src;
+            lb.classList.add('active');
+            e.stopPropagation();
+        }, true);
+    }
+    setTimeout(buildImageLightbox, 700);
+
+    /* ── 6. Info modal & dark-mode toggle (mobile footer) ── */
     function initFooterBtns() {
         var infoBtn  = document.getElementById('footer-info-btn');
         var backdrop = document.getElementById('info-modal-backdrop');
@@ -143,6 +180,7 @@
 
         document.addEventListener('keydown', function (e) {
             if (e.key !== 'Escape') return;
+            if (imgLightbox && imgLightbox.classList.contains('active')) { imgLightbox.classList.remove('active'); return; }
             if (backdrop.classList.contains('active')) closeInfoModal();
             else if (overlay && overlay.classList.contains('active')) closeMapOverlay();
         });
