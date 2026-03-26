@@ -245,7 +245,7 @@ def report_results(
     # Update state with result/validation output
     return Command(
         update={
-            "messages": [ToolMessage("Success", tool_call_id=tool_call_id)],
+            "messages": [ToolMessage("Success", tool_call_id=tool_call_id, id=f"tool-result-{tool_call_id}")],
             "validation": Validation(valid=canBeAnswered, explanation=explanation, validDatasets=relevant_datasets),
         }
     )
@@ -271,7 +271,8 @@ def vector_search(
                         + "\n\n".join(str(m) for m in metadata_docs)
                     ),
                     name="vector_search",
-                    tool_call_id=tool_call_id
+                    tool_call_id=tool_call_id,
+                    id=f"tool-result-{tool_call_id}",
                 ),
                 ],
             "potential_metadata": metadata_docs,
