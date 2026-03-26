@@ -140,6 +140,7 @@ class SimpleLocalAnalyzerV2(Analyzer):
                 "matplotlib.pyplot",
                 "matplotlib.cm",
                 "shapely",
+                "shapely.geometry",
                 "seaborn",
                 "pyproj"
             ]
@@ -371,18 +372,27 @@ class SimpleLocalAnalyzerV2(Analyzer):
             code = ""
             thought = ""
             try:
-                if self.streaming:                   
-                    for response in self.coding_llm.stream(self.messages):                       
-                        thought_msg_content = ""
-                        if "thought" in response:
-                            thought = response["thought"]
-                            thought_msg_content += f"**Thought**: {thought}\n"
-                        if "code" in response:
-                            code = response["code"].replace("```python", "").replace("```", "").strip()
-                            thought_msg_content += f"**Code**: \n```python\n{code}\n``` \n"
-
-                        thought_msg.content = thought_msg_content
+                if self.streaming:
+                    if self._is_cached(self.messages):
+                        # Cache hit: invoke() returns instantly — no need to stream
+                        response = self.coding_llm.invoke(self.messages)
+                        thought = response.get("thought", "")
+                        code = response.get("code", "").replace("```python", "").replace("```", "").strip()
+                        thought_msg.content = f"**Thought**: {thought}\n**Code**: \n```python\n{code}\n``` \n"
                         yield thought_msg
+                    else:
+                        _messages_for_cache = self.messages  # capture before mutation
+                        for response in self.coding_llm.stream(self.messages):
+                            thought_msg_content = ""
+                            if "thought" in response:
+                                thought = response["thought"]
+                                thought_msg_content += f"**Thought**: {thought}\n"
+                            if "code" in response:
+                                code = response["code"].replace("```python", "").replace("```", "").strip()
+                                thought_msg_content += f"**Code**: \n```python\n{code}\n``` \n"
+                            thought_msg.content = thought_msg_content
+                            yield thought_msg
+                        self._write_cache(_messages_for_cache, thought, code)
                 else:
                     response = self.coding_llm.invoke(self.messages)
                     codeAct = response["parsed"]

@@ -42,6 +42,80 @@ class Analyzer(ABC):
         self.dataset_idx_offset = 0 # only used for setting dataset paths
 
 
+    def _is_cached(self, messages) -> bool:
+        """
+        Return True if invoking the coding LLM with these messages would be a cache hit.
+        Used to decide whether to skip streaming and use invoke() instead.
+        """
+        from langchain_core.globals import get_llm_cache
+        from langchain_core.load import dumps
+        from langchain_core.runnables import RunnableBinding, RunnableParallel, RunnableSequence
+        try:
+            cache = get_llm_cache()
+            if cache is None:
+                return False
+
+            # with_structured_output returns a RunnableSequence. We need the kwargs
+            # bound to the underlying LLM (tools / response_format) to reproduce the
+            # exact llm_string the cache uses.
+            #
+            # Two observed structures depending on include_raw:
+            #   without include_raw: RunnableSequence([RunnableBinding(llm, **kw), parser])
+            #   with include_raw:    RunnableSequence([RunnableParallel({"raw": RunnableBinding(llm, **kw)}), ...])
+            bound_kwargs = {}
+            if isinstance(self.coding_llm, RunnableSequence):
+                first = self.coding_llm.first
+                if isinstance(first, RunnableBinding):
+                    bound_kwargs = first.kwargs
+                elif isinstance(first, RunnableParallel):
+                    for step in first.steps.values():
+                        if isinstance(step, RunnableBinding):
+                            bound_kwargs = step.kwargs
+                            break
+
+            # Strip LangSmith metadata keys — they are excluded from the actual cache key
+            bound_kwargs = {k: v for k, v in bound_kwargs.items() if not k.startswith("ls_")}
+
+            prompt = dumps(messages)
+            llm_string = self.coding_client._get_llm_string(**bound_kwargs)
+            return cache.lookup(prompt, llm_string) is not None
+        except Exception:
+            return False
+
+    def _write_cache(self, messages, thought: str, code: str) -> None:
+        """
+        Write the streaming result to the LangChain cache so the next identical call
+        gets a cache hit (stream() does not write to cache; this bridges the gap).
+        """
+        import json
+        from langchain_core.globals import get_llm_cache
+        from langchain_core.load import dumps
+        from langchain_core.messages import AIMessage
+        from langchain_core.outputs import ChatGeneration
+        from langchain_core.runnables import RunnableBinding, RunnableParallel, RunnableSequence
+        try:
+            cache = get_llm_cache()
+            if cache is None:
+                return
+            bound_kwargs = {}
+            if isinstance(self.coding_llm, RunnableSequence):
+                first = self.coding_llm.first
+                if isinstance(first, RunnableBinding):
+                    bound_kwargs = first.kwargs
+                elif isinstance(first, RunnableParallel):
+                    for step in first.steps.values():
+                        if isinstance(step, RunnableBinding):
+                            bound_kwargs = step.kwargs
+                            break
+            bound_kwargs = {k: v for k, v in bound_kwargs.items() if not k.startswith("ls_")}
+            prompt = dumps(messages)
+            llm_string = self.coding_client._get_llm_string(**bound_kwargs)
+            # Reconstruct the raw AIMessage content as JSON (what the model would have returned)
+            raw_content = json.dumps({"thought": thought, "code": code})
+            cache.update(prompt, llm_string, [ChatGeneration(message=AIMessage(content=raw_content))])
+        except Exception:
+            pass  # cache write failure is non-fatal
+
     @abstractmethod
     def analyze(self, query: Union[str, dict]):
         """

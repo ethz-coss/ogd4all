@@ -1,10 +1,9 @@
+import hashlib
 import os
 import sys
 import structlog;log=structlog.get_logger()
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))) # not the nicest way of handling this, but oh well...
-from langchain_community.cache import SQLiteCache
-from langchain_core.globals import set_llm_cache
 from langchain_core.messages import HumanMessage, SystemMessage, ToolMessage
 from langchain_core.tools import tool
 from langchain_core.tools.base import InjectedToolCallId
@@ -19,8 +18,6 @@ from retrieval.retriever import Metadata, Retriever
 from retrieval.verified_retriever import Validation
 from utils import AGENTIC_RETRIEVER_SYSTEM_PROMPT, get_llm_client, handle_attached_files
 
-script_dir = os.path.dirname(os.path.abspath(__file__))
-set_llm_cache(SQLiteCache(database_path=os.path.join(script_dir, f"../cache/.langchain.db"))) # For evals, comment this out!
 
 
 def union_metadata(left: List[Metadata], right: List[Metadata]) -> List[Metadata]:
@@ -99,9 +96,13 @@ class AgenticRetriever(Retriever):
             human_message_content = str(query)
             query = str(query)
 
+        # Assign stable IDs so LangGraph's add_messages reducer does not generate
+        # fresh random UUIDs on every call — without stable IDs the cache key
+        # changes each run and SQLiteCache never gets a hit.
+        query_id = hashlib.md5(str(query).encode()).hexdigest()
         messages = [
-            SystemMessage(AGENTIC_RETRIEVER_SYSTEM_PROMPT),
-            HumanMessage(content=human_message_content),
+            SystemMessage(AGENTIC_RETRIEVER_SYSTEM_PROMPT, id="system-retriever-prompt"),
+            HumanMessage(content=human_message_content, id=query_id),
         ]
 
         # Setting validation to None ensures that the agent is routing correctly

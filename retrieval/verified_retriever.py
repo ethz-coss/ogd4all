@@ -4,8 +4,6 @@ from typing_extensions import TypedDict, Annotated, List, Tuple, Generator
 from typing import Optional
 from pydantic import BaseModel, Field
 import structlog;log=structlog.get_logger()
-from langchain_community.cache import SQLiteCache
-from langchain_core.globals import set_llm_cache
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 from langgraph.graph import StateGraph
 from langgraph.graph.message import add_messages
@@ -15,8 +13,6 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))) # n
 from retrieval.retriever import Metadata, Retriever
 from utils import get_llm_client
 
-script_dir = os.path.dirname(os.path.abspath(__file__))
-set_llm_cache(SQLiteCache(database_path=os.path.join(script_dir, f"../cache/.langchain.db"))) # For evals, comment this out!
 
 
 class Validation(BaseModel):

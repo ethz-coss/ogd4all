@@ -1,6 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import List, Any, Tuple, Union, Generator
-from openai import AzureOpenAI, OpenAI
+import hashlib
 import os
 import numpy as np
 import pandas as pd
@@ -8,10 +8,16 @@ import ast
 import json
 import sys
 import structlog;log=structlog.get_logger()
+from langchain_classic.embeddings import CacheBackedEmbeddings
+from langchain_classic.storage import LocalFileStore
+from langchain_openai import AzureOpenAIEmbeddings, OpenAIEmbeddings
 from pymilvus import AnnSearchRequest, MilvusClient, RRFRanker
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))) # not the nicest way of handling this, but oh well...
 from utils import does_title_exist
+
+
+_script_dir = os.path.dirname(os.path.abspath(__file__))
 
 
 def cosine_similarity(a: List[float], b: List[float]) -> float:
@@ -23,19 +29,6 @@ def cosine_similarity(a: List[float], b: List[float]) -> float:
     :return: Cosine similarity between the two vectors.
     """
     return np.dot(a, b) / (np.linalg.norm(a) * np.linalg.norm(b))
-
-
-def get_embedding(embedding_client: Any, text: str, model: str = "text-embedding-3-large"):
-    """
-    Get the embedding for a given text using the specified model.
-    
-    :param embedding_client: The client to use for generating embeddings.
-    :param text: The text to embed.
-    :param model: The model to use for embedding. Default is "text-embedding-3-large".
-    :return: tuple with the embedding vector for the text and the total token usage
-    """
-    embedding_request = embedding_client.embeddings.create(input=[text], model=model)
-    return embedding_request.data[0].embedding, embedding_request.usage.total_tokens
 
 
 class Metadata():
@@ -109,32 +102,38 @@ class Retriever(ABC):
 
         log.info(f"{len(df)}/{prev_len} metadata embeddings remaining after filtering for existing data.")
 
-        # Initialize embedding client if not provided
-        # Use AzureOpenAI as default, and if not set, try native OpenAI
+        self.embeddings_df = df
+        self.embedding_model = embedding_model if embedding_model else "text-embedding-3-large"
+
+        # Build LangChain embeddings + persistent cache
+        # embedding_client may be a pre-built LangChain Embeddings object; if None, create one.
         if embedding_client is None:
             if os.getenv("AZURE_OPENAI_API_KEY"):
-                embedding_client = AzureOpenAI(
-                    api_key=os.getenv("AZURE_OPENAI_API_KEY"),
+                embedding_client = AzureOpenAIEmbeddings(
+                    azure_deployment=self.embedding_model,
+                    azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT_EMBEDDING_LARGE"),
                     api_version="2024-10-21",
-                    azure_endpoint=os.getenv("AZURE_OPENAI_ENDPOINT_EMBEDDING_LARGE")
                 )
             elif os.getenv("OPENAI_API_KEY"):
-                embedding_client = OpenAI(
-                    api_key=os.getenv("OPENAI_API_KEY"),
-                )
+                embedding_client = OpenAIEmbeddings(model=self.embedding_model)
             else:
                 raise ValueError("No embedding client provided and neither AZURE_OPENAI_API_KEY nor OPENAI_API_KEY environment variables are set.")
+
+        store = LocalFileStore(os.path.join(_script_dir, "../cache/embeddings/"))
+        embedding_model = self.embedding_model  # capture for lambda closure
+        self.embedder = CacheBackedEmbeddings.from_bytes_store(
+            embedding_client,
+            store,
+            query_embedding_cache=True,
+            key_encoder=lambda text: hashlib.blake2b(f"{embedding_model}::{text}".encode()).hexdigest(),
+        )
 
         # Init Milvus client if hybrid search is enabled
         if hybrid_search or bm25_search:
             self.milvus_client = MilvusClient(
                 uri=os.getenv("MILVUS_CLUSTER_ENDPOINT"),
-                token=os.getenv("MILVUS_CLUSTER_TOKEN"), 
+                token=os.getenv("MILVUS_CLUSTER_TOKEN"),
             )
-
-        self.embeddings_df = df
-        self.embedding_client = embedding_client
-        self.embedding_model = embedding_model if embedding_model else "text-embedding-3-large"
         self.total_tokens = 0
         self.total_input_tokens = 0
         self.total_output_tokens = 0
@@ -157,8 +156,7 @@ class Retriever(ABC):
         log.info("Performing KNN", query=query, top_n=top_n)
 
         if not self.hybrid_search and not self.bm25_search:
-            embedding, total_tokens = get_embedding(self.embedding_client, query)
-            self.total_tokens += total_tokens
+            embedding = self.embedder.embed_query(query)
             # Regular semantic search based on cosine similarity
             similarities = np.array([cosine_similarity(x, embedding) for x in self.embeddings_df[self.embedding_model]])
             top_indices = np.argpartition(similarities, -top_n)[-top_n:]
@@ -197,8 +195,7 @@ class Retriever(ABC):
         else:
             # Hybrid search based on both dense vector and sparse BM25 vector (keyword-based)
             # Currently based on cloud-deployed Milvus
-            embedding, total_tokens = get_embedding(self.embedding_client, query)
-            self.total_tokens += total_tokens
+            embedding = self.embedder.embed_query(query)
 
             if self.milvus_client is None:
                 raise ValueError("Milvus client is not initialized.")
