@@ -125,6 +125,15 @@ class AgenticRetriever(Retriever):
             # Gemini models do not add reasoning tokens to the output tokens, although they are charged at this rate, so let's fix that
             if hasattr(self.llm_with_tools, "model") and self.llm_with_tools.model and "gemini" in self.llm_with_tools.model:
                 self.total_output_tokens += reasoning_tokens
+
+        # Strip total_cost from usage_metadata — LangChain adds this field when returning
+        # a result from cache but omits it on live calls. Since usage_metadata is included
+        # in dumps() serialization, this difference changes the cache key for subsequent
+        # LLM calls in the same graph run, causing a cache miss on run 2 (fixed from run 3).
+        if response.usage_metadata and "total_cost" in response.usage_metadata:
+            clean_usage = {k: v for k, v in response.usage_metadata.items() if k != "total_cost"}
+            response = response.model_copy(update={"usage_metadata": clean_usage})
+
         return {"messages": [response]}
 
 
