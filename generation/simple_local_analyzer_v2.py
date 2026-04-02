@@ -20,6 +20,8 @@ from generation.analyzer import Analyzer, CodeAct, CodeAction
 from retrieval.retriever import Metadata
 from utils import (
     clean,
+    is_budget_error,
+    API_MSG_BUDGET,
     generate_system_prompt_v2,
     get_file_from_title,
     get_path_from_title,
@@ -424,7 +426,8 @@ class SimpleLocalAnalyzerV2(Analyzer):
                 thought_msg.metadata["status"] = "done"
                 thought_msg.metadata["title"] = "Error during analysis"
                 thought_msg.metadata["duration"] = time.time() - start_time
-                yield [thought_msg, "Unfortunately, there was an error during the LLM invocation. Please try again."]
+                error_msg = API_MSG_BUDGET if is_budget_error(e) else "Unfortunately, there was an error during the LLM invocation. Please try again."
+                yield [thought_msg, error_msg]
                 return
 
             success, response = self.run_ai_generated_code(code)

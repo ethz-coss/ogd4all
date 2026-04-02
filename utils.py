@@ -3,6 +3,7 @@ import os
 import shutil
 import pandas as pd
 import logging
+import openai
 import base64
 import mimetypes
 import pymupdf4llm
@@ -552,6 +553,22 @@ class ChatOpenRouter(ChatOpenAI):
                  **kwargs):
         openai_api_key = openai_api_key or os.environ.get("OPENROUTER_API_KEY")
         super().__init__(base_url="https://openrouter.ai/api/v1", openai_api_key=openai_api_key, **kwargs)
+
+
+API_MSG_BUDGET = "The LLM API key powering this demo has exceeded its budget or is no longer valid. "
+
+
+def is_budget_error(e: Exception) -> bool:
+    """Return True if the exception is a permanent API failure (quota exhausted or key invalid/expired)."""
+    if isinstance(e, (openai.AuthenticationError, openai.PermissionDeniedError)):
+        return True
+
+    if isinstance(e, openai.RateLimitError):
+        body = getattr(e, "body", None) or {}
+        code = body.get("error", {}).get("code", "") if isinstance(body, dict) else ""
+        return code == "insufficient_quota" or "insufficient_quota" in str(e)
+
+    return False
 
 
 def get_llm_client(llm_name: str, temperature: float = 0.0):

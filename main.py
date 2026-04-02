@@ -31,7 +31,7 @@ from retrieval.agentic_retriever import AgenticRetriever
 from retrieval.knn_retriever import KNNRetriever
 from retrieval.retriever import Retriever
 from retrieval.verified_retriever import VerifiedRetriever
-from utils import SUPPORTED_LLMS, get_llm_client, init_mappings, download_dataset_file, get_file_from_title, get_path_from_title
+from utils import SUPPORTED_LLMS, get_llm_client, init_mappings, download_dataset_file, get_file_from_title, get_path_from_title, is_budget_error, API_MSG_BUDGET
 
 
 class RetrievalCheck(BaseModel):
@@ -107,7 +107,7 @@ class OGD4All():
                     thought_msg_retrieval.content = "An error occurred while retrieving datasets."
                     thought_msg_retrieval.metadata["status"] = "done"
                     thought_msg_retrieval.metadata["title"] = "Retrieval failed"
-                    error_msg = "I'm sorry, an error occurred during the retrieval of relevant datasets. Please try again."
+                    error_msg = API_MSG_BUDGET if is_budget_error(e) else "I'm sorry, an error occurred during the retrieval of relevant datasets. Please try again."
                     self.reset = True
                     yield [thought_msg_retrieval, error_msg], updated_map
                     return
@@ -195,7 +195,8 @@ class OGD4All():
                     retrieval_check = self.retrieval_check_client.invoke(messages)
                 except Exception as e:
                     log.error("Error during retrieval check:", exc_info=True)
-                    yield "An error occurred while checking whether additional datasets are required.", updated_map
+                    error_msg = API_MSG_BUDGET if is_budget_error(e) else "An error occurred while checking whether additional datasets are required."
+                    yield error_msg, updated_map
                     return
 
                 if retrieval_check.retrievalRequired:
@@ -344,7 +345,8 @@ class OGD4All():
         except Exception as e:
             log.error("Caught an exception in chat_fn: %s", e, exc_info=True, backtrace=True, diagnose=True)
             self.finalize()
-            yield gr.ChatMessage(role="assistant", content="I am sorry, there has been an error processing your request. Please try again."), updated_map
+            error_msg = API_MSG_BUDGET if is_budget_error(e) else "I am sorry, there has been an error processing your request. Please try again."
+            yield gr.ChatMessage(role="assistant", content=error_msg), updated_map
             self.reset = True
             return
     
