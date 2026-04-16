@@ -29,8 +29,6 @@ Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then run:
 uv sync
 ```
 This creates a `.venv` with all pinned dependencies automatically.
-Configure the following environment variables:
-AZURE_OPENAI_API_KEY, AZURE_OPENAI_ENDPOINT, AZURE_OPENAI_ENDPOINT_EMBEDDING_LARGE
 
 ### 2. Obtaining Zurich OGD
 The system was tested with 430 tabular and geospatial datasets of the city of Zurich, but could also be used with other types of data (with some additional steps).
@@ -52,9 +50,10 @@ By default, OGD4All uses OpenAI's `text-embedding-3-large` for semantic search. 
 
 ### 4. LLM Setup
 Support for LLMs provided by Azure OpenAI, Azure, OpenAI, OpenRouter, and Ollama is implemented.
-Depending on which one you use, set the environment variable `AZURE_OPENAI_API_KEY`, `AZURE_OPENAI_ENDPOINT`, `AZURE_API_KEY`, `OPENAI_API_KEY`, or `OPENROUTER_API_KEY`.
+However, you'll need to provide your API key by copying `example.env` and renaming it to `.env`, then filling the fields for your desired provider.
+In the case of OpenAI, the key is enough; for Azure, you need to further set the variables for the model and embedding endpoints.
 
-If your desired model is not listed in `SUPPORTED_LLMS` in `utils.py`, just add it to the list and adapt the `get_llm_client` function.
+If your desired model/provider is not listed in `SUPPORTED_LLMS` in `utils.py`, just add it to the list and adapt the `get_llm_client` function.
 </details>
 
   
