@@ -21,7 +21,9 @@ from langchain_community.cache import SQLiteCache
 from langchain_core.globals import set_llm_cache
 
 _script_dir = os.path.dirname(os.path.abspath(__file__))
-set_llm_cache(SQLiteCache(database_path=os.path.join(_script_dir, "cache", ".langchain.db")))
+_cache_dir = os.path.join(_script_dir, "cache")
+os.makedirs(_cache_dir, exist_ok=True)
+set_llm_cache(SQLiteCache(database_path=os.path.join(_cache_dir, ".langchain.db")))
 
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))) # not the nicest way of handling this, but oh well...
 from generation.iterative_local_analyzer import IterativeLocalAnalyzer
