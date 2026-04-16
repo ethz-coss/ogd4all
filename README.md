@@ -20,7 +20,7 @@ https://github.com/user-attachments/assets/26c2588e-1a6d-4b68-a539-a84a9e6b98aa
 ## Setup
 
 </summary>
-> [!TIP]
+
 > If you only care about getting the benchmark, ignore the subsequent steps and instead load it directly via [this](https://huggingface.co/datasets/michael7ma/ogd4all-benchmark) HuggingFace dataset.
 
 ### 1. Code Environment Setup
