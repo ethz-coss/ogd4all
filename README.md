@@ -5,7 +5,7 @@ OGD4All is a prototype system enabling an easy-to-use, transparent interaction w
 > [!NOTE]
 > OGD4All has been submitted to and accepted at IEEE CAI 2026. Check out our [preprint](https://arxiv.org/abs/2602.00012)!
 
-## 💡 Architecture
+## Architecture
 <img width="2948" height="869" alt="highLevelOverview" src="https://github.com/user-attachments/assets/828f68c2-470b-4c59-b80f-8b371cac0d29" />
 
 
@@ -17,7 +17,7 @@ https://github.com/user-attachments/assets/26c2588e-1a6d-4b68-a539-a84a9e6b98aa
 <details>
 <summary>
 
-## ⚙️ Setup
+## Setup
 
 </summary>
 
@@ -56,7 +56,7 @@ If your desired model is not listed in `SUPPORTED_LLMS` in `utils.py`, just add 
 </details>
 
   
-## 🗺️ Usage
+## Usage
 ```
 uv run python main.py
 ```
