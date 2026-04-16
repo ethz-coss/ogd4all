@@ -34,10 +34,12 @@ AZURE_OPENAI_API_KEY, AZURE_OPENAI_ENDPOINT, AZURE_OPENAI_ENDPOINT_EMBEDDING_LAR
 
 ### 2. Obtaining Zurich OGD
 The system was tested with 430 tabular and geospatial datasets of the city of Zurich, but could also be used with other types of data (with some additional steps).
-While the associated metadata is already contained in this repository, you need to perform some additional steps for getting the actual data.
-1. Download the datasets [here](https://drive.google.com/file/d/1MdqwSZW0i__oRXNFUJAqlwYcFqypGpia/view?usp=sharing). These datasets were manually exported. Note that this was performed in March and May of 2025, meaning some datasets may be out-of-date. All extraction timestamp, dataset titles and filenames are listed in `data\opendata\50000006\downloads.csv`, feel free to replace datasets with more recent versions.
-2. Extract the ZIP folder into the directory `data\opendata\50000006\extracted` (make sure it is not further nested).
-3. If you added the data correctly, you should see the following messages at startup:
+While the associated metadata is already contained in this repository, you have two options for getting the actual data:
+- Running the app with the `--lazy-download` flag, which only downloads needed datasets from [this HF dataset](https://huggingface.co/datasets/michael7ma/ogd4all-benchmark)
+- Downloading all needed open data upfront from [this Google Drive](https://drive.google.com/file/d/1MdqwSZW0i__oRXNFUJAqlwYcFqypGpia/view?usp=sharing). Then, extract the ZIP folder into the directory `data\opendata\50000006\extracted` (make sure it is not further nested).
+
+These datasets were manually exported. Note that this was performed in March and May of 2025, meaning some datasets may be out-of-date. All extraction timestamp, dataset titles and filenames are listed in `data\opendata\50000006\downloads.csv`, feel free to replace datasets with more recent versions.
+If the data is available, you should see the following messages at startup:
 ```
 [info     ] Will use 430 files for group owner 50000006.
 [info     ] 430/548 metadata embeddings remaining after filtering for existing data.
