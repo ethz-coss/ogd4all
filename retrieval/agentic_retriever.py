@@ -50,11 +50,11 @@ class AgenticRetriever(Retriever):
         self.tools = [vector_search, report_results]
         # GPT-3.5-turbo, GPT-o1, and Gemini do not support parallel tool call argument
         # However, only AzureOpenAI have deployment_name attribute
-        is_valid_azure_openai = hasattr(llm_client, "deployment_name") and llm_client.deployment_name not in ["gpt-35-turbo", "gpt-o1", "gpt-o3-mini-preview"]
-        if is_valid_azure_openai:
-            self.llm_with_tools = llm_client.bind_tools(self.tools, parallel_tool_calls=False)
-        else:
+        does_not_support_parallel_tool_calls_arg = hasattr(llm_client, "deployment_name") and llm_client.deployment_name.lower() in ["gpt-35-turbo", "gpt-o1", "gpt-o3-mini-preview"]
+        if does_not_support_parallel_tool_calls_arg:
             self.llm_with_tools = llm_client.bind_tools(self.tools)
+        else:
+            self.llm_with_tools = llm_client.bind_tools(self.tools, parallel_tool_calls=False)
         self.graph = self.get_compiled_graph()
 
         super().__init__(groupOwner, top_n, embedding_client, embedding_model, hybrid_search=hybrid_search, bm25_search=bm25_search)
