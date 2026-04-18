@@ -437,6 +437,17 @@ body.chat-active .title-small {
     background: #0c0f18 !important;
 }
 
+/* Cap example grid at 2 columns (1 on narrow screens) */
+#main-chatbot .examples {
+    grid-template-columns: 1fr !important;
+    max-width: none !important;
+}
+@media (min-width: 600px) {
+    #main-chatbot .examples {
+        grid-template-columns: 1fr 1fr !important;
+    }
+}
+
 /* Keep example buttons with their own card background */
 #main-chatbot button.example {
     background: #fff !important;
