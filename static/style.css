@@ -419,6 +419,34 @@ body.chat-active .title-small {
     cursor: default;
 }
 
+/* Make chatbot area blend with page background */
+#main-chatbot {
+    background: #f9fafb !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+#main-chatbot > div,
+#main-chatbot .bubble-wrap {
+    background: transparent !important;
+}
+
+/* Dark mode */
+.dark #main-chatbot,
+[data-theme="dark"] #main-chatbot {
+    background: #0c0f18 !important;
+}
+
+/* Keep example buttons with their own card background */
+#main-chatbot button.example {
+    background: #fff !important;
+}
+
+.dark #main-chatbot button.example,
+[data-theme="dark"] #main-chatbot button.example {
+    background: #222936 !important;
+}
+
 /* Zoom cursor hint on the image */
 #main-chatbot .image-frame {
     cursor: zoom-in;
