@@ -157,7 +157,20 @@
     }
     setTimeout(buildImageLightbox, 700);
 
-    /* ── 6. Info modal & dark-mode toggle (mobile footer) ── */
+    /* ── 6. Reset textarea height after submit clears the input ── */
+    function initTextareaReset() {
+        var chatCol = document.getElementById('chat-col-inner');
+        if (!chatCol) { setTimeout(initTextareaReset, 400); return; }
+        new MutationObserver(function () {
+            var ta = chatCol.querySelector('.multimodal-textbox textarea');
+            if (ta && !ta.value && ta.style.height) {
+                ta.style.height = '';
+            }
+        }).observe(chatCol, { childList: true, subtree: true, characterData: true });
+    }
+    setTimeout(initTextareaReset, 500);
+
+    /* ── 7. Info modal & dark-mode toggle (mobile footer) ── */
     function initFooterBtns() {
         var infoBtn  = document.getElementById('footer-info-btn');
         var backdrop = document.getElementById('info-modal-backdrop');

@@ -424,3 +424,8 @@ body.chat-active .title-small {
     cursor: zoom-in;
 }
 
+/* Hide Chrome's default scrollbar arrows on the chat input textarea */
+.multimodal-textbox textarea {
+    overflow-y: auto !important;
+}
+
